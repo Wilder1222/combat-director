@@ -1,0 +1,35 @@
+{
+  "received": "2026-09-21",
+  "files": [
+    {
+      "name": "SKILL.md",
+      "sha256": "8ab913a03bce075cc0a0f20f89f3990baae8f31db31578ad738cc70016d3cb48",
+      "bytes": 7863
+    },
+    {
+      "name": "README.md",
+      "sha256": "2be675618150a85ef3a4ecd5761c815bb64dfe67e234be520a522759e59d782e",
+      "bytes": 5100
+    },
+    {
+      "name": "VALIDATION.md",
+      "sha256": "a92e3098efe065caacdbae76cdcdd3b83a98b350a3fcd1af7498f55e93c08a29",
+      "bytes": 3018
+    },
+    {
+      "name": "epic-30.prompt.txt",
+      "sha256": "6f29b6121e4002829f6ee1998319ad8e9a56f1770a501fc2922991938b15c4aa",
+      "bytes": 9669
+    },
+    {
+      "name": "grounded-15.prompt.txt",
+      "sha256": "a794389ed128d062481ad5c3a3ab71e57b16ac80cb31d56368b47a67212e10d0",
+      "bytes": 5863
+    },
+    {
+      "name": "colossus-30.prompt.txt",
+      "sha256": "21b1b0246196a911759fc80bd3115e0ca8d28cfaec122aada27751aa34229c57",
+      "bytes": 7820
+    }
+  ]
+}

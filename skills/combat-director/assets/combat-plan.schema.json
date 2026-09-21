@@ -1,0 +1,1116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Combat Plan 1.2",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "1.1",
+        "1.2"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "template": {
+      "type": "string",
+      "enum": [
+        "grounded",
+        "epic",
+        "colossus"
+      ]
+    },
+    "duration": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "aspect_ratio": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generation": {
+      "const": "single",
+      "type": "string"
+    },
+    "camera_mode": {
+      "type": "string",
+      "enum": [
+        "one-take",
+        "multi-shot"
+      ]
+    },
+    "headers": {
+      "type": "object",
+      "properties": {
+        "goal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cast": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scene": {
+          "type": "string",
+          "minLength": 1
+        },
+        "budget": {
+          "type": "string",
+          "minLength": 1
+        },
+        "continuity": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "goal",
+        "cast",
+        "scene",
+        "budget",
+        "continuity"
+      ],
+      "additionalProperties": false
+    },
+    "rules": {
+      "type": "object",
+      "properties": {
+        "fantasy": {
+          "type": "boolean"
+        },
+        "max_scale": {
+          "type": "string",
+          "enum": [
+            "person",
+            "arena",
+            "landscape"
+          ]
+        }
+      },
+      "required": [
+        "fantasy",
+        "max_scale"
+      ],
+      "additionalProperties": false
+    },
+    "timing": {
+      "type": "object",
+      "properties": {
+        "lead_in": {
+          "type": "number",
+          "minimum": 0
+        },
+        "tail_out": {
+          "type": "number",
+          "minimum": 0
+        },
+        "result_at": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "lead_in",
+        "tail_out",
+        "result_at"
+      ],
+      "additionalProperties": false
+    },
+    "anchors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "cast": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/actor"
+      },
+      "minItems": 2
+    },
+    "abilities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ability"
+      },
+      "minItems": 0
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reference"
+      },
+      "minItems": 0
+    },
+    "initial_state": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "beats": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/beat"
+      },
+      "minItems": 1
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/section"
+      },
+      "minItems": 1
+    },
+    "editorial_reviews": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/editorial_review"
+      }
+    },
+    "weapon_profiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "visible_traits": {
+            "type": "string",
+            "minLength": 1
+          },
+          "owner_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mount": {
+            "type": "string",
+            "enum": [
+              "held",
+              "mounted"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "type",
+          "visible_traits",
+          "owner_id",
+          "mount"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "action_initial_state": {
+      "type": "object",
+      "properties": {
+        "actors": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/action_actor"
+          }
+        },
+        "environment": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "actors",
+        "environment"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "provenance",
+    "template",
+    "duration",
+    "aspect_ratio",
+    "generation",
+    "camera_mode",
+    "headers",
+    "rules",
+    "timing",
+    "anchors",
+    "cast",
+    "abilities",
+    "references",
+    "initial_state",
+    "beats",
+    "sections",
+    "editorial_reviews"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "actor": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "goal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prop": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hand": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "description",
+        "goal",
+        "prop",
+        "hand"
+      ],
+      "additionalProperties": false
+    },
+    "ability": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trigger": {
+          "type": "string",
+          "minLength": 1
+        },
+        "limit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cost": {
+          "type": "string",
+          "minLength": 1
+        },
+        "end_condition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "visual": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scale": {
+          "type": "string",
+          "enum": [
+            "person",
+            "arena",
+            "landscape"
+          ]
+        },
+        "supernatural": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "owner",
+        "trigger",
+        "limit",
+        "cost",
+        "end_condition",
+        "visual",
+        "scale",
+        "supernatural"
+      ],
+      "additionalProperties": false
+    },
+    "reference": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "identity",
+            "scene",
+            "action",
+            "first-frame",
+            "last-frame"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "planned",
+            "available",
+            "bound"
+          ]
+        },
+        "actors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "controls": {
+          "type": "string",
+          "minLength": 1
+        },
+        "excludes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "binding_evidence": {
+          "type": "string"
+        },
+        "asset": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "location": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^([a-f0-9]{64})?$"
+            },
+            "media_type": {
+              "type": "string",
+              "enum": [
+                "image",
+                "video",
+                "audio",
+                "other"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "location",
+            "sha256",
+            "media_type"
+          ],
+          "additionalProperties": false
+        },
+        "binding": {
+          "type": "object",
+          "properties": {
+            "asset_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "platform": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "entry": {
+              "type": "string",
+              "minLength": 1
+            },
+            "task_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "receipt": {
+              "type": "string",
+              "minLength": 1
+            },
+            "verification": {
+              "type": "string",
+              "enum": [
+                "user_reported",
+                "tool_reported"
+              ]
+            },
+            "checked_at": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "asset_id",
+            "platform",
+            "model",
+            "entry",
+            "task_id",
+            "receipt",
+            "verification",
+            "checked_at"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "status",
+        "actors",
+        "controls",
+        "excludes",
+        "binding_evidence"
+      ],
+      "additionalProperties": false
+    },
+    "beat": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0
+        },
+        "end": {
+          "type": "number",
+          "minimum": 0
+        },
+        "intent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "actors": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "string",
+                "minLength": 1
+              },
+              "performance": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "action",
+              "performance"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "emotion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "camera": {
+          "type": "object",
+          "properties": {
+            "shot_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "transition": {
+              "type": "string",
+              "enum": [
+                "start",
+                "continuous",
+                "cut"
+              ]
+            },
+            "side": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "axis_bridge": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "shot_id",
+            "transition",
+            "side",
+            "path",
+            "axis_bridge"
+          ],
+          "additionalProperties": false
+        },
+        "vfx": {
+          "type": "string",
+          "minLength": 1
+        },
+        "environment": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sound": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ability_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "before": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "after": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "action_events": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/action_event"
+          },
+          "minItems": 1
+        },
+        "state_delta": {
+          "type": "object",
+          "properties": {
+            "actors": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/$defs/action_actor_patch"
+              }
+            },
+            "environment": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "caused_by": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "actors",
+            "environment",
+            "caused_by"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "start",
+        "end",
+        "intent",
+        "actors",
+        "emotion",
+        "camera",
+        "vfx",
+        "environment",
+        "sound",
+        "ability_ids",
+        "before",
+        "after"
+      ],
+      "additionalProperties": false
+    },
+    "section": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "beat_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "summary": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "type": "string",
+              "minLength": 1
+            },
+            "expression": {
+              "type": "string",
+              "minLength": 1
+            },
+            "emotion": {
+              "type": "string",
+              "minLength": 1
+            },
+            "camera": {
+              "type": "string",
+              "minLength": 1
+            },
+            "vfx": {
+              "type": "string",
+              "minLength": 1
+            },
+            "environment": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sound": {
+              "type": "string",
+              "minLength": 1
+            },
+            "continuity": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "action",
+            "expression",
+            "emotion",
+            "camera",
+            "vfx",
+            "environment",
+            "sound",
+            "continuity"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "beat_ids",
+        "summary"
+      ],
+      "additionalProperties": false
+    },
+    "editorial_review": {
+      "type": "object",
+      "properties": {
+        "input_digest": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "expression_digest": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "reviewer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "method": {
+          "type": "string",
+          "enum": [
+            "human",
+            "agent"
+          ]
+        },
+        "checks": {
+          "type": "object",
+          "properties": {
+            "identity_action": {
+              "type": "string",
+              "minLength": 1
+            },
+            "camera_timing": {
+              "type": "string",
+              "minLength": 1
+            },
+            "ability_cost": {
+              "type": "string",
+              "minLength": 1
+            },
+            "continuity": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "identity_action",
+            "camera_timing",
+            "ability_cost",
+            "continuity"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "input_digest",
+        "expression_digest",
+        "reviewer",
+        "method",
+        "checks"
+      ],
+      "additionalProperties": false
+    },
+    "action_actor": {
+      "type": "object",
+      "properties": {
+        "zone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "facing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "support": {
+          "type": "string",
+          "minLength": 1
+        },
+        "held_items": {
+          "type": "object",
+          "properties": {
+            "left": {
+              "type": "string"
+            },
+            "right": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "left",
+            "right"
+          ],
+          "additionalProperties": false
+        },
+        "damage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "no_right_hand",
+              "no_left_hand",
+              "no_running"
+            ]
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "zone",
+        "facing",
+        "support",
+        "held_items",
+        "damage",
+        "constraints"
+      ],
+      "additionalProperties": false
+    },
+    "action_actor_patch": {
+      "type": "object",
+      "properties": {
+        "zone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "facing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "support": {
+          "type": "string",
+          "minLength": 1
+        },
+        "held_items": {
+          "type": "object",
+          "properties": {
+            "left": {
+              "type": "string"
+            },
+            "right": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "left",
+            "right"
+          ],
+          "additionalProperties": false
+        },
+        "damage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "no_right_hand",
+              "no_left_hand",
+              "no_running"
+            ]
+          },
+          "minItems": 0
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "action_event": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "actor_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0
+        },
+        "end": {
+          "type": "number",
+          "minimum": 0
+        },
+        "response_to": {
+          "type": "string"
+        },
+        "weapon_id": {
+          "type": "string"
+        },
+        "hands_used": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "left",
+              "right"
+            ]
+          },
+          "minItems": 0
+        },
+        "movement": {
+          "type": "string",
+          "enum": [
+            "stationary",
+            "walk",
+            "run"
+          ]
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trajectory": {
+          "type": "object",
+          "properties": {
+            "start": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "end": {
+              "type": "string",
+              "minLength": 1
+            },
+            "screen_direction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "start",
+            "path",
+            "end",
+            "screen_direction"
+          ],
+          "additionalProperties": false
+        },
+        "contact": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outcome": {
+          "type": "string",
+          "minLength": 1
+        },
+        "transfers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "item_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "from_actor": {
+                "type": "string",
+                "minLength": 1
+              },
+              "from_hand": {
+                "type": "string",
+                "enum": [
+                  "left",
+                  "right"
+                ]
+              },
+              "to_actor": {
+                "type": "string"
+              },
+              "to_hand": {
+                "type": "string",
+                "enum": [
+                  "left",
+                  "right",
+                  ""
+                ]
+              },
+              "destination": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "item_id",
+              "from_actor",
+              "from_hand",
+              "to_actor",
+              "to_hand",
+              "destination"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "ability_use": {
+          "type": "object",
+          "properties": {
+            "ability_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "phase": {
+              "type": "string",
+              "enum": [
+                "activate",
+                "sustain",
+                "consume",
+                "end"
+              ]
+            },
+            "visible_cost": {
+              "type": "string"
+            },
+            "restrictions_added": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "no_right_hand",
+                  "no_left_hand",
+                  "no_running"
+                ]
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "ability_id",
+            "phase",
+            "visible_cost",
+            "restrictions_added"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "actor_id",
+        "target_id",
+        "start",
+        "end",
+        "response_to",
+        "weapon_id",
+        "hands_used",
+        "movement",
+        "action",
+        "trajectory",
+        "contact",
+        "outcome",
+        "transfers"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

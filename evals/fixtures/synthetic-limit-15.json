@@ -1,0 +1,18 @@
+{
+  "display_name": "仅用于离线评估的合成入口",
+  "platform": "synthetic-test",
+  "model": "fixture-only",
+  "entry": "offline-test",
+  "mode": "single",
+  "account_scope": "synthetic-only",
+  "claims": {
+    "max_duration": {
+      "status": "supported",
+      "value": 15,
+      "source": "synthetic fixture, not real provider evidence",
+      "scope": "offline-evaluation-only",
+      "checked_at": "2026-09-21",
+      "expires_at": "2026-10-21"
+    }
+  }
+}

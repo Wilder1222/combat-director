@@ -1,0 +1,126 @@
+{
+  "snapshot_date": "2026-09-21",
+  "note": "仅交接清单；不包含已验证平台能力或 API 适配器。",
+  "profiles": {
+    "generic": {
+      "display_name": "通用",
+      "status": "待核验",
+      "max_duration": null,
+      "checks": [
+        "当前平台、模型和入口的准确名称",
+        "单次可选时长是否满足目标（本包没有已核验上限）",
+        "参考图/视频、首尾帧的支持情况和真实绑定",
+        "画幅、镜头模式、声音支持及当前账号限制"
+      ],
+      "platform": "",
+      "model": "",
+      "entry": "",
+      "mode": "single",
+      "account_scope": "",
+      "claims": {
+        "max_duration": {
+          "status": "unknown"
+        },
+        "first_frame": {
+          "status": "unknown"
+        },
+        "last_frame": {
+          "status": "unknown"
+        },
+        "video_reference": {
+          "status": "unknown"
+        }
+      }
+    },
+    "libtv": {
+      "display_name": "LibTV",
+      "status": "待核验",
+      "max_duration": null,
+      "checks": [
+        "当前平台、模型和入口的准确名称",
+        "单次可选时长是否满足目标（本包没有已核验上限）",
+        "参考图/视频、首尾帧的支持情况和真实绑定",
+        "画幅、镜头模式、声音支持及当前账号限制"
+      ],
+      "platform": "libtv",
+      "model": "",
+      "entry": "",
+      "mode": "single",
+      "account_scope": "",
+      "claims": {
+        "max_duration": {
+          "status": "unknown"
+        },
+        "first_frame": {
+          "status": "unknown"
+        },
+        "last_frame": {
+          "status": "unknown"
+        },
+        "video_reference": {
+          "status": "unknown"
+        }
+      }
+    },
+    "xiaoyunque": {
+      "display_name": "小云雀",
+      "status": "待核验",
+      "max_duration": null,
+      "checks": [
+        "当前平台、模型和入口的准确名称",
+        "单次可选时长是否满足目标（本包没有已核验上限）",
+        "参考图/视频、首尾帧的支持情况和真实绑定",
+        "画幅、镜头模式、声音支持及当前账号限制"
+      ],
+      "platform": "xiaoyunque",
+      "model": "",
+      "entry": "",
+      "mode": "single",
+      "account_scope": "",
+      "claims": {
+        "max_duration": {
+          "status": "unknown"
+        },
+        "first_frame": {
+          "status": "unknown"
+        },
+        "last_frame": {
+          "status": "unknown"
+        },
+        "video_reference": {
+          "status": "unknown"
+        }
+      }
+    },
+    "flova": {
+      "display_name": "Flova",
+      "status": "待核验",
+      "max_duration": null,
+      "checks": [
+        "当前平台、模型和入口的准确名称",
+        "单次可选时长是否满足目标（本包没有已核验上限）",
+        "参考图/视频、首尾帧的支持情况和真实绑定",
+        "画幅、镜头模式、声音支持及当前账号限制"
+      ],
+      "platform": "flova",
+      "model": "",
+      "entry": "",
+      "mode": "single",
+      "account_scope": "",
+      "claims": {
+        "max_duration": {
+          "status": "unknown"
+        },
+        "first_frame": {
+          "status": "unknown"
+        },
+        "last_frame": {
+          "status": "unknown"
+        },
+        "video_reference": {
+          "status": "unknown"
+        }
+      }
+    }
+  }
+}

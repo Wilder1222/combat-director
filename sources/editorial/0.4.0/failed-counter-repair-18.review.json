@@ -1,0 +1,57 @@
+{
+  "plan_id": "failed-counter-repair-18",
+  "reviews": [
+    {
+      "scope": "headers",
+      "input_digest": "08c54ac93c48651663565e7f172b8232c0041ee52f14d6be7d86ab029535aa09",
+      "expression_digest": "a3af3ae32b50dbab5f260e804115e3ee58114343a32eee16a327c2a041279a9e",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "目标、人物和初始兵器与结构化设定对应。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "GUARD一次接触后消耗，右手失握的可见代价进入后续限制；后续用左手。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    },
+    {
+      "scope": "P01",
+      "input_digest": "5e06e90b4317db39d623495057bc09b84a60eff6b1c8c744b5bf47dfed052a0a",
+      "expression_digest": "982233cb25949352bfbe6d12e914fa2e71c55c19eb2afc7b8d71f41a4cbc5612",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "货架卡住没有落位，A先起屏障再接机臂压力。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "GUARD一次接触后消耗，右手失握的可见代价进入后续限制；后续用左手。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    },
+    {
+      "scope": "P02",
+      "input_digest": "63e161ba85b0156fa1ba8bc79367f40cc411c11e621f2683c22e5cbe866f993c",
+      "expression_digest": "0c8d1bf55795b9cdea6222f4156f1b51b79779bf10d464c72b848ed8b894e0b5",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "屏障消耗结束导致右手失握，木杖先松手再落地，限制进入状态。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "GUARD一次接触后消耗，右手失握的可见代价进入后续限制；后续用左手。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    },
+    {
+      "scope": "P03",
+      "input_digest": "fffc15252d979c1e54acb85f92836aa323fe56b75775bbe639ac1fe0593968b5",
+      "expression_digest": "ed1106b14d2257e7e8b99f33fc32acdba6ac0c605ee9ce56c5446fb922e4fc60",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "A仅用左手按现有闸门按钮，右手限制与落杖位置持续，B未穿门。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "GUARD一次接触后消耗，右手失握的可见代价进入后续限制；后续用左手。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    }
+  ]
+}

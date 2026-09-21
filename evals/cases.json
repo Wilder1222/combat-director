@@ -1,0 +1,106 @@
+{
+  "format": "combat-evals/1",
+  "cases": [
+    {
+      "id": "E01",
+      "prompt_scenario": "“15 秒窄巷夺物，两名低境界角色，一镜到底，无仙术，只给中文提示词”",
+      "expected_observables": "不加幻想能力、不切镜；夺物因果可读；不倾倒工程 JSON",
+      "category": "创作、遵循约束",
+      "pilot": true,
+      "status": "pilot_completed",
+      "evidence": "results/2026-09-21-pilot/grading.json"
+    },
+    {
+      "id": "E02",
+      "prompt_scenario": "给现有计划：“A 的长剑改成木杖，保留结尾，重做交付”",
+      "expected_observables": "正文、状态和主段武器一致；解释受影响动作；旧摘要不能静默复用",
+      "category": "修订、交接",
+      "pilot": true,
+      "status": "pilot_failure_then_final_retest_pass_with_minor_notes",
+      "evidence": "results/2026-09-21-final/content-review/grading.json"
+    },
+    {
+      "id": "E03",
+      "prompt_scenario": "“帮我拆解这个视频”，只有文件名，没有可读媒体",
+      "expected_observables": "说明缺少可观察内容；给可用分析框架；不编造画面、模型或生成次数",
+      "category": "证据边界",
+      "pilot": true,
+      "status": "pilot_completed",
+      "evidence": "results/2026-09-21-pilot/grading.json"
+    },
+    {
+      "id": "E04",
+      "prompt_scenario": "30 秒单次任务；测试 profile 明确只有 15 秒",
+      "expected_observables": "报告约束冲突，保留方案；不擅自拆成两段或改平台",
+      "category": "平台决策",
+      "pilot": false,
+      "status": "final_single_run_content_pass",
+      "evidence": "results/2026-09-21-final/content-review/grading.json"
+    },
+    {
+      "id": "E05",
+      "prompt_scenario": "三人阻拦，B 在画外保护 C，A 尝试突破",
+      "expected_observables": "能解释三人位置、焦点交手、画外状态与结果；角色不凭空消失",
+      "category": "多人编排",
+      "pilot": false,
+      "status": "not_run"
+    },
+    {
+      "id": "E06",
+      "prompt_scenario": "强力能力消耗后右手不能持剑，下一拍继续交手",
+      "expected_observables": "代价有可见表现，下一拍受约束；若换手需动作过程",
+      "category": "能力/状态",
+      "pilot": false,
+      "status": "not_run"
+    },
+    {
+      "id": "E07",
+      "prompt_scenario": "用户只说“参考图已上传”，无可核验绑定记录",
+      "expected_observables": "可记录用户声明；不宣称平台绑定已经工具验证",
+      "category": "素材证据",
+      "pilot": false,
+      "status": "not_run"
+    },
+    {
+      "id": "E08",
+      "prompt_scenario": "只给无音轨抽帧，要求“解释每次碰撞声音”",
+      "expected_observables": "区分观察与声音设计建议，不伪造听觉证据",
+      "category": "媒体审阅",
+      "pilot": false,
+      "status": "not_run"
+    },
+    {
+      "id": "E09",
+      "prompt_scenario": "视频第 3 段兵器漂移，要求局部修复",
+      "expected_observables": "定位原因与时间段；只改必要事件/主段；给复测点",
+      "category": "最小修复",
+      "pilot": false,
+      "status": "not_run"
+    },
+    {
+      "id": "E10",
+      "prompt_scenario": "已接受偏差：兵器提前落地；后续方案原本仍持械",
+      "expected_observables": "后续起点采用接受的观察状态；原计划可追溯；不接纳被拒 take",
+      "category": "结果回流",
+      "pilot": false,
+      "status": "final_single_run_content_pass",
+      "evidence": "results/2026-09-21-final/content-review/grading.json"
+    },
+    {
+      "id": "E11",
+      "prompt_scenario": "“做一张安静的人像海报”且未显式指定此 Skill",
+      "expected_observables": "不因含“人物”“镜头”而误触发战斗编排",
+      "category": "负向路由",
+      "pilot": false,
+      "status": "not_run"
+    },
+    {
+      "id": "E12",
+      "prompt_scenario": "“水墨外观、人物级能力、雨中退守，不要大招”",
+      "expected_observables": "风格与能力分离；环境反馈、重心和回应具体；无尺度膨胀",
+      "category": "泛化能力",
+      "pilot": false,
+      "status": "not_run"
+    }
+  ]
+}

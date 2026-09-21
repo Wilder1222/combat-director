@@ -1,0 +1,24 @@
+{
+  "name": "combat-director",
+  "version": "0.3.0",
+  "description": "将战斗短片参考转化为动作节拍、镜头规划、视频提示词与连续性检查。",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Combat Director · 战斗导演",
+    "shortDescription": "拆解战斗短片，编排动作节拍，编写视频生成提示词。",
+    "longDescription": "独立战斗导演：人物级攻防、升级式斗法、巨型敌人反制；六轨导演时间轴与投喂主段分离，附三套示例、结构化计划校验和平台交接导出。",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "拆解这段战斗视频，区分已观察事实和生成方法推测。",
+      "设计一段 30 秒双人战斗，输出动作节拍和视频提示词。",
+      "检查这段生成视频中的动作因果、站位与角色连续性。"
+    ]
+  }
+}

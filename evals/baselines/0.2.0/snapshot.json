@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "date": "2026-09-21",
+  "files": {
+    ".codex-plugin/plugin.json": "c7da613f8d21a82a3dbaa0345038014a9565bd09abfd16f949b52406ebcffe9e",
+    "scripts/project.py": "de9b086f6e2615ee3914196363437164f7c77ae0ac49afd773860efbe7f61528",
+    "scripts/rebuild_examples.py": "bc9e34ef068ca6ad871c1694d785d7bd221ecc695d7088a5b92999ecb3c7dafb",
+    "tests/test_combat_tool.py": "f0f5e3e089468f695413d2a7a96d7ce5ad3437e1a566c5f637a8520f65dbe2cd",
+    "skills/combat-director/SKILL.md": "c8df987e94d593fea5b264d2e67f3683b9031a8f54c430254509ac7faf60c27a",
+    "skills/combat-director/agents/openai.yaml": "7e3070b077b4446516fb6c1b0b11316f9594ca09070464b3eebed6fbdac369b4",
+    "skills/combat-director/assets/combat-plan.schema.json": "f9a1322c4d3edcb9feb97293deb4aa962416c033d61297fad1873eb4ba5c5876",
+    "skills/combat-director/assets/platform-profiles.json": "8a118c752cc7a35553a4bdab84a909520604533ee2e3e27a218f8b84b90bff92",
+    "skills/combat-director/assets/sequence-template.md": "aa7f8a6e52e89bdc55fc37e66f92a9432f89e6236b1b974144a9177ddd6494c6",
+    "skills/combat-director/examples/colossus-30.plan.json": "43afe914ce39b2922add8e029bb17905a41582d9f1cc1d47d19c88fa28d63a2b",
+    "skills/combat-director/examples/colossus-30.prompt.txt": "f78cfe51e7544cbee32c5c365de6968fd87ac8cc68bc7bcdf83aaf149fbf4143",
+    "skills/combat-director/examples/epic-30.plan.json": "46e7c2e9cb4adc2e50e18bb5a58a9ff156e19b4075abb330862c4d47cc93dd9e",
+    "skills/combat-director/examples/epic-30.prompt.txt": "28e037ebba1073a5bc451264e04df6aa0cf533127401b4c38b1a60626c378450",
+    "skills/combat-director/examples/grounded-15.plan.json": "34d255b09c6a05aebcd72437508153bc2a97c1c1847d5778d110b02b842d3503",
+    "skills/combat-director/examples/grounded-15.prompt.txt": "2c80c5bcefdb95f560bb02b74c8b7f2bda8c3113bd9bd0fbc16f3febf11befd7",
+    "skills/combat-director/references/choreography.md": "2541d91c209b87e8802caead8c6754da0a92196f8a82f2ba76551df76265dec2",
+    "skills/combat-director/references/contract.md": "9ac3c776764c6ebd42e488f3a5d0fcda8f18b3e20bc88c83a49e99a08cb20321",
+    "skills/combat-director/references/platforms.md": "7c2e22e9c0cf6b5a68a1cb322099aa3dafdf7f96a0636041a360275e7607b46d",
+    "skills/combat-director/references/quality.md": "3906a2585e1a7b9ef955751aae02e161ff7c64e3810071cbe1c355b64bb4153d",
+    "skills/combat-director/references/source-case.md": "4638720dd0b2e62b3795838fbc1b61b616237f41556f084f7f4356daec99890e",
+    "skills/combat-director/references/sources.md": "53b361a52a31ddd336f1275cbb0c19e564d87f540cb828de78443dc27511b700",
+    "skills/combat-director/references/templates.md": "ce41fe94b3faf505d3377a9f3f024563a4ec67a418f40bae499404f408dafb14",
+    "skills/combat-director/scripts/combat_tool.py": "d15294d2d1c68212f0f8151950437c6a53a7dd2bdfb0ee49794e70ff169c23c8"
+  }
+}

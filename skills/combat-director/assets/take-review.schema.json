@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Combat Take Review 1",
+  "type": "object",
+  "properties": {
+    "format": {
+      "const": "combat-take-review/1"
+    },
+    "take_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "plan_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "plan_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "media": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^([a-f0-9]{64})?$"
+        },
+        "evidence_kind": {
+          "type": "string",
+          "enum": [
+            "actual_media",
+            "user_report",
+            "synthetic",
+            "unobserved"
+          ]
+        },
+        "observation_method": {
+          "type": "string",
+          "enum": [
+            "full_video",
+            "frames",
+            "user_report",
+            "unobserved"
+          ]
+        },
+        "covered_ranges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "start": {
+                "type": "number",
+                "minimum": 0
+              },
+              "end": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "start",
+              "end"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "audio_observed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "location",
+        "sha256",
+        "evidence_kind",
+        "observation_method",
+        "covered_ranges",
+        "audio_observed"
+      ],
+      "additionalProperties": false
+    },
+    "completed_events": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "incomplete_events": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unexpected_events": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "observed_end_state": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "state_evidence": {
+      "type": "string"
+    },
+    "deviations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "number",
+            "minimum": 0
+          },
+          "observation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "impact": {
+            "type": "string",
+            "minLength": 1
+          },
+          "repair": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "time",
+          "observation",
+          "impact",
+          "repair"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "accept",
+        "accept_with_deviation",
+        "repair",
+        "reject"
+      ]
+    },
+    "decision_by": {
+      "type": "string"
+    },
+    "decision_reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "format",
+    "take_id",
+    "plan_id",
+    "plan_digest",
+    "media",
+    "completed_events",
+    "incomplete_events",
+    "unexpected_events",
+    "observed_end_state",
+    "state_evidence",
+    "deviations",
+    "decision",
+    "decision_by",
+    "decision_reason"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,57 @@
+{
+  "plan_id": "alley-letter-15",
+  "reviews": [
+    {
+      "scope": "headers",
+      "input_digest": "3da83ef3421f7dc1a086976e082b951d66684ce3854a2b6169c7a76d26825929",
+      "expression_digest": "5064096fffe04deb0c87ee2e3ea57685f2185e80fb6c6268681f62c9d6ce9685",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "目标、人物和初始兵器与结构化设定对应。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "本例无幻想能力；持物与接触材质一致。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    },
+    {
+      "scope": "P01",
+      "input_digest": "f21685b068be81b3e6737daabb3f2b87c4760ef28b7d49f3eace75280198145f",
+      "expression_digest": "6877ee0295c9c416221f2ca0c4017722aad9fa89fe199c8f8fdc9f9dabb0bd54",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B推掌后A杖抵前臂，无金属火花；函仍在B右手。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "本例无幻想能力；持物与接触材质一致。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    },
+    {
+      "scope": "P02",
+      "input_digest": "2cedc828e2c96f0e8e3474074bed9d71adc22c2c1e1dc958da0490fd33ebd212",
+      "expression_digest": "feb82a583fb7edfabfbb984c331fa0847022da3769fab1c69a9e0e67cb206962",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "A让出北口，B自愿交函到A左手；A右手持杖不断。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "本例无幻想能力；持物与接触材质一致。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    },
+    {
+      "scope": "P03",
+      "input_digest": "105db86bc416e03bcc1ee8285da3938f7d37d4f6a2bd178d901ae6d8056156b1",
+      "expression_digest": "dff11f8cacc00dfba94f4de5e9c4b0f1f2387e404037dfb0b4a4b95802392100",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "A南退B北退，14.4秒前分开，无追击。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "本例无幻想能力；持物与接触材质一致。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    }
+  ]
+}

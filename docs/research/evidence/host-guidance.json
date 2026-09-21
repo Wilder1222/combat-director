@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-21",
+  "scope": "Local authoring guidance snapshot; not installed-plugin execution proof.",
+  "sources": [
+    {
+      "name": "plugin-creator",
+      "path": "C:\\Users\\ww\\.codex\\skills\\.system\\plugin-creator\\SKILL.md",
+      "sha256": "9dba03c079abfbc680e8fca146069f054c1b0c5e9bcb5e5a9effcf86a95f67c6"
+    },
+    {
+      "name": "skill-creator",
+      "path": "C:\\Users\\ww\\.codex\\skills\\.system\\skill-creator\\SKILL.md",
+      "sha256": "cccd291077ec57c6f50ca6529f0f3fb93212da09473effb2fcec808e81b21288"
+    }
+  ]
+}

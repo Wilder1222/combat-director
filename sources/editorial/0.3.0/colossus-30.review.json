@@ -1,0 +1,96 @@
+{
+  "plan_id": "colossus-30",
+  "reviews": [
+    {
+      "scope": "headers",
+      "input_digest": "cc30cc8926bdcbd1689d23d96935e10b3cd63409cba534d19edf7e8b057a4998",
+      "expression_digest": "0dacdf9f848c0b6ab8b9099741269cf44b0637fe008a3de947734b9f1c61eaa4",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "总设定人物身份、目标、初始持物与cast逐项对应。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；允许内部切镜，主段中的摄影机变化与细拍shot/transition对应，未改为多任务。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。 总设定结尾与最终after已对照，结尾未改变。"
+      }
+    },
+    {
+      "scope": "P01",
+      "input_digest": "049513056739b59f00dcbdd1b69af12cce4469c4432d2d37bd7e8044af0fc9fa",
+      "expression_digest": "a097da98118d91eec1bf18f211892ad7739e79d5acbef908559ab7529dbd7763",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B01 人、机甲、红柱与出口建立关系，机械臂阻挡直线路径。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；允许内部切镜，主段中的摄影机变化与细拍shot/transition对应，未改为多任务。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+      }
+    },
+    {
+      "scope": "P02",
+      "input_digest": "109193907769ff8a111bfae54634db598fc986d71e813a547a18924b8c630913",
+      "expression_digest": "390225965e6fbbe25077d5e19f930d1d5e4d550009f472a25606410f1ab6e7bc",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B02-B03 先避让机械臂接地再观察既有按钮/货架，未凭空新增装置。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；允许内部切镜，主段中的摄影机变化与细拍shot/transition对应，未改为多任务。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+      }
+    },
+    {
+      "scope": "P03",
+      "input_digest": "1f536790f0a5b008712ac73e34366c371596e0aaa82512a2c2a385084a943f40",
+      "expression_digest": "d35466928711198e58e867a677764971255c6da195fb49d86c6a52854bcff58b",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B04 A沿红柱外侧引导机甲转向，机甲前足确实进入通路附近。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；允许内部切镜，主段中的摄影机变化与细拍shot/transition对应，未改为多任务。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+      }
+    },
+    {
+      "scope": "P04",
+      "input_digest": "436df345027d8ac5b2b0775d167f600c9ba8f3f66bfe9bebd5f2c6d2b1362927",
+      "expression_digest": "f496046c27416cf699e67fcdbd97dd62819105a4aa7ad4c467d419db43fef91e",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B05-B06 挡板先受撞，A空着的左手按按钮，右手终端始终保留。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；允许内部切镜，主段中的摄影机变化与细拍shot/transition对应，未改为多任务。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+      }
+    },
+    {
+      "scope": "P05",
+      "input_digest": "ec8b885e831a0893a3e4ea59896458c89f12863d41533a5971cba12ce2bdf9ed",
+      "expression_digest": "dabe5b71dd769e3cc7279f8038c0b218ac1b36512420b2872f1f8100c5a41b09",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B07 空货架落位后实体阻挡，A经侧边旁路撤离。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；允许内部切镜，主段中的摄影机变化与细拍shot/transition对应，未改为多任务。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+      }
+    },
+    {
+      "scope": "P06",
+      "input_digest": "8fd1e9a8f44f8893201fb60428cf8db6275df521803e04185ec223a5104651ba",
+      "expression_digest": "b14df1bc11a53d130896ecc3ebf1a167697d4ec4db1d2b7411a3d4477b9a8a1a",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B08 29.2秒前过出口，机甲仍可动但无法越过货架。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；允许内部切镜，主段中的摄影机变化与细拍shot/transition对应，未改为多任务。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+      }
+    }
+  ]
+}

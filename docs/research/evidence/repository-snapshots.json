@@ -1,0 +1,191 @@
+{
+  "retrieved": "2026-09-21",
+  "repositories": [
+    {
+      "repo": "anthropics/skills",
+      "default_branch": "main",
+      "sha": "34040c9c568585f6929bedeaad110ad08f079624",
+      "commit_date": "2026-09-10T19:44:08Z",
+      "license": null,
+      "tree_truncated": false,
+      "candidate_files": [
+        "skills/skill-creator/SKILL.md",
+        "skills/skill-creator/agents/grader.md",
+        "skills/skill-creator/references/schemas.md",
+        "skills/skill-creator/scripts/aggregate_benchmark.py",
+        "skills/skill-creator/scripts/run_eval.py"
+      ]
+    },
+    {
+      "repo": "Emily2040/seedance-2.0",
+      "default_branch": "main",
+      "sha": "9ea203f14f092127296ed4d750ece1f2b28090fb",
+      "commit_date": "2026-09-08T02:08:13Z",
+      "license": "MIT",
+      "tree_truncated": false,
+      "candidate_files": [
+        "evals/fixtures/sequence-airport-arrival-project-state.json",
+        "examples/golden-prompts/sequence-continuation.md",
+        "examples/sequence-airport-arrival/clip-01-contract.json",
+        "examples/sequence-airport-arrival/clip-01-prompt.md",
+        "examples/sequence-airport-arrival/clip-01-take-review.json",
+        "examples/sequence-airport-arrival/clip-02-continuation-contract.json",
+        "examples/sequence-airport-arrival/clip-02-prompt.md",
+        "examples/sequence-airport-arrival/project-state.json",
+        "examples/sequence-airport-arrival/sequence-plan.md",
+        "examples/sequence-mixed-lane/clip-01-take-review.json",
+        "examples/sequence-mixed-lane/clip-02-take-review.json",
+        "examples/sequence-mixed-lane/project-state.json",
+        "examples/sequence-observed-deviation/project-state-after.json",
+        "examples/sequence-observed-deviation/project-state-before.json",
+        "examples/sequence-observed-deviation/take-review.json",
+        "references/directors-read.md",
+        "references/sequence-project-state.md",
+        "references/sequence-worked-trace.md",
+        "references/shot-list-continuity.md",
+        "scripts/sequence_eval_check.py",
+        "skills/seedance-sequence/SKILL.md",
+        "tests/test_sequence_eval.py",
+        "validation/fixtures/directors-read-cases.json"
+      ]
+    },
+    {
+      "repo": "kevinchin12/storyboard-director",
+      "default_branch": "main",
+      "sha": "208782096ad7be19d609b4f3f70568507245ef30",
+      "commit_date": "2026-07-30T03:47:47Z",
+      "license": "MIT",
+      "tree_truncated": false,
+      "candidate_files": [
+        "storyboard-scene-pipeline-skill/scripts/validate_story_session.py"
+      ]
+    },
+    {
+      "repo": "wuwangzhang1216/DirectorSKILL",
+      "default_branch": "main",
+      "sha": "c65ae0d14457053efb1e354c7e7f7e120d97fad1",
+      "commit_date": "2026-08-31T19:25:17Z",
+      "license": "MIT",
+      "tree_truncated": false,
+      "candidate_files": [
+        "references/ai-video-tool-adapters.md",
+        "references/blocking-and-staging.md",
+        "references/cinematic-language.md",
+        "references/continuity-bible.md",
+        "references/director_styles/01_spielberg.md",
+        "references/director_styles/02_hitchcock.md",
+        "references/director_styles/03_kubrick.md",
+        "references/director_styles/04_kurosawa.md",
+        "references/director_styles/05_scorsese.md",
+        "references/director_styles/06_fellini.md",
+        "references/director_styles/07_bergman.md",
+        "references/director_styles/08_tarkovsky.md",
+        "references/director_styles/09_wong_kar_wai.md",
+        "references/director_styles/10_nolan.md",
+        "references/director_styles/11_villeneuve.md",
+        "references/director_styles/12_fincher.md",
+        "references/director_styles/13_refn.md",
+        "references/director_styles/14_bi_gan.md",
+        "references/director_styles/15_zhang_yimou.md",
+        "references/director_styles/16_hou_hsiao_hsien.md",
+        "references/director_styles/17_park_chan_wook.md",
+        "references/director_styles/18_malick.md",
+        "references/director_styles/19_michael_mann.md",
+        "references/director_styles/20_coen_brothers.md",
+        "references/director_styles/README.md",
+        "references/director_styles/example_comparisons.md",
+        "references/editing-and-assembly.md",
+        "references/failure-modes.md",
+        "references/genre-playbooks.md",
+        "references/image-model-adapters.md",
+        "references/lighting-and-color.md",
+        "references/product-and-macro.md",
+        "references/production-workflow.md",
+        "references/prompt-lexicon.md",
+        "references/sound-and-dialogue.md"
+      ]
+    },
+    {
+      "repo": "remotion-dev/skills",
+      "default_branch": "main",
+      "sha": "bbb139d5ba3709b1ffeb27184e9579c681230a08",
+      "commit_date": "2026-09-17T14:46:07Z",
+      "license": null,
+      "tree_truncated": false,
+      "candidate_files": [
+        "skills/remotion-best-practices/SKILL.md",
+        "skills/remotion-best-practices/remotion-markup/sequencing.md",
+        "skills/remotion-best-practices/remotion-markup/timing.md",
+        "skills/remotion-captions/SKILL.md",
+        "skills/remotion-create/SKILL.md",
+        "skills/remotion-docs/SKILL.md",
+        "skills/remotion-interactivity/SKILL.md",
+        "skills/remotion-maps/SKILL.md",
+        "skills/remotion-markup/SKILL.md",
+        "skills/remotion-markup/sequencing.md",
+        "skills/remotion-markup/timing.md",
+        "skills/remotion-multimedia/SKILL.md",
+        "skills/remotion-render/SKILL.md",
+        "skills/remotion-saas/SKILL.md",
+        "skills/remotion-studio/SKILL.md",
+        "skills/remotion-upgrade/SKILL.md"
+      ]
+    },
+    {
+      "repo": "calesthio/OpenMontage",
+      "default_branch": "main",
+      "sha": "08e2151fa02de28a5d6a312b3d575692bf147ad7",
+      "commit_date": "2026-09-06T05:02:12Z",
+      "license": "AGPL-3.0",
+      "tree_truncated": false,
+      "candidate_files": [
+        ".agents/skills/seedance-2-0/SKILL.md",
+        "tests/tools/test_video_selector_routing.py",
+        "tools/video/video_selector.py"
+      ]
+    },
+    {
+      "repo": "MasterLeos/leos-six-department-directing-team-skill-v1",
+      "default_branch": "main",
+      "sha": "2ed50edb3c7838fc9ffb68e50824e0ebff59c7d4",
+      "commit_date": "2026-09-09T07:08:27Z",
+      "license": null,
+      "tree_truncated": false,
+      "candidate_files": [
+        "CHANGELOG.md",
+        "README.md",
+        "SKILL.md",
+        "agents/openai.yaml",
+        "assets/continuity-ledger-template.csv",
+        "assets/project-style-profile-template.json",
+        "assets/prompt-version-log-template.csv",
+        "assets/take-prompt-log-template.csv",
+        "assets/video-prompt-template.txt",
+        "references/cinematography-direction.md",
+        "references/continuity-and-learning.md",
+        "references/directing-grammar.md",
+        "references/generation-control.md",
+        "references/knowledge-and-provenance.md",
+        "references/output-contracts.md",
+        "references/performance-direction.md",
+        "references/prompt-director.md",
+        "references/review-and-repair.md",
+        "references/role-council.md",
+        "references/spatial-and-assets.md",
+        "scripts/validate_prompt_text.py",
+        "scripts/validate_review_coverage.py"
+      ]
+    },
+    {
+      "repo": "Wilder1222/cineweave-director",
+      "sha": "c9d3817467a7adf05d1aeb95e41c39b70e95f744",
+      "source": "local clean checkout",
+      "remote_latest_verified": false,
+      "license": null,
+      "candidate_files": [
+        "skills/cineweave-director/references/routes/action.md",
+        "skills/cineweave-director/resources/contracts/schemas/action-sequence-spec.schema.json"
+      ]
+    }
+  ]
+}

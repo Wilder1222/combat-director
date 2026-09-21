@@ -1,0 +1,9 @@
+{
+  "status": "conflict",
+  "as_of": "2026-09-21",
+  "conflicts": [
+    "目标30秒超过已记录上限15秒"
+  ],
+  "unknown": [],
+  "evidence_scope": "仅检查所提供记录；没有查询平台或验证账号"
+}

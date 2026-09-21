@@ -1,0 +1,78 @@
+{
+  "task": "按已接受的合成审片偏差整理下一段起始状态，并给简短创作建议",
+  "skill_snapshot": "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director",
+  "actual_read_files": [
+    "D:\\Temp\\combat-director-evals-20260921\\final-e10\\next-start.json",
+    "D:\\Temp\\combat-director-evals-20260921\\final-e10\\source-review.json",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\SKILL.md",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\assets\\combat-plan.schema.json",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\assets\\take-review.schema.json",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\examples\\alley-letter-15.plan.json",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\references\\quality.md",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\references\\review-loop.md",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\__pycache__\\combat_action.cpython-313.pyc",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\__pycache__\\combat_evidence.cpython-313.pyc",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\__pycache__\\combat_handoff.cpython-313.pyc",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\__pycache__\\combat_review.cpython-313.pyc",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\__pycache__\\combat_schema.cpython-313.pyc",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\combat_review.py",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\combat_tool.py",
+    "D:\\study\\projects\\combat-director\\evals\\fixtures\\synthetic-accepted-drop.review.json"
+  ],
+  "read_file_scope": "列出实际读取的任务文件、快照脚本及其模块/Schema和回读产物；不列 Python/PowerShell 标准运行库或进程环境配置。",
+  "tools_used": [
+    {
+      "name": "functions.exec",
+      "purpose": "编排本地工具调用"
+    },
+    {
+      "name": "exec_command",
+      "purpose": "PowerShell 读取指定输入及按需引用资源；运行本地 Python 标准库脚本；写入并核对交付"
+    },
+    {
+      "name": "combat_tool.py continuation-seed",
+      "argv": [
+        "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\combat_tool.py",
+        "continuation-seed",
+        "D:\\study\\projects\\combat-director\\evals\\fixtures\\synthetic-accepted-drop.review.json",
+        "--plan",
+        "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\examples\\alley-letter-15.plan.json",
+        "--out",
+        "D:\\Temp\\combat-director-evals-20260921\\final-e10\\next-start.json"
+      ],
+      "exit_code": 0,
+      "stdout_stderr": "VALID review record; media content has not been inspected by this script\n"
+    }
+  ],
+  "input_identity": {
+    "plan_id": "alley-letter-15",
+    "plan_digest_recorded": "71f9d66624d772637d9398dbc7e8f31ced3ce39d88949ff30fb7fe8b52da1b93",
+    "source_plan_digest_in_seed": "71f9d66624d772637d9398dbc7e8f31ced3ce39d88949ff30fb7fe8b52da1b93",
+    "review_digest_in_seed": "5c91dae49103ca933c0073c3ae65ee0d0fbab7a5fc1adf15ceabb8e30f1c47b7",
+    "review_file_sha256": "10444f79f1111aecf9bdb9dc108bd5a01e157b529d5e91fe2b7593b34e58cd09",
+    "review_file_hash_is_not_media_hash": true
+  },
+  "checks_performed": [
+    "Skill continuation-seed 命令成功返回；其校验包含计划结构、审片结构及所指计划摘要匹配。",
+    "导出 initial_state 与 review.observed_end_state 完全一致。",
+    "decision、evidence_kind、observation_method 保留输入原值。",
+    "source-review.json 与输入审片逐字节一致。"
+  ],
+  "limitations": [
+    "离线执行；未联网，未调用平台，未委派。",
+    "未读取记忆、其他版本或其他评估结果。",
+    "本次输入是合成教学情境中的模拟用户报告，不是实际媒体观察。",
+    "覆盖仅 10.5–15 秒；没有读取视频或抽帧、没有实听音轨；audio_observed=false。",
+    "空的事件列表不作为全事件完成证据；未记录状态保持未知，不由计划终态补齐。",
+    "新接续动作及声音仅为创作建议，未生成验证。",
+    "未修改源计划或源审片；未创建完整下一段计划，未进行视频生成、拼接或发布。",
+    "结构校验和文件一致性核对不等于动作、画面、声音或物理效果验证。"
+  ],
+  "output_files": [
+    "D:\\Temp\\combat-director-evals-20260921\\final-e10\\continuation.md",
+    "D:\\Temp\\combat-director-evals-20260921\\final-e10\\next-start.json",
+    "D:\\Temp\\combat-director-evals-20260921\\final-e10\\source-review.json",
+    "D:\\Temp\\combat-director-evals-20260921\\final-e10\\validation.txt",
+    "D:\\Temp\\combat-director-evals-20260921\\final-e10\\run.json"
+  ]
+}

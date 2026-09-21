@@ -1,0 +1,70 @@
+{
+  "plan_id": "grounded-15",
+  "reviews": [
+    {
+      "scope": "headers",
+      "input_digest": "25a0db4983883022f16ee2fcb13a97afcab678cc6272ea6a462712d4a9c19294",
+      "expression_digest": "54209722b6a64c32dfdb0d03583ae5c32556806971a43a08351141947301b15a",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "总设定人物身份、目标、初始持物与cast逐项对应。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；所有镜头均为S01连续，摘要的“不切镜”是限制不是切镜指令。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。 总设定结尾与最终after已对照，结尾未改变。"
+      }
+    },
+    {
+      "scope": "P01",
+      "input_digest": "3105338b79a8f699a869ee297722589848d6637b2f0c48b0442428db849bfe1d",
+      "expression_digest": "ac9de3fb094849d8f2af277f35be5e61403e87d1050edabcb32939defdeab657",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B01-B02 接短刀后后退，双方仍持原兵器；摘要保留逼近北缘的结果。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；所有镜头均为S01连续，摘要的“不切镜”是限制不是切镜指令。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+      }
+    },
+    {
+      "scope": "P02",
+      "input_digest": "3ea79266680ac77fc332a3e97e58161f35280f29c9392410dff31526673934e0",
+      "expression_digest": "840da80835fa7ec13860914baa4457fe3fadc65b3eb46480eed61b11aa59a008",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B03 侧身接住压迫并恢复重心，未添加切镜或仙术。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；所有镜头均为S01连续，摘要的“不切镜”是限制不是切镜指令。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+      }
+    },
+    {
+      "scope": "P03",
+      "input_digest": "935d8973110461f14554cb32b14594011ef3b5f8aaccaa1ae3c1027e806dcee0",
+      "expression_digest": "e993a737326fa10e6b4b9ecdae43bfedb8b96af79763404fad32cc881289696b",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B04-B05 实际后退到碎石带后失衡落刀，摘要保留松手到地面的过程。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；所有镜头均为S01连续，摘要的“不切镜”是限制不是切镜指令。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+      }
+    },
+    {
+      "scope": "P04",
+      "input_digest": "d71611ab1813cef072a74b47c0d2f1f4db1adbd2381fd09b0e590c4b1b314e11",
+      "expression_digest": "5fd87c1314f29f127aebdbc452eba836e6136a0425bb54c312853d30c36991e0",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B06 A通过后14.4秒前转身警戒；B留在原位，未开启新回合。",
+        "camera_timing": "单次目标时长与入出点包含关系一致；所有镜头均为S01连续，摘要的“不切镜”是限制不是切镜指令。",
+        "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+        "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+      }
+    }
+  ]
+}

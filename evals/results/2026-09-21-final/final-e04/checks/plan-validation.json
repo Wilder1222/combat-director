@@ -1,0 +1,11 @@
+{
+  "name": "plan-validation",
+  "argv": [
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\combat_tool.py",
+    "validate",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\examples\\epic-30.plan.json"
+  ],
+  "exit_code": 0,
+  "stdout": "VALID: epic-30; 11 beats, 6 sections; reviewed revision matches\n",
+  "stderr": ""
+}

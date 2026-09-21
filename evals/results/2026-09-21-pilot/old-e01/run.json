@@ -1,0 +1,26 @@
+{
+  "task": "15秒窄巷夺物中文视频提示词",
+  "skill_path": "D:\\study\\projects\\combat-director\\evals\\baselines\\0.2.0\\skills\\combat-director\\SKILL.md",
+  "files_read": [
+    "D:\\study\\projects\\combat-director\\evals\\baselines\\0.2.0\\skills\\combat-director\\SKILL.md",
+    "D:\\study\\projects\\combat-director\\evals\\baselines\\0.2.0\\skills\\combat-director\\references\\choreography.md",
+    "D:\\study\\projects\\combat-director\\evals\\baselines\\0.2.0\\skills\\combat-director\\references\\templates.md"
+  ],
+  "tools_used": [
+    "functions.exec",
+    "exec_command"
+  ],
+  "files_written": [
+    "D:\\Temp\\combat-director-evals-20260921\\old-e01\\answer.md",
+    "D:\\Temp\\combat-director-evals-20260921\\old-e01\\run.json"
+  ],
+  "restrictions": [
+    "只读取指定技能及其按需引用资源",
+    "未读取记忆、其他版本、研究报告或评估结果",
+    "未联网",
+    "未调用生成平台",
+    "未委派",
+    "仅进行文本编排，未生成视频或验证成片效果",
+    "不自评，不记录猜测的模型或token数据"
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "task": "为原计划准备离线平台交接，保留单次 30 秒，不实际生成",
+  "as_of": "2026-09-21",
+  "skill_snapshot": "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director",
+  "output_directory": "D:\\Temp\\combat-director-evals-20260921\\final-e04",
+  "status": "blocked_duration_conflict",
+  "requested_duration": 30,
+  "requested_generation": "single",
+  "profile_max_duration": 15,
+  "input_sha256": {
+    "plan": "fae91663a4c2659001300a1d75a607414834badcddf2580a14907a1b9d076fa8",
+    "profile": "fbe6f93e272660d0ed6a7d5ba8c7b676af1e0a4498586886f1b77a06c303b084"
+  },
+  "files_read_directly_for_task": [
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\SKILL.md",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\references\\platforms.md",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\references\\contract.md",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\assets\\platform-profiles.json",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\examples\\epic-30.plan.json",
+    "D:\\study\\projects\\combat-director\\evals\\fixtures\\synthetic-limit-15.json",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\combat_tool.py"
+  ],
+  "files_read_by_python_execution": [
+    "C:\\Python313\\Lib\\__future__.py",
+    "C:\\Python313\\Lib\\__pycache__\\__future__.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\_compression.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\_weakrefset.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\argparse.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\bz2.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\copy.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\datetime.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\gettext.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\locale.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\lzma.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\pkgutil.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\shutil.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\typing.cpython-313.pyc",
+    "C:\\Python313\\Lib\\__pycache__\\weakref.cpython-313.pyc",
+    "C:\\Python313\\Lib\\_compression.py",
+    "C:\\Python313\\Lib\\_weakrefset.py",
+    "C:\\Python313\\Lib\\argparse.py",
+    "C:\\Python313\\Lib\\bz2.py",
+    "C:\\Python313\\Lib\\copy.py",
+    "C:\\Python313\\Lib\\datetime.py",
+    "C:\\Python313\\Lib\\gettext.py",
+    "C:\\Python313\\Lib\\locale.py",
+    "C:\\Python313\\Lib\\lzma.py",
+    "C:\\Python313\\Lib\\pkgutil.py",
+    "C:\\Python313\\Lib\\shutil.py",
+    "C:\\Python313\\Lib\\typing.py",
+    "C:\\Python313\\Lib\\weakref.py",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\assets\\combat-plan.schema.json",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\assets\\platform-profiles.json",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\examples\\epic-30.plan.json",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\__pycache__\\combat_action.cpython-313.pyc",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\__pycache__\\combat_evidence.cpython-313.pyc",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\__pycache__\\combat_handoff.cpython-313.pyc",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\__pycache__\\combat_review.cpython-313.pyc",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\__pycache__\\combat_schema.cpython-313.pyc",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\combat_tool.py",
+    "D:\\study\\projects\\combat-director\\evals\\fixtures\\synthetic-limit-15.json"
+  ],
+  "tools_used": [
+    {
+      "name": "functions.exec",
+      "purpose": "调用本地读文件、帮助查询、校验、写入和核对工具"
+    },
+    {
+      "name": "exec_command",
+      "purpose": "PowerShell Get-Content、ConvertFrom-Json、rg、Python 帮助与离线脚本"
+    },
+    {
+      "name": "apply_patch",
+      "purpose": "写入 prepare_delivery.py 以生成交付文档和保留原始检查输出"
+    }
+  ],
+  "help_commands": [
+    "combat_tool.py --help",
+    "combat_tool.py assess-profile --help",
+    "combat_tool.py validate --help",
+    "combat_tool.py render --help"
+  ],
+  "checks": [
+    {
+      "name": "plan-validation",
+      "argv": [
+        "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\combat_tool.py",
+        "validate",
+        "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\examples\\epic-30.plan.json"
+      ],
+      "exit_code": 0,
+      "stdout": "VALID: epic-30; 11 beats, 6 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "name": "duration-validation",
+      "argv": [
+        "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\combat_tool.py",
+        "validate",
+        "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\examples\\epic-30.plan.json",
+        "--max-duration",
+        "15"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "INVALID: single-generation duration exceeds confirmed limit\n"
+    },
+    {
+      "name": "profile-assessment",
+      "argv": [
+        "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\combat_tool.py",
+        "assess-profile",
+        "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\examples\\epic-30.plan.json",
+        "--profile",
+        "D:\\study\\projects\\combat-director\\evals\\fixtures\\synthetic-limit-15.json",
+        "--as-of",
+        "2026-09-21"
+      ],
+      "exit_code": 1,
+      "stdout": "{\n  \"status\": \"conflict\",\n  \"as_of\": \"2026-09-21\",\n  \"conflicts\": [\n    \"目标30秒超过已记录上限15秒\"\n  ],\n  \"unknown\": [],\n  \"evidence_scope\": \"仅检查所提供记录；没有查询平台或验证账号\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "blocked-render",
+      "argv": [
+        "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\scripts\\combat_tool.py",
+        "render",
+        "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\examples\\epic-30.plan.json",
+        "--profile",
+        "D:\\study\\projects\\combat-director\\evals\\fixtures\\synthetic-limit-15.json",
+        "--as-of",
+        "2026-09-21",
+        "--out-dir",
+        "D:\\Temp\\combat-director-evals-20260921\\final-e04\\platform-export"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "INVALID: platform conflict: 目标30秒超过已记录上限15秒\n"
+    }
+  ],
+  "input_unchanged": true,
+  "network_used": false,
+  "platform_called": false,
+  "generation_performed": false,
+  "delegation_used": false,
+  "memory_read": false,
+  "other_versions_or_evaluation_results_read": false,
+  "notes": [
+    "files_read_by_python_execution 来自本次 Python open 审计事件；Python 标准库与已缓存模块的导入也可能在该列表中。",
+    "直接阅读清单记录模型实际咨询的输入和说明；没有自评分数，也没有猜测模型或 token。",
+    "creative-draft 为保留原计划的离线创作资料，不是绕过冲突后提供的正式平台导出。"
+  ],
+  "files_read_after_creation": [
+    "D:\\Temp\\combat-director-evals-20260921\\final-e04\\prepare_delivery.py",
+    "D:\\Temp\\combat-director-evals-20260921\\final-e04\\run.json",
+    "D:\\Temp\\combat-director-evals-20260921\\final-e04\\capability-assessment.json",
+    "D:\\Temp\\combat-director-evals-20260921\\final-e04\\source-plan.json",
+    "D:\\Temp\\combat-director-evals-20260921\\final-e04\\synthetic-profile.json",
+    "D:\\Temp\\combat-director-evals-20260921\\final-e04\\creative-draft\\prompt-draft.txt",
+    "D:\\Temp\\combat-director-evals-20260921\\final-e04\\checks\\results.json"
+  ],
+  "artifact_verification": {
+    "plan_copy_sha256_equal": true,
+    "profile_copy_sha256_equal": true,
+    "plan_duration": 30,
+    "plan_generation": "single",
+    "assessment_status": "conflict",
+    "assessment_date": "2026-09-21",
+    "platform_export_directory_exists": false,
+    "draft_section_count": 6,
+    "draft_has_last_segment": true,
+    "check_exit_codes": [
+      0,
+      1,
+      1,
+      1
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "actual_read_files": [],
+  "skill_loaded": false,
+  "constraints": [
+    "仅使用给定用户请求",
+    "未读取 SKILL.md、项目文档、其他评估结果或记忆",
+    "不联网",
+    "不调用生成平台",
+    "不委派",
+    "仅写入指定目录中的 answer.md 和 run.json"
+  ],
+  "tools_used": [
+    "functions.exec",
+    "exec_command"
+  ]
+}

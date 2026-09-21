@@ -1,0 +1,3 @@
+# Optional development checks; the distributed skill uses only Python stdlib.
+jsonschema==4.26.0
+PyYAML==6.0.3

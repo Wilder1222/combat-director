@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-21",
+  "python_requested": "3.10",
+  "status": "not_run",
+  "attempt": [
+    "uv",
+    "python",
+    "install",
+    "3.10"
+  ],
+  "observed_output": "Downloading cpython-3.10.21-windows-x86_64-none (download) (21.3MiB)",
+  "outcome": "Download did not complete during this validation run; installation process cancelled with interrupt. No 3.10 interpreter tests were run.",
+  "exit_code_after_interrupt": 1,
+  "classification": "environment_setup_incomplete, not a test failure"
+}

@@ -1,0 +1,32 @@
+{
+  "task": "new-e01",
+  "skill": "D:\\study\\projects\\combat-director\\evals\\candidates\\0.3.0\\skills\\combat-director\\SKILL.md",
+  "files_read": [
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.3.0\\skills\\combat-director\\SKILL.md",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.3.0\\skills\\combat-director\\references\\choreography.md",
+    "D:\\study\\projects\\combat-director\\evals\\candidates\\0.3.0\\skills\\combat-director\\references\\templates.md"
+  ],
+  "tools_used": [
+    "functions.exec",
+    "exec_command"
+  ],
+  "outputs": [
+    "D:\\Temp\\combat-director-evals-20260921\\new-e01\\answer.md",
+    "D:\\Temp\\combat-director-evals-20260921\\new-e01\\run.json"
+  ],
+  "restrictions": [
+    "仅读取指定技能及按需引用资源",
+    "不读取记忆、其他版本、研究报告或评估结果",
+    "不联网",
+    "不调用生成平台",
+    "不委派",
+    "只交付中文视频提示词",
+    "不自评",
+    "不猜测模型或 token 数据"
+  ],
+  "limitations": [
+    "纯文本编排，未生成视频，也未验证生成效果",
+    "未读取参考视频或音频，声音为提示词中的设计要求",
+    "未进行平台能力核验，未指定平台参数"
+  ]
+}

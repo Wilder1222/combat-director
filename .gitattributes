@@ -1,0 +1,11 @@
+# Preserve exact bytes for attachment manifests, frozen evaluation snapshots,
+# generated examples and release evidence across Windows/Linux checkouts.
+# Diff detection remains automatic; only line-ending conversion is disabled.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Frozen evidence must keep original formatting as well as content.
+sources/attachments/** -whitespace
+evals/baselines/** -whitespace
+evals/candidates/** -whitespace
+evals/results/** -whitespace
+docs/history/** -whitespace
+docs/research/evidence/** -whitespace

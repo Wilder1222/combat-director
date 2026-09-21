@@ -1,0 +1,526 @@
+{
+  "schema_version": "1.2",
+  "id": "alley-letter-15",
+  "provenance": "项目原创结构化教学案例；未生成视频，非媒体观察。",
+  "template": "grounded",
+  "duration": 15,
+  "aspect_ratio": "16:9",
+  "generation": "single",
+  "camera_mode": "one-take",
+  "rules": {
+    "fantasy": false,
+    "max_scale": "person"
+  },
+  "timing": {
+    "lead_in": 0.2,
+    "tail_out": 0.6,
+    "result_at": 14.4
+  },
+  "anchors": [
+    "南口",
+    "北口",
+    "砖墙"
+  ],
+  "cast": [
+    {
+      "id": "A",
+      "description": "成年灰衣女行者",
+      "goal": "取回密函后停手",
+      "prop": "硬木短杖",
+      "hand": "右手"
+    },
+    {
+      "id": "B",
+      "description": "成年褐衣护函者",
+      "goal": "保住密函并脱身",
+      "prop": "封口密函",
+      "hand": "右手"
+    }
+  ],
+  "abilities": [],
+  "references": [],
+  "weapon_profiles": [
+    {
+      "id": "STAFF",
+      "name": "硬木短杖",
+      "type": "钝头木杖",
+      "visible_traits": "深色木纹、无刃无金属护手",
+      "owner_id": "A",
+      "mount": "held"
+    },
+    {
+      "id": "LETTER",
+      "name": "封口密函",
+      "type": "纸质道具",
+      "visible_traits": "米白封套、红色封口、仅一封",
+      "owner_id": "B",
+      "mount": "held"
+    }
+  ],
+  "action_initial_state": {
+    "actors": {
+      "A": {
+        "zone": "巷南",
+        "facing": "关注对方及退路",
+        "support": "双脚落地",
+        "held_items": {
+          "left": "",
+          "right": "STAFF"
+        },
+        "damage": [],
+        "constraints": []
+      },
+      "B": {
+        "zone": "巷北",
+        "facing": "关注对方及退路",
+        "support": "双脚落地",
+        "held_items": {
+          "left": "",
+          "right": "LETTER"
+        },
+        "damage": [],
+        "constraints": []
+      }
+    },
+    "environment": {
+      "南口": "可退出",
+      "北口": "可退出",
+      "砖墙": "完整"
+    }
+  },
+  "headers": {
+    "goal": "窄巷取回密函，低能力尺度，双方均可退出。15秒，一镜到底；最后0.6秒保留呼吸和余动。",
+    "cast": "A 成年灰衣女行者，目标取回密函后停手，初始右手持硬木短杖。\nB 成年褐衣护函者，目标保住密函并脱身，初始右手持封口密函。",
+    "scene": "南口：可退出；北口：可退出；砖墙：完整。写实布料与地面支撑；动作尺度以规则为限。",
+    "budget": "0.2秒入点与0.6秒出点均包含在15秒内。",
+    "continuity": "身份、持物、空间和代价继承上一拍；接触过程可见，不用烟雾或镜头遮挡掩盖交接。"
+  },
+  "beats": [
+    {
+      "id": "B01",
+      "start": 0,
+      "end": 4,
+      "intent": "第一次索回被阻，双方保留退路",
+      "actors": {
+        "A": {
+          "action": "右手横持木杖轻抵B左前臂，身体斜退半步",
+          "performance": "盯密函，呼气后肩部稍沉"
+        },
+        "B": {
+          "action": "左掌推挡A肩前，右手护住密函",
+          "performance": "皱眉看杖身，握函指节收紧"
+        }
+      },
+      "emotion": "急促而克制",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "start",
+        "side": "南侧",
+        "path": "南侧斜向中全景，连续后退半步，手和脚均可见，不切镜",
+        "axis_bridge": ""
+      },
+      "vfx": "无超自然效果，保留真实动作模糊",
+      "environment": "墙面不破坏，鞋底擦出浅灰痕",
+      "sound": "掌接布料与木杖擦袖，无金属火花或碰撞长鸣",
+      "ability_ids": [],
+      "before": {
+        "A": "巷南；关注对方及退路；双脚落地；左手空，右手硬木短杖；损伤：无；限制：无",
+        "B": "巷北；关注对方及退路；双脚落地；左手空，右手封口密函；损伤：无；限制：无",
+        "environment": "南口：可退出；北口：可退出；砖墙：完整",
+        "camera_side": "南侧"
+      },
+      "after": {
+        "A": "巷南外缘；关注对方及退路；双脚落地；左手空，右手硬木短杖；损伤：无；限制：无",
+        "B": "巷北；关注对方及退路；双脚落地；左手空，右手封口密函；损伤：无；限制：无",
+        "environment": "南口：可退出；北口：可退出；砖墙：完整",
+        "camera_side": "南侧"
+      },
+      "action_events": [
+        {
+          "id": "E1",
+          "actor_id": "B",
+          "target_id": "A",
+          "start": 0.2,
+          "end": 2,
+          "response_to": "",
+          "weapon_id": "",
+          "hands_used": [
+            "left"
+          ],
+          "movement": "walk",
+          "action": "左掌推挡A肩前，右手护住密函",
+          "trajectory": {
+            "start": "B左胸前",
+            "path": "短直线前伸",
+            "end": "A肩前",
+            "screen_direction": "保持侧面可读，运动不靠跳切"
+          },
+          "contact": "掌接衣袖，A后退卸力",
+          "outcome": "密函仍在B右手",
+          "transfers": []
+        },
+        {
+          "id": "E2",
+          "actor_id": "A",
+          "target_id": "B",
+          "start": 2,
+          "end": 4,
+          "response_to": "E1",
+          "weapon_id": "STAFF",
+          "hands_used": [
+            "right"
+          ],
+          "movement": "walk",
+          "action": "右手横持木杖轻抵B左前臂，身体斜退半步",
+          "trajectory": {
+            "start": "A身前",
+            "path": "杖身短幅横移",
+            "end": "B左前臂外侧",
+            "screen_direction": "保持侧面可读，运动不靠跳切"
+          },
+          "contact": "木杖贴住衣袖后即撤离",
+          "outcome": "两人不再贴身推挤",
+          "transfers": []
+        }
+      ],
+      "state_delta": {
+        "actors": {
+          "A": {
+            "zone": "巷南外缘"
+          }
+        },
+        "environment": {},
+        "caused_by": [
+          "E2"
+        ]
+      }
+    },
+    {
+      "id": "B02",
+      "start": 4,
+      "end": 10,
+      "intent": "让出退路换回密函",
+      "actors": {
+        "A": {
+          "action": "停住木杖并伸空着的左掌，让出通往北口的直路",
+          "performance": "目光先看封口再回到B，握杖手放松"
+        },
+        "B": {
+          "action": "看到退路后将密函递入A左掌并松手",
+          "performance": "看北口后吐气，右手手指逐一松开"
+        }
+      },
+      "emotion": "从争持转为止争",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "continuous",
+        "side": "南侧",
+        "path": "同侧连续小幅跟进，保持两双手与纸封交接可见，不切镜",
+        "axis_bridge": ""
+      },
+      "vfx": "无超自然效果，保留真实动作模糊",
+      "environment": "封口完整，纸函只有一封，地面擦痕保留",
+      "sound": "纸张轻响，脚步暂停，呼吸可闻",
+      "ability_ids": [],
+      "before": {
+        "A": "巷南外缘；关注对方及退路；双脚落地；左手空，右手硬木短杖；损伤：无；限制：无",
+        "B": "巷北；关注对方及退路；双脚落地；左手空，右手封口密函；损伤：无；限制：无",
+        "environment": "南口：可退出；北口：可退出；砖墙：完整",
+        "camera_side": "南侧"
+      },
+      "after": {
+        "A": "巷南外缘；关注对方及退路；双脚落地；左手封口密函，右手硬木短杖；损伤：无；限制：无",
+        "B": "巷北；关注对方及退路；双脚落地；左手空，右手空；损伤：无；限制：无",
+        "environment": "南口：可退出；北口：可退出；砖墙：完整",
+        "camera_side": "南侧"
+      },
+      "action_events": [
+        {
+          "id": "E3",
+          "actor_id": "A",
+          "target_id": "B",
+          "start": 4,
+          "end": 7,
+          "response_to": "",
+          "weapon_id": "STAFF",
+          "hands_used": [
+            "right",
+            "left"
+          ],
+          "movement": "walk",
+          "action": "停住木杖并伸空着的左掌，让出通往北口的直路",
+          "trajectory": {
+            "start": "巷南外缘",
+            "path": "向墙边移半步",
+            "end": "墙边",
+            "screen_direction": "保持侧面可读，运动不靠跳切"
+          },
+          "contact": "不再发生攻击接触",
+          "outcome": "B看见畅通北口",
+          "transfers": []
+        },
+        {
+          "id": "E4",
+          "actor_id": "B",
+          "target_id": "A",
+          "start": 7,
+          "end": 10,
+          "response_to": "E3",
+          "weapon_id": "",
+          "hands_used": [
+            "right"
+          ],
+          "movement": "walk",
+          "action": "看到退路后将密函递入A左掌并松手",
+          "trajectory": {
+            "start": "B右胸前",
+            "path": "纸封沿可见直线伸出",
+            "end": "A左掌",
+            "screen_direction": "保持侧面可读，运动不靠跳切"
+          },
+          "contact": "纸封由两人短暂共触后完全交接",
+          "outcome": "B右手空，A左手持函",
+          "transfers": [
+            {
+              "item_id": "LETTER",
+              "from_actor": "B",
+              "from_hand": "right",
+              "to_actor": "A",
+              "to_hand": "left",
+              "destination": "A左手"
+            }
+          ]
+        }
+      ],
+      "state_delta": {
+        "actors": {
+          "A": {
+            "held_items": {
+              "left": "LETTER",
+              "right": "STAFF"
+            }
+          },
+          "B": {
+            "held_items": {
+              "left": "",
+              "right": ""
+            }
+          }
+        },
+        "environment": {},
+        "caused_by": [
+          "E3",
+          "E4"
+        ]
+      }
+    },
+    {
+      "id": "B03",
+      "start": 10,
+      "end": 15,
+      "intent": "双方脱离",
+      "actors": {
+        "A": {
+          "action": "左手持函贴胸，右手垂杖，向南口退开",
+          "performance": "肩部放松但仍看B双手"
+        },
+        "B": {
+          "action": "双手张开并向北口退开",
+          "performance": "确认A停手后缓缓吐气"
+        }
+      },
+      "emotion": "克制收束",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "continuous",
+        "side": "南侧",
+        "path": "同一机位侧连续拉开至全景，保留两端退路",
+        "axis_bridge": ""
+      },
+      "vfx": "无超自然效果，保留真实动作模糊",
+      "environment": "墙与纸封完整，擦痕不复位",
+      "sound": "相反方向的脚步和轻微巷风，无台词",
+      "ability_ids": [],
+      "before": {
+        "A": "巷南外缘；关注对方及退路；双脚落地；左手封口密函，右手硬木短杖；损伤：无；限制：无",
+        "B": "巷北；关注对方及退路；双脚落地；左手空，右手空；损伤：无；限制：无",
+        "environment": "南口：可退出；北口：可退出；砖墙：完整",
+        "camera_side": "南侧"
+      },
+      "after": {
+        "A": "南口内侧；关注对方及退路；双脚落地；左手封口密函，右手硬木短杖；损伤：无；限制：无",
+        "B": "北口内侧；关注对方及退路；双脚落地；左手空，右手空；损伤：无；限制：无",
+        "environment": "南口：可退出；北口：可退出；砖墙：完整",
+        "camera_side": "南侧"
+      },
+      "action_events": [
+        {
+          "id": "E5",
+          "actor_id": "A",
+          "target_id": "B",
+          "start": 10,
+          "end": 13,
+          "response_to": "",
+          "weapon_id": "STAFF",
+          "hands_used": [
+            "right",
+            "left"
+          ],
+          "movement": "walk",
+          "action": "左手持函贴胸，右手垂杖，向南口退开",
+          "trajectory": {
+            "start": "墙边",
+            "path": "沿巷南退两步",
+            "end": "南口内侧",
+            "screen_direction": "保持侧面可读，运动不靠跳切"
+          },
+          "contact": "没有新接触",
+          "outcome": "A取得密函且不追击",
+          "transfers": []
+        },
+        {
+          "id": "E6",
+          "actor_id": "B",
+          "target_id": "A",
+          "start": 13,
+          "end": 14.4,
+          "response_to": "E5",
+          "weapon_id": "",
+          "hands_used": [],
+          "movement": "walk",
+          "action": "双手张开并向北口退开",
+          "trajectory": {
+            "start": "巷中",
+            "path": "北向两步",
+            "end": "北口内侧",
+            "screen_direction": "保持侧面可读，运动不靠跳切"
+          },
+          "contact": "没有新接触",
+          "outcome": "B可以离开，最后0.6秒只保留呼吸",
+          "transfers": []
+        }
+      ],
+      "state_delta": {
+        "actors": {
+          "A": {
+            "zone": "南口内侧"
+          },
+          "B": {
+            "zone": "北口内侧"
+          }
+        },
+        "environment": {},
+        "caused_by": [
+          "E5",
+          "E6"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "P01",
+      "beat_ids": [
+        "B01"
+      ],
+      "summary": {
+        "action": "A：右手横持木杖轻抵B左前臂，身体斜退半步；B：左掌推挡A肩前，右手护住密函",
+        "expression": "A：盯密函，呼气后肩部稍沉；B：皱眉看杖身，握函指节收紧",
+        "emotion": "急促而克制",
+        "camera": "南侧斜向中全景，连续后退半步，手和脚均可见，不切镜",
+        "vfx": "无超自然效果，保留真实动作模糊",
+        "environment": "墙面不破坏，鞋底擦出浅灰痕",
+        "sound": "掌接布料与木杖擦袖，无金属火花或碰撞长鸣",
+        "continuity": "A：巷南外缘；关注对方及退路；双脚落地；左手空，右手硬木短杖；损伤：无；限制：无；B：巷北；关注对方及退路；双脚落地；左手空，右手封口密函；损伤：无；限制：无"
+      }
+    },
+    {
+      "id": "P02",
+      "beat_ids": [
+        "B02"
+      ],
+      "summary": {
+        "action": "A：停住木杖并伸空着的左掌，让出通往北口的直路；B：看到退路后将密函递入A左掌并松手",
+        "expression": "A：目光先看封口再回到B，握杖手放松；B：看北口后吐气，右手手指逐一松开",
+        "emotion": "从争持转为止争",
+        "camera": "同侧连续小幅跟进，保持两双手与纸封交接可见，不切镜",
+        "vfx": "无超自然效果，保留真实动作模糊",
+        "environment": "封口完整，纸函只有一封，地面擦痕保留",
+        "sound": "纸张轻响，脚步暂停，呼吸可闻",
+        "continuity": "A：巷南外缘；关注对方及退路；双脚落地；左手封口密函，右手硬木短杖；损伤：无；限制：无；B：巷北；关注对方及退路；双脚落地；左手空，右手空；损伤：无；限制：无"
+      }
+    },
+    {
+      "id": "P03",
+      "beat_ids": [
+        "B03"
+      ],
+      "summary": {
+        "action": "A：左手持函贴胸，右手垂杖，向南口退开；B：双手张开并向北口退开",
+        "expression": "A：肩部放松但仍看B双手；B：确认A停手后缓缓吐气",
+        "emotion": "克制收束",
+        "camera": "同一机位侧连续拉开至全景，保留两端退路",
+        "vfx": "无超自然效果，保留真实动作模糊",
+        "environment": "墙与纸封完整，擦痕不复位",
+        "sound": "相反方向的脚步和轻微巷风，无台词",
+        "continuity": "A：南口内侧；关注对方及退路；双脚落地；左手封口密函，右手硬木短杖；损伤：无；限制：无；B：北口内侧；关注对方及退路；双脚落地；左手空，右手空；损伤：无；限制：无"
+      }
+    }
+  ],
+  "editorial_reviews": {
+    "headers": {
+      "input_digest": "3da83ef3421f7dc1a086976e082b951d66684ce3854a2b6169c7a76d26825929",
+      "expression_digest": "5064096fffe04deb0c87ee2e3ea57685f2185e80fb6c6268681f62c9d6ce9685",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "目标、人物和初始兵器与结构化设定对应。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "本例无幻想能力；持物与接触材质一致。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    },
+    "P01": {
+      "input_digest": "f21685b068be81b3e6737daabb3f2b87c4760ef28b7d49f3eace75280198145f",
+      "expression_digest": "6877ee0295c9c416221f2ca0c4017722aad9fa89fe199c8f8fdc9f9dabb0bd54",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "B推掌后A杖抵前臂，无金属火花；函仍在B右手。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "本例无幻想能力；持物与接触材质一致。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    },
+    "P02": {
+      "input_digest": "2cedc828e2c96f0e8e3474074bed9d71adc22c2c1e1dc958da0490fd33ebd212",
+      "expression_digest": "feb82a583fb7edfabfbb984c331fa0847022da3769fab1c69a9e0e67cb206962",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "A让出北口，B自愿交函到A左手；A右手持杖不断。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "本例无幻想能力；持物与接触材质一致。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    },
+    "P03": {
+      "input_digest": "105db86bc416e03bcc1ee8285da3938f7d37d4f6a2bd178d901ae6d8056156b1",
+      "expression_digest": "dff11f8cacc00dfba94f4de5e9c4b0f1f2387e404037dfb0b4a4b95802392100",
+      "reviewer": "Codex scenario editorial review 2026-09-21",
+      "method": "agent",
+      "checks": {
+        "identity_action": "A南退B北退，14.4秒前分开，无追击。",
+        "camera_timing": "单镜S01从南侧连续跟随，末段结果在出点前成立；没有文字切镜指令。",
+        "ability_cost": "本例无幻想能力；持物与接触材质一致。",
+        "continuity": "主段从事件与状态变化编排；before/after与结构化投影一致，原件未被当作媒体观察。 无损伤状态现已显式投影；投影与结构化状态一致。"
+      }
+    }
+  },
+  "initial_state": {
+    "A": "巷南；关注对方及退路；双脚落地；左手空，右手硬木短杖；损伤：无；限制：无",
+    "B": "巷北；关注对方及退路；双脚落地；左手空，右手封口密函；损伤：无；限制：无",
+    "environment": "南口：可退出；北口：可退出；砖墙：完整",
+    "camera_side": "南侧"
+  }
+}

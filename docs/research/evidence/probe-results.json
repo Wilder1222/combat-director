@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-21",
+  "version": "0.2.0",
+  "scope": "Diagnostic probes, not new regression tests or model behavior evaluations.",
+  "source_hashes": {
+    "skills/combat-director/scripts/combat_tool.py": "d15294d2d1c68212f0f8151950437c6a53a7dd2bdfb0ee49794e70ff169c23c8",
+    "skills/combat-director/assets/combat-plan.schema.json": "f9a1322c4d3edcb9feb97293deb4aa962416c033d61297fad1873eb4ba5c5876",
+    "skills/combat-director/SKILL.md": "c8df987e94d593fea5b264d2e67f3683b9031a8f54c430254509ac7faf60c27a"
+  },
+  "probes": [
+    {
+      "id": "A01",
+      "description": "Change actor prop only; header and prompt retain the old weapon.",
+      "validator_accepts": true,
+      "prompt_changed": false,
+      "error": null
+    },
+    {
+      "id": "A02",
+      "description": "Change director action only; compiled prompt is unchanged.",
+      "validator_accepts": true,
+      "prompt_changed": false,
+      "error": null
+    },
+    {
+      "id": "A03",
+      "description": "One-take structured camera with contradictory cut in prompt summary.",
+      "validator_accepts": true,
+      "prompt_changed": true,
+      "error": null
+    },
+    {
+      "id": "A04",
+      "description": "Change ability cost only; prompt retains old cost.",
+      "validator_accepts": true,
+      "prompt_changed": false,
+      "error": null
+    },
+    {
+      "id": "A05",
+      "description": "Use bound status with prose evidence but no asset identity or receipt.",
+      "validator_accepts": true,
+      "prompt_changed": false,
+      "error": null
+    },
+    {
+      "id": "A06",
+      "description": "Compare generic and xiaoyunque deliverables.",
+      "changed_files": [
+        "handoff.md"
+      ]
+    },
+    {
+      "id": "A07",
+      "description": "Future maxLength keyword is silently ignored by subset checker.",
+      "unknown_constraint_ignored": true
+    }
+  ]
+}

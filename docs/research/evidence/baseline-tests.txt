@@ -1,0 +1,31 @@
+test_ability_limits (test_combat_tool.CombatTests.test_ability_limits) ... ok
+test_ability_owner (test_combat_tool.CombatTests.test_ability_owner) ... ok
+test_axis_change (test_combat_tool.CombatTests.test_axis_change) ... ok
+test_cli (test_combat_tool.CombatTests.test_cli) ... ok
+test_confirmed_limit (test_combat_tool.CombatTests.test_confirmed_limit) ... ok
+test_duplicate_ids (test_combat_tool.CombatTests.test_duplicate_ids) ... ok
+test_export_no_overwrite_then_force (test_combat_tool.CombatTests.test_export_no_overwrite_then_force) ... ok
+test_export_source_protected (test_combat_tool.CombatTests.test_export_source_protected) ... ok
+test_false_binding_and_frame_actor (test_combat_tool.CombatTests.test_false_binding_and_frame_actor) ... ok
+test_gap (test_combat_tool.CombatTests.test_gap) ... ok
+test_inheritance (test_combat_tool.CombatTests.test_inheritance) ... ok
+test_missing_opponent (test_combat_tool.CombatTests.test_missing_opponent) ... ok
+test_missing_performance (test_combat_tool.CombatTests.test_missing_performance) ... ok
+test_nonfinite_and_bool (test_combat_tool.CombatTests.test_nonfinite_and_bool) ... ok
+test_one_take_cuts (test_combat_tool.CombatTests.test_one_take_cuts) ... ok
+test_one_take_shot_change (test_combat_tool.CombatTests.test_one_take_shot_change) ... ok
+test_overlap (test_combat_tool.CombatTests.test_overlap) ... ok
+test_result_and_handles (test_combat_tool.CombatTests.test_result_and_handles) ... ok
+test_schema_rejects_unknown_and_wrong_types (test_combat_tool.CombatTests.test_schema_rejects_unknown_and_wrong_types) ... ok
+test_section_coverage (test_combat_tool.CombatTests.test_section_coverage) ... ok
+test_symlink_rejected (test_combat_tool.CombatTests.test_symlink_rejected) ... skipped 'OS does not permit symlink creation'
+test_three_examples_and_prompt_sync (test_combat_tool.CombatTests.test_three_examples_and_prompt_sync) ... ok
+test_total_duration (test_combat_tool.CombatTests.test_total_duration) ... ok
+test_twelve_exports_no_source_mutation (test_combat_tool.CombatTests.test_twelve_exports_no_source_mutation) ... ok
+test_unknown_ability (test_combat_tool.CombatTests.test_unknown_ability) ... ok
+test_zero_beat (test_combat_tool.CombatTests.test_zero_beat) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 2.022s
+
+OK (skipped=1)
