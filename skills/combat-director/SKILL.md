@@ -1,8 +1,8 @@
 ---
 name: combat-director
-description: 独立战斗导演技能。用于打斗视频拆解、武侠攻防、仙侠斗法、巨型敌人战、战斗分镜与视频提示词、打斗失败诊断。根据人物目标、能力边界和空间状态编排战斗，输出中文六轨时间轴与平台提示词。可独立使用，也可与其他导演技能交换方案；不负责日常人像、完整剧集世界观或未经授权的视频生成。
+description: 独立战斗导演技能。用于打斗视频与提示词拆解、武侠攻防、仙侠斗法、巨型敌人战、角色战斗登场、战斗分镜与视频提示词、打斗失败诊断。根据人物目标、能力边界和空间状态编排战斗，输出中文六轨时间轴与平台提示词。可独立使用，也可与其他导演技能交换方案；不负责日常人像、完整剧集世界观或未经授权的视频生成。
 metadata:
-  version: "0.5.0"
+  version: "0.6.0"
   language: "zh-CN"
 ---
 
@@ -17,7 +17,9 @@ metadata:
 | 用户任务 | 路由 | 按需读取 |
 |---|---|---|
 | 从视频提取可复用结构 | 拆解 | [references/source-case.md](references/source-case.md)、[references/quality.md](references/quality.md) |
+| 拆解、整理或改写现成打斗提示词 | 文本拆解与重编排 | [references/prompt-craft.md](references/prompt-craft.md)、[references/source-case.md](references/source-case.md) |
 | 新建战斗、换角色或换场景 | 编排 | [references/choreography.md](references/choreography.md)、[references/templates.md](references/templates.md) |
+| 角色登场、首斩前收黑、预告式战斗 | 登场片段 | [references/prompt-craft.md](references/prompt-craft.md)、[examples/entrance-cliffhanger-15.md](examples/entrance-cliffhanger-15.md) |
 | 输出 LibTV、小云雀或其他平台提示词 | 适配 | [references/platforms.md](references/platforms.md)、[assets/platform-profiles.json](assets/platform-profiles.json) |
 | 检查或修复生成失败 | 审片与修复 | [references/quality.md](references/quality.md)、[references/review-loop.md](references/review-loop.md) |
 | 供其他 Agent 或工具消费 | 结构化交接 | [references/contract.md](references/contract.md)、[assets/combat-plan.schema.json](assets/combat-plan.schema.json) |
@@ -37,6 +39,8 @@ metadata:
 ### 1. 建立约束卡
 
 写清：战斗为何发生、每方要什么、谁先占优、转折因何出现、结尾需要解决什么。再锁定时长、画幅、镜头模式、参考模式、人数、武器、持械手、能力上限和禁用元素。
+
+先辨认完整交手、群战升级、登场预告等片段目的。结尾可为脱离、压制、胜负未定或命中前收黑；悬念片段不补造命中与伤亡。用户给出的台词、允许切镜、慢动作或定格例外优先于默认值。来源内部矛盾先明确适用范围，不能把某一版本的禁令套到其他版本。
 
 区分三件事：
 - 单次生成：只提交一个生成任务，可以含多个镜头。
@@ -61,11 +65,13 @@ metadata:
 
 换兵器或改动作时，同时核对材质反馈、握法、作用距离和空间路径。按“起点 → 实际移动方向 → 终点”逐拍走一遍，确认对手沿这条路确实能到达摘要中的位置；相机左右不能代替世界方位。复杂交手可使用[可选动作契约](references/action-contract.md)，把兵器、轨迹、回应、转移与代价直接带入提示词。
 
+飞剑离手后再次近战，要交代回程、握回的手和时机；能量剑影与实体兵器分开计数。格挡后的回弹、卸力和步伐可以直接成为下一次反击的起势，不在每拍重新站定。弱点反制按“造成 → 留存 → 被发现 → 命中同一处”检查，不能临时发明“先前裂口”。详见[提示词编排方法](references/prompt-craft.md)。
+
 ### 4. 编译两层时间轴
 
 导演层可以有 8 至 11 个节拍；默认把 30 秒投喂层整理为 4 至 6 个主段，每段一个主结果。具体数量是编排建议，不是模型参数。用户要求逐秒细稿时给导演层，不自动把每个微动作都变成切镜。
 
-保留开场/结尾余量，但不能超过实际可选生成时长。比如 30 秒总长中含 0.3 秒入点与 0.7 秒出点，则主要行动窗口是 29 秒；不能要求 30 秒行动再额外生成 1 秒。结尾余量可以是尘土沉降、呼吸或威胁停驻，不必机械定格。
+保留开场/结尾余量，但不能超过实际可选生成时长。比如 30 秒总长中含 0.3 秒入点与 0.7 秒出点，则主要行动窗口是 29 秒；不能要求 30 秒行动再额外生成 1 秒。台词与动作可以并行，但要为完整发音留出时间；超载先删重复交锋、挪出说话窗口。结尾按意图选择动态余势或明确时段的定格，不能同时要求全场冻结、尘土飘动和相机继续推进。
 
 单镜模式必须给一条连续机位路径；所有镜头编号一致，后续转场只能连续。慢动作、碰撞停顿只用于少数重点，不默认为整个片段。
 

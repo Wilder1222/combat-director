@@ -1,0 +1,118 @@
+{
+  "date": "2026-09-22",
+  "cases": [
+    {
+      "id": "intro",
+      "request": "请把这份素材整理成可直接投喂的15秒成年女刀客登场片段，允许切镜，保留原台词和第一斩即将落下时收黑的悬念结尾。只给中文提示词，不实际生成。",
+      "attachment": "5-小师妹首登.txt"
+    },
+    {
+      "id": "duel",
+      "request": "请把这份30秒双人斗法提示词修订成六段，保留一镜到底、人物设定、双方招式归属和末段剑指咽喉的压制结尾。只输出完整中文提示词，不实际生成。",
+      "attachment": "3-双人打斗第二弹.txt"
+    }
+  ],
+  "conditions": {
+    "baseline": "frozen evals/candidates/0.5.0/skills/combat-director",
+    "candidate": "skills/combat-director 0.6.0; files read are hashed in each run.json"
+  },
+  "isolation": "separate fresh agents; no parent history, memory, network, media generation or delegation; minimum raw source plus skill and necessary references",
+  "limits": [
+    "Both cases come from the same source set used to develop the new guidance. The intro teaching example shares its source. This is a regression and retrieval test, not held-out generalization.",
+    "No model identifier, token count, timing, media or audio evidence available.",
+    "Baseline intro run recorded paths but not per-input hashes; its referenced baseline snapshot is frozen."
+  ],
+  "artifacts": [
+    {
+      "path": "evals/results/prompt-0.6.0/baseline-duel/answer.md",
+      "sha256": "cee083959e8335fd0640b313b3cdf5491bff500a11ba6ec0b894a9d2274cab58",
+      "bytes": 15061
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/baseline-duel/run.json",
+      "sha256": "6f09f78cb0fb96435ade70ac6177f96f02ee0a74a81164ed2495896a547636c3",
+      "bytes": 3702
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/baseline-intro/answer.md",
+      "sha256": "768992ffeaa3e5903d3a4e41d381ee1bedf0719af13f4fada0bd8aa8979a1727",
+      "bytes": 6916
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/baseline-intro/run.json",
+      "sha256": "89564b35de42c3a7a730e45304a2523e4b31a891755bb0931ab05e22a89991ec",
+      "bytes": 2169
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/candidate-duel/answer.md",
+      "sha256": "3c0f0384af551fb9b85d531a9d48931f317b17dd292b14b9764902eabf98c5af",
+      "bytes": 14146
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/candidate-duel/run.json",
+      "sha256": "dd56f9f4846299dd397bbe5f6aa478246c156af680f63021bf3506e6164c188b",
+      "bytes": 4111
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/candidate-intro/answer.md",
+      "sha256": "fad0350b62784312c37d44f47feb1304e4fbf667867a875f3b312a97d82d2f80",
+      "bytes": 6406
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/candidate-intro/run.json",
+      "sha256": "fad4945dbaa776c56771eddf1d0708c92006c3c240471b1c71d03f14fb5981a6",
+      "bytes": 4152
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/final-duel/answer.md",
+      "sha256": "ef176fa307d4d49e60f33374b00bfd2d0054519cddf73a2e8473724c82620546",
+      "bytes": 12503
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/final-duel/run.json",
+      "sha256": "57f69f9b462036f91e469b2f4c70c1ea49ed63aac953ca75bd24bd704136290d",
+      "bytes": 3693
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/independent-review.md",
+      "sha256": "ab83ba6b242caa4c78ac9dda98603eeede9cb48038db8d688d07c0e04752f93c",
+      "bytes": 13513
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/independent-review.run.json",
+      "sha256": "067d8c363562bd67535b1a75a42eeb363ef0b527ec0b4f8f43ad10c67351ad35",
+      "bytes": 2338
+    },
+    {
+      "path": "evals/results/prompt-0.6.0/inputs/prompt-craft.initial.md",
+      "sha256": "796e9261b0f2a2ac7bf937683200108c8c5cea7f6fccd7f7677cf8a8db01c69d",
+      "bytes": 8700
+    }
+  ],
+  "initial_runs_per_case_per_condition": 1,
+  "initial_runs": 4,
+  "targeted_retests": 1,
+  "total_task_executions": 5,
+  "independent_reviews": 1,
+  "blind_mapping": {
+    "intro-X": "candidate-intro",
+    "intro-Y": "baseline-intro",
+    "duel-X": "baseline-duel",
+    "duel-Y": "candidate-duel"
+  },
+  "initial_reference_snapshot": {
+    "original_path": "skills/combat-director/references/prompt-craft.md",
+    "snapshot": "evals/results/prompt-0.6.0/inputs/prompt-craft.initial.md",
+    "sha256": "796e9261b0f2a2ac7bf937683200108c8c5cea7f6fccd7f7677cf8a8db01c69d",
+    "reason": "Preserve guidance actually read before the narrow return-path correction."
+  },
+  "targeted_retest": {
+    "case": "duel",
+    "output": "evals/results/prompt-0.6.0/final-duel/answer.md",
+    "run": "evals/results/prompt-0.6.0/final-duel/run.json",
+    "same_user_request": true,
+    "fresh_executor_without_prior_findings": true,
+    "reviewer": "main task, full text read; not a second blind review",
+    "targeted_result": "The physical sword stays above the woman during the projected sword rain, then descends directly to her hand; no unexplained departure to the wind barrier."
+  }
+}

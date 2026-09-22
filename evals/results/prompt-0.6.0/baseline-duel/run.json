@@ -1,0 +1,82 @@
+{
+  "task": "独立 Skill 行为测试：30秒双人斗法提示词修订为六段，仅文本交付",
+  "skill": "combat-director 0.5.0（指定候选目录）",
+  "output_file": "D:\\Temp\\combat-prompts-20260922\\baseline-duel\\answer.md",
+  "inputs_read": [
+    {
+      "path": "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\SKILL.md",
+      "sha256": "B185E5F01298A7B3AF98F9315D1F8A23067EA90B1A42A7EA7248841D4FC7AD89",
+      "purpose": "指定技能入口及工作约束"
+    },
+    {
+      "path": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0bec8-f6bf-7e23-a8b3-cd137a8a0045\\6C79561A-D590-477F-BC67-F8B10429A445\\3-双人打斗第二弹.txt",
+      "sha256": "4EB1EBADCDE398F56750AC6AF229E07637C026E280C3DBBECDF5FBAFA22EDC12",
+      "purpose": "用户指定的唯一原稿输入"
+    },
+    {
+      "path": "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\references\\choreography.md",
+      "sha256": "96E35B6B0A265255DDB9857F87CCA5E9C5728C0B5CBC67FE9CA588155D46B430",
+      "purpose": "六轨编排、时间覆盖与连续性判断"
+    },
+    {
+      "path": "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\references\\templates.md",
+      "sha256": "7D2DD01596B2111703658F02B3E6622380A75C2B2F8A909266CD36129AA3C476",
+      "purpose": "选择适用于原稿的升级式斗法组织方式"
+    },
+    {
+      "path": "D:\\study\\projects\\combat-director\\evals\\candidates\\0.5.0\\skills\\combat-director\\references\\action-contract.md",
+      "sha256": "E6F32FAE84BEBB623B0CC674A6D912B11E662F6AA41D505D6194618049FF3C26",
+      "purpose": "自然语言交手、持械与转移的复核方法；未启用工程JSON流程"
+    }
+  ],
+  "tools_used": [
+    {
+      "name": "functions.exec",
+      "purpose": "编排执行命令调用并获取结果"
+    },
+    {
+      "name": "tools.exec_command",
+      "purpose": "通过PowerShell读取五个指定范围内的输入、计算SHA-256、写入输出并进行结构核对"
+    }
+  ],
+  "command_operations": [
+    "Get-Content -LiteralPath -Raw -Encoding UTF8",
+    "Get-FileHash -LiteralPath -Algorithm SHA256",
+    "System.IO.Directory.CreateDirectory",
+    "System.IO.File.WriteAllText",
+    "对内存中的提示词字符串进行六段边界与时长覆盖核对"
+  ],
+  "missing_evidence": [
+    "本次仅阅读所列文字输入，没有读取原视频、角色参考图、音轨或生成成片；不能声明完成逐帧观察或实听声音。",
+    "提示词中的声音是创作设计，未经音轨核验。",
+    "未联网，未核验任何平台、模型或单次生成时长选项。",
+    "未生成媒体，六段动作和连续运镜只有文本复核，没有出片效果证据。"
+  ],
+  "creative_assumptions": [
+    "16:9画幅与两位成年虚构角色采用技能缺省。",
+    "世界东西南北、机位路径、具体持械手和局部距离为本次编排补充，用于保持连续性。"
+  ],
+  "scope": {
+    "network_used": false,
+    "media_generated": false,
+    "delegated": false,
+    "memory_read": false,
+    "current_project_files_read": false,
+    "other_evaluations_or_attachments_read": false,
+    "output_directory": "D:\\Temp\\combat-prompts-20260922\\baseline-duel"
+  },
+  "validation": {
+    "method": "文本自审与内存字符串检查",
+    "segments": 6,
+    "timing": [
+      "0—5秒",
+      "5—10秒",
+      "10—15秒",
+      "15—20秒",
+      "20—26秒",
+      "26—30秒"
+    ],
+    "duration_seconds": 30,
+    "generated_video_validated": false
+  }
+}

@@ -39,9 +39,15 @@ def main():
         run('rebuild action examples',[sys.executable,'scripts/build_action_examples.py'])
         current={p.name:sha(p) for p in examples.iterdir() if p.suffix in ('.json','.txt')}
         if prior != current: raise ValueError('Rebuild changed checked-in artifacts; review the generated difference')
-        source=ROOT/'sources/attachments/2026-09-21'
-        for item in json.loads((source/'manifest.json').read_text(encoding='utf-8'))['files']:
-            if sha(source/item['name'])!=item['sha256']: raise ValueError('Source attachment changed: '+item['name'])
+        source_batches=[]
+        for manifest_path in sorted((ROOT/'sources/attachments').glob('*/manifest.json')):
+            items=json.loads(manifest_path.read_text(encoding='utf-8'))['files']
+            for item in items:
+                source=manifest_path.parent/item['name']
+                if sha(source)!=item['sha256'] or source.stat().st_size!=item['bytes']:
+                    raise ValueError('Source attachment changed: '+str(source.relative_to(ROOT)))
+            source_batches.append({'manifest':str(manifest_path.relative_to(ROOT)).replace('\\','/'),
+                                   'files_checked':len(items)})
         run('unittest',[sys.executable,'-m','unittest','discover','-s','tests','-v'])
         run('standard schemas',[sys.executable,'scripts/check_schemas.py'])
         run('package structure',[sys.executable,'scripts/project.py','validate'])
@@ -87,7 +93,8 @@ def main():
             run('legacy migration',[sys.executable,cli,'migrate',ROOT/'evals/baselines/0.2.0/skills/combat-director/examples/grounded-15.plan.json','--out',Path(tmp)/'migrated.json'],cwd=tmp)
             run('unreviewed migration cannot render',[sys.executable,cli,'render',Path(tmp)/'migrated.json','--out-dir',Path(tmp)/'blocked'],1,cwd=tmp)
         report={'version':version,'python':sys.version,'platform':sys.platform,'checks':results,
-                'rebuild_reproducible':True,'source_hashes_unchanged':True,'archive':str(archive.relative_to(ROOT)),
+                'rebuild_reproducible':True,'source_hashes_unchanged':True,'source_batches':source_batches,
+                'archive':str(archive.relative_to(ROOT)),
                 'archive_sha256':sha(archive),'archive_files':archive_files,'archive_reproducible':True,
                 'scope':'Local checks only; does not prove host discovery or video quality.'}
     except (ValueError,OSError) as exc:

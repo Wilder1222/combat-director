@@ -1,0 +1,95 @@
+{
+  "received": "2026-09-22",
+  "evidence_type": "user-provided prompt text; no reference images, video or audio inspected",
+  "line_numbering": "1-based inclusive, UTF-8 decoded splitlines; variant ranges identify prompt bodies, not media timecodes",
+  "files": [
+    {
+      "name": "1-最新打斗提示词.txt",
+      "sha256": "c8c846bd8af34e10d04e903694e43d55b412a82f4f01a09fe6567d8d8107d491",
+      "bytes": 10939,
+      "lines": 86,
+      "variants": [
+        {
+          "id": "P1A",
+          "start_line": 3,
+          "end_line": 40
+        },
+        {
+          "id": "P1B",
+          "start_line": 49,
+          "end_line": 86
+        }
+      ]
+    },
+    {
+      "name": "2-双女.txt",
+      "sha256": "2acad71184a017b1c19bcf4bb91d64f43d087190d943548c6d6b8aa43102ecdd",
+      "bytes": 21194,
+      "lines": 221,
+      "variants": [
+        {
+          "id": "P2A",
+          "start_line": 1,
+          "end_line": 104
+        },
+        {
+          "id": "P2B",
+          "start_line": 114,
+          "end_line": 221
+        }
+      ]
+    },
+    {
+      "name": "3-双人打斗第二弹.txt",
+      "sha256": "4eb1ebadcde398f56750ac6af229e07637c026e280c3dbbecdf5fbafa22edc12",
+      "bytes": 12326,
+      "lines": 42,
+      "variants": [
+        {
+          "id": "P3",
+          "start_line": 1,
+          "end_line": 42
+        }
+      ]
+    },
+    {
+      "name": "4-双人打斗.txt",
+      "sha256": "84b4f86c46b0a010b7aaa2eec2851367a615040e6cfd322659755438b1d2135f",
+      "bytes": 12256,
+      "lines": 45,
+      "variants": [
+        {
+          "id": "P4",
+          "start_line": 1,
+          "end_line": 45
+        }
+      ]
+    },
+    {
+      "name": "5-小师妹首登.txt",
+      "sha256": "aecdc1867e6b59a858a5cca3a0d7a808088c1ad36d8858d0bd19d19619e65cd8",
+      "bytes": 3965,
+      "lines": 17,
+      "variants": [
+        {
+          "id": "P5",
+          "start_line": 1,
+          "end_line": 17
+        }
+      ]
+    },
+    {
+      "name": "6-双男.txt",
+      "sha256": "dc7a7facb4ea37da60b2ef8657d344f3568e4945449b64d6225128221e6d3fbe",
+      "bytes": 14683,
+      "lines": 29,
+      "variants": [
+        {
+          "id": "P6",
+          "start_line": 1,
+          "end_line": 29
+        }
+      ]
+    }
+  ]
+}

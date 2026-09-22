@@ -1,6 +1,6 @@
 # Combat Director · 独立战斗导演
 
-**0.5.0 · 2026-09-21**。以用户提供的六份对话附件为基础，支持独立 Agent Skill 与 Codex 插件打包。新增计划复核、具体交手、审片状态与平台证据检查；无需 CineWeave、MCP 服务或视频平台插件即可完成文本创作。
+**0.6.0 · 2026-09-22**。支持独立 Agent Skill 与 Codex 插件打包。基于首批六份附件重建，并详细拆解新增六份打斗提示词中的八套方案，补充交手桥接、飞剑归属、弱点回收与登场预告。无需 CineWeave、MCP 服务或视频平台插件即可完成文本创作。
 
 源码仓库：[Wilder1222/combat-director](https://github.com/Wilder1222/combat-director)。版本变更见[CHANGELOG.md](CHANGELOG.md)。
 
@@ -10,6 +10,7 @@
 - 六轨导演时间轴：人物攻防、表演情绪、摄影机、特效、环境反馈、声音。
 - 导演细拍与投喂主段分离，保存人物、武器、能力代价与场景连续性。
 - 中文八标签提示词、平台交接、审片与最小修复。
+- 现成提示词分版本拆解、武器召回与回握、动作接力、旧伤铺垫、台词预算和镜头/定格例外复核。
 - 可选兵器、轨迹、回应、持物转移和能力代价契约，直接进入最终提示词。
 - JSON 计划、摘要失效检查和七份文件导出；审片记录与后续起点核对；不执行视频生成。
 
@@ -42,6 +43,8 @@
 
 六套均是文本设计，没有实际视频出片验证。
 
+另有两套直接阅读的文字案例：[18秒飞剑回握与旧裂口](skills/combat-director/examples/return-and-payoff-18.md)、[15秒登场与首斩前收黑](skills/combat-director/examples/entrance-cliffhanger-15.md)。它们展示新增编排方法，没有配套JSON，也不冒充CLI已校验的动作事实。
+
 ## 可选工程工具
 
 Python 3.10+，标准库，无联网和账号读取。以下命令从项目根目录运行：
@@ -64,22 +67,24 @@ validate 和 render 都接受 `--max-duration 15`。30秒计划在确认上限15
 
 ## Codex 插件
 
-项目根目录的 `.codex-plugin/plugin.json` 指向完整技能目录。构建产物为 `dist/combat-director-0.5.0.zip`；仅包含插件清单、技能入口、参考文档、Schema、脚本与示例。原始附件、测试、评估快照和仓库文档不进入插件包。
+项目根目录的 `.codex-plugin/plugin.json` 指向完整技能目录。构建产物为 `dist/combat-director-0.6.0.zip`；仅包含插件清单、技能入口、参考文档、Schema、脚本与示例。原始附件、测试、评估快照和仓库文档不进入插件包。
 
-当前没有注册市场或安装插件。`codex plugin add <plugin>@<marketplace>` 需要已配置的可用市场条目，ZIP 构建不等于安装。仓库尚未指定开源许可证。
+`codex plugin add <plugin>@<marketplace>` 需要可用的市场条目，ZIP构建不等于安装。本机使用个人市场的本地来源；安装/升级状态与代码验证分别记录于[验证报告](docs/validation.md)。其他机器仍需配置自己的安装来源。仓库尚未指定开源许可证。
 
 ## 来源与维护
 
 六份原件及 SHA-256 存档于 `sources/attachments/2026-09-21`，不修改原件。[来源记录](docs/source-status.md) 区分继承内容与重建内容；[本次验证](docs/validation.md) 不沿用附件的历史测试计数。
 
+新增六份原件存于 `sources/attachments/2026-09-22`，保留哈希和八个版本的范围。[逐份拆解](docs/research/2026-09-22-combat-prompt-breakdown.md)包含时间结构、优势、冲突和修订理由；运行包只收录提炼的方法及两套文字例，未读取的参考图和视频不会被写成已观察证据。
+
 `references/`、脚本、Schema 和 plan.json 在六份附件中缺失，本项目重新实现这些配套资源。三份提示词保留其核心内容，修复拼句、方位歧义及落刀因果。脚本版本不宣称与缺失原实现兼容。
 
 `python scripts/rebuild_examples.py` 重建原三例，`python scripts/build_action_examples.py` 重建新增三例；会覆盖对应派生文件。编辑源在两个脚本，固定复核凭证在 `sources/editorial/`，源内容改变后重建会拒绝过期凭证。`build_action_examples.py --drafts` 可先生成未复核草稿。新创作另存输出目录，不修改随包示例。
 
-平台当前能力、实际视频质量、原 MP4 的逐帧还原与 Codex 市场安装均未验证。程序不做物理模拟，主段摘要与细拍语义仍需人工或多模态复核。
+平台当前能力、实际视频质量与原MP4的逐帧还原均未验证。程序不做物理模拟，主段摘要与细拍语义仍需人工或多模态复核；新提示词方法中的语义对读也没有伪装为确定性程序检查。
 
 ## 设计调研与完善计划
 
 [2026-09-21 设计调研](docs/research/2026-09-21-skill-design-review.md) 保留 0.2.0 的调查基线；[分阶段计划](docs/plans/2026-09-21-improvement-plan.md) 定义实施范围。[实施进度](docs/implementation/progress.md) 区分已落地能力、文字评估结果和待完成的宿主/媒体验证。
 
-本轮变化见[变更记录](CHANGELOG.md)；试点与失败分析见[行为评估](docs/implementation/behavior-evaluation.md)。0.5.0完成23项本地发布流程检查，45项单测中44通过、1项因Windows链接权限跳过。当前不以工程测试声称视频效果或已安装的宿主路由通过。
+本轮变化见[变更记录](CHANGELOG.md)。早期试点与失败分析保留在[原行为评估](docs/implementation/behavior-evaluation.md)，新增素材的两题旧版/新版比较见[0.6.0文字评估](docs/implementation/prompt-evaluation-0.6.0.md)。本地发布流程、运行包与安装证据见[当前验证](docs/validation.md)，不以这些检查声称视频效果通过。

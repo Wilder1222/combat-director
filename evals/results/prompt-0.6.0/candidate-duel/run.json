@@ -1,0 +1,85 @@
+{
+  "task": "将指定30秒双人斗法文字提示词修订为六段，保留一镜到底、人物设定、双方招式归属和末段剑指咽喉的压制结尾。仅交付中文提示词，不生成媒体。",
+  "status": "completed_text_revision",
+  "output": "D:\\Temp\\combat-prompts-20260922\\candidate-duel\\answer.md",
+  "read_files": [
+    {
+      "path": "D:\\study\\projects\\combat-director\\skills\\combat-director\\SKILL.md",
+      "role": "技能入口",
+      "scope": "全文",
+      "sha256": "E13788BFE261C045A7F75B04F117BEB34F550836B96E59CD579633BA42271953"
+    },
+    {
+      "path": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0bec8-f6bf-7e23-a8b3-cd137a8a0045\\6C79561A-D590-477F-BC67-F8B10429A445\\3-双人打斗第二弹.txt",
+      "role": "唯一创作输入",
+      "scope": "全文",
+      "sha256": "4EB1EBADCDE398F56750AC6AF229E07637C026E280C3DBBECDF5FBAFA22EDC12"
+    },
+    {
+      "path": "D:\\study\\projects\\combat-director\\skills\\combat-director\\references\\prompt-craft.md",
+      "role": "文字改写路由所需提示词编排方法",
+      "scope": "全文",
+      "sha256": "796E9261B0F2A2AC7BF937683200108C8C5CEA7F6FCCD7F7677CF8A8DB01C69D"
+    },
+    {
+      "path": "D:\\study\\projects\\combat-director\\skills\\combat-director\\references\\source-case.md",
+      "role": "文字改写路由所需来源与证据边界",
+      "scope": "全文",
+      "sha256": "B2EA0718C39867200C8E6D7F1ADBFAD0DDF6EC9E3E097F86565B89FDAA0F91EA"
+    },
+    {
+      "path": "D:\\study\\projects\\combat-director\\skills\\combat-director\\references\\templates.md",
+      "role": "技能第二步所需战斗结构选择",
+      "scope": "全文",
+      "sha256": "294C7CE6509B397604827323EEA4469D9D37555C2EF93577F21F3CBDBD24C5F1"
+    }
+  ],
+  "tools_used": [
+    {
+      "tool": "functions.exec",
+      "purpose": "组织文件读取、SHA-256计算、指定目录创建和输出写入。"
+    },
+    {
+      "tool": "tools.exec_command",
+      "commands": [
+        "Get-Content -LiteralPath -Raw",
+        "Get-FileHash -Algorithm SHA256",
+        "ConvertTo-Json -Compress",
+        "New-Item -ItemType Directory -Force",
+        "ConvertFrom-Json",
+        "Set-Content -Encoding utf8"
+      ],
+      "purpose": "全文读取五个输入文件并计算SHA-256；创建输出目录；回读所写提示词和运行记录，核对六段结构、解析JSON，并记录提示词产物SHA-256。"
+    },
+    {
+      "tool": "tools.apply_patch",
+      "purpose": "在唯一允许的输出目录创建answer.md与run.json。"
+    }
+  ],
+  "evidence_limits": [
+    "输入仅为文字稿；未读取任何参考图像、视频、音轨或其他附件。",
+    "未取得动作实际可生成性、30秒成片连续性、画面与声音质量的媒体验证证据。",
+    "未查询平台、模型、账号入口或实际支持的生成时长，不将文字风格描述声明为已验证参数。",
+    "提示词中的空间路径、动作压缩、声音与具体时间分配是本次创作修订，不是视频观察事实。"
+  ],
+  "execution_boundaries": {
+    "network_used": false,
+    "media_generated": false,
+    "delegation_used": false,
+    "memory_files_read": false,
+    "other_project_documents_read": false,
+    "expected_answers_or_evaluations_read": false,
+    "write_scope": "D:\\Temp\\combat-prompts-20260922\\candidate-duel"
+  },
+  "review": "已在文本编写时对读六段总时长、角色归属、实体剑状态、旧裂口建立与回收、连续机位路径和末半秒定格例外；没有宣称生成效果已验证。",
+  "output_files_read_for_verification": [
+    "D:\\Temp\\combat-prompts-20260922\\candidate-duel\\answer.md",
+    "D:\\Temp\\combat-prompts-20260922\\candidate-duel\\run.json"
+  ],
+  "output_verification": {
+    "prompt_segment_count": 6,
+    "run_json_parsed": true,
+    "answer_sha256": "3C0F0384AF551FB9B85D531A9D48931F317B17DD292B14B9764902EABF98C5AF",
+    "type": "本地文件与文本结构检查，非媒体效果验证"
+  }
+}
