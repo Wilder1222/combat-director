@@ -78,6 +78,10 @@ def validate(root: Path) -> list[Path]:
         saved = path.with_name(path.name.replace('.plan.json', '.prompt.txt'))
         if saved.read_text(encoding='utf-8') != module.prompt(plan):
             raise ValueError(f'Prompt out of sync: {saved}')
+    library_spec = importlib.util.spec_from_file_location('release_library_tool', skill / 'scripts/library_tool.py')
+    library = importlib.util.module_from_spec(library_spec)
+    library_spec.loader.exec_module(library)
+    library.load_catalog(skill / 'library/catalog.json')
     return files
 
 

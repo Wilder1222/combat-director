@@ -2,7 +2,7 @@
 name: combat-director
 description: 独立战斗导演技能。用于打斗视频与提示词拆解、武侠攻防、仙侠斗法、巨型敌人战、角色战斗登场、战斗分镜与视频提示词、打斗失败诊断。根据人物目标、能力边界和空间状态编排战斗，输出中文六轨时间轴与平台提示词。可独立使用，也可与其他导演技能交换方案；不负责日常人像、完整剧集世界观或未经授权的视频生成。
 metadata:
-  version: "0.6.0"
+  version: "0.7.0"
   language: "zh-CN"
 ---
 
@@ -19,6 +19,9 @@ metadata:
 | 从视频提取可复用结构 | 拆解 | [references/source-case.md](references/source-case.md)、[references/quality.md](references/quality.md) |
 | 拆解、整理或改写现成打斗提示词 | 文本拆解与重编排 | [references/prompt-craft.md](references/prompt-craft.md)、[references/source-case.md](references/source-case.md) |
 | 新建战斗、换角色或换场景 | 编排 | [references/choreography.md](references/choreography.md)、[references/templates.md](references/templates.md) |
+| 设计动作签名、把武学或名招转成画面 | 动作设计 | [references/action-design.md](references/action-design.md) |
+| 多人、远程、追逐、体型差或演武 | 场面调度 | [references/combat-modes.md](references/combat-modes.md) |
+| 检索或吸收可复用招式与能力机制 | 机制库 | [references/library-workflow.md](references/library-workflow.md)，先索引后正文 |
 | 角色登场、首斩前收黑、预告式战斗 | 登场片段 | [references/prompt-craft.md](references/prompt-craft.md)、[examples/entrance-cliffhanger-15.md](examples/entrance-cliffhanger-15.md) |
 | 输出 LibTV、小云雀或其他平台提示词 | 适配 | [references/platforms.md](references/platforms.md)、[assets/platform-profiles.json](assets/platform-profiles.json) |
 | 检查或修复生成失败 | 审片与修复 | [references/quality.md](references/quality.md)、[references/review-loop.md](references/review-loop.md) |
@@ -40,6 +43,8 @@ metadata:
 
 写清：战斗为何发生、每方要什么、谁先占优、转折因何出现、结尾需要解决什么。再锁定时长、画幅、镜头模式、参考模式、人数、武器、持械手、能力上限和禁用元素。
 
+为双方分别确定优势距离、移动方式、起手、回应习惯、恢复动作和动作签名。签名要在不同处境中仍能认出，不能只是换名字、衣服或光效颜色。场地先给入口、出口、支点与可行路线，再安排摄影机；环境应改变选择、时机或代价。
+
 先辨认完整交手、群战升级、登场预告等片段目的。结尾可为脱离、压制、胜负未定或命中前收黑；悬念片段不补造命中与伤亡。用户给出的台词、允许切镜、慢动作或定格例外优先于默认值。来源内部矛盾先明确适用范围，不能把某一版本的禁令套到其他版本。
 
 区分三件事：
@@ -53,9 +58,13 @@ metadata:
 
 将渲染风格与能力规则分开：真人、CG、三维动画、二维漫画、水墨均可使用相同攻防逻辑。不要把“写实外观”误认为“禁止幻想”，也不要把“仙侠服装”误认为“允许毁城”。
 
+需要机制候选时检索 [library/catalog.json](library/catalog.json)，只读命中卡；零命中直接原创并说明来源。候选不等于可执行，先核对已有兵器、介质、位置、资源、能力与结尾。普通动作能够完成目的时不追加法术。用户点名的武学或文学招式保留其意图，再拆为可见动作；出处不明不称正统，小说能力不写成历史武术。用户已授权自行选风格或场地时直接选择并说明，不强制弹出选项菜单。
+
 ### 3. 编排状态与六轨
 
 每个节拍必须包含：行动方的目的与动作、对方回应、接触或避让、身体/环境结果、下一节拍的起点。每个节拍通常保留一个主要结果，复杂度过高时删减，不靠加速硬塞。
+
+防守被打散后，要经历避让、残余招架或落脚恢复，不能下一击自动回到完整架势；恢复由姿态和支撑变化说明，不统一套秒数。多人战逐拍给所有人的任务、位置和受阻原因，避免排队待打。强度、动作密度、播放速度、切镜频率分别选择，不把“高燃”自动译为全程慢放或碎切。
 
 六轨固定为：人物攻防、表演情绪、摄影机、特效、环境反馈、声音。时间轴与状态表在六轨之外。两个人必须都存在于攻防和表演记录中；画外角色也要说明状态。
 

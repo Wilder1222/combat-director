@@ -1,0 +1,445 @@
+{
+  "version": "0.7.0",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "win32",
+  "checks": [
+    {
+      "check": "rebuild original examples",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "epic-30: 11 director beats / 6 prompt sections\ngrounded-15: 6 director beats / 4 prompt sections\ncolossus-30: 8 director beats / 6 prompt sections\n",
+      "stderr": ""
+    },
+    {
+      "check": "rebuild action examples",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "alley-letter-15\nthree-person-exit-18\nfailed-counter-repair-18\n",
+      "stderr": ""
+    },
+    {
+      "check": "unittest",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": "test_ability_cost_prevents_next_hand_use (test_action_evidence.ActionEvidenceTests.test_ability_cost_prevents_next_hand_use) ... ok\ntest_accepted_observation_is_next_origin (test_action_evidence.ActionEvidenceTests.test_accepted_observation_is_next_origin) ... ok\ntest_action_details_reach_prompt (test_action_evidence.ActionEvidenceTests.test_action_details_reach_prompt) ... ok\ntest_capability_known_unknown_expired (test_action_evidence.ActionEvidenceTests.test_capability_known_unknown_expired) ... ok\ntest_forward_or_duplicate_event_reference (test_action_evidence.ActionEvidenceTests.test_forward_or_duplicate_event_reference) ... ok\ntest_invalid_evidence_is_not_compatible (test_action_evidence.ActionEvidenceTests.test_invalid_evidence_is_not_compatible) ... ok\ntest_partial_frames_never_prove_audio_or_full_video (test_action_evidence.ActionEvidenceTests.test_partial_frames_never_prove_audio_or_full_video) ... ok\ntest_rejected_or_unobserved_take_never_seeds (test_action_evidence.ActionEvidenceTests.test_rejected_or_unobserved_take_never_seeds) ... ok\ntest_structured_state_has_one_authority (test_action_evidence.ActionEvidenceTests.test_structured_state_has_one_authority) ... ok\ntest_wrong_owner_and_missing_transfer (test_action_evidence.ActionEvidenceTests.test_wrong_owner_and_missing_transfer) ... ok\ntest_ability_limits (test_combat_tool.CombatTests.test_ability_limits) ... ok\ntest_ability_owner (test_combat_tool.CombatTests.test_ability_owner) ... ok\ntest_axis_change (test_combat_tool.CombatTests.test_axis_change) ... ok\ntest_cli (test_combat_tool.CombatTests.test_cli) ... ok\ntest_confirmed_limit (test_combat_tool.CombatTests.test_confirmed_limit) ... ok\ntest_duplicate_ids (test_combat_tool.CombatTests.test_duplicate_ids) ... ok\ntest_export_no_overwrite_then_force (test_combat_tool.CombatTests.test_export_no_overwrite_then_force) ... ok\ntest_export_source_protected (test_combat_tool.CombatTests.test_export_source_protected) ... ok\ntest_false_binding_and_frame_actor (test_combat_tool.CombatTests.test_false_binding_and_frame_actor) ... ok\ntest_gap (test_combat_tool.CombatTests.test_gap) ... ok\ntest_inheritance (test_combat_tool.CombatTests.test_inheritance) ... ok\ntest_missing_opponent (test_combat_tool.CombatTests.test_missing_opponent) ... ok\ntest_missing_performance (test_combat_tool.CombatTests.test_missing_performance) ... ok\ntest_nonfinite_and_bool (test_combat_tool.CombatTests.test_nonfinite_and_bool) ... ok\ntest_one_take_cuts (test_combat_tool.CombatTests.test_one_take_cuts) ... ok\ntest_one_take_shot_change (test_combat_tool.CombatTests.test_one_take_shot_change) ... ok\ntest_overlap (test_combat_tool.CombatTests.test_overlap) ... ok\ntest_result_and_handles (test_combat_tool.CombatTests.test_result_and_handles) ... ok\ntest_schema_rejects_unknown_and_wrong_types (test_combat_tool.CombatTests.test_schema_rejects_unknown_and_wrong_types) ... ok\ntest_section_coverage (test_combat_tool.CombatTests.test_section_coverage) ... ok\ntest_symlink_rejected (test_combat_tool.CombatTests.test_symlink_rejected) ... skipped 'OS does not permit symlink creation'\ntest_three_examples_and_prompt_sync (test_combat_tool.CombatTests.test_three_examples_and_prompt_sync) ... ok\ntest_total_duration (test_combat_tool.CombatTests.test_total_duration) ... ok\ntest_twelve_exports_no_source_mutation (test_combat_tool.CombatTests.test_twelve_exports_no_source_mutation) ... ok\ntest_unknown_ability (test_combat_tool.CombatTests.test_unknown_ability) ... ok\ntest_zero_beat (test_combat_tool.CombatTests.test_zero_beat) ... ok\ntest_cli_works_outside_repository_without_writes (test_library_tool.LibraryTests.test_cli_works_outside_repository_without_writes) ... ok\ntest_duplicate_id_and_invalid_metadata_rejected (test_library_tool.LibraryTests.test_duplicate_id_and_invalid_metadata_rejected) ... ok\ntest_empty_query_lists_filtered_candidates (test_library_tool.LibraryTests.test_empty_query_lists_filtered_candidates) ... ok\ntest_filter_separates_ordinary_cloth_from_supernatural_field (test_library_tool.LibraryTests.test_filter_separates_ordinary_cloth_from_supernatural_field) ... ok\ntest_group_filter_and_ranked_query (test_library_tool.LibraryTests.test_group_filter_and_ranked_query) ... ok\ntest_missing_duplicate_and_escaping_paths_rejected (test_library_tool.LibraryTests.test_missing_duplicate_and_escaping_paths_rejected) ... ok\ntest_no_match_never_inserts_default (test_library_tool.LibraryTests.test_no_match_never_inserts_default) ... ok\ntest_search_does_not_read_card_bodies (test_library_tool.LibraryTests.test_search_does_not_read_card_bodies) ... ok\ntest_show_reads_only_chosen_card_and_rejects_unknown_id (test_library_tool.LibraryTests.test_show_reads_only_chosen_card_and_rejects_unknown_id) ... ok\ntest_authority_edits_cannot_silently_export_old_prompt (test_review_flow.ReviewFlowTests.test_authority_edits_cannot_silently_export_old_prompt) ... ok\ntest_compiled_handoff_preserves_authority_and_is_independent (test_review_flow.ReviewFlowTests.test_compiled_handoff_preserves_authority_and_is_independent) ... ok\ntest_final_state_invalidates_global_story_ending (test_review_flow.ReviewFlowTests.test_final_state_invalidates_global_story_ending) ... ok\ntest_formatting_and_provenance_do_not_invalidate (test_review_flow.ReviewFlowTests.test_formatting_and_provenance_do_not_invalidate) ... ok\ntest_invalid_or_incomplete_receipts_are_rejected (test_review_flow.ReviewFlowTests.test_invalid_or_incomplete_receipts_are_rejected) ... ok\ntest_legacy_migration_requires_explicit_review (test_review_flow.ReviewFlowTests.test_legacy_migration_requires_explicit_review) ... ok\ntest_schema_assertions_are_audited (test_review_flow.ReviewFlowTests.test_schema_assertions_are_audited) ... ok\ntest_scope_dependencies_include_prior_results (test_review_flow.ReviewFlowTests.test_scope_dependencies_include_prior_results) ... ok\ntest_summary_edit_invalidates_its_attestation (test_review_flow.ReviewFlowTests.test_summary_edit_invalidates_its_attestation) ... ok\n\n----------------------------------------------------------------------\nRan 54 tests in 4.422s\n\nOK (skipped=1)\n"
+    },
+    {
+      "check": "standard schemas",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "PASS: 3 schemas; 6 plan examples; Draft 2020-12 + subset audit\n",
+      "stderr": ""
+    },
+    {
+      "check": "package structure",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "PASS: 53 release files; resource links valid\n",
+      "stderr": ""
+    },
+    {
+      "check": "build archive",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "D:\\study\\projects\\combat-director\\dist\\combat-director-0.7.0.zip\n",
+      "stderr": ""
+    },
+    {
+      "check": "skill-creator",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "check": "plugin-creator",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "Plugin validation passed: D:\\study\\projects\\combat-director\n",
+      "stderr": ""
+    },
+    {
+      "check": "repeat archive build",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "D:\\study\\projects\\combat-director\\dist\\combat-director-0.7.0.zip\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked library validation",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "PASS: 7 mechanism cards; index and references valid\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked library lookup",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"candidates\",\n  \"filters\": {\n    \"kind\": \"design\",\n    \"query\": \"回廊 撤离\",\n    \"scope\": \"group\"\n  },\n  \"notice\": \"仅为关键词候选；使用前核对前提、排除条件和用户设定。零命中可原创。\",\n  \"matches\": [\n    {\n      \"id\": \"corridor-exit\",\n      \"kind\": \"design\",\n      \"title\": \"回廊多人护送撤离\",\n      \"scope\": [\n        \"group\",\n        \"escape\",\n        \"chase\"\n      ],\n      \"tags\": [\n        \"回廊\",\n        \"多人\",\n        \"护送\",\n        \"撤离\",\n        \"柱\",\n        \"封路\"\n      ],\n      \"summary\": \"通过柱间窄口限制同时接触，用不同任务保持所有人持续行动。\",\n      \"requires\": [\n        \"开场已展示的出口\",\n        \"允许转身和通过的柱距\",\n        \"全员位置与任务\"\n      ],\n      \"excludes\": [\n        \"敌人排队待打\",\n        \"画外人瞬移到出口\",\n        \"新生障碍救场\"\n      ],\n      \"path\": \"design/corridor-exit.md\",\n      \"provenance\": \"本项目原创空间调度卡。\",\n      \"status\": \"candidate\",\n      \"matched_terms\": [\n        \"回廊\",\n        \"撤离\"\n      ]\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked library card",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "# 有限指向射线\n\nID：`finger-lines`。六脉神剑意象的原创影视转译；数量按用户设定，不从名称推断必须六线齐发。\n\n**成立条件**：人物获准远程能量能力，有可用发射手、已声明射程与次数，发射点到终点路径清楚。普通动作足够时不采用本卡。\n\n**阶段**：先显露手指朝向；细线沿所指方向发射。对手见指向后侧移，线从其原站位经过，撞到设定允许阻挡它的石柱后消散，柱面留下一道浅痕。下一次发射必须从当前手部朝向重新开始，不从空中旧轨迹凭空续射。\n\n**预算与代价**：测试例可自定“两次单线、人物级范围”，明确是创作假设。第二次后手指颤动、腕部下垂，不能立刻加出第三次。若用户选定其它上限，改预算及后续状态，不强套两次。\n\n**对手反制与失败**：提前改线、进入有效掩体或迫使施术手失去指向；自动追踪、穿墙、折返都需额外设定。被打断的蓄势不能在下一镜无由变成已释放。\n\n**镜头与结束**：以包含双方和掩体的视角读清起点、路径、落点，再收近疲劳的手；严格全身同框则保留宽景。指尖熄灭和最后一道线消散说明结束，浅痕不消失。无实测音轨时尖啸、碎屑落声只是声音设计。\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked alley-letter-15.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: alley-letter-15; 3 beats, 3 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked colossus-30.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: colossus-30; 8 beats, 6 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked epic-30.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: epic-30; 11 beats, 6 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked failed-counter-repair-18.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: failed-counter-repair-18; 3 beats, 3 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked grounded-15.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: grounded-15; 6 beats, 4 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked three-person-exit-18.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: three-person-exit-18; 3 beats, 3 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked render",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "Exported 7 files: D:\\Temp\\combat-release-8oz1ayxk\\render\n",
+      "stderr": ""
+    },
+    {
+      "check": "take template",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "pending review structure",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID review record; media content has not been inspected by this script\n",
+      "stderr": ""
+    },
+    {
+      "check": "pending cannot continue",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout": "",
+      "stderr": "INVALID: rejected, pending or repair take cannot seed continuity\n"
+    },
+    {
+      "check": "accepted synthetic continuation",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID review record; media content has not been inspected by this script\n",
+      "stderr": ""
+    },
+    {
+      "check": "known platform conflict",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"conflict\",\n  \"as_of\": \"2026-09-21\",\n  \"conflicts\": [\n    \"目标30秒超过已记录上限15秒\"\n  ],\n  \"unknown\": [],\n  \"evidence_scope\": \"仅检查所提供记录；没有查询平台或验证账号\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "legacy migration",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "Migrated; semantic review pending: D:\\Temp\\combat-release-8oz1ayxk\\migrated.json\n",
+      "stderr": ""
+    },
+    {
+      "check": "unreviewed migration cannot render",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout": "",
+      "stderr": "INVALID: editorial review required: headers=needs_semantic_review, P01=needs_semantic_review, P02=needs_semantic_review, P03=needs_semantic_review, P04=needs_semantic_review; compile, revise, then apply-review\n"
+    }
+  ],
+  "rebuild_reproducible": true,
+  "source_hashes_unchanged": true,
+  "source_batches": [
+    {
+      "manifest": "sources/attachments/2026-09-21/manifest.json",
+      "files_checked": 6
+    },
+    {
+      "manifest": "sources/attachments/2026-09-22/manifest.json",
+      "files_checked": 6
+    }
+  ],
+  "archive": "dist\\combat-director-0.7.0.zip",
+  "archive_sha256": "6378f4db237d7f9713800500af48d38bc71d8c984fef2736acd60adcbba5b965",
+  "archive_files": [
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "98f1d7724420b1e17b17a8f56f8af03460ec9230356f6b04d00a7ecfa67ff12d"
+    },
+    {
+      "path": "skills/combat-director/agents/openai.yaml",
+      "sha256": "7e3070b077b4446516fb6c1b0b11316f9594ca09070464b3eebed6fbdac369b4"
+    },
+    {
+      "path": "skills/combat-director/assets/combat-plan-v1.schema.json",
+      "sha256": "f9a1322c4d3edcb9feb97293deb4aa962416c033d61297fad1873eb4ba5c5876"
+    },
+    {
+      "path": "skills/combat-director/assets/combat-plan.schema.json",
+      "sha256": "e8db635f660848a14f9bc9cc95f896b1918aefdb2d288bcef2bb71c7499744a9"
+    },
+    {
+      "path": "skills/combat-director/assets/platform-profiles.json",
+      "sha256": "9a2c6876e5dc7bcf4b6a55f8a6b3d63d13567bfc4967a94e6071c41e19d257a9"
+    },
+    {
+      "path": "skills/combat-director/assets/sequence-template.md",
+      "sha256": "5189ce51d302c5dc7d43e3c6f8d73133fb35f3d195191ce41e88b738e4e1c79f"
+    },
+    {
+      "path": "skills/combat-director/assets/take-review.schema.json",
+      "sha256": "8b2fff26b219780e5e64800d729e9e0706ddf97c1b3c3ff76f265a534948dddf"
+    },
+    {
+      "path": "skills/combat-director/examples/alley-letter-15.plan.json",
+      "sha256": "94d31fd247067f2e0c224c38601917ceb26cdfe1af6dbbe1f89a6c144a1d1aeb"
+    },
+    {
+      "path": "skills/combat-director/examples/alley-letter-15.prompt.txt",
+      "sha256": "006ef9534995ead77f74223c52d64ceded59dc025d8804b72cde78dff91c0c39"
+    },
+    {
+      "path": "skills/combat-director/examples/colossus-30.plan.json",
+      "sha256": "cdefde27822dc8af2af51a169440abc5e6e61249d36fe8c6f17367df4fdc7f3b"
+    },
+    {
+      "path": "skills/combat-director/examples/colossus-30.prompt.txt",
+      "sha256": "d86976716eb0bbc754c4dd2566b94ed70d5ba70ad89c789dd1091577d8b5d0db"
+    },
+    {
+      "path": "skills/combat-director/examples/corridor-escape-24.md",
+      "sha256": "286945538269cbf4d6d9d728f6f4572332691e05af7c0e5529dc37687c1ff7c4"
+    },
+    {
+      "path": "skills/combat-director/examples/entrance-cliffhanger-15.md",
+      "sha256": "f858b8b9d2d94209d9db27d46b886d14b01e7176d636d18db90806ede12dd4e8"
+    },
+    {
+      "path": "skills/combat-director/examples/epic-30.plan.json",
+      "sha256": "fae91663a4c2659001300a1d75a607414834badcddf2580a14907a1b9d076fa8"
+    },
+    {
+      "path": "skills/combat-director/examples/epic-30.prompt.txt",
+      "sha256": "60dc51fca909d111249c82bdaa7132f75d1b3aeb958b461c3c43945d7327dff6"
+    },
+    {
+      "path": "skills/combat-director/examples/failed-counter-repair-18.plan.json",
+      "sha256": "fc6f60f0e515526a19d912be2056920aef04bd831c8b029706398b8568d6d99e"
+    },
+    {
+      "path": "skills/combat-director/examples/failed-counter-repair-18.prompt.txt",
+      "sha256": "e36ae102343f18c3a7d689057d30a443c577b947be30c7cdc41adcb55e79146e"
+    },
+    {
+      "path": "skills/combat-director/examples/grounded-15.plan.json",
+      "sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23"
+    },
+    {
+      "path": "skills/combat-director/examples/grounded-15.prompt.txt",
+      "sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d"
+    },
+    {
+      "path": "skills/combat-director/examples/return-and-payoff-18.md",
+      "sha256": "0ef62ded7e1fc710e64d355146e9bac78b5517a4a02cb472891747da8715ea1b"
+    },
+    {
+      "path": "skills/combat-director/examples/sword-recovery-18.md",
+      "sha256": "8b253eb4d4494be465706b299503c459a5346b5d0fc8407f6c98c211f94d666d"
+    },
+    {
+      "path": "skills/combat-director/examples/three-person-exit-18.plan.json",
+      "sha256": "6eb88a8f9eb0f9954e2030acb85d04a296c52e132452d0618b72c97ec2dc5799"
+    },
+    {
+      "path": "skills/combat-director/examples/three-person-exit-18.prompt.txt",
+      "sha256": "e558aa812f97e07f364e9eabd392964fa20dcb203e7faaaa3f3a070d24962fa6"
+    },
+    {
+      "path": "skills/combat-director/library/abilities/cloth-field.md",
+      "sha256": "19238f850f669ff36b91e0254df0f259db99ea85e8c7022882c3becf57555b3c"
+    },
+    {
+      "path": "skills/combat-director/library/abilities/finger-lines.md",
+      "sha256": "6c975841a8acae622db1f366c2c44da8f246f7904c57283c8afd8963ce5819db"
+    },
+    {
+      "path": "skills/combat-director/library/catalog.json",
+      "sha256": "fb8513c42f6fece7c9b3e1dc396e5f66e21b4ac3e4ae6ed54ade7f55a8bd9ee4"
+    },
+    {
+      "path": "skills/combat-director/library/design/claw-control.md",
+      "sha256": "d40c3e33523e5867870e9107476cfa2596d8879b9549ff0cb52ee889bdbecc8b"
+    },
+    {
+      "path": "skills/combat-director/library/design/cloth-redirection.md",
+      "sha256": "d9e678752057b971e209014d655cbb85f3513ef3f1fae2b28bd94dc812fe7243"
+    },
+    {
+      "path": "skills/combat-director/library/design/corridor-exit.md",
+      "sha256": "c5317dcbcfc26bf7daf11d04b39cb0e59f0fa14f38b366fb61573b4cf01ddbe0"
+    },
+    {
+      "path": "skills/combat-director/library/design/opening-counter.md",
+      "sha256": "81b8e2122bcd675eefeea3f2224e2aa51b2ac15f7d149758dfa53a09334aeb3d"
+    },
+    {
+      "path": "skills/combat-director/library/design/round-sword.md",
+      "sha256": "9509742b157b937779096e8a736c1a989d1160bb739c6980c48683c9d3f7b14b"
+    },
+    {
+      "path": "skills/combat-director/references/action-contract.md",
+      "sha256": "e6f32fae84bebb623b0cc674a6d912b11e662f6aa41d505d6194618049ff3c26"
+    },
+    {
+      "path": "skills/combat-director/references/action-design.md",
+      "sha256": "234e6af1206fae54c26a11665ee7f2a110ca56ae3ee6ec6d918869e9d27ff7d9"
+    },
+    {
+      "path": "skills/combat-director/references/choreography.md",
+      "sha256": "214a7ae0e96bf8325e7ff48e77d029d681e17b7b10759e25f2f6104a99ffe4f6"
+    },
+    {
+      "path": "skills/combat-director/references/combat-modes.md",
+      "sha256": "d0d08ecdbd337aa15c08fb684075fb1b3080087574a670c984765ac6a5c16c86"
+    },
+    {
+      "path": "skills/combat-director/references/contract.md",
+      "sha256": "a49bd8940dca7c09688e617116b6fb1ab9a88c5d6c3efc156af98f888c8e51d7"
+    },
+    {
+      "path": "skills/combat-director/references/library-workflow.md",
+      "sha256": "876025bc0b87c8a132be8bace49f67f6ba76807f9ced6dba6d49532ecc0d6b51"
+    },
+    {
+      "path": "skills/combat-director/references/platforms.md",
+      "sha256": "8290d2d7221ed2fe1f3540e959084c49e389ff38a257e2040f5ed9a542b59663"
+    },
+    {
+      "path": "skills/combat-director/references/prompt-craft.md",
+      "sha256": "1885a95deeecfaa677efaaaa1d598eae29cdb3fd67295c8ccd8a6934a95fe765"
+    },
+    {
+      "path": "skills/combat-director/references/quality.md",
+      "sha256": "8de6bed53fa58defeb0800e37b18553e2b05233a510b206f93dfe2b5a81ba805"
+    },
+    {
+      "path": "skills/combat-director/references/review-loop.md",
+      "sha256": "ca42a3bb6e3dc5a5cfcc6c4db72fb7565afd082ed62228687a0f42bff03fd06d"
+    },
+    {
+      "path": "skills/combat-director/references/source-case.md",
+      "sha256": "b2ea0718c39867200c8e6d7f1adbfad0ddf6ec9e3e097f86565b89fdaa0f91ea"
+    },
+    {
+      "path": "skills/combat-director/references/sources.md",
+      "sha256": "421cdc246e06b2a72c86a0caf3560022152c2814e656ba19f92c367c711b389f"
+    },
+    {
+      "path": "skills/combat-director/references/templates.md",
+      "sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1"
+    },
+    {
+      "path": "skills/combat-director/references/third-party-notices.md",
+      "sha256": "83130954bbf0103b613281695660fa2a44f3f800dddaf31919e9384355b62971"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_action.py",
+      "sha256": "2561186638e7b840c2ce2265e3c0b85e53d3baf9ce7a57fc96a14899b3ae613d"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_evidence.py",
+      "sha256": "1a7d22ee88f250fec15dc17af26864f953439f1495fc30b384f0dd079a38b23f"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_handoff.py",
+      "sha256": "28f922147132b748ec01e8cf1f8176f81c97409b4218f7edd4ce91b9c080c8a1"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_review.py",
+      "sha256": "f1ff9cca2fbe6ec455ec0ea3b81da295dec153eac01729828339f2d83a311ae1"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_schema.py",
+      "sha256": "673e6975eebf2bee73b826312c0c89774993951ac566b2299dccbc6d355b8bc9"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_tool.py",
+      "sha256": "1fade69a451269acf0efffc4230f127da905adde49f73394127ae260d34f6104"
+    },
+    {
+      "path": "skills/combat-director/scripts/library_tool.py",
+      "sha256": "ea14679aeeea45d22feee3508d6db52732f30ef23a8f33fb3f211c1fb8dd0f62"
+    },
+    {
+      "path": "skills/combat-director/SKILL.md",
+      "sha256": "3f2928217d7cb81bb6e7bc72dbb0359be4e556144787e2256c1f16207df88ae8"
+    }
+  ],
+  "archive_reproducible": true,
+  "scope": "Local checks only; does not prove host discovery or video quality."
+}

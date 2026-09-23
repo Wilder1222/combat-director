@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "round-sword", "kind": "design", "title": "太极剑意象：短弧接引",
+      "scope": ["duel", "sparring"], "tags": ["太极剑", "剑", "借势", "圆弧", "恢复"],
+      "summary": "接引已有来刃，沿外侧移步后换线；不自带法阵。",
+      "requires": ["一把在手的剑", "来刃接触可见", "外侧有落脚空间"],
+      "excludes": ["无兵器", "无接触却声称借力", "受控空间内仍绕到身后"],
+      "path": "design/round-sword.md", "provenance": "本项目原创影视转译；太极剑为用户意象，不宣称标准套路。"
+    },
+    {
+      "id": "claw-control", "kind": "design", "title": "龙爪手意象：抓袖与脱离",
+      "scope": ["duel", "sparring"], "tags": ["龙爪手", "少林", "近身", "空手", "控制", "衣袖"],
+      "summary": "以抓袖的形态建立短暂控制，让对方主动脱离改变下一拍。",
+      "requires": ["可用空手", "近身距离", "可辨的衣袖或护臂"],
+      "excludes": ["隔空控制", "默认长出巨爪", "被占用的手同时持械和抓袖"],
+      "path": "design/claw-control.md", "provenance": "本项目原创影视转译；不提供少林谱系或历史真伪结论。"
+    },
+    {
+      "id": "cloth-redirection", "kind": "design", "title": "袈裟意象：布面遮线",
+      "scope": ["duel", "escape"], "tags": ["袈裟伏魔功", "袈裟", "布料", "遮挡", "撤离"],
+      "summary": "展开已有布料干扰视线，人物利用短暂遮线改变位置。",
+      "requires": ["确实存在且可操作的布料", "可用手", "可见侧向退路"],
+      "excludes": ["普通布无条件挡锋刃", "凭空出现袈裟", "遮挡后重置空间"],
+      "path": "design/cloth-redirection.md", "provenance": "本项目原创；文学功法名称只作检索意象，不等于能力授权。"
+    },
+    {
+      "id": "opening-counter", "kind": "design", "title": "独孤九剑意象：观察后截线",
+      "scope": ["duel", "sparring"], "tags": ["独孤九剑", "剑", "观察", "破绽", "变招", "反制"],
+      "summary": "前段显露动作习惯，后段尝试在其回收时变线；允许对手改变习惯。",
+      "requires": ["已经展示的对手习惯", "可用兵器与距离", "观察和出手窗口"],
+      "excludes": ["首次见招就必胜", "虚构先前破绽", "名称自动赋予全套原著能力"],
+      "path": "design/opening-counter.md", "provenance": "本项目原创文学意象转译；不是原著招式复原。"
+    },
+    {
+      "id": "corridor-exit", "kind": "design", "title": "回廊多人护送撤离",
+      "scope": ["group", "escape", "chase"], "tags": ["回廊", "多人", "护送", "撤离", "柱", "封路"],
+      "summary": "通过柱间窄口限制同时接触，用不同任务保持所有人持续行动。",
+      "requires": ["开场已展示的出口", "允许转身和通过的柱距", "全员位置与任务"],
+      "excludes": ["敌人排队待打", "画外人瞬移到出口", "新生障碍救场"],
+      "path": "design/corridor-exit.md", "provenance": "本项目原创空间调度卡。"
+    },
+    {
+      "id": "cloth-field", "kind": "abilities", "title": "袈裟意象：有限布幕结界",
+      "scope": ["duel", "group", "escape"], "tags": ["袈裟伏魔功", "布幕", "结界", "法术", "维持", "限制"],
+      "summary": "已有布料张紧后承受一次限定方向的能量冲击，松手即解除。",
+      "requires": ["用户允许结界能力", "可操作布料", "双手可用", "预先声明一次承受预算"],
+      "excludes": ["禁止法术", "全向无敌", "无代价反弹", "一手持剑仍双手撑幕"],
+      "path": "abilities/cloth-field.md", "provenance": "本项目原创幻想机制，不是历史武术或平台功能。"
+    },
+    {
+      "id": "finger-lines", "kind": "abilities", "title": "六脉神剑意象：有限指向射线",
+      "scope": ["ranged", "duel"], "tags": ["六脉神剑", "指剑", "远程", "射线", "遮挡", "消耗"],
+      "summary": "显式指向后发射有限线状能量，掩体与手部疲劳改变后续选择。",
+      "requires": ["用户允许远程能量", "可用发射手", "已声明数量和作用范围", "起点到终点路径"],
+      "excludes": ["禁止能量攻击", "无限齐射", "拐弯追踪未获允许", "穿过掩体仍声称被遮挡"],
+      "path": "abilities/finger-lines.md", "provenance": "本项目原创文学意象转译，不假定所有作品版本的设定。"
+    }
+  ]
+}

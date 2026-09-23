@@ -76,6 +76,13 @@ def main():
                     if not target.is_relative_to(unpacked.resolve()): raise ValueError('Archive path escape')
                 z.extractall(unpacked)
             cli=unpacked/'skills/combat-director/scripts/combat_tool.py'
+            library_cli=unpacked/'skills/combat-director/scripts/library_tool.py'
+            run('unpacked library validation',[sys.executable,library_cli,'validate'],cwd=tmp)
+            candidates=run('unpacked library lookup',[sys.executable,library_cli,'search','design',
+                '--query','回廊 撤离','--scope','group'],cwd=tmp)
+            if [item['id'] for item in json.loads(candidates['stdout'])['matches']] != ['corridor-exit']:
+                raise ValueError('Packaged library lookup mismatch')
+            run('unpacked library card',[sys.executable,library_cli,'show','finger-lines'],cwd=tmp)
             packaged=unpacked/'skills/combat-director/examples'
             for plan in packaged.glob('*.plan.json'):
                 run('unpacked '+plan.name,[sys.executable,cli,'validate',plan],cwd=tmp)
