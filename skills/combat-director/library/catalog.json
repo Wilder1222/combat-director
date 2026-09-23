@@ -1,61 +1,6930 @@
 {
-  "version": 1,
+  "version": 2,
   "entries": [
     {
-      "id": "round-sword", "kind": "design", "title": "太极剑意象：短弧接引",
-      "scope": ["duel", "sparring"], "tags": ["太极剑", "剑", "借势", "圆弧", "恢复"],
+      "id": "round-sword",
+      "kind": "design",
+      "title": "太极剑意象：短弧接引",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "太极剑",
+        "剑",
+        "借势",
+        "圆弧",
+        "恢复"
+      ],
       "summary": "接引已有来刃，沿外侧移步后换线；不自带法阵。",
-      "requires": ["一把在手的剑", "来刃接触可见", "外侧有落脚空间"],
-      "excludes": ["无兵器", "无接触却声称借力", "受控空间内仍绕到身后"],
-      "path": "design/round-sword.md", "provenance": "本项目原创影视转译；太极剑为用户意象，不宣称标准套路。"
+      "requires": [
+        "一把在手的剑",
+        "来刃接触可见",
+        "外侧有落脚空间"
+      ],
+      "excludes": [
+        "无兵器",
+        "无接触却声称借力",
+        "受控空间内仍绕到身后"
+      ],
+      "path": "design/round-sword.md",
+      "provenance": "本项目原创影视转译；太极剑为用户意象，不宣称标准套路。",
+      "detail": "original",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": null
     },
     {
-      "id": "claw-control", "kind": "design", "title": "龙爪手意象：抓袖与脱离",
-      "scope": ["duel", "sparring"], "tags": ["龙爪手", "少林", "近身", "空手", "控制", "衣袖"],
+      "id": "claw-control",
+      "kind": "design",
+      "title": "龙爪手意象：抓袖与脱离",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "龙爪手",
+        "少林",
+        "近身",
+        "空手",
+        "控制",
+        "衣袖"
+      ],
       "summary": "以抓袖的形态建立短暂控制，让对方主动脱离改变下一拍。",
-      "requires": ["可用空手", "近身距离", "可辨的衣袖或护臂"],
-      "excludes": ["隔空控制", "默认长出巨爪", "被占用的手同时持械和抓袖"],
-      "path": "design/claw-control.md", "provenance": "本项目原创影视转译；不提供少林谱系或历史真伪结论。"
+      "requires": [
+        "可用空手",
+        "近身距离",
+        "可辨的衣袖或护臂"
+      ],
+      "excludes": [
+        "隔空控制",
+        "默认长出巨爪",
+        "被占用的手同时持械和抓袖"
+      ],
+      "path": "design/claw-control.md",
+      "provenance": "本项目原创影视转译；不提供少林谱系或历史真伪结论。",
+      "detail": "original",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": null
     },
     {
-      "id": "cloth-redirection", "kind": "design", "title": "袈裟意象：布面遮线",
-      "scope": ["duel", "escape"], "tags": ["袈裟伏魔功", "袈裟", "布料", "遮挡", "撤离"],
+      "id": "cloth-redirection",
+      "kind": "design",
+      "title": "袈裟意象：布面遮线",
+      "scope": [
+        "duel",
+        "escape"
+      ],
+      "tags": [
+        "袈裟伏魔功",
+        "袈裟",
+        "布料",
+        "遮挡",
+        "撤离"
+      ],
       "summary": "展开已有布料干扰视线，人物利用短暂遮线改变位置。",
-      "requires": ["确实存在且可操作的布料", "可用手", "可见侧向退路"],
-      "excludes": ["普通布无条件挡锋刃", "凭空出现袈裟", "遮挡后重置空间"],
-      "path": "design/cloth-redirection.md", "provenance": "本项目原创；文学功法名称只作检索意象，不等于能力授权。"
+      "requires": [
+        "确实存在且可操作的布料",
+        "可用手",
+        "可见侧向退路"
+      ],
+      "excludes": [
+        "普通布无条件挡锋刃",
+        "凭空出现袈裟",
+        "遮挡后重置空间"
+      ],
+      "path": "design/cloth-redirection.md",
+      "provenance": "本项目原创；文学功法名称只作检索意象，不等于能力授权。",
+      "detail": "original",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": null
     },
     {
-      "id": "opening-counter", "kind": "design", "title": "独孤九剑意象：观察后截线",
-      "scope": ["duel", "sparring"], "tags": ["独孤九剑", "剑", "观察", "破绽", "变招", "反制"],
+      "id": "opening-counter",
+      "kind": "design",
+      "title": "独孤九剑意象：观察后截线",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "独孤九剑",
+        "剑",
+        "观察",
+        "破绽",
+        "变招",
+        "反制"
+      ],
       "summary": "前段显露动作习惯，后段尝试在其回收时变线；允许对手改变习惯。",
-      "requires": ["已经展示的对手习惯", "可用兵器与距离", "观察和出手窗口"],
-      "excludes": ["首次见招就必胜", "虚构先前破绽", "名称自动赋予全套原著能力"],
-      "path": "design/opening-counter.md", "provenance": "本项目原创文学意象转译；不是原著招式复原。"
+      "requires": [
+        "已经展示的对手习惯",
+        "可用兵器与距离",
+        "观察和出手窗口"
+      ],
+      "excludes": [
+        "首次见招就必胜",
+        "虚构先前破绽",
+        "名称自动赋予全套原著能力"
+      ],
+      "path": "design/opening-counter.md",
+      "provenance": "本项目原创文学意象转译；不是原著招式复原。",
+      "detail": "original",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": null
     },
     {
-      "id": "corridor-exit", "kind": "design", "title": "回廊多人护送撤离",
-      "scope": ["group", "escape", "chase"], "tags": ["回廊", "多人", "护送", "撤离", "柱", "封路"],
+      "id": "corridor-exit",
+      "kind": "design",
+      "title": "回廊多人护送撤离",
+      "scope": [
+        "group",
+        "escape",
+        "chase"
+      ],
+      "tags": [
+        "回廊",
+        "多人",
+        "护送",
+        "撤离",
+        "柱",
+        "封路"
+      ],
       "summary": "通过柱间窄口限制同时接触，用不同任务保持所有人持续行动。",
-      "requires": ["开场已展示的出口", "允许转身和通过的柱距", "全员位置与任务"],
-      "excludes": ["敌人排队待打", "画外人瞬移到出口", "新生障碍救场"],
-      "path": "design/corridor-exit.md", "provenance": "本项目原创空间调度卡。"
+      "requires": [
+        "开场已展示的出口",
+        "允许转身和通过的柱距",
+        "全员位置与任务"
+      ],
+      "excludes": [
+        "敌人排队待打",
+        "画外人瞬移到出口",
+        "新生障碍救场"
+      ],
+      "path": "design/corridor-exit.md",
+      "provenance": "本项目原创空间调度卡。",
+      "detail": "original",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": null
     },
     {
-      "id": "cloth-field", "kind": "abilities", "title": "袈裟意象：有限布幕结界",
-      "scope": ["duel", "group", "escape"], "tags": ["袈裟伏魔功", "布幕", "结界", "法术", "维持", "限制"],
+      "id": "cloth-field",
+      "kind": "abilities",
+      "title": "袈裟意象：有限布幕结界",
+      "scope": [
+        "duel",
+        "group",
+        "escape"
+      ],
+      "tags": [
+        "袈裟伏魔功",
+        "布幕",
+        "结界",
+        "法术",
+        "维持",
+        "限制"
+      ],
       "summary": "已有布料张紧后承受一次限定方向的能量冲击，松手即解除。",
-      "requires": ["用户允许结界能力", "可操作布料", "双手可用", "预先声明一次承受预算"],
-      "excludes": ["禁止法术", "全向无敌", "无代价反弹", "一手持剑仍双手撑幕"],
-      "path": "abilities/cloth-field.md", "provenance": "本项目原创幻想机制，不是历史武术或平台功能。"
+      "requires": [
+        "用户允许结界能力",
+        "可操作布料",
+        "双手可用",
+        "预先声明一次承受预算"
+      ],
+      "excludes": [
+        "禁止法术",
+        "全向无敌",
+        "无代价反弹",
+        "一手持剑仍双手撑幕"
+      ],
+      "path": "abilities/cloth-field.md",
+      "provenance": "本项目原创幻想机制，不是历史武术或平台功能。",
+      "detail": "original",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": null
     },
     {
-      "id": "finger-lines", "kind": "abilities", "title": "六脉神剑意象：有限指向射线",
-      "scope": ["ranged", "duel"], "tags": ["六脉神剑", "指剑", "远程", "射线", "遮挡", "消耗"],
+      "id": "finger-lines",
+      "kind": "abilities",
+      "title": "六脉神剑意象：有限指向射线",
+      "scope": [
+        "ranged",
+        "duel"
+      ],
+      "tags": [
+        "六脉神剑",
+        "指剑",
+        "远程",
+        "射线",
+        "遮挡",
+        "消耗"
+      ],
       "summary": "显式指向后发射有限线状能量，掩体与手部疲劳改变后续选择。",
-      "requires": ["用户允许远程能量", "可用发射手", "已声明数量和作用范围", "起点到终点路径"],
-      "excludes": ["禁止能量攻击", "无限齐射", "拐弯追踪未获允许", "穿过掩体仍声称被遮挡"],
-      "path": "abilities/finger-lines.md", "provenance": "本项目原创文学意象转译，不假定所有作品版本的设定。"
+      "requires": [
+        "用户允许远程能量",
+        "可用发射手",
+        "已声明数量和作用范围",
+        "起点到终点路径"
+      ],
+      "excludes": [
+        "禁止能量攻击",
+        "无限齐射",
+        "拐弯追踪未获允许",
+        "穿过掩体仍声称被遮挡"
+      ],
+      "path": "abilities/finger-lines.md",
+      "provenance": "本项目原创文学意象转译，不假定所有作品版本的设定。",
+      "detail": "original",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": null
+    },
+    {
+      "id": "arvin-tech-taiji",
+      "kind": "techniques",
+      "title": "太极拳",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "太极拳"
+      ],
+      "summary": "接住来势后移步转腰，手臂与脚步同向改线；没有接触就不能借力。对手收招时改为护线，不追空手。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-taiji.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "太极拳"
+      ],
+      "characters": [],
+      "names": [
+        "云手",
+        "揽雀尾",
+        "搬拦捶",
+        "如封似闭",
+        "掤捋挤按",
+        "采手引偏",
+        "海底针",
+        "闪通臂",
+        "上步七星",
+        "掤",
+        "捋",
+        "挤",
+        "按",
+        "采",
+        "挒",
+        "肘",
+        "靠",
+        "掤手接劲",
+        "捋手引化",
+        "倒撵猴退化"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            568,
+            568
+          ],
+          [
+            2274,
+            2302
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-baji",
+      "kind": "techniques",
+      "title": "八极拳",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "八极拳"
+      ],
+      "summary": "先交代进入短距的脚步和身体空间，再写肘靠短发；被侧移让空后必须重立支撑，不能连续无代价撞击。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-baji.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "八极拳"
+      ],
+      "characters": [],
+      "names": [
+        "崩拳",
+        "顶肘",
+        "铁山靠",
+        "挤靠",
+        "六大开·顶抱单提胯缠",
+        "撑锤·十字整劲",
+        "顶心肘",
+        "顶",
+        "抱",
+        "单",
+        "提",
+        "胯",
+        "缠",
+        "撑锤",
+        "硬开门",
+        "顶肘/盘肘/反背肘",
+        "铁山靠/挤靠",
+        "崩拳/冲拳/撑锤",
+        "跺地/行步连冲"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            569,
+            569
+          ],
+          [
+            2304,
+            2326
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-wingchun",
+      "kind": "techniques",
+      "title": "咏春拳",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "咏春拳"
+      ],
+      "summary": "以窄幅护线、短距截手表现中线争夺；对手换到外侧时需转马追线，连拳之间保留手臂回收。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-wingchun.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "咏春拳"
+      ],
+      "characters": [],
+      "names": [
+        "摊手",
+        "伏手",
+        "膀手",
+        "窒手",
+        "标指",
+        "日字冲拳",
+        "拦手",
+        "耕手",
+        "捆手",
+        "拍手",
+        "低踢",
+        "收势二字钳羊马",
+        "桥手近身对招",
+        "日字冲拳连压",
+        "标指命中",
+        "捆手封桥",
+        "低踢破下盘",
+        "轻击/格挡（摊手、伏手、拦手、拍手）",
+        "重击/杀伤（日字冲拳、标指、低踢）",
+        "流派特色（捆手、耕手）",
+        "终结技（连环标指+连环日字冲拳）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            570,
+            570
+          ],
+          [
+            2328,
+            2380
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-bagua",
+      "kind": "techniques",
+      "title": "八卦掌",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "八卦掌"
+      ],
+      "summary": "以弧形步法换到外门，掌线随躯干转动；先画可用绕行空间，被柱墙封路就缩弧或退出。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-bagua.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "八卦掌"
+      ],
+      "characters": [],
+      "names": [
+        "白蛇吐信",
+        "狮子抱球",
+        "猛虎下山",
+        "鹞子穿林",
+        "乌龙摆尾",
+        "双燕投林",
+        "黑熊探掌",
+        "白猿托桃",
+        "金鸡抖翎",
+        "回身劈掌",
+        "穿身绕掌",
+        "收势归圆",
+        "游走转圈缠斗",
+        "劈掌/探掌蓄力",
+        "点掌/穿掌命中",
+        "贴身绕身穿掌",
+        "回身乌龙摆尾/回身劈掌",
+        "轻击/点掌/穿掌",
+        "重击/劈掌/推掌/托掌",
+        "格挡/狮子抱球",
+        "终结/回身劈掌/猛虎下山"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            571,
+            571
+          ],
+          [
+            2221,
+            2271
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-xingyi",
+      "kind": "techniques",
+      "title": "形意拳",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "形意拳"
+      ],
+      "summary": "直线进步和拳路同向，突出一次整齐推进；让对方侧移破直线，收脚换角后才续攻。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-xingyi.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "形意拳"
+      ],
+      "characters": [],
+      "names": [
+        "劈拳",
+        "钻拳",
+        "崩拳",
+        "炮拳",
+        "横拳",
+        "龙形",
+        "虎形",
+        "猴形",
+        "马形",
+        "鹞形",
+        "燕形",
+        "收势混元",
+        "直线崩拳/马形冲撞",
+        "钻拳/崩拳寸劲命中",
+        "虎形/劈拳/大步扑击",
+        "龙形/鹞形旋转起伏",
+        "燕形低位钻击",
+        "猴形高低游走",
+        "轻击/钻拳/猴形点拳/燕形低位钻击",
+        "重击/劈拳/马形/虎形",
+        "格挡/炮拳上架/横拳拨挡",
+        "终结/虎形/连环崩拳"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            572,
+            572
+          ],
+          [
+            2447,
+            2498
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-muaythai",
+      "kind": "techniques",
+      "title": "泰拳",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "泰拳"
+      ],
+      "summary": "远处腿、中距拳、近处肘膝分层使用；进入近身需先交代双方手臂占用，出膝后有落脚和护架。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-muaythai.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "泰拳"
+      ],
+      "characters": [],
+      "names": [
+        "刺拳",
+        "直重拳",
+        "横勾拳",
+        "中段扫踢",
+        "低位扫腿",
+        "蹬推踢",
+        "横斩肘",
+        "上挑肘",
+        "正顶膝",
+        "斜切膝",
+        "飞冲膝",
+        "收势泰式架",
+        "中段扫踢/低位扫腿",
+        "直重拳/横勾拳",
+        "横斩肘/上挑肘",
+        "颈夹顶膝/斜切膝",
+        "飞冲膝终结",
+        "轻击/刺拳/蹬推踢",
+        "重击/直重拳/中段扫踢/正顶膝",
+        "肘击/横斩肘/上挑肘",
+        "终结/飞冲膝/连环横斩肘"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            573,
+            573
+          ],
+          [
+            2515,
+            2565
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-sanda",
+      "kind": "techniques",
+      "title": "散打",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "散打"
+      ],
+      "summary": "拳腿换距后才接摔；接腿必须展示抓到的瞬间与自身支撑，对手抽腿成功则回到拳腿交换。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-sanda.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "散打"
+      ],
+      "characters": [],
+      "names": [
+        "组合拳",
+        "转体鞭拳",
+        "快线鞭腿",
+        "截线侧踢",
+        "接腿推摔",
+        "转身后蹬",
+        "挟颈过胯摔",
+        "侧踹",
+        "下潜抱摔",
+        "接腿快摔",
+        "身法过载",
+        "快频拳腿"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            574,
+            574
+          ],
+          [
+            2569,
+            2588
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-karate",
+      "kind": "techniques",
+      "title": "空手道",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "空手道"
+      ],
+      "summary": "用清楚的起动、短促直线和回收表现节拍，寸止是演出选择；对手可让线，不能把名称写成一击必胜。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-karate.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "空手道"
+      ],
+      "characters": [],
+      "names": [
+        "正拳突",
+        "手刀劈",
+        "寸止定格",
+        "前蹴",
+        "前踢",
+        "刚劲直突",
+        "格挡反击"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            575,
+            575
+          ],
+          [
+            2418,
+            2431
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-taekwondo",
+      "kind": "techniques",
+      "title": "跆拳道",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "跆拳道"
+      ],
+      "summary": "把旋转轴、支撑脚、起跳和落点写清；水平旋身与竖向翻腾分开，落地失位就失去追击窗口。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-taekwondo.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "跆拳道"
+      ],
+      "characters": [],
+      "names": [
+        "540°旋风踢",
+        "下劈",
+        "后踢",
+        "横踢",
+        "推踢",
+        "前踢",
+        "旋风踢",
+        "高位重击",
+        "直线迎击"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            576,
+            576
+          ],
+          [
+            2404,
+            2416
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-tantui",
+      "kind": "techniques",
+      "title": "谭腿",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "谭腿"
+      ],
+      "summary": "以拳线掩护腿线，区分弹、蹬、扫的轨迹；一腿收回形成下一步，不把十二路一次塞满。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-tantui.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "谭腿"
+      ],
+      "characters": [],
+      "names": [
+        "弹",
+        "踩",
+        "截",
+        "蹬",
+        "劈",
+        "挂",
+        "撩",
+        "扫",
+        "鞭",
+        "踹",
+        "膝",
+        "摆",
+        "腿法占比",
+        "踢击高度",
+        "发力特征",
+        "攻防关系",
+        "节奏",
+        "独有价值",
+        "前段（1-4路）",
+        "中段（5-8路）",
+        "后段（9-12路）",
+        "低位（不过膝）",
+        "中位（齐腰）",
+        "高位（过肩）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            577,
+            577
+          ],
+          [
+            1684,
+            1728
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-legs36",
+      "kind": "techniques",
+      "title": "36路腿法",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "36路腿法"
+      ],
+      "summary": "按高度、方向、支撑方式选两三种腿路；每次高低切换先明确重心和收腿，对方退距时允许踢空。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-legs36.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "36路腿法"
+      ],
+      "characters": [],
+      "names": [
+        "窝心腿",
+        "破膝腿",
+        "低高边腿",
+        "二起脚",
+        "玄功腿",
+        "斜踢腿",
+        "外摆腿",
+        "通肋腿",
+        "反腿",
+        "边腿",
+        "跺子脚",
+        "正踢腿",
+        "侧踢腿",
+        "里合腿",
+        "破心腿",
+        "小翘腿",
+        "弹腿",
+        "侧通腿",
+        "转身腿",
+        "踩脚",
+        "下劈腿",
+        "尖子脚",
+        "旋风腿",
+        "腾空外摆莲",
+        "腾空侧蹬（飞腿）",
+        "扫腿",
+        "破膝通肋",
+        "窝心通肋",
+        "里合通肋",
+        "窝心后退",
+        "里合小跷",
+        "里合反腿",
+        "前踢后撩",
+        "挂面转身后蹬腿",
+        "窝心反腿",
+        "跃步通肋",
+        "直摆性",
+        "目标型",
+        "屈伸性",
+        "腾空性",
+        "扫转性",
+        "组合型",
+        "巅峰型"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            578,
+            578
+          ],
+          [
+            1909,
+            1984
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-capoeira",
+      "kind": "techniques",
+      "title": "巴西战舞",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "巴西战舞"
+      ],
+      "summary": "用摇步、侧身、倒置出腿建立圆形节奏；翻转需要手撑或起跳条件，对方卡住落点时用收腿换位脱离。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-capoeira.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "巴西战舞"
+      ],
+      "characters": [],
+      "names": [
+        "基达达后撤",
+        "安哥拉侧旋踢",
+        "马尔特洛翻转踢",
+        "阿乌空翻",
+        "库拉多低位扫踢",
+        "梅洛前蹬",
+        "雷桑戈回旋肘",
+        "奇达戈俯冲劈掌",
+        "本吉跳跃顶击",
+        "罗达转圈牵制",
+        "阿乌梅利亚空中连踢",
+        "收势罗达圆架",
+        "基达达后撤/罗达转圈",
+        "阿乌空翻/阿乌梅利亚空中连踢",
+        "雷桑戈回旋肘/本吉跳跃顶击",
+        "轻击/基达达虚掌/梅洛前蹬/罗达牵制",
+        "重击/安哥拉旋踢/俯冲劈掌/跳跃顶膝",
+        "回旋肘特色",
+        "终结/阿乌梅利亚空中连踢"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            579,
+            579
+          ],
+          [
+            1631,
+            1681
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-jiujitsu",
+      "kind": "techniques",
+      "title": "柔术",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "柔术"
+      ],
+      "summary": "从站立到倒地必须连续交代谁落在哪侧、哪只手可用；控制姿态仅作影视动作，不省略对方脱离和重新站起。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-jiujitsu.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "柔术"
+      ],
+      "characters": [],
+      "names": [
+        "十字固",
+        "三角绞",
+        "裸绞",
+        "骑乘位",
+        "下潜抱摔",
+        "侧控位",
+        "腕缄",
+        "guard位三角绞",
+        "位置控制",
+        "关节降服"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            580,
+            580
+          ],
+          [
+            2433,
+            2445
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-judo",
+      "kind": "techniques",
+      "title": "柔道",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "柔道"
+      ],
+      "summary": "先展示接触、移步造成的失衡，再到转体和落地；对方重心未移动时不能凭抓衣直接飞出，落地后重新判断站位。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-judo.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "柔道"
+      ],
+      "characters": [],
+      "names": [
+        "背负投",
+        "大外刈",
+        "出足扫",
+        "巴投",
+        "内股",
+        "过肩投",
+        "扫腰",
+        "体落",
+        "袈裟固",
+        "浮落",
+        "Uki-otoshi",
+        "Seoi-nage",
+        "一本背负投",
+        "Ippon-seoi-nage",
+        "Tai-otoshi",
+        "肩车",
+        "Kata-guruma",
+        "掬投",
+        "Sukui-nage",
+        "带取返",
+        "Obi-tori-gaeshi",
+        "双手割",
+        "Morote-gari",
+        "隅落",
+        "Sumi-otoshi",
+        "踵返",
+        "Kibisu-gaeshi",
+        "内股返",
+        "Uchi-mata-gaeshi",
+        "小内返",
+        "Ko-uchi-gaeshi",
+        "大外返",
+        "O-soto-gaeshi",
+        "小外返",
+        "Ko-soto-gaeshi",
+        "双手背负投",
+        "Morote-seoi-nage",
+        "浮腰",
+        "Uki-goshi",
+        "钓入腰",
+        "Tsurikomi-goshi",
+        "大腰",
+        "O-goshi",
+        "钓腰",
+        "Tsuri-goshi",
+        "Harai-goshi",
+        "跳腰",
+        "Hane-goshi",
+        "移腰",
+        "Utsuri-goshi",
+        "后腰",
+        "Ushiro-goshi",
+        "袖钓入腰",
+        "Sode-tsurikomi-goshi",
+        "Uchi-mata",
+        "针腰",
+        "De-ashi-barai",
+        "支钓入足",
+        "Sasae-tsurikomi-ashi",
+        "小内刈",
+        "Ko-uchi-gari",
+        "O-soto-gari",
+        "大外落",
+        "O-soto-otoshi",
+        "大外车",
+        "O-soto-guruma",
+        "小外刈",
+        "Ko-soto-gari",
+        "小外挂",
+        "Ko-soto-gake",
+        "内刈",
+        "Uchi-gari",
+        "膝车",
+        "Hiza-guruma",
+        "大车",
+        "O-guruma",
+        "扫钓入足",
+        "Harai-tsurikomi-ashi",
+        "大内刈",
+        "O-uchi-gari",
+        "大内透",
+        "O-uchi-barai",
+        "燕返",
+        "Tsubame-gaeshi",
+        "大外扫",
+        "O-soto-barai",
+        "小内刈返",
+        "Ko-uchi-gari-gaeshi",
+        "足车",
+        "Ashi-guruma",
+        "送足扫",
+        "Okuri-ashi-barai",
+        "外刈",
+        "Soto-gari",
+        "Tomoe-nage",
+        "隅返",
+        "Sumi-gaeshi",
+        "引入返",
+        "Hikikomi-gaeshi",
+        "横车",
+        "Yoko-guruma",
+        "横落",
+        "Yoko-otoshi",
+        "谷落",
+        "Tani-otoshi",
+        "浮舍身",
+        "Uki-waza",
+        "横舍身",
+        "Yoko-waza",
+        "横分",
+        "Yoko-wakare",
+        "跳舍身",
+        "Hane-waza",
+        "后角返",
+        "Ushiro-sumi-gaeshi",
+        "内卷入",
+        "Uchi-makikomi",
+        "外卷入",
+        "Soto-makikomi",
+        "跳卷入",
+        "Hane-makikomi",
+        "扫卷入",
+        "Harai-makikomi",
+        "大外卷入",
+        "O-soto-makikomi",
+        "小外挂捨身",
+        "Ko-soto-gake-sutemi",
+        "肩车捨身",
+        "Kata-guruma-sutemi",
+        "裏投",
+        "Ura-nage",
+        "抱上",
+        "Daki-age",
+        "上四方固",
+        "Kami-shiho-gatame",
+        "横四方固",
+        "Yoko-shiho-gatame",
+        "Kesa-gatame",
+        "肩固",
+        "Kata-gatame",
+        "崩袈裟固",
+        "Kuzure-kesa-gatame",
+        "片十字绞",
+        "Kata-juji-jime",
+        "逆十字绞",
+        "Gyaku-juji-jime",
+        "裸绞",
+        "Hadaka-jime",
+        "送襟绞",
+        "Okuri-eri-jime",
+        "片羽绞",
+        "Kata-ha-jime",
+        "腕缄",
+        "Ude-garami",
+        "腕十字固",
+        "Ude-hishigi-juji-gatame",
+        "腕腕固",
+        "Ude-hishigi-ude-gatame",
+        "腕膝固",
+        "Ude-hishigi-hiza-gatame",
+        "足缄",
+        "Ashi-garami",
+        "背负投/一本背负投/双手背负投",
+        "体落/掬投/隅落",
+        "大腰/浮腰/扫腰/钓入腰",
+        "大外刈/出足扫/小内刈/膝车",
+        "巴投/隅返/引入返",
+        "横落/谷落/横车"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            581,
+            581
+          ],
+          [
+            1783,
+            1907
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-aikido",
+      "kind": "techniques",
+      "title": "合气道",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "合气道"
+      ],
+      "summary": "来势、接触与转向依次可见；对方抽手或转身跟进会破坏引导，应转为护线退出，不能隔空控制。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-aikido.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "合气道"
+      ],
+      "characters": [],
+      "names": [
+        "四方投",
+        "入身投",
+        "天地投",
+        "一教",
+        "二教",
+        "三教",
+        "四教",
+        "入身化劲",
+        "踏込",
+        "引化转力",
+        "关节受制"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            582,
+            582
+          ],
+          [
+            2383,
+            2402
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-qinna36",
+      "kind": "techniques",
+      "title": "擒拿",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "擒拿"
+      ],
+      "summary": "抓控是有开始与结束的中间态，写清占用哪只手；未抓牢或对方顺势转身时放弃控制，恢复正常攻防。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-qinna36.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "擒拿"
+      ],
+      "characters": [],
+      "names": [
+        "抓腕反扭",
+        "别臂按压",
+        "拿指扣腕",
+        "抓臂别腿",
+        "扣腕",
+        "锁肘",
+        "拿肩",
+        "反关节压制",
+        "抓腕/抓发/抓臂/抓领",
+        "拧颈/拧腕/拧臂",
+        "折腕/折肘/折臂",
+        "别臂/别肩/别腿",
+        "压肘/压肩/压腕",
+        "缠臂锁肩/缠丝拧腕",
+        "绊腿旋臂/绊摔",
+        "旋摔/涮摔/过背摔",
+        "双手拧颈",
+        "搂颌抓发",
+        "抓臂扳颈",
+        "扭头扳颈",
+        "脑后抓发",
+        "托颌抠眼",
+        "别臂扒肩",
+        "折肘卸肩",
+        "压掌卷腕",
+        "剪臂挫肘",
+        "拿臂旋摔",
+        "抓腕折臂",
+        "扛臂折肘",
+        "绊腿旋臂",
+        "缠臂锁肩",
+        "托肘折腕",
+        "控臂搧脸",
+        "抬臂扒肩",
+        "折腕托肘",
+        "旋臂绊摔",
+        "折臂压肩",
+        "压肩折臂",
+        "撬肘别肩",
+        "压肘锁肩",
+        "俯身折腕",
+        "抓臂涮摔",
+        "提裆砍脑",
+        "折腕绊摔",
+        "掐腕脱打",
+        "倒背金人",
+        "抓腕压肘",
+        "兔滚鹰翻",
+        "击胸绊摔",
+        "高祖斩蛇",
+        "霸王敬酒",
+        "老鹰抓鸡",
+        "抓拿控制，反关节制敌，拿住再打，分筋错骨"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            583,
+            583
+          ],
+          [
+            1986,
+            2052
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-hunggar",
+      "kind": "techniques",
+      "title": "洪拳",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "洪拳"
+      ],
+      "summary": "桥手与稳固步架共同承接冲击；对手改变角度时移动脚步重建桥线，不能固定站桩挡住所有方向。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-hunggar.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "洪拳"
+      ],
+      "characters": [],
+      "names": [
+        "沉桥",
+        "分桥",
+        "架桥",
+        "订桥",
+        "提桥",
+        "留桥",
+        "制桥",
+        "穿桥",
+        "推桥",
+        "磨桥",
+        "撞桥",
+        "收势定马",
+        "四平大马沉桥/推桥蓄力",
+        "订桥/穿桥点打",
+        "制桥低位下压",
+        "磨桥/留桥贴身缠斗",
+        "撞桥寸劲肘击",
+        "轻击/穿桥/分桥/磨桥",
+        "重击/订桥/推桥/撞桥",
+        "格挡/沉桥/架桥/留桥",
+        "终结/订桥连击/推桥全力冲撞"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            584,
+            584
+          ],
+          [
+            1730,
+            1780
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-caijia",
+      "kind": "techniques",
+      "title": "蔡拳",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "蔡拳"
+      ],
+      "summary": "以斜身、三角落步和短手换线表现偏门快打；每次绕线保留可见落脚点，对手跟转时改短打或退出。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-caijia.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "蔡拳"
+      ],
+      "characters": [],
+      "names": [
+        "凤眼插指",
+        "侧身挂捶",
+        "横哨扫掌",
+        "三角钉腿",
+        "低步勾弹",
+        "消身顶肘",
+        "离桥分桥",
+        "偷步标拳",
+        "沉马劈掌",
+        "借力旋撞",
+        "跃步穿打",
+        "收势三角定马",
+        "凤眼插指/偷步标拳",
+        "侧身挂捶/借力旋撞",
+        "三角钉腿/低步勾弹",
+        "沉马劈掌/跃步穿打",
+        "轻击/凤眼插指/离桥分桥/低步勾弹",
+        "重击/横哨扫掌/沉马劈掌/借力旋撞",
+        "凤眼指特色",
+        "终结/跃步穿打/连环旋撞"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            585,
+            585
+          ],
+          [
+            1523,
+            1573
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-groundlegs",
+      "kind": "techniques",
+      "title": "少林旋风地堂腿",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "少林旋风地堂腿"
+      ],
+      "summary": "低位进入、贴地转向、起身返回分成三拍；地面必须可支撑，对手退开或封住起身线时不能凭空弹回高位。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-groundlegs.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "少林旋风地堂腿"
+      ],
+      "characters": [],
+      "names": [
+        "贴地平扫腿",
+        "侧滚截蹬",
+        "仆步勾撩",
+        "旋身连环铲",
+        "伏地后绊",
+        "翻身弹踢",
+        "按地腾空旋风脚",
+        "卧地侧踹",
+        "滚身锁膝",
+        "鲤鱼打挺撞腿",
+        "低空扫堂连环腿",
+        "收势罗汉定仆步",
+        "贴地平扫腿/低空扫堂连环腿",
+        "侧滚截蹬/伏地后绊",
+        "翻身弹踢/卧地侧踹",
+        "按地腾空旋风脚/鲤鱼打挺撞腿",
+        "轻击/侧滚截蹬/仆步勾撩/翻身弹踢",
+        "重击/旋身连环铲/卧地侧踹/鲤鱼打挺撞腿",
+        "锁控/滚身锁膝/伏地后绊",
+        "终结/按地腾空旋风脚/低空扫堂连环腿"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            586,
+            586
+          ],
+          [
+            1576,
+            1627
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-choyleefut",
+      "kind": "techniques",
+      "title": "蔡李佛",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "蔡李佛"
+      ],
+      "summary": "上游此处只有招名；若采用挂扫抛的手臂意象，需另写原创动作路径并标注补写，不能称已导入完整套路。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-choyleefut.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "蔡李佛"
+      ],
+      "characters": [],
+      "names": [
+        "挂捶",
+        "扫捶",
+        "抛捶",
+        "插捶",
+        "鞭捶",
+        "标指",
+        "桥手连打"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            587,
+            587
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-jeetkune",
+      "kind": "techniques",
+      "title": "截拳道",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "截拳道"
+      ],
+      "summary": "截击依赖看得见的起动信号与足够距离；对方假起动或及时停步时允许判断失误，保留防守回收。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-jeetkune.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "截拳道"
+      ],
+      "characters": [],
+      "names": [
+        "截击标指",
+        "前手寸拳",
+        "阻截踢",
+        "黏手滑入",
+        "侧步截击",
+        "掌击",
+        "手刀",
+        "插眼指",
+        "侧踢",
+        "时空拦截",
+        "黏手封控"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            588,
+            588
+          ],
+          [
+            2501,
+            2513
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-mantis",
+      "kind": "techniques",
+      "title": "螳螂拳",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "螳螂拳"
+      ],
+      "summary": "上游此处只有招名；可另选混合连招中的角色化段落，不把其局部用法推广为完整门派定义。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-mantis.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "螳螂拳"
+      ],
+      "characters": [],
+      "names": [
+        "螳螂勾手",
+        "螳螂掌",
+        "挂手",
+        "采手",
+        "崩步",
+        "连环捕蝉"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            589,
+            589
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-drunken",
+      "kind": "techniques",
+      "title": "醉拳",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "醉拳"
+      ],
+      "summary": "上游此处只有招名；摇身和跌扑需要支撑与恢复路径，另写的动作应标为本项目创作。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-drunken.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "醉拳"
+      ],
+      "characters": [],
+      "names": [
+        "醉步",
+        "醉掌",
+        "跌扑",
+        "滚翻",
+        "摇身避打",
+        "借醉反击"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            590,
+            590
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-wuxia-step",
+      "kind": "techniques",
+      "title": "武侠身法",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "武侠身法"
+      ],
+      "summary": "名称为文学与作者创作意象；普通版本写步幅、遮线、落脚点，瞬移、踏空或分身须另获用户能力授权。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "techniques/arvin-tech-wuxia-step.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "武侠身法"
+      ],
+      "characters": [],
+      "names": [
+        "凌波微步",
+        "踏雪无痕",
+        "移星换斗",
+        "鬼影步",
+        "缩地成寸",
+        "燕子三抄水",
+        "八步赶蝉",
+        "踏浪行",
+        "蛇形游身",
+        "幻影换位",
+        "闪避群攻",
+        "不可预测位移",
+        "越走越强",
+        "梯云纵",
+        "神行百变",
+        "天罗地网势",
+        "金雁功/上天梯",
+        "瞬息千里",
+        "水上漂",
+        "泥鳅功",
+        "逍遥游",
+        "蝠王身法"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            591,
+            591
+          ],
+          [
+            2194,
+            2220
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-taiyi-sword",
+      "kind": "techniques",
+      "title": "武当太乙玄门剑",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "武当太乙玄门剑"
+      ],
+      "summary": "以圆转和曲线路径区别直刺；这里只提供名称与定位，局部角色动作可查剑神卡，不能声称完整剑谱已导入。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-taiyi-sword.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "武当太乙玄门剑"
+      ],
+      "characters": [],
+      "names": [
+        "青龙出海",
+        "拨云见日",
+        "灵猫捕鼠",
+        "怀中抱月",
+        "紫燕穿林",
+        "金蛇缠柳",
+        "旱地拔葱",
+        "踏雪寻梅",
+        "倒插金簪",
+        "云卷长空",
+        "斜扫七星",
+        "回锋点星",
+        "武当太乙玄门剑"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            592,
+            592
+          ],
+          [
+            685,
+            687
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-wudang132",
+      "kind": "techniques",
+      "title": "武当六路132式总剑",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "武当六路132式总剑"
+      ],
+      "summary": "保留高低层次的视觉方向，滚身与翻起需空间；132式只属上游命名，当前仓库未提供132式全谱。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-wudang132.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "武当六路132式总剑"
+      ],
+      "characters": [],
+      "names": [
+        "起手云剑",
+        "马步截剑",
+        "滚身扫剑",
+        "腾空劈刺",
+        "地躺藏锋",
+        "翻身崩剑",
+        "提膝挑剑",
+        "虚步点剑",
+        "旋风绞剑",
+        "锁喉横斩",
+        "伏身下刺",
+        "收势归元"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            593,
+            593
+          ],
+          [
+            685,
+            686
+          ],
+          [
+            688,
+            688
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-yang55",
+      "kind": "techniques",
+      "title": "杨式55式太极剑",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "杨式55式太极剑"
+      ],
+      "summary": "取慢圆接引和剑尖换线的方向，具体身体路径须补写；55式只属上游命名，不能以十二个列名代替全谱。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-yang55.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "杨式55式太极剑"
+      ],
+      "characters": [],
+      "names": [
+        "起势",
+        "仙人指路",
+        "三环套月",
+        "燕子抄水",
+        "黄蜂入洞",
+        "野马分鬃",
+        "白蛇吐信",
+        "迎风掸尘",
+        "退步穿林",
+        "独立扫雪",
+        "射雁式",
+        "收势合剑"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            594,
+            594
+          ],
+          [
+            685,
+            686
+          ],
+          [
+            689,
+            689
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-dugu",
+      "kind": "techniques",
+      "title": "独孤九剑",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "独孤九剑"
+      ],
+      "summary": "以先展示习惯、再尝试破线的剧情逻辑改编；不是自动识破一切，破气等能力名称不能自动授权。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-dugu.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "独孤九剑"
+      ],
+      "characters": [],
+      "names": [
+        "总诀式",
+        "破剑式",
+        "破刀式",
+        "破枪式",
+        "破鞭式",
+        "破索式",
+        "破掌式",
+        "破箭式",
+        "破气式",
+        "寻瑕刺隙",
+        "虚引实击",
+        "回身断势"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            595,
+            595
+          ],
+          [
+            685,
+            686
+          ],
+          [
+            690,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-huashan",
+      "kind": "techniques",
+      "title": "华山基础剑法",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "华山基础剑法"
+      ],
+      "summary": "取清楚的架势与直线起落，名称不能证明历史套路；细节另查剑神角色变体或标为原创补写。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-huashan.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "华山基础剑法"
+      ],
+      "characters": [],
+      "names": [
+        "白虹贯日",
+        "有凤来仪",
+        "金雁横空",
+        "截剑式",
+        "流云飞渡",
+        "苍松迎客",
+        "萧史乘龙",
+        "弄玉吹箫",
+        "天马行空",
+        "横云断峰",
+        "回风拂柳",
+        "直刺咽喉"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            596,
+            596
+          ],
+          [
+            685,
+            686
+          ],
+          [
+            691,
+            691
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-yunv",
+      "kind": "techniques",
+      "title": "玉女十九剑",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "玉女十九剑"
+      ],
+      "summary": "缠绕要有刃路和接触点，软转不等于剑身变成绳索；十九剑全谱未随仓库提供。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-yunv.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "玉女十九剑"
+      ],
+      "characters": [],
+      "names": [
+        "流云叠影",
+        "缠剑锁械",
+        "斜撩封腕",
+        "回身绕刺",
+        "穿云绕月",
+        "轻燕掠水",
+        "环身缠打",
+        "低扫下盘",
+        "仰身反挑",
+        "叠剑合围",
+        "碎星点刺",
+        "收剑藏锋"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            597,
+            597
+          ],
+          [
+            685,
+            686
+          ],
+          [
+            692,
+            692
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-whiteape",
+      "kind": "techniques",
+      "title": "峨眉白猿二十四剑",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "峨眉白猿二十四剑"
+      ],
+      "summary": "藏锋与突然改变高低可作轮廓；纵跳要落点，猿形不能自动改角色身体形态。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-whiteape.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "峨眉白猿二十四剑"
+      ],
+      "characters": [],
+      "names": [
+        "金蛇出洞",
+        "白蛇吐信",
+        "金鹰扑雀",
+        "猿猴探爪",
+        "纵步翻刺",
+        "侧身撩割",
+        "反手倒刺",
+        "踏空点肩",
+        "伏身斩胫",
+        "旋身扫腰",
+        "藏剑诱敌",
+        "跃步穿心"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            598,
+            598
+          ],
+          [
+            685,
+            686
+          ],
+          [
+            693,
+            693
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-qinglong",
+      "kind": "techniques",
+      "title": "青龙剑32式",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "青龙剑32式"
+      ],
+      "summary": "开阔幅度依赖挥剑空间；长弧挥空后收锋重立，不能自动变成青龙实体或无距离清场。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-qinglong.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "青龙剑32式"
+      ],
+      "characters": [],
+      "names": [
+        "青龙摆尾",
+        "乌龙绞柱",
+        "平地起雷",
+        "斜劈山岗",
+        "弓步直刺",
+        "虚步撩剑",
+        "歇步藏锋",
+        "提膝点云",
+        "回身扫月",
+        "穿林刺喉",
+        "卧步斩足",
+        "合剑归心"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            599,
+            599
+          ],
+          [
+            685,
+            686
+          ],
+          [
+            694,
+            694
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-ziwu",
+      "kind": "techniques",
+      "title": "峨眉子午剑",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "峨眉子午剑"
+      ],
+      "summary": "短距脆变需要先进入可触距离；侧滑与收锋分开可见，短促不是无起动和无限连刺。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-ziwu.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "峨眉子午剑"
+      ],
+      "characters": [],
+      "names": [
+        "子午穿心",
+        "闪步突刺",
+        "脆劲弹挑",
+        "侧身锁喉",
+        "短距撩割",
+        "伏步截胫",
+        "旋腕点目",
+        "回身反扎",
+        "斜架卸械",
+        "踏空斩肩",
+        "低扫绊足",
+        "收锋藏影"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            600,
+            600
+          ],
+          [
+            685,
+            686
+          ],
+          [
+            695,
+            695
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-scythe",
+      "kind": "techniques",
+      "title": "长柄镰刀",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "长柄镰刀"
+      ],
+      "summary": "长柄旋转受墙柱限制，回镰要让出路径；专项文件缺失，名称中的远距飞斩不自动授予回旋飞行。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-scythe.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "长柄镰刀"
+      ],
+      "characters": [],
+      "names": [
+        "低身平镰扫胫",
+        "横月平斩",
+        "升镰挑割",
+        "俯身斜劈",
+        "突刺穿胸",
+        "腾空落月斩",
+        "踏步重劈",
+        "回身反镰斩",
+        "侧滑勾镰卸械",
+        "蓄力满月重斩",
+        "远距旋镰飞斩",
+        "收势静镰立架",
+        "正统死神长柄镰刀（写实无锁链幻术 12 核心式）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            601,
+            601
+          ],
+          [
+            697,
+            701
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-musou",
+      "kind": "techniques",
+      "title": "梦想一心太刀",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "梦想一心太刀"
+      ],
+      "summary": "作为上游游戏意象候选；单刀与雷电分开设置，刀路补写需标为改编，未核验官方招式或能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-musou.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "梦想一心太刀"
+      ],
+      "characters": [],
+      "names": [
+        "紫电横断",
+        "天升挑霞",
+        "沉身斜薙",
+        "诸相穿刺",
+        "瞬身落雷斩",
+        "跨步雷劈",
+        "回身无想横斩",
+        "侧滑勾刃卸械",
+        "满愿梦想一刀",
+        "虚空居合二段",
+        "空落雷光碎",
+        "收刀一心归寂",
+        "雷电将军・梦想一心太刀术（一心净土秘剑 12 核心式）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            602,
+            602
+          ],
+          [
+            703,
+            707
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-feixue-frost",
+      "kind": "techniques",
+      "title": "绯雪樱灼流单太刀",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "绯雪樱灼流单太刀"
+      ],
+      "summary": "此卡是上游冰蓝粉樱轮廓，与火焰绯雪角色是两个版本；单刀、冰弓、时停分别核对用户授权，游戏设定未核验。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-feixue-frost.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "绯雪樱灼流单太刀"
+      ],
+      "characters": [],
+      "names": [
+        "折樱上挑",
+        "白鸟回薙",
+        "霜滑三段斩",
+        "寒簇樱矢",
+        "霜华聚刃",
+        "枯霜居合突",
+        "浮空冰刃落",
+        "淬寒斜断",
+        "时停反刃弹",
+        "千霜环身斩",
+        "归刃漫天雪",
+        "收刀樱霜静礼",
+        "鸣潮・绯雪 樱灼流单太刀术（常世身 + 预求身正统 12 核心式）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            603,
+            603
+          ],
+          [
+            709,
+            713
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-qinggong",
+      "kind": "techniques",
+      "title": "高级轻功",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "高级轻功"
+      ],
+      "summary": "当前只有轻功定位摘要；逐段补起跳点、可借力物与落点。踏空和滑翔须有用户允许的机制。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-qinggong.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "高级轻功"
+      ],
+      "characters": [],
+      "names": [
+        "高级轻功体系（25 核心式）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            715,
+            719
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-tech-immortal-sword",
+      "kind": "techniques",
+      "title": "修仙高级剑招",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "修仙高级剑招"
+      ],
+      "summary": "当前只有仙侠剑招定位摘要；剑气、御剑、剑阵各自声明资源和边界，不能因招名一次启用全部能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置",
+        "需要具体动作时另选有细节的卡，或明确标注原创补写"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实",
+        "把名称清单或定位摘要当作完整套路"
+      ],
+      "path": "techniques/arvin-tech-immortal-sword.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "outline",
+      "schools": [
+        "修仙高级剑招"
+      ],
+      "characters": [],
+      "names": [
+        "修仙高级剑招体系（25 核心式）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            721,
+            725
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-character-taiji",
+      "kind": "characters",
+      "title": "太极：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "太极：战斗预设",
+        "太极拳",
+        "八极拳",
+        "咏春拳",
+        "八卦掌",
+        "太极"
+      ],
+      "summary": "远近与圆直切换：先接引，再绕位，短距连打，贴身短发。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-taiji.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "太极拳",
+        "八极拳",
+        "咏春拳",
+        "八卦掌"
+      ],
+      "characters": [
+        "太极"
+      ],
+      "names": [
+        "云手",
+        "揽雀尾",
+        "搬拦捶",
+        "如封似闭",
+        "掤→捋→挤→按",
+        "采手引偏",
+        "白蛇吐信",
+        "狮子抱球",
+        "猛虎下山",
+        "鹞子穿林",
+        "乌龙摆尾",
+        "穿身绕掌",
+        "崩拳",
+        "顶肘",
+        "铁山靠",
+        "挤靠",
+        "六大开·顶/抱/单/提/胯/缠",
+        "摊手",
+        "伏手",
+        "膀手",
+        "窒手",
+        "标指",
+        "日字冲拳",
+        "捆手",
+        "拍手",
+        "低踢"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            808,
+            839
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-character-hongcha",
+      "kind": "characters",
+      "title": "红茶：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "红茶：战斗预设",
+        "泰拳",
+        "散打",
+        "空手道",
+        "八极拳",
+        "红茶"
+      ],
+      "summary": "以肘膝、拳腿换距和短发保持前压，每轮有清晰重音。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-hongcha.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "泰拳",
+        "散打",
+        "空手道",
+        "八极拳"
+      ],
+      "characters": [
+        "红茶"
+      ],
+      "names": [
+        "刺拳",
+        "直重拳",
+        "横勾拳",
+        "中段扫踢",
+        "低位扫腿",
+        "蹬推踢",
+        "横斩肘",
+        "上挑肘",
+        "正顶膝",
+        "斜切膝",
+        "飞冲膝",
+        "收势泰式架",
+        "组合拳",
+        "转体鞭拳",
+        "快线鞭腿",
+        "截线侧踢",
+        "接腿推摔",
+        "转身后蹬",
+        "挟颈过胯摔",
+        "正拳突",
+        "手刀劈",
+        "寸止定格",
+        "崩拳",
+        "顶肘",
+        "铁山靠",
+        "六大开·抱/单/提/胯/缠",
+        "撑锤·十字整劲"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            841,
+            873
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-character-baige",
+      "kind": "characters",
+      "title": "白鸽：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "白鸽：战斗预设",
+        "巴西战舞",
+        "36路腿法",
+        "谭腿",
+        "跆拳道",
+        "截拳道",
+        "少林旋风地堂腿",
+        "白鸽"
+      ],
+      "summary": "巴西战舞与高、中位腿法主攻；低位地堂腿仅作短暂换层。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-baige.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "巴西战舞",
+        "36路腿法",
+        "谭腿",
+        "跆拳道",
+        "截拳道",
+        "少林旋风地堂腿"
+      ],
+      "characters": [
+        "白鸽"
+      ],
+      "names": [
+        "弹",
+        "蹬",
+        "劈",
+        "鞭",
+        "截",
+        "踩",
+        "窝心腿",
+        "破膝腿",
+        "低高边腿",
+        "二起脚",
+        "玄功腿",
+        "540°旋风踢",
+        "下劈",
+        "后踢",
+        "基达达后撤",
+        "安哥拉侧旋踢",
+        "马尔特洛翻转踢",
+        "阿乌空翻",
+        "库拉多低位扫踢",
+        "阿乌梅利亚空中连踢",
+        "截击标指",
+        "前手寸拳",
+        "阻截踢",
+        "黏手滑入",
+        "贴地平扫腿",
+        "侧滚截蹬",
+        "旋身连环铲",
+        "滚身锁膝",
+        "低空扫堂连环腿",
+        "按地腾空旋风脚",
+        "540°回旋踢",
+        "凌空下劈腿"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            875,
+            916
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-character-linyu",
+      "kind": "characters",
+      "title": "凛羽：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "凛羽：战斗预设",
+        "形意拳",
+        "八卦掌",
+        "擒拿",
+        "合气道",
+        "柔道",
+        "柔术",
+        "凛羽"
+      ],
+      "summary": "直进与绕位主攻，抓控破招后回到快攻；控制是过渡。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-linyu.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "形意拳",
+        "八卦掌",
+        "擒拿",
+        "合气道",
+        "柔道",
+        "柔术"
+      ],
+      "characters": [
+        "凛羽"
+      ],
+      "names": [
+        "劈拳",
+        "钻拳",
+        "崩拳",
+        "炮拳",
+        "横拳",
+        "虎形",
+        "马形",
+        "鹞形",
+        "白蛇吐信",
+        "鹞子穿林",
+        "乌龙摆尾",
+        "穿身绕掌",
+        "回身劈掌",
+        "四方投",
+        "入身投",
+        "天地投",
+        "一教/二教/三教/四教",
+        "入身化劲",
+        "背负投",
+        "大外刈",
+        "出足扫",
+        "巴投",
+        "内股",
+        "抓腕反扭",
+        "别臂按压",
+        "拿指扣腕",
+        "抓臂别腿",
+        "十字固",
+        "三角绞",
+        "裸绞",
+        "骑乘位"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            918,
+            956
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-character-leidian",
+      "kind": "characters",
+      "title": "雷电：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "雷电：战斗预设",
+        "散打",
+        "跆拳道",
+        "空手道",
+        "截拳道",
+        "武侠身法",
+        "咏春拳",
+        "八极拳",
+        "雷电"
+      ],
+      "summary": "用短路径、快速换距与连续短发形成速度角色。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-leidian.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "散打",
+        "跆拳道",
+        "空手道",
+        "截拳道",
+        "武侠身法",
+        "咏春拳",
+        "八极拳"
+      ],
+      "characters": [
+        "雷电"
+      ],
+      "names": [
+        "截击标指",
+        "前手寸拳",
+        "阻截踢",
+        "黏手滑入",
+        "侧步截击",
+        "日字冲拳",
+        "标指",
+        "摊手",
+        "伏手",
+        "捆手",
+        "拍手",
+        "低踢",
+        "组合拳",
+        "快线鞭腿",
+        "转体鞭拳",
+        "接腿推摔",
+        "540°旋风踢",
+        "下劈",
+        "后踢",
+        "正拳突",
+        "寸止定格",
+        "手刀劈",
+        "凌波微步",
+        "踏雪无痕",
+        "移星换斗",
+        "顶心肘（雷电版）",
+        "崩拳（雷电版）",
+        "撑锤（雷电版）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            958,
+            992
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-character-bale",
+      "kind": "characters",
+      "title": "芭乐：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "芭乐：战斗预设",
+        "柔术",
+        "蔡拳",
+        "巴西战舞",
+        "跆拳道",
+        "形意拳",
+        "芭乐"
+      ],
+      "summary": "站立短打、翻转换位、地面控制三个状态分别有招式。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-bale.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "柔术",
+        "蔡拳",
+        "巴西战舞",
+        "跆拳道",
+        "形意拳"
+      ],
+      "characters": [
+        "芭乐"
+      ],
+      "names": [
+        "劈拳",
+        "钻拳",
+        "崩拳",
+        "炮拳",
+        "横拳",
+        "龙形",
+        "虎形",
+        "马形",
+        "凤眼插指",
+        "侧身挂捶",
+        "横哨扫掌",
+        "三角钉腿",
+        "低步勾弹",
+        "消身顶肘",
+        "离桥分桥",
+        "偷步标拳",
+        "沉马劈掌",
+        "借力旋撞",
+        "跃步穿打",
+        "收势三角定马",
+        "540°旋风踢",
+        "下劈",
+        "后踢",
+        "横踢",
+        "基达达后撤",
+        "安哥拉侧旋踢",
+        "马尔特洛翻转踢",
+        "阿乌空翻",
+        "库拉多低位扫踢",
+        "梅洛前蹬",
+        "雷桑戈回旋肘",
+        "奇达戈俯冲劈掌",
+        "本吉跳跃顶击",
+        "罗达转圈牵制",
+        "阿乌梅利亚空中连踢",
+        "收势罗达圆架",
+        "十字固",
+        "三角绞",
+        "裸绞",
+        "骑乘位",
+        "下潜抱摔",
+        "轻击/快速连击",
+        "重击/崩拳/炮拳",
+        "跆拳道旋转踢",
+        "巴西战舞翻转",
+        "终结技蓄力",
+        "终结技绽放"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            994,
+            1051
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-character-bingnv",
+      "kind": "characters",
+      "title": "冰女：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "冰女：战斗预设",
+        "泰拳",
+        "八极拳",
+        "空手道",
+        "擒拿",
+        "洪拳",
+        "冰女"
+      ],
+      "summary": "短发硬攻与硬冰封路相结合，实体结晶有接触面。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-bingnv.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "泰拳",
+        "八极拳",
+        "空手道",
+        "擒拿",
+        "洪拳"
+      ],
+      "characters": [
+        "冰女"
+      ],
+      "names": [
+        "刺拳",
+        "直重拳",
+        "中段扫踢",
+        "低位扫腿",
+        "蹬推踢",
+        "横斩肘",
+        "上挑肘",
+        "正顶膝",
+        "斜切膝",
+        "飞冲膝",
+        "崩拳",
+        "顶肘",
+        "铁山靠",
+        "撑锤",
+        "六大开·顶/抱/单/提/胯/缠",
+        "正拳突",
+        "手刀劈",
+        "寸止定格",
+        "沉桥",
+        "分桥",
+        "架桥",
+        "订桥",
+        "制桥",
+        "穿桥",
+        "推桥",
+        "撞桥",
+        "抓腕反扭",
+        "别臂按压",
+        "拿指扣腕",
+        "抓臂别腿",
+        "拳/肘/膝命中",
+        "扫踢/横击",
+        "铁山靠/撑锤",
+        "擒拿控制",
+        "终结技蓄力",
+        "终结技绽放"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1054,
+            1103
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-character-jianshen",
+      "kind": "characters",
+      "title": "剑神：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "剑神：战斗预设",
+        "武当太乙玄门剑",
+        "武当六路132式总剑",
+        "杨式55式太极剑",
+        "独孤九剑",
+        "华山基础剑法",
+        "玉女十九剑",
+        "峨眉白猿二十四剑",
+        "青龙剑32式",
+        "峨眉子午剑",
+        "剑神"
+      ],
+      "summary": "同一把剑切换慢圆、锐变、短促、缠绕与大弧的路径节奏。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-jianshen.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "武当太乙玄门剑",
+        "武当六路132式总剑",
+        "杨式55式太极剑",
+        "独孤九剑",
+        "华山基础剑法",
+        "玉女十九剑",
+        "峨眉白猿二十四剑",
+        "青龙剑32式",
+        "峨眉子午剑"
+      ],
+      "characters": [
+        "剑神"
+      ],
+      "names": [
+        "青龙出海",
+        "紫燕穿林",
+        "云卷长空",
+        "回锋点星",
+        "子午穿心",
+        "闪步突刺",
+        "旋腕点目",
+        "金蛇出洞",
+        "纵步翻刺",
+        "跃步穿心",
+        "缠剑锁械",
+        "碎星点刺",
+        "环身缠打",
+        "总诀式",
+        "破剑式",
+        "破气式",
+        "寻瑕刺隙",
+        "三环套月",
+        "退步穿林",
+        "滚身扫剑",
+        "翻身崩剑",
+        "锁喉横斩",
+        "白虹贯日",
+        "天马行空",
+        "直刺咽喉",
+        "平地起雷",
+        "穿林刺喉",
+        "点刺/突刺",
+        "横斩/斜劈",
+        "缠剑/锁械",
+        "格挡/崩剑",
+        "终结蓄力",
+        "终结绽放",
+        "听觉层"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1106,
+            1153
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-character-feixue-fire",
+      "kind": "characters",
+      "title": "绯雪·火焰：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "绯雪·火焰：战斗预设",
+        "绯雪樱灼流单太刀",
+        "火焰刀",
+        "焚樱刀禅",
+        "武侠身法",
+        "绯雪·火焰"
+      ],
+      "summary": "单刀前压与火红刀焰，沿刀路加压后收刀。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-feixue-fire.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "绯雪樱灼流单太刀",
+        "火焰刀",
+        "焚樱刀禅",
+        "武侠身法"
+      ],
+      "characters": [
+        "绯雪·火焰"
+      ],
+      "names": [
+        "折樱上挑（火焰版）",
+        "白鸟回薙（火焰版）",
+        "枯霜居合突（焚刃版）",
+        "千霜环身斩（赤潮版）",
+        "炎月横断",
+        "赤焰穿喉",
+        "焚城下劈",
+        "踏火追命",
+        "灼流连断",
+        "流火幻步",
+        "腾焰折返",
+        "点刺/居合",
+        "横斩/斜劈",
+        "连斩/追击",
+        "格挡/碰撞",
+        "终结蓄力",
+        "终结绽放",
+        "听觉层"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1156,
+            1188
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-entry",
+      "kind": "choreography",
+      "title": "突进与开场",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "突进与开场",
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "空手道",
+        "螳螂拳",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "summary": "按原距离选突进，先看到出发点和进入路线；试探、退让或慢开场同样可用。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-entry.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "空手道",
+        "螳螂拳",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "characters": [],
+      "names": [
+        "铁山靠",
+        "顶肘突进",
+        "行步连冲",
+        "崩拳箭步突进",
+        "劈拳突进",
+        "钻拳突进",
+        "马形冲撞",
+        "燕形贴地突进",
+        "日字冲拳中线逼进",
+        "标指中线突刺",
+        "上步七星",
+        "如封似闭",
+        "醉汉踉跄冲",
+        "倒栽葱突进",
+        "螳螂扑蝉",
+        "垫步冲拳",
+        "飞膝突进",
+        "飞象踏地",
+        "抓腕突进",
+        "潜身抱腿",
+        "垫步侧踢",
+        "前蹴突进",
+        "入身突进",
+        "转换切入",
+        "八卦圈步绕行",
+        "鹞子穿林突进",
+        "游身进势",
+        "白蛇吐信突进",
+        "标指直拳突进",
+        "前脚侧踢突进",
+        "滑步直拳",
+        "弹跳步切入",
+        "阿乌空翻突进",
+        "安哥拉侧旋踢突进",
+        "阿乌梅利亚空中连踢突进",
+        "双手割突进",
+        "一本背负投切入",
+        "弹腿突进",
+        "蹬腿突进",
+        "踩脚突进",
+        "跃步通肋突进"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1190,
+            1236
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-school-chain",
+      "kind": "choreography",
+      "title": "武学节拍与连招",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "武学节拍与连招",
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "洪拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "螳螂拳",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "summary": "每段选一条主运动线；下一招必须继承上一招的距离、手占用和落脚，允许被对手打断。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-school-chain.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "洪拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "螳螂拳",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "characters": [],
+      "names": [
+        "八极拳",
+        "形意拳",
+        "咏春拳（小念头正统核心套路）",
+        "太极拳",
+        "醉拳",
+        "螳螂拳",
+        "散打",
+        "泰拳",
+        "擒拿",
+        "柔术",
+        "跆拳道",
+        "空手道",
+        "蔡李佛",
+        "洪拳",
+        "蔡拳",
+        "合气道",
+        "八卦掌",
+        "截拳道",
+        "巴西战舞",
+        "柔道",
+        "谭腿",
+        "36路腿法"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1237,
+            1261
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-hands",
+      "kind": "choreography",
+      "title": "手部动作与攻击部位",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "手部动作与攻击部位",
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "洪拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "螳螂拳",
+        "谭腿",
+        "醉拳"
+      ],
+      "summary": "变换手部形状必须有空间和回收；用少数可辨动作表达区别，避免把全表写成一次连打。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-hands.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "洪拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "螳螂拳",
+        "谭腿",
+        "醉拳"
+      ],
+      "characters": [],
+      "names": [
+        "八极崩拳/形意劈拳/钻拳/崩拳/炮拳/横拳/虎形/马形/猴形/鹞形/燕形/咏春日字冲拳/散打直拳/空手道正拳/泰拳刺拳/直重拳/横勾拳/洪拳订桥/提桥/撞桥/蔡拳偷步标拳/侧身挂捶/借力旋撞",
+        "太极推掌/太极云手/醉掌/螳螂掌/咏春摊手/伏手/拦手/耕手/拍手/洪拳沉桥/分桥/架桥/穿桥/推桥/磨桥/蔡拳横哨扫掌/离桥分桥/沉马劈掌/跃步穿打/蔡李佛挂捶/柔术推掌/合气道手刀（正面打/横面打）/八卦白蛇吐信/狮子抱球/猛虎下山/鹞子穿林/乌龙摆尾/双燕投林/黑熊探掌/白猿托桃/金鸡抖翎/回身劈掌/穿身绕掌/截拳道掌击/截拳道手刀",
+        "咏春标指/螳螂勾手/擒拿拿指/蔡拳凤眼插指/蔡李佛标指/太极点穴/合气道四教（压力点锁定）/八卦白蛇吐信（四指并拢如蛇信直线刺出）/双燕投林（双掌指尖点刺锁骨）/截拳道标指/截拳道插眼指",
+        "八极顶肘/八极反背肘/八极盘肘/泰拳横斩肘/上挑肘/连环横斩肘/蔡拳消身顶肘/洪拳撞桥肘击/空手道肘击/散打肘击/醉拳醉肘/截拳道升肘/截拳道横扫肘/巴西战舞雷桑戈回旋肘",
+        "螳螂刁手/擒拿抓腕/洪拳留桥交剪锁桥/蔡李佛圈桥爪",
+        "咏春膀手/窒手/捆手/太极采手/擒拿扣腕/合气道一教·二教·三教（锁腕/压腕/扭腕）/八卦金鸡抖翎（双掌高频抖掌点打手腕小臂）",
+        "八极铁山靠/八极挤靠/形意虎形前扑/马形沉肩冲撞/散打肩撞",
+        "八极靠打/柔术身压/醉拳倒地靠",
+        "泰拳头撞/散打头锤/醉拳头锤/巴西战舞Cabeçada（前额撞击对方面部/胸口）",
+        "柔道袖口抓控/柔道衣领抓控/柔道腰带抓控/柔道双手割（双手同时抓住双腿抱摔）",
+        "谭腿冲拳/谭腿窝肚拳/谭腿通天炮拳/谭腿擂拳",
+        "36路腿法撑掌（撑地支撑出腿）/36路腿法穿掌（穿掌引导腿法方向）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1262,
+            1276
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-kicks",
+      "kind": "choreography",
+      "title": "踢击高度与身体路径",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "踢击高度与身体路径",
+        "36路腿法",
+        "八卦掌",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "summary": "高度变化需要收腿、转髋和支撑交换；命中效果是候选，最终由双方位置决定。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-kicks.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "characters": [],
+      "names": [
+        "跆拳道横踢/散打鞭腿/泰拳扫踢/空手道回蹴/蔡李佛鞭腿/截拳道前踢/巴西战舞安哥拉侧旋踢/马尔特洛翻转踢/阿乌梅利亚空中连踢",
+        "散打侧踹/太极蹬脚/空手道前蹴/泰拳蹬推踢/跆拳道推踢/合气道踏込/八卦圈步踩位/截拳道侧踢/巴西战舞梅洛前蹬",
+        "咏春低踢/跆拳道前踢/太极分脚/擒拿点踢/蔡拳三角钉腿/低步勾弹",
+        "跆拳道下劈/空手道落踢/散打后蹬/泰拳蹬踢/醉拳倒劈/八卦后蹬/巴西战舞马尔特洛翻转踢",
+        "跆拳道侧踢/空手道刀踢/散打侧踹变体/蔡李佛刀脚/八卦暗腿/巴西战舞安哥拉侧旋踢/阿乌梅利亚空中连踢",
+        "泰拳中段扫踢/低位扫腿/散打低扫/跆拳道低段横踢/截拳道低侧踢/巴西战舞库拉多低位扫踢/安哥拉侧旋踢",
+        "泰拳正顶膝/斜切膝/飞冲膝/散打膝撞/柔术膝压/空手道膝蹴/擒拿跪膝/巴西战舞本吉跳跃顶击",
+        "泰拳颈夹正顶膝/斜切膝/散打夹颈膝/柔术封闭式膝撞/巴西战舞本吉跳跃顶击",
+        "巴西战舞阿乌空翻/阿乌梅利亚空中连踢/马尔特洛翻转踢",
+        "柔道大外刈（腿从外向内大弧线扫对方腿后）/小外刈/小内刈/出足扫（脚掌横扫脚踝侧面）/大内刈/内股（腿从内侧向上挑起翻摔）",
+        "谭腿弹（小腿由屈到伸瞬间弹射如弹弓发射）/谭腿踩（脚掌由上向下踩踏如千斤坠）/谭腿截（腿横截对方来腿路径以腿截腿）/谭腿蹬（脚跟直线蹬出如攻城锤）",
+        "谭腿劈（腿高举过头由上而下劈落如斧劈木）/谭腿挂（小腿由内/外挂开对方攻击如门帘撩开）/谭腿撩（腿由下向上撩起从地挑到下巴）/谭腿扫（腿贴地横扫如秋风扫落叶）",
+        "谭腿鞭（转腰带腿横扫如鞭抽打）/谭腿踹（身体侧倾腿侧方蹬踹如侧门封死）/谭腿膝（提膝撞出贴身最短最暴）/谭腿摆（腿以髋为轴画弧摆击如钟摆甩出）",
+        "36路正踢腿（脚尖勾起向前额猛踢）/36路斜踢腿（踢向同侧耳际偏45°）/36路侧踢腿（开髋侧身直踢耳际方向）/36路里合腿（腿由外向内画弧如门帘关合）/36路外摆腿（腿由内向外画弧如门帘开敞）",
+        "36路窝心腿（小腿弹踢心窝正中）/36路破膝腿（低位弹踢膝关节专攻膝盖）/36路破心腿（直线蹬腿如攻城锤撞胸口）/36路通肋腿（弧线踢入肋骨区横扫腰侧）",
+        "36路破膝通肋（先破膝再通肋下→中二连）/36路窝心通肋（先窝心再通肋正→侧二连）/36路里合反腿（里合扫开+转身反踢变线）/36路低高边腿（低位扫+高位抽弹弓效应）/36路二起脚（双脚连踢空中不落地双炮连发）/36路玄功腿（旋风+里合+反+扫+腾空后摆五腿合一终极连踢）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1278,
+            1296
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-turning",
+      "kind": "choreography",
+      "title": "压制与逆转拐点",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "压制与逆转拐点"
+      ],
+      "summary": "拐点来自已展示的习惯、资源或地形；对手改变习惯时允许反转失败。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-turning.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "暴怒觉醒",
+        "连击加速",
+        "绝招释放",
+        "全力碾压",
+        "化劲反击",
+        "破绽捕捉",
+        "身法逆转",
+        "以退为进",
+        "绝境爆发",
+        "入身逆转",
+        "走圈逆转",
+        "截击反击",
+        "阿乌空翻逆转",
+        "库拉多低位扫踢反击",
+        "捨身投逆转",
+        "内股挑摔逆转",
+        "弹射逆转",
+        "腿法升级逆转"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1298,
+            1322
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-breath",
+      "kind": "choreography",
+      "title": "终结前的呼吸与停顿",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "终结前的呼吸与停顿"
+      ],
+      "summary": "停顿由收势、观察或重新支撑产生，时长随动作变化；不照搬固定生理秒数。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-breath.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "极慢定格",
+        "汗珠飘落",
+        "发丝静止",
+        "对视定格",
+        "风停",
+        "气焰收敛",
+        "弹腿悬停",
+        "玄功腿旋转前静"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1323,
+            1333
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-space",
+      "kind": "choreography",
+      "title": "空间维度变化",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "空间维度变化"
+      ],
+      "summary": "只在场地提供高低与移动路径时换层；保持出口与落点，不为凑次数瞬移。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-space.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "跆拳道540°水平旋身旋风踢/跆拳道飞踢/散打飞膝/空手道跳踢/醉拳翻身踢/泰拳飞膝",
+        "跆拳道后旋踢/巴西战舞倒置出腿/醉拳翻身/螳螂拳翻跌出腿/柔术翻身",
+        "巴西战舞贴地扫腿/柔术下潜抱摔/醉拳地趟拳/擒拿跪膝/散打潜身",
+        "跆拳道旋风踢/巴西战舞撑地旋转/醉拳滚地翻/螳螂拳连环转",
+        "跆拳道后踢后翻/散打撤步后翻/巴西战舞后手翻/醉拳仰身翻",
+        "合气道入身转身/合气道转换切入",
+        "八卦圈步游走/鹞子穿林/穿身绕掌/乌龙摆尾",
+        "乌龙摆尾/回身劈掌/收势归圆",
+        "截拳道滑步切入/截拳道弹跳步切近",
+        "截拳道侧步闪切（对方攻击时向侧方滑半步同时出拳）",
+        "凌波微步（踏六十四卦方位行进，动无常则）",
+        "巴西战舞阿乌空翻/马尔特洛翻转踢/阿乌梅利亚空中连踢",
+        "巴西战舞库拉多低位扫踢",
+        "巴西战舞阿乌空翻/阿乌梅利亚空中连踢",
+        "巴西战舞安哥拉侧旋踢/马尔特洛翻转踢/罗达转圈牵制",
+        "巴西战舞奇达戈俯冲劈掌/本吉跳跃顶击/阿乌梅利亚空中连踢",
+        "柔道背负投/一本背负投/双手背负投",
+        "柔道大外刈/出足扫/小内刈/内股",
+        "柔道巴投/隅返/横落/谷落",
+        "柔道袈裟固/上四方固/横四方固/肩固",
+        "谭腿弹（小腿弹射快速拉近/推开）/谭腿蹬（直线蹬出瞬间拉远）/谭腿踹（侧踹横向推开变位）",
+        "36路低高边腿（低位边腿扫下盘→立即高位边腿抽头，同一腿从地面到头部垂直翻转）/36路二起脚（前脚蹬地起跳→后脚凌空连踢，垂直维度连续变化）",
+        "36路旋风腿（腾空旋转360°横扫）/36路腾空外摆莲（腾空外弧大摆如莲花）/36路玄功腿（旋风+里合+反+扫+腾空后摆五腿合一，空间维度连续翻转不停）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1334,
+            1359
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-break",
+      "kind": "choreography",
+      "title": "终结第一段：改变平衡",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "终结第一段：改变平衡",
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "螳螂拳",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "summary": "用一次可见改线或失衡创造窗口；对手站稳后窗口关闭，不自动进入终结。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-break.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "螳螂拳",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "characters": [],
+      "names": [
+        "化劲破防",
+        "重击破格",
+        "下盘破坏",
+        "闪身绕背",
+        "入身绕背",
+        "走圈绕背",
+        "截拳破势",
+        "低侧踢破膝",
+        "库拉多低位扫踢破基",
+        "阿乌梅利亚翻转破势",
+        "双手割抱摔破势",
+        "出足扫破势",
+        "抓拿控身",
+        "小手返破防",
+        "顶膝贴身",
+        "截腿破膝",
+        "踩脚锁步",
+        "破膝破基"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1361,
+            1382
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-payoff",
+      "kind": "choreography",
+      "title": "终结第二段：集中输出",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "终结第二段：集中输出",
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "洪拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "谭腿",
+        "跆拳道"
+      ],
+      "summary": "只兑现此前建立的能力和空间；终结动作可被挡住或让开，效果强度不得替代因果。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-payoff.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "洪拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "谭腿",
+        "跆拳道"
+      ],
+      "characters": [],
+      "names": [
+        "凌空下劈腿",
+        "铁山靠终结",
+        "崩拳穿心",
+        "虎形双扑终结",
+        "连环崩拳终结",
+        "双膝跪压",
+        "连环标指日字冲拳终结",
+        "捆手寸劲冲拳终结",
+        "标指穿喉终结",
+        "飞冲膝终结",
+        "连环横斩肘终结",
+        "颈夹膝撞终结",
+        "旋风踢爆头",
+        "订桥穿心",
+        "推桥全力冲撞",
+        "撞桥寸劲终结",
+        "四方投摔",
+        "入身投",
+        "回身劈掌终结",
+        "猛虎下山终结",
+        "白蛇吐信穿心",
+        "寸拳穿心",
+        "截拳道侧踢终结",
+        "截拳道标指穿喉",
+        "跃步穿打终结",
+        "借力旋撞终结",
+        "凤眼穿心终结",
+        "阿乌梅利亚空中连踢终结",
+        "奇达戈俯冲劈掌终结",
+        "安哥拉侧旋踢终结",
+        "背负投终结",
+        "大外刈终结",
+        "内股终结",
+        "巴投终结",
+        "十字固终结",
+        "谭腿劈腿终结",
+        "谭腿鞭腿终结",
+        "谭腿膝撞终结",
+        "36路玄功腿终结",
+        "按地腾空旋风脚终结",
+        "鲤鱼打挺撞腿终结",
+        "低空扫堂旋风终结",
+        "36路二起脚终结",
+        "36路跺子脚终结"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1383,
+            1429
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-aftermath",
+      "kind": "choreography",
+      "title": "终结第三段：余波与结束",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "终结第三段：余波与结束"
+      ],
+      "summary": "余波留在接触位置，角色回收或撤离写完；普通场景用衣料、积水、尘土表达。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-aftermath.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "地面碎裂",
+        "冲击波扩散",
+        "被击者嵌入",
+        "气焰爆散",
+        "定格收招",
+        "环境反馈"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1430,
+            1438
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-redirection",
+      "kind": "choreography",
+      "title": "化劲与攻防转换",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "化劲与攻防转换",
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔道",
+        "泰拳",
+        "蔡李佛",
+        "谭腿",
+        "醉拳"
+      ],
+      "summary": "接触、改向、失衡、接续依次可见；对方抽手或变向时重新判断，不用化劲二字代替过程。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-redirection.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔道",
+        "泰拳",
+        "蔡李佛",
+        "谭腿",
+        "醉拳"
+      ],
+      "characters": [],
+      "names": [
+        "采手引偏",
+        "膀手卸力",
+        "云手化劲",
+        "伏手压化",
+        "窒手截劲",
+        "捆手封桥",
+        "捋手顺化",
+        "挤靠反化",
+        "圈桥化打",
+        "醉步化劲",
+        "抓腕反扭",
+        "提膝格化",
+        "入身化劲",
+        "转换化劲",
+        "小手返化劲",
+        "一教压制",
+        "呼吸投化劲",
+        "狮子抱球化劲",
+        "顺势走化",
+        "穿身绕掌化劲",
+        "黑熊探掌破架",
+        "截击化打",
+        "黏手滑入",
+        "侧步截击",
+        "Esquiva侧闪",
+        "Cocorinha蹲避",
+        "库拉多低位闪避",
+        "阿乌空翻闪避",
+        "破势化劲",
+        "捨身化劲",
+        "让路化劲",
+        "截腿化劲",
+        "侧滚截蹬化劲",
+        "伏地后绊化劲",
+        "滚身锁膝化劲",
+        "贴地平扫破基",
+        "翻身弹踢防反",
+        "挂腿化劲",
+        "里合化劲"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1439,
+            1480
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-upper-lower",
+      "kind": "choreography",
+      "title": "上下肢配合",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "上下肢配合",
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "截拳道",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "谭腿",
+        "跆拳道"
+      ],
+      "summary": "手负责护线或牵制时不能同时做另一项抓握；腿的支撑和下一拍可用肢体持续继承。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-upper-lower.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "截拳道",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "谭腿",
+        "跆拳道"
+      ],
+      "characters": [],
+      "names": [
+        "抓+踢",
+        "推+踢",
+        "格+打",
+        "拉+膝",
+        "撑+踢",
+        "压+扫",
+        "挡+蹬",
+        "抱+摔",
+        "托+撞",
+        "缠+打",
+        "抓+投",
+        "引+踏",
+        "走+掌",
+        "踩+推",
+        "转+扫掌",
+        "绕+回身劈掌",
+        "前手+前脚",
+        "标指+侧踢",
+        "截拳+扫腿",
+        "黏手+膝顶",
+        "撑地+出腿",
+        "撑地+平扫",
+        "翻滚+截蹬",
+        "伏身+后绊",
+        "锁膝+顶胫",
+        "打挺+撞腿",
+        "低伏+连环扫堂",
+        "蹲避+出腿",
+        "翻滚+出腿",
+        "剪刀夹+摔",
+        "抓+拉+腰",
+        "抓+扫",
+        "蹬+翻",
+        "冲拳+弹腿",
+        "撩拳+蹬腿",
+        "撑掌+劈腿",
+        "撑地+旋风踢",
+        "跃步+通肋"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1481,
+            1521
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-control-followup",
+      "kind": "choreography",
+      "title": "抓控、投摔与脱离后的衔接",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "抓控、投摔与脱离后的衔接",
+        "巴西战舞",
+        "擒拿",
+        "柔术",
+        "柔道",
+        "谭腿"
+      ],
+      "summary": "控制成功与失败各留一条出口；对手起身后重新定距，不把锁控和反击当作必然连续事件。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-control-followup.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "巴西战舞",
+        "擒拿",
+        "柔术",
+        "柔道",
+        "谭腿"
+      ],
+      "characters": [],
+      "names": [
+        "抓腕反扭",
+        "别臂按压",
+        "抓臂别腿",
+        "折腕卷臂",
+        "缠臂锁肩",
+        "抓发扳颈",
+        "过肩摔/背负投",
+        "大腰/扫腰",
+        "出足扫",
+        "双手割/抱摔",
+        "体落",
+        "内股",
+        "绊腿旋臂",
+        "被过肩摔翻过空中",
+        "被摔面朝下趴地",
+        "被摔仰面倒地",
+        "被抓腕反扭",
+        "被别臂锁肩",
+        "被压肩跪地",
+        "被摔倒地"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2053,
+            2136
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-baji-pairs",
+      "kind": "choreography",
+      "title": "八极两组短打连段",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "八极两组短打连段",
+        "八极拳"
+      ],
+      "summary": "选一组并明确对手如何回应；近身肘与肩的空间不能重叠，停顿由回收重立产生。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-baji-pairs.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "八极拳"
+      ],
+      "characters": [],
+      "names": [
+        "崩肘",
+        "顶阳针",
+        "阎王三点手·第一手",
+        "阎王三点手·第二手",
+        "阎王三点手·第三手",
+        "顶心肘"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2138,
+            2154
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-mixed20",
+      "kind": "choreography",
+      "title": "混合二十手：拆段使用",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "混合二十手：拆段使用",
+        "八极拳",
+        "咏春拳",
+        "形意拳",
+        "散打",
+        "螳螂拳"
+      ],
+      "summary": "这是分阶段参考，不要求在短片里打满二十手。每次最多抽一阶段，门派切换需由接触与重心解释。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-mixed20.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "八极拳",
+        "咏春拳",
+        "形意拳",
+        "散打",
+        "螳螂拳"
+      ],
+      "characters": [],
+      "names": [
+        "膀手",
+        "标指",
+        "双峰贯耳",
+        "顶肘",
+        "盘肘",
+        "螳螂撞腕",
+        "单叨手",
+        "螳螂捕蝉",
+        "崩山批砸",
+        "挑顶硬冲",
+        "进手",
+        "扫腿",
+        "双封手",
+        "前冲拳",
+        "贯拳",
+        "挂臂",
+        "炮拳",
+        "下冲拳",
+        "通天掌",
+        "老猿挂印"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2156,
+            2192
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-rhythm",
+      "kind": "choreography",
+      "title": "连续轻击与重音节拍",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "连续轻击与重音节拍"
+      ],
+      "summary": "轻重对比服务动作可读性；只在重击因果节点做顿挫，不把每次接触都慢放。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-rhythm.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "3轻1重",
+        "左右交替加速",
+        "封-破-杀",
+        "短近景段",
+        "长近景段"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            437,
+            467
+          ],
+          [
+            491,
+            520
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-reaction",
+      "kind": "choreography",
+      "title": "攻守表情与身体反馈",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "攻守表情与身体反馈"
+      ],
+      "summary": "先有明确受力方向，再有肩背、衣料和脚步反应；对手保持主动判断，反馈不能证明受伤程度。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-reaction.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "冷静压制",
+        "暴怒狂攻",
+        "从容见招拆招",
+        "绝境反击",
+        "被重击命中",
+        "被连击压制",
+        "被化劲",
+        "格挡震颤",
+        "拳面擦血",
+        "汗珠飞溅",
+        "护臂崩开",
+        "吐血/血雾"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            468,
+            490
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-choreography-escalation",
+      "kind": "choreography",
+      "title": "中段递进与攻守三态",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "中段递进与攻守三态"
+      ],
+      "summary": "递进可选速度、空间、资源之一；防守、失衡和重建是状态变化，固定比例和恢复秒数不是生理事实。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "choreography/arvin-choreography-escalation.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "1（3-5s）",
+        "2（5-7s）",
+        "3（7-9s）",
+        "4（9-12s）",
+        "5（12-15s）",
+        "刺拳/直拳（直线中段）",
+        "摆拳/鞭拳（弧线横扫）",
+        "横肘/砸肘（近身重击）",
+        "标指/插指（精准刺击）",
+        "低扫踢/扫腿（下盘攻击）",
+        "膝顶（贴身向上）",
+        "正蹬/推踢（直线推力）",
+        "下劈腿（垂直重击）",
+        "旋风踢（水平旋转）",
+        "第1轮（3s前）",
+        "第2轮（3-5s）",
+        "第3轮（7-9s）",
+        "第4轮（9s后）",
+        "侧身闪",
+        "后仰躲",
+        "单臂拍开",
+        "撤步让",
+        "缩身躲"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2791,
+            2889
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-moves15",
+      "kind": "camera",
+      "title": "十五种运镜与组合",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "十五种运镜与组合"
+      ],
+      "summary": "按当前运动线选一主运镜，连续镜头不能同时对向移动；不采用平台成功率或星级作为证据。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-moves15.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "跟拍跟镜",
+        "环绕运镜",
+        "急速推镜",
+        "急速拉镜",
+        "低角度仰拍运镜",
+        "高空俯拍运镜",
+        "慢动作跟镜",
+        "摇镜横移",
+        "甩镜闪切运镜",
+        "特写切镜",
+        "升降运镜",
+        "穿墙/过物穿梭运镜",
+        "对打镜头（正反交替）",
+        "旋转摇镜",
+        "定格定镜运镜",
+        "突进组合",
+        "大招组合",
+        "逆转组合",
+        "腾空组合",
+        "环境互动组合"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            90,
+            118
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-spec",
+      "kind": "camera",
+      "title": "镜头规格与动作可读性",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "镜头规格与动作可读性"
+      ],
+      "summary": "先确定景别、视角、运动、目标和接触点；规格是帮助看懂动作的选择，不是每次输出固定配方。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-spec.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "全景",
+        "中景",
+        "近景",
+        "特写",
+        "近景/特写",
+        "中近景",
+        "0-1.5s 开局",
+        "1.5-5s 近景对招",
+        "5-7s 空间变化",
+        "7-9s 情绪拐点",
+        "9-12s 蓄势",
+        "12-15s 终结技",
+        "正（正面）",
+        "侧（侧面）",
+        "斜（斜角）",
+        "俯（俯拍）",
+        "仰（仰拍）",
+        "平视",
+        "N°仰视",
+        "N°俯视",
+        "N°斜拍",
+        "跟随人物整体",
+        "跟随上肢",
+        "跟随下肢",
+        "跟随特效/气焰",
+        "跟随命中点/接触点",
+        "固定不跟随",
+        "0-1.5s",
+        "1.5-5s",
+        "5-7s",
+        "7-9s",
+        "9-12s",
+        "12-15s",
+        "\"镜头拉远\"",
+        "\"镜头靠近\"",
+        "\"跟随拍摄\"",
+        "\"俯拍\"",
+        "\"仰拍\"",
+        "\"侧面拍\"",
+        "\"远景\""
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            129,
+            279
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-weapons",
+      "kind": "camera",
+      "title": "兵器镜头与挥动空间",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "sparring"
+      ],
+      "tags": [
+        "兵器镜头与挥动空间"
+      ],
+      "summary": "保留持械手、刃路、接触和回收；镜头切换不得藏住换手、换武器或穿墙。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-weapons.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "常规剑招对招",
+        "高速剑法攻防",
+        "大范围剑花/横斩",
+        "腾空劈刺/大前摇",
+        "低位扫剑/地躺藏锋",
+        "穿刺/格挡命中瞬间",
+        "缴械/缠剑",
+        "长柄镰刀低位扫胫",
+        "长柄镰刀横月平斩/回身反镰斩",
+        "长柄镰刀突刺/飞镰",
+        "长柄镰刀满月重斩/腾空落月斩",
+        "梦想一心胸口拔刀/居合出刀",
+        "梦想一心横斩/回身无想横斩",
+        "梦想一心穿刺/卸械命中",
+        "满愿梦想一刀/空落雷光碎",
+        "绯雪折樱上挑/白鸟回薙",
+        "绯雪霜滑三段斩/浮空冰刃落",
+        "绯雪寒簇樱矢/枯霜居合突",
+        "绯雪时停反刃弹/淬寒斜断",
+        "绯雪千霜环身斩/归刃漫天雪"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            742,
+            790
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-color",
+      "kind": "camera",
+      "title": "冷暖与双方辨识",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "冷暖与双方辨识"
+      ],
+      "summary": "可借冷暖区分双方，也可用明度、剪影与材质；不强迫所有角色改成双色能量。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-color.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            398,
+            404
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-effects-character-signatures",
+      "kind": "effects",
+      "title": "角色特效签名与动态词库",
+      "scope": [
+        "duel",
+        "group",
+        "sparring"
+      ],
+      "tags": [
+        "角色特效签名与动态词库",
+        "太极",
+        "红茶",
+        "白鸽",
+        "凛羽",
+        "雷电",
+        "芭乐",
+        "冰女",
+        "剑神",
+        "绯雪·火焰"
+      ],
+      "summary": "颜色、质感、形状与运动分别选择；角色预设可覆盖通用武学配色，特效不能赋予额外攻击或控制。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "effects/arvin-effects-character-signatures.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [
+        "太极",
+        "红茶",
+        "白鸽",
+        "凛羽",
+        "雷电",
+        "芭乐",
+        "冰女",
+        "剑神",
+        "绯雪·火焰"
+      ],
+      "names": [
+        "太极",
+        "白鸽",
+        "红茶",
+        "凛羽",
+        "雷电",
+        "芭乐",
+        "冰女",
+        "剑神",
+        "绯雪",
+        "拳面",
+        "小腿/脚",
+        "周身",
+        "脚尖（终结技蓄力）",
+        "旋转蓄力",
+        "听觉层",
+        "肘尖",
+        "全力蓄力",
+        "指尖",
+        "肩背",
+        "掌",
+        "抓控/锁定",
+        "终结蓄力",
+        "脚尖",
+        "极速出招",
+        "腿",
+        "剑尖",
+        "剑脊",
+        "剑格",
+        "终结绽放",
+        "刀锋",
+        "刀脊",
+        "连斩",
+        "冰系·霜雾（通用）",
+        "冰系·硬冰（通用）",
+        "雷系（通用）",
+        "风系（通用）",
+        "暗系（通用）",
+        "光系（通用）",
+        "土系（通用）"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            69,
+            81
+          ],
+          [
+            2590,
+            2685
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-effects-trajectory",
+      "kind": "effects",
+      "title": "特效起点、路径、终点与消退",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "特效起点、路径、终点与消退"
+      ],
+      "summary": "效果跟随实际肢体或兵器轨迹；接触结束后衰减，不保留无来源的第二条攻击线。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "effects/arvin-effects-trajectory.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "① 起源点",
+        "② 流动形态",
+        "③ 终点爆散",
+        "④ 余韵残留",
+        "直拳/寸拳/标指/正蹬/脚尖刺",
+        "弧线踢/回旋踢/摆拳/横肘/鞭拳",
+        "旋转类/旋风踢/反背肘",
+        "下劈/砸肘/千斤坠",
+        "化劲/格挡",
+        "终结技",
+        "萌芽期",
+        "生长期",
+        "绽放期"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2686,
+            2716
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-effects-intensity",
+      "kind": "effects",
+      "title": "效果强弱与顿挫",
+      "scope": [
+        "duel",
+        "group",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "效果强弱与顿挫"
+      ],
+      "summary": "根据当前阶段分配视觉强度，不照搬15秒时间表；高潮也必须看得见角色和接触点。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "effects/arvin-effects-intensity.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "前段",
+        "中段",
+        "后段",
+        "崩拳/砸肘/寸拳/膝顶/鞭拳",
+        "刺拳/摆拳/冲拳",
+        "化劲/借力/圆弧动作"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2718,
+            2743
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-effects-air",
+      "kind": "effects",
+      "title": "空气、衣料、尘水与余波",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "sparring"
+      ],
+      "tags": [
+        "空气、衣料、尘水与余波"
+      ],
+      "summary": "普通拳脚用衣摆、发丝、积水与尘粒；空气爆环、残影和气墙只在指定夸张风格中使用。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "effects/arvin-effects-air.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [
+        "拳风",
+        "腿风",
+        "发丝/衣袂卷动",
+        "路径碎尘弹起",
+        "轻击",
+        "重击",
+        "终极击",
+        "直线穿刺型（冲拳/标指/正蹬/脚尖刺）",
+        "弧线横扫型（摆拳/横肘/鞭腿/横扫踢）",
+        "垂直下砸型（砸肘/下劈腿/千斤坠）",
+        "旋转扩散型（旋风踢/反背肘/转身鞭拳）",
+        "贴身寸劲型（寸拳/崩拳/顶肘）",
+        "格挡气浪反弹",
+        "被击者身后气浪",
+        "滑行气轨",
+        "发丝/衣物冲击飘",
+        "回填气流",
+        "发丝回飘",
+        "空气余震",
+        "双人对冲绞杀",
+        "快速",
+        "极快",
+        "瞬速"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2746,
+            2789
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-pattern-a",
+      "kind": "camera",
+      "title": "低仰蓄力",
+      "scope": [
+        "duel",
+        "group",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "低仰蓄力"
+      ],
+      "summary": "按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-pattern-a.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            283,
+            290
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-pattern-b",
+      "kind": "camera",
+      "title": "攻击轨迹与拖尾",
+      "scope": [
+        "duel",
+        "group",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "攻击轨迹与拖尾"
+      ],
+      "summary": "按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-pattern-b.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            292,
+            299
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-pattern-c",
+      "kind": "camera",
+      "title": "接触点与双色效果",
+      "scope": [
+        "duel",
+        "group",
+        "sparring"
+      ],
+      "tags": [
+        "接触点与双色效果"
+      ],
+      "summary": "按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-pattern-c.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            301,
+            308
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-pattern-d",
+      "kind": "camera",
+      "title": "全景余波收束",
+      "scope": [
+        "duel",
+        "group",
+        "ranged"
+      ],
+      "tags": [
+        "全景余波收束"
+      ],
+      "summary": "按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-pattern-d.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            310,
+            317
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-pattern-e",
+      "kind": "camera",
+      "title": "不对称效果压迫",
+      "scope": [
+        "duel",
+        "group",
+        "ranged"
+      ],
+      "tags": [
+        "不对称效果压迫"
+      ],
+      "summary": "按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-pattern-e.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            319,
+            326
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-pattern-f",
+      "kind": "camera",
+      "title": "翻摔全肢可见",
+      "scope": [
+        "duel",
+        "group",
+        "sparring"
+      ],
+      "tags": [
+        "翻摔全肢可见"
+      ],
+      "summary": "按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-pattern-f.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            328,
+            335
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-pattern-g",
+      "kind": "camera",
+      "title": "元素对峙",
+      "scope": [
+        "duel",
+        "group",
+        "ranged"
+      ],
+      "tags": [
+        "元素对峙"
+      ],
+      "summary": "按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-pattern-g.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            337,
+            344
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-pattern-h",
+      "kind": "camera",
+      "title": "角色与地面反馈",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "sparring"
+      ],
+      "tags": [
+        "角色与地面反馈"
+      ],
+      "summary": "按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-pattern-h.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            346,
+            353
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-pattern-i",
+      "kind": "camera",
+      "title": "攻击部位推进",
+      "scope": [
+        "duel",
+        "group",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "攻击部位推进"
+      ],
+      "summary": "按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-pattern-i.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            355,
+            362
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-pattern-j",
+      "kind": "camera",
+      "title": "上勾动作的三段呈现",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "上勾动作的三段呈现"
+      ],
+      "summary": "按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-pattern-j.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            364,
+            371
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-camera-pattern-k",
+      "kind": "camera",
+      "title": "重击交换链",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "重击交换链"
+      ],
+      "summary": "按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "camera/arvin-camera-pattern-k.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            373,
+            380
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-style-1",
+      "kind": "styles",
+      "title": "真人武侠风格",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "真人武侠风格"
+      ],
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "styles/arvin-style-1.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2972,
+            2973
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-style-2",
+      "kind": "styles",
+      "title": "真人格斗风格",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "真人格斗风格"
+      ],
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "styles/arvin-style-2.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2975,
+            2976
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-style-3",
+      "kind": "styles",
+      "title": "3D国漫风格",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "3D国漫风格"
+      ],
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "styles/arvin-style-3.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2978,
+            2979
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-style-4",
+      "kind": "styles",
+      "title": "二次元风格",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "二次元风格"
+      ],
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "styles/arvin-style-4.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2981,
+            2982
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-style-5",
+      "kind": "styles",
+      "title": "赛博朋克风格",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "赛博朋克风格"
+      ],
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "styles/arvin-style-5.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2984,
+            2985
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-1",
+      "kind": "scenes",
+      "title": "国风水墨，深山竹林，薄雾青石",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "国风水墨，深山竹林，薄雾青石"
+      ],
+      "summary": "竹间留出一条直线与一处转身空地；湿青石使急停变慢，竹影用于辨方向。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-1.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3019,
+            3019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-2",
+      "kind": "scenes",
+      "title": "写实纪实，城市雨夜小巷，积水反光",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "写实纪实，城市雨夜小巷，积水反光"
+      ],
+      "summary": "先显示巷口、墙面和水坑；狭巷限制长横扫，踏水波纹延续脚步位置。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-2.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3020,
+            3020
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-3",
+      "kind": "scenes",
+      "title": "仙侠光效，浮空云海仙台，流霞碎光",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "仙侠光效，浮空云海仙台，流霞碎光"
+      ],
+      "summary": "交代仙台边沿和两个稳定落点；云海不当实地，踏空需要明确能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-3.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3021,
+            3021
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-4",
+      "kind": "scenes",
+      "title": "赛博朋克，霓虹废土巷道，全息投影",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "赛博朋克，霓虹废土巷道，全息投影"
+      ],
+      "summary": "把广告投影和实墙区分开；窄巷只留短兵路径，积水承接霓虹颜色。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-4.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3022,
+            3022
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-5",
+      "kind": "scenes",
+      "title": "欧式写实，中世纪黄沙沙场，断旗乱石",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "欧式写实，中世纪黄沙沙场，断旗乱石"
+      ],
+      "summary": "沙地提供滑移与脚印，断旗位置固定；双方出沙尘后延续原移动方向。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-5.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3023,
+            3023
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-6",
+      "kind": "scenes",
+      "title": "浮世绘，暗夜枯木山林，残月浓雾",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "浮世绘，暗夜枯木山林，残月浓雾"
+      ],
+      "summary": "枯木之间预留回收空间；月光勾轮廓，雾仅遮线不代替人物位移。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-6.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3024,
+            3024
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-7",
+      "kind": "scenes",
+      "title": "科幻硬表面，真空宇宙陨石带，星云背景",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "科幻硬表面，真空宇宙陨石带，星云背景"
+      ],
+      "summary": "先声明真空下的推进、惯性和立足方式；没有地面不能套地面蹬步，声音作为配乐选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-7.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3025,
+            3025
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-8",
+      "kind": "scenes",
+      "title": "末日破败，腐烂城市废墟，断墙杂草",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "末日破败，腐烂城市废墟，断墙杂草"
+      ],
+      "summary": "断墙先建立可穿过缺口；碎石影响落脚，坍落须由接触引发。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-8.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3026,
+            3026
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-9",
+      "kind": "scenes",
+      "title": "古罗马油画，石质角斗场，沙尘看台",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "古罗马油画，石质角斗场，沙尘看台"
+      ],
+      "summary": "展示边界和中央空地；沙尘给步法留痕，看台只提供尺度与光影。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-9.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3027,
+            3027
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-10",
+      "kind": "scenes",
+      "title": "新中式写实，木质擂台武馆，竹帘日光",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "新中式写实，木质擂台武馆，竹帘日光"
+      ],
+      "summary": "木地板可见接触振动，柱与擂台边界限制退路；竹帘光带帮助保持轴线。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-10.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3028,
+            3028
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-11",
+      "kind": "scenes",
+      "title": "奇幻魔法，冰封熔岩峡谷，冰火交织",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "奇幻魔法，冰封熔岩峡谷，冰火交织"
+      ],
+      "summary": "把可踩的岩地与危险裂隙分开；冰和熔岩是环境条件，不默认受角色支配。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-11.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3029,
+            3029
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-12",
+      "kind": "scenes",
+      "title": "深海通透水彩，海底珊瑚遗迹，透光海水",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "深海通透水彩，海底珊瑚遗迹，透光海水"
+      ],
+      "summary": "先声明水下浮力、阻力和呼吸设定；出拳回收变慢，不能直接套陆地腾空落脚。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-12.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3030,
+            3030
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-13",
+      "kind": "scenes",
+      "title": "废土荒漠质感，干裂戈壁荒地，废弃车辆",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "废土荒漠质感，干裂戈壁荒地，废弃车辆"
+      ],
+      "summary": "车辆是已展示的掩体；干裂地面与沙尘影响抓地，绕车运动继承车辆朝向。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-13.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3031,
+            3031
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-14",
+      "kind": "scenes",
+      "title": "国漫厚涂，玉石宗门山门，飞剑流光",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "国漫厚涂，玉石宗门山门，飞剑流光"
+      ],
+      "summary": "山门台阶分层建立，玉石反光保留轮廓；背景飞剑不得自动加入角色攻击。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-14.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3032,
+            3032
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-15",
+      "kind": "scenes",
+      "title": "暗黑哥特，荒野古堡废墟，满月枯树林",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "暗黑哥特，荒野古堡废墟，满月枯树林"
+      ],
+      "summary": "古堡缺口与树根决定走线；逆月光留下人物剪影，移动不能穿过倒墙。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-15.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3033,
+            3033
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-16",
+      "kind": "scenes",
+      "title": "日系清新，教学楼天台，黄昏流云",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "日系清新，教学楼天台，黄昏流云"
+      ],
+      "summary": "先显示护栏、门口和可退空间；天台边缘持续存在，风影响衣料而不改变身体重力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-16.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3034,
+            3034
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-17",
+      "kind": "scenes",
+      "title": "复古油画，颠簸远洋木船甲板，巨浪海风",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "复古油画，颠簸远洋木船甲板，巨浪海风"
+      ],
+      "summary": "甲板俯仰同时作用双方；人物借栏杆稳定必须有空手，滑步随船倾方向。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-17.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3035,
+            3035
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-18",
+      "kind": "scenes",
+      "title": "暗调国风，幽冥地府奈何桥，黑雾鬼火",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "暗调国风，幽冥地府奈何桥，黑雾鬼火"
+      ],
+      "summary": "先声明桥面与雾中边界；鬼火作光源或已授权能力，不能随剧情临时救场。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-18.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3036,
+            3036
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-19",
+      "kind": "scenes",
+      "title": "高清写实拳击馆，封闭擂台，顶光聚光灯",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "高清写实拳击馆，封闭擂台，顶光聚光灯"
+      ],
+      "summary": "绳圈与角柱持续限制退路；顶光区分护架和受力，擂台弹性反馈随落步。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-19.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3037,
+            3037
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-20",
+      "kind": "scenes",
+      "title": "古埃及壁画风，砂岩神殿立柱，漫天风沙",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "古埃及壁画风，砂岩神殿立柱，漫天风沙"
+      ],
+      "summary": "石柱决定视线和短暂遮挡；风沙方向持续一致，柱后重现不得更换手中武器。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-20.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3038,
+            3038
+          ]
+        ]
+      }
     }
   ]
 }

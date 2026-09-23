@@ -1,0 +1,131 @@
+{
+  "date": "2026-09-23",
+  "scope": "Current uncommitted 0.8.0 implementation and integration seams; no production source changes",
+  "head": "aa06b0448788118ff433dc89d967c668a8f70e57",
+  "probes": [
+    {
+      "probe": "facet_recall",
+      "kind": "choreography",
+      "query": "顶心肘",
+      "filters": {
+        "school": "八极拳"
+      },
+      "without_filter": [
+        "arvin-choreography-baji-pairs"
+      ],
+      "with_filter": []
+    },
+    {
+      "probe": "facet_recall",
+      "kind": "effects",
+      "query": "白鸽",
+      "filters": {
+        "character": "白鸽"
+      },
+      "without_filter": [
+        "arvin-effects-character-signatures"
+      ],
+      "with_filter": []
+    },
+    {
+      "probe": "item_detail",
+      "query": "小内返",
+      "filter": "detailed",
+      "matches": [
+        {
+          "id": "arvin-tech-judo",
+          "detail": "detailed"
+        }
+      ],
+      "source_row": "| 12 | 小内返 | Ko-uchi-gaeshi | |"
+    },
+    {
+      "probe": "scope_recall",
+      "kind": "camera",
+      "scope": "group",
+      "total": 0,
+      "unfiltered_total": 15
+    },
+    {
+      "probe": "direct_build_drift",
+      "project_build": {
+        "status": "accepted",
+        "packaged_mutation": true
+      },
+      "full_generated_check": "Generated library out of sync: skills/combat-director/library/techniques/arvin-tech-bagua.md",
+      "isolation": "All generator-owned outputs were present and consistent before changing exactly one card."
+    },
+    {
+      "probe": "rebuild_with_orphan",
+      "exit_code": 1,
+      "error": "FAIL: Generated library out of sync: skills/combat-director/library/techniques/arvin-obsolete.md",
+      "orphan_remains": true,
+      "output_changed_before_failure": true,
+      "isolation": "Ran the unmodified builder CLI in a temporary repository copy with pinned inputs, an obsolete generated file, and one stale card.",
+      "command": [
+        "python",
+        "scripts/build_arvin_library.py"
+      ]
+    }
+  ],
+  "read_budget": {
+    "catalog_bytes": 198857,
+    "catalog_characters": 146052,
+    "catalog_lines": 6540,
+    "default_all_search_characters": 12940
+  },
+  "fresh_checks": [
+    {
+      "label": "library_tests",
+      "command": [
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*library*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_every_overview_family_and_scene_is_sourced_once (test_arvin_library.ArvinLibraryTests.test_every_overview_family_and_scene_is_sourced_once) ... ok\ntest_fire_character_and_frost_weapon_do_not_merge (test_arvin_library.ArvinLibraryTests.test_fire_character_and_frost_weapon_do_not_merge) ... ok\ntest_named_move_is_located_inside_school_without_reading_cards (test_arvin_library.ArvinLibraryTests.test_named_move_is_located_inside_school_without_reading_cards) ... ok\ntest_outline_is_never_promoted_to_supplied_detail (test_arvin_library.ArvinLibraryTests.test_outline_is_never_promoted_to_supplied_detail) ... ok\ntest_paging_visits_each_result_once_and_reports_out_of_range (test_arvin_library.ArvinLibraryTests.test_paging_visits_each_result_once_and_reports_out_of_range) ... ok\ntest_romanized_move_and_camera_table_names_are_retrievable (test_arvin_library.ArvinLibraryTests.test_romanized_move_and_camera_table_names_are_retrievable) ... ok\ntest_same_move_name_preserves_school_variants (test_arvin_library.ArvinLibraryTests.test_same_move_name_preserves_school_variants) ... ok\ntest_source_hashes_and_generated_artifacts_are_reproducible (test_arvin_library.ArvinLibraryTests.test_source_hashes_and_generated_artifacts_are_reproducible) ... ok\ntest_source_metadata_rejects_missing_identity_and_invalid_ranges (test_arvin_library.ArvinLibraryTests.test_source_metadata_rejects_missing_identity_and_invalid_ranges) ... ok\ntest_tampered_source_is_rejected_before_outputs_are_built (test_arvin_library.ArvinLibraryTests.test_tampered_source_is_rejected_before_outputs_are_built) ... ok\ntest_cli_works_outside_repository_without_writes (test_library_tool.LibraryTests.test_cli_works_outside_repository_without_writes) ... ok\ntest_duplicate_id_and_invalid_metadata_rejected (test_library_tool.LibraryTests.test_duplicate_id_and_invalid_metadata_rejected) ... ok\ntest_empty_query_lists_filtered_candidates (test_library_tool.LibraryTests.test_empty_query_lists_filtered_candidates) ... ok\ntest_filter_separates_ordinary_cloth_from_supernatural_field (test_library_tool.LibraryTests.test_filter_separates_ordinary_cloth_from_supernatural_field) ... ok\ntest_group_filter_and_ranked_query (test_library_tool.LibraryTests.test_group_filter_and_ranked_query) ... ok\ntest_missing_duplicate_and_escaping_paths_rejected (test_library_tool.LibraryTests.test_missing_duplicate_and_escaping_paths_rejected) ... ok\ntest_no_match_never_inserts_default (test_library_tool.LibraryTests.test_no_match_never_inserts_default) ... ok\ntest_search_does_not_read_card_bodies (test_library_tool.LibraryTests.test_search_does_not_read_card_bodies) ... ok\ntest_show_reads_only_chosen_card_and_rejects_unknown_id (test_library_tool.LibraryTests.test_show_reads_only_chosen_card_and_rejects_unknown_id) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 16.887s\n\nOK\n"
+    },
+    {
+      "label": "generated_source_consistency",
+      "command": [
+        "-X",
+        "utf8",
+        "scripts/build_arvin_library.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 109 attributed cards; pinned source and generated outputs consistent\n",
+      "stderr": ""
+    },
+    {
+      "label": "package_structure",
+      "command": [
+        "-X",
+        "utf8",
+        "scripts/project.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 165 release files; resource links valid\n",
+      "stderr": ""
+    }
+  ],
+  "prior_release_runtime_hashes_still_match": true,
+  "reviewed_files": {
+    "scripts/build_arvin_library.py": "afb16fe2fedfa5cd22e85ed217918a715fd357fcd77b94dfebedda7b3c436441",
+    "scripts/project.py": "08b3c04aeb0f12ffa2b0ac179937f0cc2120662d4c070bb56f09f4a575237a6b",
+    "scripts/validate_release.py": "efba7b9ad1811f38514c5b0eb93be0aceb1dd38249748fd07daea80b047c215c",
+    "skills/combat-director/scripts/library_tool.py": "f1f775b81fd41a00d2bbdd6a1ccf856b358d2ffa3197147d08967e8ee867d364",
+    "skills/combat-director/library/catalog.json": "9b8f576f7b122e639c599202d8d186f66fd15d749ba90f1703e6c6f8ea95c365",
+    "tests/test_arvin_library.py": "0aef852892bc196af12c7ea06953ccf035a8df70993ad1832ee60b8f739d4126",
+    "skills/combat-director/SKILL.md": "b878aee29204529f409eb8e51415984ffa9ea9a5bbb98c943d5d36ec54abc8a0"
+  }
+}

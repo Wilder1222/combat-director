@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only, offline mechanism catalog lookup (Python 3.10+, stdlib)."""
+"""Read-only, offline combat library lookup (Python 3.10+, stdlib)."""
 from __future__ import annotations
 
 import argparse
@@ -8,12 +8,16 @@ import re
 import sys
 import unicodedata
 from pathlib import Path, PurePosixPath
+from collections import Counter
 
 CATALOG = Path(__file__).resolve().parents[1] / 'library/catalog.json'
-KINDS = ('design', 'abilities')
+KINDS = ('design', 'abilities', 'techniques', 'characters', 'choreography',
+         'camera', 'effects', 'styles', 'scenes')
+DETAILS = ('original', 'detailed', 'outline')
 SCOPES = ('duel', 'group', 'escape', 'chase', 'ranged', 'sparring')
 FIELDS = {'id', 'kind', 'title', 'scope', 'tags', 'summary', 'requires',
-          'excludes', 'path', 'provenance'}
+          'excludes', 'path', 'provenance', 'detail', 'schools', 'characters',
+          'names', 'source'}
 
 
 def require(condition, message):
@@ -47,7 +51,7 @@ def load_catalog(path=CATALOG):
     data = json.loads(path.read_text(encoding='utf-8'))
     require(isinstance(data, dict) and set(data) == {'version', 'entries'},
             'catalog must contain version and entries')
-    require(type(data['version']) is int and data['version'] == 1,
+    require(type(data['version']) is int and data['version'] == 2,
             'unsupported catalog version')
     require(isinstance(data['entries'], list), 'entries must be an array')
     ids, paths = set(), set()
@@ -59,12 +63,34 @@ def load_catalog(path=CATALOG):
         require(entry['id'] not in ids, f"duplicate ID: {entry['id']}")
         ids.add(entry['id'])
         require(entry['kind'] in KINDS, f"{entry['id']}: unknown kind")
+        require(entry['detail'] in DETAILS, f"{entry['id']}: unknown detail")
         for field in ('scope', 'tags', 'requires', 'excludes'):
             values = entry[field]
             require(isinstance(values, list) and values and all(text_value(v) for v in values),
                     f"{entry['id']}: {field} must be a nonempty string array")
             require(len(values) == len(set(values)), f"{entry['id']}: duplicate {field}")
         require(set(entry['scope']) <= set(SCOPES), f"{entry['id']}: unknown scope")
+        for field in ('schools', 'characters', 'names'):
+            values = entry[field]
+            require(isinstance(values, list) and all(text_value(v) for v in values),
+                    f"{entry['id']}: {field} must be a string array")
+            require(len(values) == len(set(values)), f"{entry['id']}: duplicate {field}")
+        source = entry['source']
+        if entry['detail'] == 'original':
+            require(source is None, f"{entry['id']}: original card must not claim imported source")
+        else:
+            require(isinstance(source, dict) and set(source) == {'repository', 'commit', 'path', 'ranges'},
+                    f"{entry['id']}: missing source provenance")
+            require(source['repository'] == 'https://github.com/wangarvin007-commits/-skills'
+                    and source['path'] == 'seedance-combat-prompt/SKILL.md'
+                    and isinstance(source['commit'], str)
+                    and re.fullmatch(r'[0-9a-f]{40}', source['commit']),
+                    f"{entry['id']}: invalid source identity")
+            require(isinstance(source['ranges'], list) and source['ranges']
+                    and all(isinstance(pair, list) and len(pair) == 2
+                            and all(type(n) is int for n in pair)
+                            and 1 <= pair[0] <= pair[1] for pair in source['ranges']),
+                    f"{entry['id']}: invalid source ranges")
         resolved = card_path(path.parent, entry).resolve()
         require(resolved not in paths, f"{entry['id']}: duplicate card path")
         paths.add(resolved)
@@ -75,26 +101,60 @@ def normalize(text):
     return unicodedata.normalize('NFKC', text).casefold()
 
 
-def search(catalog, kind, query='', scope=None):
-    require(kind in KINDS, 'unknown kind')
+def search(catalog, kind, query='', scope=None, *, school=None, character=None,
+           detail=None, limit=12, offset=0):
+    require(kind in (*KINDS, 'all'), 'unknown kind')
     require(scope is None or scope in SCOPES, 'unknown scope')
+    require(detail is None or detail in DETAILS, 'unknown detail')
+    require(type(limit) is int and 1 <= limit <= 100, 'limit must be 1..100')
+    require(type(offset) is int and offset >= 0, 'offset must be a nonnegative integer')
+    require(isinstance(query, str), 'query must be a string')
+    for value in (school, character):
+        require(value is None or text_value(value), 'facet must be a nonempty string')
     terms = list(dict.fromkeys(t for t in re.split(r'[\s,，、;；]+', normalize(query)) if t))
     matches = []
     for entry in catalog['entries']:
-        if entry['kind'] != kind or scope is not None and scope not in entry['scope']:
+        if kind != 'all' and entry['kind'] != kind or scope is not None and scope not in entry['scope']:
+            continue
+        if detail is not None and entry['detail'] != detail:
+            continue
+        if school is not None and normalize(school) not in map(normalize, entry['schools']):
+            continue
+        if character is not None and normalize(character) not in map(normalize, entry['characters']):
             continue
         # Exclusions and provenance are not positive evidence of suitability.
         haystack = normalize(' '.join([entry['id'], entry['title'], entry['summary'],
-                                      *entry['tags'], *entry['requires']]))
+                                      *entry['tags'], *entry['requires'], *entry['names']]))
         matched = [term for term in terms if term in haystack]
         if terms and not matched:
             continue
-        matches.append({**entry, 'status': 'candidate', 'matched_terms': matched})
+        matched_names = [name for name in entry['names'] if any(t in normalize(name) for t in terms)]
+        matches.append({**{k:v for k,v in entry.items() if k != 'names'},
+                        'status': 'candidate', 'matched_terms': matched,
+                        'matched_names': matched_names[:10], 'matched_names_total':len(matched_names)})
     matches.sort(key=lambda item: (-len(item['matched_terms']), item['id']))
-    return {'status': 'candidates' if matches else 'no_match',
-            'filters': {'kind': kind, 'query': query, 'scope': scope},
-            'notice': '仅为关键词候选；使用前核对前提、排除条件和用户设定。零命中可原创。',
-            'matches': matches}
+    total = len(matches)
+    return {'status': 'candidates' if total else 'no_match',
+            'filters': {'kind': kind, 'query': query, 'scope': scope,
+                        'school':school, 'character':character, 'detail':detail},
+            'total':total, 'limit':limit, 'offset':offset,
+            'next_offset':offset+limit if offset+limit < total else None,
+            'notice': '仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。',
+            'matches': matches[offset:offset+limit]}
+
+
+def stats(catalog):
+    entries = catalog['entries']
+    return {'cards':len(entries),
+            'by_kind':dict(sorted(Counter(e['kind'] for e in entries).items())),
+            'by_detail':dict(sorted(Counter(e['detail'] for e in entries).items())),
+            'schools':sorted({s for e in entries for s in e['schools']}),
+            'characters':sorted({c for e in entries for c in e['characters']}),
+            'facets_by_kind':{
+                kind:{field:sorted({value for e in entries if e['kind']==kind for value in e[field]})
+                      for field in ('schools','characters','scope')}
+                for kind in KINDS},
+            'facet_notice':'筛选值表示已记录的关联；空数组表示未记录该类关联，不证明语义不适用。场面标签是改编候选，不是视频验证。'}
 
 
 def read_card(catalog, card_id, path=CATALOG):
@@ -107,21 +167,31 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
     sub.add_parser('validate', help='check index types, IDs and local references')
+    sub.add_parser('stats', help='list categories, schools and character variants')
     lookup = sub.add_parser('search', help='search metadata only; results are candidates')
-    lookup.add_argument('kind', choices=KINDS)
+    lookup.add_argument('kind', choices=(*KINDS, 'all'))
     lookup.add_argument('--query', default='')
     lookup.add_argument('--scope', choices=SCOPES)
+    lookup.add_argument('--school', help='exact school facet; use stats for values')
+    lookup.add_argument('--character', help='exact character variant; use stats for values')
+    lookup.add_argument('--detail', choices=DETAILS)
+    lookup.add_argument('--limit', type=int, default=12)
+    lookup.add_argument('--offset', type=int, default=0)
     show = sub.add_parser('show', help='read one selected card')
     show.add_argument('id')
     args = parser.parse_args(argv)
     try:
         catalog = load_catalog()
         if args.command == 'validate':
-            print(f"PASS: {len(catalog['entries'])} mechanism cards; index and references valid")
+            print(f"PASS: {len(catalog['entries'])} combat cards; index and references valid")
+        elif args.command == 'stats':
+            print(json.dumps(stats(catalog), ensure_ascii=False, indent=2))
         elif args.command == 'show':
             print(read_card(catalog, args.id), end='')
         else:
-            print(json.dumps(search(catalog, args.kind, args.query, args.scope),
+            print(json.dumps(search(catalog, args.kind, args.query, args.scope,
+                                    school=args.school, character=args.character,
+                                    detail=args.detail, limit=args.limit, offset=args.offset),
                              ensure_ascii=False, indent=2))
     except (ValueError, OSError) as error:
         print(f'FAIL: {error}', file=sys.stderr)

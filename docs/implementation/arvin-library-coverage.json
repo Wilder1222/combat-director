@@ -1,0 +1,1403 @@
+{
+  "source_commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+  "source_sha256": "011eed576c241a2180c776ddf6b8555331b482a951e7be35ed53928e7f0b87e0",
+  "cards": 116,
+  "by_kind": {
+    "abilities": 2,
+    "camera": 15,
+    "characters": 9,
+    "choreography": 18,
+    "design": 5,
+    "effects": 4,
+    "scenes": 20,
+    "styles": 5,
+    "techniques": 38
+  },
+  "by_detail": {
+    "detailed": 92,
+    "original": 7,
+    "outline": 17
+  },
+  "missing_referenced_files": [
+    "兵器技法资料库_剑法专项.md",
+    "兵器技法资料库_长柄镰刀专项.md",
+    "兵器技法资料库_梦想一心太刀专项.md",
+    "兵器技法资料库_绯雪樱灼流单太刀专项.md",
+    "兵器技法资料库_高级轻功专项.md",
+    "兵器技法资料库_修仙高级剑招专项.md"
+  ],
+  "selections": [
+    {
+      "id": "arvin-tech-taiji",
+      "detail": "detailed",
+      "ranges": [
+        [
+          568,
+          568
+        ],
+        [
+          2274,
+          2302
+        ]
+      ],
+      "indexed_names": 20
+    },
+    {
+      "id": "arvin-tech-baji",
+      "detail": "detailed",
+      "ranges": [
+        [
+          569,
+          569
+        ],
+        [
+          2304,
+          2326
+        ]
+      ],
+      "indexed_names": 19
+    },
+    {
+      "id": "arvin-tech-wingchun",
+      "detail": "detailed",
+      "ranges": [
+        [
+          570,
+          570
+        ],
+        [
+          2328,
+          2380
+        ]
+      ],
+      "indexed_names": 21
+    },
+    {
+      "id": "arvin-tech-bagua",
+      "detail": "detailed",
+      "ranges": [
+        [
+          571,
+          571
+        ],
+        [
+          2221,
+          2271
+        ]
+      ],
+      "indexed_names": 21
+    },
+    {
+      "id": "arvin-tech-xingyi",
+      "detail": "detailed",
+      "ranges": [
+        [
+          572,
+          572
+        ],
+        [
+          2447,
+          2498
+        ]
+      ],
+      "indexed_names": 22
+    },
+    {
+      "id": "arvin-tech-muaythai",
+      "detail": "detailed",
+      "ranges": [
+        [
+          573,
+          573
+        ],
+        [
+          2515,
+          2565
+        ]
+      ],
+      "indexed_names": 21
+    },
+    {
+      "id": "arvin-tech-sanda",
+      "detail": "detailed",
+      "ranges": [
+        [
+          574,
+          574
+        ],
+        [
+          2569,
+          2588
+        ]
+      ],
+      "indexed_names": 12
+    },
+    {
+      "id": "arvin-tech-karate",
+      "detail": "detailed",
+      "ranges": [
+        [
+          575,
+          575
+        ],
+        [
+          2418,
+          2431
+        ]
+      ],
+      "indexed_names": 7
+    },
+    {
+      "id": "arvin-tech-taekwondo",
+      "detail": "detailed",
+      "ranges": [
+        [
+          576,
+          576
+        ],
+        [
+          2404,
+          2416
+        ]
+      ],
+      "indexed_names": 9
+    },
+    {
+      "id": "arvin-tech-tantui",
+      "detail": "detailed",
+      "ranges": [
+        [
+          577,
+          577
+        ],
+        [
+          1684,
+          1728
+        ]
+      ],
+      "indexed_names": 24
+    },
+    {
+      "id": "arvin-tech-legs36",
+      "detail": "detailed",
+      "ranges": [
+        [
+          578,
+          578
+        ],
+        [
+          1909,
+          1984
+        ]
+      ],
+      "indexed_names": 43
+    },
+    {
+      "id": "arvin-tech-capoeira",
+      "detail": "detailed",
+      "ranges": [
+        [
+          579,
+          579
+        ],
+        [
+          1631,
+          1681
+        ]
+      ],
+      "indexed_names": 19
+    },
+    {
+      "id": "arvin-tech-jiujitsu",
+      "detail": "detailed",
+      "ranges": [
+        [
+          580,
+          580
+        ],
+        [
+          2433,
+          2445
+        ]
+      ],
+      "indexed_names": 10
+    },
+    {
+      "id": "arvin-tech-judo",
+      "detail": "detailed",
+      "ranges": [
+        [
+          581,
+          581
+        ],
+        [
+          1783,
+          1907
+        ]
+      ],
+      "indexed_names": 168
+    },
+    {
+      "id": "arvin-tech-aikido",
+      "detail": "detailed",
+      "ranges": [
+        [
+          582,
+          582
+        ],
+        [
+          2383,
+          2402
+        ]
+      ],
+      "indexed_names": 11
+    },
+    {
+      "id": "arvin-tech-qinna36",
+      "detail": "detailed",
+      "ranges": [
+        [
+          583,
+          583
+        ],
+        [
+          1986,
+          2052
+        ]
+      ],
+      "indexed_names": 53
+    },
+    {
+      "id": "arvin-tech-hunggar",
+      "detail": "detailed",
+      "ranges": [
+        [
+          584,
+          584
+        ],
+        [
+          1730,
+          1780
+        ]
+      ],
+      "indexed_names": 21
+    },
+    {
+      "id": "arvin-tech-caijia",
+      "detail": "detailed",
+      "ranges": [
+        [
+          585,
+          585
+        ],
+        [
+          1523,
+          1573
+        ]
+      ],
+      "indexed_names": 20
+    },
+    {
+      "id": "arvin-tech-groundlegs",
+      "detail": "detailed",
+      "ranges": [
+        [
+          586,
+          586
+        ],
+        [
+          1576,
+          1627
+        ]
+      ],
+      "indexed_names": 20
+    },
+    {
+      "id": "arvin-tech-choyleefut",
+      "detail": "outline",
+      "ranges": [
+        [
+          587,
+          587
+        ]
+      ],
+      "indexed_names": 7
+    },
+    {
+      "id": "arvin-tech-jeetkune",
+      "detail": "detailed",
+      "ranges": [
+        [
+          588,
+          588
+        ],
+        [
+          2501,
+          2513
+        ]
+      ],
+      "indexed_names": 11
+    },
+    {
+      "id": "arvin-tech-mantis",
+      "detail": "outline",
+      "ranges": [
+        [
+          589,
+          589
+        ]
+      ],
+      "indexed_names": 6
+    },
+    {
+      "id": "arvin-tech-drunken",
+      "detail": "outline",
+      "ranges": [
+        [
+          590,
+          590
+        ]
+      ],
+      "indexed_names": 6
+    },
+    {
+      "id": "arvin-tech-wuxia-step",
+      "detail": "detailed",
+      "ranges": [
+        [
+          591,
+          591
+        ],
+        [
+          2194,
+          2220
+        ]
+      ],
+      "indexed_names": 22
+    },
+    {
+      "id": "arvin-tech-taiyi-sword",
+      "detail": "outline",
+      "ranges": [
+        [
+          592,
+          592
+        ],
+        [
+          685,
+          687
+        ]
+      ],
+      "indexed_names": 13
+    },
+    {
+      "id": "arvin-tech-wudang132",
+      "detail": "outline",
+      "ranges": [
+        [
+          593,
+          593
+        ],
+        [
+          685,
+          686
+        ],
+        [
+          688,
+          688
+        ]
+      ],
+      "indexed_names": 12
+    },
+    {
+      "id": "arvin-tech-yang55",
+      "detail": "outline",
+      "ranges": [
+        [
+          594,
+          594
+        ],
+        [
+          685,
+          686
+        ],
+        [
+          689,
+          689
+        ]
+      ],
+      "indexed_names": 12
+    },
+    {
+      "id": "arvin-tech-dugu",
+      "detail": "outline",
+      "ranges": [
+        [
+          595,
+          595
+        ],
+        [
+          685,
+          686
+        ],
+        [
+          690,
+          690
+        ]
+      ],
+      "indexed_names": 12
+    },
+    {
+      "id": "arvin-tech-huashan",
+      "detail": "outline",
+      "ranges": [
+        [
+          596,
+          596
+        ],
+        [
+          685,
+          686
+        ],
+        [
+          691,
+          691
+        ]
+      ],
+      "indexed_names": 12
+    },
+    {
+      "id": "arvin-tech-yunv",
+      "detail": "outline",
+      "ranges": [
+        [
+          597,
+          597
+        ],
+        [
+          685,
+          686
+        ],
+        [
+          692,
+          692
+        ]
+      ],
+      "indexed_names": 12
+    },
+    {
+      "id": "arvin-tech-whiteape",
+      "detail": "outline",
+      "ranges": [
+        [
+          598,
+          598
+        ],
+        [
+          685,
+          686
+        ],
+        [
+          693,
+          693
+        ]
+      ],
+      "indexed_names": 12
+    },
+    {
+      "id": "arvin-tech-qinglong",
+      "detail": "outline",
+      "ranges": [
+        [
+          599,
+          599
+        ],
+        [
+          685,
+          686
+        ],
+        [
+          694,
+          694
+        ]
+      ],
+      "indexed_names": 12
+    },
+    {
+      "id": "arvin-tech-ziwu",
+      "detail": "outline",
+      "ranges": [
+        [
+          600,
+          600
+        ],
+        [
+          685,
+          686
+        ],
+        [
+          695,
+          695
+        ]
+      ],
+      "indexed_names": 12
+    },
+    {
+      "id": "arvin-tech-scythe",
+      "detail": "outline",
+      "ranges": [
+        [
+          601,
+          601
+        ],
+        [
+          697,
+          701
+        ]
+      ],
+      "indexed_names": 13
+    },
+    {
+      "id": "arvin-tech-musou",
+      "detail": "outline",
+      "ranges": [
+        [
+          602,
+          602
+        ],
+        [
+          703,
+          707
+        ]
+      ],
+      "indexed_names": 13
+    },
+    {
+      "id": "arvin-tech-feixue-frost",
+      "detail": "outline",
+      "ranges": [
+        [
+          603,
+          603
+        ],
+        [
+          709,
+          713
+        ]
+      ],
+      "indexed_names": 13
+    },
+    {
+      "id": "arvin-tech-qinggong",
+      "detail": "outline",
+      "ranges": [
+        [
+          715,
+          719
+        ]
+      ],
+      "indexed_names": 1
+    },
+    {
+      "id": "arvin-tech-immortal-sword",
+      "detail": "outline",
+      "ranges": [
+        [
+          721,
+          725
+        ]
+      ],
+      "indexed_names": 1
+    },
+    {
+      "id": "arvin-character-taiji",
+      "detail": "detailed",
+      "ranges": [
+        [
+          808,
+          839
+        ]
+      ],
+      "indexed_names": 26
+    },
+    {
+      "id": "arvin-character-hongcha",
+      "detail": "detailed",
+      "ranges": [
+        [
+          841,
+          873
+        ]
+      ],
+      "indexed_names": 27
+    },
+    {
+      "id": "arvin-character-baige",
+      "detail": "detailed",
+      "ranges": [
+        [
+          875,
+          916
+        ]
+      ],
+      "indexed_names": 32
+    },
+    {
+      "id": "arvin-character-linyu",
+      "detail": "detailed",
+      "ranges": [
+        [
+          918,
+          956
+        ]
+      ],
+      "indexed_names": 31
+    },
+    {
+      "id": "arvin-character-leidian",
+      "detail": "detailed",
+      "ranges": [
+        [
+          958,
+          992
+        ]
+      ],
+      "indexed_names": 28
+    },
+    {
+      "id": "arvin-character-bale",
+      "detail": "detailed",
+      "ranges": [
+        [
+          994,
+          1051
+        ]
+      ],
+      "indexed_names": 47
+    },
+    {
+      "id": "arvin-character-bingnv",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1054,
+          1103
+        ]
+      ],
+      "indexed_names": 36
+    },
+    {
+      "id": "arvin-character-jianshen",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1106,
+          1153
+        ]
+      ],
+      "indexed_names": 34
+    },
+    {
+      "id": "arvin-character-feixue-fire",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1156,
+          1188
+        ]
+      ],
+      "indexed_names": 18
+    },
+    {
+      "id": "arvin-choreography-entry",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1190,
+          1236
+        ]
+      ],
+      "indexed_names": 41
+    },
+    {
+      "id": "arvin-choreography-school-chain",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1237,
+          1261
+        ]
+      ],
+      "indexed_names": 22
+    },
+    {
+      "id": "arvin-choreography-hands",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1262,
+          1276
+        ]
+      ],
+      "indexed_names": 12
+    },
+    {
+      "id": "arvin-choreography-kicks",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1278,
+          1296
+        ]
+      ],
+      "indexed_names": 16
+    },
+    {
+      "id": "arvin-choreography-turning",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1298,
+          1322
+        ]
+      ],
+      "indexed_names": 18
+    },
+    {
+      "id": "arvin-choreography-breath",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1323,
+          1333
+        ]
+      ],
+      "indexed_names": 8
+    },
+    {
+      "id": "arvin-choreography-space",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1334,
+          1359
+        ]
+      ],
+      "indexed_names": 23
+    },
+    {
+      "id": "arvin-choreography-break",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1361,
+          1382
+        ]
+      ],
+      "indexed_names": 18
+    },
+    {
+      "id": "arvin-choreography-payoff",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1383,
+          1429
+        ]
+      ],
+      "indexed_names": 44
+    },
+    {
+      "id": "arvin-choreography-aftermath",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1430,
+          1438
+        ]
+      ],
+      "indexed_names": 6
+    },
+    {
+      "id": "arvin-choreography-redirection",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1439,
+          1480
+        ]
+      ],
+      "indexed_names": 39
+    },
+    {
+      "id": "arvin-choreography-upper-lower",
+      "detail": "detailed",
+      "ranges": [
+        [
+          1481,
+          1521
+        ]
+      ],
+      "indexed_names": 38
+    },
+    {
+      "id": "arvin-choreography-control-followup",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2053,
+          2136
+        ]
+      ],
+      "indexed_names": 20
+    },
+    {
+      "id": "arvin-choreography-baji-pairs",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2138,
+          2154
+        ]
+      ],
+      "indexed_names": 6
+    },
+    {
+      "id": "arvin-choreography-mixed20",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2156,
+          2192
+        ]
+      ],
+      "indexed_names": 20
+    },
+    {
+      "id": "arvin-choreography-rhythm",
+      "detail": "detailed",
+      "ranges": [
+        [
+          437,
+          467
+        ],
+        [
+          491,
+          520
+        ]
+      ],
+      "indexed_names": 5
+    },
+    {
+      "id": "arvin-choreography-reaction",
+      "detail": "detailed",
+      "ranges": [
+        [
+          468,
+          490
+        ]
+      ],
+      "indexed_names": 12
+    },
+    {
+      "id": "arvin-choreography-escalation",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2791,
+          2889
+        ]
+      ],
+      "indexed_names": 23
+    },
+    {
+      "id": "arvin-camera-moves15",
+      "detail": "detailed",
+      "ranges": [
+        [
+          90,
+          118
+        ]
+      ],
+      "indexed_names": 20
+    },
+    {
+      "id": "arvin-camera-spec",
+      "detail": "detailed",
+      "ranges": [
+        [
+          129,
+          279
+        ]
+      ],
+      "indexed_names": 40
+    },
+    {
+      "id": "arvin-camera-weapons",
+      "detail": "detailed",
+      "ranges": [
+        [
+          742,
+          790
+        ]
+      ],
+      "indexed_names": 20
+    },
+    {
+      "id": "arvin-camera-color",
+      "detail": "detailed",
+      "ranges": [
+        [
+          398,
+          404
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-effects-character-signatures",
+      "detail": "detailed",
+      "ranges": [
+        [
+          69,
+          81
+        ],
+        [
+          2590,
+          2685
+        ]
+      ],
+      "indexed_names": 39
+    },
+    {
+      "id": "arvin-effects-trajectory",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2686,
+          2716
+        ]
+      ],
+      "indexed_names": 13
+    },
+    {
+      "id": "arvin-effects-intensity",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2718,
+          2743
+        ]
+      ],
+      "indexed_names": 6
+    },
+    {
+      "id": "arvin-effects-air",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2746,
+          2789
+        ]
+      ],
+      "indexed_names": 23
+    },
+    {
+      "id": "arvin-camera-pattern-a",
+      "detail": "detailed",
+      "ranges": [
+        [
+          283,
+          290
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-camera-pattern-b",
+      "detail": "detailed",
+      "ranges": [
+        [
+          292,
+          299
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-camera-pattern-c",
+      "detail": "detailed",
+      "ranges": [
+        [
+          301,
+          308
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-camera-pattern-d",
+      "detail": "detailed",
+      "ranges": [
+        [
+          310,
+          317
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-camera-pattern-e",
+      "detail": "detailed",
+      "ranges": [
+        [
+          319,
+          326
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-camera-pattern-f",
+      "detail": "detailed",
+      "ranges": [
+        [
+          328,
+          335
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-camera-pattern-g",
+      "detail": "detailed",
+      "ranges": [
+        [
+          337,
+          344
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-camera-pattern-h",
+      "detail": "detailed",
+      "ranges": [
+        [
+          346,
+          353
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-camera-pattern-i",
+      "detail": "detailed",
+      "ranges": [
+        [
+          355,
+          362
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-camera-pattern-j",
+      "detail": "detailed",
+      "ranges": [
+        [
+          364,
+          371
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-camera-pattern-k",
+      "detail": "detailed",
+      "ranges": [
+        [
+          373,
+          380
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-style-1",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2972,
+          2973
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-style-2",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2975,
+          2976
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-style-3",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2978,
+          2979
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-style-4",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2981,
+          2982
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-style-5",
+      "detail": "detailed",
+      "ranges": [
+        [
+          2984,
+          2985
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-1",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3019,
+          3019
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-2",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3020,
+          3020
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-3",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3021,
+          3021
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-4",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3022,
+          3022
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-5",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3023,
+          3023
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-6",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3024,
+          3024
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-7",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3025,
+          3025
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-8",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3026,
+          3026
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-9",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3027,
+          3027
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-10",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3028,
+          3028
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-11",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3029,
+          3029
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-12",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3030,
+          3030
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-13",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3031,
+          3031
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-14",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3032,
+          3032
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-15",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3033,
+          3033
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-16",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3034,
+          3034
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-17",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3035,
+          3035
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-18",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3036,
+          3036
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-19",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3037,
+          3037
+        ]
+      ],
+      "indexed_names": 0
+    },
+    {
+      "id": "arvin-scene-20",
+      "detail": "detailed",
+      "ranges": [
+        [
+          3038,
+          3038
+        ]
+      ],
+      "indexed_names": 0
+    }
+  ],
+  "excluded": "完播率权重、平台执行星级、通用强制问询、重复菜单和固定15秒全局命令不作为规则导入。源文历史/游戏/生理断言未独立核验。"
+}

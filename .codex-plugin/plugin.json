@@ -1,6 +1,6 @@
 {
   "name": "combat-director",
-  "version": "0.7.0",
+  "version": "0.8.1",
   "description": "将战斗短片参考转化为动作节拍、镜头规划、视频提示词与连续性检查。",
   "author": {
     "name": "Local developer"
@@ -9,7 +9,7 @@
   "interface": {
     "displayName": "Combat Director · 战斗导演",
     "shortDescription": "拆解战斗短片，编排动作节拍，编写视频生成提示词。",
-    "longDescription": "独立战斗导演：动作签名、名招影视转译、多人和远近调度、可检索机制库、六轨编排及连续性复核；含六套结构化案例与四套文字案例，不执行视频生成。",
+    "longDescription": "独立战斗导演：116张战斗资料卡，覆盖38类技法、9个角色预设、连招、镜头、特效与场景；按需检索、六轨编排与连续性复核，不执行视频生成。",
     "developerName": "Local developer",
     "category": "Productivity",
     "capabilities": [

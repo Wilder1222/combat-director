@@ -1,0 +1,559 @@
+{
+  "version": 1,
+  "entries": {
+    "arvin-choreography-entry": {
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "空手道",
+        "螳螂拳",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1190-1236：关联来自武学/武学来源栏或逐项带流派名称的动作栏；未将传统拳等泛称强行归类。"
+    },
+    "arvin-choreography-school-chain": {
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "洪拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "螳螂拳",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1237-1261：关联来自武学/武学来源栏或逐项带流派名称的动作栏；未将传统拳等泛称强行归类。"
+    },
+    "arvin-choreography-hands": {
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "洪拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "螳螂拳",
+        "谭腿",
+        "醉拳"
+      ],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1262-1276：关联来自武学/武学来源栏或逐项带流派名称的动作栏；未将传统拳等泛称强行归类。"
+    },
+    "arvin-choreography-kicks": {
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1278-1296：关联来自武学/武学来源栏或逐项带流派名称的动作栏；未将传统拳等泛称强行归类。"
+    },
+    "arvin-choreography-turning": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1298-1322：通用节奏、情绪或空间方法；未提供独立流派/角色关联，空数组不是禁用判断。"
+    },
+    "arvin-choreography-breath": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1323-1333：通用节奏、情绪或空间方法；未提供独立流派/角色关联，空数组不是禁用判断。"
+    },
+    "arvin-choreography-space": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1334-1359：通用节奏、情绪或空间方法；未提供独立流派/角色关联，空数组不是禁用判断。"
+    },
+    "arvin-choreography-break": {
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "螳螂拳",
+        "谭腿",
+        "跆拳道",
+        "醉拳"
+      ],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1361-1382：关联来自武学/武学来源栏或逐项带流派名称的动作栏；未将传统拳等泛称强行归类。"
+    },
+    "arvin-choreography-payoff": {
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "形意拳",
+        "截拳道",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "洪拳",
+        "空手道",
+        "蔡拳",
+        "蔡李佛",
+        "谭腿",
+        "跆拳道"
+      ],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1383-1429：关联来自武学/武学来源栏或逐项带流派名称的动作栏；未将传统拳等泛称强行归类。"
+    },
+    "arvin-choreography-aftermath": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1430-1438：通用节奏、情绪或空间方法；未提供独立流派/角色关联，空数组不是禁用判断。"
+    },
+    "arvin-choreography-redirection": {
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "截拳道",
+        "擒拿",
+        "散打",
+        "柔道",
+        "泰拳",
+        "蔡李佛",
+        "谭腿",
+        "醉拳"
+      ],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1439-1480：关联来自武学/武学来源栏或逐项带流派名称的动作栏；未将传统拳等泛称强行归类。"
+    },
+    "arvin-choreography-upper-lower": {
+      "schools": [
+        "36路腿法",
+        "八卦掌",
+        "八极拳",
+        "合气道",
+        "咏春拳",
+        "太极拳",
+        "少林旋风地堂腿",
+        "巴西战舞",
+        "截拳道",
+        "散打",
+        "柔术",
+        "柔道",
+        "泰拳",
+        "谭腿",
+        "跆拳道"
+      ],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文1481-1521：关联来自武学/武学来源栏或逐项带流派名称的动作栏；未将传统拳等泛称强行归类。"
+    },
+    "arvin-choreography-control-followup": {
+      "schools": [
+        "巴西战舞",
+        "擒拿",
+        "柔术",
+        "柔道",
+        "谭腿"
+      ],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文2053-2136：关联来自武学/武学来源栏或逐项带流派名称的动作栏；未将传统拳等泛称强行归类。"
+    },
+    "arvin-choreography-baji-pairs": {
+      "schools": [
+        "八极拳"
+      ],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文2138-2154：关联来自武学/武学来源栏或逐项带流派名称的动作栏；未将传统拳等泛称强行归类。"
+    },
+    "arvin-choreography-mixed20": {
+      "schools": [
+        "八极拳",
+        "咏春拳",
+        "形意拳",
+        "散打",
+        "螳螂拳"
+      ],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文2156-2192：关联来自武学/武学来源栏或逐项带流派名称的动作栏；未将传统拳等泛称强行归类。"
+    },
+    "arvin-choreography-rhythm": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文437-467,491-520：通用节奏、情绪或空间方法；未提供独立流派/角色关联，空数组不是禁用判断。"
+    },
+    "arvin-choreography-reaction": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文468-490：通用节奏、情绪或空间方法；未提供独立流派/角色关联，空数组不是禁用判断。"
+    },
+    "arvin-choreography-escalation": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文2791-2889：通用节奏、情绪或空间方法；未提供独立流派/角色关联，空数组不是禁用判断。"
+    },
+    "arvin-camera-moves15": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "basis": "源文90-118；镜头方法可用于已建立空间轴线的相应场面，群战必须另跟踪全部角色；兵器接触规则未标记为远程招式。"
+    },
+    "arvin-camera-spec": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "basis": "源文129-279；镜头方法可用于已建立空间轴线的相应场面，群战必须另跟踪全部角色；兵器接触规则未标记为远程招式。"
+    },
+    "arvin-camera-weapons": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "sparring"
+      ],
+      "basis": "源文742-790；镜头方法可用于已建立空间轴线的相应场面，群战必须另跟踪全部角色；兵器接触规则未标记为远程招式。"
+    },
+    "arvin-camera-color": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "basis": "源文398-404；镜头方法可用于已建立空间轴线的相应场面，群战必须另跟踪全部角色；兵器接触规则未标记为远程招式。"
+    },
+    "arvin-camera-pattern-a": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "ranged",
+        "sparring"
+      ],
+      "basis": "源文283-290的低仰蓄力；按镜头能呈现的运动/接触局部使用，不自动授权能量或把双人连续互殴推广为群战。"
+    },
+    "arvin-camera-pattern-b": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "basis": "源文292-299的攻击轨迹与拖尾；按镜头能呈现的运动/接触局部使用，不自动授权能量或把双人连续互殴推广为群战。"
+    },
+    "arvin-camera-pattern-c": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "sparring"
+      ],
+      "basis": "源文301-308的接触点与双色效果；按镜头能呈现的运动/接触局部使用，不自动授权能量或把双人连续互殴推广为群战。"
+    },
+    "arvin-camera-pattern-d": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "ranged"
+      ],
+      "basis": "源文310-317的全景余波收束；按镜头能呈现的运动/接触局部使用，不自动授权能量或把双人连续互殴推广为群战。"
+    },
+    "arvin-camera-pattern-e": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "ranged"
+      ],
+      "basis": "源文319-326的不对称效果压迫；按镜头能呈现的运动/接触局部使用，不自动授权能量或把双人连续互殴推广为群战。"
+    },
+    "arvin-camera-pattern-f": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "sparring"
+      ],
+      "basis": "源文328-335的翻摔全肢可见；按镜头能呈现的运动/接触局部使用，不自动授权能量或把双人连续互殴推广为群战。"
+    },
+    "arvin-camera-pattern-g": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "ranged"
+      ],
+      "basis": "源文337-344的元素对峙；按镜头能呈现的运动/接触局部使用，不自动授权能量或把双人连续互殴推广为群战。"
+    },
+    "arvin-camera-pattern-h": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "sparring"
+      ],
+      "basis": "源文346-353的角色与地面反馈；按镜头能呈现的运动/接触局部使用，不自动授权能量或把双人连续互殴推广为群战。"
+    },
+    "arvin-camera-pattern-i": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "ranged",
+        "sparring"
+      ],
+      "basis": "源文355-362的攻击部位推进；按镜头能呈现的运动/接触局部使用，不自动授权能量或把双人连续互殴推广为群战。"
+    },
+    "arvin-camera-pattern-j": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文364-371的上勾动作的三段呈现；按镜头能呈现的运动/接触局部使用，不自动授权能量或把双人连续互殴推广为群战。"
+    },
+    "arvin-camera-pattern-k": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "basis": "源文373-380的重击交换链；按镜头能呈现的运动/接触局部使用，不自动授权能量或把双人连续互殴推广为群战。"
+    },
+    "arvin-effects-character-signatures": {
+      "schools": [],
+      "characters": [
+        "太极",
+        "红茶",
+        "白鸽",
+        "凛羽",
+        "雷电",
+        "芭乐",
+        "冰女",
+        "剑神",
+        "绯雪·火焰"
+      ],
+      "scope": [
+        "duel",
+        "group",
+        "sparring"
+      ],
+      "basis": "源文69-81,2590-2685；速查表与动态词库明确覆盖九个角色；此处绯雪是火焰角色，不关联冰霜兵器轮廓。"
+    },
+    "arvin-effects-trajectory": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "basis": "源文2686-2716；效果轨迹/强弱/反馈方法按可见运动选用；无角色专名绑定，不从否定或举例推导能力授权。"
+    },
+    "arvin-effects-intensity": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "ranged",
+        "sparring"
+      ],
+      "basis": "源文2718-2743；效果轨迹/强弱/反馈方法按可见运动选用；无角色专名绑定，不从否定或举例推导能力授权。"
+    },
+    "arvin-effects-air": {
+      "schools": [],
+      "characters": [],
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "sparring"
+      ],
+      "basis": "源文2746-2789；效果轨迹/强弱/反馈方法按可见运动选用；无角色专名绑定，不从否定或举例推导能力授权。"
+    }
+  }
+}

@@ -2,7 +2,7 @@
 name: combat-director
 description: 独立战斗导演技能。用于打斗视频与提示词拆解、武侠攻防、仙侠斗法、巨型敌人战、角色战斗登场、战斗分镜与视频提示词、打斗失败诊断。根据人物目标、能力边界和空间状态编排战斗，输出中文六轨时间轴与平台提示词。可独立使用，也可与其他导演技能交换方案；不负责日常人像、完整剧集世界观或未经授权的视频生成。
 metadata:
-  version: "0.7.0"
+  version: "0.8.1"
   language: "zh-CN"
 ---
 
@@ -20,6 +20,7 @@ metadata:
 | 拆解、整理或改写现成打斗提示词 | 文本拆解与重编排 | [references/prompt-craft.md](references/prompt-craft.md)、[references/source-case.md](references/source-case.md) |
 | 新建战斗、换角色或换场景 | 编排 | [references/choreography.md](references/choreography.md)、[references/templates.md](references/templates.md) |
 | 设计动作签名、把武学或名招转成画面 | 动作设计 | [references/action-design.md](references/action-design.md) |
+| 选具体招式、套用角色预设、融合多种武学 | 招式与角色编排 | [references/technique-adaptation.md](references/technique-adaptation.md)，按需检索技法、角色和连招 |
 | 多人、远程、追逐、体型差或演武 | 场面调度 | [references/combat-modes.md](references/combat-modes.md) |
 | 检索或吸收可复用招式与能力机制 | 机制库 | [references/library-workflow.md](references/library-workflow.md)，先索引后正文 |
 | 角色登场、首斩前收黑、预告式战斗 | 登场片段 | [references/prompt-craft.md](references/prompt-craft.md)、[examples/entrance-cliffhanger-15.md](examples/entrance-cliffhanger-15.md) |
@@ -59,6 +60,8 @@ metadata:
 将渲染风格与能力规则分开：真人、CG、三维动画、二维漫画、水墨均可使用相同攻防逻辑。不要把“写实外观”误认为“禁止幻想”，也不要把“仙侠服装”误认为“允许毁城”。
 
 需要机制候选时检索 [library/catalog.json](library/catalog.json)，只读命中卡；零命中直接原创并说明来源。候选不等于可执行，先核对已有兵器、介质、位置、资源、能力与结尾。普通动作能够完成目的时不追加法术。用户点名的武学或文学招式保留其意图，再拆为可见动作；出处不明不称正统，小说能力不写成历史武术。用户已授权自行选风格或场地时直接选择并说明，不强制弹出选项菜单。
+
+招式库含具体动作表、角色变体和名称轮廓。先按人物任务选主攻、破招、收势，再把所选一至三招接入状态链；不要把招名清单贴进提示词。使用角色预设时先锁定版本，保留白鸽的高/中位腿法主轴、凛羽的打→抓→打、冰女的硬冰封路等区别。同名绯雪的冰霜轮廓与火焰角色分别处理；源码缺失的兵器专项不冒充完整剑谱。具体选择与冲突处理见[招式融合](references/technique-adaptation.md)。
 
 ### 3. 编排状态与六轨
 

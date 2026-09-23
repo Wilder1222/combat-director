@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/wangarvin007-commits/-skills",
+  "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+  "retrieved": "2026-09-23",
+  "license": "MIT",
+  "files": [
+    {
+      "name": "SKILL.md",
+      "upstream_path": "seedance-combat-prompt/SKILL.md",
+      "bytes": 350628,
+      "sha256": "011eed576c241a2180c776ddf6b8555331b482a951e7be35ed53928e7f0b87e0"
+    },
+    {
+      "name": "LICENSE",
+      "upstream_path": "LICENSE",
+      "bytes": 1062,
+      "sha256": "aff64252938164965416e9e29af9faf52b48f6d294ab41cf1a9b6bd886d41333"
+    }
+  ],
+  "missing_referenced_files": [
+    "兵器技法资料库_剑法专项.md",
+    "兵器技法资料库_长柄镰刀专项.md",
+    "兵器技法资料库_梦想一心太刀专项.md",
+    "兵器技法资料库_绯雪樱灼流单太刀专项.md",
+    "兵器技法资料库_高级轻功专项.md",
+    "兵器技法资料库_修仙高级剑招专项.md"
+  ]
+}

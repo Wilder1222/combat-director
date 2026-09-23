@@ -5,8 +5,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import importlib.util
+import os
 import re
 import sys
+import tempfile
 import zipfile
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -86,11 +89,37 @@ def validate(root: Path) -> list[Path]:
 
 
 def build(root: Path) -> Path:
-    files = validate(root)
+    files = validate_release(root)
     manifest = json.loads(files[0].read_text(encoding='utf-8'))
     dist = root / 'dist'
     dist.mkdir(exist_ok=True)
     output = dist / f"{manifest['name']}-{manifest['version']}.zip"
+    # A partial write/CRC failure must not replace the previous verified ZIP.
+    fd, temporary = tempfile.mkstemp(prefix='.combat-release-', suffix='.zip', dir=dist)
+    os.close(fd)
+    temporary = Path(temporary)
+    try:
+        write_archive(root, files, temporary)
+        os.replace(temporary, output)
+    finally:
+        temporary.unlink(missing_ok=True)
+    return output
+
+
+def validate_release(root: Path) -> list[Path]:
+    """Repository release preflight; runtime-only validation stays independent."""
+    generator = root / 'scripts/build_arvin_library.py'
+    if not generator.is_file():
+        raise ValueError('Formal builds require the repository generator and pinned sources')
+    spec = importlib.util.spec_from_file_location('project_arvin_builder', generator)
+    builder = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(builder)
+    builder.check_outputs(root, builder.render(root))
+    files = validate(root)
+    return files
+
+
+def write_archive(root: Path, files: list[Path], output: Path):
     with zipfile.ZipFile(output, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
         for path in files:
             # Build bytes depend on contents, not local mtimes or Windows attributes.
@@ -105,16 +134,17 @@ def build(root: Path) -> Path:
         expected = {p.relative_to(root).as_posix() for p in files}
         if set(archive.namelist()) != expected:
             raise ValueError('Archive does not match release allowlist')
-    return output
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['validate', 'build'])
+    parser.add_argument('command', choices=['validate', 'validate-release', 'build'])
     args = parser.parse_args()
     try:
         if args.command == 'build':
             print(build(ROOT))
+        elif args.command == 'validate-release':
+            print(f'PASS: {len(validate_release(ROOT))} release files; pinned sources and generated outputs valid')
         else:
             print(f'PASS: {len(validate(ROOT))} release files; resource links valid')
     except (ValueError, OSError, zipfile.BadZipFile) as error:

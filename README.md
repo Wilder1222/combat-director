@@ -1,6 +1,6 @@
 # Combat Director · 独立战斗导演
 
-**0.7.0 · 2026-09-22**。支持独立 Agent Skill 与 Codex 插件打包。融合最新对话技能附件与 Arvin 技能的可复用方法，增加动作档案、名招影视转译、多人调度和只读机制库；继承交手桥接、飞剑归属、弱点回收与登场预告。无需 CineWeave、MCP 服务或视频平台插件即可完成文本创作。
+**0.8.1 · 2026-09-23**。支持独立 Agent Skill 与 Codex 插件打包。进一步吸收 Arvin 技能中的实际招式、九角色战斗体系、连招、镜头、特效与场景，形成116张按需读取的资料卡；为每类补充对手回应、失败条件和回收，接入现有六轨编排。无需 CineWeave、MCP 服务或视频平台插件即可完成文本创作。
 
 源码仓库：[Wilder1222/combat-director](https://github.com/Wilder1222/combat-director)。版本变更见[CHANGELOG.md](CHANGELOG.md)。
 
@@ -14,7 +14,9 @@ LibTV 站内适配在独立分支 `codex/libtv-adaptation` 开发，入口与交
 - 中文八标签提示词、平台交接、审片与最小修复。
 - 现成提示词分版本拆解、武器召回与回握、动作接力、旧伤铺垫、台词预算和镜头/定格例外复核。
 - 可选兵器、轨迹、回应、持物转移和能力代价契约，直接进入最终提示词。
-- 动作签名、破防恢复、多人与远近调度；七张原创机制卡按普通设计/幻想能力分开检索，前提不成立时不套用。
+- 动作签名、破防恢复、多人与远近调度；七张原创机制卡按普通设计/幻想能力分开检索。
+- 38类技法、9个角色预设、18张编排卡、15张镜头卡、4张特效卡、5种风格与20个场景；支持招式名、武学、角色版本、内容层级过滤和分页。
+- 固定源文逐段摘录与原创改编说明分开，17张仅有名称/定位的卡显式标为轮廓。
 - JSON 计划、摘要失效检查和七份文件导出；审片记录与后续起点核对；不执行视频生成。
 
 ## 开始使用
@@ -59,9 +61,14 @@ python skills/combat-director/scripts/combat_tool.py validate skills/combat-dire
 python skills/combat-director/scripts/combat_tool.py render skills/combat-director/examples/epic-30.plan.json --platform xiaoyunque --out-dir outputs/epic
 python skills/combat-director/scripts/library_tool.py search design --query "回廊 撤离" --scope group
 python skills/combat-director/scripts/library_tool.py search abilities --query "六脉神剑"
+python skills/combat-director/scripts/library_tool.py search techniques --query "乌龙摆尾" --school "八卦掌"
+python skills/combat-director/scripts/library_tool.py search characters --character "白鸽"
+python skills/combat-director/scripts/library_tool.py stats
 python skills/combat-director/scripts/library_tool.py validate
+python scripts/build_arvin_library.py --check
 python -m unittest discover -s tests -v
 python scripts/project.py validate
+python scripts/project.py validate-release
 python scripts/project.py build
 ```
 
@@ -75,7 +82,7 @@ validate 和 render 都接受 `--max-duration 15`。30秒计划在确认上限15
 
 ## Codex 插件
 
-项目根目录的 `.codex-plugin/plugin.json` 指向完整技能目录。构建产物为 `dist/combat-director-0.7.0.zip`；仅包含插件清单、技能入口、参考文档、机制库、Schema、脚本与示例。原始附件、测试、评估快照和仓库文档不进入插件包。
+项目根目录的 `.codex-plugin/plugin.json` 指向完整技能目录。构建产物为 `dist/combat-director-0.8.1.zip`；仅包含插件清单、技能入口、参考文档、机制库、Schema、脚本与示例。原始附件、测试、评估快照和仓库文档不进入插件包。
 
 `codex plugin add <plugin>@<marketplace>` 需要可用的市场条目，ZIP构建不等于安装。本机使用个人市场的本地来源；安装/升级状态与代码验证分别记录于[验证报告](docs/validation.md)。其他机器仍需配置自己的安装来源。仓库尚未指定开源许可证。
 
@@ -98,3 +105,10 @@ validate 和 render 都接受 `--max-duration 15`。30秒计划在确认上限15
 本轮变化见[变更记录](CHANGELOG.md)。早期试点与失败分析保留在[原行为评估](docs/implementation/behavior-evaluation.md)，新增素材的两题旧版/新版比较见[0.6.0文字评估](docs/implementation/prompt-evaluation-0.6.0.md)。本地发布流程、运行包与安装证据见[当前验证](docs/validation.md)，不以这些检查声称视频效果通过。
 
 0.7.0的[融合决策](docs/research/2026-09-22-skill-library-integration.md)记录实际读取范围、采用/舍弃的规则与新实现边界。原数据契约仍为1.2，六套结构化示例无需迁移。当前LibTV适配是独立维护的0.6.0基础版本，新机制库未自动同步到其单文件入口。
+
+0.8.0的[招式融合方法](skills/combat-director/references/technique-adaptation.md)将主攻、破招与收势落实为可见动作，并区分同名角色/招式版本。[白鸽对红茶18秒演武](skills/combat-director/examples/arvin-baige-hongcha-18.md)与[剑神对火焰绯雪24秒交锋](skills/combat-director/examples/arvin-sword-fire-24.md)提供完整六轨和可复制提示词，没有配套JSON或视频实测。
+
+Arvin原件与MIT许可固定在 `sources/upstream/arvin-seedance`；[本次吸收记录](docs/research/2026-09-23-arvin-combat-integration.md)记录范围和限制，[覆盖清单](docs/implementation/arvin-library-coverage.json)逐卡列出源文行号。编辑 `scripts/build_arvin_library.py` 内的选段/改编说明或 `sources/editorial/library-base.json` 后执行 `python scripts/build_arvin_library.py`，再运行发布验证；生成卡与catalog不直接手改。上游六份兵器/轻功专项缺失，不宣称复原完整武学。运行包包含归属清楚的摘录卡及MIT通知，不依赖原始快照或网络；LibTV单文件仍独立维护。
+
+
+0.8.1修复[审阅中的三项实现问题](docs/reviews/2026-09-23-0.8.0-review.md)：正式打包检查生成一致性，补齐跨分类筛选，并让已登记旧卡可退役、写入失败可恢复。维护前可用 `python scripts/build_arvin_library.py --plan`只读查看变化；`--recover`用于确认原进程结束后的中断恢复。关联依据在 `sources/editorial/arvin-facets.json`，受管理产物在 `sources/editorial/arvin-generated.json`，不得用刷新哈希绕过人工改动冲突。进度见[优化计划](docs/plans/2026-09-23-0.8.0-optimization-plan.md)。

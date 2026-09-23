@@ -39,6 +39,7 @@ def main():
         run('rebuild action examples',[sys.executable,'scripts/build_action_examples.py'])
         current={p.name:sha(p) for p in examples.iterdir() if p.suffix in ('.json','.txt')}
         if prior != current: raise ValueError('Rebuild changed checked-in artifacts; review the generated difference')
+        run('pinned source and formal release preflight',[sys.executable,'scripts/project.py','validate-release'])
         source_batches=[]
         for manifest_path in sorted((ROOT/'sources/attachments').glob('*/manifest.json')):
             items=json.loads(manifest_path.read_text(encoding='utf-8'))['files']
@@ -83,6 +84,25 @@ def main():
             if [item['id'] for item in json.loads(candidates['stdout'])['matches']] != ['corridor-exit']:
                 raise ValueError('Packaged library lookup mismatch')
             run('unpacked library card',[sys.executable,library_cli,'show','finger-lines'],cwd=tmp)
+            named=run('unpacked named technique',[sys.executable,library_cli,'search','techniques',
+                '--query','乌龙摆尾','--school','八卦掌','--detail','detailed'],cwd=tmp)
+            if [item['id'] for item in json.loads(named['stdout'])['matches']] != ['arvin-tech-bagua']:
+                raise ValueError('Packaged named move lookup mismatch')
+            run('unpacked imported character',[sys.executable,library_cli,'show','arvin-character-baige'],cwd=tmp)
+            missing=run('unpacked missing weapon detail',[sys.executable,library_cli,'search','techniques',
+                '--school','长柄镰刀','--detail','detailed'],cwd=tmp)
+            if json.loads(missing['stdout'])['matches']:
+                raise ValueError('Packaged outline was promoted to detailed technique')
+            for label,kind,query,flag,value,wanted in [
+                ('school choreography','choreography','顶心肘','--school','八极拳','arvin-choreography-baji-pairs'),
+                ('character effects','effects','白鸽','--character','白鸽','arvin-effects-character-signatures')]:
+                result=run('unpacked '+label,[sys.executable,library_cli,'search',kind,
+                    '--query',query,flag,value],cwd=tmp)
+                if wanted not in [item['id'] for item in json.loads(result['stdout'])['matches']]:
+                    raise ValueError('Packaged cross-category filter lost a known result: '+label)
+            facet_result=run('unpacked category facets',[sys.executable,library_cli,'stats'],cwd=tmp)
+            if 'group' not in json.loads(facet_result['stdout'])['facets_by_kind']['camera']['scope']:
+                raise ValueError('Packaged camera scopes mismatch')
             packaged=unpacked/'skills/combat-director/examples'
             for plan in packaged.glob('*.plan.json'):
                 run('unpacked '+plan.name,[sys.executable,cli,'validate',plan],cwd=tmp)
