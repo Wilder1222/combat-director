@@ -4,6 +4,8 @@
 
 源码仓库：[Wilder1222/combat-director](https://github.com/Wilder1222/combat-director)。版本变更见[CHANGELOG.md](CHANGELOG.md)。
 
+LibTV 站内适配在独立分支 `codex/libtv-adaptation` 开发，入口与交付方式见 [LibTV 适配](adapters/libtv/README.md)。该版提供自包含 Markdown 和候选导入包，平台导入与生成尚未实测；原 Codex 发行方式不变。
+
 ## 能做什么
 
 - 人物级武侠攻防、升级式斗法、巨型敌人反制三种母版。
