@@ -1,0 +1,71 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "characters",
+    "query": "",
+    "scope": null,
+    "school": null,
+    "character": "绯雪·火焰",
+    "detail": null
+  },
+  "total": 1,
+  "limit": 12,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。",
+  "matches": [
+    {
+      "id": "arvin-character-feixue-fire",
+      "kind": "characters",
+      "title": "绯雪·火焰：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "绯雪·火焰：战斗预设",
+        "绯雪樱灼流单太刀",
+        "火焰刀",
+        "焚樱刀禅",
+        "武侠身法",
+        "绯雪·火焰"
+      ],
+      "summary": "单刀前压与火红刀焰，沿刀路加压后收刀。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-feixue-fire.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "绯雪樱灼流单太刀",
+        "火焰刀",
+        "焚樱刀禅",
+        "武侠身法"
+      ],
+      "characters": [
+        "绯雪·火焰"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1156,
+            1188
+          ]
+        ]
+      },
+      "status": "candidate",
+      "matched_terms": [],
+      "matched_names": [],
+      "matched_names_total": 0
+    }
+  ]
+}

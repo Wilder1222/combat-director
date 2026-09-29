@@ -1,0 +1,17 @@
+{
+  "schema_version": "unchanged",
+  "template": "unchanged",
+  "duration": "unchanged",
+  "aspect_ratio": "unchanged",
+  "generation": "unchanged",
+  "camera_mode": "unchanged",
+  "rules": "unchanged",
+  "timing": "unchanged",
+  "anchors": "unchanged",
+  "cast": "unchanged",
+  "abilities": "unchanged",
+  "references": "unchanged",
+  "initial_state": "unchanged",
+  "beats": "All 6 beats identical except camera.path; actions, performance, timings, before/after, vfx, environment and sound preserved.",
+  "sections": "All 4 sections identical except summary.camera; grouping and all action/ending expressions preserved."
+}

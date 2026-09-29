@@ -1,0 +1,113 @@
+{
+  "review_type": "independent_semantic_review",
+  "scope": "只读清单与其中六份请求/完整答复，未访问仓库、旧答案、其他评估，未联网或生成媒体。只评价提供的文字，不评价未提供的视频效果。",
+  "counting_rule": "对完整答复去除首尾空白后计数，包含标点及内部空白；这些答复没有补充平面字符，UTF-16长度与Unicode字符数一致。",
+  "overall_status": "satisfied",
+  "cases": [
+    {
+      "id": "MXH04",
+      "status": "satisfied",
+      "characters": 135,
+      "hard_failures": [],
+      "minor_issues": [],
+      "missing_items": [],
+      "evidence": [
+        {
+          "quote": "甲先快速进步斜斩，乙随即撤步举刀斜架，两刀在身前交接，乙贴刀将来刀带向身体外侧",
+          "finding": "先后关系明确，进攻、撤步斜架、贴刀向外引导形成连续的动作因果，交接位置有可见描述。"
+        },
+        {
+          "quote": "甲借势屈肘收刀，两刀滑开脱离，双方各退一步站稳",
+          "finding": "收刀承接引导力，随后兵器脱离、双方撤开站稳，接触与分离顺序完整。"
+        },
+        {
+          "quote": "快挥处仅有短弧模糊，起手、接触与分离清楚可追踪，全程各自握持同一把木刀。",
+          "finding": "快速刀路与可读性兼容，短弧模糊未改变正常速度或加入超自然能力，武器连续性明确。"
+        }
+      ],
+      "rationale": "包含8秒、成年双人、固定侧面全身、一镜到底、正常速度与无超自然能力。仅一个中文句子，135字，未附分析或工程字段。满足原请求。"
+    },
+    {
+      "id": "MXH06",
+      "status": "satisfied",
+      "characters": 143,
+      "hard_failures": [],
+      "minor_issues": [],
+      "missing_items": [],
+      "evidence": [
+        {
+          "quote": "仅据你的描述，可能是旧姿态重影、尾迹未收束或兵器重复生成，不能认定算法。",
+          "finding": "明确仅依赖用户口述，列举现象可能对应的原因而未认定具体算法，符合初步诊断的证据边界。"
+        },
+        {
+          "quote": "待核验：收剑前后连续帧、相机运动、原片与后期版差异及设置记录。",
+          "finding": "明确列出仍需检查的连续帧和制作记录；提及后期版作为待核验对象，不是断言已经采用后期。"
+        },
+        {
+          "quote": "最小建议：只修确认出错的环节，约束收势后不留独立旧剑轮廓；保留正常速度、单镜头、两人各一把剑及撤开结尾。",
+          "finding": "建议限制修复范围并给出直接针对残留轮廓的约束，完整保留用户指定的四项条件。"
+        },
+        {
+          "quote": "复测看旧轮廓是否消失、持剑是否连续，效果待验证。",
+          "finding": "给出可核验的观察标准，没有宣称未提供媒体的修复效果。"
+        }
+      ],
+      "rationale": "143字，满足不超过160字的初步诊断与最小修复建议要求。未提供视频和设置时不凭空选择某种算法或技术性处理步骤，现有建议的保守范围合理。"
+    },
+    {
+      "id": "MXH08",
+      "status": "satisfied",
+      "characters": 105,
+      "hard_failures": [],
+      "minor_issues": [],
+      "missing_items": [],
+      "evidence": [
+        {
+          "quote": "8秒，空石院中，两名成年人静态对峙，甲在左、乙在右，相隔三米，各持一根木杖，杖尖低垂",
+          "finding": "准确保留人物、场景、左右空间关系、距离、持杖数量和姿态。"
+        },
+        {
+          "quote": "固定侧面全身镜头，正常速度，一镜到底，两人始终保持原位，仅有自然呼吸与衣角轻动，直至结束仍未出手，无超自然能力，无额外特效。",
+          "finding": "完整保留静态动作范围、固定镜头与未出手结尾，没有增添出招、运镜或特效。"
+        }
+      ],
+      "rationale": "仅一个中文句子，105字，无分析或额外字段。满足全部显式要求。"
+    }
+  ],
+  "files_read": [
+    {
+      "path": "D:\\Temp\\combat-recovery-review-0vzlnin3\\inputs.json",
+      "sha256": "72ca13547f11debcd95f7f0354e86ba53c2e59e483875ded6074798a7206c75d"
+    },
+    {
+      "path": "D:\\Temp\\combat-recovery-review-0vzlnin3\\MXH04-request.txt",
+      "sha256": "5d28ced0b7a229ed9977350dc57cd77afa317ee48204f132a0e7243df4a5fd35",
+      "matches_manifest": true
+    },
+    {
+      "path": "D:\\Temp\\combat-recovery-review-0vzlnin3\\MXH04-answer.md",
+      "sha256": "a502ade1feafbd2fc75d2b0dd5b746d1df0aec05a388baf3a9c4cb0cc96f0c04",
+      "matches_manifest": true
+    },
+    {
+      "path": "D:\\Temp\\combat-recovery-review-0vzlnin3\\MXH06-request.txt",
+      "sha256": "85c272493411aee37a8229c03a3836bca933d41ab7117a5f53c1d383c4b004ec",
+      "matches_manifest": true
+    },
+    {
+      "path": "D:\\Temp\\combat-recovery-review-0vzlnin3\\MXH06-answer.md",
+      "sha256": "7f71e7be395bc3d6817200cd7d7e958411e6e2c21835727bca2407bb7fe77364",
+      "matches_manifest": true
+    },
+    {
+      "path": "D:\\Temp\\combat-recovery-review-0vzlnin3\\MXH08-request.txt",
+      "sha256": "84ce65c62e6a4f4ce33ed9f3a5845334be287ddf42db86fdc92d4ce9611460e1",
+      "matches_manifest": true
+    },
+    {
+      "path": "D:\\Temp\\combat-recovery-review-0vzlnin3\\MXH08-answer.md",
+      "sha256": "98dc1972203b33017cab69a34b4aa31469b0928df8a50c1b52d83867d340b189",
+      "matches_manifest": true
+    }
+  ]
+}

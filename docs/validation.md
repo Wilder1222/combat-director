@@ -1,48 +1,38 @@
-# 0.8.1 验证报告
+# 0.9.2 验证报告
 
-日期：2026-09-23。软件0.8.1、库索引2、Combat Plan1.2；Windows x64、Python3.13.3。本轮修复正式构建、跨分类筛选和生成文件退役/恢复三项问题，落实WP01—WP03。历史[0.8.0报告](history/validation-0.8.0.md)与[0.7.0报告](history/validation-0.7.0.md)保留。
+日期：2026-09-29。软件0.9.2、卡索引2、条目索引1、Combat Plan1.2；Windows x64、Python3.13.3。本轮只增加技能入口的乱码读取恢复指引，插件清单与入口版本同步；运动成像规则、库、案例与脚本未改变。上一版记录见[0.9.1历史报告](history/validation-0.9.1.md)。
 
-完整发布流程 **33项通过**；单元测试 **81项，79通过、2跳过**。相较0.8.0新增17项测试，覆盖生成维护、构建失败保护与跨分类关联。逐命令输出和发布文件哈希见[机器证据](implementation/validation-0.8.1.json)，问题与实现对应见[修复记录](implementation/fixes-0.8.1.md)。
+完整发布流程实际重跑，**41项通过**；单元测试**95项，93通过、2跳过**。命令输出、来源及187个运行文件哈希见[机器证据](implementation/validation-0.9.2.json)。跳过项为Windows符号链接条件，不能计为通过。
 
-| 检查 | 本轮结果 |
+| 检查 | 证据与结论 |
 | --- | --- |
-| 原案例重建 | 六套计划与六份派生提示词逐字节不变，原复核流程通过 |
-| 旧附件 | 两批12份附件字节数与SHA-256保持一致 |
-| 新来源 | Arvin固定提交的SKILL与MIT原件哈希一致；109张生成卡、catalog与覆盖清单和生成器完全一致 |
-| 正式构建 | 正文、catalog、配方、来源原件和关联权威漂移均拒绝；写入/CRC失败保留旧ZIP；运行结构检查仍不依赖来源 |
-| 生成维护 | 111个输出登记；真实配方重命名后旧卡退役且不入包；未知文件/人工修改保护，暂存失败、应用回滚与显式恢复通过 |
-| 库与检索 | 共116张卡；同名不同武学、冰霜/火焰版本、轮廓过滤、罗马音与卡内招式名可查，分页无遗漏/重复 |
-| 跨分类筛选 | 顶心肘+八极拳、白鸽特效+白鸽角色可命中；错误流派/角色排除；分类统计与镜头候选场面通过 |
-| 边界 | 原有越界/重复/缺失路径与类型检查；新增来源身份、行段、重复条目、原件篡改及产物失同步拒绝 |
-| 按需读取 | 搜索只读索引，正文仅在show时读所选卡；非UTF8环境仍可输出中文UTF8 |
-| 工程回归 | 计划状态、摘要失效、动作契约、审片回流、迁移、Schema与技能/插件验证器通过 |
-| 发布包 | 165个文件，资源链接、ZIP CRC、固定元数据与重复构建逐字节一致 |
-| 解压独立执行 | 旧CLI导出、库命令、八卦招式定位、白鸽卡读取及缺失详情过滤通过；新增流派/角色跨分类查询与分类统计通过 |
+| 变更范围 | 与0.9.1 ZIP比较，仅插件清单及SKILL入口变化，其余185个运行文件相同；[精确比较](../evals/results/host-encoding-0.9.2/comparison.json) |
+| 来源与构建 | 固定附件、1466条目证据、来源/派生一致性及正式构建预检通过；116张卡、卡索引2与条目索引1保留 |
+| 计划与导出 | 六套原计划、两套motion计划、Schema、复核失效和七文件导出检查通过；不证明自由文字物理正确 |
+| 独立包 | 仓库外解压后检索、条目详情、原文展开、计划校验、导出和审片/迁移边界检查通过 |
+| 可复现构建 | 187文件，CRC与固定元数据检查通过，两次构建字节一致 |
+| 实际读取恢复 | 两份原失败请求在0.9.2复测均取得可读SKILL及motion正文，解码后与候选全文匹配；初次乱码仍存在，见[恢复报告](implementation/encoding-recovery-0.9.2.md) |
+| 本轮文字行为 | 上述两题及一题静态短稿共三次新调用，独立复核均满足；静态题未读motion或新增特效，不沿用旧版成绩 |
+| 原0.9.1矩阵 | 八格实际执行与独立复核保留原结果；其中两次未恢复读取仍记为历史失败，见[原矩阵](implementation/host-motion-matrix-0.9.1.md) |
+| 既有文字证据 | [0.9.1四题motion增量](implementation/motion-blur-behavior-0.9.1.md)、[六题原扩展](implementation/extension-behavior-0.9.1.md)、[0.9.0资料库比较](implementation/library-behavior-0.9.0.md)各保留冻结版本，不改记为0.9.2全量行为验证 |
+| 最低Python版本 | 0.9.0曾在Python3.10.21跑95项单测，93通过、2跳过；[历史证据](implementation/compatibility-python310-0.9.0.json)。0.9.2未改Python运行脚本，本轮未重新执行该环境 |
+| Linux | WSL Ubuntu因虚拟磁盘缺失未能启动，未运行Linux测试；[环境记录](implementation/compatibility-linux-2026-09-24.json)仍属当时探测 |
+| 生命周期 | 安装/升级/回滚/卸载及目录发现的[既有宿主证据](implementation/host-verification-0.9.1.md)属于0.9.1；本轮只做独立临时项目实际读取，日常插件未升级 |
+| 媒体 | 无视频生成或审片结果；[18条D/B草案](../evals/media-motion-draft-2026-09-29/README.md)仍待入口核验与执行条件 |
 
-两项Windows符号链接创建测试因权限不足跳过，没有计为通过。未测试Linux、其他Python版本、已安装宿主加载或平台生成。结构测试不判断武术史、游戏设定与动作生理可行性。
-
-首轮完整流程在重复构建替换ZIP时遇到`WinError 5`拒绝访问，记录保留于[首次执行证据](implementation/validation-0.8.1-attempt1.json)；原因未确定。同一构建命令随后成功，重跑完整流程得到上述33项通过结果。未通过放宽检查或原地覆盖ZIP绕过该错误。
-
-## 内容核对
-
-固定源文、17张轮廓卡和六份缺失专项的边界见[吸收记录](research/2026-09-23-arvin-combat-integration.md)。覆盖清单按源文实际表和范围生成，不把上游标题中的“29条”“全套”等计数当作事实。
-
-主任务人工对读两套新例的角色动作区别、手脚占用、对手主动回应、让空回收与结尾：[18秒白鸽/红茶演武](../skills/combat-director/examples/arvin-baige-hongcha-18.md)、[24秒剑神/火焰绯雪交锋](../skills/combat-director/examples/arvin-sword-fire-24.md)。它们没有配套JSON，不声称经过动作语义程序验证；没有独立Agent评审、真实视频、音轨或模型成绩。
-
-上述内容对读属于0.8.0记录，本轮未新增创作比较。WP04逐招详情、WP05紧凑读取、WP06独立创作行为评估仍待后续；卡片级关联不能证明共享卡中每行均适用，场面标签仅为候选改编范围。
+本轮运行恢复依赖可用的读取方式，Python不可用情形未实测。Shell底层编码损坏仍存在；不能宣称Windows通用兼容已修好。宿主使用已有CLI0.154.0-alpha.6.2、继承模型配置、只读unelevated沙箱及单次插件隔离，范围限定在报告中的条件。
 
 ## 构建产物
 
-[combat-director-0.8.1.zip](../dist/combat-director-0.8.1.zip)
+[combat-director-0.9.2.zip](../dist/combat-director-0.9.2.zip)
 
-SHA-256：`8dd3698ce3948482fa4bc42ce8adcbd67f14ef2e8e645a88592170bf96d4eee3`
+SHA-256：`aefa93903bdf83806d25459b0249e43f486fe5ca2feab63125bc9490978d03aa`
 
-从仓库根目录运行：
+从项目根目录复现：
 
 ```powershell
-python scripts/build_arvin_library.py --check
-python scripts/project.py validate-release
-python scripts/validate_release.py
+.\.venv\Scripts\python.exe scripts/build_arvin_library.py --check
+.\.venv\Scripts\python.exe scripts/validate_release.py
 ```
 
-运行包包含109张带来源摘录和改编说明的卡、七张原创机制及随包MIT通知；不包含原始附件、上游完整快照、开发测试或仓库报告。LibTV单文件仍独立维护，本轮未自动升级已安装插件。本批源码、来源权威、生成卡和验证记录纳入0.8.1提交范围；ZIP保留在本地dist，不进入Git。
+当前结果位于工作区，未提交推送或升级日常插件。多配置重复比较、条件化媒体里程碑与环境限制仍分别列在[完成核对](implementation/completion-audit-2026-09-24.md)，不以本轮三题复测宣称完整当前版行为集或媒体效果通过。

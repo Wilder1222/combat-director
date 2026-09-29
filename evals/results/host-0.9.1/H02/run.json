@@ -1,0 +1,61 @@
+{
+  "case": {
+    "id": "H02",
+    "mode": "implicit",
+    "request": "帮我编排8秒成年双人木杖交手：甲快速斜劈，乙撤步斜架拨开，然后两人各退开。固定侧面全身、正常速度、一镜到底、无能量。我想保留木杖快移时的短促拖糊，又能看懂握持和接触。只给不超过160字的中文视频提示词，不生成视频、不联网。"
+  },
+  "run_id": "H02",
+  "date": "2026-09-29",
+  "status": "terminal",
+  "command": [
+    "C:\\Users\\ww\\AppData\\Local\\OpenAI\\Codex\\bin\\12219cbfbcbddde7\\codex.exe",
+    "-c",
+    "windows.sandbox=\"unelevated\"",
+    "-c",
+    "approval_policy=\"never\"",
+    "exec",
+    "--ephemeral",
+    "--sandbox",
+    "read-only",
+    "--skip-git-repo-check",
+    "--json",
+    "--color",
+    "never",
+    "--cd",
+    "D:\\Temp\\combat-routing-h02-goa98ech\\project",
+    "--output-last-message",
+    "D:\\study\\projects\\combat-director\\evals\\results\\host-0.9.1\\H02\\answer.md",
+    "-"
+  ],
+  "cwd": "D:\\Temp\\combat-routing-h02-goa98ech\\project",
+  "archive_sha256": "150ad6f4ba5e9c7ce82f3cd5248facc442f0a0e58cd5767ac878e77a66f50354",
+  "candidate_skill": "D:\\Temp\\combat-routing-h02-goa98ech\\project\\.agents\\skills\\combat-director\\SKILL.md",
+  "candidate_skill_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+  "request_sha256": "6e32b024003045e141d120ec09ab1604c84775978723d18c15d84984572b7a7c",
+  "cli_version": "codex-cli 0.154.0-alpha.6.2",
+  "model": "inherited host configuration; no override",
+  "catalog": "Normal host configuration and other skills remain available; path collisions must be reported.",
+  "limits": "Read-only ephemeral model task; no media generation. Discovery and answer text alone do not establish which skill was read.",
+  "pid": 26732,
+  "exit_code": 0,
+  "elapsed_seconds": 57.522,
+  "candidate_skill_sha256_after": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+  "artifacts": [
+    {
+      "path": "answer.md",
+      "sha256": "91757dc5d6797b94a99f9e6baa5e4575ddf355574c31e9ade0a6ee623b7eea12"
+    },
+    {
+      "path": "events.jsonl",
+      "sha256": "5f953d5a8dc7e5d7426468f5a32fb77de505000a29878f1482895128d674ce9b"
+    },
+    {
+      "path": "request.txt",
+      "sha256": "6e32b024003045e141d120ec09ab1604c84775978723d18c15d84984572b7a7c"
+    },
+    {
+      "path": "stderr.txt",
+      "sha256": "9d1ea3d39b24fb39fca9016733cf43adbff4c8ec5d922561a11b5e1bcdc8f687"
+    }
+  ]
+}

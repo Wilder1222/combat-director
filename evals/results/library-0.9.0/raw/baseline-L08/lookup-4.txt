@@ -1,0 +1,1058 @@
+{
+  "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\catalog.json",
+  "sha256": "9b8f576f7b122e639c599202d8d186f66fd15d749ba90f1703e6c6f8ea95c365",
+  "read_kind": "fragment",
+  "selection": "Complete index entries only for kind=scenes or kind=styles; full JSON parsed internally",
+  "entries": [
+    {
+      "id": "arvin-style-1",
+      "kind": "styles",
+      "title": "真人武侠风格",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "真人武侠风格"
+      ],
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "styles/arvin-style-1.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2972,
+            2973
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-style-2",
+      "kind": "styles",
+      "title": "真人格斗风格",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "真人格斗风格"
+      ],
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "styles/arvin-style-2.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2975,
+            2976
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-style-3",
+      "kind": "styles",
+      "title": "3D国漫风格",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "3D国漫风格"
+      ],
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "styles/arvin-style-3.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2978,
+            2979
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-style-4",
+      "kind": "styles",
+      "title": "二次元风格",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "二次元风格"
+      ],
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "styles/arvin-style-4.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2981,
+            2982
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-style-5",
+      "kind": "styles",
+      "title": "赛博朋克风格",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "赛博朋克风格"
+      ],
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "styles/arvin-style-5.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            2984,
+            2985
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-1",
+      "kind": "scenes",
+      "title": "国风水墨，深山竹林，薄雾青石",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "国风水墨，深山竹林，薄雾青石"
+      ],
+      "summary": "竹间留出一条直线与一处转身空地；湿青石使急停变慢，竹影用于辨方向。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-1.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3019,
+            3019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-2",
+      "kind": "scenes",
+      "title": "写实纪实，城市雨夜小巷，积水反光",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "写实纪实，城市雨夜小巷，积水反光"
+      ],
+      "summary": "先显示巷口、墙面和水坑；狭巷限制长横扫，踏水波纹延续脚步位置。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-2.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3020,
+            3020
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-3",
+      "kind": "scenes",
+      "title": "仙侠光效，浮空云海仙台，流霞碎光",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "仙侠光效，浮空云海仙台，流霞碎光"
+      ],
+      "summary": "交代仙台边沿和两个稳定落点；云海不当实地，踏空需要明确能力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-3.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3021,
+            3021
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-4",
+      "kind": "scenes",
+      "title": "赛博朋克，霓虹废土巷道，全息投影",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "赛博朋克，霓虹废土巷道，全息投影"
+      ],
+      "summary": "把广告投影和实墙区分开；窄巷只留短兵路径，积水承接霓虹颜色。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-4.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3022,
+            3022
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-5",
+      "kind": "scenes",
+      "title": "欧式写实，中世纪黄沙沙场，断旗乱石",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "欧式写实，中世纪黄沙沙场，断旗乱石"
+      ],
+      "summary": "沙地提供滑移与脚印，断旗位置固定；双方出沙尘后延续原移动方向。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-5.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3023,
+            3023
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-6",
+      "kind": "scenes",
+      "title": "浮世绘，暗夜枯木山林，残月浓雾",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "浮世绘，暗夜枯木山林，残月浓雾"
+      ],
+      "summary": "枯木之间预留回收空间；月光勾轮廓，雾仅遮线不代替人物位移。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-6.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3024,
+            3024
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-7",
+      "kind": "scenes",
+      "title": "科幻硬表面，真空宇宙陨石带，星云背景",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "科幻硬表面，真空宇宙陨石带，星云背景"
+      ],
+      "summary": "先声明真空下的推进、惯性和立足方式；没有地面不能套地面蹬步，声音作为配乐选择。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-7.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3025,
+            3025
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-8",
+      "kind": "scenes",
+      "title": "末日破败，腐烂城市废墟，断墙杂草",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "末日破败，腐烂城市废墟，断墙杂草"
+      ],
+      "summary": "断墙先建立可穿过缺口；碎石影响落脚，坍落须由接触引发。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-8.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3026,
+            3026
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-9",
+      "kind": "scenes",
+      "title": "古罗马油画，石质角斗场，沙尘看台",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "古罗马油画，石质角斗场，沙尘看台"
+      ],
+      "summary": "展示边界和中央空地；沙尘给步法留痕，看台只提供尺度与光影。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-9.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3027,
+            3027
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-10",
+      "kind": "scenes",
+      "title": "新中式写实，木质擂台武馆，竹帘日光",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "新中式写实，木质擂台武馆，竹帘日光"
+      ],
+      "summary": "木地板可见接触振动，柱与擂台边界限制退路；竹帘光带帮助保持轴线。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-10.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3028,
+            3028
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-11",
+      "kind": "scenes",
+      "title": "奇幻魔法，冰封熔岩峡谷，冰火交织",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "奇幻魔法，冰封熔岩峡谷，冰火交织"
+      ],
+      "summary": "把可踩的岩地与危险裂隙分开；冰和熔岩是环境条件，不默认受角色支配。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-11.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3029,
+            3029
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-12",
+      "kind": "scenes",
+      "title": "深海通透水彩，海底珊瑚遗迹，透光海水",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "深海通透水彩，海底珊瑚遗迹，透光海水"
+      ],
+      "summary": "先声明水下浮力、阻力和呼吸设定；出拳回收变慢，不能直接套陆地腾空落脚。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-12.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3030,
+            3030
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-13",
+      "kind": "scenes",
+      "title": "废土荒漠质感，干裂戈壁荒地，废弃车辆",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "废土荒漠质感，干裂戈壁荒地，废弃车辆"
+      ],
+      "summary": "车辆是已展示的掩体；干裂地面与沙尘影响抓地，绕车运动继承车辆朝向。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-13.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3031,
+            3031
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-14",
+      "kind": "scenes",
+      "title": "国漫厚涂，玉石宗门山门，飞剑流光",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "国漫厚涂，玉石宗门山门，飞剑流光"
+      ],
+      "summary": "山门台阶分层建立，玉石反光保留轮廓；背景飞剑不得自动加入角色攻击。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-14.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3032,
+            3032
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-15",
+      "kind": "scenes",
+      "title": "暗黑哥特，荒野古堡废墟，满月枯树林",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "暗黑哥特，荒野古堡废墟，满月枯树林"
+      ],
+      "summary": "古堡缺口与树根决定走线；逆月光留下人物剪影，移动不能穿过倒墙。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-15.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3033,
+            3033
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-16",
+      "kind": "scenes",
+      "title": "日系清新，教学楼天台，黄昏流云",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "日系清新，教学楼天台，黄昏流云"
+      ],
+      "summary": "先显示护栏、门口和可退空间；天台边缘持续存在，风影响衣料而不改变身体重力。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-16.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3034,
+            3034
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-17",
+      "kind": "scenes",
+      "title": "复古油画，颠簸远洋木船甲板，巨浪海风",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "复古油画，颠簸远洋木船甲板，巨浪海风"
+      ],
+      "summary": "甲板俯仰同时作用双方；人物借栏杆稳定必须有空手，滑步随船倾方向。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-17.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3035,
+            3035
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-18",
+      "kind": "scenes",
+      "title": "暗调国风，幽冥地府奈何桥，黑雾鬼火",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "暗调国风，幽冥地府奈何桥，黑雾鬼火"
+      ],
+      "summary": "先声明桥面与雾中边界；鬼火作光源或已授权能力，不能随剧情临时救场。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-18.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3036,
+            3036
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-19",
+      "kind": "scenes",
+      "title": "高清写实拳击馆，封闭擂台，顶光聚光灯",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "高清写实拳击馆，封闭擂台，顶光聚光灯"
+      ],
+      "summary": "绳圈与角柱持续限制退路；顶光区分护架和受力，擂台弹性反馈随落步。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-19.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3037,
+            3037
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arvin-scene-20",
+      "kind": "scenes",
+      "title": "古埃及壁画风，砂岩神殿立柱，漫天风沙",
+      "scope": [
+        "duel",
+        "group",
+        "escape",
+        "chase",
+        "ranged",
+        "sparring"
+      ],
+      "tags": [
+        "古埃及壁画风，砂岩神殿立柱，漫天风沙"
+      ],
+      "summary": "石柱决定视线和短暂遮挡；风沙方向持续一致，柱后重现不得更换手中武器。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "scenes/arvin-scene-20.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [],
+      "characters": [],
+      "names": [],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            3038,
+            3038
+          ]
+        ]
+      }
+    }
+  ]
+}

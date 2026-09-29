@@ -1,0 +1,9 @@
+{"Path":"D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_items.py","Hash":"0848A9622F8019FFF4EB549B8DF37407CA4F3329FDB31D2AFE5ED29251BC6A69"}
+2:from __future__ import annotations
+4:import hashlib
+5:import json
+6:import re
+7:import unicodedata
+8:from pathlib import Path
+41:    data = json.loads(path.read_text(encoding='utf-8'))
+

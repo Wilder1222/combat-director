@@ -1,0 +1,569 @@
+{
+  "format": "combat-host-routing-summary/1",
+  "date": "2026-09-29",
+  "runs": [
+    {
+      "run_id": "H01",
+      "case_id": "H01",
+      "exit_code": 1,
+      "cli_version": "codex-cli 0.147.0",
+      "catalog": "Normal host configuration and other skills remain available; path collisions must be reported.",
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "commands": [],
+      "decoded_source_matches": [],
+      "answer": null,
+      "answer_characters": null,
+      "messages": [],
+      "usage": null,
+      "elapsed_seconds": 32.676,
+      "evidence_files": [
+        {
+          "path": "H01/events.jsonl",
+          "sha256": "09aeba54533afb82c6df4a9bb9a18353ecdcf2ac63df65dda034b131a48b3448"
+        },
+        {
+          "path": "H01/request.txt",
+          "sha256": "eaa97c80e36429302309c39cb4984ebe327065c897528643c8d6411fee97ee8a"
+        },
+        {
+          "path": "H01/run.json",
+          "sha256": "6525db4419584e6a562c73f68a3bde09053c38d44950fb0b28f5bc21ca18eb9f"
+        },
+        {
+          "path": "H01/stderr.txt",
+          "sha256": "f4425693f2cafcf756aebf450a9f260a8173db7e24510495ba734a9595bc6f8e"
+        }
+      ]
+    },
+    {
+      "run_id": "H01-attempt2",
+      "case_id": "H01",
+      "exit_code": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "catalog": "Normal host configuration and other skills remain available; path collisions must be reported.",
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "commands": [],
+      "decoded_source_matches": [],
+      "answer": "8秒，成年甲乙双手持木杖对练。固定侧面全身，两人始终入画，正常速度，一镜到底。0—2秒相向持杖；2—5秒甲由右上向左下斜劈，乙侧移避开劈线，举杖斜拨，两杖明确接触后甲杖偏离；5—8秒双方顺势回收，各退一步站稳。保留杖梢自然运动模糊，接触点与受力方向清楚；无超自然能力、残影或慢放。",
+      "answer_characters": 140,
+      "messages": [
+        "我会使用 combat-director，保留攻防因果与自然运动模糊，压缩到160字以内。\n",
+        "8秒，成年甲乙双手持木杖对练。固定侧面全身，两人始终入画，正常速度，一镜到底。0—2秒相向持杖；2—5秒甲由右上向左下斜劈，乙侧移避开劈线，举杖斜拨，两杖明确接触后甲杖偏离；5—8秒双方顺势回收，各退一步站稳。保留杖梢自然运动模糊，接触点与受力方向清楚；无超自然能力、残影或慢放。"
+      ],
+      "usage": {
+        "input_tokens": 52408,
+        "cached_input_tokens": 38528,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 357,
+        "reasoning_output_tokens": 94
+      },
+      "elapsed_seconds": 41.354,
+      "evidence_files": [
+        {
+          "path": "H01-attempt2/answer.md",
+          "sha256": "46e9d6fc4fb90799302ec9ef688be6fad1fb5664aff6b7f802e4566a8304140f"
+        },
+        {
+          "path": "H01-attempt2/events.jsonl",
+          "sha256": "a68d27948a02f59ec35cdd26a34c0c523359d52f6f624a66440e3b606a5e3f57"
+        },
+        {
+          "path": "H01-attempt2/request.txt",
+          "sha256": "eaa97c80e36429302309c39cb4984ebe327065c897528643c8d6411fee97ee8a"
+        },
+        {
+          "path": "H01-attempt2/run.json",
+          "sha256": "9eb4f127fcf4edcb53a5efa352b1b62261ae901e39be764f5c4026b0f05e53f3"
+        },
+        {
+          "path": "H01-attempt2/stderr.txt",
+          "sha256": "f203eca3150d41bcc2cad0a60c846f8f5925f76b69580163337c054cc2e4f6c3"
+        }
+      ]
+    },
+    {
+      "run_id": "H01-attempt3",
+      "case_id": "H01",
+      "exit_code": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "catalog": "Plugin discovery disabled for this invocation only; ordinary host and project skills remain available.",
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "commands": [
+        {
+          "item_id": "item_2",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath '.agents/skills/combat-director/references/motion-blur.md'; Get-Content -LiteralPath '.agents/skills/combat-director/references/choreography.md'; Get-Content -LiteralPath '.agents/skills/combat-director/references/templates.md'\"",
+          "exit_code": 1,
+          "replacement_characters": 10
+        },
+        {
+          "item_id": "item_3",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'D:\\\\Temp\\\\combat-routing-h01-ra6gdr2i\\\\project\\\\.agents\\\\skills\\\\combat-director\\\\SKILL.md'; rg --files 'D:\\\\Temp\\\\combat-routing-h01-ra6gdr2i\\\\project\\\\.agents\\\\skills\\\\combat-director'\"",
+          "exit_code": 1,
+          "replacement_characters": 4
+        }
+      ],
+      "decoded_source_matches": [],
+      "answer": "8秒，两名成年人双手持木杖对练。固定侧面全身，正常速度，一镜到底。0—2秒相向站稳；2—5秒甲向乙肩侧斜劈，乙侧移让开劈线，举杖斜接拨开，杖身接触后顺势分离；5—8秒双方收杖，各退一步站稳。保留挥杖的自然运动模糊，接触点无遮挡、轨迹可辨；木杖碰响清脆，无慢放、残影或超自然能力。",
+      "answer_characters": 139,
+      "messages": [
+        "我会按 combat-director 技能编排，保留清楚的接触与自然运动模糊。\n",
+        "8秒，两名成年人双手持木杖对练。固定侧面全身，正常速度，一镜到底。0—2秒相向站稳；2—5秒甲向乙肩侧斜劈，乙侧移让开劈线，举杖斜接拨开，杖身接触后顺势分离；5—8秒双方收杖，各退一步站稳。保留挥杖的自然运动模糊，接触点无遮挡、轨迹可辨；木杖碰响清脆，无慢放、残影或超自然能力。"
+      ],
+      "usage": {
+        "input_tokens": 75337,
+        "cached_input_tokens": 49536,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 402,
+        "reasoning_output_tokens": 44
+      },
+      "elapsed_seconds": 37.256,
+      "evidence_files": [
+        {
+          "path": "H01-attempt3/answer.md",
+          "sha256": "f088a3b7fbc1a301daf4f89709ee1491a3f36494301dd865e9d243390a15731f"
+        },
+        {
+          "path": "H01-attempt3/events.jsonl",
+          "sha256": "d0e6d7b62a1757453934612c71f6eae11525cf4455930c8401f8f49abc0adfd6"
+        },
+        {
+          "path": "H01-attempt3/request.txt",
+          "sha256": "eaa97c80e36429302309c39cb4984ebe327065c897528643c8d6411fee97ee8a"
+        },
+        {
+          "path": "H01-attempt3/run.json",
+          "sha256": "ab935bc34e96b776ad1bde00725352bbc880fdae0be9182e377989a37b52eeb4"
+        },
+        {
+          "path": "H01-attempt3/stderr.txt",
+          "sha256": "264a442c5676194c099cd1e5ec5ca9bfe103af86269f41385f8ce47fb10b38ee"
+        }
+      ]
+    },
+    {
+      "run_id": "H01-attempt4",
+      "case_id": "H01",
+      "exit_code": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "catalog": "Plugin discovery disabled for this invocation only; ordinary host and project skills remain available.",
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "commands": [
+        {
+          "item_id": "item_2",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath '.agents/skills/combat-director/references/motion-blur.md'\"",
+          "exit_code": 0,
+          "replacement_characters": 2638
+        },
+        {
+          "item_id": "item_3",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath '.agents/skills/combat-director/references/motion-blur.md' -Encoding UTF8\"",
+          "exit_code": 0,
+          "replacement_characters": 2638
+        },
+        {
+          "item_id": "item_4",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"[Console]::OutputEncoding = [System.Text.Encoding]::UTF8; Get-Content -LiteralPath '.agents/skills/combat-director/references/motion-blur.md' -Encoding UTF8\"",
+          "exit_code": 0,
+          "replacement_characters": 2640
+        },
+        {
+          "item_id": "item_5",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"python -c \\\"import pathlib,json; print(json.dumps(pathlib.Path('.agents/skills/combat-director/references/motion-blur.md').read_text(encoding='utf-8')))\\\"\"",
+          "exit_code": 0,
+          "replacement_characters": 0
+        }
+      ],
+      "decoded_source_matches": [
+        {
+          "item_id": "item_5",
+          "file": "references/motion-blur.md",
+          "normalized_text_exact_match": true
+        }
+      ],
+      "answer": "8秒，两名成年人双手持木杖对练。固定侧面全身，正常速度，一镜到底。甲向乙斜劈，乙侧移让开劈线，抬杖接触并向外拨开；甲顺势卸力，两人收杖退开站稳。杖端快移保留自然短弧形运动模糊，接触、偏转与回收连贯可辨，背景稳定，收势后无残留拖影，无超自然能力。",
+      "answer_characters": 122,
+      "messages": [
+        "我会按 combat-director 技能压缩动作与成像约束。\n",
+        "8秒，两名成年人双手持木杖对练。固定侧面全身，正常速度，一镜到底。甲向乙斜劈，乙侧移让开劈线，抬杖接触并向外拨开；甲顺势卸力，两人收杖退开站稳。杖端快移保留自然短弧形运动模糊，接触、偏转与回收连贯可辨，背景稳定，收势后无残留拖影，无超自然能力。"
+      ],
+      "usage": {
+        "input_tokens": 152142,
+        "cached_input_tokens": 115584,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 454,
+        "reasoning_output_tokens": 54
+      },
+      "elapsed_seconds": 56.056,
+      "evidence_files": [
+        {
+          "path": "H01-attempt4/answer.md",
+          "sha256": "fa3d0dc250028666c4adc6b2830720236d594756f561305ee2c6a21cbe98850f"
+        },
+        {
+          "path": "H01-attempt4/events.jsonl",
+          "sha256": "f927e5e0b3b2f12fbfbe262a2b7506f9ddc94d6527af445eb1cc3e493f58335d"
+        },
+        {
+          "path": "H01-attempt4/request.txt",
+          "sha256": "eaa97c80e36429302309c39cb4984ebe327065c897528643c8d6411fee97ee8a"
+        },
+        {
+          "path": "H01-attempt4/run.json",
+          "sha256": "d43962ae7b478c9a318222f2ccad575a42a84b7c4b2d34d3f0d005968d1ff878"
+        },
+        {
+          "path": "H01-attempt4/stderr.txt",
+          "sha256": "5968c65c55a37b1443e21a89ac782a9bf21430cefd20ffc7c92a357114bf9b8e"
+        }
+      ]
+    },
+    {
+      "run_id": "H02",
+      "case_id": "H02",
+      "exit_code": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "catalog": "Normal host configuration and other skills remain available; path collisions must be reported.",
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "commands": [
+        {
+          "item_id": "item_2",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'D:/Temp/combat-routing-h02-goa98ech/project/.agents/skills/combat-director/SKILL.md'\"",
+          "exit_code": 1,
+          "replacement_characters": 4
+        },
+        {
+          "item_id": "item_3",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'C:/Users/ww/.codex/plugins/cache/personal/combat-director/0.8.1+codex.20260923132359/skills/combat-director/SKILL.md'\"",
+          "exit_code": 0,
+          "replacement_characters": 4258
+        },
+        {
+          "item_id": "item_4",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -Encoding utf8 -LiteralPath 'C:/Users/ww/.codex/plugins/cache/personal/combat-director/0.8.1+codex.20260923132359/skills/combat-director/SKILL.md','C:/Users/ww/.codex/plugins/cache/personal/combat-director/0.8.1+codex.20260923132359/skills/combat-director/references/choreography.md','C:/Users/ww/.codex/plugins/cache/personal/combat-director/0.8.1+codex.20260923132359/skills/combat-director/references/templates.md'\"",
+          "exit_code": 0,
+          "replacement_characters": 7620
+        }
+      ],
+      "decoded_source_matches": [],
+      "answer": "8秒，成年甲乙各持木杖，固定侧面全身，一镜到底，正常速度，无能量特效。双手分握杖身，甲短促蓄势后快速由右上向左下斜劈；乙同步撤步斜架，两杖实碰后顺势向外拨开，甲杖受力偏转。两人收杖各退两步站稳。快移杖梢保留短促拖糊，握持处与接触点可辨，手不脱杖，杖不穿透。",
+      "answer_characters": 128,
+      "messages": [
+        "我会按 combat-director 技能编排动作与接触细节。\n",
+        "8秒，成年甲乙各持木杖，固定侧面全身，一镜到底，正常速度，无能量特效。双手分握杖身，甲短促蓄势后快速由右上向左下斜劈；乙同步撤步斜架，两杖实碰后顺势向外拨开，甲杖受力偏转。两人收杖各退两步站稳。快移杖梢保留短促拖糊，握持处与接触点可辨，手不脱杖，杖不穿透。"
+      ],
+      "usage": {
+        "input_tokens": 111209,
+        "cached_input_tokens": 87168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 533,
+        "reasoning_output_tokens": 70
+      },
+      "elapsed_seconds": 57.522,
+      "evidence_files": [
+        {
+          "path": "H02/answer.md",
+          "sha256": "91757dc5d6797b94a99f9e6baa5e4575ddf355574c31e9ade0a6ee623b7eea12"
+        },
+        {
+          "path": "H02/events.jsonl",
+          "sha256": "5f953d5a8dc7e5d7426468f5a32fb77de505000a29878f1482895128d674ce9b"
+        },
+        {
+          "path": "H02/request.txt",
+          "sha256": "6e32b024003045e141d120ec09ab1604c84775978723d18c15d84984572b7a7c"
+        },
+        {
+          "path": "H02/run.json",
+          "sha256": "d2ed00f5d32782ce1abc16f68d024bd663968e1fb63de658c97d3a91282c45ca"
+        },
+        {
+          "path": "H02/stderr.txt",
+          "sha256": "9d1ea3d39b24fb39fca9016733cf43adbff4c8ec5d922561a11b5e1bcdc8f687"
+        }
+      ]
+    },
+    {
+      "run_id": "H02-attempt2",
+      "case_id": "H02",
+      "exit_code": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "catalog": "Other host skills remain available. Existing combat plugin is disabled for this invocation only.",
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "commands": [
+        {
+          "item_id": "item_2",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command 'Get-Content -Raw .agents/skills/combat-director/SKILL.md'",
+          "exit_code": 1,
+          "replacement_characters": 0
+        },
+        {
+          "item_id": "item_3",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -Raw 'D:/Temp/combat-routing-h02-rv2ewfv5/project/.agents/skills/combat-director/SKILL.md'\"",
+          "exit_code": 1,
+          "replacement_characters": 4
+        },
+        {
+          "item_id": "item_4",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -Raw 'C:/Users/ww/.codex/plugins/cache/personal/combat-director/0.8.1+codex.20260923132359/skills/combat-director/SKILL.md'\"",
+          "exit_code": 0,
+          "replacement_characters": 4258
+        },
+        {
+          "item_id": "item_5",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -Encoding utf8 -Raw 'C:/Users/ww/.codex/plugins/cache/personal/combat-director/0.8.1+codex.20260923132359/skills/combat-director/SKILL.md'; Get-Content -Encoding utf8 -Raw 'C:/Users/ww/.codex/plugins/cache/personal/combat-director/0.8.1+codex.20260923132359/skills/combat-director/references/choreography.md'; Get-Content -Encoding utf8 -Raw 'C:/Users/ww/.codex/plugins/cache/personal/combat-director/0.8.1+codex.20260923132359/skills/combat-director/references/templates.md'\"",
+          "exit_code": 0,
+          "replacement_characters": 7620
+        }
+      ],
+      "decoded_source_matches": [],
+      "answer": "8秒，成年双人木杖交手，固定侧面全身，正常速度，一镜到底，无能量特效。0—2秒甲左乙右，双手分握木杖对峙；2—4秒甲快速斜劈，乙撤步斜架，两杖实接后顺势向外拨开；4—8秒双方收杖各退一步站稳。快移杖梢保留短促方向性拖糊，握持关系与接触点可辨，碰撞瞬间自然减速，不慢放、不穿透、不增生杖影。",
+      "answer_characters": 144,
+      "messages": [
+        "我会按 combat-director 技能处理动作衔接、接触和拖糊。\n",
+        "8秒，成年双人木杖交手，固定侧面全身，正常速度，一镜到底，无能量特效。0—2秒甲左乙右，双手分握木杖对峙；2—4秒甲快速斜劈，乙撤步斜架，两杖实接后顺势向外拨开；4—8秒双方收杖各退一步站稳。快移杖梢保留短促方向性拖糊，握持关系与接触点可辨，碰撞瞬间自然减速，不慢放、不穿透、不增生杖影。"
+      ],
+      "usage": {
+        "input_tokens": 130569,
+        "cached_input_tokens": 91648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 568,
+        "reasoning_output_tokens": 35
+      },
+      "elapsed_seconds": 60.503,
+      "evidence_files": [
+        {
+          "path": "H02-attempt2/answer.md",
+          "sha256": "62597eb42e7fc5fdfc59a17a1ff91ea959bec1e500bda954f68f57a1a337fd02"
+        },
+        {
+          "path": "H02-attempt2/events.jsonl",
+          "sha256": "956acfcc377e535c977eafd2c5bb45ce89bd5b0426f758799439a8c0ebdb9ff7"
+        },
+        {
+          "path": "H02-attempt2/request.txt",
+          "sha256": "6e32b024003045e141d120ec09ab1604c84775978723d18c15d84984572b7a7c"
+        },
+        {
+          "path": "H02-attempt2/run.json",
+          "sha256": "c948bd9d641cda057f210489823946cd6c008fef386b16f45ebe6dff09718758"
+        },
+        {
+          "path": "H02-attempt2/stderr.txt",
+          "sha256": "0d06dfbd31aa5fb177bb55974b4bdf612382cd69341807f6e9a31df610ae4a27"
+        }
+      ]
+    },
+    {
+      "run_id": "H02-attempt3",
+      "case_id": "H02",
+      "exit_code": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "catalog": "Plugin discovery disabled for this invocation only; ordinary host and project skills remain available.",
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "commands": [
+        {
+          "item_id": "item_2",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command 'Get-Content -Raw .agents/skills/combat-director/SKILL.md'",
+          "exit_code": 1,
+          "replacement_characters": 0
+        },
+        {
+          "item_id": "item_3",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -Raw 'D:/Temp/combat-routing-h02-0eq5zwsz/project/.agents/skills/combat-director/SKILL.md'\"",
+          "exit_code": 1,
+          "replacement_characters": 4
+        }
+      ],
+      "decoded_source_matches": [],
+      "answer": "8秒，成年甲乙双手握木杖，固定侧面全身，一镜到底，正常速度。0—2秒甲进步快速斜劈；2—4秒乙撤步斜架，两杖实触后顺势拨开，甲杖偏离乙身；4—8秒双方各退两步收杖。快移仅杖梢短促拖糊，手掌、握点与接触位置可辨，杖不穿透、不脱手。无慢动作、无能量特效。",
+      "answer_characters": 125,
+      "messages": [
+        "我会按 combat-director 技能编排，兼顾木杖快移的短促拖糊与握持、接触的清晰度。\n",
+        "8秒，成年甲乙双手握木杖，固定侧面全身，一镜到底，正常速度。0—2秒甲进步快速斜劈；2—4秒乙撤步斜架，两杖实触后顺势拨开，甲杖偏离乙身；4—8秒双方各退两步收杖。快移仅杖梢短促拖糊，手掌、握点与接触位置可辨，杖不穿透、不脱手。无慢动作、无能量特效。"
+      ],
+      "usage": {
+        "input_tokens": 63847,
+        "cached_input_tokens": 41984,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 313,
+        "reasoning_output_tokens": 39
+      },
+      "elapsed_seconds": 37.71,
+      "evidence_files": [
+        {
+          "path": "H02-attempt3/answer.md",
+          "sha256": "a1cd9a9eed5f4d1eed6f73710d7f75b37ea0d76deb9c0b197b309f60ab0f5b9c"
+        },
+        {
+          "path": "H02-attempt3/events.jsonl",
+          "sha256": "b5c94024b3b51da555a45aa79c5394992de1e98d0396ce86dbdd70799fb8362e"
+        },
+        {
+          "path": "H02-attempt3/request.txt",
+          "sha256": "6e32b024003045e141d120ec09ab1604c84775978723d18c15d84984572b7a7c"
+        },
+        {
+          "path": "H02-attempt3/run.json",
+          "sha256": "d0ac731c3b4d15239f8c97c759172a4003b6a5fe0417f640b8dfaea146b966e0"
+        },
+        {
+          "path": "H02-attempt3/stderr.txt",
+          "sha256": "27673c7dd8a847a15fbb1484bf0310645dee00396b4e117e4a2e50693bec0d5d"
+        }
+      ]
+    },
+    {
+      "run_id": "H02-attempt4",
+      "case_id": "H02",
+      "exit_code": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "catalog": "Plugin discovery disabled for this invocation only; ordinary host and project skills remain available.",
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "commands": [
+        {
+          "item_id": "item_2",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'D:/Temp/combat-routing-h02-ae9a4a760d73/project/.agents/skills/combat-director/SKILL.md'\"",
+          "exit_code": 0,
+          "replacement_characters": 4599
+        },
+        {
+          "item_id": "item_3",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command '$OutputEncoding = [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new(); Get-Content -Encoding UTF8 -LiteralPath '\"'.agents/skills/combat-director/SKILL.md','.agents/skills/combat-director/references/motion-blur.md','.agents/skills/combat-director/references/choreography.md','.agents/skills/combat-director/references/templates.md'\"",
+          "exit_code": 0,
+          "replacement_characters": 10854
+        },
+        {
+          "item_id": "item_4",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"python -c \\\"import pathlib,json; print(json.dumps({p:pathlib.Path('.agents/skills/combat-director/'+p).read_text(encoding='utf-8') for p in ['SKILL.md','references/motion-blur.md','references/choreography.md','references/templates.md']},ensure_ascii=True))\\\"\"",
+          "exit_code": 0,
+          "replacement_characters": 0
+        },
+        {
+          "item_id": "item_5",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"python -c \\\"import pathlib,json; print(json.dumps(pathlib.Path('.agents/skills/combat-director/references/motion-blur.md').read_text(encoding='utf-8'),ensure_ascii=True))\\\"\"",
+          "exit_code": 0,
+          "replacement_characters": 0
+        }
+      ],
+      "decoded_source_matches": [
+        {
+          "item_id": "item_4",
+          "file": "SKILL.md",
+          "normalized_text_exact_match": true
+        },
+        {
+          "item_id": "item_4",
+          "file": "references/motion-blur.md",
+          "normalized_text_exact_match": true
+        },
+        {
+          "item_id": "item_5",
+          "file": "references/motion-blur.md",
+          "normalized_text_exact_match": true
+        }
+      ],
+      "answer": "8秒，固定侧面全身，一镜到底，正常速度。两名成年人各双手分握木杖；甲快速斜劈，乙撤步斜架，两杖接触后顺势拨开，甲收杖稳身，双方各退一步。杖端快移沿弧线短促拖糊，握持、接触、滑开与回收连续可辨；收稳后拖糊消失，背景稳定，无能量、光带或残影。",
+      "answer_characters": 119,
+      "messages": [
+        "我会按 combat-director 技能编排，重点保留木杖快移的短促拖糊，并写清握持与接触。\n",
+        "8秒，固定侧面全身，一镜到底，正常速度。两名成年人各双手分握木杖；甲快速斜劈，乙撤步斜架，两杖接触后顺势拨开，甲收杖稳身，双方各退一步。杖端快移沿弧线短促拖糊，握持、接触、滑开与回收连续可辨；收稳后拖糊消失，背景稳定，无能量、光带或残影。"
+      ],
+      "usage": {
+        "input_tokens": 206943,
+        "cached_input_tokens": 143104,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 561,
+        "reasoning_output_tokens": 52
+      },
+      "elapsed_seconds": 52.535,
+      "evidence_files": [
+        {
+          "path": "H02-attempt4/answer.md",
+          "sha256": "ae364dc6ef64702a6cf1cc159c32f1268cdcdac3af290924861983063876d2c0"
+        },
+        {
+          "path": "H02-attempt4/events.jsonl",
+          "sha256": "cf5c002b6cbe59be3f5f5a111b0c9f696b406320f4c983a14586db86920d4351"
+        },
+        {
+          "path": "H02-attempt4/request.txt",
+          "sha256": "6e32b024003045e141d120ec09ab1604c84775978723d18c15d84984572b7a7c"
+        },
+        {
+          "path": "H02-attempt4/run.json",
+          "sha256": "3be8b2851b0680900f7d047674f4246db0c6c5351e6e432c4c7b0998eba2deb2"
+        },
+        {
+          "path": "H02-attempt4/stderr.txt",
+          "sha256": "44ab61ea5e729570f2dbf1e5a86f1b535e79b4e72ef8d10c249dfe0fbe1d69d2"
+        }
+      ]
+    },
+    {
+      "run_id": "H03",
+      "case_id": "H03",
+      "exit_code": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "catalog": "Plugin discovery disabled for this invocation only; ordinary host and project skills remain available.",
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "commands": [],
+      "decoded_source_matches": [],
+      "answer": "竖版海报，成年虚构人物侧身坐在窗边，置于画面右下方，双手轻托摊开的书。柔和日光透过薄纱，照亮侧脸、指尖与书页；眉眼舒展，视线低垂。米白墙面与浅木窗框衬出安静氛围，左上方留出大片空白，窗外仅见朦胧绿意。",
+      "answer_characters": 100,
+      "messages": [
+        "竖版海报，成年虚构人物侧身坐在窗边，置于画面右下方，双手轻托摊开的书。柔和日光透过薄纱，照亮侧脸、指尖与书页；眉眼舒展，视线低垂。米白墙面与浅木窗框衬出安静氛围，左上方留出大片空白，窗外仅见朦胧绿意。"
+      ],
+      "usage": {
+        "input_tokens": 20985,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 145,
+        "reasoning_output_tokens": 35
+      },
+      "elapsed_seconds": 46.656,
+      "evidence_files": [
+        {
+          "path": "H03/answer.md",
+          "sha256": "67a252970dbd50f2b9526744e2ebb51d69ab9b2bcd29f84980447ffd5ca6cd47"
+        },
+        {
+          "path": "H03/events.jsonl",
+          "sha256": "c8948b3133e60600d08c0162fb7d746d740de5b57e3ded091592f3f084763564"
+        },
+        {
+          "path": "H03/request.txt",
+          "sha256": "b4ac0bd6f36d8378b2222059256fa24e53a012788e6dbf1f43a6377b51b383fe"
+        },
+        {
+          "path": "H03/run.json",
+          "sha256": "8e90184dc91ea66982e11ed8fe2be1b0d52ddfbfec110f9519b1176dd627bc2f"
+        },
+        {
+          "path": "H03/stderr.txt",
+          "sha256": "683ee2f85defcb513e0fac3712095ac7761e7e6ce715d668f1e3328e32c5a7da"
+        }
+      ]
+    }
+  ],
+  "selected_final_runs": [
+    "H01-attempt4",
+    "H02-attempt4",
+    "H03"
+  ],
+  "prior_attempts": "Preserved model incompatibility, sandbox access/working-directory failures, same-name plugin fallback, and text-decoding failures. They are not candidate passes.",
+  "conditions": "Final runs use bundled CLI 0.154.0-alpha.6.2, inherited model settings, read-only unelevated Windows sandbox, plugin discovery disabled for this invocation, and an isolated project directory inheriting the existing temporary-root ACL.",
+  "limits": [
+    "No change to ordinary installed plugin version.",
+    "Final output alone is not source-loading evidence.",
+    "No general routing success rate, all-host compatibility, media quality, or performance comparison."
+  ]
+}

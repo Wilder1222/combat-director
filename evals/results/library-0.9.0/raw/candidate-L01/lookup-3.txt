@@ -1,0 +1,72 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "all",
+    "query": "顶心肘",
+    "card_id": null,
+    "school": null,
+    "character": null,
+    "detail": null,
+    "min_detail": null
+  },
+  "total": 3,
+  "limit": 12,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "详情等级只描述源文供给，不证明动作完整、事实正确或能力获准；同名与别名歧义分别保留。",
+  "matches": [
+    {
+      "id": "arvin-choreography-baji-pairs-item-84a0e6e87c66",
+      "card_id": "arvin-choreography-baji-pairs",
+      "name": "顶心肘",
+      "detail": "motion_path",
+      "schools": [
+        "八极拳"
+      ],
+      "characters": [],
+      "kind": "choreography",
+      "matched_names": [
+        "顶心肘"
+      ],
+      "source_lines": [
+        2154
+      ]
+    },
+    {
+      "id": "arvin-tech-baji-item-a8c8c5e4fe46",
+      "card_id": "arvin-tech-baji",
+      "name": "顶心肘",
+      "detail": "name_only",
+      "schools": [
+        "八极拳"
+      ],
+      "characters": [],
+      "kind": "techniques",
+      "matched_names": [
+        "顶心肘"
+      ],
+      "source_lines": [
+        569
+      ]
+    },
+    {
+      "id": "arvin-character-leidian-item-de9d54b49af7",
+      "card_id": "arvin-character-leidian",
+      "name": "顶心肘（雷电版）",
+      "detail": "motion_path",
+      "schools": [
+        "八极拳"
+      ],
+      "characters": [
+        "雷电"
+      ],
+      "kind": "characters",
+      "matched_names": [
+        "顶心肘（雷电版）"
+      ],
+      "source_lines": [
+        990
+      ]
+    }
+  ]
+}

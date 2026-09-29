@@ -1,0 +1,52 @@
+{
+  "task_id": "T09",
+  "task_text": "写12秒侧面跟拍剑客交手，甲右手一把剑有窄蓝光带，仅显示剑路，乙右手一把普通钢剑。甲横切被乙让空，乙进刺被甲拨开，最后双方止势，相机减速停下。我要自然运动模糊和旧光带短暂留存，最后退净；无离体剑气、无伤。输出中文提示词，说明两种拖尾各怎样结束。",
+  "model_exact_id": "未知",
+  "timing": {
+    "first_read_wall_seconds": 0.8,
+    "reference_read_wall_seconds": 0.7,
+    "total_elapsed": "未知"
+  },
+  "files_read": [
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\tasks\\T09\\request.txt",
+      "sha256": "3ABC49F6A29264ACF7D604B7ADB4611EC279ED7F73B7326C9698BA574FB4ADD4"
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\SKILL.md",
+      "sha256": "930780945FE258656F4F65C6832721A1DFDFA10B0BE386D3EAC384DD2453AFB6"
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\motion-blur.md",
+      "sha256": "76C00789F1BA2D0E8D83720EA042CF23711CD1445A933F5854634CA3E7508122"
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\particle-vfx.md",
+      "sha256": "07C81F84E2BDEA4BCCA12B591C5F0B26D714F8AA15534D431DAB5C7052651669"
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\choreography.md",
+      "sha256": "D5F123389239D20061426A5C2D656581E71C7B9CFB79879E55F069DBBE5EA56C"
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\templates.md",
+      "sha256": "294C7CE6509B397604827323EEA4469D9D37555C2EF93577F21F3CBDBD24C5F1"
+    }
+  ],
+  "commands": [
+    {
+      "command": "Get-Content -LiteralPath 'D:\\Temp\\combat-motion-eval-e1dsw32j\\tasks\\T09\\request.txt' -Raw; Get-Content -LiteralPath 'D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\SKILL.md' -Raw",
+      "result": "成功读取任务原文和技能入口，exit 0"
+    },
+    {
+      "command": "Get-Content -LiteralPath 'D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\motion-blur.md' -Raw; Get-Content -LiteralPath 'D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\particle-vfx.md' -Raw; Get-Content -LiteralPath 'D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\choreography.md' -Raw; Get-Content -LiteralPath 'D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\templates.md' -Raw",
+      "result": "成功读取四份相关参考，exit 0"
+    },
+    {
+      "command": "PowerShell: New-Item results/candidate-T09; Set-Content answer.md; Get-FileHash -Algorithm SHA256 对上述六个实际读取文件; ConvertTo-Json 并 Set-Content run.json; Get-Item 两份产物",
+      "result": "已生成中文提示词、读取清单与哈希日志；文件大小见命令输出"
+    }
+  ],
+  "status": "completed",
+  "output": "D:\\Temp\\combat-motion-eval-e1dsw32j\\results\\candidate-T09\\answer.md"
+}

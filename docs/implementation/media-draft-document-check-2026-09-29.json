@@ -1,0 +1,858 @@
+{
+  "date": "2026-09-29",
+  "scope": "Draft, linked current documents and existing runtime ZIP only. No media or full release test run.",
+  "draft_prompts": 6,
+  "planned_runs": 18,
+  "submitted": 0,
+  "documents_checked": 13,
+  "local_links_checked": 162,
+  "links": [
+    {
+      "document": "docs/validation.md",
+      "target": "history/validation-0.9.0.md",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/validation-0.9.1.json",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/motion-blur-integration-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/library-items-0.9.0.md",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/library-retrieval-0.9.0.json",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/motion-blur-behavior-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/extension-behavior-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/library-behavior-0.9.0.md",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/compatibility-python310-0.9.0.json",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/compatibility-linux-2026-09-24.json",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/host-verification-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/host-routing-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/validation-0.9.0-attempt1.json",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "../dist/combat-director-0.9.1.zip",
+      "exists": true
+    },
+    {
+      "document": "docs/validation.md",
+      "target": "implementation/completion-audit-2026-09-24.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../plans/2026-09-21-improvement-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../research/2026-09-21-skill-design-review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../../skills/combat-director/references/contract.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../../skills/combat-director/references/action-contract.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../../skills/combat-director/references/review-loop.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "behavior-evaluation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "compatibility-python310-0.9.0.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../research/2026-09-22-combat-prompt-breakdown.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "prompt-evaluation-0.6.0.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../research/2026-09-22-skill-library-integration.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../research/2026-09-23-arvin-combat-integration.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "arvin-library-coverage.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../research/2026-09-23-niagara-prompt-research.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../plans/2026-09-23-niagara-integration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../research/2026-09-23-motion-blur-research.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../plans/2026-09-23-motion-blur-integration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "motion-blur-behavior-0.8.3.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "library-items-0.9.0.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "library-retrieval-0.9.0.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "motion-blur-integration-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "host-verification-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "library-behavior-0.9.0.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "motion-blur-behavior-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../../evals/results/extension-0.9.1/experiment.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "extension-behavior-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "host-routing-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../../evals/media-motion-draft-2026-09-29/README.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/progress.md",
+      "target": "../../evals/media-motion-draft-2026-09-29/preparation-check.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/completion-audit-2026-09-24.md",
+      "target": "library-behavior-0.9.0.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/completion-audit-2026-09-24.md",
+      "target": "extension-behavior-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/completion-audit-2026-09-24.md",
+      "target": "host-routing-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/completion-audit-2026-09-24.md",
+      "target": "motion-blur-behavior-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/completion-audit-2026-09-24.md",
+      "target": "host-routing-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/completion-audit-2026-09-24.md",
+      "target": "compatibility-python310-0.9.0.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/completion-audit-2026-09-24.md",
+      "target": "compatibility-linux-2026-09-24.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/completion-audit-2026-09-24.md",
+      "target": "../../evals/media-motion-draft-2026-09-29/README.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "../../evals/results/library-0.9.0/experiment.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "../../evals/results/library-0.9.0/completed-runs.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "../../evals/results/library-0.9.0/parent-audit.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "../../evals/results/library-0.9.0/review-audit.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "../../evals/results/library-0.9.0/summary.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "../../evals/results/library-0.9.0/parent-source-supplement.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "../../evals/results/library-0.9.0/reviews/L01-L03/review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "../../evals/results/library-0.9.0/reviews/L04-L06/review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "../../evals/results/library-0.9.0/reviews/L07-L09/review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "validation-0.9.0.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "library-retrieval-0.9.0.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/library-behavior-0.9.0.md",
+      "target": "completion-audit-2026-09-24.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-integration-0.9.1.md",
+      "target": "../plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-integration-0.9.1.md",
+      "target": "../research/2026-09-24-motion-blur-control-and-evaluation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-integration-0.9.1.md",
+      "target": "validation-0.9.1.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-integration-0.9.1.md",
+      "target": "../../evals/extension-0.9.1/cases.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-integration-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/snapshot.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-integration-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/experiment.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-integration-0.9.1.md",
+      "target": "motion-blur-behavior-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-integration-0.9.1.md",
+      "target": "extension-behavior-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-integration-0.9.1.md",
+      "target": "motion-blur-behavior-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-integration-0.9.1.md",
+      "target": "host-routing-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-integration-0.9.1.md",
+      "target": "../../evals/media-motion-draft-2026-09-29/README.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-behavior-0.9.1.md",
+      "target": "../../evals/extension-0.9.1/cases.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-behavior-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/snapshot.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-behavior-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/parent-audit.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-behavior-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/reviews/M01-M04/review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-behavior-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/reviews/M01-M04/review.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/motion-blur-behavior-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/review-audit.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/extension-behavior-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/interrupted-runs.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/extension-behavior-0.9.1.md",
+      "target": "../../evals/extension-0.9.1/cases.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/extension-behavior-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/experiment.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/extension-behavior-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/parent-audit.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/extension-behavior-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/review-audit.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/extension-behavior-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/reviews/E05-E08/review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/extension-behavior-0.9.1.md",
+      "target": "../../evals/results/extension-0.9.1/reviews/E09-E12/review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/host-routing-0.9.1.md",
+      "target": "../../evals/results/host-0.9.1/summary.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/host-routing-0.9.1.md",
+      "target": "host-verification-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/host-routing-0.9.1.md",
+      "target": "../../evals/results/host-0.9.1/H01-attempt4/events.jsonl",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/host-routing-0.9.1.md",
+      "target": "../../evals/results/host-0.9.1/H02-attempt4/events.jsonl",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/host-routing-0.9.1.md",
+      "target": "../../evals/results/host-0.9.1/H03/events.jsonl",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/host-verification-0.9.1.md",
+      "target": "host-lifecycle-0.9.1.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/host-verification-0.9.1.md",
+      "target": "host-lifecycle-audit-0.9.1.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/host-verification-0.9.1.md",
+      "target": "host-discovery-0.9.1.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/host-verification-0.9.1.md",
+      "target": "host-routing-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "../../evals/rubric.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "../../evals/results/2026-09-21-pilot/",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "../../evals/results/2026-09-21-pilot/blind-review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "../../evals/results/2026-09-21-pilot/grading.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "../../evals/results/2026-09-21-pilot/new-e02/prompt.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "../../evals/results/2026-09-21-final/final-e04/handoff.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "../../evals/results/2026-09-21-final/final-e10/continuation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "../../evals/results/2026-09-21-final/",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "../../evals/experiment.json",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "../../evals/results/2026-09-21-final/content-review/final-review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "extension-behavior-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/implementation/behavior-evaluation.md",
+      "target": "host-routing-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-23-0.8.0-optimization-plan.md",
+      "target": "../reviews/2026-09-23-0.8.0-review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-23-0.8.0-optimization-plan.md",
+      "target": "../reviews/2026-09-23-0.8.0-evidence.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-23-0.8.0-optimization-plan.md",
+      "target": "../implementation/library-behavior-0.9.0.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-23-0.8.0-optimization-plan.md",
+      "target": "../validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-23-0.8.0-optimization-plan.md",
+      "target": "../validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-23-0.8.0-optimization-plan.md",
+      "target": "2026-09-23-niagara-integration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-23-0.8.0-optimization-plan.md",
+      "target": "2026-09-23-motion-blur-integration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-23-0.8.0-optimization-plan.md",
+      "target": "../implementation/library-items-0.9.0.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-23-0.8.0-optimization-plan.md",
+      "target": "../implementation/library-retrieval-0.9.0.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../research/2026-09-24-motion-blur-control-and-evaluation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../research/2026-09-23-motion-blur-research.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../research/2026-09-23-motion-blur-system-prompt-draft.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "2026-09-23-motion-blur-integration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../../skills/combat-director/references/motion-blur.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../implementation/motion-blur-review-validation-2026-09-24.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../research/evidence/niagara-share-review-2026-09-24.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../research/2026-09-24-motion-blur-control-and-evaluation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../research/2026-09-23-motion-blur-system-prompt-draft.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../../skills/combat-director/examples/motion-staff-12.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../../skills/combat-director/examples/motion-blade-12.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../implementation/motion-blur-behavior-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../implementation/host-routing-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../../evals/media-motion-draft-2026-09-29/README.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../implementation/motion-blur-behavior-0.8.3.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../implementation/motion-blur-delivery-0.8.3.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../implementation/library-behavior-0.9.0.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../research/2026-09-24-motion-blur-control-and-evaluation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../../evals/media-motion-draft-2026-09-29/README.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../research/evidence/motion-blur-sources-2026-09-23.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../research/evidence/motion-blur-sources-2026-09-24.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../research/2026-09-24-motion-blur-control-and-evaluation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../implementation/motion-blur-integration-0.9.1.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../../evals/media-motion-draft-2026-09-29/README.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../implementation/motion-blur-final-review-validation-2026-09-24.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "target": "../implementation/validation-0.9.1.json",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "../../docs/plans/2026-09-24-motion-blur-review-and-next-steps.md",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "prompts/staff-D.txt",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "prompts/staff-B.txt",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "prompts/chase-D.txt",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "prompts/chase-B.txt",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "prompts/blade_trail-D.txt",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "prompts/blade_trail-B.txt",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "scenes.json",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "draft-manifest.json",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "submission-order.csv",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "review-template.json",
+      "exists": true
+    },
+    {
+      "document": "evals/media-motion-draft-2026-09-29/README.md",
+      "target": "preparation-check.json",
+      "exists": true
+    }
+  ],
+  "runtime_files": 187,
+  "runtime_drift": [],
+  "archive_sha256": "150ad6f4ba5e9c7ce82f3cd5248facc442f0a0e58cd5767ac878e77a66f50354",
+  "file_hashes": {
+    "evals/media-motion-draft-2026-09-29/build_draft.py": "7a67cf69dc4b0acf7bea681de9447c34491b27e6bc77c8d92bf13d71fe84cd7e",
+    "evals/media-motion-draft-2026-09-29/draft-manifest.json": "9c1faa5044aac91c18436aa4b18f61041d65259cb4b6eee60fb6359b5a92aaf2",
+    "evals/media-motion-draft-2026-09-29/preparation-check.json": "5502f9c8cfbaa115a80f9f290bf561d2fef48fb131a055b0eaddb87693bd8ce2",
+    "evals/media-motion-draft-2026-09-29/README.md": "a835798457468099619bbe33d310e8fc3dcc6e2fd7692fc6cd7d2f372e39a00c",
+    "evals/media-motion-draft-2026-09-29/review-template.json": "900dacc781e0a444389a45f1b0131c7fef4d3dc27abd9272bfe83449898fcd20",
+    "evals/media-motion-draft-2026-09-29/scenes.json": "8741ce7a9bfb2750e65e2541f6baf7d7755b139b185e316bc3751c71cc30b75a",
+    "evals/media-motion-draft-2026-09-29/submission-order.csv": "15dd6d1ae3626449b0ba88ec10ce0132a52a5b85fbfa181636c9b5652ed78516",
+    "evals/media-motion-draft-2026-09-29/prompts/blade_trail-B.txt": "5e57d1d140e4edc894844c225bce89858e3ca00246cdccca020784f5e95165bb",
+    "evals/media-motion-draft-2026-09-29/prompts/blade_trail-D.txt": "3aaadf67c874f79ed763f3244000eb5b23e6a7b920f761b5c4d50b8a282ad75d",
+    "evals/media-motion-draft-2026-09-29/prompts/chase-B.txt": "41bcdcfc74d9d018303e208ba43f30adad0245dc0871f025bf6502da1c2de1c8",
+    "evals/media-motion-draft-2026-09-29/prompts/chase-D.txt": "c850bc70b0a045c9ad21d2b3ee49e7eadeebd9a5775916a04c0b4485e2f00870",
+    "evals/media-motion-draft-2026-09-29/prompts/staff-B.txt": "0618c67f75925e2e9d450384ceb2cd08e54e50037a03117de09b8c75717ea20e",
+    "evals/media-motion-draft-2026-09-29/prompts/staff-D.txt": "bd0262b31d00b1c9520e1bec0f80de974195148c558e4dda3bddf27ef44757fd",
+    "docs/validation.md": "b31346b42040a46cf11dc4d3b733dcfdee6a6a8131f45778f8c05372b96d9dde",
+    "docs/implementation/progress.md": "c28900087c2f60a5e58ae70079a11c9a62cd70414172ca78e60fe017a38950b4",
+    "docs/implementation/completion-audit-2026-09-24.md": "4f95d8ca91ce4b4c89d1c8ef4845b5d1fb7627c78f8751ef1370582f3b0244ca",
+    "docs/implementation/library-behavior-0.9.0.md": "ee56df2f6d43a976872c43b64c80f7e6a19c74f8558e2b88425b3686ed5f5232",
+    "docs/implementation/motion-blur-integration-0.9.1.md": "dee3cb13a7c7097f17480d5d066af77b7bc064e526c99d296b432e27f9be72b4",
+    "docs/implementation/motion-blur-behavior-0.9.1.md": "75d017030d15fd6a2df783d14873484dc81e9e5cbd729dca93bb4ca7f4050129",
+    "docs/implementation/extension-behavior-0.9.1.md": "7f32bd489d9f19980ad1c89cfad9aa0d7d5d8ec4c0badbc7fd72cedb10f9ae2d",
+    "docs/implementation/host-routing-0.9.1.md": "e3a4527562909b102f108f2ebcbb47395ad6f5f0b3a267565910ff6003be54aa",
+    "docs/implementation/host-verification-0.9.1.md": "d74a97f7f7a008275ce68df19a838ed30ed0cad9631986d9b6c0417801c15f77",
+    "docs/implementation/behavior-evaluation.md": "187540039056754a46326970b1891d775ac807316fd41450a0afe466f0ffec73",
+    "docs/plans/2026-09-23-0.8.0-optimization-plan.md": "ceefc6970723b1811b5b858fdd42ba45d486a8ba4284aa38f330d9006da86627",
+    "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md": "4b0bf9728bc9c39311d4a07b6216371ea3ef90a5d71bc96d9da6807c3c8436fc"
+  },
+  "git_diff_check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "errors": [],
+  "passed": true
+}

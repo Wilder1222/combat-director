@@ -1,0 +1,123 @@
+{
+  "seed": 20260924,
+  "mapping": [
+    {
+      "case": "L01",
+      "answers": {
+        "A": {
+          "condition": "candidate",
+          "raw_run": "raw/candidate-L01"
+        },
+        "B": {
+          "condition": "baseline",
+          "raw_run": "raw/baseline-L01"
+        }
+      }
+    },
+    {
+      "case": "L02",
+      "answers": {
+        "A": {
+          "condition": "candidate",
+          "raw_run": "raw/candidate-L02"
+        },
+        "B": {
+          "condition": "baseline",
+          "raw_run": "raw/baseline-L02"
+        }
+      }
+    },
+    {
+      "case": "L03",
+      "answers": {
+        "A": {
+          "condition": "candidate",
+          "raw_run": "raw/candidate-L03"
+        },
+        "B": {
+          "condition": "baseline",
+          "raw_run": "raw/baseline-L03"
+        }
+      }
+    },
+    {
+      "case": "L04",
+      "answers": {
+        "A": {
+          "condition": "baseline",
+          "raw_run": "raw/baseline-L04"
+        },
+        "B": {
+          "condition": "candidate",
+          "raw_run": "raw/candidate-L04"
+        }
+      }
+    },
+    {
+      "case": "L05",
+      "answers": {
+        "A": {
+          "condition": "baseline",
+          "raw_run": "raw/baseline-L05"
+        },
+        "B": {
+          "condition": "candidate",
+          "raw_run": "raw/candidate-L05"
+        }
+      }
+    },
+    {
+      "case": "L06",
+      "answers": {
+        "A": {
+          "condition": "baseline",
+          "raw_run": "raw/baseline-L06"
+        },
+        "B": {
+          "condition": "candidate",
+          "raw_run": "raw/candidate-L06"
+        }
+      }
+    },
+    {
+      "case": "L07",
+      "answers": {
+        "A": {
+          "condition": "baseline",
+          "raw_run": "raw/baseline-L07"
+        },
+        "B": {
+          "condition": "candidate",
+          "raw_run": "raw/candidate-L07"
+        }
+      }
+    },
+    {
+      "case": "L08",
+      "answers": {
+        "A": {
+          "condition": "baseline",
+          "raw_run": "raw/baseline-L08"
+        },
+        "B": {
+          "condition": "candidate",
+          "raw_run": "raw/candidate-L08"
+        }
+      }
+    },
+    {
+      "case": "L09",
+      "answers": {
+        "A": {
+          "condition": "baseline",
+          "raw_run": "raw/baseline-L09"
+        },
+        "B": {
+          "condition": "candidate",
+          "raw_run": "raw/candidate-L09"
+        }
+      }
+    }
+  ],
+  "created_before_all_runs_completed": true
+}

@@ -1,0 +1,36 @@
+1: #!/usr/bin/env python3
+2: """Read-only, offline combat library lookup (Python 3.10+, stdlib)."""
+3: from __future__ import annotations
+4: 
+5: import argparse
+6: import importlib.util
+7: import json
+8: import re
+9: import sys
+10: import unicodedata
+11: from pathlib import Path, PurePosixPath
+12: from collections import Counter
+13: 
+14: CATALOG = Path(__file__).resolve().parents[1] / 'library/catalog.json'
+15: KINDS = ('design', 'abilities', 'techniques', 'characters', 'choreography',
+16:          'camera', 'effects', 'styles', 'scenes')
+17: DETAILS = ('original', 'detailed', 'outline')
+18: SCOPES = ('duel', 'group', 'escape', 'chase', 'ranged', 'sparring')
+19: FIELDS = {'id', 'kind', 'title', 'scope', 'tags', 'summary', 'requires',
+20:           'excludes', 'path', 'provenance', 'detail', 'schools', 'characters',
+21:           'names', 'source'}
+22: _spec = importlib.util.spec_from_file_location('combat_library_items', Path(__file__).with_name('library_items.py'))
+23: items = importlib.util.module_from_spec(_spec)
+24: _old_bytecode = sys.dont_write_bytecode
+25: try:
+26:     sys.dont_write_bytecode = True
+27:     _spec.loader.exec_module(items)
+28: finally:
+29:     sys.dont_write_bytecode = _old_bytecode
+30: 
+31: 
+32: def require(condition, message):
+33:     if not condition:
+34:         raise ValueError(message)
+35: 
+

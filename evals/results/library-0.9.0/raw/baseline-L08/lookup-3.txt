@@ -1,0 +1,53 @@
+{
+  "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\catalog.json",
+  "sha256": "9b8f576f7b122e639c599202d8d186f66fd15d749ba90f1703e6c6f8ea95c365",
+  "read_kind": "fragment",
+  "selection": "Root property names and array first elements only; full JSON parsed internally",
+  "properties": [
+    {
+      "name": "version",
+      "type": "System.Int64",
+      "count": 1,
+      "first": null
+    },
+    {
+      "name": "entries",
+      "type": "System.Object[]",
+      "count": 116,
+      "first": {
+        "id": "round-sword",
+        "kind": "design",
+        "title": "太极剑意象：短弧接引",
+        "scope": [
+          "duel",
+          "sparring"
+        ],
+        "tags": [
+          "太极剑",
+          "剑",
+          "借势",
+          "圆弧",
+          "恢复"
+        ],
+        "summary": "接引已有来刃，沿外侧移步后换线；不自带法阵。",
+        "requires": [
+          "一把在手的剑",
+          "来刃接触可见",
+          "外侧有落脚空间"
+        ],
+        "excludes": [
+          "无兵器",
+          "无接触却声称借力",
+          "受控空间内仍绕到身后"
+        ],
+        "path": "design/round-sword.md",
+        "provenance": "本项目原创影视转译；太极剑为用户意象，不宣称标准套路。",
+        "detail": "original",
+        "schools": [],
+        "characters": [],
+        "names": [],
+        "source": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+apply_patch verification failed: invalid patch: multiple operations target D:\Temp\combat-extension-nws2d7rg\runs\E05\attempt2\run.json
+Subsequent apply_patch deletion of self-authored run.json returned {}.
+

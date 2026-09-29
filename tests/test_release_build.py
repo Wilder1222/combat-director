@@ -23,9 +23,9 @@ class ReleaseBuildTests(unittest.TestCase):
         self.root=Path(self.temp.name).resolve()
         self.assertTrue(self.root.is_relative_to(Path(tempfile.gettempdir()).resolve()))
         self.addCleanup(self.temp.cleanup)
-        for folder in ('skills','.codex-plugin','sources/upstream'):
+        for folder in ('skills','.codex-plugin','sources/upstream','sources/editorial/0.8.3'):
             shutil.copytree(ROOT/folder,self.root/folder,ignore=shutil.ignore_patterns('__pycache__'))
-        for name in ('scripts/project.py','scripts/build_arvin_library.py','scripts/generated_files.py',
+        for name in ('scripts/project.py','scripts/build_arvin_library.py','scripts/arvin_items.py','scripts/generated_files.py','scripts/build_motion_examples.py',
                      'sources/editorial/library-base.json','sources/editorial/arvin-facets.json',
                      'sources/editorial/arvin-generated.json','docs/implementation/arvin-library-coverage.json'):
             path=self.root/name;path.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(ROOT/name,path)
@@ -38,9 +38,14 @@ class ReleaseBuildTests(unittest.TestCase):
         changes={
             'skills/combat-director/library/techniques/arvin-tech-bagua.md':lambda s:s+'manual edit\n',
             'skills/combat-director/library/catalog.json':lambda s:s.replace('短弧接引','changed title'),
+            'skills/combat-director/library/items.json':lambda s:s.replace('Ko-uchi-gaeshi','invented alias'),
+            'skills/combat-director/library/index.md':lambda s:s+'manual navigation edit\n',
+            'scripts/arvin_items.py':lambda s:s.replace("'meaning': 'motion_path", "'meaning': 'changed motion_path"),
             'scripts/build_arvin_library.py':lambda s:s.replace('接住来势后移步转腰','改配方但未重建时'),
             'sources/upstream/arvin-seedance/SKILL.md':lambda s:s+'changed source\n',
             'sources/editorial/arvin-facets.json':lambda s:s.replace('"八极拳"','"太极拳"'),
+            'skills/combat-director/examples/motion-staff-12.prompt.txt':lambda s:s+'unreviewed edit\n',
+            'sources/editorial/0.8.3/motion-staff-12.plan.json':lambda s:s.replace('固定双人全身机位','跟拍双人全身机位'),
         }
         original_zip=self.archive.read_bytes()
         for name,mutation in changes.items():
@@ -63,6 +68,8 @@ class ReleaseBuildTests(unittest.TestCase):
         with zipfile.ZipFile(path) as z:
             self.assertIsNone(z.testzip())
             self.assertIn('skills/combat-director/library/catalog.json',z.namelist())
+            self.assertIn('skills/combat-director/library/items.json',z.namelist())
+            self.assertIn('skills/combat-director/library/techniques/index.md',z.namelist())
             self.assertFalse(any(n.startswith('sources/') for n in z.namelist()))
 
     def test_recipe_rename_rebuilds_and_retires_the_old_generated_card(self):
@@ -81,6 +88,28 @@ class ReleaseBuildTests(unittest.TestCase):
         archive=project.build(self.root)
         with zipfile.ZipFile(archive) as z:
             self.assertFalse(any(n.endswith('/arvin-choreography-baji-pairs.md') for n in z.namelist()))
+
+    def test_identical_build_preserves_archive_without_replacement(self):
+        path=project.build(self.root)
+        before=path.read_bytes()
+        timestamp=path.stat().st_mtime_ns
+        with patch.object(project.os,'replace',side_effect=PermissionError('archive in use')) as replace:
+            self.assertEqual(project.build(self.root),path)
+        replace.assert_not_called()
+        self.assertEqual(path.read_bytes(),before)
+        self.assertEqual(path.stat().st_mtime_ns,timestamp)
+        self.assertEqual(list(path.parent.glob('.combat-release-*')),[])
+
+    def test_changed_archive_replacement_failure_keeps_previous_bytes(self):
+        path=project.build(self.root)
+        before=path.read_bytes()
+        reference=self.root/'skills/combat-director/references/quality.md'
+        reference.write_text(reference.read_text(encoding='utf-8')+'\nChanged review guidance.\n',encoding='utf-8')
+        with patch.object(project.os,'replace',side_effect=PermissionError('archive in use')) as replace:
+            with self.assertRaisesRegex(PermissionError,'archive in use'):project.build(self.root)
+        replace.assert_called_once()
+        self.assertEqual(path.read_bytes(),before)
+        self.assertEqual(list(path.parent.glob('.combat-release-*')),[])
 
     def test_zip_write_or_crc_failure_keeps_previous_zip(self):
         before=self.archive.read_bytes()

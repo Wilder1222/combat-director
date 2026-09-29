@@ -1,0 +1,88 @@
+{
+  "item": {
+    "id": "arvin-character-baige-item-f6c83b645635",
+    "card_id": "arvin-character-baige",
+    "name": "马尔特洛翻转踢",
+    "aliases": [],
+    "schools": [
+      "巴西战舞"
+    ],
+    "characters": [
+      "白鸽"
+    ],
+    "detail": "motion_path"
+  },
+  "source": {
+    "repository": "https://github.com/wangarvin007-commits/-skills",
+    "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+    "path": "seedance-combat-prompt/SKILL.md",
+    "sha256": "011eed576c241a2180c776ddf6b8555331b482a951e7be35ed53928e7f0b87e0",
+    "credit": "Arvin",
+    "license": "MIT",
+    "license_notice": "references/third-party-notices.md",
+    "evidence": [
+      {
+        "line": 899,
+        "header_line": 881,
+        "section": "白鸽（巴西战舞腿法主攻型）",
+        "origin": "named",
+        "shared_row": false,
+        "detail": "motion_path",
+        "detail_columns": [
+          "动作描述"
+        ],
+        "assessment_note": "",
+        "fields": [
+          {
+            "column": "武学",
+            "value": "巴西战舞"
+          },
+          {
+            "column": "核心招式",
+            "value": "马尔特洛翻转踢"
+          },
+          {
+            "column": "动作描述",
+            "value": "单手触地侧身半翻转，后腿由下向上斜扬抽打下颌肩颈"
+          },
+          {
+            "column": "使用场景",
+            "value": "低位起腿/近身反打"
+          }
+        ],
+        "url": "https://github.com/wangarvin007-commits/-skills/blob/c526a49bb8695f5333af90b56365dc492e24b6ff/seedance-combat-prompt/SKILL.md#L899",
+        "source_text": "| 巴西战舞 | 马尔特洛翻转踢 | 单手触地侧身半翻转，后腿由下向上斜扬抽打下颌肩颈 | 低位起腿/近身反打 |"
+      }
+    ]
+  },
+  "card_context": {
+    "id": "arvin-character-baige",
+    "title": "白鸽：战斗预设",
+    "kind": "characters",
+    "schools": [
+      "巴西战舞",
+      "36路腿法",
+      "谭腿",
+      "跆拳道",
+      "截拳道",
+      "少林旋风地堂腿"
+    ],
+    "characters": [
+      "白鸽"
+    ]
+  },
+  "project_adaptation": {
+    "scope": "整卡改编建议，不是该招原文，也不抬高来源详情等级。",
+    "summary": "巴西战舞与高、中位腿法主攻；低位地堂腿仅作短暂换层。",
+    "requires": [
+      "用户设定允许所选动作、兵器与表现尺度",
+      "可见的起始距离、接触条件和结束位置"
+    ],
+    "excludes": [
+      "自动授予角色预设或超自然能力",
+      "把原文强制比例、历史称谓或成功率当作已核验事实"
+    ]
+  },
+  "notice": "原文称谓、效果与固定数值未经独立核验；补写动作须标为本项目原创。按用户能力边界改编。"
+}
+

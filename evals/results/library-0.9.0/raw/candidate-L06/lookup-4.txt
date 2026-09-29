@@ -1,0 +1,28 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "design",
+    "query": "回廊 撤离",
+    "scope": "group",
+    "school": null,
+    "character": null,
+    "detail": null
+  },
+  "total": 1,
+  "limit": 12,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。",
+  "matches": [
+    {
+      "id": "corridor-exit",
+      "kind": "design",
+      "title": "回廊多人护送撤离",
+      "summary": "通过柱间窄口限制同时接触，用不同任务保持所有人持续行动。",
+      "detail": "original",
+      "matched_names": [],
+      "matched_names_total": 0
+    }
+  ]
+}
+

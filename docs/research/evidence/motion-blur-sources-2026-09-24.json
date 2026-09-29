@@ -1,0 +1,178 @@
+{
+  "format": "motion-blur-research-sources/2",
+  "accessed_date": "2026-09-24",
+  "time_zone": "Asia/Shanghai",
+  "scope": "Primary-source research supplement and integration planning only; runtime unchanged.",
+  "source_count": 13,
+  "sources": [
+    {
+      "id": "D01",
+      "publisher": "RED Digital Cinema",
+      "title": "Shutter Angles & Creative Control",
+      "url": "https://www.reddigitalcinema.com/red-101/shutter-angle-tutorial",
+      "access": "web_open_text",
+      "scope": "Concept, Appearance, Discussion",
+      "supports": "Exposure changes motion smear and the crisp/staccato tradeoff.",
+      "limits": "No universal optimum or generative-video parameter control."
+    },
+    {
+      "id": "D02",
+      "publisher": "Epic Games",
+      "title": "Setting Up Motion Blur",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-motion-blur",
+      "access": "web_open_text",
+      "scope": "Velocity GBuffer, MRQ temporal samples, simulation stepping; served UE 5.8 page",
+      "supports": "Rendering samples and simulation timestep are related but distinct concerns.",
+      "limits": "Does not describe every rendering path or prove generative video uses Niagara.",
+      "note": "Source decimal 0.33333 for 1/30 remains a typo; correct value is approximately 0.033333."
+    },
+    {
+      "id": "D03",
+      "publisher": "Adobe",
+      "title": "Time effects",
+      "url": "https://helpx.adobe.com/after-effects/desktop/apply-effects-and-animation-presets/list-of-effects/time-effects.html",
+      "access": "web_open_and_find",
+      "scope": "Echo, Pixel Motion Blur, Timewarp; page dated 2025-06-26",
+      "supports": "Cross-frame echoes, vector-based blur, retiming and quality settings are distinct.",
+      "limits": "No application run or repair-quality evaluation."
+    },
+    {
+      "id": "D04",
+      "publisher": "Runway",
+      "title": "Gen-4 Video Prompting Guide",
+      "url": "https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide",
+      "access": "web_search_returned_body",
+      "scope": "Prompting Basics, Best Practices, subject/scene/camera motion",
+      "supports": "Gen-4-specific simplicity, incremental iteration and positive phrasing guidance.",
+      "limits": "Not a universal rule for every generation, platform or mode."
+    },
+    {
+      "id": "D05",
+      "publisher": "Runway",
+      "title": "Text to Video Prompting Guide",
+      "url": "https://help.runwayml.com/hc/en-us/articles/42460036199443-Text-to-Video-Prompting-Guide",
+      "access": "web_open_and_find",
+      "scope": "Gen-4.5 guide; clarity vs word count, timestamp prompting and temporal precision",
+      "supports": "Version-specific guidance permits structured timing but does not promise exact timestamps.",
+      "limits": "Embedded output videos not watched; no optimal prompt length or exposure control established."
+    },
+    {
+      "id": "D06",
+      "publisher": "Runway",
+      "title": "Image to Video Prompting Guide",
+      "url": "https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide",
+      "access": "web_open_and_find",
+      "scope": "Input-image motion cues, motion-focused prompting, unwanted cuts FAQ",
+      "supports": "Input blur, poses and dust can conflict with desired motion.",
+      "limits": "No local input image was inspected or edited."
+    },
+    {
+      "id": "D07",
+      "publisher": "Runway",
+      "title": "Camera Terms, Prompts, & Examples",
+      "url": "https://help.runwayml.com/hc/en-us/articles/46749315925395-Camera-Terms-Prompts-Examples",
+      "access": "web_search_text_and_find",
+      "scope": "Gen-4.5 terminology, static camera and in-frame movement FAQ",
+      "supports": "Describe what moves within a static shot and what is revealed by camera motion.",
+      "limits": "No sample-video observation or success guarantee."
+    },
+    {
+      "id": "D08",
+      "publisher": "Google Cloud",
+      "title": "Best practices for generating videos",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/best-practice",
+      "requested_url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/best-practice",
+      "access": "web_open_and_find",
+      "scope": "Image-to-video source quality, motion-only prompting and movement categories",
+      "supports": "Image supplies appearance; motion instructions need not re-describe all visible details.",
+      "limits": "Recommendation scope is the documented service, not universal empirical evidence."
+    },
+    {
+      "id": "D09",
+      "publisher": "Google Cloud",
+      "title": "Video generation prompt guide",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide",
+      "access": "web_find_text",
+      "scope": "Negative prompts",
+      "supports": "Documented negative-input guidance differs from Runway Gen-4 guidance.",
+      "limits": "No user-account, endpoint or precise shutter capability verification."
+    },
+    {
+      "id": "D10",
+      "publisher": "Google Cloud",
+      "title": "Turn off the Veo prompt rewriter (official Spanish page)",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/turn-the-prompt-rewriter-off?hl=es-419",
+      "access": "web_open_and_find",
+      "scope": "Prompt enhancement, model-specific disable limits and rewritten-text visibility",
+      "supports": "The Spanish page states Veo 3/3.1 rewrite cannot be disabled and rewritten text is returned only under a length condition.",
+      "limits": "English route redirected to video overview during this research; re-verify the exact target model and endpoint before execution.",
+      "note": "Do not convert this localized documentation into a claim of verified current account behavior."
+    },
+    {
+      "id": "D11",
+      "publisher": "Unity",
+      "title": "What's new in Unity 6 (6000.0, Korean)",
+      "url": "https://docs.unity3d.com/kr/6000.0/Manual/WhatsNewUnity6.html",
+      "access": "web_open_and_find",
+      "scope": "URP changes introduced in 2023.2; Camera And Objects",
+      "supports": "Object-motion blur capability is version and pipeline scoped.",
+      "limits": "No current-package installation or engine execution; unavailable English motion-blur pages are not operating instructions."
+    },
+    {
+      "id": "D12",
+      "publisher": "Daniel Geng et al.",
+      "title": "Motion Prompting: Controlling Video Generation with Motion Trajectories",
+      "url": "https://arxiv.org/html/2412.02700v2",
+      "access": "web_open_and_find",
+      "scope": "Abstract, Introduction, Method, Failures/Limitations; CVPR 2025 v2",
+      "supports": "Trajectory-conditioned generation is a trained control mechanism distinct from prose; authors report conditioning and model failures.",
+      "limits": "No benchmark replication, repository execution or demo-video assessment; no inference that this feature is available on user platforms."
+    },
+    {
+      "id": "D13",
+      "publisher": "Epic Games",
+      "title": "Niagara Overview",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/overview-of-niagara-effects-for-unreal-engine",
+      "access": "web_open_text",
+      "scope": "Core Niagara Components, emitter spawn and particle update, modules and parameters; served UE 5.8 page",
+      "supports": "Engine components and particle birth/update support the behavior decomposition used when reviewing the shared conversation.",
+      "limits": "No evidence that a text-to-video model parses custom Niagara tags or executes an engine."
+    }
+  ],
+  "limited_or_unavailable": [
+    {
+      "url": "https://chatgpt.com/share/6ab3da1e-8c44-83ec-aa33-76eee857dd9a",
+      "status": "web_fetch_timeout",
+      "consequence": "Conversation content was unavailable at this initial attempt.",
+      "follow_up": {
+        "date": "2026-09-24",
+        "web_open": "title_only_no_body",
+        "chrome_visible_dom": "full_visible_conversation_read",
+        "evidence_role": "User-provided context only; primary technical claims cross-checked separately.",
+        "record": "niagara-share-review-2026-09-24.json"
+      }
+    },
+    {
+      "url": "https://docs.blender.org/manual/en/latest/render/cycles/render_settings/motion_blur.html",
+      "status": "web_fetch_failed_402",
+      "consequence": "No current Blender operating procedure adopted."
+    },
+    {
+      "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/urp/post-processing-motion-blur.html",
+      "status": "web_open_inaccessible",
+      "consequence": "Used the readable versioned What's New page only."
+    },
+    {
+      "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/Post-Processing-Motion-Blur.html",
+      "status": "web_open_internal_error",
+      "consequence": "No package settings inferred from unreadable page."
+    }
+  ],
+  "evidence_limits": [
+    "Pages were read through search/open/find, not archived as complete immutable snapshots.",
+    "Embedded demonstrations were not watched.",
+    "No engine, video service, trajectory adapter or media benchmark was executed.",
+    "System rules, examples, staged 18/36-sample design and file-level work packages are project proposals.",
+    "Historical source records and historical evaluation grades were not overwritten."
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "status": "completed",
+  "task_file": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05\\request.txt",
+  "skill_root": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director",
+  "answer_file": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05\\answer.md",
+  "answer_sha256": "1634EA8EC77324B65D6C6B1336119D75D5FB758708399F026A9DDD226483EB89",
+  "execution_environment": {
+    "shell": "PowerShell",
+    "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+    "network_used": false,
+    "video_generated": false,
+    "subagents_started": false,
+    "python_bytecode_disabled": true
+  },
+  "content_read_files": [
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05\\request.txt",
+      "sha256": "4A440E68DE09C90A0021563BD75F2AF4FEC1A2F874134100C5743CB6CE6A6444",
+      "access": "Direct full text via Get-Content -Raw; content exposed in command output.",
+      "command_id": 1,
+      "output_file": "lookup-1.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\SKILL.md",
+      "sha256": "3FD6DF6EAD2C904679D9E2D7575109761A82AADB1DAEE6339E5BC1012A4A4A19",
+      "access": "Direct full text via Get-Content -Raw; content exposed in command output.",
+      "command_id": 1,
+      "output_file": "lookup-1.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\library-workflow.md",
+      "sha256": "5BA318023DA1C003F58E7368ECC0CB602AFB0547406ED12EBA83648162D8FD4E",
+      "access": "Direct full text via Get-Content -Raw; content exposed in command output.",
+      "command_id": 2,
+      "output_file": "lookup-2.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\technique-adaptation.md",
+      "sha256": "2EB7C896B1C4A087A5D0784F295B6D706CA4694AEE6372DB5FDDA5C0D2FE9575",
+      "access": "Direct full text via Get-Content -Raw; content exposed in command output.",
+      "command_id": 2,
+      "output_file": "lookup-2.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\choreography.md",
+      "sha256": "D5F123389239D20061426A5C2D656581E71C7B9CFB79879E55F069DBBE5EA56C",
+      "access": "Direct full text via Get-Content -Raw; content exposed in command output.",
+      "command_id": 2,
+      "output_file": "lookup-2.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\templates.md",
+      "sha256": "294C7CE6509B397604827323EEA4469D9D37555C2EF93577F21F3CBDBD24C5F1",
+      "access": "Direct full text via Get-Content -Raw; content exposed in command output.",
+      "command_id": 2,
+      "output_file": "lookup-2.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\combat-modes.md",
+      "sha256": "D0D08ECDBD337AA15C08FB684075FB1B3080087574A670C984765AC6A5C16C86",
+      "access": "Direct full text via Get-Content -Raw; content exposed in command output.",
+      "command_id": 4,
+      "output_file": "lookup-4.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-linyu.md",
+      "sha256": "BE49600A87D516F460C71B1D4F5B5BEDC07FA0A2DE8A559239524F6A9B0B1B5E",
+      "access": "Targeted card content and saved source excerpt exposed by library_tool.py show --source; not a claim of reading full upstream source.",
+      "command_id": 5,
+      "output_file": "lookup-5.txt",
+      "hash_command_id": 14,
+      "hash_output_file": "lookup-14.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-bingnv.md",
+      "sha256": "3E4E125767DBB32B9EE397DFC07D08E663D539C5FC0E21F08EF4D5E5C7CDAEB1",
+      "access": "Targeted card content and saved source excerpt exposed by library_tool.py show --source; not a claim of reading full upstream source.",
+      "command_id": 6,
+      "output_file": "lookup-6.txt",
+      "hash_command_id": 14,
+      "hash_output_file": "lookup-14.txt"
+    }
+  ],
+  "executed_scripts": [
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py",
+      "sha256": "351274284361D5E70BA1E0A5F7763A6FE43E3D59FD87ED79F3C4F7ED94D35598",
+      "access": "Executed with Python -B. Script content was not displayed or personally read.",
+      "hash_evidence": "lookup-14.txt"
+    }
+  ],
+  "commands": [
+    {
+      "id": 1,
+      "command": "$ErrorActionPreference = 'Stop'\n$paths = @('D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05\\request.txt', 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\SKILL.md')\nforeach ($path in $paths) {\n  Write-Output ('FILE: ' + $path)\n  Get-Content -LiteralPath $path -Raw\n  Write-Output ('SHA256: ' + (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash)\n}",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-1.txt",
+      "wall_time_seconds": 0.55625
+    },
+    {
+      "id": 2,
+      "command": "$ErrorActionPreference = 'Stop'\n$base = 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director'\n$paths = @('references\\library-workflow.md', 'references\\technique-adaptation.md', 'references\\choreography.md', 'references\\templates.md')\nforeach ($relativePath in $paths) {\n  $path = Join-Path $base $relativePath\n  Write-Output ('FILE: ' + $path)\n  Get-Content -LiteralPath $path -Raw\n  Write-Output ('SHA256: ' + (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash)\n}",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-2.txt",
+      "wall_time_seconds": 0.6557056
+    },
+    {
+      "id": 3,
+      "command": "python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' search characters --query '凛羽 冰女'",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-3.txt",
+      "wall_time_seconds": 0.9509932
+    },
+    {
+      "id": 4,
+      "command": "$ErrorActionPreference = 'Stop'\n$path = 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\combat-modes.md'\nWrite-Output ('FILE: ' + $path)\nGet-Content -LiteralPath $path -Raw\nWrite-Output ('SHA256: ' + (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash)",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-4.txt",
+      "wall_time_seconds": 0.5663819
+    },
+    {
+      "id": 5,
+      "command": "python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' show arvin-character-linyu --source",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-5.txt",
+      "wall_time_seconds": 0.8809656
+    },
+    {
+      "id": 6,
+      "command": "python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' show arvin-character-bingnv --source",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-6.txt",
+      "wall_time_seconds": 0.964103
+    },
+    {
+      "id": 7,
+      "command": "python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' items --card arvin-character-linyu --query '劈拳 抓腕反扭 白蛇吐信'",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-7.txt",
+      "wall_time_seconds": 0.9875296
+    },
+    {
+      "id": 8,
+      "command": "python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' items --card arvin-character-bingnv --query '正拳突 沉桥'",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-8.txt",
+      "wall_time_seconds": 1.015482
+    },
+    {
+      "id": 9,
+      "command": "python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' item arvin-character-linyu-item-8bb1d9a40126 --source",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-9.txt",
+      "wall_time_seconds": 1.2531092
+    },
+    {
+      "id": 10,
+      "command": "python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' item arvin-character-linyu-item-daea5350dc99 --source",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-10.txt",
+      "wall_time_seconds": 1.1939063
+    },
+    {
+      "id": 11,
+      "command": "python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' item arvin-character-linyu-item-24b229b168d1 --source",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-11.txt",
+      "wall_time_seconds": 1.2071652
+    },
+    {
+      "id": 12,
+      "command": "python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' item arvin-character-bingnv-item-83556f18b960 --source",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-12.txt",
+      "wall_time_seconds": 1.1902873999999999
+    },
+    {
+      "id": 13,
+      "command": "python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' item arvin-character-bingnv-item-6c60c53eb813 --source",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-13.txt",
+      "wall_time_seconds": 1.286144
+    },
+    {
+      "id": 14,
+      "command": "$ErrorActionPreference = 'Stop'\n$base = 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director'\n$paths = @(rg --files (Join-Path $base 'library') -g '*linyu*' -g '*bingnv*')\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\nforeach ($path in $paths) {\n  Write-Output ('TARGETED_CARD_PATH: ' + $path)\n  Write-Output ('SHA256: ' + (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash)\n}\n$scriptPath = Join-Path $base 'scripts\\library_tool.py'\nWrite-Output ('EXECUTED_SCRIPT_PATH: ' + $scriptPath)\nWrite-Output ('SHA256: ' + (Get-FileHash -LiteralPath $scriptPath -Algorithm SHA256).Hash)",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-14.txt",
+      "wall_time_seconds": 0.7511938
+    },
+    {
+      "id": 15,
+      "command": "$ErrorActionPreference = 'Stop'\n$path = 'D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05\\answer.md'\n$item = Get-Item -LiteralPath $path\nWrite-Output ('ANSWER_PATH: ' + $item.FullName)\nWrite-Output ('BYTES: ' + $item.Length)\nWrite-Output ('SHA256: ' + (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash)",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L05",
+      "exit_code": 0,
+      "output_file": "lookup-15.txt",
+      "wall_time_seconds": 0.5778142
+    }
+  ],
+  "artifact_write_method": "apply_patch; no shell exit code applies to this structured file-write tool.",
+  "answer_write_result": {},
+  "evidence_notes": [
+    "Command records cover every exec_command invocation in this task. lookup files contain actual combined command output, with line endings normalized to LF.",
+    "library_tool.py search/items/item internally reads indexes. Those internal reads are not counted as personally reading complete index files.",
+    "Only returned item records and the two targeted card outputs were inspected. The reported upstream SHA256 and commit in item results are source metadata; the full upstream source was not directly read.",
+    "The final answer is an original text choreography adapted from the identified snapshot entries. No main project, other task snapshot, memory, research, tests, or evaluation criteria were read.",
+    "Only answer.md, run.json and lookup files were written, all within the assigned run directory.",
+    "Source lookup outputs are evidence of text retrieval. They do not verify any generated video, martial arts historical assertion, or platform capability."
+  ]
+}

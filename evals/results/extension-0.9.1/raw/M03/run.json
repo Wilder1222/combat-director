@@ -1,0 +1,112 @@
+{
+  "task_id": "M03",
+  "request": {
+    "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03\\request.txt",
+    "text": "写8秒文生视频提示词：两名成年虚构武者在灰砖院内木棍对练，甲右上斜劈，乙后撤斜架，最后都退开。正常速度、固定双人全身、一镜到底。我希望3.125秒准确接触，90度快门观感；目前入口只确认能填文字，没有轨迹或逐帧参数。给简洁提示词与交接说明，说明可以怎样处理这个精确时点要求。不实际生成。"
+  },
+  "inputs": [
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+      "sha256": "21D959D36CCE1A2B97A631C1BA0B13913C2D70DA1A629A93BA9998841C5D97D6",
+      "read_mode": "full",
+      "actual_image_view": false
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03\\request.txt",
+      "sha256": "0C614DCFA553B0A1900267AA53E6E3CB2E7701E3427804439B617ECA748625C1",
+      "read_mode": "full",
+      "actual_image_view": false
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\motion-blur.md",
+      "sha256": "77EC4AC579E48A761077AC166DAB1E70F1E8470863053310F3F524AC24A5773B",
+      "read_mode": "full",
+      "actual_image_view": false
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\prompt-craft.md",
+      "sha256": "258AE63D90C184C246C7A990C0A656267B41B69D079F37AC06E4936D126AD1DB",
+      "read_mode": "full",
+      "actual_image_view": false
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\platforms.md",
+      "sha256": "95AAA3145EB2481834571836845D1E7358C4F70ED5B6700D424ABB4C5ADFB7D5",
+      "read_mode": "full",
+      "actual_image_view": false
+    }
+  ],
+  "read_categories": {
+    "full": [
+      "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+      "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03\\request.txt",
+      "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\motion-blur.md",
+      "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\prompt-craft.md",
+      "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\platforms.md"
+    ],
+    "partial": [],
+    "hash_only": [],
+    "script_internal": [],
+    "actual_image_view": []
+  },
+  "commands": [
+    {
+      "id": 1,
+      "tool": "exec_command",
+      "command": "$p = 'D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md'\nGet-Content -LiteralPath $p -Raw -Encoding UTF8\nGet-FileHash -LiteralPath $p -Algorithm SHA256",
+      "workdir": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03",
+      "exit_code": 0,
+      "tool_output": "lookup-1.txt"
+    },
+    {
+      "id": 2,
+      "tool": "exec_command",
+      "command": "$p = 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03\\request.txt'\nGet-Content -LiteralPath $p -Raw -Encoding UTF8\nGet-FileHash -LiteralPath $p -Algorithm SHA256 | Format-List",
+      "workdir": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03",
+      "exit_code": 0,
+      "tool_output": "lookup-2.txt"
+    },
+    {
+      "id": 3,
+      "tool": "exec_command",
+      "command": "$paths = @('D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\motion-blur.md','D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\prompt-craft.md','D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\platforms.md')\nforeach ($p in $paths) {\n  [pscustomobject]@{ path = $p; sha256 = (Get-FileHash -LiteralPath $p -Algorithm SHA256).Hash; read_mode = 'full'; content = Get-Content -LiteralPath $p -Raw -Encoding UTF8 } | ConvertTo-Json -Compress\n}",
+      "workdir": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03",
+      "exit_code": 0,
+      "tool_output": "lookup-3.txt"
+    },
+    {
+      "id": 4,
+      "tool": "exec_command",
+      "command": "$dir = 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03'\n$record = Get-Content -LiteralPath (Join-Path $dir 'run.json') -Raw -Encoding UTF8 | ConvertFrom-Json\n$answer = Get-Content -LiteralPath (Join-Path $dir 'answer.md') -Raw -Encoding UTF8\nif ($record.task_id -ne 'M03' -or $record.inputs.Count -ne 5 -or -not $answer.Contains('3.125') -or -not $answer.Contains('90°')) { throw 'Artifact verification failed' }\nGet-Item -LiteralPath (Join-Path $dir 'answer.md'), (Join-Path $dir 'run.json'), (Join-Path $dir 'lookup-1.txt'), (Join-Path $dir 'lookup-2.txt'), (Join-Path $dir 'lookup-3.txt') | Select-Object Name, Length | ConvertTo-Json\nWrite-Output 'Artifact verification passed.'",
+      "workdir": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03",
+      "exit_code": 0,
+      "tool_output": "lookup-4.txt"
+    }
+  ],
+  "execution": {
+    "network_used": false,
+    "media_generated": false,
+    "platform_submitted": false,
+    "other_agents_started": false,
+    "python_executed": false
+  },
+  "outputs": {
+    "answer": "answer.md",
+    "execution_record": "run.json",
+    "tool_outputs": [
+      "lookup-1.txt",
+      "lookup-2.txt",
+      "lookup-3.txt",
+      "lookup-4.txt"
+    ]
+  },
+  "notes": [
+    "只登记实际读取的输入。所有输入均完整读取；未读取图像或视频。",
+    "文件写入与自有日志检查不是外部输入；未调用冻结包内脚本。",
+    "lookup-N.txt保存相应exec_command工具返回对象，包括原始标准输出和退出码。"
+  ],
+  "verification": {
+    "status": "passed",
+    "scope": "Output file existence, JSON parsing, task and input counts, required prompt terms; no media verification."
+  }
+}

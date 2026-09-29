@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-29",
+  "scope": "New host matrix evidence, independent review archive, edited document links, helper syntax and frozen runtime. No full release rerun or media tests.",
+  "documents": 7,
+  "local_links_checked": 96,
+  "run_artifact_hashes": 40,
+  "review_artifact_hashes": 22,
+  "python_modules_parsed": 3,
+  "runtime_files": 187,
+  "runtime_drift": [],
+  "archive_sha256": "150ad6f4ba5e9c7ce82f3cd5248facc442f0a0e58cd5767ac878e77a66f50354",
+  "git_diff_check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "file_hashes": {
+    "docs/implementation/host-motion-matrix-0.9.1.md": "0b2ad436a985b93512195bd194ba2761a7f2cb04dcea3ae40e210e8b695036d8",
+    "docs/implementation/host-routing-0.9.1.md": "1e9955a1518c7f0dd6cf1b51603efe69d128f356e862c069c531ca0cd53a26e3",
+    "docs/implementation/motion-blur-integration-0.9.1.md": "0a53245810239309971396c7e66f1b3f3e015ba02e21e59c29d017fd22cef35f",
+    "docs/implementation/completion-audit-2026-09-24.md": "3b9fde6d62fb3980e1b27b51ca4e2a76465eb1e7cd4ddfa7fec108eb6c0fe6e3",
+    "docs/implementation/progress.md": "f8e60fe0f97bef5f9a431db78ae1311561c80e56044a46220720b5bb6eca3a36",
+    "docs/plans/2026-09-24-motion-blur-review-and-next-steps.md": "b4899229f532aaa966ddde6bc16d09ebff85f62ff924d2597ad34aaa30e3aaa7",
+    "evals/host-motion-matrix-0.9.1/README.md": "91b0283988d5262368d75ce5ef108d6e511773d535aa7b1bd572c611cd1ac64f",
+    "evals/host-0.9.1/run_routing.py": "517e6ef161d12114746b8e7655780840a8b0faf7faf231cc22494a1c82ded041",
+    "evals/host-motion-matrix-0.9.1/run.py": "33384df0b1820ebf811f0604e818b2bd0ecc94ebd18f989536047f019f2a54f8",
+    "evals/host-motion-matrix-0.9.1/summarize.py": "bb227ef63bcc1cd80759ab08afd9fe70b9b51263b685f72a9345cf6d758986e8",
+    "evals/results/host-motion-matrix-0.9.1/audit.json": "68bc95f2b5c5c8068965fe124f22521cd1d66596ac11bae9724c5c5a5e250cb2",
+    "evals/results/host-motion-matrix-0.9.1/review-audit.json": "a9f7c867e762ed02fc07882c0deaa731431578e84ea63a6e48ec0ed795c48efa",
+    "evals/results/host-motion-matrix-0.9.1/experiment.json": "af4a37855af424f5ce376152e5cadc6f057fc1115cdc8aef36475dc222b0fcbe",
+    "evals/host-motion-matrix-0.9.1/cases.json": "9a5dddd8ca2e347b5ae73df8559992b12758089997e90a48e730755be632aef6"
+  },
+  "errors": [],
+  "passed": true
+}

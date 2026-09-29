@@ -1,0 +1,77 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "all",
+    "query": "基达达后撤 安哥拉侧旋踢 马尔特洛翻转踢",
+    "card_id": "arvin-character-baige",
+    "school": null,
+    "character": null,
+    "detail": null,
+    "min_detail": null
+  },
+  "total": 3,
+  "limit": 12,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "详情等级只描述源文供给，不证明动作完整、事实正确或能力获准；同名与别名歧义分别保留。",
+  "matches": [
+    {
+      "id": "arvin-character-baige-item-4562d89647a0",
+      "card_id": "arvin-character-baige",
+      "name": "基达达后撤",
+      "detail": "motion_path",
+      "schools": [
+        "巴西战舞"
+      ],
+      "characters": [
+        "白鸽"
+      ],
+      "kind": "characters",
+      "matched_names": [
+        "基达达后撤"
+      ],
+      "source_lines": [
+        897
+      ]
+    },
+    {
+      "id": "arvin-character-baige-item-658aa4036126",
+      "card_id": "arvin-character-baige",
+      "name": "安哥拉侧旋踢",
+      "detail": "motion_path",
+      "schools": [
+        "巴西战舞"
+      ],
+      "characters": [
+        "白鸽"
+      ],
+      "kind": "characters",
+      "matched_names": [
+        "安哥拉侧旋踢"
+      ],
+      "source_lines": [
+        898
+      ]
+    },
+    {
+      "id": "arvin-character-baige-item-f6c83b645635",
+      "card_id": "arvin-character-baige",
+      "name": "马尔特洛翻转踢",
+      "detail": "motion_path",
+      "schools": [
+        "巴西战舞"
+      ],
+      "characters": [
+        "白鸽"
+      ],
+      "kind": "characters",
+      "matched_names": [
+        "马尔特洛翻转踢"
+      ],
+      "source_lines": [
+        899
+      ]
+    }
+  ]
+}
+

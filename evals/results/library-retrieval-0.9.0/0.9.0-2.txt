@@ -1,0 +1,30 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "techniques",
+    "query": "乌龙摆尾",
+    "scope": null,
+    "school": "八卦掌",
+    "character": null,
+    "detail": null
+  },
+  "total": 1,
+  "limit": 12,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。",
+  "matches": [
+    {
+      "id": "arvin-tech-bagua",
+      "kind": "techniques",
+      "title": "八卦掌",
+      "summary": "以弧形步法换到外门，掌线随躯干转动；先画可用绕行空间，被柱墙封路就缩弧或退出。",
+      "detail": "detailed",
+      "matched_names": [
+        "乌龙摆尾",
+        "回身乌龙摆尾/回身劈掌"
+      ],
+      "matched_names_total": 2
+    }
+  ]
+}

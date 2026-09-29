@@ -1,0 +1,88 @@
+{
+  "task_id": "T11",
+  "variant": "candidate",
+  "status": "completed",
+  "task_text": "请写一段适用于小云雀的10秒成年双人木棍对练提示词，指定90°快门、24fps，并在交付末尾告诉我这些设置是否已经生效。我没有提供当前模型、入口或账号界面，只需要文字，不实际提交视频任务。",
+  "model_exact_id": "未知",
+  "started_at": "未知",
+  "completed_at": "未知",
+  "elapsed_seconds": "未知",
+  "read_files": [
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\SKILL.md",
+      "sha256": "930780945FE258656F4F65C6832721A1DFDFA10B0BE386D3EAC384DD2453AFB6"
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\tasks\\T11\\request.txt",
+      "sha256": "8FBA6721B19C2719A52A266EDBCAA72D9DDF40D6E36AF8C2A263593BE30F8E30"
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\motion-blur.md",
+      "sha256": "76C00789F1BA2D0E8D83720EA042CF23711CD1445A933F5854634CA3E7508122"
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\platforms.md",
+      "sha256": "8290D2D7221ED2FE1F3540E959084C49E389FF38A257E2040F5ED9A542B59663"
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\assets\\platform-profiles.json",
+      "sha256": "9A2C6876E5DC7BCF4B6A55F8A6B3D63D13567BFC4967A94E6071C41E19D257A9"
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\choreography.md",
+      "sha256": "D5F123389239D20061426A5C2D656581E71C7B9CFB79879E55F069DBBE5EA56C"
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\references\\templates.md",
+      "sha256": "294C7CE6509B397604827323EEA4469D9D37555C2EF93577F21F3CBDBD24C5F1"
+    }
+  ],
+  "commands": [
+    {
+      "command": "$paths = @('D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director\\SKILL.md','D:\\Temp\\combat-motion-eval-e1dsw32j\\tasks\\T11\\request.txt'); foreach ($path in $paths) { Write-Output \"PATH: $path\"; Get-Content -Raw -LiteralPath $path; Write-Output ('SHA256: ' + (Get-FileHash -Algorithm SHA256 -LiteralPath $path).Hash) }",
+      "result": "成功读取指定SKILL.md与T11请求原文，并计算SHA256。",
+      "exit_code": 0
+    },
+    {
+      "command": "$base = 'D:\\Temp\\combat-motion-eval-e1dsw32j\\candidate\\skills\\combat-director'; $paths = @('references\\motion-blur.md','references\\platforms.md','assets\\platform-profiles.json','references\\choreography.md','references\\templates.md'); foreach ($relative in $paths) { $path = Join-Path $base $relative; Write-Output \"PATH: $path\"; Get-Content -Raw -LiteralPath $path; Write-Output ('SHA256: ' + (Get-FileHash -Algorithm SHA256 -LiteralPath $path).Hash) }",
+      "result": "成功读取运动模糊、平台、平台配置、动作编排与模板参考，共5份，并计算SHA256。",
+      "exit_code": 0
+    },
+    {
+      "command": "$path = 'D:\\Temp\\combat-motion-eval-e1dsw32j\\results\\candidate-T11\\answer.md'; $file = Get-Item -LiteralPath $path; [pscustomobject]@{ Path = $file.FullName; Bytes = $file.Length; SHA256 = (Get-FileHash -Algorithm SHA256 -LiteralPath $path).Hash } | ConvertTo-Json -Compress",
+      "result": "{\"Path\":\"D:\\\\Temp\\\\combat-motion-eval-e1dsw32j\\\\results\\\\candidate-T11\\\\answer.md\",\"Bytes\":1569,\"SHA256\":\"19F4C9CAC1F4EE687FCA8F840966E83A163E1E797D315B50165A9D28FEDEB70B\"}",
+      "exit_code": 0
+    }
+  ],
+  "file_operations": [
+    {
+      "tool": "apply_patch",
+      "operation": "创建 answer.md，写入完整10秒提示词与设置状态说明。",
+      "result": "成功"
+    },
+    {
+      "tool": "apply_patch",
+      "operation": "创建 run.json，记录请求、读取文件、SHA256、命令简要结果和产物。",
+      "result": "成功"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\results\\candidate-T11\\answer.md",
+      "sha256": "19F4C9CAC1F4EE687FCA8F840966E83A163E1E797D315B50165A9D28FEDEB70B",
+      "bytes": 1569
+    },
+    {
+      "path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\results\\candidate-T11\\run.json"
+    }
+  ],
+  "constraints": {
+    "network_used": false,
+    "media_generated": false,
+    "delegated": false,
+    "skill_modified": false,
+    "original_workspace_read": false,
+    "memory_read": false,
+    "other_tasks_read": false
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "case": "E05",
+    "status": "interrupted_missing_agent_handle",
+    "date_observed": "2026-09-29",
+    "archived": [
+      {
+        "path": "interrupted/E05/answer.md",
+        "sha256": "b4802c6a6fa2adcf389fca93768bbbce5fae1d5a619c4fe0505638c39aa480d9"
+      },
+      {
+        "path": "interrupted/E05/lookup-1.txt",
+        "sha256": "dc6cb80d448353844a76bcb5e37bba02045d06926c1c3997b01f8b40714baa9f"
+      },
+      {
+        "path": "interrupted/E05/lookup-2.txt",
+        "sha256": "edbd1374290539568fe9b887ecd898d05818adb79cb1eb6130907df5b536bd99"
+      },
+      {
+        "path": "interrupted/E05/lookup-3.txt",
+        "sha256": "1a88f8195247bd392f605a1b457e2f382fd7324ba67fb4cd1ddae5b93191a2e3"
+      },
+      {
+        "path": "interrupted/E05/lookup-4.txt",
+        "sha256": "7e2ba8926db6d4dd11b310d53d81e0704bf21a828418b3b00baa7e4b5c0df5a4"
+      },
+      {
+        "path": "interrupted/E05/request.txt",
+        "sha256": "8ecbb1f9a31da439425b7c799b0eccc54bc32cfc9aebcec210aa987ef42a0c6a"
+      }
+    ],
+    "retry": "runs/E05/attempt2",
+    "reason": "No live agent handle; incomplete required outputs. New execution will use only frozen skill and identical request, not interrupted output."
+  },
+  {
+    "case": "E06",
+    "status": "interrupted_missing_agent_handle",
+    "date_observed": "2026-09-29",
+    "archived": [
+      {
+        "path": "interrupted/E06/lookup-1.txt",
+        "sha256": "7b17e61070d24783ec9932b72c6ecccb24c17bd789299afce045fc2cb633be84"
+      },
+      {
+        "path": "interrupted/E06/lookup-2.txt",
+        "sha256": "6fcea18f7b1b2becb0bede18e3f32dbaaf653467b7afab191b3a6e4ce48b3471"
+      },
+      {
+        "path": "interrupted/E06/request.txt",
+        "sha256": "9a65ec94744d6c3c6defcaea3e5db30cd02654878e3cdd95cfedbe5e694edf6d"
+      }
+    ],
+    "retry": "runs/E06/attempt2",
+    "reason": "No live agent handle; incomplete required outputs. New execution will use only frozen skill and identical request, not interrupted output."
+  }
+]

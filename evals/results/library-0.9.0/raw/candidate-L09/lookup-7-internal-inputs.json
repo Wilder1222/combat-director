@@ -1,0 +1,22 @@
+[
+  {
+    "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\library\\catalog.json",
+    "sha256": "bf4a624b97704db116d23ecabbd3c469819087078feea861200746d2b7f7e15f",
+    "read_mode": "script_internal_read"
+  },
+  {
+    "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-17.md",
+    "sha256": "3813f5c412e526073cbfc00d48ea804afda37661d67d326e35eadb484927806b",
+    "read_mode": "script_internal_read"
+  },
+  {
+    "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_items.py",
+    "sha256": "0848a9622f8019fff4eb549b8df37407ca4f3329fdb31d2afe5ed29251bc6a69",
+    "read_mode": "script_internal_read"
+  },
+  {
+    "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py",
+    "sha256": "351274284361d5e70ba1e0a5f7763a6fe43e3d59fd87ed79f3c4f7ed94d35598",
+    "read_mode": "script_internal_read"
+  }
+]

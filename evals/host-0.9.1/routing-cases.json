@@ -1,0 +1,30 @@
+{
+  "format": "combat-host-routing-cases/1",
+  "date": "2026-09-24",
+  "status": "prepared_not_run",
+  "target": "Standalone candidate 0.9.1 in a temporary project's .agents/skills directory, with the actual CLI's normal model settings.",
+  "cases": [
+    {
+      "id": "H01",
+      "mode": "explicit",
+      "request": "使用 $combat-director，给一段不超过160字的中文提示词：8秒成年双人木杖对练，甲斜劈被乙侧移拨开，两人回收退开。固定侧面全身、正常速度、一镜到底，无超自然能力；保留自然运动模糊并看得懂接触。只要文字，不生成视频、不联网。"
+    },
+    {
+      "id": "H02",
+      "mode": "implicit",
+      "request": "帮我编排8秒成年双人木杖交手：甲快速斜劈，乙撤步斜架拨开，然后两人各退开。固定侧面全身、正常速度、一镜到底、无能量。我想保留木杖快移时的短促拖糊，又能看懂握持和接触。只给不超过160字的中文视频提示词，不生成视频、不联网。"
+    },
+    {
+      "id": "H03",
+      "original_case": "evals/cases.json#E11",
+      "mode": "negative_implicit",
+      "request": "做一张安静的人像海报：成年虚构人物坐在窗边读书，柔和日光，表情平静。现在只交付不超过160字的中文构图与画面描述，不实际生成图像、不联网。"
+    }
+  ],
+  "protocol": {
+    "execution": "Fresh ephemeral CLI invocation per case, inherited configured model, read-only sandbox, JSONL event capture; no model or effort override.",
+    "evidence": "Save exact command, request, candidate hash, raw events, final answer and exit code. Verify actual skill-read paths against the frozen candidate; final wording alone cannot prove loading.",
+    "scope": "No platform submission, media generation, credential copying, network browsing or real-user plugin changes.",
+    "limits": "Normal host catalog may include the existing plugin and other skills; record collisions or selection of an older path rather than claiming a clean catalog. H03 is a text-only concrete version of original E11. This initial three-case set does not exhaust the recommended four-family motion routing matrix."
+  }
+}

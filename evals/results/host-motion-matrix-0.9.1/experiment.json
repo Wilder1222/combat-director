@@ -1,0 +1,44 @@
+{
+  "format": "combat-host-motion-matrix-experiment/1",
+  "date": "2026-09-29",
+  "status": "execution_and_review_complete_with_loading_limitations",
+  "executed": [
+    "MXH01",
+    "MXH02",
+    "MXH03",
+    "MXH04",
+    "MXH05",
+    "MXH06",
+    "MXH07",
+    "MXH08"
+  ],
+  "text_verdicts": {
+    "MXH01": "satisfied",
+    "MXH02": "satisfied",
+    "MXH03": "satisfied",
+    "MXH04": "satisfied",
+    "MXH05": "satisfied",
+    "MXH06": "satisfied",
+    "MXH07": "satisfied",
+    "MXH08": "satisfied"
+  },
+  "motion_full_text_matched": [
+    "MXH01",
+    "MXH02",
+    "MXH03",
+    "MXH05"
+  ],
+  "motion_read_attempted_but_garbled": [
+    "MXH04",
+    "MXH06"
+  ],
+  "motion_not_needed_and_not_loaded": [
+    "MXH07",
+    "MXH08"
+  ],
+  "running": [],
+  "media_generated": false,
+  "next_action": "Address readable-reference recovery in the Windows host, then verify affected requests under explicitly recorded revised conditions; preserve these failures.",
+  "audit": "audit.json",
+  "independent_review_audit": "review-audit.json"
+}

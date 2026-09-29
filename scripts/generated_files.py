@@ -16,8 +16,11 @@ from pathlib import Path, PurePosixPath
 MANIFEST = 'sources/editorial/arvin-generated.json'
 LOCK = 'sources/editorial/.arvin-generated.lock'
 SPECIAL = {'skills/combat-director/library/catalog.json',
+           'skills/combat-director/library/items.json',
+           'skills/combat-director/library/index.md',
            'docs/implementation/arvin-library-coverage.json'}
 CARD = re.compile(r'skills/combat-director/library/(?:techniques|characters|choreography|camera|effects|styles|scenes)/arvin-[a-z0-9-]+\.md')
+NAV = re.compile(r'skills/combat-director/library/(?:design|abilities|techniques|characters|choreography|camera|effects|styles|scenes)/index\.md')
 
 
 def digest(data):
@@ -34,7 +37,7 @@ def safe_path(root, name, *, internal=False):
     relative = PurePosixPath(name)
     if relative.as_posix() != name or relative.is_absolute() or '..' in relative.parts:
         raise ValueError('Invalid managed path: '+str(name))
-    if not (name in SPECIAL or CARD.fullmatch(name) or internal and name in (MANIFEST, LOCK)):
+    if not (name in SPECIAL or CARD.fullmatch(name) or NAV.fullmatch(name) or internal and name in (MANIFEST, LOCK)):
         raise ValueError('Path is not generator-owned: '+name)
     root = Path(root).resolve()
     path = root.joinpath(*relative.parts)

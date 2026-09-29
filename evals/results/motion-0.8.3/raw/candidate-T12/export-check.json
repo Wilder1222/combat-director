@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "seven_export_files": [
+    "design-card.md",
+    "director.md",
+    "prompt.txt",
+    "prompt-handoff.json",
+    "handoff.md",
+    "review.md",
+    "combat-plan.json"
+  ],
+  "exported_plan_matches_reviewed_plan": true,
+  "handoff_matches_compiled_facts_and_expressions": true,
+  "all_six_camera_paths_in_director": true,
+  "all_four_camera_summaries_in_prompt": true,
+  "old_camera_paths_absent_from_deliverables": true,
+  "all_five_review_digest_pairs_current": true,
+  "original_plan_sha256_unchanged": true,
+  "media_generated": false
+}

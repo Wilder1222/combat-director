@@ -1,0 +1,27 @@
+{
+  "export_plan_equals_revised": true,
+  "verified_plan_equals_revised": true,
+  "plan_export_bytes_equal": true,
+  "untouched_beats": {
+    "B01": true,
+    "B02": true,
+    "B03": true,
+    "B06": true
+  },
+  "untouched_sections": {
+    "P01": true,
+    "P02": true,
+    "P04": true
+  },
+  "all_cameras_equal": true,
+  "all_state_transitions_equal": true,
+  "P03_entry_unchanged": true,
+  "P03_exit_unchanged": true,
+  "final_state_unchanged": true,
+  "answer_prompt_equals_export": true,
+  "prompt_outside_P03_unchanged": true,
+  "original_hashes_match_record": {
+    "original.prompt.txt": true,
+    "original.plan.json": true
+  }
+}

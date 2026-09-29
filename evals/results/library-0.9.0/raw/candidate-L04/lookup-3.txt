@@ -1,0 +1,27 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "characters",
+    "query": "",
+    "scope": null,
+    "school": null,
+    "character": "绯雪·火焰",
+    "detail": null
+  },
+  "total": 1,
+  "limit": 12,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。",
+  "matches": [
+    {
+      "id": "arvin-character-feixue-fire",
+      "kind": "characters",
+      "title": "绯雪·火焰：战斗预设",
+      "summary": "单刀前压与火红刀焰，沿刀路加压后收刀。",
+      "detail": "detailed",
+      "matched_names": [],
+      "matched_names_total": 0
+    }
+  ]
+}

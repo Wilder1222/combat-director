@@ -1,0 +1,201 @@
+{
+  "version": "0.9.0",
+  "date": "2026-09-24",
+  "baseline": "0.8.3 for retrieval only; WP06 creative baseline remains 0.8.0",
+  "baseline_verified_files": 175,
+  "catalog_v2_unchanged": true,
+  "measure": "Unicode characters in decoded stdout, with normalized LF; not tokens, time or quality",
+  "commands": [
+    {
+      "version": "0.8.3",
+      "args": [
+        "search",
+        "all"
+      ],
+      "stdout_characters": 13334,
+      "output": "evals/results/library-retrieval-0.9.0/0.8.3-1.txt",
+      "sha256": "ada4d60f1248333f69ac75490607adde3e01b9c93b3f75d0d7585efde5221a12"
+    },
+    {
+      "version": "0.8.3",
+      "args": [
+        "search",
+        "techniques",
+        "--query",
+        "乌龙摆尾",
+        "--school",
+        "八卦掌"
+      ],
+      "stdout_characters": 1519,
+      "output": "evals/results/library-retrieval-0.9.0/0.8.3-2.txt",
+      "sha256": "0c55f11eace53e242e9d6932f819cae77dc8434c8818ffd787620bb733de4a62"
+    },
+    {
+      "version": "0.8.3",
+      "args": [
+        "show",
+        "arvin-tech-bagua"
+      ],
+      "stdout_characters": 3492,
+      "output": "evals/results/library-retrieval-0.9.0/0.8.3-3.txt",
+      "sha256": "aa55433e19dd49fc4c5e2cbc3e9397905dd5203b823bddd71d5cd50861c8da33"
+    },
+    {
+      "version": "0.8.3",
+      "args": [
+        "show",
+        "arvin-character-baige"
+      ],
+      "stdout_characters": 3512,
+      "output": "evals/results/library-retrieval-0.9.0/0.8.3-4.txt",
+      "sha256": "7ec25dc76608d1250cf1d479c36c057ebd19fce9c8a5fb47270399448621b12a"
+    },
+    {
+      "version": "0.8.3",
+      "args": [
+        "stats"
+      ],
+      "stdout_characters": 4323,
+      "output": "evals/results/library-retrieval-0.9.0/0.8.3-5.txt",
+      "sha256": "c131ce12d99f793aefa6137c4e57b76fa0c29109985bc1ea141c19780367330b"
+    },
+    {
+      "version": "0.9.0",
+      "args": [
+        "search",
+        "all"
+      ],
+      "stdout_characters": 3377,
+      "output": "evals/results/library-retrieval-0.9.0/0.9.0-1.txt",
+      "sha256": "af42f87d368eacc33abb42654c688392a0c7c364a0e8b0ca6a680b643f5870a7"
+    },
+    {
+      "version": "0.9.0",
+      "args": [
+        "search",
+        "techniques",
+        "--query",
+        "乌龙摆尾",
+        "--school",
+        "八卦掌"
+      ],
+      "stdout_characters": 624,
+      "output": "evals/results/library-retrieval-0.9.0/0.9.0-2.txt",
+      "sha256": "b3c61adab989397de35e052c1c14bcf3aa5500f15b20e7e892ed548bcaaf1eb2"
+    },
+    {
+      "version": "0.9.0",
+      "args": [
+        "show",
+        "arvin-tech-bagua"
+      ],
+      "stdout_characters": 861,
+      "output": "evals/results/library-retrieval-0.9.0/0.9.0-3.txt",
+      "sha256": "44841df415310437a033ae214406f495aa3a6d2c55de857095784436191c75d6"
+    },
+    {
+      "version": "0.9.0",
+      "args": [
+        "show",
+        "arvin-character-baige"
+      ],
+      "stdout_characters": 767,
+      "output": "evals/results/library-retrieval-0.9.0/0.9.0-4.txt",
+      "sha256": "64d3b9ebf115c829acf3da0d1e13ccb6f0b5652b279d6b11b7240ed88c74f10f"
+    },
+    {
+      "version": "0.9.0",
+      "args": [
+        "stats"
+      ],
+      "stdout_characters": 4323,
+      "output": "evals/results/library-retrieval-0.9.0/0.9.0-5.txt",
+      "sha256": "c131ce12d99f793aefa6137c4e57b76fa0c29109985bc1ea141c19780367330b"
+    },
+    {
+      "version": "0.9.0",
+      "args": [
+        "items",
+        "--query",
+        "乌龙摆尾",
+        "--kind",
+        "techniques",
+        "--school",
+        "八卦掌"
+      ],
+      "stdout_characters": 702,
+      "output": "evals/results/library-retrieval-0.9.0/item-search.txt",
+      "sha256": "77e9e2e72c5044572df5776f3e1021f7b5a79eb7f4a09f449c1af7255ea51990"
+    },
+    {
+      "version": "0.9.0",
+      "args": [
+        "item",
+        "arvin-tech-bagua-item-7839a595552d"
+      ],
+      "stdout_characters": 2579,
+      "output": "evals/results/library-retrieval-0.9.0/selected-item.txt",
+      "sha256": "45f72ddf0b650e609c7b0bb070c586a18f0727d968e83a893d98f6422122faf2"
+    },
+    {
+      "version": "0.9.0",
+      "args": [
+        "items"
+      ],
+      "stdout_characters": 4519,
+      "output": "evals/results/library-retrieval-0.9.0/items-first-page.txt",
+      "sha256": "c9dbe2386842020df76ea70a77bba42eeb3fc357b1c55d28c70c1ceb8127a590"
+    }
+  ],
+  "file_reads": [
+    {
+      "version": "0.8.3",
+      "data_reads": [
+        {
+          "path": "skills/combat-director/library/catalog.json",
+          "characters": 151827,
+          "sha256": "bf4a624b97704db116d23ecabbd3c469819087078feea861200746d2b7f7e15f"
+        },
+        {
+          "path": "skills/combat-director/library/techniques/arvin-tech-bagua.md",
+          "characters": 3492,
+          "sha256": "aa55433e19dd49fc4c5e2cbc3e9397905dd5203b823bddd71d5cd50861c8da33"
+        }
+      ],
+      "scope": "Python API workflow, excluding code imports and stat calls; the CLI starts a new process for each command."
+    },
+    {
+      "version": "0.9.0",
+      "data_reads": [
+        {
+          "path": "skills/combat-director/library/catalog.json",
+          "characters": 151827,
+          "sha256": "bf4a624b97704db116d23ecabbd3c469819087078feea861200746d2b7f7e15f"
+        },
+        {
+          "path": "skills/combat-director/library/items.json",
+          "characters": 1835908,
+          "sha256": "14d88f58a615674ef75ea727bbe2a401cc2cd139c507f391ceab9e72c7455a0b"
+        }
+      ],
+      "scope": "Python API workflow, excluding code imports and stat calls; the CLI starts a new process for each command."
+    }
+  ],
+  "navigation_characters": {
+    "skills/combat-director/library/index.md": 597,
+    "skills/combat-director/library/abilities/index.md": 285,
+    "skills/combat-director/library/camera/index.md": 1006,
+    "skills/combat-director/library/characters/index.md": 705,
+    "skills/combat-director/library/choreography/index.md": 1324,
+    "skills/combat-director/library/design/index.md": 434,
+    "skills/combat-director/library/effects/index.md": 430,
+    "skills/combat-director/library/scenes/index.md": 1324,
+    "skills/combat-director/library/styles/index.md": 410,
+    "skills/combat-director/library/techniques/index.md": 2074
+  },
+  "limits": [
+    "The sidecar increases package and index parsing size; compact output is not lower total disk input.",
+    "Scripted lookup is not an independent creative behavior evaluation.",
+    "Exact source paths and detail correctness are covered separately by tests."
+  ]
+}

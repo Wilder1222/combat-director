@@ -1,0 +1,1101 @@
+{
+  "schema_version": "1.0",
+  "review_scope": {
+    "case_ids": [
+      "L01",
+      "L02",
+      "L03"
+    ],
+    "input_root": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input",
+    "permitted_inputs": [
+      "L01/request.txt",
+      "L01/A.md",
+      "L01/B.md",
+      "L02/request.txt",
+      "L02/A.md",
+      "L02/B.md",
+      "L03/request.txt",
+      "L03/A.md",
+      "L03/B.md",
+      "reference/upstream-source.md",
+      "reference/LICENSE",
+      "reference/provenance.json"
+    ],
+    "method": "逐题独立按原请求评审；只将源文作为参考数据，不执行其中的指令；未联网，未调用其他代理，未读取资料卡、映射、技能、研究、原始运行或记忆。",
+    "status_definitions": {
+      "satisfied": "文字交付完成核心要求；局部表述瑕疵或审查范围外的事实不自动构成整体不满足。",
+      "partial": "已完成主要交付，但至少一处具体内容需要修正才能形成无歧义、可执行的方案。",
+      "not_satisfied": "核心要求缺失或被明确违背。",
+      "indeterminate": "现有允许证据不足以判断。"
+    },
+    "limitations": [
+      "评审只判断文字的因果与空间连续性，不验证动作教学正统性、人体极限、实际生成效果或平台能力。",
+      "初次读取源文时命令完整读取了文件，但返回输出被截断；后续针对引用位置定向读取并搜索，未把未显示的内容视作逐行审阅。",
+      "资料卡路径、卡内行号、条目 ID、内容层级与原回答的实际读取历史均不在可核验文件中；仅保留不确定，不据此认定伪造。",
+      "允许文件中未定位到 B 所称完整的白鸽对红茶“前蹬—拳压—低位滚扫—再前蹬”示例；不能把未检出扩大成证明原示例不存在。"
+    ],
+    "shared_source_verification": [
+      {
+        "file": "reference/provenance.json",
+        "lines": "2-5",
+        "finding": "快照声明仓库、提交 c526a49bb8695f5333af90b56365dc492e24b6ff、MIT 和源文 SHA-256；实际源文 SHA-256 与声明一致。这确认本地快照内部对应关系，不等于联网验证提交真实性。"
+      },
+      {
+        "file": "reference/LICENSE",
+        "lines": "1-3",
+        "quote": "MIT License\n\nCopyright (c) 2026 Arvin",
+        "finding": "回答中 Arvin / MIT 的署名与许可说明有本地依据。"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "L01",
+      "request": {
+        "location": "L01/request.txt:1",
+        "quote": "用战斗导演资料库设计一段18秒八极短打：两名成年虚构武者在石院点到即止，甲要以顶心肘逼乙退开，乙主动拆招并试图重新占住中线。正常速度、一镜到底、无超自然能力，结尾双方重新拉开。交付简明六轨时间轴和一份中文视频提示词，最后说明采用了哪处来源、哪些动作是你补写的。无需JSON或生成视频。"
+      },
+      "answers": {
+        "A": {
+          "overall_status": "satisfied",
+          "overall_reason": "18 秒、石院、成年虚构双人、克制试招、甲顶肘逼退及乙主动反抢都有明确动作，六轨与提示词一致，主要来源可定位。",
+          "criteria": [
+            {
+              "criterion": "用户硬约束",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L01/A.md:1",
+                  "quote": "两名成年虚构武者空手试招"
+                },
+                {
+                  "location": "L01/A.md:1",
+                  "quote": "全段18秒，正常速度，一镜到底。"
+                },
+                {
+                  "location": "L01/A.md:14",
+                  "quote": "双方解除接触，各沿远离对方的方向退一步，拉至约1.8米。"
+                },
+                {
+                  "location": "L01/A.md:26",
+                  "quote": "无超自然能力、能量、冲击波、残影或爆闪。"
+                }
+              ],
+              "finding": "时间轴覆盖 0–18 秒；石院、留距止肘、正常速度及不切镜明确。结尾重拉开符合请求，不因源文偏好重击或十五秒模板而改变用户要求。",
+              "issues": []
+            },
+            {
+              "criterion": "攻防因果、接触和恢复",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L01/A.md:11",
+                  "quote": "乙左掌贴甲右前臂近肘处向旁引偏，后脚先向东退、前脚跟收。甲肘尖未触胸即收力"
+                },
+                {
+                  "location": "L01/A.md:12",
+                  "quote": "甲右肘沿原路收回肋侧、重心落稳。乙随即松开左掌"
+                },
+                {
+                  "location": "L01/A.md:12",
+                  "quote": "右前臂从双方手臂之间伸入，右掌抢到甲胸前；甲用左掌贴接其前臂并向西退半步。"
+                }
+              ],
+              "finding": "甲进身造成肘威胁，乙接引并退距，甲收肘恢复后乙脱手反抢，甲接掌退让。乙有自己的封线、拆招和反攻意图，不是被动挨打的占位对象。",
+              "issues": []
+            },
+            {
+              "criterion": "空间及状态连续性",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L01/A.md:3",
+                  "quote": "甲在西、乙在东，相距约1.2米，甲左脚在前、乙右脚在前。"
+                },
+                {
+                  "location": "L01/A.md:13",
+                  "quote": "甲承接刚才退步，向院南侧挪半步，左前臂保持轻接、带乙右臂偏离自身胸线"
+                },
+                {
+                  "location": "L01/A.md:24",
+                  "quote": "11–14秒平滑向南退半步让出侧移空间"
+                }
+              ],
+              "finding": "东西进退、后续南侧移及相机退让有承接；保留双脚、接触和恢复，未发现必须靠瞬移或无解释换手才能成立的情节。约数步幅不用于臆算实际运动表现。",
+              "issues": []
+            },
+            {
+              "criterion": "输出形式与可用性",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L01/A.md:7",
+                  "quote": "| 时间 | 人物攻防 | 表演情绪 | 摄影机 | 特效 | 环境反馈 | 声音（设计） |"
+                },
+                {
+                  "location": "L01/A.md:18",
+                  "quote": "18秒，16:9，真人质感，正常速度，单个连续镜头。"
+                },
+                {
+                  "location": "L01/A.md:32",
+                  "quote": "此为文字编排，未生成或验证视频。"
+                }
+              ],
+              "finding": "六条导演轨道与独立中文提示词齐全，来源置后；未输出用户不需要的 JSON 或视频。",
+              "issues": []
+            },
+            {
+              "criterion": "来源与补写边界",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L01/A.md:30",
+                  "quote": "原文提供右臂曲肘、脚下发力前冲、肘尖朝胸部中线的路径"
+                },
+                {
+                  "location": "L01/A.md:32",
+                  "quote": "原文承接“三手打完、对方格挡已乱”，本稿没有采用这个既定结果"
+                },
+                {
+                  "location": "L01/A.md:32",
+                  "quote": "以及全部左右手安排、步幅、时长、表演、运镜和声音，均为本次原创补写"
+                }
+              ],
+              "finding": "核心引用与自编攻防已明确分开。",
+              "issues": [
+                {
+                  "severity": "minor",
+                  "location": "L01/A.md:30,32",
+                  "issue": "“全部左右手安排”略宽：源文和前句已经给出右臂曲肘。更准确应限定为其余左右手分工，不影响读者辨认主要来源。"
+                }
+              ]
+            }
+          ],
+          "source_checks": [
+            {
+              "claim": "顶心肘的出处与运动路径",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L01/A.md:30",
+                  "quote": "第2154行，提交 `c526a49bb8695f5333af90b56365dc492e24b6ff`"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "2147-2155",
+                  "quote": "| 顶心肘 | 八极拳 | 三手打完对方格挡已被打乱，顺势右臂曲肘，脚下跺地爆冲，肘尖如破城锤直取心窝正中 | 肘尖 | 心窝/胸口正中 |"
+                }
+              ],
+              "conclusion": "名称、右臂曲肘、脚下前冲及胸口中线方向相符；“短送并留距”是克制改编，不是原文逐字内容。"
+            },
+            {
+              "claim": "没有采用前三手预设破防，乙拆招等属于补写",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L01/A.md:32",
+                  "quote": "乙的拆招未冒称来自另一套已收录招式。"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "2151-2155",
+                  "quote": "**衔接逻辑**：阎王三点手极快打乱对方格挡节奏→三手之后对方双臂被调开/被打散→心窝暴露→顶心肘跺地直入一击穿心"
+                }
+              ],
+              "conclusion": "原文没有该稿的乙接引、反抢、停止及退开；回答把这些明确标为自编，未冒用原文验证背书。"
+            },
+            {
+              "claim": "卡名、条目 ID 与实际已查阅声明",
+              "status": "indeterminate",
+              "response_evidence": [
+                {
+                  "location": "L01/A.md:30",
+                  "quote": "`arvin-choreography-baji-pairs-item-84a0e6e87c66`"
+                }
+              ],
+              "source_checks": [],
+              "conclusion": "允许文件没有卡文件或原运行记录；卡内映射和实际查阅行为不能核验。Arvin、MIT 与提交声明仅可通过共享来源信息核对。"
+            }
+          ],
+          "uncertainty": [
+            "未验证 18 秒内实际演出或生成效果；文字节拍连续不构成视频质量证明。"
+          ]
+        },
+        "B": {
+          "overall_status": "satisfied",
+          "overall_reason": "完整交付用户要求；斜退、导肘、回线、接掌退步和双方收势构成可读攻防链，来源主张中的上游动作核对相符，卡内改编细节保留未核验。",
+          "criteria": [
+            {
+              "criterion": "用户硬约束",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L01/B.md:3",
+                  "quote": "两名成年虚构武者空手试招"
+                },
+                {
+                  "location": "L01/B.md:3",
+                  "quote": "正常速度，一镜到底。"
+                },
+                {
+                  "location": "L01/B.md:17",
+                  "quote": "甲向西、乙向东各退一短步，拉至约2米"
+                },
+                {
+                  "location": "L01/B.md:46",
+                  "quote": "无能量、光波、残影、爆闪或冲击波；不加镜头震动。"
+                }
+              ],
+              "finding": "六段覆盖 0–18 秒，石院试招、主动拆解与重新占线均落实；最后退开，没有超自然能力或重伤结果。",
+              "issues": []
+            },
+            {
+              "criterion": "攻防因果、接触和恢复",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L01/B.md:14",
+                  "quote": "乙在肘到身前时向东北斜退半步，左掌轻搭甲右肘上方，将来臂导向自身南侧"
+                },
+                {
+                  "location": "L01/B.md:15",
+                  "quote": "右肘收回肋侧，转向东北的乙。乙松开左掌接触，向西南挪回中缝"
+                },
+                {
+                  "location": "L01/B.md:16",
+                  "quote": "甲左前臂横接来臂，同时向西退半步卸开；乙掌在甲胸前停住并收回"
+                }
+              ],
+              "finding": "乙先让肘线再收回位置，甲恢复支撑和收肘后应对反抢；双方攻击均有响应、接触或让空和恢复。",
+              "issues": []
+            },
+            {
+              "criterion": "空间及状态连续性",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L01/B.md:5",
+                  "quote": "乙先向东北斜退，再沿西南方向返回中缝。"
+                },
+                {
+                  "location": "L01/B.md:19",
+                  "quote": "乙左掌导肘后先脱离接触，再用右掌争中线。"
+                },
+                {
+                  "location": "L01/B.md:43",
+                  "quote": "始终留出脚下空间，清楚看见肘路、乙斜退、回中缝和双方退开。"
+                }
+              ],
+              "finding": "东北让线及西南回线提供了明确平面路径；甲转身面对乙、向西退及南侧相机保持关系。没有文字上确定的接触悬空或突然换位。",
+              "issues": []
+            },
+            {
+              "criterion": "输出形式与可用性",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L01/B.md:11",
+                  "quote": "| 时间 | 人物攻防 | 表演情绪 | 摄影机 | 特效 | 环境反馈 | 声音 |"
+                },
+                {
+                  "location": "L01/B.md:24",
+                  "quote": "18秒，16:9，正常播放速度，一镜到底。"
+                },
+                {
+                  "location": "L01/B.md:59",
+                  "quote": "这是文字编排，尚未生成或验证视频效果。"
+                }
+              ],
+              "finding": "简明六轨、可复制中文提示词及最后的来源说明齐备；时间轴和提示词同序。",
+              "issues": []
+            },
+            {
+              "criterion": "来源与补写边界",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L01/B.md:57",
+                  "quote": "本稿只选这一招，没有照搬前三拳或“格挡必然打乱”的结果。"
+                },
+                {
+                  "location": "L01/B.md:58",
+                  "quote": "的“顶”与本项目改编说明"
+                },
+                {
+                  "location": "L01/B.md:59",
+                  "quote": "乙东北斜退、左掌导肘、脱手后回中缝、右掌反抢"
+                }
+              ],
+              "finding": "将自己编写的对手响应与既定破防结果分开，且用“本项目改编说明”而非直接将恢复规则全部归为上游。该改编说明本身不可核验。",
+              "issues": []
+            }
+          ],
+          "source_checks": [
+            {
+              "claim": "阎王三点手＋顶心肘与右肘前向路径",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L01/B.md:57",
+                  "quote": "保留“右臂曲肘、脚下进身、肘尖向胸前短发”的运动方向。"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "2147-2155",
+                  "quote": "| 顶心肘 | 八极拳 | 三手打完对方格挡已被打乱，顺势右臂曲肘，脚下跺地爆冲，肘尖如破城锤直取心窝正中 | 肘尖 | 心窝/胸口正中 |"
+                }
+              ],
+              "conclusion": "引用的组合名和路径相符；克制短发及反击链为改编而非源文原样。"
+            },
+            {
+              "claim": "八极“顶”、近身肘与脚下发力",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L01/B.md:58",
+                  "quote": "采用近距肘击、脚下支撑"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "2309",
+                  "quote": "| **顶** | 肘尖如破城锤短促爆发前撞，脚下跺地爆冲 | 正面硬撞破开格挡 | 肘尖开路+跺地炸裂，力从地起贯穿到肘 |"
+                },
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "2323",
+                  "quote": "| **肘** | 顶肘/盘肘/反背肘 | 肘尖短促爆发前撞/横扫/回旋，最暴力的近身武器 | 肋骨/胸口/面门 |"
+                },
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "2326",
+                  "quote": "| **足部震脚** | 跺地/行步连冲 | 每步跺地震地，脚下力从地起贯穿全身 | 地面震裂+发力根基 |"
+                }
+              ],
+              "conclusion": "短促肘击及脚下发力可由源文支撑；具体落脚顺序和恢复不能由这些行直接推出。"
+            },
+            {
+              "claim": "本项目改编说明载有让空后重立支撑；两卡固定版本标注",
+              "status": "indeterminate",
+              "response_evidence": [
+                {
+                  "location": "L01/B.md:58",
+                  "quote": "以及让空后重立支撑的要求。两卡均载明源自 Arvin 固定版本"
+                }
+              ],
+              "source_checks": [],
+              "conclusion": "卡文件未在允许输入内。源文对应八极段没有这条恢复要求，但回答将其连同项目改编说明一起引用，不能据此断言来源伪造或核验通过。"
+            }
+          ],
+          "uncertainty": [
+            "无法核验冻结包内两卡的改编栏、版本标签和路径；未验证实际视频表现。"
+          ]
+        }
+      },
+      "comparison": {
+        "winner": "tie",
+        "confidence": "high",
+        "reason": "两份均满足原始请求，且都写出真实的主动拆招与恢复。A 给出更直接的上游行号，B 的斜退—回线空间更具体；这些差异没有形成核心交付是否成立的决定性差距。不按字数或风格裁决。"
+      }
+    },
+    {
+      "case_id": "L02",
+      "request": {
+        "location": "L02/request.txt:1",
+        "quote": "请只依据资料库原文，整理柔道‘小内返’的中文名、外文名和具体动作说明，并给出可定位出处。没有原文依据的部分明确保留缺项，不用其他招式替代，不从常识补写。"
+      },
+      "answers": {
+        "A": {
+          "overall_status": "satisfied",
+          "overall_reason": "准确提取名称与罗马音；动作说明保留缺项；上游第 1808 行可复核，没有用小内刈或通用柔道说明填空。",
+          "criteria": [
+            {
+              "criterion": "原文信息与硬约束",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L02/A.md:5",
+                  "quote": "| 中文名 | 小内返 |"
+                },
+                {
+                  "location": "L02/A.md:6",
+                  "quote": "| 外文名 | **Ko-uchi-gaeshi**，原表标为“罗马音”。 |"
+                },
+                {
+                  "location": "L02/A.md:7",
+                  "quote": "**缺项。** 该行“打戏价值”栏为空，没有提供具体动作说明。"
+                }
+              ],
+              "finding": "三项均按请求呈现；原文缺动作，回答保留缺项本身即满足要求，不应因未创作动作而扣分。",
+              "issues": []
+            },
+            {
+              "criterion": "动作因果和空间连续性",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L02/A.md:17",
+                  "quote": "因此具体动作保留缺项，不以整卡改编建议、其他招式或常识补写。"
+                }
+              ],
+              "finding": "本题是资料摘录而非编排；没有动作链需要评估，克制补写与任务相符。",
+              "issues": []
+            },
+            {
+              "criterion": "定位与输出可用性",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L02/A.md:15",
+                  "quote": "“柔道67式投技速查” → “手技（15本）” → 第12项"
+                },
+                {
+                  "location": "L02/A.md:15",
+                  "quote": "固定版本原文第1808行"
+                }
+              ],
+              "finding": "表格、原文行、章节、条目序号和固定提交链接足以定位；无需访问网络即可与提供的参考文本核对。",
+              "issues": []
+            }
+          ],
+          "source_checks": [
+            {
+              "claim": "中文名、罗马音、空动作信息",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L02/A.md:12",
+                  "quote": "| 12 | 小内返 | Ko-uchi-gaeshi | |"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "1793-1795",
+                  "quote": "### 柔道67式投技速查（打戏常用★标注）\n#### 手技（15本）\n| # | 中文名 | 罗马音 | 打戏价值 |"
+                },
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "1808",
+                  "quote": "| 12 | 小内返 | Ko-uchi-gaeshi | |"
+                }
+              ],
+              "conclusion": "逐字相符。全文定向搜索小内返与 Ko-uchi-gaeshi 只命中该行；柔道段 1783–1907 没有该招专门动作。"
+            },
+            {
+              "claim": "不是将其他相近招式拿来补全",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L02/A.md:17",
+                  "quote": "不以整卡改编建议、其他招式或常识补写。"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "1831",
+                  "quote": "| 3 | ★小内刈 | Ko-uchi-gari | 从内侧扫脚踝 |"
+                },
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "1845",
+                  "quote": "| 17 | 小内刈返 | Ko-uchi-gari-gaeshi | |"
+                }
+              ],
+              "conclusion": "回答未把这些不同名称的条目当作小内返动作来源。"
+            },
+            {
+              "claim": "本地卡第 53 行、条目 ID",
+              "status": "indeterminate",
+              "response_evidence": [
+                {
+                  "location": "L02/A.md:17",
+                  "quote": "`library/techniques/arvin-tech-judo.md` 第53行；条目 ID：`arvin-tech-judo-item-655720874f5d`"
+                }
+              ],
+              "source_checks": [],
+              "conclusion": "未获准读取该卡，无法判断其本地行号或 ID；不影响已核验的上游定位。"
+            }
+          ],
+          "uncertainty": [
+            "本地卡定位未核验；没有依据将其判为正确或错误。"
+          ]
+        },
+        "B": {
+          "overall_status": "satisfied",
+          "overall_reason": "与源文一致地保留动作缺项，提供固定提交及第 1808 行，没有进行常识补写或招式替换。",
+          "criteria": [
+            {
+              "criterion": "原文信息与硬约束",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L02/B.md:5",
+                  "quote": "| 中文名 | 小内返 |"
+                },
+                {
+                  "location": "L02/B.md:6",
+                  "quote": "| 外文名 | Ko-uchi-gaeshi（原文列名为“罗马音”） |"
+                },
+                {
+                  "location": "L02/B.md:7",
+                  "quote": "**缺项**。该条目的“打戏价值”栏为空"
+                }
+              ],
+              "finding": "准确完成三个所需字段；没有夸大原文提供的内容。",
+              "issues": []
+            },
+            {
+              "criterion": "动作因果和空间连续性",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L02/B.md:20",
+                  "quote": "具体起手、接触部位、移动方向及完成动作均保留缺项"
+                }
+              ],
+              "finding": "本题不要求创作动作；不展开缺依据的动作链符合请求。",
+              "issues": []
+            },
+            {
+              "criterion": "定位与输出可用性",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L02/B.md:17",
+                  "quote": "“柔道67式投技速查 → 手技（15本）”，第 12 项。"
+                },
+                {
+                  "location": "L02/B.md:18",
+                  "quote": "`seedance-combat-prompt/SKILL.md` 第 1808 行"
+                }
+              ],
+              "finding": "有表格、逐字原文、章节和固定版本行链接，可核对关键事实。",
+              "issues": []
+            }
+          ],
+          "source_checks": [
+            {
+              "claim": "名称、罗马音、动作缺项与上游行号",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L02/B.md:12",
+                  "quote": "| 12 | 小内返 | Ko-uchi-gaeshi | |"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "1795",
+                  "quote": "| # | 中文名 | 罗马音 | 打戏价值 |"
+                },
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "1808",
+                  "quote": "| 12 | 小内返 | Ko-uchi-gaeshi | |"
+                }
+              ],
+              "conclusion": "准确对应。柔道段完整定向读取及全文名称搜索均未提供该招专门说明。"
+            },
+            {
+              "claim": "卡内其他原文也没有专门动作说明",
+              "status": "partially_supported",
+              "response_evidence": [
+                {
+                  "location": "L02/B.md:7",
+                  "quote": "卡内其余原文也没有给出“小内返”的专门动作说明。"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "1783-1907",
+                  "quote": "## 九·⅓·½、柔道（Judo）核心技法详解"
+                },
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "1808",
+                  "quote": "| 12 | 小内返 | Ko-uchi-gaeshi | |"
+                }
+              ],
+              "conclusion": "提供的上游 1783–1907 范围支持没有该招专门说明；卡内是否还有别的摘录未核验。"
+            },
+            {
+              "claim": "本地卡第 55 行、摘录范围与未联网的过程声明",
+              "status": "indeterminate",
+              "response_evidence": [
+                {
+                  "location": "L02/B.md:17",
+                  "quote": "`arvin-tech-judo` 第 55 行"
+                },
+                {
+                  "location": "L02/B.md:18",
+                  "quote": "此定位依据本地摘录的行号对应，未联网读取。"
+                }
+              ],
+              "source_checks": [],
+              "conclusion": "卡文件与原运行未获准访问；不能判定本地第 55 行或实际读取过程。"
+            }
+          ],
+          "uncertainty": [
+            "A 的卡内 53 行和 B 的 55 行不同，但不允许读取该卡，不能选一个作为正确答案或据此扣分。"
+          ]
+        }
+      },
+      "comparison": {
+        "winner": "tie",
+        "confidence": "high",
+        "reason": "两份的关键提取、留缺和上游定位完全相同且均正确。仅本地卡行号不同，现有证据无法裁决；不能将这个未核验差异当作胜负依据。"
+      }
+    },
+    {
+      "case_id": "L03",
+      "request": {
+        "location": "L03/request.txt:1",
+        "quote": "使用资料库白鸽的战斗动作风格，写18秒白鸽与另一名成年虚构练习者的无能量演武。场地是有木柱的练功厅，正常速度，可以切镜，双方主动攻防，结尾以拱手结束。给六轨时间轴与可复制中文提示词，并简述来源和改编。不要沿用现成白鸽对红茶示例的人物配对或交锋顺序，不生成视频。"
+      },
+      "answers": {
+        "A": {
+          "overall_status": "satisfied",
+          "overall_reason": "白鸽的主动腿法、弹性后撤及短暂撑地反击有原文依据；双方均主动，木柱造成真实改线，恢复和拱手有明确时段。示例来源及实际读取历史留作未核验，不据此断言复用。",
+          "criteria": [
+            {
+              "criterion": "用户硬约束",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L03/A.md:5",
+                  "quote": "另一位练习者为本次原创的成年虚构人物“沈砚”；白鸽亦按成年虚构角色呈现。"
+                },
+                {
+                  "location": "L03/A.md:7",
+                  "quote": "18秒包含收势，全程正常速度，允许切镜，空手，无能量、残影或夸张击飞。"
+                },
+                {
+                  "location": "L03/A.md:19",
+                  "quote": "各以左掌包右拳，在胸前拱手，微微颔首"
+                },
+                {
+                  "location": "L03/A.md:80",
+                  "quote": "交付为文字方案，未生成视频"
+                }
+              ],
+              "finding": "木柱练功厅、无能量、18 秒、正常速度及拱手齐全；伙伴为沈砚，明确没有沿用白鸽与红茶配对。",
+              "issues": []
+            },
+            {
+              "criterion": "双方主动攻防与接触/避让因果",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L03/A.md:14",
+                  "quote": "白鸽抢先主攻"
+                },
+                {
+                  "location": "L03/A.md:15",
+                  "quote": "沈砚趁白鸽收腿重新进身，向西跟一步，右掌沿胸口高度直探。"
+                },
+                {
+                  "location": "L03/A.md:17",
+                  "quote": "沈砚先以左掌向白鸽肩前探入。白鸽屈膝向侧下方让开掌线"
+                },
+                {
+                  "location": "L03/A.md:18",
+                  "quote": "沈砚看见白鸽两脚落定，重新向西北小步切入"
+                }
+              ],
+              "finding": "沈砚试探、退接、追掌、再进攻，白鸽主攻、后撤、避掌斜踢及短引回应；攻守发生转换。腿轻触前臂、探掌落空、高踢肩外掠空都有明确处理。",
+              "issues": []
+            },
+            {
+              "criterion": "支撑、恢复和空间连续性",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L03/A.md:14",
+                  "quote": "白鸽屈膝收右腿，右脚落回左脚后方，面向东"
+                },
+                {
+                  "location": "L03/A.md:16",
+                  "quote": "先把抬起的右脚放稳，再向南横移一步，左脚跟进"
+                },
+                {
+                  "location": "L03/A.md:17",
+                  "quote": "右脚落地，左脚随后补稳，左掌离地起身。"
+                },
+                {
+                  "location": "L03/A.md:28",
+                  "quote": "两人必须实际向南走到空地，不能靠切镜换位置。"
+                }
+              ],
+              "finding": "支撑脚、踢腿回收、撑手撤离和对手再进身的先后有交代；木柱先入画，限制向北腿路后双方走向南侧，切镜未作为瞬移手段。不能仅凭文字确认单手半翻转的实际表现，但未发现明确状态冲突。",
+              "issues": []
+            },
+            {
+              "criterion": "形式与可复制性",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L03/A.md:11",
+                  "quote": "| 时间 | 人物攻防 | 表演情绪 | 摄影机 | 特效 | 环境反馈 | 声音 |"
+                },
+                {
+                  "location": "L03/A.md:26",
+                  "quote": "18秒双人无能量演武，16:9，全程正常播放速度，允许自然切镜。"
+                },
+                {
+                  "location": "L03/A.md:65",
+                  "quote": "所有起动、接触、让空、恢复与拱手都包含在18秒内"
+                }
+              ],
+              "finding": "六轨及独立代码块提示词可用；分段总计 18 秒，时间轴和提示词保留相同关键动作。",
+              "issues": []
+            },
+            {
+              "criterion": "来源、改编与排除现成示例",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L03/A.md:76",
+                  "quote": "将头颈打击改成肩外掠空，补写主动避让、收腿与起身。"
+                },
+                {
+                  "location": "L03/A.md:78",
+                  "quote": "沈砚、交锋次序、柱旁换线、前臂短引、停止信号及拱手均为本次原创编排"
+                }
+              ],
+              "finding": "明确区分原招路径与伙伴、响应、恢复和环境调度；原文武学风格被克制改编而非强制照搬超自然效果。完全未复用现成示例的断言不能在允许材料内独立证实。",
+              "issues": []
+            }
+          ],
+          "source_checks": [
+            {
+              "claim": "白鸽主动腿法、躲避反击及低位只是短暂辅助",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L03/A.md:78",
+                  "quote": "主动中高位腿法与闪避反击的识别特征"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "875-880",
+                  "quote": "白鸽应主动进攻、边闪边踢、躲避即反击，终结优先用540°水平旋风腿把对手踹飞。"
+                }
+              ],
+              "conclusion": "主动回攻、腿法主轴与短暂低位转换相符；不沿用踢飞终结是满足演武要求的已标明改编。"
+            },
+            {
+              "claim": "安哥拉侧旋踢",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L03/A.md:74",
+                  "quote": "保留单脚支撑、水平一周旋身与中位圆弧腿路。"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "898",
+                  "quote": "| 巴西战舞 | 安哥拉侧旋踢 | 单脚支撑弹性旋转360°，另一腿水平大圆弧扫击腰腹肋部 | 侧翼突袭/躯干消耗 |"
+                }
+              ],
+              "conclusion": "运动路径与第 898 行一致；退接与收腿落脚明确属于补写。"
+            },
+            {
+              "claim": "基达达后撤",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L03/A.md:75",
+                  "quote": "保留交替弹性后移、重心起伏与掌势干扰。"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "897",
+                  "quote": "| 巴西战舞 | 基达达后撤 | 双脚交替弹性滑步向后回旋，重心上下起伏，单掌虚晃干扰 | 周旋拉扯/调整角度 |"
+                }
+              ],
+              "conclusion": "交替弹性后移、重心起伏、单掌干扰有依据；柱边南移不是伪称原招。"
+            },
+            {
+              "claim": "马尔特洛翻转踢",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L03/A.md:76",
+                  "quote": "保留单手触地、侧身半翻与后腿上扬。"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "899",
+                  "quote": "| 巴西战舞 | 马尔特洛翻转踢 | 单手触地侧身半翻转，后腿由下向上斜扬抽打下颌肩颈 | 低位起腿/近身反打 |"
+                }
+              ],
+              "conclusion": "名称和路径准确，落点改为肩外掠空已标注；源文没有提供完整恢复，回答没有冒称恢复来自原文。"
+            },
+            {
+              "claim": "卡 ID、条目 ID、读取历史及未套用现成白鸽对红茶示例",
+              "status": "indeterminate",
+              "response_evidence": [
+                {
+                  "location": "L03/A.md:78",
+                  "quote": "未读取或套用现成白鸽对红茶示例。"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "2883-2888",
+                  "quote": "❌ 旧写法：红茶正蹬→白鸽交叉格挡被蹬开→下一招白鸽又双臂格挡"
+                }
+              ],
+              "conclusion": "允许源文中的这组对照段落以红茶正蹬及拳肘追击为序，与本稿的旋踢—探掌—柱旁换路—撑地斜踢不同；但指定的完整示例文件未提供，不能证明作者读取历史或排除一切示例复用。"
+            }
+          ],
+          "uncertainty": [
+            "未验证 18 秒真实演出或生成质量；完整禁用示例与卡内 ID 不可核验。"
+          ]
+        },
+        "B": {
+          "overall_status": "partial",
+          "overall_reason": "大部分核心要求已完成，招式选择与来源相符；但 6–9 秒到底先解除接触还是先南移，在具体动作和连续性规则之间不一致，需统一后才能成为无歧义可执行提示词。",
+          "criteria": [
+            {
+              "criterion": "用户硬约束",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L03/B.md:5",
+                  "quote": "白鸽与顾岑均为成年虚构人物"
+                },
+                {
+                  "location": "L03/B.md:5",
+                  "quote": "16:9，正常速度，允许切镜，无台词、空手、无能量。"
+                },
+                {
+                  "location": "L03/B.md:18",
+                  "quote": "各以右手握拳、左掌包覆右拳，在胸前完成拱手"
+                },
+                {
+                  "location": "L03/B.md:81",
+                  "quote": "交付为文本导演稿，没有生成视频"
+                }
+              ],
+              "finding": "木柱厅、18 秒、正常速度、无能量和末尾拱手齐备；顾岑替换红茶，人物配对未复用。",
+              "issues": []
+            },
+            {
+              "criterion": "双方主动攻防与主要动作链",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L03/B.md:13",
+                  "quote": "顾岑跟进半步，左掌直送白鸽上胸前的护架。"
+                },
+                {
+                  "location": "L03/B.md:14",
+                  "quote": "白鸽将重心移到左脚，抬右膝，右小腿向前弹出"
+                },
+                {
+                  "location": "L03/B.md:15",
+                  "quote": "顾岑趁落脚跟入，右掌试探白鸽肩前护架。"
+                },
+                {
+                  "location": "L03/B.md:16",
+                  "quote": "顾岑看起转后向东斜退，双前臂并拢，接住腿路末端的轻触并屈肘卸力。"
+                }
+              ],
+              "finding": "顾岑试掌、跟进和退接，白鸽拨腕、弹腿与旋踢构成双方主动攻防。腿攻均有承接和回收，不是没有对手回应的招式清单。",
+              "issues": []
+            },
+            {
+              "criterion": "支撑、恢复和空间连续性",
+              "status": "partial",
+              "evidence": [
+                {
+                  "location": "L03/B.md:46",
+                  "quote": "先将左脚移向南侧空地，右脚随移，脱开掌臂接触。"
+                },
+                {
+                  "location": "L03/B.md:72",
+                  "quote": "掌臂脱开后再换位。"
+                },
+                {
+                  "location": "L03/B.md:20",
+                  "quote": "双方全程空手，掌臂接触解除后才移位。"
+                },
+                {
+                  "location": "L03/B.md:20",
+                  "quote": "白鸽先左脚支撑、右腿弹击，收腿后右脚落前；南移完成后仍由右脚支撑，左腿旋踢"
+                }
+              ],
+              "finding": "两次踢腿的支撑转换、落脚和木柱改线整体清楚。局部有两套不能同时按文字严格执行的动作顺序。",
+              "issues": [
+                {
+                  "severity": "moderate",
+                  "location": "L03/B.md:15,20,46,72",
+                  "issue": "6–9 秒详细动作写先左脚南移、右脚随移而后脱开接触，连续性段却要求先脱开接触才移位。这关系双方手臂在换线时是否保持接触，不能靠读者自行决定。",
+                  "minimal_fix": "把时间轴和提示词 6–9 秒统一为先拨开并松开掌臂接触，再左脚南移、右脚跟进；或统一改为保持轻接随步脱开，并相应修正连续性规则。"
+                }
+              ]
+            },
+            {
+              "criterion": "形式与可复制性",
+              "status": "partial",
+              "evidence": [
+                {
+                  "location": "L03/B.md:11",
+                  "quote": "| 时间 | 人物攻防 | 表演情绪 | 摄影机 | 特效 | 环境反馈 | 声音 |"
+                },
+                {
+                  "location": "L03/B.md:25",
+                  "quote": "18秒，16:9，正常速度，允许内部切镜。"
+                }
+              ],
+              "finding": "六轨、独立中文代码块及来源说明均交付；复制提示词会同时带入第 46 行与第 72 行的先后矛盾，因此需要一处小范围修订。不将这一问题扩大成整段无法拍摄或生成。",
+              "issues": []
+            },
+            {
+              "criterion": "来源、改编与排除现成示例",
+              "status": "satisfied",
+              "evidence": [
+                {
+                  "location": "L03/B.md:78",
+                  "quote": "“基达达后撤”用于首段拉距；谭腿“弹”用于中位主动回攻；“安哥拉侧旋踢”用于移出柱边后的水平圆弧回攻。"
+                },
+                {
+                  "location": "L03/B.md:79",
+                  "quote": "顾岑、掌击试探、木柱限制、向南转线和拱手均为本次原创调度"
+                }
+              ],
+              "finding": "三项招式都有源文；轻触、木柱和新对手标为改编。禁用示例交锋顺序的具体归因有核验缺口，单独列出，不作为确定虚构或确定复用。",
+              "issues": []
+            }
+          ],
+          "source_checks": [
+            {
+              "claim": "白鸽腿法主轴与所选三项",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L03/B.md:78",
+                  "quote": "保留白鸽以腿法主动应答的辨识度，不把地堂滚扫当主轴"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "876-880",
+                  "quote": "中位用36路腿法/谭腿连续抽击，低位少林旋风地堂腿只作为辅助突围与破下盘，不再喧宾夺主。"
+                },
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "883",
+                  "quote": "| 谭腿 | 弹 | 小腿由屈到伸瞬间弹射如弹弓发射 | 最快出腿，弹收弹收 |"
+                },
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "897",
+                  "quote": "| 巴西战舞 | 基达达后撤 | 双脚交替弹性滑步向后回旋，重心上下起伏，单掌虚晃干扰 | 周旋拉扯/调整角度 |"
+                },
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "898",
+                  "quote": "| 巴西战舞 | 安哥拉侧旋踢 | 单脚支撑弹性旋转360°，另一腿水平大圆弧扫击腰腹肋部 | 侧翼突袭/躯干消耗 |"
+                }
+              ],
+              "conclusion": "弹腿伸屈、后撤摇步和单脚水平圆弧旋踢与原文对应。首段前臂拨腕是为对手掌攻编排的响应，不应被反向当作第 897 行逐字动作。"
+            },
+            {
+              "claim": "移除紫黑能量与踢飞终结",
+              "status": "supported",
+              "response_evidence": [
+                {
+                  "location": "L03/B.md:79",
+                  "quote": "原文重击改为护架轻触，移除紫黑能量与踢飞终结。"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "876",
+                  "quote": "终结优先用540°水平旋风腿把对手踹飞。"
+                },
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "915",
+                  "quote": "**劲气颜色**：紫黑色气焰"
+                }
+              ],
+              "conclusion": "原文确有这些视觉和终结设定，取消它们符合本次无能量演武的用户约束。"
+            },
+            {
+              "claim": "现成示例的“前蹬—拳压—低位滚扫—再前蹬”顺序",
+              "status": "indeterminate",
+              "response_evidence": [
+                {
+                  "location": "L03/B.md:79",
+                  "quote": "也不采用其“前蹬—拳压—低位滚扫—再前蹬”的交锋顺序。"
+                }
+              ],
+              "source_checks": [
+                {
+                  "file": "reference/upstream-source.md",
+                  "lines": "2883-2888",
+                  "quote": "✅ 新写法：红茶正蹬→白鸽交叉格挡被蹬开，双臂甩向两侧，胸口暴露——"
+                }
+              ],
+              "conclusion": "对白鸽、红茶、前蹬、拳压、滚扫与再前蹬做定向全文搜索，未定位所称完整顺序；允许文本中的 2883–2888 为另一组正蹬—冲拳—摆拳—砸肘对照，不足以验证 B 的具体归因。输出本身为试掌—弹腿—柱边换线—旋踢，与其声称禁用的链不同，但这不等于已核验指定示例。"
+            },
+            {
+              "claim": "角色卡内容层级 detailed、卡内范围和使用记录",
+              "status": "indeterminate",
+              "response_evidence": [
+                {
+                  "location": "L03/B.md:77",
+                  "quote": "内容层级为 detailed；卡内标注 Arvin 资料固定提交"
+                },
+                {
+                  "location": "L03/B.md:77",
+                  "quote": "本次使用包内摘录，未联网核验历史谱系或正统招名。"
+                }
+              ],
+              "source_checks": [],
+              "conclusion": "无法读取卡文件或原运行，不能核验层级、卡内标签和实际使用过程；参考源文白鸽段 875–916 的位置可核对。"
+            }
+          ],
+          "uncertainty": [
+            "没有材料证明其复用了完整现成示例，也没有材料证明作者完全没读过示例。",
+            "先后顺序问题是文字内部冲突；未推断它必然导致生成失败。"
+          ]
+        }
+      },
+      "comparison": {
+        "winner": "A",
+        "confidence": "medium",
+        "reason": "两份均保留白鸽的腿法和双方主动攻防，A 的三个招式有逐项行号且补写边界明确。决定性差异是 B 在换线时接触解除的先后冲突，A 未见同类冲突。B 的主要结构仍然成立，修改这一处即可显著收敛差距；禁用示例核验缺口不单独用于定胜负。"
+      }
+    }
+  ],
+  "aggregate_comparison": {
+    "winner": "A",
+    "reason": "L01 与 L02 并列；L03 因 B 的局部动作顺序冲突，A 更完整。没有以篇幅、术语数量或文风偏好判优。"
+  }
+}

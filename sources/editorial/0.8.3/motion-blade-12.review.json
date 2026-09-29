@@ -1,0 +1,70 @@
+{
+  "plan_id": "motion-blade-12",
+  "reviews": [
+    {
+      "scope": "headers",
+      "input_digest": "f5a135bfba003357b70e5c8a7ea0792c1ea661753000aeb7bc2e206f5499470d",
+      "expression_digest": "64a751a643e6a78455eba3e002599a90fd0d88942830285773c5dca094420102",
+      "reviewer": "Codex primary author text review 2026-09-23",
+      "method": "agent",
+      "checks": {
+        "identity_action": "A和B各右手一把钢剑，横切让空、回刺被拨开、无伤脱离的目标一致。",
+        "camera_timing": "12秒、正常速度、S01南侧平移后减速停止，11.4秒前完成主结果。",
+        "ability_cost": "只有A的EDGE_GLOW显示剑路，不授予离体伤害；停挥停止新增。",
+        "continuity": "A始终在B西侧，北墙和方石柱固定，最终各握原剑且旧光退净。"
+      }
+    },
+    {
+      "scope": "P01",
+      "input_digest": "b6ae162223f6604bc101982776b0da66e197d7fd1e8e3afa45ad24c3bf193a40",
+      "expression_digest": "b81c143a6dd43f453b90fb94f5e491c72295efd9ae400ab08a9c5d6f9171ea99",
+      "reviewer": "Codex primary author text review 2026-09-23",
+      "method": "agent",
+      "checks": {
+        "identity_action": "A东进小半步，B同向退小半步，建立原有间距。",
+        "camera_timing": "南侧跟A躯干起步，背景相对缓慢向左，不强加长拖影。",
+        "ability_cost": "尚未挥刃，因此没有新增光迹。",
+        "continuity": "东退与东进均可见，原左右关系不因相机平移而改变。"
+      }
+    },
+    {
+      "scope": "P02",
+      "input_digest": "aa3d866f903327d2b3eddfc69b4ebe63dbc20faa39e50da1eef0bb42c11e27c0",
+      "expression_digest": "82b47e561b3c80f117acfae9f3db682f5feb104fc544bde7ee14576d42b5e1d5",
+      "reviewer": "Codex primary author text review 2026-09-23",
+      "method": "agent",
+      "checks": {
+        "identity_action": "A东进横切，B东退让出胸线；挥空后A开始回收。",
+        "camera_timing": "相机向东跟随，北墙在画面向左掠过；剑尖弧形模糊与让空间隙分开描述。",
+        "ability_cost": "A有附刃窄光、B无；挥空没有接触爆点，旧尾迹不随剑回转。",
+        "continuity": "A仍在B西侧，两剑仍在原右手；旧光留在世界位置并进入下一段。"
+      }
+    },
+    {
+      "scope": "P03",
+      "input_digest": "453d39cc4ac92f67f4a8f5230d33c8cfde0252e49efa0e476caea4627cd0bed2",
+      "expression_digest": "82e80b4488df2e5de2399aedae50abc4e06af42aaf8d22f2b98902faaf546371",
+      "reviewer": "Codex primary author text review 2026-09-23",
+      "method": "agent",
+      "checks": {
+        "identity_action": "A先回剑，B西进回刺；A西退斜拨，两剑滑离后各自回收。",
+        "camera_timing": "南侧连续减速，接触时不急甩、不临时改曝光，也不插慢放。",
+        "ability_cost": "只有A回剑产生短新光，旧横切轨迹继续衰减；光带避开交刃与持械区域。",
+        "continuity": "两剑滑擦对应短金属声，鞋底擦痕留存；没有凭空地面爆裂。"
+      }
+    },
+    {
+      "scope": "P04",
+      "input_digest": "00bda5e17d036b20ae85263e22fc8fcb5bff403bc0825a67e0b9602e4a4554a3",
+      "expression_digest": "6c11cafc11cf0032f8347e89230f4b3f9ac9ce60c562932bdd7392b77bdd03ba",
+      "reviewer": "Codex primary author text review 2026-09-23",
+      "method": "agent",
+      "checks": {
+        "identity_action": "A西退、B东退并降低各自钢剑，目标为脱离而非击败。",
+        "camera_timing": "人物与相机11.4秒前止势，尾段保留呼吸；背景停止横拖与机位停止相容。",
+        "ability_cost": "新光停止与旧光退场分别描述，旧尾迹在12秒前退净不是曝光拖糊漂散。",
+        "continuity": "两人无伤、实体两剑连续，固定场景与浅擦痕留存，结尾与总设定一致。"
+      }
+    }
+  ]
+}

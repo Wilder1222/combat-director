@@ -1,0 +1,29 @@
+{
+  "format": "combat-motion-media-review-draft/1",
+  "status": "pending_media",
+  "anonymous_media_id": null,
+  "reviewer": null,
+  "reviewed_at": null,
+  "original_media_sha256": null,
+  "viewing": {
+    "normal_speed_complete_view": false,
+    "observed_intervals": [],
+    "continuous_frame_intervals": [],
+    "audio_actually_heard": false,
+    "postprocessed_version": false,
+    "limits": []
+  },
+  "axes": [
+    {"axis": "action_and_response", "status": "pending", "evidence": []},
+    {"axis": "contact_or_avoidance_readability", "status": "pending", "evidence": []},
+    {"axis": "identity_prop_and_grip_continuity", "status": "pending", "evidence": []},
+    {"axis": "relative_motion_and_blur_direction", "status": "pending", "evidence": []},
+    {"axis": "appearance_and_effect_lifetime", "status": "pending", "evidence": []},
+    {"axis": "duration_speed_and_camera_constraints", "status": "pending", "evidence": []}
+  ],
+  "hard_failures": [],
+  "uncertain_events": [],
+  "aesthetic_observations": [],
+  "overall_status": "pending",
+  "evidence_format": "Each actual observation states start/end time, viewing method, visible or heard fact, and inference separately. Pending entries are not passes."
+}

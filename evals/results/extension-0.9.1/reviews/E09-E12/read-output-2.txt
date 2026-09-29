@@ -1,0 +1,969 @@
+
+FILE: runs/E09/revised.plan.json
+1: {
+2:   "schema_version": "1.2",
+3:   "editorial_reviews": {
+4:     "headers": {
+5:       "input_digest": "25a0db4983883022f16ee2fcb13a97afcab678cc6272ea6a462712d4a9c19294",
+6:       "expression_digest": "54209722b6a64c32dfdb0d03583ae5c32556806971a43a08351141947301b15a",
+7:       "reviewer": "Codex editorial review 2026-09-21",
+8:       "method": "agent",
+9:       "checks": {
+10:         "identity_action": "总设定人物身份、目标、初始持物与cast逐项对应。",
+11:         "camera_timing": "单次目标时长与入出点包含关系一致；所有镜头均为S01连续，摘要的“不切镜”是限制不是切镜指令。",
+12:         "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+13:         "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。 总设定结尾与最终after已对照，结尾未改变。"
+14:       }
+15:     },
+16:     "P01": {
+17:       "input_digest": "3105338b79a8f699a869ee297722589848d6637b2f0c48b0442428db849bfe1d",
+18:       "expression_digest": "ac9de3fb094849d8f2af277f35be5e61403e87d1050edabcb32939defdeab657",
+19:       "reviewer": "Codex editorial review 2026-09-21",
+20:       "method": "agent",
+21:       "checks": {
+22:         "identity_action": "B01-B02 接短刀后后退，双方仍持原兵器；摘要保留逼近北缘的结果。",
+23:         "camera_timing": "单次目标时长与入出点包含关系一致；所有镜头均为S01连续，摘要的“不切镜”是限制不是切镜指令。",
+24:         "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+25:         "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+26:       }
+27:     },
+28:     "P02": {
+29:       "input_digest": "3ea79266680ac77fc332a3e97e58161f35280f29c9392410dff31526673934e0",
+30:       "expression_digest": "840da80835fa7ec13860914baa4457fe3fadc65b3eb46480eed61b11aa59a008",
+31:       "reviewer": "Codex editorial review 2026-09-21",
+32:       "method": "agent",
+33:       "checks": {
+34:         "identity_action": "B03 侧身接住压迫并恢复重心，未添加切镜或仙术。",
+35:         "camera_timing": "单次目标时长与入出点包含关系一致；所有镜头均为S01连续，摘要的“不切镜”是限制不是切镜指令。",
+36:         "ability_cost": "未使用超自然能力，环境作用有动作原因。",
+37:         "continuity": "段落结束与所选最后一拍after对应；后一拍before继承该状态。未做物理或媒体效果验证。"
+38:       }
+39:     },
+40:     "P03": {
+41:       "input_digest": "cfa8e1dccc9a6b3cd76f0d8955d931b6d871c869087a68c0d7064c96efcfc825",
+42:       "expression_digest": "6da27d4081b375a88587a92cce5b5a0b9dcc176f2d39a2f4852c442bf956c051",
+43:       "reviewer": "Codex E09 局部修订语义复核 2026-09-29",
+44:       "method": "agent",
+45:       "checks": {
+46:         "identity_action": "已对读B04、B05与P03摘要：A始终右手握原直剑；短幅送剑、屈肘卸力回到身前、近护手处接刀、小幅带剑格、停止施压的顺序一致。B仍先后退到碎石带，再失衡松开短刀一膝触地；唯一离手物为B的短刀。未添加兵器、能力或额外交锋。",
+47:         "camera_timing": "B04为7至10秒，B05为10至12.5秒，时间不变；S01、南侧、continuous及横移再小幅后退均与原计划和摘要一致，未加入特写、切镜、慢动作或黑场。",
+48:         "ability_cost": "abilities为空且fantasy=false；送剑、回收、剑格带偏与碎石失衡均为人物级动作。恢复依靠屈肘和落稳重心，直剑无离手或自行移动能力。",
+49:         "continuity": "B04.before保持B03.after；修改后的B04.after.A与B05.before.A逐字一致，持续握柄且剑在身前。B05.after完整保持原状，仍等于B06.before；既有擦痕、碎石与落刀留存。摘要终态与B05.after一致；此为文本语义复核，未验证视频。"
+50:       }
+51:     },
+52:     "P04": {
+53:       "input_digest": "8278ddfb15a30eb9a82c35d73fa9538d4fb293c50f5778fb82752a7258f6c8b5",
+54:       "expression_digest": "5fd87c1314f29f127aebdbc452eba836e6136a0425bb54c312853d30c36991e0",
+55:       "reviewer": "Codex E09 局部修订语义复核 2026-09-29",
+56:       "method": "agent",
+57:       "checks": {
+58:         "identity_action": "已对读B06与P04原摘要，两者内容均未改：A从空隙通过、两步后转身，B原位一膝触地不捡刀。A沿用右手直剑、B右手空，P03握持修订不引入新物件。",
+59:         "camera_timing": "12.5至15秒仍为S01南侧continuous，后侧平移拉开。14.4秒前到安全距离、末0.6秒呼吸的要求与原时间预算和摘要相同。",
+60:         "ability_cost": "无新增能力和特效，A通过由两步实际移动完成；剑尖略低不表示脱手。B保持失衡后的支撑姿态。",
+61:         "continuity": "P04因继承范围内B04.after细化而stale，故重新复核。B05.after与B06.before均未改且相等，B06.after与总设定结尾对应：A转身警戒，B留在北侧，落刀位置不变；P04动作与摘要保持原文。未观察新视频。"
+62:       }
+63:     }
+64:   },
+65:   "id": "grounded-15",
+66:   "provenance": "由2026-09-21用户附件提示词重建；细节拍时间、阶段状态及能力结束条件是本项目编辑补充，不是遗失原计划的恢复；未生成视频。",
+67:   "template": "grounded",
+68:   "duration": 15,
+69:   "aspect_ratio": "16:9",
+70:   "generation": "single",
+71:   "camera_mode": "one-take",
+72:   "headers": {
+73:     "goal": "15秒，16:9，单个生成任务中的完整片段。一个连续长镜头，不切镜、不跳切、不以黑场或遮挡伪装剪辑。\n写实中式武侠动作，正常速度，真实重心和衣料重量；全程无仙术、无能量剑气、无夸张飞跃。\n结尾要求：14.4秒前A已从空隙通过并在安全距离转身警戒；B留在碎石带旁，短刀掉在其身侧。最后0.6秒保留呼吸。",
+74:     "cast": "A 青衣行者：成年男性，黑发整齐束起，青灰色束袖长衣、深色里裤与靴子；面部有自然肤质，衣料不发塑料光；兵器：直剑；持械：右手。目标：突破道路阻挡后停在安全距离，不继续追击。表演基调：警惕克制，视线关注对方身体与持械手。\nB 黑衣拦路者：成年男性，黑褐劲装、暗红腰带、深色靴子；固定发型和面貌；兵器：短刀；持械：右手。目标：拦住A不让通过。表演基调：前段积极压迫，失位后急促戒备。",
+75:     "scene": "城外宽阔夯土官道，两侧竹林后退留出空间；日间中性自然光，远处朴素石桥，地面有少量浮尘和一小块碎石带。\n空间锚点：远处石桥；道路北缘碎石带\n机位关系：主要机位保持场景南侧，人物位置变化通过可见移动完成\n独立测试片，不写入任何已有剧集正史；人物与兵器保持一致，不新增角色；能力与空间规则以本方案为上限\n不使用幻想能力；效果只来自可见人物动作和环境作用。",
+76:     "budget": "开头0.2秒和结尾0.6秒的余量已包含在总长内，不额外延长。目标结果在14.4秒前到达；余量保留自然运动，不机械定格。",
+77:     "continuity": "所有动作从上一动作结束状态开始。保持人物面貌、发型、服装结构、兵器形状和持械手。身体、兵器与受力反馈按时间先后发生；没有因果的瞬移、换脸、换武器和环境复位不出现。\n特效不能始终遮挡关键攻防；节拍时点是导演目标，不通过字幕展示。人物不无故摆姿势，不新增旁观者。声音来自对应画面事件。"
+78:   },
+79:   "rules": {
+80:     "fantasy": false,
+81:     "max_scale": "person"
+82:   },
+83:   "timing": {
+84:     "lead_in": 0.2,
+85:     "tail_out": 0.6,
+86:     "result_at": 14.4
+87:   },
+88:   "anchors": [
+89:     "远处石桥",
+90:     "道路北缘碎石带"
+91:   ],
+92:   "cast": [
+93:     {
+94:       "id": "A",
+95:       "description": "青衣行者：成年男性，黑发整齐束起，青灰色束袖长衣、深色里裤与靴子；面部有自然肤质，衣料不发塑料光",
+96:       "goal": "突破道路阻挡后停在安全距离，不继续追击",
+97:       "prop": "直剑",
+98:       "hand": "右手"
+99:     },
+100:     {
+101:       "id": "B",
+102:       "description": "黑衣拦路者：成年男性，黑褐劲装、暗红腰带、深色靴子；固定发型和面貌",
+103:       "goal": "拦住A不让通过",
+104:       "prop": "短刀",
+105:       "hand": "右手"
+106:     }
+107:   ],
+108:   "abilities": [],
+109:   "references": [],
+110:   "initial_state": {
+111:     "A": "官道西侧，面向B，右手直剑准备格挡",
+112:     "B": "官道中部，面向A，右手短刀准备前压",
+113:     "environment": "初始场景完整；远处石桥；道路北缘碎石带",
+114:     "camera_side": "南侧"
+115:   },
+116:   "beats": [
+117:     {
+118:       "id": "B01",
+119:       "start": 0.0,
+120:       "end": 2,
+121:       "intent": "双方紧张，B暂时掌握主动",
+122:       "actors": {
+123:         "A": {
+124:           "action": "向前一步接住对方挥来的短刀，接触后脚步轻退",
+125:           "performance": "盯住短刀和持刀手，接触后短呼气"
+126:         },
+127:         "B": {
+128:           "action": "向A逼近，短刀与剑发生一次清楚交接",
+129:           "performance": "眉眼压低，注意A上半身"
+130:         }
+131:       },
+132:       "emotion": "双方紧张，B暂时掌握主动",
+133:       "camera": {
+134:         "shot_id": "S01",
+135:         "transition": "start",
+136:         "side": "南侧",
+137:         "path": "从侧面双人中全景，从南侧开始平稳横移",
+138:         "axis_bridge": ""
+139:       },
+140:       "vfx": "仅在兵器接触处有少量真实火花",
+141:       "environment": "第一次交接带起少量浮尘，双方仍在官道",
+142:       "sound": "一次兵器碰撞、衣料与脚步声。无台词与背景音乐。",
+143:       "ability_ids": [],
+144:       "before": {
+145:         "A": "官道西侧，面向B，右手直剑准备格挡",
+146:         "B": "官道中部，面向A，右手短刀准备前压",
+147:         "environment": "初始场景完整；远处石桥；道路北缘碎石带",
+148:         "camera_side": "南侧"
+149:       },
+150:       "after": {
+151:         "A": "接刀后轻退，右手剑保持可见",
+152:         "B": "向A逼近，右手短刀完成接触",
+153:         "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道",
+154:         "camera_side": "南侧"
+155:       }
+156:     },
+157:     {
+158:       "id": "B02",
+159:       "start": 2,
+160:       "end": 4.5,
+161:       "intent": "双方紧张，B暂时掌握主动",
+162:       "actors": {
+163:         "A": {
+164:           "action": "边挡边沿道路后退两步，每次接触后收剑恢复重心",
+165:           "performance": "退步时加快呼吸，眼睛不离对手"
+166:         },
+167:         "B": {
+168:           "action": "连续跟进，第二次动作让身体更靠近道路北侧",
+169:           "performance": "前压时呼吸逐渐加重，追随A肩部"
+170:         }
+171:       },
+172:       "emotion": "双方紧张，B暂时掌握主动",
+173:       "camera": {
+174:         "shot_id": "S01",
+175:         "transition": "continuous",
+176:         "side": "南侧",
+177:         "path": "连续双人中全景，连续横向跟随，不改变机位侧",
+178:         "axis_bridge": ""
+179:       },
+180:       "vfx": "小火花仅出现在接触时，不拖成光线",
+181:       "environment": "A后退擦痕保留，B逐步靠近北缘碎石带",
+182:       "sound": "两次分开的短碰撞与摩擦声。无台词与背景音乐。",
+183:       "ability_ids": [],
+184:       "before": {
+185:         "A": "接刀后轻退，右手剑保持可见",
+186:         "B": "向A逼近，右手短刀完成接触",
+187:         "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道",
+188:         "camera_side": "南侧"
+189:       },
+190:       "after": {
+191:         "A": "道路中部站住，右手剑已收回",
+192:         "B": "北侧附近继续前压，短刀在身前",
+193:         "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带",
+194:         "camera_side": "南侧"
+195:       }
+196:     },
+197:     {
+198:       "id": "B03",
+199:       "start": 4.5,
+200:       "end": 7.0,
+201:       "intent": "A从被动紧张转向集中判断",
+202:       "actors": {
+203:         "A": {
+204:           "action": "双脚站稳，略侧身接住下一次压迫，把视线从刀尖转到对方重心",
+205:           "performance": "抿唇后呼气，目光从刀尖转向对方重心"
+206:         },
+207:         "B": {
+208:           "action": "短刀被挡住，前进一步后需要收回身体",
+209:           "performance": "目光短追A侧移，收回身体时呼吸加重"
+210:         }
+211:       },
+212:       "emotion": "A从被动紧张转向集中判断",
+213:       "camera": {
+214:         "shot_id": "S01",
+215:         "transition": "continuous",
+216:         "side": "南侧",
+217:         "path": "连续双人中全景，连续小幅向前跟进，双脚不出画",
+218:         "axis_bridge": ""
+219:       },
+220:       "vfx": "没有新增效果，重点是接触与身体停顿",
+221:       "environment": "衣摆迟于身体回落，既有尘土继续飘动",
+222:       "sound": "接触声之后短暂露出呼吸声。无台词与背景音乐。",
+223:       "ability_ids": [],
+224:       "before": {
+225:         "A": "道路中部站住，右手剑已收回",
+226:         "B": "北侧附近继续前压，短刀在身前",
+227:         "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带",
+228:         "camera_side": "南侧"
+229:       },
+230:       "after": {
+231:         "A": "道路中部稳定侧身，右手剑可见",
+232:         "B": "北侧靠近碎石，前压后回收",
+233:         "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动",
+234:         "camera_side": "南侧"
+235:       }
+236:     },
+237:     {
+238:       "id": "B04",
+239:       "start": 7.0,
+240:       "end": 10,
+241:       "intent": "A夺回空间，B由压迫转为失位戒备",
+242:       "actors": {
+243:         "A": {
+244:           "action": "承接上一拍道路中部稳定侧身、右手剑可见的姿态，右手五指持续合拢握住剑柄，护手始终贴近右手前方，剑柄随手腕和前臂一起运动。向北侧的B迈一步，以身前短幅送剑完成一次交锋，逼出B后退的空隙；接触后屈右肘卸力，剑回到身前，重心落在踏稳的脚上。不松手、不换手、不抛剑，不加额外空翻",
+245:           "performance": "迈步时锁定B支撑脚与道路空隙"
+246:         },
+247:         "B": {
+248:           "action": "接住来剑并实际后退，脚步进入碎石带",
+249:           "performance": "退步时快速看向脚下碎石，身体努力恢复平衡"
+250:         }
+251:       },
+252:       "emotion": "A夺回空间，B由压迫转为失位戒备",
+253:       "camera": {
+254:         "shot_id": "S01",
+255:         "transition": "continuous",
+256:         "side": "南侧",
+257:         "path": "连续双人中全景，连续横移，随双方移动自然调整构图",
+258:         "axis_bridge": ""
+259:       },
+260:       "vfx": "仅短小兵器火花，身体运动保持清楚",
+261:       "environment": "B脚步进入碎石带，碎石因落脚滚动",
+262:       "sound": "短碰撞、脚步与碎石移动声。无台词与背景音乐。",
+263:       "ability_ids": [],
+264:       "before": {
+265:         "A": "道路中部稳定侧身，右手剑可见",
+266:         "B": "北侧靠近碎石，前压后回收",
+267:         "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动",
+268:         "camera_side": "南侧"
+269:       },
+270:       "after": {
+271:         "A": "道路中部向北侧B前进一步并落稳，右肘屈回，右手五指仍握同一剑柄，剑在身前，护手与右手位置相连",
+272:         "B": "实际后退至北缘碎石带，右手仍持短刀",
+273:         "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动；B脚步进入碎石带，碎石因落脚滚动",
+274:         "camera_side": "南侧"
+275:       }
+276:     },
+277:     {
+278:       "id": "B05",
+279:       "start": 10,
+280:       "end": 12.5,
+281:       "intent": "A夺回空间，B由压迫转为失位戒备",
+282:       "actors": {
+283:         "A": {
+284:           "action": "从身前持剑与已落稳的重心接续，右手仍握同一剑柄，不张开手指。完成最后一次近身交接：用剑身近护手处接住B的短刀，屈右肘回收卸力后小幅向外带剑格，将B持刀手带偏；手、柄、护手和剑身沿同一连续短弧移动。看见B失位、松开短刀便停止施压，右肘收回身前保持持剑警戒；A的直剑始终不离右手",
+285:           "performance": "目光从落刀回到B，呼气后停手警戒"
+286:         },
+287:         "B": {
+288:           "action": "脚下不稳退到边缘，持刀手在交接中被剑格带偏，失衡时手指松开，短刀脱手落在身侧，身体一膝触地",
+289:           "performance": "短暂惊讶，眼睛追向落刀，手掌准备支撑"
+290:         }
+291:       },
+292:       "emotion": "A夺回空间，B由压迫转为失位戒备",
+293:       "camera": {
+294:         "shot_id": "S01",
+295:         "transition": "continuous",
+296:         "side": "南侧",
+297:         "path": "连续双人中全景，连续后退少许，让落刀过程完整入画",
+298:         "axis_bridge": ""
+299:       },
+300:       "vfx": "不出现伤口或能量波，落刀只带起一点尘土",
+301:       "environment": "短刀松手到落地轨迹可见，掉落点留在B身侧",
+302:       "sound": "一次交接、短刀落地与B急促呼吸。无台词与背景音乐。",
+303:       "ability_ids": [],
+304:       "before": {
+305:         "A": "道路中部向北侧B前进一步并落稳，右肘屈回，右手五指仍握同一剑柄，剑在身前，护手与右手位置相连",
+306:         "B": "实际后退至北缘碎石带，右手仍持短刀",
+307:         "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动；B脚步进入碎石带，碎石因落脚滚动",
+308:         "camera_side": "南侧"
+309:       },
+310:       "after": {
+311:         "A": "通路前停止攻击，右手剑保持警戒",
+312:         "B": "北侧一膝触地，右手空，刀在身侧地面",
+313:         "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动；B脚步进入碎石带，碎石因落脚滚动；短刀松手到落地轨迹可见，掉落点留在B身侧",
+314:         "camera_side": "南侧"
+315:       }
+316:     },
+317:     {
+318:       "id": "B06",
+319:       "start": 12.5,
+320:       "end": 15.0,
+321:       "intent": "目标完成后的克制停手",
+322:       "actors": {
+323:         "A": {
+324:           "action": "从B空出的道路一侧通过，两步后转身，14.4秒前站到安全距离，剑尖略放低",
+325:           "performance": "肩部稍松，转身后仍看B，胸口起伏"
+326:         },
+327:         "B": {
+328:           "action": "留在道路边缘抬头看A，没有立即捡刀发动新回合",
+329:           "performance": "目光追着A，呼吸更快，手掌支撑身体"
+330:         }
+331:       },
+332:       "emotion": "目标完成后的克制停手",
+333:       "camera": {
+334:         "shot_id": "S01",
+335:         "transition": "continuous",
+336:         "side": "南侧",
+337:         "path": "连续双人全景，连续向后侧平移拉开，不切镜、不跳到另一侧",
+338:         "axis_bridge": ""
+339:       },
+340:       "vfx": "无新增特效，只保留衣摆和浮尘变化",
+341:       "environment": "落刀仍在原位，最后0.6秒尘土沉降",
+342:       "sound": "脚步停止后只剩呼吸和轻微竹林风声。无台词与背景音乐。",
+343:       "ability_ids": [],
+344:       "before": {
+345:         "A": "通路前停止攻击，右手剑保持警戒",
+346:         "B": "北侧一膝触地，右手空，刀在身侧地面",
+347:         "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动；B脚步进入碎石带，碎石因落脚滚动；短刀松手到落地轨迹可见，掉落点留在B身侧",
+348:         "camera_side": "南侧"
+349:       },
+350:       "after": {
+351:         "A": "通过阻挡后转身，右手剑略放低",
+352:         "B": "北侧原位一膝触地，右手空",
+353:         "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动；B脚步进入碎石带，碎石因落脚滚动；短刀松手到落地轨迹可见，掉落点留在B身侧；落刀仍在原位，最后0.6秒尘土沉降",
+354:         "camera_side": "南侧"
+355:       }
+356:     }
+357:   ],
+358:   "sections": [
+359:     {
+360:       "id": "P01",
+361:       "beat_ids": [
+362:         "B01",
+363:         "B02"
+364:       ],
+365:       "summary": {
+366:         "action": "向前一步接住对方挥来的短刀，接触后脚步轻退；对方向A逼近，短刀与剑发生一次清楚交接。随后，边挡边沿道路后退两步，每次接触后收剑恢复重心；对方连续跟进，第二次动作让身体更靠近道路北侧",
+367:         "expression": "A：呼吸加快，眼睛没有离开对手；B：眉眼压低，注意力集中在A的上半身",
+368:         "emotion": "双方紧张，B暂时掌握主动",
+369:         "camera": "从侧面双人中全景，从南侧开始平稳横移；连续双人中全景，连续横向跟随，不改变机位侧",
+370:         "vfx": "仅在兵器接触处有少量真实火花；小火花仅出现在接触时，不拖成光线",
+371:         "environment": "A的鞋底留下后退擦痕，B接近碎石带",
+372:         "sound": "一次兵器碰撞、衣料与脚步声；两次分开的短碰撞与摩擦声。无台词与背景音乐。",
+373:         "continuity": "此段结束：A道路中部站住，右手剑已收回；B北侧附近继续前压，短刀在身前。保留既有环境变化。"
+374:       }
+375:     },
+376:     {
+377:       "id": "P02",
+378:       "beat_ids": [
+379:         "B03"
+380:       ],
+381:       "summary": {
+382:         "action": "双脚站稳，略侧身接住下一次压迫，把视线从刀尖转到对方重心；对方短刀被挡住，前进一步后需要收回身体",
+383:         "expression": "A：先紧抿嘴唇再呼气，眼神变得稳定；B：呼吸加重，目光短暂追向A的侧移",
+384:         "emotion": "A从被动紧张转向集中判断",
+385:         "camera": "连续双人中全景，连续小幅向前跟进，双脚不出画",
+386:         "vfx": "没有新增效果，重点是接触与身体停顿",
+387:         "environment": "衣摆比身体晚半拍回落，尘土持续自然变化",
+388:         "sound": "接触声之后短暂露出呼吸声。无台词与背景音乐。",
+389:         "continuity": "此段结束：A道路中部稳定侧身，右手剑可见；B北侧靠近碎石，前压后回收。保留既有环境变化。"
+390:       }
+391:     },
+392:     {
+393:       "id": "P03",
+394:       "beat_ids": [
+395:         "B04",
+396:         "B05"
+397:       ],
+398:       "summary": {
+399:         "action": "A从侧身持剑姿态迈一步向北侧B主动交锋；右手五指持续握住同一剑柄，护手贴近右手前方，剑随手腕与前臂一起作短幅送进。B接住来剑并实际后退，脚步进入碎石带。A在接触后屈右肘卸力，把剑收回身前并落稳重心，再用剑身近护手处接住B短刀；屈肘回收后小幅向外带剑格，带偏B持刀手。B脚下不稳退到边缘，失衡时手指松开，只有B的短刀脱手落在身侧，B一膝触地。A见其失位立即停手，右肘收回身前保持警戒；右手、剑柄、护手和剑身始终相连，不松手、不换手、不抛剑，不加额外空翻",
+400:         "expression": "A：目光从落刀返回B，呼气，保持戒备；B：惊讶但不夸张张嘴，视线快速转向落刀",
+401:         "emotion": "A夺回空间，B由压迫转为失位戒备",
+402:         "camera": "连续双人中全景，连续横移，随双方移动自然调整构图；连续双人中全景，连续后退少许，让落刀过程完整入画",
+403:         "vfx": "仅短小兵器火花，身体运动保持清楚；不出现伤口或能量波，落刀只带起一点尘土",
+404:         "environment": "短刀从手中到地面轨迹完整，落刀后留在原位置",
+405:         "sound": "短碰撞、脚步与碎石移动声；一次交接、短刀落地与B急促呼吸。无台词与背景音乐。",
+406:         "continuity": "此段结束：A通路前停止攻击，右手剑保持警戒；B北侧一膝触地，右手空，刀在身侧地面。保留既有环境变化。 段内A始终右手握直剑，接触后的回收直接连接下一次交接；唯一离手兵器是B的短刀。"
+407:       }
+408:     },
+409:     {
+410:       "id": "P04",
+411:       "beat_ids": [
+412:         "B06"
+413:       ],
+414:       "summary": {
+415:         "action": "从B空出的道路一侧通过，两步后转身，14.4秒前站到安全距离，剑尖略放低；对方留在道路边缘抬头看A，没有立即捡刀发动新回合",
+416:         "expression": "A：肩部稍松，眼睛仍跟随B，胸口自然起伏；B：目光追着A，呼吸快于A，手掌支撑身体",
+417:         "emotion": "目标完成后的克制停手",
+418:         "camera": "连续双人全景，连续向后侧平移拉开，不切镜、不跳到另一侧",
+419:         "vfx": "无新增特效，只保留衣摆和浮尘变化",
+420:         "environment": "落刀位置不变，最后0.6秒尘土沉降",
+421:         "sound": "脚步停止后只剩呼吸和轻微竹林风声。无台词与背景音乐。",
+422:         "continuity": "此段结束：A通过阻挡后转身，右手剑略放低；B北侧原位一膝触地，右手空。保留既有环境变化。"
+423:       }
+424:     }
+425:   ]
+426: }
+
+FILE: runs/E09/export/director.md
+1: # 六轨导演稿
+2: 
+3: 时间及状态独立于六轨；表情与情绪合为表演轨。
+4: 
+5: ## B01 · 0–2 秒
+6: 目的：双方紧张，B暂时掌握主动
+7: 
+8: 1. 人物攻防：A：向前一步接住对方挥来的短刀，接触后脚步轻退；B：向A逼近，短刀与剑发生一次清楚交接
+9: 2. 表演情绪：A：盯住短刀和持刀手，接触后短呼气；B：眉眼压低，注意A上半身。双方紧张，B暂时掌握主动
+10: 3. 摄影机：S01 / start / 从侧面双人中全景，从南侧开始平稳横移
+11: 4. 特效：仅在兵器接触处有少量真实火花
+12: 5. 环境反馈：第一次交接带起少量浮尘，双方仍在官道
+13: 6. 声音：一次兵器碰撞、衣料与脚步声。无台词与背景音乐。
+14: 
+15: 起始状态：{"A": "官道西侧，面向B，右手直剑准备格挡", "B": "官道中部，面向A，右手短刀准备前压", "environment": "初始场景完整；远处石桥；道路北缘碎石带", "camera_side": "南侧"}
+16: 结束状态：{"A": "接刀后轻退，右手剑保持可见", "B": "向A逼近，右手短刀完成接触", "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道", "camera_side": "南侧"}
+17: 
+18: ## B02 · 2–4.5 秒
+19: 目的：双方紧张，B暂时掌握主动
+20: 
+21: 1. 人物攻防：A：边挡边沿道路后退两步，每次接触后收剑恢复重心；B：连续跟进，第二次动作让身体更靠近道路北侧
+22: 2. 表演情绪：A：退步时加快呼吸，眼睛不离对手；B：前压时呼吸逐渐加重，追随A肩部。双方紧张，B暂时掌握主动
+23: 3. 摄影机：S01 / continuous / 连续双人中全景，连续横向跟随，不改变机位侧
+24: 4. 特效：小火花仅出现在接触时，不拖成光线
+25: 5. 环境反馈：A后退擦痕保留，B逐步靠近北缘碎石带
+26: 6. 声音：两次分开的短碰撞与摩擦声。无台词与背景音乐。
+27: 
+28: 起始状态：{"A": "接刀后轻退，右手剑保持可见", "B": "向A逼近，右手短刀完成接触", "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道", "camera_side": "南侧"}
+29: 结束状态：{"A": "道路中部站住，右手剑已收回", "B": "北侧附近继续前压，短刀在身前", "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带", "camera_side": "南侧"}
+30: 
+31: ## B03 · 4.5–7 秒
+32: 目的：A从被动紧张转向集中判断
+33: 
+34: 1. 人物攻防：A：双脚站稳，略侧身接住下一次压迫，把视线从刀尖转到对方重心；B：短刀被挡住，前进一步后需要收回身体
+35: 2. 表演情绪：A：抿唇后呼气，目光从刀尖转向对方重心；B：目光短追A侧移，收回身体时呼吸加重。A从被动紧张转向集中判断
+36: 3. 摄影机：S01 / continuous / 连续双人中全景，连续小幅向前跟进，双脚不出画
+37: 4. 特效：没有新增效果，重点是接触与身体停顿
+38: 5. 环境反馈：衣摆迟于身体回落，既有尘土继续飘动
+39: 6. 声音：接触声之后短暂露出呼吸声。无台词与背景音乐。
+40: 
+41: 起始状态：{"A": "道路中部站住，右手剑已收回", "B": "北侧附近继续前压，短刀在身前", "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带", "camera_side": "南侧"}
+42: 结束状态：{"A": "道路中部稳定侧身，右手剑可见", "B": "北侧靠近碎石，前压后回收", "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动", "camera_side": "南侧"}
+43: 
+44: ## B04 · 7–10 秒
+45: 目的：A夺回空间，B由压迫转为失位戒备
+46: 
+47: 1. 人物攻防：A：承接上一拍道路中部稳定侧身、右手剑可见的姿态，右手五指持续合拢握住剑柄，护手始终贴近右手前方，剑柄随手腕和前臂一起运动。向北侧的B迈一步，以身前短幅送剑完成一次交锋，逼出B后退的空隙；接触后屈右肘卸力，剑回到身前，重心落在踏稳的脚上。不松手、不换手、不抛剑，不加额外空翻；B：接住来剑并实际后退，脚步进入碎石带
+48: 2. 表演情绪：A：迈步时锁定B支撑脚与道路空隙；B：退步时快速看向脚下碎石，身体努力恢复平衡。A夺回空间，B由压迫转为失位戒备
+49: 3. 摄影机：S01 / continuous / 连续双人中全景，连续横移，随双方移动自然调整构图
+50: 4. 特效：仅短小兵器火花，身体运动保持清楚
+51: 5. 环境反馈：B脚步进入碎石带，碎石因落脚滚动
+52: 6. 声音：短碰撞、脚步与碎石移动声。无台词与背景音乐。
+53: 
+54: 起始状态：{"A": "道路中部稳定侧身，右手剑可见", "B": "北侧靠近碎石，前压后回收", "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动", "camera_side": "南侧"}
+55: 结束状态：{"A": "道路中部向北侧B前进一步并落稳，右肘屈回，右手五指仍握同一剑柄，剑在身前，护手与右手位置相连", "B": "实际后退至北缘碎石带，右手仍持短刀", "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动；B脚步进入碎石带，碎石因落脚滚动", "camera_side": "南侧"}
+56: 
+57: ## B05 · 10–12.5 秒
+58: 目的：A夺回空间，B由压迫转为失位戒备
+59: 
+60: 1. 人物攻防：A：从身前持剑与已落稳的重心接续，右手仍握同一剑柄，不张开手指。完成最后一次近身交接：用剑身近护手处接住B的短刀，屈右肘回收卸力后小幅向外带剑格，将B持刀手带偏；手、柄、护手和剑身沿同一连续短弧移动。看见B失位、松开短刀便停止施压，右肘收回身前保持持剑警戒；A的直剑始终不离右手；B：脚下不稳退到边缘，持刀手在交接中被剑格带偏，失衡时手指松开，短刀脱手落在身侧，身体一膝触地
+61: 2. 表演情绪：A：目光从落刀回到B，呼气后停手警戒；B：短暂惊讶，眼睛追向落刀，手掌准备支撑。A夺回空间，B由压迫转为失位戒备
+62: 3. 摄影机：S01 / continuous / 连续双人中全景，连续后退少许，让落刀过程完整入画
+63: 4. 特效：不出现伤口或能量波，落刀只带起一点尘土
+64: 5. 环境反馈：短刀松手到落地轨迹可见，掉落点留在B身侧
+65: 6. 声音：一次交接、短刀落地与B急促呼吸。无台词与背景音乐。
+66: 
+67: 起始状态：{"A": "道路中部向北侧B前进一步并落稳，右肘屈回，右手五指仍握同一剑柄，剑在身前，护手与右手位置相连", "B": "实际后退至北缘碎石带，右手仍持短刀", "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动；B脚步进入碎石带，碎石因落脚滚动", "camera_side": "南侧"}
+68: 结束状态：{"A": "通路前停止攻击，右手剑保持警戒", "B": "北侧一膝触地，右手空，刀在身侧地面", "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动；B脚步进入碎石带，碎石因落脚滚动；短刀松手到落地轨迹可见，掉落点留在B身侧", "camera_side": "南侧"}
+69: 
+70: ## B06 · 12.5–15 秒
+71: 目的：目标完成后的克制停手
+72: 
+73: 1. 人物攻防：A：从B空出的道路一侧通过，两步后转身，14.4秒前站到安全距离，剑尖略放低；B：留在道路边缘抬头看A，没有立即捡刀发动新回合
+74: 2. 表演情绪：A：肩部稍松，转身后仍看B，胸口起伏；B：目光追着A，呼吸更快，手掌支撑身体。目标完成后的克制停手
+75: 3. 摄影机：S01 / continuous / 连续双人全景，连续向后侧平移拉开，不切镜、不跳到另一侧
+76: 4. 特效：无新增特效，只保留衣摆和浮尘变化
+77: 5. 环境反馈：落刀仍在原位，最后0.6秒尘土沉降
+78: 6. 声音：脚步停止后只剩呼吸和轻微竹林风声。无台词与背景音乐。
+79: 
+80: 起始状态：{"A": "通路前停止攻击，右手剑保持警戒", "B": "北侧一膝触地，右手空，刀在身侧地面", "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动；B脚步进入碎石带，碎石因落脚滚动；短刀松手到落地轨迹可见，掉落点留在B身侧", "camera_side": "南侧"}
+81: 结束状态：{"A": "通过阻挡后转身，右手剑略放低", "B": "北侧原位一膝触地，右手空", "environment": "初始场景完整；远处石桥；道路北缘碎石带；第一次交接带起少量浮尘，双方仍在官道；A后退擦痕保留，B逐步靠近北缘碎石带；衣摆迟于身体回落，既有尘土继续飘动；B脚步进入碎石带，碎石因落脚滚动；短刀松手到落地轨迹可见，掉落点留在B身侧；落刀仍在原位，最后0.6秒尘土沉降", "camera_side": "南侧"}
+
+FILE: runs/E09/run.json
+1: {
+2:   "task": "E09",
+3:   "inputs": [
+4:     {
+5:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+6:       "sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+7:       "read_scope": "全文"
+8:     },
+9:     {
+10:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\contract.md",
+11:       "sha256": "a49bd8940dca7c09688e617116b6fb1ab9a88c5d6c3efc156af98f888c8e51d7",
+12:       "read_scope": "全文"
+13:     },
+14:     {
+15:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\review-loop.md",
+16:       "sha256": "6b4180da9ea6f32a75d789daa02ac570ef26440d62b45979053e51a91244567d",
+17:       "read_scope": "全文"
+18:     },
+19:     {
+20:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\quality.md",
+21:       "sha256": "2f3e49b118af5995b95f7a34dd43673c2eb7255ab8e458a67df106637e89f53a",
+22:       "read_scope": "全文"
+23:     },
+24:     {
+25:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_tool.py",
+26:       "sha256": "1fade69a451269acf0efffc4230f127da905adde49f73394127ae260d34f6104",
+27:       "read_scope": "全文"
+28:     },
+29:     {
+30:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\request.txt",
+31:       "sha256": "ece1d1422b7586e3fcdd19f76de73a990a408402ad4c004000bc02b560f77f93",
+32:       "read_scope": "全文"
+33:     },
+34:     {
+35:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.prompt.txt",
+36:       "sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d",
+37:       "read_scope": "全文"
+38:     },
+39:     {
+40:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.plan.json",
+41:       "sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23",
+42:       "read_scope": "全文"
+43:     },
+44:     {
+45:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_action.py",
+46:       "sha256": "2561186638e7b840c2ce2265e3c0b85e53d3baf9ce7a57fc96a14899b3ae613d",
+47:       "read_scope": "脚本内部读取"
+48:     },
+49:     {
+50:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\assets\\combat-plan.schema.json",
+51:       "sha256": "e8db635f660848a14f9bc9cc95f896b1918aefdb2d288bcef2bb71c7499744a9",
+52:       "read_scope": "脚本内部读取"
+53:     },
+54:     {
+55:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_evidence.py",
+56:       "sha256": "1a7d22ee88f250fec15dc17af26864f953439f1495fc30b384f0dd079a38b23f",
+57:       "read_scope": "脚本内部读取"
+58:     },
+59:     {
+60:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_review.py",
+61:       "sha256": "f1ff9cca2fbe6ec455ec0ea3b81da295dec153eac01729828339f2d83a311ae1",
+62:       "read_scope": "脚本内部读取"
+63:     },
+64:     {
+65:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.draft.plan.json",
+66:       "sha256": "fe9e8b5b9917893aa5cf71d9baa403d29aeedf02fa3f2ecf4a74bd94037f24ed",
+67:       "read_scope": "脚本内部读取"
+68:     },
+69:     {
+70:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_schema.py",
+71:       "sha256": "673e6975eebf2bee73b826312c0c89774993951ac566b2299dccbc6d355b8bc9",
+72:       "read_scope": "脚本内部读取"
+73:     },
+74:     {
+75:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_tool.py",
+76:       "sha256": "1fade69a451269acf0efffc4230f127da905adde49f73394127ae260d34f6104",
+77:       "read_scope": "脚本内部读取"
+78:     },
+79:     {
+80:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_handoff.py",
+81:       "sha256": "28f922147132b748ec01e8cf1f8176f81c97409b4218f7edd4ce91b9c080c8a1",
+82:       "read_scope": "脚本内部读取"
+83:     },
+84:     {
+85:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\review-input.json",
+86:       "sha256": "3d58a78b44bf7b25a5b016848be815b1c80ed15f8017a5d9675d1262c00a605b",
+87:       "read_scope": "全文"
+88:     },
+89:     {
+90:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.plan.json",
+91:       "sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23",
+92:       "read_scope": "脚本内部读取"
+93:     },
+94:     {
+95:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.prompt.txt",
+96:       "sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d",
+97:       "read_scope": "脚本内部读取"
+98:     },
+99:     {
+100:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.plan.json",
+101:       "sha256": "218b1190ad2dda2f809ee41fbcdde27bc615dcae117930ae01d6c78067ddf207",
+102:       "read_scope": "脚本内部读取"
+103:     },
+104:     {
+105:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\export\\prompt.txt",
+106:       "sha256": "707a83209422f149120f6e3f01c2125e8e88b9b3463e614d402f2803b2868507",
+107:       "read_scope": "脚本内部读取"
+108:     },
+109:     {
+110:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\export\\director.md",
+111:       "sha256": "aa001781a7d9c10b046e6450f715a3f649278197f6a7c60deb78332d53bb4e5a",
+112:       "read_scope": "脚本内部读取"
+113:     },
+114:     {
+115:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\receipt.json",
+116:       "sha256": "57a90479d9a47f4c7823b0ca0ed2ae0786841754d0a709fbc003b36972646dce",
+117:       "read_scope": "脚本内部读取"
+118:     },
+119:     {
+120:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\assets\\platform-profiles.json",
+121:       "sha256": "9a2c6876e5dc7bcf4b6a55f8a6b3d63d13567bfc4967a94e6071c41e19d257a9",
+122:       "read_scope": "脚本内部读取"
+123:     }
+124:   ],
+125:   "commands": [
+126:     {
+127:       "command": "Get-Content -LiteralPath 'D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md' -Raw",
+128:       "exit_code": 0,
+129:       "output": "lookup-1.txt"
+130:     },
+131:     {
+132:       "command": "Get-Content -LiteralPath 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\request.txt' -Raw; Get-Content -LiteralPath 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.prompt.txt' -Raw; Get-Content -LiteralPath 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.plan.json' -Raw",
+133:       "exit_code": 0,
+134:       "output": "lookup-2.txt"
+135:     },
+136:     {
+137:       "command": "$outDir='D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09'; Get-Content -LiteralPath 'D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md' -Raw | Set-Content -LiteralPath \"$outDir\\lookup-1.txt\" -Encoding utf8; @('request.txt','original.prompt.txt','original.plan.json') | ForEach-Object {Get-Content -LiteralPath \"$outDir\\$_\" -Raw} | Set-Content -LiteralPath \"$outDir\\lookup-2.txt\" -Encoding utf8; @('references\\contract.md','references\\review-loop.md','references\\quality.md') | ForEach-Object {Get-Content -LiteralPath \"D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\$_\" -Raw} | Tee-Object -FilePath \"$outDir\\lookup-3.txt\"",
+138:       "exit_code": 0,
+139:       "output": "lookup-3.txt"
+140:     },
+141:     {
+142:       "command": "Get-Content -LiteralPath 'D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_tool.py' -Raw | Tee-Object -FilePath 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\lookup-4.txt'",
+143:       "exit_code": 0,
+144:       "output": "lookup-4.txt"
+145:     },
+146:     {
+147:       "command": "python -B D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py tool status D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.draft.plan.json",
+148:       "underlying_argv": [
+149:         "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_tool.py",
+150:         "status",
+151:         "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.draft.plan.json"
+152:       ],
+153:       "exit_code": 0,
+154:       "output": "lookup-5.txt",
+155:       "runner": "combat_tool.py"
+156:     },
+157:     {
+158:       "command": "python -B D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py tool compile D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.draft.plan.json --out D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\review-input.json",
+159:       "underlying_argv": [
+160:         "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_tool.py",
+161:         "compile",
+162:         "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.draft.plan.json",
+163:         "--out",
+164:         "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\review-input.json"
+165:       ],
+166:       "exit_code": 0,
+167:       "output": "lookup-6.txt",
+168:       "runner": "combat_tool.py"
+169:     },
+170:     {
+171:       "command": "python -B 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py' prepare",
+172:       "exit_code": 0,
+173:       "output": "lookup-prepare.txt"
+174:     },
+175:     {
+176:       "command": "Get-Content -LiteralPath 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\review-input.json' -Raw | Tee-Object -FilePath 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\lookup-7.txt'",
+177:       "exit_code": 0,
+178:       "output": "lookup-7.txt"
+179:     },
+180:     {
+181:       "command": "python -B 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py' receipt",
+182:       "exit_code": 0,
+183:       "output": "lookup-receipt.txt"
+184:     },
+185:     {
+186:       "command": "python -B 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py' finish",
+187:       "exit_code": 0,
+188:       "output": "lookup-final.txt"
+189:     },
+190:     {
+191:       "command": "python -B D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py tool apply-review D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.draft.plan.json --receipt D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\receipt.json --out D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.plan.json",
+192:       "exit_code": 1,
+193:       "output": "lookup-8.txt",
+194:       "note": "底层技能调用结束后，自有日志编号逻辑报错，缓冲的底层输出未返回；保留实际报错。产物已落盘，随后重新运行验证与导出以取得完整凭证。"
+195:     },
+196:     {
+197:       "command": "python -B D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py tool validate D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.plan.json",
+198:       "exit_code": 1,
+199:       "output": "lookup-9.txt",
+200:       "note": "底层技能调用结束后，自有日志编号逻辑报错，缓冲的底层输出未返回；保留实际报错。产物已落盘，随后重新运行验证与导出以取得完整凭证。"
+201:     },
+202:     {
+203:       "command": "python -B D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py tool render D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.plan.json --platform generic --out-dir D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\export",
+204:       "exit_code": 1,
+205:       "output": "lookup-10.txt",
+206:       "note": "底层技能调用结束后，自有日志编号逻辑报错，缓冲的底层输出未返回；保留实际报错。产物已落盘，随后重新运行验证与导出以取得完整凭证。"
+207:     },
+208:     {
+209:       "command": "python -B 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py' recover-log",
+210:       "exit_code": 0,
+211:       "output": "lookup-recover.txt"
+212:     },
+213:     {
+214:       "command": "python -B D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py tool apply-review D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.draft.plan.json --receipt D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\receipt.json --out D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.verified.plan.json",
+215:       "underlying_argv": [
+216:         "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_tool.py",
+217:         "apply-review",
+218:         "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.draft.plan.json",
+219:         "--receipt",
+220:         "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\receipt.json",
+221:         "--out",
+222:         "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.verified.plan.json"
+223:       ],
+224:       "exit_code": 0,
+225:       "output": "lookup-11.txt",
+226:       "runner": "combat_tool.py"
+227:     },
+228:     {
+229:       "command": "python -B D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py tool validate D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.plan.json",
+230:       "underlying_argv": [
+231:         "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_tool.py",
+232:         "validate",
+233:         "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.plan.json"
+234:       ],
+235:       "exit_code": 0,
+236:       "output": "lookup-12.txt",
+237:       "runner": "combat_tool.py"
+238:     },
+239:     {
+240:       "command": "python -B D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py tool render D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.plan.json --platform generic --out-dir D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\export --force",
+241:       "underlying_argv": [
+242:         "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_tool.py",
+243:         "render",
+244:         "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.plan.json",
+245:         "--platform",
+246:         "generic",
+247:         "--out-dir",
+248:         "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\export",
+249:         "--force"
+250:       ],
+251:       "exit_code": 0,
+252:       "output": "lookup-13.txt",
+253:       "runner": "combat_tool.py"
+254:     },
+255:     {
+256:       "command": "python -B 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\execute.py' finish",
+257:       "exit_code": 0,
+258:       "output": "lookup-final.txt"
+259:     }
+260:   ],
+261:   "notes": [
+262:     "lookup-1.txt 和 lookup-2.txt 是相同 Get-Content 读取的原文输出保存；lookup-3.txt 起在执行时保存。未读取视频、联网或生成媒体。",
+263:     "三次自有日志包装器因lookup-prepare文件名非数字而异常；已修正日志编号，未修改冻结技能。"
+264:   ]
+265: }
+
+FILE: runs/E12/run.json
+1: {
+2:   "request": "编排12秒水墨外观的雨中退守：两名成年虚构角色，A徒手沿石阶后退，B持木棍压进，结尾A退到檐下并挡住B继续前进。只有人物级身体能力，不要大招、能量波或分身。正常速度、最多两个镜头，给简明六轨与中文提示词，体现双方回应和湿滑地形。",
+3:   "request_path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\request.txt",
+4:   "scope": "仅读取指定冻结技能包、本题请求；仅向 E12 输出目录写入文件。",
+5:   "inputs": [
+6:     {
+7:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+8:       "sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+9:       "read_mode": "完整",
+10:       "reads": [
+11:         "初次 Get-Content -Raw 完整读取并显示",
+12:         "记录阶段再次完整读取，用于保存初次 stdout 文本",
+13:         "Get-FileHash SHA-256，仅哈希读取"
+14:       ]
+15:     },
+16:     {
+17:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\request.txt",
+18:       "sha256": "7ded957b9008d79760658bb15957b65f0e93c66ea28a0512f0ce1c4ac3c0f968",
+19:       "read_mode": "完整",
+20:       "reads": [
+21:         "初次 Get-Content -Raw 完整读取并显示",
+22:         "记录阶段再次完整读取，用于保存初次 stdout 文本",
+23:         "Get-FileHash SHA-256，仅哈希读取"
+24:       ]
+25:     },
+26:     {
+27:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md",
+28:       "sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c",
+29:       "read_mode": "完整",
+30:       "reads": [
+31:         "Get-Content -Raw 完整读取并显示",
+32:         "Get-FileHash SHA-256，仅哈希读取"
+33:       ]
+34:     },
+35:     {
+36:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md",
+37:       "sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1",
+38:       "read_mode": "完整",
+39:       "reads": [
+40:         "Get-Content -Raw 完整读取并显示",
+41:         "Get-FileHash SHA-256，仅哈希读取"
+42:       ]
+43:     }
+44:   ],
+45:   "read_categories": {
+46:     "full": [
+47:       "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+48:       "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\request.txt",
+49:       "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md",
+50:       "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md"
+51:     ],
+52:     "partial": [],
+53:     "hash_only_inputs": [],
+54:     "script_internal_inputs": [],
+55:     "note": "四个输入均已完整阅读；另对这四个已读文件执行了仅哈希读取，没有额外的仅哈希输入。未运行 Python 或包内脚本。"
+56:   },
+57:   "commands": [
+58:     {
+59:       "command": "Get-Content -Raw 'D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md'",
+60:       "exit_code": 0,
+61:       "output": "lookup-1.txt"
+62:     },
+63:     {
+64:       "command": "Get-Content -Raw 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\request.txt'",
+65:       "exit_code": 0,
+66:       "output": "lookup-2.txt"
+67:     },
+68:     {
+69:       "command": "$paths = @('D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md','D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md'); foreach ($p in $paths) { Write-Output ('FILE: ' + $p); Get-Content -Raw -LiteralPath $p }",
+70:       "exit_code": 0,
+71:       "output": "lookup-3.txt"
+72:     },
+73:     {
+74:       "command": "$base = 'D:\\Temp\\combat-extension-nws2d7rg'; $out = Join-Path $base 'runs\\E12'; $skill = Join-Path $base 'candidate\\skills\\combat-director'; $skillText = Get-Content -Raw -LiteralPath (Join-Path $skill 'SKILL.md'); $requestText = Get-Content -Raw -LiteralPath (Join-Path $out 'request.txt'); Set-Content -LiteralPath (Join-Path $out 'lookup-1.txt') -Value $skillText -Encoding utf8; Set-Content -LiteralPath (Join-Path $out 'lookup-2.txt') -Value $requestText -Encoding utf8; $paths = @((Join-Path $skill 'SKILL.md'), (Join-Path $out 'request.txt'), (Join-Path $skill 'references\\choreography.md'), (Join-Path $skill 'references\\templates.md')); $hashes = foreach ($p in $paths) { $h = Get-FileHash -Algorithm SHA256 -LiteralPath $p; [PSCustomObject]@{path=$p;sha256=$h.Hash.ToLowerInvariant()} }; [PSCustomObject]@{request=$requestText;inputs=@($hashes)} | ConvertTo-Json -Depth 5",
+75:       "exit_code": 0,
+76:       "output": "lookup-4.txt"
+77:     }
+78:   ],
+79:   "tool_writes": [
+80:     {
+81:       "tool": "apply_patch",
+82:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\answer.md",
+83:       "result": {},
+84:       "output": "lookup-5.txt"
+85:     },
+86:     {
+87:       "tool": "apply_patch",
+88:       "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\lookup-3.txt",
+89:       "result": {},
+90:       "output": "lookup-5.txt"
+91:     }
+92:   ],
+93:   "output_notes": "lookup-1.txt 和 lookup-2.txt 保存最初完整读取的 stdout 内容，记录阶段重新读取冻结输入后落盘；lookup-3.txt 和 lookup-4.txt 保存对应命令返回的 stdout。lookup-5.txt 保存已完成的产物写入工具返回值。日志自身的写入不递归登记。",
+94:   "outputs": [
+95:     "answer.md",
+96:     "run.json",
+97:     "lookup-1.txt",
+98:     "lookup-2.txt",
+99:     "lookup-3.txt",
+100:     "lookup-4.txt",
+101:     "lookup-5.txt"
+102:   ],
+103:   "execution": {
+104:     "network": false,
+105:     "platform_submission": false,
+106:     "media_generation": false,
+107:     "skill_modification": false,
+108:     "subagents_started": false
+109:   },
+110:   "validation": "文本自检：12 秒、一个连续镜头、六轨、双方回应、湿滑恢复、人物级能力、檐下阻拦结尾。无媒体生成或成片验证。"
+111: }
+
+FILE: candidate/skills/combat-director/references/contract.md
+1: # Combat Plan 1.2：事实、表达与复核
+2: 
+3: 权威结构：[当前 Schema](../assets/combat-plan.schema.json)。[1.0 Schema](../assets/combat-plan-v1.schema.json) 只供迁移与结构检查。软件版本和数据契约版本分别维护；文本创作不强制填写 JSON。
+4: 
+5: 当前兼容读取 1.1，1.2 增加可选动作结构与素材证据。旧案例不被强制补写未知动作事实；1.0 必须显式迁移并重新复核。已标 available/bound 的旧素材声明需补证据，不能仅迁移版本号后当作已验证。
+6: 
+7: ## 字段职责与交接
+8: 
+9: | 字段 | 权威角色 | 交付位置 |
+10: | --- | --- | --- |
+11: | duration / aspect_ratio / generation / camera_mode / timing / rules | 时间、镜头和能力的硬约束 | prompt 硬约束、设计卡、交接单 |
+12: | cast / abilities / anchors / initial_state | 人物、持物、能力和开场事实 | prompt 硬约束、导演稿、编译交接 |
+13: | beats | 动作、表演、机位、声音与状态事实 | director.md、prompt-handoff.json |
+14: | weapon_profiles / action_initial_state / action_events / state_delta | 可选具体交手；启用时为动作状态的唯一权威 | prompt 具体交手、投影状态、编译交接；见[动作契约](action-contract.md) |
+15: | sections.beat_ids | 投喂段选取的连续细拍 | 导出时间范围与交接记录 |
+16: | headers / sections.summary | 人工或 Agent 编写的表达 | prompt.txt；需要语义复核 |
+17: | editorial_reviews | 对特定输入和表达版本的复核声明 | 计划与状态检查；不是视频验收 |
+18: | id / provenance | 文件身份与来源说明 | 计划和设计卡；不参与语义摘要哈希 |
+19: 
+20: 每拍记录全部角色的动作与表演。before 继承上一拍 after，包括角色、environment、camera_side。第一拍 transition=start；之后 continuous 保持 shot_id，cut 改变 shot_id。一镜到底全程一个 shot_id，越轴需要可见过渡。状态文字相等不证明物理成立。
+21: 
+22: ## 修订流程
+23: 
+24: 改动事实或表达后，先检查状态，再编译供复核的内容：
+25: 
+26: ```bash
+27: python scripts/combat_tool.py status my.plan.json
+28: python scripts/combat_tool.py compile my.plan.json --out review-input.json
+29: ```
+30: 
+31: review-input.json 按 headers 和各主段提供 facts、expression、input_digest、expression_digest。独立比较两者，修正遗漏或矛盾，再编译。重点是身份/动作、镜头/时间、能力/代价、连续性；不能只看标签齐全。
+32: 
+33: 将实际复核结论保存为 receipt JSON。每条必须复制所检查版本的两个 digest，并用具体证据填写四项 checks：
+34: 
+35: ```json
+36: {
+37:   "plan_id": "your-plan-id",
+38:   "reviews": [{
+39:     "scope": "P01",
+40:     "input_digest": "从review-input中复制的64位哈希",
+41:     "expression_digest": "从review-input中复制的64位哈希",
+42:     "reviewer": "实际复核者名称",
+43:     "method": "agent",
+44:     "checks": {
+45:       "identity_action": "说明该段兵器、动作和回应与细拍如何一致",
+46:       "camera_timing": "说明该段时间与镜头规则如何对应",
+47:       "ability_cost": "说明能力限制/代价的表达；无能力时说明不适用",
+48:       "continuity": "说明起止状态与相邻段的关系"
+49:     }
+50:   }]
+51: }
+52: ```
+53: 
+54: 示意哈希不可直接执行。method 可选 human 或 agent。receipt 可只包含重新检查的 scope；其余旧记录保持，但不能绕过已失效的检查。
+55: 
+56: ```bash
+57: python scripts/combat_tool.py apply-review my.plan.json --receipt receipt.json --out reviewed.plan.json
+58: python scripts/combat_tool.py validate reviewed.plan.json
+59: python scripts/combat_tool.py render reviewed.plan.json --platform generic --out-dir output/check
+60: ```
+61: 
+62: ready 仅表示复核声明对应当前事实和表达。stale 表示内容已变化；needs_semantic_review 表示没有复核声明。后两者阻止正式导出。不要为通过导出而只刷新哈希：程序无法判断复核者是否认真读过内容。
+63: 
+64: 全局人物/能力/时间变更影响所有段；某段动作或摘要变化影响本段；前序结束状态和能力变化也影响后续段；最终状态变化会使总设定复核失效。哈希对 JSON 对象键顺序、数字 1/1.0、文本首尾空白和行尾差异归一化，保留正文内部语义差异。
+65: 
+66: ## 旧计划与文件保护
+67: 
+68: ```bash
+69: python scripts/combat_tool.py migrate old-1.0.plan.json --out migrated.plan.json
+70: ```
+71: 
+72: 迁移保留事实和表达，新增空的复核记录；不自动确认旧摘要正确。compile、migrate、apply-review 默认拒绝已有输出、链接路径及源文件覆盖。render 导出 7 份：design-card.md、director.md、prompt.txt、prompt-handoff.json、handoff.md、review.md、combat-plan.json。只有 render 提供显式 --force。
+73: 
+74: validate 和 render 接受 --max-duration 15；确认平台上限为15秒时，30秒单次计划失败，不自动拆分。内置平台模式保持未知；可使用带证据的 --profile 文件进行能力冲突检查，见[平台交接](platforms.md)。审片记录与下一段起点见[审片回流](review-loop.md)。
+75: 
+76: 校验器审计随包 Schema 的关键字；未知断言明确失败，不静默忽略。它是标准库实现的有限子集，并额外拒绝要求非空的纯空白字符串，不是通用 JSON Schema 引擎。结构、引用与复核版本可由代码检查，表达忠实性仍由复核者负责。

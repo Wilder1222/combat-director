@@ -1,6 +1,6 @@
 # Combat Director · 独立战斗导演
 
-**0.8.1 · 2026-09-23**。支持独立 Agent Skill 与 Codex 插件打包。进一步吸收 Arvin 技能中的实际招式、九角色战斗体系、连招、镜头、特效与场景，形成116张按需读取的资料卡；为每类补充对手回应、失败条件和回收，接入现有六轨编排。无需 CineWeave、MCP 服务或视频平台插件即可完成文本创作。
+**0.9.2 · 2026-09-29**。支持独立 Agent Skill 与 Codex 插件打包。116张资料卡与1,466个逐招来源条目覆盖技法、九角色战斗体系、连招、镜头、特效与场景，接入六轨编排；支持Niagara式粒子行为与按镜头选择的运动成像描述。无需 CineWeave、MCP 服务或视频平台插件即可完成文本创作。
 
 源码仓库：[Wilder1222/combat-director](https://github.com/Wilder1222/combat-director)。版本变更见[CHANGELOG.md](CHANGELOG.md)。
 
@@ -10,6 +10,8 @@ LibTV 站内适配在独立分支 `codex/libtv-adaptation` 开发，入口与交
 
 - 人物级武侠攻防、升级式斗法、巨型敌人反制三种母版。
 - 六轨导演时间轴：人物攻防、表演情绪、摄影机、特效、环境反馈、声音。
+- 粒子效果按触发、来源、路径、交互、消散与环境留存组织，区分附刃光效和离体攻击。
+- 运动模糊结合主体与相机相对运动编排，区分曝光、粒子尾迹和艺术残影，保留用户的速度与风格选择。
 - 导演细拍与投喂主段分离，保存人物、武器、能力代价与场景连续性。
 - 中文八标签提示词、平台交接、审片与最小修复。
 - 现成提示词分版本拆解、武器召回与回握、动作接力、旧伤铺垫、台词预算和镜头/定格例外复核。
@@ -17,6 +19,7 @@ LibTV 站内适配在独立分支 `codex/libtv-adaptation` 开发，入口与交
 - 动作签名、破防恢复、多人与远近调度；七张原创机制卡按普通设计/幻想能力分开检索。
 - 38类技法、9个角色预设、18张编排卡、15张镜头卡、4张特效卡、5种风格与20个场景；支持招式名、武学、角色版本、内容层级过滤和分页。
 - 固定源文逐段摘录与原创改编说明分开，17张仅有名称/定位的卡显式标为轮廓。
+- 逐招区分仅名称、文字描述与动作路径，保留同名流派、别名歧义和源行；紧凑检索后只读选中条目，原文按需展开。
 - JSON 计划、摘要失效检查和七份文件导出；审片记录与后续起点核对；不执行视频生成。
 
 ## 开始使用
@@ -48,6 +51,8 @@ LibTV 站内适配在独立分支 `codex/libtv-adaptation` 开发，入口与交
 
 六套均是文本设计，没有实际视频出片验证。
 
+另有两套运动成像案例：[固定机位木杖12秒](skills/combat-director/examples/motion-staff-12.md)、[侧移跟拍附刃交手12秒](skills/combat-director/examples/motion-blade-12.md)。各含六轨、结构化计划与可复制提示词，从作者计划与显式复核凭证确定性生成；没有视频观测证据。
+
 0.7.0新增[18秒演武与恢复](skills/combat-director/examples/sword-recovery-18.md)和[24秒回廊护送](skills/combat-director/examples/corridor-escape-24.md)，含六轨与可复制提示词。太极剑、龙爪手、袈裟、独孤九剑、六脉神剑通过[动作转译](skills/combat-director/references/action-design.md)和[机制库](skills/combat-director/references/library-workflow.md)使用；它们是创作解释，不是历史招谱、原著还原或已验证生成参数。
 
 另有两套直接阅读的文字案例：[18秒飞剑回握与旧裂口](skills/combat-director/examples/return-and-payoff-18.md)、[15秒登场与首斩前收黑](skills/combat-director/examples/entrance-cliffhanger-15.md)。它们展示新增编排方法，没有配套JSON，也不冒充CLI已校验的动作事实。
@@ -62,6 +67,9 @@ python skills/combat-director/scripts/combat_tool.py render skills/combat-direct
 python skills/combat-director/scripts/library_tool.py search design --query "回廊 撤离" --scope group
 python skills/combat-director/scripts/library_tool.py search abilities --query "六脉神剑"
 python skills/combat-director/scripts/library_tool.py search techniques --query "乌龙摆尾" --school "八卦掌"
+python skills/combat-director/scripts/library_tool.py items --query "乌龙摆尾" --kind techniques --school "八卦掌"
+python skills/combat-director/scripts/library_tool.py items --query "小内返" --min-detail description
+python skills/combat-director/scripts/library_tool.py item arvin-tech-judo-item-655720874f5d --source
 python skills/combat-director/scripts/library_tool.py search characters --character "白鸽"
 python skills/combat-director/scripts/library_tool.py stats
 python skills/combat-director/scripts/library_tool.py validate
@@ -82,7 +90,7 @@ validate 和 render 都接受 `--max-duration 15`。30秒计划在确认上限15
 
 ## Codex 插件
 
-项目根目录的 `.codex-plugin/plugin.json` 指向完整技能目录。构建产物为 `dist/combat-director-0.8.1.zip`；仅包含插件清单、技能入口、参考文档、机制库、Schema、脚本与示例。原始附件、测试、评估快照和仓库文档不进入插件包。
+项目根目录的 `.codex-plugin/plugin.json` 指向完整技能目录。构建产物为 `dist/combat-director-0.9.2.zip`；仅包含插件清单、技能入口、参考文档、机制库、Schema、脚本与示例。原始附件、测试、评估快照和仓库文档不进入插件包。
 
 `codex plugin add <plugin>@<marketplace>` 需要可用的市场条目，ZIP构建不等于安装。本机使用个人市场的本地来源；安装/升级状态与代码验证分别记录于[验证报告](docs/validation.md)。其他机器仍需配置自己的安装来源。仓库尚未指定开源许可证。
 
@@ -112,3 +120,11 @@ Arvin原件与MIT许可固定在 `sources/upstream/arvin-seedance`；[本次吸�
 
 
 0.8.1修复[审阅中的三项实现问题](docs/reviews/2026-09-23-0.8.0-review.md)：正式打包检查生成一致性，补齐跨分类筛选，并让已登记旧卡可退役、写入失败可恢复。维护前可用 `python scripts/build_arvin_library.py --plan`只读查看变化；`--recover`用于确认原进程结束后的中断恢复。关联依据在 `sources/editorial/arvin-facets.json`，受管理产物在 `sources/editorial/arvin-generated.json`，不得用刷新哈希绕过人工改动冲突。进度见[优化计划](docs/plans/2026-09-23-0.8.0-optimization-plan.md)。
+
+0.8.2的[Niagara调研](docs/research/2026-09-23-niagara-prompt-research.md)核对用户分享、Epic官方资料、示例项目和视频模型指南；[实施与对照计划](docs/plans/2026-09-23-niagara-integration-plan.md)明确已落地内容和未运行试验。使用时按需读[粒子行为](skills/combat-director/references/particle-vfx.md)，参考[12秒附刃光迹](skills/combat-director/examples/particle-blade-12.md)或[12秒木杖薄尘](skills/combat-director/examples/particle-staff-12.md)。这些是画面设计，不代表实际执行Niagara或已验证视频效果；保留六轨、八标签和计划1.2，库数据不变。
+
+0.8.3按[motion blur融入计划](docs/plans/2026-09-23-motion-blur-integration-plan.md)接入[运动成像参考](skills/combat-director/references/motion-blur.md)、两套结构化案例及双层表达回归。示例权威在sources/editorial/0.8.3，执行 `python scripts/build_motion_examples.py` 重建，正式构建自动检查漂移；复核凭证必须来自实际文本审阅。工程与行为证据分开记录于[历史验证](docs/history/validation-0.8.3.md)，视频实验仍未运行。
+
+2026-09-24补充[motion blur控制边界与验证设计](docs/research/2026-09-24-motion-blur-control-and-evaluation.md)及[后续文件级计划](docs/plans/2026-09-24-motion-blur-review-and-next-steps.md)：区分模型版本、提示增强、可见运动与真实参数；媒体探索先比较18条D/B样本，尚未执行。
+
+0.9.0的[逐招来源与读取说明](docs/implementation/library-items-0.9.0.md)记录items索引1、CLI兼容和实测字符数；可从[分类导航](skills/combat-director/library/index.md)开始。WP04与WP05工程已完成，WP06全库独立创作比较进行中，不以检索测试代替。

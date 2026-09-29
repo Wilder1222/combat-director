@@ -1,0 +1,64 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "styles",
+    "query": "",
+    "scope": null,
+    "school": null,
+    "character": null,
+    "detail": null
+  },
+  "total": 5,
+  "limit": 5,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。",
+  "matches": [
+    {
+      "id": "arvin-style-1",
+      "kind": "styles",
+      "title": "真人武侠风格",
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "detail": "detailed",
+      "matched_names": [],
+      "matched_names_total": 0
+    },
+    {
+      "id": "arvin-style-2",
+      "kind": "styles",
+      "title": "真人格斗风格",
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "detail": "detailed",
+      "matched_names": [],
+      "matched_names_total": 0
+    },
+    {
+      "id": "arvin-style-3",
+      "kind": "styles",
+      "title": "3D国漫风格",
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "detail": "detailed",
+      "matched_names": [],
+      "matched_names_total": 0
+    },
+    {
+      "id": "arvin-style-4",
+      "kind": "styles",
+      "title": "二次元风格",
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "detail": "detailed",
+      "matched_names": [],
+      "matched_names_total": 0
+    },
+    {
+      "id": "arvin-style-5",
+      "kind": "styles",
+      "title": "赛博朋克风格",
+      "summary": "提取材质、光源、轮廓、运动表现各一项再写场景，按用户参考替换；8K、引擎名和抽象质量词不构成画质保证。风格不改变角色的物理能力。",
+      "detail": "detailed",
+      "matched_names": [],
+      "matched_names_total": 0
+    }
+  ]
+}
+

@@ -1,0 +1,58 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "all",
+    "query": "正拳突 沉桥",
+    "card_id": "arvin-character-bingnv",
+    "school": null,
+    "character": null,
+    "detail": null,
+    "min_detail": null
+  },
+  "total": 2,
+  "limit": 12,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "详情等级只描述源文供给，不证明动作完整、事实正确或能力获准；同名与别名歧义分别保留。",
+  "matches": [
+    {
+      "id": "arvin-character-bingnv-item-6c60c53eb813",
+      "card_id": "arvin-character-bingnv",
+      "name": "沉桥",
+      "detail": "motion_path",
+      "schools": [
+        "洪拳"
+      ],
+      "characters": [
+        "冰女"
+      ],
+      "kind": "characters",
+      "matched_names": [
+        "沉桥"
+      ],
+      "source_lines": [
+        1082
+      ]
+    },
+    {
+      "id": "arvin-character-bingnv-item-83556f18b960",
+      "card_id": "arvin-character-bingnv",
+      "name": "正拳突",
+      "detail": "motion_path",
+      "schools": [
+        "空手道"
+      ],
+      "characters": [
+        "冰女"
+      ],
+      "kind": "characters",
+      "matched_names": [
+        "正拳突"
+      ],
+      "source_lines": [
+        1079
+      ]
+    }
+  ]
+}
+

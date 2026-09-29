@@ -2,7 +2,7 @@
 name: combat-director
 description: 独立战斗导演技能。用于打斗视频与提示词拆解、武侠攻防、仙侠斗法、巨型敌人战、角色战斗登场、战斗分镜与视频提示词、打斗失败诊断。根据人物目标、能力边界和空间状态编排战斗，输出中文六轨时间轴与平台提示词。可独立使用，也可与其他导演技能交换方案；不负责日常人像、完整剧集世界观或未经授权的视频生成。
 metadata:
-  version: "0.8.1"
+  version: "0.9.2"
   language: "zh-CN"
 ---
 
@@ -11,6 +11,8 @@ metadata:
 把人物目标变成具有攻防因果、表演、镜头与环境反馈的战斗，而不是叠加形容词。独立完成从创作简报到可交付提示词；不得要求先安装 CineWeave、ComfyUI 或视频平台插件。
 
 文本工作流无依赖；可选脚本需要 Python 3.10+，仅使用标准库。平台能力核验需当前证据，离线编排可继续。附件融合与重建说明见 [sources](references/sources.md)。
+
+Encoding recovery: If a skill/reference read is garbled or contains replacement characters, do not treat it as successfully read. Recover this SKILL.md and only the required references as UTF-8. With Python available, emit the text using `json.dumps(text, ensure_ascii=True)` so the tool output is ASCII-safe; decode the JSON escapes when reading it. If no readable method is available, report the limitation rather than infer missing rules.
 
 ## 先选择任务
 
@@ -22,6 +24,8 @@ metadata:
 | 设计动作签名、把武学或名招转成画面 | 动作设计 | [references/action-design.md](references/action-design.md) |
 | 选具体招式、套用角色预设、融合多种武学 | 招式与角色编排 | [references/technique-adaptation.md](references/technique-adaptation.md)，按需检索技法、角色和连招 |
 | 多人、远程、追逐、体型差或演武 | 场面调度 | [references/combat-modes.md](references/combat-modes.md) |
+| 粒子、烟火、剑光拖尾或特效遮挡修订 | 特效行为 | [references/particle-vfx.md](references/particle-vfx.md)，继承动作与能力边界 |
+| 战斗运动模糊、快门观感、跟拍拖糊或残影诊断 | 运动成像 | [references/motion-blur.md](references/motion-blur.md)，结合动作与相机相对运动 |
 | 检索或吸收可复用招式与能力机制 | 机制库 | [references/library-workflow.md](references/library-workflow.md)，先索引后正文 |
 | 角色登场、首斩前收黑、预告式战斗 | 登场片段 | [references/prompt-craft.md](references/prompt-craft.md)、[examples/entrance-cliffhanger-15.md](examples/entrance-cliffhanger-15.md) |
 | 输出 LibTV、小云雀或其他平台提示词 | 适配 | [references/platforms.md](references/platforms.md)、[assets/platform-profiles.json](assets/platform-profiles.json) |
@@ -59,7 +63,7 @@ metadata:
 
 将渲染风格与能力规则分开：真人、CG、三维动画、二维漫画、水墨均可使用相同攻防逻辑。不要把“写实外观”误认为“禁止幻想”，也不要把“仙侠服装”误认为“允许毁城”。
 
-需要机制候选时检索 [library/catalog.json](library/catalog.json)，只读命中卡；零命中直接原创并说明来源。候选不等于可执行，先核对已有兵器、介质、位置、资源、能力与结尾。普通动作能够完成目的时不追加法术。用户点名的武学或文学招式保留其意图，再拆为可见动作；出处不明不称正统，小说能力不写成历史武术。用户已授权自行选风格或场地时直接选择并说明，不强制弹出选项菜单。
+需要机制候选时按[检索流程](references/library-workflow.md)查询；点名招式优先 `items --query "招名"`，用返回ID读取条目，再按需读所属卡。没有Python时从[分类导航](library/index.md)选卡，不先加载整个索引。零命中直接原创并说明来源。候选不等于可执行，先核对已有兵器、介质、位置、资源、能力与结尾。普通动作能够完成目的时不追加法术。用户点名的武学或文学招式保留其意图，再拆为可见动作；出处不明不称正统，小说能力不写成历史武术。用户已授权自行选风格或场地时直接选择并说明，不强制弹出选项菜单。
 
 招式库含具体动作表、角色变体和名称轮廓。先按人物任务选主攻、破招、收势，再把所选一至三招接入状态链；不要把招名清单贴进提示词。使用角色预设时先锁定版本，保留白鸽的高/中位腿法主轴、凛羽的打→抓→打、冰女的硬冰封路等区别。同名绯雪的冰霜轮廓与火焰角色分别处理；源码缺失的兵器专项不冒充完整剑谱。具体选择与冲突处理见[招式融合](references/technique-adaptation.md)。
 
@@ -70,6 +74,10 @@ metadata:
 防守被打散后，要经历避让、残余招架或落脚恢复，不能下一击自动回到完整架势；恢复由姿态和支撑变化说明，不统一套秒数。多人战逐拍给所有人的任务、位置和受阻原因，避免排队待打。强度、动作密度、播放速度、切镜频率分别选择，不把“高燃”自动译为全程慢放或碎切。
 
 六轨固定为：人物攻防、表演情绪、摄影机、特效、环境反馈、声音。时间轴与状态表在六轨之外。两个人必须都存在于攻防和表演记录中；画外角色也要说明状态。
+
+粒子按来源/触发、路径、交互与结束写成可见行为，按需读取[粒子参考](references/particle-vfx.md)。仍放入特效与环境反馈两轨；Niagara等引擎词不证明模型执行了模拟，附刃光效也不自动授予离体攻击。
+
+涉及运动成像时按[运动模糊参考](references/motion-blur.md)区分曝光、粒子尾迹与艺术残影，保护关键攻防的可辨性；不默认强模糊或固定快门。相关镜头意图同步到导演细拍与投喂摘要，未核验的参数仍只是意图。
 
 每次技能注明归属、触发、限制、代价与结束条件。敌方人形变风暴、机甲转换形态等变化，必须给同一角色的可见转化过程，不能靠爆闪偷偷换 Boss。
 

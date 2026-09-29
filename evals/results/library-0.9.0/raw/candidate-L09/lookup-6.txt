@@ -1,0 +1,27 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "scenes",
+    "query": "甲板",
+    "scope": null,
+    "school": null,
+    "character": null,
+    "detail": null
+  },
+  "total": 1,
+  "limit": 12,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。",
+  "matches": [
+    {
+      "id": "arvin-scene-17",
+      "kind": "scenes",
+      "title": "复古油画，颠簸远洋木船甲板，巨浪海风",
+      "summary": "甲板俯仰同时作用双方；人物借栏杆稳定必须有空手，滑步随船倾方向。",
+      "detail": "detailed",
+      "matched_names": [],
+      "matched_names_total": 0
+    }
+  ]
+}

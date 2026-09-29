@@ -1,0 +1,6 @@
+{
+  "tool": "apply_patch",
+  "successful_creation_of_helper": {},
+  "failed_attempt_to_replace_lookup_5": "apply_patch verification failed: invalid patch: multiple operations target D:\\Temp\\combat-extension-nws2d7rg\\runs\\M02\\lookup-5.txt",
+  "recovery": "Finalize log helper replaces lookup-5 with the exact observed exec_command result."
+}

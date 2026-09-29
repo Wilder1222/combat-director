@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-29",
+  "baseline_archive_sha256": "150ad6f4ba5e9c7ce82f3cd5248facc442f0a0e58cd5767ac878e77a66f50354",
+  "candidate_archive_sha256": "aefa93903bdf83806d25459b0249e43f486fe5ca2feab63125bc9490978d03aa",
+  "added": [],
+  "removed": [],
+  "changed_runtime_files": [
+    ".codex-plugin/plugin.json",
+    "skills/combat-director/SKILL.md"
+  ],
+  "unchanged_runtime_files": 185,
+  "cases": [
+    {
+      "id": "MXH04",
+      "request_sha256": "5d28ced0b7a229ed9977350dc57cd77afa317ee48204f132a0e7243df4a5fd35",
+      "exact_original_request": true,
+      "required_recovered_sources": [
+        "SKILL.md",
+        "references/motion-blur.md"
+      ],
+      "matched": true,
+      "read_commands": 4
+    },
+    {
+      "id": "MXH06",
+      "request_sha256": "85c272493411aee37a8229c03a3836bca933d41ab7117a5f53c1d383c4b004ec",
+      "exact_original_request": true,
+      "required_recovered_sources": [
+        "SKILL.md",
+        "references/motion-blur.md"
+      ],
+      "matched": true,
+      "read_commands": 4
+    },
+    {
+      "id": "MXH08",
+      "request_sha256": "84ce65c62e6a4f4ce33ed9f3a5845334be287ddf42db86fdc92d4ce9611460e1",
+      "exact_original_request": true,
+      "required_recovered_sources": [],
+      "matched": null,
+      "read_commands": 0,
+      "match_status": "not_applicable_static_request"
+    }
+  ],
+  "scope": "Exact inputs and scoped runtime difference. Host model service and other local state not fully frozen; no causal success-rate estimate. Old failing events remain unchanged."
+}

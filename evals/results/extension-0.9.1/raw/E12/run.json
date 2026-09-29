@@ -1,0 +1,111 @@
+{
+  "request": "编排12秒水墨外观的雨中退守：两名成年虚构角色，A徒手沿石阶后退，B持木棍压进，结尾A退到檐下并挡住B继续前进。只有人物级身体能力，不要大招、能量波或分身。正常速度、最多两个镜头，给简明六轨与中文提示词，体现双方回应和湿滑地形。",
+  "request_path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\request.txt",
+  "scope": "仅读取指定冻结技能包、本题请求；仅向 E12 输出目录写入文件。",
+  "inputs": [
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+      "sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+      "read_mode": "完整",
+      "reads": [
+        "初次 Get-Content -Raw 完整读取并显示",
+        "记录阶段再次完整读取，用于保存初次 stdout 文本",
+        "Get-FileHash SHA-256，仅哈希读取"
+      ]
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\request.txt",
+      "sha256": "7ded957b9008d79760658bb15957b65f0e93c66ea28a0512f0ce1c4ac3c0f968",
+      "read_mode": "完整",
+      "reads": [
+        "初次 Get-Content -Raw 完整读取并显示",
+        "记录阶段再次完整读取，用于保存初次 stdout 文本",
+        "Get-FileHash SHA-256，仅哈希读取"
+      ]
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md",
+      "sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c",
+      "read_mode": "完整",
+      "reads": [
+        "Get-Content -Raw 完整读取并显示",
+        "Get-FileHash SHA-256，仅哈希读取"
+      ]
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md",
+      "sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1",
+      "read_mode": "完整",
+      "reads": [
+        "Get-Content -Raw 完整读取并显示",
+        "Get-FileHash SHA-256，仅哈希读取"
+      ]
+    }
+  ],
+  "read_categories": {
+    "full": [
+      "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+      "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\request.txt",
+      "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md",
+      "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md"
+    ],
+    "partial": [],
+    "hash_only_inputs": [],
+    "script_internal_inputs": [],
+    "note": "四个输入均已完整阅读；另对这四个已读文件执行了仅哈希读取，没有额外的仅哈希输入。未运行 Python 或包内脚本。"
+  },
+  "commands": [
+    {
+      "command": "Get-Content -Raw 'D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md'",
+      "exit_code": 0,
+      "output": "lookup-1.txt"
+    },
+    {
+      "command": "Get-Content -Raw 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\request.txt'",
+      "exit_code": 0,
+      "output": "lookup-2.txt"
+    },
+    {
+      "command": "$paths = @('D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md','D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md'); foreach ($p in $paths) { Write-Output ('FILE: ' + $p); Get-Content -Raw -LiteralPath $p }",
+      "exit_code": 0,
+      "output": "lookup-3.txt"
+    },
+    {
+      "command": "$base = 'D:\\Temp\\combat-extension-nws2d7rg'; $out = Join-Path $base 'runs\\E12'; $skill = Join-Path $base 'candidate\\skills\\combat-director'; $skillText = Get-Content -Raw -LiteralPath (Join-Path $skill 'SKILL.md'); $requestText = Get-Content -Raw -LiteralPath (Join-Path $out 'request.txt'); Set-Content -LiteralPath (Join-Path $out 'lookup-1.txt') -Value $skillText -Encoding utf8; Set-Content -LiteralPath (Join-Path $out 'lookup-2.txt') -Value $requestText -Encoding utf8; $paths = @((Join-Path $skill 'SKILL.md'), (Join-Path $out 'request.txt'), (Join-Path $skill 'references\\choreography.md'), (Join-Path $skill 'references\\templates.md')); $hashes = foreach ($p in $paths) { $h = Get-FileHash -Algorithm SHA256 -LiteralPath $p; [PSCustomObject]@{path=$p;sha256=$h.Hash.ToLowerInvariant()} }; [PSCustomObject]@{request=$requestText;inputs=@($hashes)} | ConvertTo-Json -Depth 5",
+      "exit_code": 0,
+      "output": "lookup-4.txt"
+    }
+  ],
+  "tool_writes": [
+    {
+      "tool": "apply_patch",
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\answer.md",
+      "result": {},
+      "output": "lookup-5.txt"
+    },
+    {
+      "tool": "apply_patch",
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\lookup-3.txt",
+      "result": {},
+      "output": "lookup-5.txt"
+    }
+  ],
+  "output_notes": "lookup-1.txt 和 lookup-2.txt 保存最初完整读取的 stdout 内容，记录阶段重新读取冻结输入后落盘；lookup-3.txt 和 lookup-4.txt 保存对应命令返回的 stdout。lookup-5.txt 保存已完成的产物写入工具返回值。日志自身的写入不递归登记。",
+  "outputs": [
+    "answer.md",
+    "run.json",
+    "lookup-1.txt",
+    "lookup-2.txt",
+    "lookup-3.txt",
+    "lookup-4.txt",
+    "lookup-5.txt"
+  ],
+  "execution": {
+    "network": false,
+    "platform_submission": false,
+    "media_generation": false,
+    "skill_modification": false,
+    "subagents_started": false
+  },
+  "validation": "文本自检：12 秒、一个连续镜头、六轨、双方回应、湿滑恢复、人物级能力、檐下阻拦结尾。无媒体生成或成片验证。"
+}

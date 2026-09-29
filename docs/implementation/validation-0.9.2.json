@@ -1,0 +1,1101 @@
+{
+  "version": "0.9.2",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "win32",
+  "checks": [
+    {
+      "check": "rebuild original examples",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "epic-30: 11 director beats / 6 prompt sections\ngrounded-15: 6 director beats / 4 prompt sections\ncolossus-30: 8 director beats / 6 prompt sections\n",
+      "stderr": ""
+    },
+    {
+      "check": "rebuild action examples",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "alley-letter-15\nthree-person-exit-18\nfailed-counter-repair-18\n",
+      "stderr": ""
+    },
+    {
+      "check": "check reviewed motion examples",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "PASS: 2 reviewed motion plans; 6 derived files unchanged\n",
+      "stderr": ""
+    },
+    {
+      "check": "pinned source and formal release preflight",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "PASS: 187 release files; pinned sources and generated outputs valid\n",
+      "stderr": ""
+    },
+    {
+      "check": "unittest",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": "test_ability_cost_prevents_next_hand_use (test_action_evidence.ActionEvidenceTests.test_ability_cost_prevents_next_hand_use) ... ok\ntest_accepted_observation_is_next_origin (test_action_evidence.ActionEvidenceTests.test_accepted_observation_is_next_origin) ... ok\ntest_action_details_reach_prompt (test_action_evidence.ActionEvidenceTests.test_action_details_reach_prompt) ... ok\ntest_capability_known_unknown_expired (test_action_evidence.ActionEvidenceTests.test_capability_known_unknown_expired) ... ok\ntest_forward_or_duplicate_event_reference (test_action_evidence.ActionEvidenceTests.test_forward_or_duplicate_event_reference) ... ok\ntest_invalid_evidence_is_not_compatible (test_action_evidence.ActionEvidenceTests.test_invalid_evidence_is_not_compatible) ... ok\ntest_partial_frames_never_prove_audio_or_full_video (test_action_evidence.ActionEvidenceTests.test_partial_frames_never_prove_audio_or_full_video) ... ok\ntest_rejected_or_unobserved_take_never_seeds (test_action_evidence.ActionEvidenceTests.test_rejected_or_unobserved_take_never_seeds) ... ok\ntest_structured_state_has_one_authority (test_action_evidence.ActionEvidenceTests.test_structured_state_has_one_authority) ... ok\ntest_wrong_owner_and_missing_transfer (test_action_evidence.ActionEvidenceTests.test_wrong_owner_and_missing_transfer) ... ok\ntest_category_facets_and_reviewed_camera_scopes (test_arvin_library.ArvinLibraryTests.test_category_facets_and_reviewed_camera_scopes) ... ok\ntest_cross_kind_school_and_character_filters_preserve_known_results (test_arvin_library.ArvinLibraryTests.test_cross_kind_school_and_character_filters_preserve_known_results) ... ok\ntest_every_overview_family_and_scene_is_sourced_once (test_arvin_library.ArvinLibraryTests.test_every_overview_family_and_scene_is_sourced_once) ... ok\ntest_fire_character_and_frost_weapon_do_not_merge (test_arvin_library.ArvinLibraryTests.test_fire_character_and_frost_weapon_do_not_merge) ... ok\ntest_named_move_is_located_inside_school_without_reading_cards (test_arvin_library.ArvinLibraryTests.test_named_move_is_located_inside_school_without_reading_cards) ... ok\ntest_outline_is_never_promoted_to_supplied_detail (test_arvin_library.ArvinLibraryTests.test_outline_is_never_promoted_to_supplied_detail) ... ok\ntest_paging_visits_each_result_once_and_reports_out_of_range (test_arvin_library.ArvinLibraryTests.test_paging_visits_each_result_once_and_reports_out_of_range) ... ok\ntest_romanized_move_and_camera_table_names_are_retrievable (test_arvin_library.ArvinLibraryTests.test_romanized_move_and_camera_table_names_are_retrievable) ... ok\ntest_same_move_name_preserves_school_variants (test_arvin_library.ArvinLibraryTests.test_same_move_name_preserves_school_variants) ... ok\ntest_source_hashes_and_generated_artifacts_are_reproducible (test_arvin_library.ArvinLibraryTests.test_source_hashes_and_generated_artifacts_are_reproducible) ... ok\ntest_source_metadata_rejects_missing_identity_and_invalid_ranges (test_arvin_library.ArvinLibraryTests.test_source_metadata_rejects_missing_identity_and_invalid_ranges) ... ok\ntest_tampered_source_is_rejected_before_outputs_are_built (test_arvin_library.ArvinLibraryTests.test_tampered_source_is_rejected_before_outputs_are_built) ... ok\ntest_ability_limits (test_combat_tool.CombatTests.test_ability_limits) ... ok\ntest_ability_owner (test_combat_tool.CombatTests.test_ability_owner) ... ok\ntest_axis_change (test_combat_tool.CombatTests.test_axis_change) ... ok\ntest_cli (test_combat_tool.CombatTests.test_cli) ... ok\ntest_confirmed_limit (test_combat_tool.CombatTests.test_confirmed_limit) ... ok\ntest_duplicate_ids (test_combat_tool.CombatTests.test_duplicate_ids) ... ok\ntest_export_no_overwrite_then_force (test_combat_tool.CombatTests.test_export_no_overwrite_then_force) ... ok\ntest_export_source_protected (test_combat_tool.CombatTests.test_export_source_protected) ... ok\ntest_false_binding_and_frame_actor (test_combat_tool.CombatTests.test_false_binding_and_frame_actor) ... ok\ntest_gap (test_combat_tool.CombatTests.test_gap) ... ok\ntest_inheritance (test_combat_tool.CombatTests.test_inheritance) ... ok\ntest_missing_opponent (test_combat_tool.CombatTests.test_missing_opponent) ... ok\ntest_missing_performance (test_combat_tool.CombatTests.test_missing_performance) ... ok\ntest_nonfinite_and_bool (test_combat_tool.CombatTests.test_nonfinite_and_bool) ... ok\ntest_one_take_cuts (test_combat_tool.CombatTests.test_one_take_cuts) ... ok\ntest_one_take_shot_change (test_combat_tool.CombatTests.test_one_take_shot_change) ... ok\ntest_overlap (test_combat_tool.CombatTests.test_overlap) ... ok\ntest_result_and_handles (test_combat_tool.CombatTests.test_result_and_handles) ... ok\ntest_schema_rejects_unknown_and_wrong_types (test_combat_tool.CombatTests.test_schema_rejects_unknown_and_wrong_types) ... ok\ntest_section_coverage (test_combat_tool.CombatTests.test_section_coverage) ... ok\ntest_symlink_rejected (test_combat_tool.CombatTests.test_symlink_rejected) ... skipped 'OS does not permit symlink creation'\ntest_three_examples_and_prompt_sync (test_combat_tool.CombatTests.test_three_examples_and_prompt_sync) ... ok\ntest_total_duration (test_combat_tool.CombatTests.test_total_duration) ... ok\ntest_twelve_exports_no_source_mutation (test_combat_tool.CombatTests.test_twelve_exports_no_source_mutation) ... ok\ntest_unknown_ability (test_combat_tool.CombatTests.test_unknown_ability) ... ok\ntest_zero_beat (test_combat_tool.CombatTests.test_zero_beat) ... ok\ntest_bad_managed_paths_and_forged_ownership_cannot_escape (test_generated_files.GeneratedFilesTests.test_bad_managed_paths_and_forged_ownership_cannot_escape) ... ok\ntest_collision_with_unowned_desired_file_is_preserved (test_generated_files.GeneratedFilesTests.test_collision_with_unowned_desired_file_is_preserved) ... ok\ntest_failed_rollback_retains_journal_and_explicit_recovery_works (test_generated_files.GeneratedFilesTests.test_failed_rollback_retains_journal_and_explicit_recovery_works) ... ok\ntest_install_failure_rolls_back_updates_creates_and_retirements (test_generated_files.GeneratedFilesTests.test_install_failure_rolls_back_updates_creates_and_retirements) ... ok\ntest_manual_old_card_or_unknown_generated_card_blocks_before_writing (test_generated_files.GeneratedFilesTests.test_manual_old_card_or_unknown_generated_card_blocks_before_writing) ... ok\ntest_preview_and_check_do_not_write (test_generated_files.GeneratedFilesTests.test_preview_and_check_do_not_write) ... ok\ntest_recovery_preserves_a_later_manual_edit (test_generated_files.GeneratedFilesTests.test_recovery_preserves_a_later_manual_edit) ... ok\ntest_rename_retires_only_recorded_unchanged_card (test_generated_files.GeneratedFilesTests.test_rename_retires_only_recorded_unchanged_card) ... ok\ntest_staging_failure_leaves_original_outputs_intact (test_generated_files.GeneratedFilesTests.test_staging_failure_leaves_original_outputs_intact) ... ok\ntest_symlink_inside_root_is_not_a_managed_target (test_generated_files.GeneratedFilesTests.test_symlink_inside_root_is_not_a_managed_target) ... skipped 'symlink creation is unavailable'\ntest_alias_collision_preserves_both_source_names (test_library_items.ItemTests.test_alias_collision_preserves_both_source_names) ... ok\ntest_all_evidence_matches_pinned_source_and_row_location (test_library_items.ItemTests.test_all_evidence_matches_pinned_source_and_row_location) ... ok\ntest_compact_card_projection_preserves_ranking_and_source_expand (test_library_items.ItemTests.test_compact_card_projection_preserves_ranking_and_source_expand) ... ok\ntest_item_search_and_read_do_not_load_card_bodies (test_library_items.ItemTests.test_item_search_and_read_do_not_load_card_bodies) ... ok\ntest_name_only_is_findable_but_not_action_detail (test_library_items.ItemTests.test_name_only_is_findable_but_not_action_detail) ... ok\ntest_named_action_has_literal_source_and_school_variants_do_not_merge (test_library_items.ItemTests.test_named_action_has_literal_source_and_school_variants_do_not_merge) ... ok\ntest_packaged_cli_is_utf8_and_read_only_outside_repository (test_library_items.ItemTests.test_packaged_cli_is_utf8_and_read_only_outside_repository) ... ok\ntest_paging_and_filters_keep_no_match_distinct_from_exhaustion (test_library_items.ItemTests.test_paging_and_filters_keep_no_match_distinct_from_exhaustion) ... ok\ntest_shared_card_facets_do_not_give_every_row_every_school (test_library_items.ItemTests.test_shared_card_facets_do_not_give_every_row_every_school) ... ok\ntest_source_semantics_are_not_inferred_only_from_column_title (test_library_items.ItemTests.test_source_semantics_are_not_inferred_only_from_column_title) ... ok\ntest_tampered_item_provenance_and_metadata_are_rejected (test_library_items.ItemTests.test_tampered_item_provenance_and_metadata_are_rejected) ... ok\ntest_cli_works_outside_repository_without_writes (test_library_tool.LibraryTests.test_cli_works_outside_repository_without_writes) ... ok\ntest_duplicate_id_and_invalid_metadata_rejected (test_library_tool.LibraryTests.test_duplicate_id_and_invalid_metadata_rejected) ... ok\ntest_empty_query_lists_filtered_candidates (test_library_tool.LibraryTests.test_empty_query_lists_filtered_candidates) ... ok\ntest_filter_separates_ordinary_cloth_from_supernatural_field (test_library_tool.LibraryTests.test_filter_separates_ordinary_cloth_from_supernatural_field) ... ok\ntest_group_filter_and_ranked_query (test_library_tool.LibraryTests.test_group_filter_and_ranked_query) ... ok\ntest_missing_duplicate_and_escaping_paths_rejected (test_library_tool.LibraryTests.test_missing_duplicate_and_escaping_paths_rejected) ... ok\ntest_no_match_never_inserts_default (test_library_tool.LibraryTests.test_no_match_never_inserts_default) ... ok\ntest_search_does_not_read_card_bodies (test_library_tool.LibraryTests.test_search_does_not_read_card_bodies) ... ok\ntest_show_reads_only_chosen_card_and_rejects_unknown_id (test_library_tool.LibraryTests.test_show_reads_only_chosen_card_and_rejects_unknown_id) ... ok\ntest_all_drift_paths_are_rejected_without_overwriting_previous_zip (test_release_build.ReleaseBuildTests.test_all_drift_paths_are_rejected_without_overwriting_previous_zip) ... ok\ntest_changed_archive_replacement_failure_keeps_previous_bytes (test_release_build.ReleaseBuildTests.test_changed_archive_replacement_failure_keeps_previous_bytes) ... ok\ntest_identical_build_preserves_archive_without_replacement (test_release_build.ReleaseBuildTests.test_identical_build_preserves_archive_without_replacement) ... ok\ntest_recipe_rename_rebuilds_and_retires_the_old_generated_card (test_release_build.ReleaseBuildTests.test_recipe_rename_rebuilds_and_retires_the_old_generated_card) ... ok\ntest_runtime_structure_validation_does_not_require_sources (test_release_build.ReleaseBuildTests.test_runtime_structure_validation_does_not_require_sources) ... ok\ntest_valid_build_is_reproducible (test_release_build.ReleaseBuildTests.test_valid_build_is_reproducible) ... ok\ntest_zip_write_or_crc_failure_keeps_previous_zip (test_release_build.ReleaseBuildTests.test_zip_write_or_crc_failure_keeps_previous_zip) ... ok\ntest_authority_edits_cannot_silently_export_old_prompt (test_review_flow.ReviewFlowTests.test_authority_edits_cannot_silently_export_old_prompt) ... ok\ntest_camera_facts_and_expression_have_separate_export_dependencies (test_review_flow.ReviewFlowTests.test_camera_facts_and_expression_have_separate_export_dependencies) ... ok\ntest_compiled_handoff_preserves_authority_and_is_independent (test_review_flow.ReviewFlowTests.test_compiled_handoff_preserves_authority_and_is_independent) ... ok\ntest_final_state_invalidates_global_story_ending (test_review_flow.ReviewFlowTests.test_final_state_invalidates_global_story_ending) ... ok\ntest_formatting_and_provenance_do_not_invalidate (test_review_flow.ReviewFlowTests.test_formatting_and_provenance_do_not_invalidate) ... ok\ntest_invalid_or_incomplete_receipts_are_rejected (test_review_flow.ReviewFlowTests.test_invalid_or_incomplete_receipts_are_rejected) ... ok\ntest_legacy_migration_requires_explicit_review (test_review_flow.ReviewFlowTests.test_legacy_migration_requires_explicit_review) ... ok\ntest_schema_assertions_are_audited (test_review_flow.ReviewFlowTests.test_schema_assertions_are_audited) ... ok\ntest_scope_dependencies_include_prior_results (test_review_flow.ReviewFlowTests.test_scope_dependencies_include_prior_results) ... ok\ntest_summary_edit_invalidates_its_attestation (test_review_flow.ReviewFlowTests.test_summary_edit_invalidates_its_attestation) ... ok\n\n----------------------------------------------------------------------\nRan 95 tests in 28.426s\n\nOK (skipped=2)\n"
+    },
+    {
+      "check": "standard schemas",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "PASS: 3 schemas; 8 plan examples; Draft 2020-12 + subset audit\n",
+      "stderr": ""
+    },
+    {
+      "check": "package structure",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "PASS: 187 release files; resource links valid\n",
+      "stderr": ""
+    },
+    {
+      "check": "build archive",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "D:\\study\\projects\\combat-director\\dist\\combat-director-0.9.2.zip\n",
+      "stderr": ""
+    },
+    {
+      "check": "skill-creator",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "check": "plugin-creator",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "Plugin validation passed: D:\\study\\projects\\combat-director\n",
+      "stderr": ""
+    },
+    {
+      "check": "repeat archive build",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "D:\\study\\projects\\combat-director\\dist\\combat-director-0.9.2.zip\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked library validation",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "PASS: 116 combat cards; 1466 source items; indexes and references valid\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked library lookup",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"candidates\",\n  \"filters\": {\n    \"kind\": \"design\",\n    \"query\": \"回廊 撤离\",\n    \"scope\": \"group\",\n    \"school\": null,\n    \"character\": null,\n    \"detail\": null\n  },\n  \"total\": 1,\n  \"limit\": 12,\n  \"offset\": 0,\n  \"next_offset\": null,\n  \"notice\": \"仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。\",\n  \"matches\": [\n    {\n      \"id\": \"corridor-exit\",\n      \"kind\": \"design\",\n      \"title\": \"回廊多人护送撤离\",\n      \"summary\": \"通过柱间窄口限制同时接触，用不同任务保持所有人持续行动。\",\n      \"detail\": \"original\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked library card",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "# 有限指向射线\n\nID：`finger-lines`。六脉神剑意象的原创影视转译；数量按用户设定，不从名称推断必须六线齐发。\n\n**成立条件**：人物获准远程能量能力，有可用发射手、已声明射程与次数，发射点到终点路径清楚。普通动作足够时不采用本卡。\n\n**阶段**：先显露手指朝向；细线沿所指方向发射。对手见指向后侧移，线从其原站位经过，撞到设定允许阻挡它的石柱后消散，柱面留下一道浅痕。下一次发射必须从当前手部朝向重新开始，不从空中旧轨迹凭空续射。\n\n**预算与代价**：测试例可自定“两次单线、人物级范围”，明确是创作假设。第二次后手指颤动、腕部下垂，不能立刻加出第三次。若用户选定其它上限，改预算及后续状态，不强套两次。\n\n**对手反制与失败**：提前改线、进入有效掩体或迫使施术手失去指向；自动追踪、穿墙、折返都需额外设定。被打断的蓄势不能在下一镜无由变成已释放。\n\n**镜头与结束**：以包含双方和掩体的视角读清起点、路径、落点，再收近疲劳的手；严格全身同框则保留宽景。指尖熄灭和最后一道线消散说明结束，浅痕不消失。无实测音轨时尖啸、碎屑落声只是声音设计。\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked named technique",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"candidates\",\n  \"filters\": {\n    \"kind\": \"techniques\",\n    \"query\": \"乌龙摆尾\",\n    \"scope\": null,\n    \"school\": \"八卦掌\",\n    \"character\": null,\n    \"detail\": \"detailed\"\n  },\n  \"total\": 1,\n  \"limit\": 12,\n  \"offset\": 0,\n  \"next_offset\": null,\n  \"notice\": \"仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。\",\n  \"matches\": [\n    {\n      \"id\": \"arvin-tech-bagua\",\n      \"kind\": \"techniques\",\n      \"title\": \"八卦掌\",\n      \"summary\": \"以弧形步法换到外门，掌线随躯干转动；先画可用绕行空间，被柱墙封路就缩弧或退出。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [\n        \"乌龙摆尾\",\n        \"回身乌龙摆尾/回身劈掌\"\n      ],\n      \"matched_names_total\": 2\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked compact first page",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"candidates\",\n  \"filters\": {\n    \"kind\": \"all\",\n    \"query\": \"\",\n    \"scope\": null,\n    \"school\": null,\n    \"character\": null,\n    \"detail\": null\n  },\n  \"total\": 116,\n  \"limit\": 12,\n  \"offset\": 0,\n  \"next_offset\": 12,\n  \"notice\": \"仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。\",\n  \"matches\": [\n    {\n      \"id\": \"arvin-camera-color\",\n      \"kind\": \"camera\",\n      \"title\": \"冷暖与双方辨识\",\n      \"summary\": \"可借冷暖区分双方，也可用明度、剪影与材质；不强迫所有角色改成双色能量。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    },\n    {\n      \"id\": \"arvin-camera-moves15\",\n      \"kind\": \"camera\",\n      \"title\": \"十五种运镜与组合\",\n      \"summary\": \"按当前运动线选一主运镜，连续镜头不能同时对向移动；不采用平台成功率或星级作为证据。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    },\n    {\n      \"id\": \"arvin-camera-pattern-a\",\n      \"kind\": \"camera\",\n      \"title\": \"低仰蓄力\",\n      \"summary\": \"按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    },\n    {\n      \"id\": \"arvin-camera-pattern-b\",\n      \"kind\": \"camera\",\n      \"title\": \"攻击轨迹与拖尾\",\n      \"summary\": \"按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    },\n    {\n      \"id\": \"arvin-camera-pattern-c\",\n      \"kind\": \"camera\",\n      \"title\": \"接触点与双色效果\",\n      \"summary\": \"按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    },\n    {\n      \"id\": \"arvin-camera-pattern-d\",\n      \"kind\": \"camera\",\n      \"title\": \"全景余波收束\",\n      \"summary\": \"按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    },\n    {\n      \"id\": \"arvin-camera-pattern-e\",\n      \"kind\": \"camera\",\n      \"title\": \"不对称效果压迫\",\n      \"summary\": \"按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    },\n    {\n      \"id\": \"arvin-camera-pattern-f\",\n      \"kind\": \"camera\",\n      \"title\": \"翻摔全肢可见\",\n      \"summary\": \"按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    },\n    {\n      \"id\": \"arvin-camera-pattern-g\",\n      \"kind\": \"camera\",\n      \"title\": \"元素对峙\",\n      \"summary\": \"按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    },\n    {\n      \"id\": \"arvin-camera-pattern-h\",\n      \"kind\": \"camera\",\n      \"title\": \"角色与地面反馈\",\n      \"summary\": \"按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    },\n    {\n      \"id\": \"arvin-camera-pattern-i\",\n      \"kind\": \"camera\",\n      \"title\": \"攻击部位推进\",\n      \"summary\": \"按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    },\n    {\n      \"id\": \"arvin-camera-pattern-j\",\n      \"kind\": \"camera\",\n      \"title\": \"上勾动作的三段呈现\",\n      \"summary\": \"按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [],\n      \"matched_names_total\": 0\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked name-only item",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"candidates\",\n  \"filters\": {\n    \"kind\": \"all\",\n    \"query\": \"小内返\",\n    \"card_id\": null,\n    \"school\": null,\n    \"character\": null,\n    \"detail\": null,\n    \"min_detail\": null\n  },\n  \"total\": 1,\n  \"limit\": 12,\n  \"offset\": 0,\n  \"next_offset\": null,\n  \"notice\": \"详情等级只描述源文供给，不证明动作完整、事实正确或能力获准；同名与别名歧义分别保留。\",\n  \"matches\": [\n    {\n      \"id\": \"arvin-tech-judo-item-655720874f5d\",\n      \"card_id\": \"arvin-tech-judo\",\n      \"name\": \"小内返\",\n      \"detail\": \"name_only\",\n      \"schools\": [\n        \"柔道\"\n      ],\n      \"characters\": [],\n      \"kind\": \"techniques\",\n      \"matched_names\": [\n        \"小内返\"\n      ],\n      \"source_lines\": [\n        1808\n      ]\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked selected source row",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"item\": {\n    \"id\": \"arvin-tech-judo-item-655720874f5d\",\n    \"card_id\": \"arvin-tech-judo\",\n    \"name\": \"小内返\",\n    \"aliases\": [\n      \"Ko-uchi-gaeshi\"\n    ],\n    \"schools\": [\n      \"柔道\"\n    ],\n    \"characters\": [],\n    \"detail\": \"name_only\"\n  },\n  \"source\": {\n    \"repository\": \"https://github.com/wangarvin007-commits/-skills\",\n    \"commit\": \"c526a49bb8695f5333af90b56365dc492e24b6ff\",\n    \"path\": \"seedance-combat-prompt/SKILL.md\",\n    \"sha256\": \"011eed576c241a2180c776ddf6b8555331b482a951e7be35ed53928e7f0b87e0\",\n    \"credit\": \"Arvin\",\n    \"license\": \"MIT\",\n    \"license_notice\": \"references/third-party-notices.md\",\n    \"evidence\": [\n      {\n        \"line\": 1808,\n        \"header_line\": 1795,\n        \"section\": \"手技（15本）\",\n        \"origin\": \"named\",\n        \"shared_row\": false,\n        \"detail\": \"name_only\",\n        \"detail_columns\": [],\n        \"assessment_note\": \"\",\n        \"fields\": [\n          {\n            \"column\": \"#\",\n            \"value\": \"12\"\n          },\n          {\n            \"column\": \"中文名\",\n            \"value\": \"小内返\"\n          },\n          {\n            \"column\": \"罗马音\",\n            \"value\": \"Ko-uchi-gaeshi\"\n          },\n          {\n            \"column\": \"打戏价值\",\n            \"value\": \"\"\n          }\n        ],\n        \"url\": \"https://github.com/wangarvin007-commits/-skills/blob/c526a49bb8695f5333af90b56365dc492e24b6ff/seedance-combat-prompt/SKILL.md#L1808\",\n        \"source_text\": \"| 12 | 小内返 | Ko-uchi-gaeshi | |\"\n      }\n    ]\n  },\n  \"card_context\": {\n    \"id\": \"arvin-tech-judo\",\n    \"title\": \"柔道\",\n    \"kind\": \"techniques\",\n    \"schools\": [\n      \"柔道\"\n    ],\n    \"characters\": []\n  },\n  \"project_adaptation\": {\n    \"scope\": \"整卡改编建议，不是该招原文，也不抬高来源详情等级。\",\n    \"summary\": \"先展示接触、移步造成的失衡，再到转体和落地；对方重心未移动时不能凭抓衣直接飞出，落地后重新判断站位。\",\n    \"requires\": [\n      \"用户设定允许所选动作、兵器与表现尺度\",\n      \"可见的起始距离、接触条件和结束位置\"\n    ],\n    \"excludes\": [\n      \"自动授予角色预设或超自然能力\",\n      \"把原文强制比例、历史称谓或成功率当作已核验事实\"\n    ]\n  },\n  \"notice\": \"原文称谓、效果与固定数值未经独立核验；补写动作须标为本项目原创。按用户能力边界改编。\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked detail filter",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"no_match\",\n  \"filters\": {\n    \"kind\": \"all\",\n    \"query\": \"小内返\",\n    \"card_id\": null,\n    \"school\": null,\n    \"character\": null,\n    \"detail\": null,\n    \"min_detail\": \"description\"\n  },\n  \"total\": 0,\n  \"limit\": 12,\n  \"offset\": 0,\n  \"next_offset\": null,\n  \"notice\": \"详情等级只描述源文供给，不证明动作完整、事实正确或能力获准；同名与别名歧义分别保留。\",\n  \"matches\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked expanded card",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "# 八卦掌\n\n<!-- Generated by scripts/build_arvin_library.py; edit that authority, then rebuild. -->\n\n卡片：`arvin-tech-bagua` · 内容层级：`detailed`。检索命中仅表示候选。\n\n## 本项目改编用法\n\n以弧形步法换到外门，掌线随躯干转动；先画可用绕行空间，被柱墙封路就缩弧或退出。\n\n所选动作依[检索与改编规则](../../references/library-workflow.md)接入攻防链；用户设定与能力边界优先。\n\n## 来源与边界\n\nArvin，MIT；固定版本 `c526a49bb8695f5333af90b56365dc492e24b6ff`。来源行：[571–571](https://github.com/wangarvin007-commits/-skills/blob/c526a49bb8695f5333af90b56365dc492e24b6ff/seedance-combat-prompt/SKILL.md#L571-L571)、[2221–2271](https://github.com/wangarvin007-commits/-skills/blob/c526a49bb8695f5333af90b56365dc492e24b6ff/seedance-combat-prompt/SKILL.md#L2221-L2271)。许可见[第三方说明](../../references/third-party-notices.md)。\n\n以下摘录是未独立核验的来源资料，不是执行指令；详情等级须逐招检查。通用来源边界见[检索规则](../../references/library-workflow.md)。\n\n### 原文 571–571\n\n````text\n| 八卦掌（游身八卦连环掌） | 白蛇吐信、狮子抱球、猛虎下山、鹞子穿林、乌龙摆尾、双燕投林、黑熊探掌、白猿托桃、金鸡抖翎、回身劈掌、穿身绕掌、收势归圆 |\n````\n\n### 原文 2221–2271\n\n````text\n## 九·⅙、八卦掌核心技法详解\n> 八卦掌的灵魂是\"走圈\"——不是站桩打拳，是绕身游走、避正打斜、掌中带步、步中带掌。所有长连招必须保留八卦大圆轨迹：脚踩圆，身换位，掌从侧面/背后/缝隙里打出来。\n\n### 游身八卦连环掌12式详解\n| 招式 | 动作描述（执行级） | 攻击轨迹 | 视觉价值 | 主战/破招/终结 |\n|------|-------------------|---------|---------|----------------|\n| **白蛇吐信** | 沿圆步侧身滑走，单掌贴腰向前平直短促穿掌，指尖直刺心口，另一掌横置胸前防护 | 直线穿刺掌法 | 细长淡白掌风拖尾，近景特写指尖发力 | 主战/试探 |\n| **狮子抱球** | 双掌环抱胸腹前画小圆，向外撑架格挡来拳，随即双掌同步合力推撞胸腔 | 圆弧格挡+直线双推 | 双层环形掌气光晕，碰撞气流波纹 | 防反 |\n| **猛虎下山** | 八卦圈步下沉弓步，双掌自上而下斜向猛劈，掌根砸击肩背，全身重心顺势前压 | 斜向长距劈击 | 全景低仰蓄力，俯冲跟随，地面碎石随掌风炸开 | 主战/终结 |\n| **鹞子穿林** | 连续左右圈步穿插绕至侧后，单掌交替从腋下、肋下短促穿掌点打肋部空档 | 多向短距穿刺掌 | 多道细碎交错掌风残影，空间环绕感强 | 主战压制 |\n| **乌龙摆尾** | 沿八卦圈原地半圈转身，后掌沿腰侧大圆弧横向扫掌，掌根横扫腰腹侧肋 | 中位圆弧横向扫击 | 线性横移跟拍或≤180°半环绕运镜，宽幅弧形掌气 | 情绪拐点/破招 |\n| **双燕投林** | 左右分掌沿两侧斜上45°同步向前探击，双掌指尖分别点刺双肩锁骨 | 双向对称斜向点刺掌 | 对称两道淡白光轨，全景45°斜侧，体态舒展 | 主战 |\n| **黑熊探掌** | 重心下沉低伏圈步，单掌从下向上缓慢沉劲探掌，掌根顶击小腹丹田 | 低位斜向上推掌 | 厚重暗灰掌气，地面轻微凹陷，贴地雾流 | 破招 |\n| **白猿托桃** | 侧身圆步绕身，下掌短促弹托向上撞击下颌，上掌虚掩护住面门 | 短距垂直托挑掌 | 微距特写掌底冲击高光，小幅镜头抖动强化脆劲 | 破招 |\n| **金鸡抖翎** | 单腿独立踩圈步，双掌快速前后交替高频抖掌，连续点打手腕、小臂、肩颈 | 高频短距交替点掌 | 多层细碎高频掌影，锐利气流粒子 | 主战压制 |\n| **回身劈掌** | 沿八卦圆180°快速旋身，单掌高举自上而下垂直劈砸后背脊柱中线，掌根发力 | 垂直下劈掌法 | 垂直长条厚重掌气，撞击环形冲击波 | 终结 |\n| **穿身绕掌** | 贴紧对手躯体沿圆弧游走绕行，双掌交替从手臂缝隙穿插点打胸腹侧面空档 | 贴身螺旋环绕穿插掌 | 中近景小幅环绕，多层丝状掌风贴合人体轮廓 | 破招/封防 |\n| **收势归圆** | 双脚踩满完整八卦大圆，双掌沿周身画大圆弧缓缓回收至丹田，周身掌气逐层消散 | 缓和全域圆弧收势 | 远景缓慢拉远，淡色环形气流缓缓飘落 | 过渡/沉淀 |\n\n### 八卦掌武学核心与节奏\n| 维度 | 内容 |\n|------|------|\n| **核心灵魂** | 走圈换身，绕身游走，避正打斜，永远不在对方正面硬接 |\n| **发力机制** | 圆步带腰，腰带肩，肩带掌；掌法沉脆兼备，轻则点穿，重则掌根沉砸 |\n| **节奏特征** | 游走牵制→侧后穿插→突然回身重击；比太极更主动，比合气道更连续 |\n| **典型连招** | 白蛇吐信→鹞子穿林→乌龙摆尾 / 狮子抱球→黑熊探掌→白猿托桃 / 金鸡抖翎→穿身绕掌→回身劈掌 |\n| **vs太极** | 太极偏站桩化劲、厚重防反；八卦偏走圈换位、侧背绕打、化中必进 |\n| **vs合气道** | 合气道入身一次完成投摔；八卦掌持续绕身穿插，用走位制造连续空档 |\n\n### 八卦掌专属镜头规则\n| 情境 | 镜头规格 | 目的 |\n|------|---------|------|\n| 游走转圈缠斗 | 中景/全景·30-45°斜侧或45-60°斜俯·横向缓慢平移跟拍·跟随八卦圆步轨迹 | 展示环形走位和空间压迫，禁止90°纯正面平视 |\n| 劈掌/探掌蓄力 | 全景·15-30°低仰或45°斜仰·慢速推近/俯冲跟随·跟随掌根下压轨迹 | 突出沉劲和威力 |\n| 点掌/穿掌命中 | 特写/微距特写·正面微侧平视·急速小幅前推·推进至指尖/掌底命中点 | 抓住穿刺、托挑、掌根撞击瞬间 |\n| 贴身绕身穿掌 | 中近景·45°斜侧/侧俯·小幅环绕运镜·跟随双方腰部和掌影缝隙 | 看清贴身绕行和手臂缝隙穿插 |\n| 回身乌龙摆尾/回身劈掌 | 中景→全景·45°斜侧平视/微仰·线性横移跟拍或≤180°半环绕·跟随旋身掌风弧线 | 展示回身大圆弧和情绪拐点，禁止360°完整环绕 |\n\n### 八卦掌特效绑定建议\n| 招式类型 | 特效描写 | 视觉特征 |\n|---------|---------|---------|\n| 轻击/点掌/穿掌 | 淡白色细长丝状掌风，细碎银白气流星点沿指尖飞出 | 快、细、准，像细针穿透空气 |\n| 重击/劈掌/推掌/托掌 | 灰蓝色或灰白色扇形厚重冲击波，撞击点碎石弹起 | 掌根沉劲，厚重但不拖沓 |\n| 格挡/狮子抱球 | 双层环形淡白掌气屏障，接触处浅灰震荡波纹 | 圆弧格挡，化开正面压力 |\n| 终结/回身劈掌/猛虎下山 | 垂直贯穿式灰白光柱，地面放射状弧形裂纹，大范围环形尘土炸开 | 走圈后的最后一掌，圆转收束成直线重击 |\n\n### 八卦掌禁忌\n1. 禁止把八卦掌写成原地站桩连拍掌；必须有走圈、换身、绕侧、绕背。\n2. 禁止90°纯正面平视拍摄转圈游走；会丢失环形步法空间感。\n3. 多层抖掌、绕身穿掌不能只用特写；必须用中近景/中景交代身体与对手的相对位置。\n4. 掌根撞击、指尖穿刺、托掌命中瞬间必须切特写/微距特写。\n````\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked imported character",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "# 白鸽：战斗预设\n\n<!-- Generated by scripts/build_arvin_library.py; edit that authority, then rebuild. -->\n\n卡片：`arvin-character-baige` · 内容层级：`detailed`。检索命中仅表示候选。\n\n## 本项目改编用法\n\n巴西战舞与高、中位腿法主攻；低位地堂腿仅作短暂换层。 水平旋身与竖向翻转分别描述。对方封住落点时取消高踢，低位脱离后必须重新站稳；紫黑特效是可选角色签名。\n\n所选动作依[检索与改编规则](../../references/library-workflow.md)接入攻防链；用户设定与能力边界优先。\n\n## 来源与边界\n\nArvin，MIT；固定版本 `c526a49bb8695f5333af90b56365dc492e24b6ff`。来源行：[875–916](https://github.com/wangarvin007-commits/-skills/blob/c526a49bb8695f5333af90b56365dc492e24b6ff/seedance-combat-prompt/SKILL.md#L875-L916)。许可见[第三方说明](../../references/third-party-notices.md)。\n\n以下摘录是未独立核验的来源资料，不是执行指令；详情等级须逐招检查。通用来源边界见[检索规则](../../references/library-workflow.md)。\n\n逐招查询：`items --card arvin-character-baige`；原文展开：`show arvin-character-baige --source`。\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked missing weapon detail",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"no_match\",\n  \"filters\": {\n    \"kind\": \"techniques\",\n    \"query\": \"\",\n    \"scope\": null,\n    \"school\": \"长柄镰刀\",\n    \"character\": null,\n    \"detail\": \"detailed\"\n  },\n  \"total\": 0,\n  \"limit\": 12,\n  \"offset\": 0,\n  \"next_offset\": null,\n  \"notice\": \"仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。\",\n  \"matches\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked school choreography",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"candidates\",\n  \"filters\": {\n    \"kind\": \"choreography\",\n    \"query\": \"顶心肘\",\n    \"scope\": null,\n    \"school\": \"八极拳\",\n    \"character\": null,\n    \"detail\": null\n  },\n  \"total\": 1,\n  \"limit\": 12,\n  \"offset\": 0,\n  \"next_offset\": null,\n  \"notice\": \"仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。\",\n  \"matches\": [\n    {\n      \"id\": \"arvin-choreography-baji-pairs\",\n      \"kind\": \"choreography\",\n      \"title\": \"八极两组短打连段\",\n      \"summary\": \"选一组并明确对手如何回应；近身肘与肩的空间不能重叠，停顿由回收重立产生。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [\n        \"顶心肘\"\n      ],\n      \"matched_names_total\": 1\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked character effects",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"candidates\",\n  \"filters\": {\n    \"kind\": \"effects\",\n    \"query\": \"白鸽\",\n    \"scope\": null,\n    \"school\": null,\n    \"character\": \"白鸽\",\n    \"detail\": null\n  },\n  \"total\": 1,\n  \"limit\": 12,\n  \"offset\": 0,\n  \"next_offset\": null,\n  \"notice\": \"仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。\",\n  \"matches\": [\n    {\n      \"id\": \"arvin-effects-character-signatures\",\n      \"kind\": \"effects\",\n      \"title\": \"角色特效签名与动态词库\",\n      \"summary\": \"颜色、质感、形状与运动分别选择；角色预设可覆盖通用武学配色，特效不能赋予额外攻击或控制。\",\n      \"detail\": \"detailed\",\n      \"matched_names\": [\n        \"白鸽\"\n      ],\n      \"matched_names_total\": 1\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked category facets",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "{\n  \"cards\": 116,\n  \"by_kind\": {\n    \"abilities\": 2,\n    \"camera\": 15,\n    \"characters\": 9,\n    \"choreography\": 18,\n    \"design\": 5,\n    \"effects\": 4,\n    \"scenes\": 20,\n    \"styles\": 5,\n    \"techniques\": 38\n  },\n  \"by_detail\": {\n    \"detailed\": 92,\n    \"original\": 7,\n    \"outline\": 17\n  },\n  \"schools\": [\n    \"36路腿法\",\n    \"修仙高级剑招\",\n    \"八卦掌\",\n    \"八极拳\",\n    \"华山基础剑法\",\n    \"合气道\",\n    \"咏春拳\",\n    \"太极拳\",\n    \"少林旋风地堂腿\",\n    \"峨眉子午剑\",\n    \"峨眉白猿二十四剑\",\n    \"巴西战舞\",\n    \"形意拳\",\n    \"截拳道\",\n    \"擒拿\",\n    \"散打\",\n    \"杨式55式太极剑\",\n    \"柔术\",\n    \"柔道\",\n    \"梦想一心太刀\",\n    \"武侠身法\",\n    \"武当六路132式总剑\",\n    \"武当太乙玄门剑\",\n    \"泰拳\",\n    \"洪拳\",\n    \"火焰刀\",\n    \"焚樱刀禅\",\n    \"独孤九剑\",\n    \"玉女十九剑\",\n    \"空手道\",\n    \"绯雪樱灼流单太刀\",\n    \"蔡拳\",\n    \"蔡李佛\",\n    \"螳螂拳\",\n    \"谭腿\",\n    \"跆拳道\",\n    \"醉拳\",\n    \"长柄镰刀\",\n    \"青龙剑32式\",\n    \"高级轻功\"\n  ],\n  \"characters\": [\n    \"冰女\",\n    \"凛羽\",\n    \"剑神\",\n    \"太极\",\n    \"白鸽\",\n    \"红茶\",\n    \"绯雪·火焰\",\n    \"芭乐\",\n    \"雷电\"\n  ],\n  \"facets_by_kind\": {\n    \"design\": {\n      \"schools\": [],\n      \"characters\": [],\n      \"scope\": [\n        \"chase\",\n        \"duel\",\n        \"escape\",\n        \"group\",\n        \"sparring\"\n      ]\n    },\n    \"abilities\": {\n      \"schools\": [],\n      \"characters\": [],\n      \"scope\": [\n        \"duel\",\n        \"escape\",\n        \"group\",\n        \"ranged\"\n      ]\n    },\n    \"techniques\": {\n      \"schools\": [\n        \"36路腿法\",\n        \"修仙高级剑招\",\n        \"八卦掌\",\n        \"八极拳\",\n        \"华山基础剑法\",\n        \"合气道\",\n        \"咏春拳\",\n        \"太极拳\",\n        \"少林旋风地堂腿\",\n        \"峨眉子午剑\",\n        \"峨眉白猿二十四剑\",\n        \"巴西战舞\",\n        \"形意拳\",\n        \"截拳道\",\n        \"擒拿\",\n        \"散打\",\n        \"杨式55式太极剑\",\n        \"柔术\",\n        \"柔道\",\n        \"梦想一心太刀\",\n        \"武侠身法\",\n        \"武当六路132式总剑\",\n        \"武当太乙玄门剑\",\n        \"泰拳\",\n        \"洪拳\",\n        \"独孤九剑\",\n        \"玉女十九剑\",\n        \"空手道\",\n        \"绯雪樱灼流单太刀\",\n        \"蔡拳\",\n        \"蔡李佛\",\n        \"螳螂拳\",\n        \"谭腿\",\n        \"跆拳道\",\n        \"醉拳\",\n        \"长柄镰刀\",\n        \"青龙剑32式\",\n        \"高级轻功\"\n      ],\n      \"characters\": [],\n      \"scope\": [\n        \"duel\",\n        \"sparring\"\n      ]\n    },\n    \"characters\": {\n      \"schools\": [\n        \"36路腿法\",\n        \"八卦掌\",\n        \"八极拳\",\n        \"华山基础剑法\",\n        \"合气道\",\n        \"咏春拳\",\n        \"太极拳\",\n        \"少林旋风地堂腿\",\n        \"峨眉子午剑\",\n        \"峨眉白猿二十四剑\",\n        \"巴西战舞\",\n        \"形意拳\",\n        \"截拳道\",\n        \"擒拿\",\n        \"散打\",\n        \"杨式55式太极剑\",\n        \"柔术\",\n        \"柔道\",\n        \"武侠身法\",\n        \"武当六路132式总剑\",\n        \"武当太乙玄门剑\",\n        \"泰拳\",\n        \"洪拳\",\n        \"火焰刀\",\n        \"焚樱刀禅\",\n        \"独孤九剑\",\n        \"玉女十九剑\",\n        \"空手道\",\n        \"绯雪樱灼流单太刀\",\n        \"蔡拳\",\n        \"谭腿\",\n        \"跆拳道\",\n        \"青龙剑32式\"\n      ],\n      \"characters\": [\n        \"冰女\",\n        \"凛羽\",\n        \"剑神\",\n        \"太极\",\n        \"白鸽\",\n        \"红茶\",\n        \"绯雪·火焰\",\n        \"芭乐\",\n        \"雷电\"\n      ],\n      \"scope\": [\n        \"duel\",\n        \"sparring\"\n      ]\n    },\n    \"choreography\": {\n      \"schools\": [\n        \"36路腿法\",\n        \"八卦掌\",\n        \"八极拳\",\n        \"合气道\",\n        \"咏春拳\",\n        \"太极拳\",\n        \"少林旋风地堂腿\",\n        \"巴西战舞\",\n        \"形意拳\",\n        \"截拳道\",\n        \"擒拿\",\n        \"散打\",\n        \"柔术\",\n        \"柔道\",\n        \"泰拳\",\n        \"洪拳\",\n        \"空手道\",\n        \"蔡拳\",\n        \"蔡李佛\",\n        \"螳螂拳\",\n        \"谭腿\",\n        \"跆拳道\",\n        \"醉拳\"\n      ],\n      \"characters\": [],\n      \"scope\": [\n        \"duel\",\n        \"sparring\"\n      ]\n    },\n    \"camera\": {\n      \"schools\": [],\n      \"characters\": [],\n      \"scope\": [\n        \"chase\",\n        \"duel\",\n        \"escape\",\n        \"group\",\n        \"ranged\",\n        \"sparring\"\n      ]\n    },\n    \"effects\": {\n      \"schools\": [],\n      \"characters\": [\n        \"冰女\",\n        \"凛羽\",\n        \"剑神\",\n        \"太极\",\n        \"白鸽\",\n        \"红茶\",\n        \"绯雪·火焰\",\n        \"芭乐\",\n        \"雷电\"\n      ],\n      \"scope\": [\n        \"chase\",\n        \"duel\",\n        \"escape\",\n        \"group\",\n        \"ranged\",\n        \"sparring\"\n      ]\n    },\n    \"styles\": {\n      \"schools\": [],\n      \"characters\": [],\n      \"scope\": [\n        \"chase\",\n        \"duel\",\n        \"escape\",\n        \"group\",\n        \"ranged\",\n        \"sparring\"\n      ]\n    },\n    \"scenes\": {\n      \"schools\": [],\n      \"characters\": [],\n      \"scope\": [\n        \"chase\",\n        \"duel\",\n        \"escape\",\n        \"group\",\n        \"ranged\",\n        \"sparring\"\n      ]\n    }\n  },\n  \"facet_notice\": \"筛选值表示已记录的关联；空数组表示未记录该类关联，不证明语义不适用。场面标签是改编候选，不是视频验证。\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked alley-letter-15.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: alley-letter-15; 3 beats, 3 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked colossus-30.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: colossus-30; 8 beats, 6 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked epic-30.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: epic-30; 11 beats, 6 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked failed-counter-repair-18.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: failed-counter-repair-18; 3 beats, 3 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked grounded-15.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: grounded-15; 6 beats, 4 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked motion-blade-12.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: motion-blade-12; 4 beats, 4 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked motion-staff-12.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: motion-staff-12; 4 beats, 4 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked three-person-exit-18.plan.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID: three-person-exit-18; 3 beats, 3 sections; reviewed revision matches\n",
+      "stderr": ""
+    },
+    {
+      "check": "unpacked render",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "Exported 7 files: D:\\Temp\\combat-release-1wrho3ah\\render\n",
+      "stderr": ""
+    },
+    {
+      "check": "take template",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "pending review structure",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID review record; media content has not been inspected by this script\n",
+      "stderr": ""
+    },
+    {
+      "check": "pending cannot continue",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout": "",
+      "stderr": "INVALID: rejected, pending or repair take cannot seed continuity\n"
+    },
+    {
+      "check": "accepted synthetic continuation",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "VALID review record; media content has not been inspected by this script\n",
+      "stderr": ""
+    },
+    {
+      "check": "known platform conflict",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"conflict\",\n  \"as_of\": \"2026-09-21\",\n  \"conflicts\": [\n    \"目标30秒超过已记录上限15秒\"\n  ],\n  \"unknown\": [],\n  \"evidence_scope\": \"仅检查所提供记录；没有查询平台或验证账号\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "legacy migration",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout": "Migrated; semantic review pending: D:\\Temp\\combat-release-1wrho3ah\\migrated.json\n",
+      "stderr": ""
+    },
+    {
+      "check": "unreviewed migration cannot render",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout": "",
+      "stderr": "INVALID: editorial review required: headers=needs_semantic_review, P01=needs_semantic_review, P02=needs_semantic_review, P03=needs_semantic_review, P04=needs_semantic_review; compile, revise, then apply-review\n"
+    }
+  ],
+  "rebuild_reproducible": true,
+  "source_hashes_unchanged": true,
+  "source_batches": [
+    {
+      "manifest": "sources/attachments/2026-09-21/manifest.json",
+      "files_checked": 6
+    },
+    {
+      "manifest": "sources/attachments/2026-09-22/manifest.json",
+      "files_checked": 6
+    }
+  ],
+  "archive": "dist\\combat-director-0.9.2.zip",
+  "archive_sha256": "aefa93903bdf83806d25459b0249e43f486fe5ca2feab63125bc9490978d03aa",
+  "archive_files": [
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "f664cb783bed72cfc07b58766aa14ca544f84114d2726c6384c1c92951ae2d6c"
+    },
+    {
+      "path": "skills/combat-director/agents/openai.yaml",
+      "sha256": "7e3070b077b4446516fb6c1b0b11316f9594ca09070464b3eebed6fbdac369b4"
+    },
+    {
+      "path": "skills/combat-director/assets/combat-plan-v1.schema.json",
+      "sha256": "f9a1322c4d3edcb9feb97293deb4aa962416c033d61297fad1873eb4ba5c5876"
+    },
+    {
+      "path": "skills/combat-director/assets/combat-plan.schema.json",
+      "sha256": "e8db635f660848a14f9bc9cc95f896b1918aefdb2d288bcef2bb71c7499744a9"
+    },
+    {
+      "path": "skills/combat-director/assets/platform-profiles.json",
+      "sha256": "9a2c6876e5dc7bcf4b6a55f8a6b3d63d13567bfc4967a94e6071c41e19d257a9"
+    },
+    {
+      "path": "skills/combat-director/assets/sequence-template.md",
+      "sha256": "f3ff98a43f109e3d90247d26bafb991f86be87eee719b35814e6df12986526b8"
+    },
+    {
+      "path": "skills/combat-director/assets/take-review.schema.json",
+      "sha256": "8b2fff26b219780e5e64800d729e9e0706ddf97c1b3c3ff76f265a534948dddf"
+    },
+    {
+      "path": "skills/combat-director/examples/alley-letter-15.plan.json",
+      "sha256": "94d31fd247067f2e0c224c38601917ceb26cdfe1af6dbbe1f89a6c144a1d1aeb"
+    },
+    {
+      "path": "skills/combat-director/examples/alley-letter-15.prompt.txt",
+      "sha256": "006ef9534995ead77f74223c52d64ceded59dc025d8804b72cde78dff91c0c39"
+    },
+    {
+      "path": "skills/combat-director/examples/arvin-baige-hongcha-18.md",
+      "sha256": "9a5ffc14cdda6640ce84b6cd4a70e514810af7535df6cac67b8563d786ca58c8"
+    },
+    {
+      "path": "skills/combat-director/examples/arvin-sword-fire-24.md",
+      "sha256": "d2c50f7b537bc594cc9f99566f8ec84bd6d1fb5d89cb458b96a10e1f49f9d7a0"
+    },
+    {
+      "path": "skills/combat-director/examples/colossus-30.plan.json",
+      "sha256": "cdefde27822dc8af2af51a169440abc5e6e61249d36fe8c6f17367df4fdc7f3b"
+    },
+    {
+      "path": "skills/combat-director/examples/colossus-30.prompt.txt",
+      "sha256": "d86976716eb0bbc754c4dd2566b94ed70d5ba70ad89c789dd1091577d8b5d0db"
+    },
+    {
+      "path": "skills/combat-director/examples/corridor-escape-24.md",
+      "sha256": "286945538269cbf4d6d9d728f6f4572332691e05af7c0e5529dc37687c1ff7c4"
+    },
+    {
+      "path": "skills/combat-director/examples/entrance-cliffhanger-15.md",
+      "sha256": "f858b8b9d2d94209d9db27d46b886d14b01e7176d636d18db90806ede12dd4e8"
+    },
+    {
+      "path": "skills/combat-director/examples/epic-30.plan.json",
+      "sha256": "fae91663a4c2659001300a1d75a607414834badcddf2580a14907a1b9d076fa8"
+    },
+    {
+      "path": "skills/combat-director/examples/epic-30.prompt.txt",
+      "sha256": "60dc51fca909d111249c82bdaa7132f75d1b3aeb958b461c3c43945d7327dff6"
+    },
+    {
+      "path": "skills/combat-director/examples/failed-counter-repair-18.plan.json",
+      "sha256": "fc6f60f0e515526a19d912be2056920aef04bd831c8b029706398b8568d6d99e"
+    },
+    {
+      "path": "skills/combat-director/examples/failed-counter-repair-18.prompt.txt",
+      "sha256": "e36ae102343f18c3a7d689057d30a443c577b947be30c7cdc41adcb55e79146e"
+    },
+    {
+      "path": "skills/combat-director/examples/grounded-15.plan.json",
+      "sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23"
+    },
+    {
+      "path": "skills/combat-director/examples/grounded-15.prompt.txt",
+      "sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d"
+    },
+    {
+      "path": "skills/combat-director/examples/motion-blade-12.md",
+      "sha256": "4af64f16d068e66d5f870ad58562ca369d52361686b54c7cb66be5fa0086a821"
+    },
+    {
+      "path": "skills/combat-director/examples/motion-blade-12.plan.json",
+      "sha256": "4c88143d9bf06a2b30280a61a2c9be87ed959005e0faadb2b28b89b310a273e0"
+    },
+    {
+      "path": "skills/combat-director/examples/motion-blade-12.prompt.txt",
+      "sha256": "1b9d649365f26ccd004d8f904dbb737c5d68432481f1d3918354ee4b519be2ef"
+    },
+    {
+      "path": "skills/combat-director/examples/motion-staff-12.md",
+      "sha256": "9ed3a7840ec46c06e3acd1f4ccf4ee7e95432c613f36d397260c7b72599641d7"
+    },
+    {
+      "path": "skills/combat-director/examples/motion-staff-12.plan.json",
+      "sha256": "47d291e104552ab4ef1da9c7f35a155be35073d630be1fd47471580d978c718d"
+    },
+    {
+      "path": "skills/combat-director/examples/motion-staff-12.prompt.txt",
+      "sha256": "6b8c56343928e9c777fa5faad37998c1a509d75374e82d9f77baeb75503cd274"
+    },
+    {
+      "path": "skills/combat-director/examples/particle-blade-12.md",
+      "sha256": "e4ecfef1961ad0477dfedad79d551bbcf5d395489c6b577f1c9b10188661e9c6"
+    },
+    {
+      "path": "skills/combat-director/examples/particle-staff-12.md",
+      "sha256": "c3e13653cfc1f85d29fa97d21848fe713c3fdda6efd63105e813fb8e42fc5b52"
+    },
+    {
+      "path": "skills/combat-director/examples/return-and-payoff-18.md",
+      "sha256": "0ef62ded7e1fc710e64d355146e9bac78b5517a4a02cb472891747da8715ea1b"
+    },
+    {
+      "path": "skills/combat-director/examples/sword-recovery-18.md",
+      "sha256": "8b253eb4d4494be465706b299503c459a5346b5d0fc8407f6c98c211f94d666d"
+    },
+    {
+      "path": "skills/combat-director/examples/three-person-exit-18.plan.json",
+      "sha256": "6eb88a8f9eb0f9954e2030acb85d04a296c52e132452d0618b72c97ec2dc5799"
+    },
+    {
+      "path": "skills/combat-director/examples/three-person-exit-18.prompt.txt",
+      "sha256": "e558aa812f97e07f364e9eabd392964fa20dcb203e7faaaa3f3a070d24962fa6"
+    },
+    {
+      "path": "skills/combat-director/library/abilities/cloth-field.md",
+      "sha256": "19238f850f669ff36b91e0254df0f259db99ea85e8c7022882c3becf57555b3c"
+    },
+    {
+      "path": "skills/combat-director/library/abilities/finger-lines.md",
+      "sha256": "6c975841a8acae622db1f366c2c44da8f246f7904c57283c8afd8963ce5819db"
+    },
+    {
+      "path": "skills/combat-director/library/abilities/index.md",
+      "sha256": "055307341389cc3d2f3f2257fb4f9e9e9f8973b9d23a3b36fd743e5a86008d74"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-color.md",
+      "sha256": "0deb60eaaddab172e81738d2096982e97d1a243ce6a1f11f3ead2f2f5a7ab864"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-moves15.md",
+      "sha256": "81ad40938c9e9c7011e6918f39793fedfd9e696e29ed6871dfe03893abcab283"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-pattern-a.md",
+      "sha256": "a4346275fd4518806b4589b233ebe07d6cab6b09f98586e2c6ec9fd1a0d76bfe"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-pattern-b.md",
+      "sha256": "e93ab64305084d480c0504b2c5eec408ee17e4cc0d838a03c09b02e65e61d425"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-pattern-c.md",
+      "sha256": "0f4124ec8de0c279493de20ff22ac77f20181434009649449efc6d475674a30a"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-pattern-d.md",
+      "sha256": "af195e93709d7f15b68e94a8d3888e5f1aa1e08e80b3cb039f970d73eedf1ab8"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-pattern-e.md",
+      "sha256": "7f14f13d88a12dc7c1bf29f16cbb2435a8a4ec7cda065beb1df7b9968e3d81f8"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-pattern-f.md",
+      "sha256": "c9cc7a93bb6e7c1b8b4aa2ab95f48ac32793c14b2b8200f07f0ca01e5ada05ce"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-pattern-g.md",
+      "sha256": "e32f11b0a9798c9bec0a8b159840771aaf4a584ae47d47276abcfead85773009"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-pattern-h.md",
+      "sha256": "49fe65398d1f2e3bb10556fc6e16f078cfb722fb178bb382226a7eb0f3412083"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-pattern-i.md",
+      "sha256": "a172e04e21b9c3dc2da145431abcf7cc28ba704f143d79e6d796573cd416d650"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-pattern-j.md",
+      "sha256": "031384f64c9eef83954fd311ea37c34f43a6f3e76402b7a3b41b988777b6d16b"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-pattern-k.md",
+      "sha256": "dc13f1452c89367cfd8c48993aa51c85b2fb865ef36d8d18350ac9077b0b2bbc"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-spec.md",
+      "sha256": "2d8df4209289ccc94a09209533c1e6d01197b83a8abeaadf6f883a5dd9b187cc"
+    },
+    {
+      "path": "skills/combat-director/library/camera/arvin-camera-weapons.md",
+      "sha256": "739d1b49b03ab73cbe04a7f3233ca012d7f3be582f435b5eaf229dffdbb47870"
+    },
+    {
+      "path": "skills/combat-director/library/camera/index.md",
+      "sha256": "529d8f8f650262d382b73de57f333969b5d7fce2aa5a1c511d4393f28dbe9e0b"
+    },
+    {
+      "path": "skills/combat-director/library/catalog.json",
+      "sha256": "bf4a624b97704db116d23ecabbd3c469819087078feea861200746d2b7f7e15f"
+    },
+    {
+      "path": "skills/combat-director/library/characters/arvin-character-baige.md",
+      "sha256": "97b118ec284e6e86fe3975b5f7603c031390da7af7fa3bb862cfe93c22db5825"
+    },
+    {
+      "path": "skills/combat-director/library/characters/arvin-character-bale.md",
+      "sha256": "4c7a61a1ff16c6123720d5354f1562dd7b00ea88d37be77ca3c4c3a9d6cf0d7f"
+    },
+    {
+      "path": "skills/combat-director/library/characters/arvin-character-bingnv.md",
+      "sha256": "3e4e125767dbb32b9ee397dfc07d08e663d539c5fc0e21f08ef4d5e5c7cdaeb1"
+    },
+    {
+      "path": "skills/combat-director/library/characters/arvin-character-feixue-fire.md",
+      "sha256": "55add9672f56728196565456f228d49f79328f38541b01983fa46f3046a56430"
+    },
+    {
+      "path": "skills/combat-director/library/characters/arvin-character-hongcha.md",
+      "sha256": "c3c8e695913b1ecacd4016e209ed0c4e78295bdacef52e73ed68c923928a8ca9"
+    },
+    {
+      "path": "skills/combat-director/library/characters/arvin-character-jianshen.md",
+      "sha256": "b8b4919980132597d6679fbf5b6a86a4062a801e0ccbd89cced76f3347c9c801"
+    },
+    {
+      "path": "skills/combat-director/library/characters/arvin-character-leidian.md",
+      "sha256": "b22bb7a1fd58babe2b08a6103576b2d770e2f8d1b7a61eb0f9af48f3197bea53"
+    },
+    {
+      "path": "skills/combat-director/library/characters/arvin-character-linyu.md",
+      "sha256": "be49600a87d516f460c71b1d4f5b5bedc07fa0a2de8a559239524f6a9b0b1b5e"
+    },
+    {
+      "path": "skills/combat-director/library/characters/arvin-character-taiji.md",
+      "sha256": "86a6c93d4c1676a5712d6b916956dad6bbee124e3914091c717c47fa9279ff7a"
+    },
+    {
+      "path": "skills/combat-director/library/characters/index.md",
+      "sha256": "93153da82ff5db336927d04c0a4ae8746c5b2ac1dfb6705dd8e7eaaa384d040e"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-aftermath.md",
+      "sha256": "2b4c5125935a2e7fe7cc3b3015c7113f6a2deb4291a99541aa184ccf8dad6432"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-baji-pairs.md",
+      "sha256": "3a21d6d4e4e133df4f402dc2d970b155c95e0f2ae9285c2141451be0739ed823"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-break.md",
+      "sha256": "89b3b1572afe6d8ae4ad5826be7dfb1e9e89515fb26429a014b0c9af48653701"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-breath.md",
+      "sha256": "4f5a8ae4dfef64268784777f7cce0e39f7e74ac8c9b57c3fd86d3ebaabb7677b"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-control-followup.md",
+      "sha256": "8ed6002f480b279611d6f7d17b44269dc98588e1cd7d75abcf3dc050b595fbd3"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-entry.md",
+      "sha256": "6149c210238846096b82870d12236f65d25635325bdeb8792e956a819cdd6d70"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-escalation.md",
+      "sha256": "004bd83cc7bad76fbfe554656ef53f3460fb434ba2ad527b379f248eada54663"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-hands.md",
+      "sha256": "e37322463da4f1cf9ced662f19354c24fa70511986ee07f92314a55dea6004e0"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-kicks.md",
+      "sha256": "454c59e58be637ac2d7506b9bfd41e05e10498deced02022bd48ab46c34f98e6"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-mixed20.md",
+      "sha256": "4f06ef75c3144c7a1198d5e4d3bcb636cb6b7237043f6de33a3a10a123901025"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-payoff.md",
+      "sha256": "30dce36880bf08698008c767de285e99d2f6828c5cf8ef42e99db07e450c6d46"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-reaction.md",
+      "sha256": "a5b754888face5439bc38696e16a11daf6928ee2041ef96634f6def677d6c3d9"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-redirection.md",
+      "sha256": "77d64bd9156dcbee5985a553ca54e8ff758a8148beb1bb21a7ad7d34ad1567f3"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-rhythm.md",
+      "sha256": "16151d6b09d3e5d6f14406d08b6b97946a2df5030f639b2f900725e92b730614"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-school-chain.md",
+      "sha256": "84750f453bc24355503e0e4359c6ff32be2557fc566a4f7ea749dc9c63a7da1b"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-space.md",
+      "sha256": "3712cd12b57b5bc23a0d62c761d23be89bcfebd2f1305d5c506eb8dc06fcc504"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-turning.md",
+      "sha256": "94221be47f7ff748517f390ec6a261fc8995b9bcc4a7bb8af8d061ebfa99ba69"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/arvin-choreography-upper-lower.md",
+      "sha256": "af258da086f8fab425d0ff13378f178eda7755bbd1387c62956c7d2a400a0172"
+    },
+    {
+      "path": "skills/combat-director/library/choreography/index.md",
+      "sha256": "dacf2bbb3d52b3028e157a87561c80cfbae9f0da510ebd25d27c7fac4412daec"
+    },
+    {
+      "path": "skills/combat-director/library/design/claw-control.md",
+      "sha256": "d40c3e33523e5867870e9107476cfa2596d8879b9549ff0cb52ee889bdbecc8b"
+    },
+    {
+      "path": "skills/combat-director/library/design/cloth-redirection.md",
+      "sha256": "d9e678752057b971e209014d655cbb85f3513ef3f1fae2b28bd94dc812fe7243"
+    },
+    {
+      "path": "skills/combat-director/library/design/corridor-exit.md",
+      "sha256": "c5317dcbcfc26bf7daf11d04b39cb0e59f0fa14f38b366fb61573b4cf01ddbe0"
+    },
+    {
+      "path": "skills/combat-director/library/design/index.md",
+      "sha256": "862c43595df4d29299f049e9b44bd7dc07207fcb346b8e8a3823bfcc5dffcdd5"
+    },
+    {
+      "path": "skills/combat-director/library/design/opening-counter.md",
+      "sha256": "81b8e2122bcd675eefeea3f2224e2aa51b2ac15f7d149758dfa53a09334aeb3d"
+    },
+    {
+      "path": "skills/combat-director/library/design/round-sword.md",
+      "sha256": "9509742b157b937779096e8a736c1a989d1160bb739c6980c48683c9d3f7b14b"
+    },
+    {
+      "path": "skills/combat-director/library/effects/arvin-effects-air.md",
+      "sha256": "55f0196a08bf65cb0193afc8f78a856822c09ab7af7a03b8f154e6353127a9c9"
+    },
+    {
+      "path": "skills/combat-director/library/effects/arvin-effects-character-signatures.md",
+      "sha256": "d08244f59e6ccd0fad0a9e70ee436cfe595692560cc39efde67e07c18abcc9bd"
+    },
+    {
+      "path": "skills/combat-director/library/effects/arvin-effects-intensity.md",
+      "sha256": "d6d5516c28518837908ec28a816da71d2ceca7f54d10a9623369ac4b77e16f74"
+    },
+    {
+      "path": "skills/combat-director/library/effects/arvin-effects-trajectory.md",
+      "sha256": "f2e3389dc9bd11da891a4c286af272cb6a96cf3d456535c297bfcb69a2c273cc"
+    },
+    {
+      "path": "skills/combat-director/library/effects/index.md",
+      "sha256": "608fbe367216d6107c0ab19a2bfe19bed48af78eb5940d43ea289a3ea080f2e2"
+    },
+    {
+      "path": "skills/combat-director/library/index.md",
+      "sha256": "03c546a41ed270b8e9379f8ec8cdb407e1ba98ccb0634f8a1af9544da99f12a9"
+    },
+    {
+      "path": "skills/combat-director/library/items.json",
+      "sha256": "14d88f58a615674ef75ea727bbe2a401cc2cd139c507f391ceab9e72c7455a0b"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-1.md",
+      "sha256": "9beeb74dab5d37598c2635b27377692f9fe83b78fa27bfc9e2667e4fa86c8c92"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-10.md",
+      "sha256": "552d6e31fc5001121b78e694c9cb4822fd2d329625e430bab8fb83615e1f2df1"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-11.md",
+      "sha256": "015ea13d01d1b1b61175f7046260bec83e8283f12329b7a6fc05a48c09eb2e43"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-12.md",
+      "sha256": "5d3f1deec9d59266e22dfb5345dd3012f122e081f2d1dc9bdd5b4c6ac9849061"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-13.md",
+      "sha256": "c6d50db98ef67ededcc6fe2f8ea56920b2acda8c66da1aea06ef0c04b5d43092"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-14.md",
+      "sha256": "70da5a9bc4f02a490add8687fb57e4049990bd8145aada704da13565ea333d79"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-15.md",
+      "sha256": "71db1f4c43b1bc75db292b015ec436751e19edf487d8c19c9180c36aa7af030b"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-16.md",
+      "sha256": "2e5e1216b39a785177c01e4e637a9658f7daeb3ea6ef4a5d1010cc7d3d6a1569"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-17.md",
+      "sha256": "3813f5c412e526073cbfc00d48ea804afda37661d67d326e35eadb484927806b"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-18.md",
+      "sha256": "cebf15de2ac01f0550e38b45c3cdb4cc162f56ab9e4ca9af21c9896a4bda0f6e"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-19.md",
+      "sha256": "313e186a9acb3152e2418484aa75153f94f21efdf9ac5000060f7e0840658fca"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-2.md",
+      "sha256": "f1f0bded2161737d4bf1ce8c7c2efbdf3dfd35254baeb81ec450b227cc32619e"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-20.md",
+      "sha256": "cfdf90d6653d2e257bacc7134e79a808e330f94bf06041b8be9bc491c588aec2"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-3.md",
+      "sha256": "dadb50505d346415fd073732dbdd6ce8fdee6551e8a27a11db239a441e971a92"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-4.md",
+      "sha256": "3e1ffce0991a6cf770fdbf804e2c7d8bc8881f132a28e14e77e68090d053c282"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-5.md",
+      "sha256": "7ba90c149d3a667ce6866591e13d645ba67bb6cc73ec4c6490a29b3385c4354f"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-6.md",
+      "sha256": "e78a24aed45ccf58240daa61417eb3d11a144932a09297195da0899d99220f88"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-7.md",
+      "sha256": "19b8e7c51180b406645d3a418cfc88dfc4b1c338f073bc701cc0328fe95ffd1d"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-8.md",
+      "sha256": "9a1191110e3c034eff5a9b6a01a0171228a6b5e9fbc8875a198fddf975b2154b"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/arvin-scene-9.md",
+      "sha256": "2180d346a5e7ebcc5f319bd63a0703c70a1d1b0e73c1cd053e5c00da07106426"
+    },
+    {
+      "path": "skills/combat-director/library/scenes/index.md",
+      "sha256": "82cfcf5bbf334131520b2e5eb2bea93af8134df31c70018569bd623f0701cee3"
+    },
+    {
+      "path": "skills/combat-director/library/styles/arvin-style-1.md",
+      "sha256": "a0e1834b99d780aa8f99e8ed1a61a52330e727fbb8f4f88d323685dc99029f14"
+    },
+    {
+      "path": "skills/combat-director/library/styles/arvin-style-2.md",
+      "sha256": "05da9feec196b5c1379be23ff9bdb6e05dc53bb355f83bd025d4fd0cd3f72b71"
+    },
+    {
+      "path": "skills/combat-director/library/styles/arvin-style-3.md",
+      "sha256": "0364b2c760b235f617c2869b099b03cff0509e9160a9b22849b8e356dcc66012"
+    },
+    {
+      "path": "skills/combat-director/library/styles/arvin-style-4.md",
+      "sha256": "af0b26cdfcae6ac23b0b24361c2d8b5694ea791369829e9414910ad9530bb41a"
+    },
+    {
+      "path": "skills/combat-director/library/styles/arvin-style-5.md",
+      "sha256": "a0bd5042e06634a5ba9e458834d10b830bfce63f8de667a7210671b0395597df"
+    },
+    {
+      "path": "skills/combat-director/library/styles/index.md",
+      "sha256": "c0a16252d2ee477efc16cfd30ca945dfe46374b25bcf31104dc7676ed5725ab6"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-aikido.md",
+      "sha256": "e8cb867e4cdc0b4a59437b7cec4355d7616644a28cdf31a13c55b93602b18a30"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-bagua.md",
+      "sha256": "ebe128c39961311bf76f676d8584bf50785b3a4a4170df9c9f1d5395c73dc439"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-baji.md",
+      "sha256": "f157e23867aeb465b90e0a2468ff72b23ce7e2493acf0c4fbdf65634884b4c59"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-caijia.md",
+      "sha256": "7fb0232db488725a905ba52bb832ad511b7dd2f0904e4bc119c1667e469ed225"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-capoeira.md",
+      "sha256": "0bcc0c4b13fe6d71f7368cb9f6cf426d96b8d6fb060753c2b2d28ca45f910d84"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-choyleefut.md",
+      "sha256": "05bcffa7b349b403a66371b8200ef55f73017762bf8a4ef75a5afcb182939460"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-drunken.md",
+      "sha256": "34ab2e811f52c0b1a42f65d5d542ff80cfda4c15dcece3c1dd9917819a5c03c9"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-dugu.md",
+      "sha256": "32576e1d9644f74ab84452cfd6d045532f0ac5673ffbf3dd1434834d9491819a"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-feixue-frost.md",
+      "sha256": "bfc87d0abed98a486956f7b5974ef5f6a4c4b393079e574a4399eeca215ccca3"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-groundlegs.md",
+      "sha256": "f23b772513aa203d46d7151d9d2c53b741b17867ce122ea75168b12c32c5abac"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-huashan.md",
+      "sha256": "6f56ac6940f9fc6e8e56c0bc6a5df68ad414be7d640ac95cf5896f3c73c6e633"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-hunggar.md",
+      "sha256": "09c56c2cf03e51163930bab0290c876be3e389d3ebd1c6304ddf629e6a0c7c13"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-immortal-sword.md",
+      "sha256": "7ffaecea8add9b209e2a11834c3a48ef04f3202fb37aecaf18c3426b02d7117c"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-jeetkune.md",
+      "sha256": "a79d2268e203812badb0d2be59a6d159a7875b90ab03adbd49d681f8d41a3c07"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-jiujitsu.md",
+      "sha256": "6b21bd96ffce81001392dc6ac8ac421e1ce1dd891100a897602dd83c7b1ea830"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-judo.md",
+      "sha256": "24861824d9278e76b5ceb427059ec5dfda366855bc1cd412c3488788fa3f0721"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-karate.md",
+      "sha256": "289fc582558f789dc80c91e1b2b7fa293fcd7f68b33c68da8ecf5800251e522e"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-legs36.md",
+      "sha256": "3c52b6e7ad206fb820233c974c5b2c5e96850a852060ea9822da9376e75de0ba"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-mantis.md",
+      "sha256": "6f66b7d81dfe9ed2c90199bda6447b1e167c4204d88f0947c0a3937edbf7bfc3"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-muaythai.md",
+      "sha256": "e133e859bfa4a53a0cad7cbc0c83b4258fe462338e5098fda5422a1b2f395b6a"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-musou.md",
+      "sha256": "c210e0f425d21391b758f3ced9011f15512a98d0fbb80a5e001ac073f2d1f27d"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-qinggong.md",
+      "sha256": "667633a95e8f5f1d36ff091eb48626e9eb87bdde19fe32fd354c3291542408f3"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-qinglong.md",
+      "sha256": "223e7a38352907d1f4f07e94e47ee0c263c7d41169be4fe834f7dd32704cab86"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-qinna36.md",
+      "sha256": "baefd1cab30779b3f9fa79c776cb2e8db37edeff2f68675ec7097e4256581b1d"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-sanda.md",
+      "sha256": "a26d33c39a0e1e829532674545d07bdc6974463bec2349459db0f394126319ec"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-scythe.md",
+      "sha256": "96335e6e20ccae2529f3b10993cef1ee9188d22e0d3087b5d7f110619d1f5d3b"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-taekwondo.md",
+      "sha256": "3d1846f766e252443684c05362b1a0ff7dc34f57944647770e0cd89c3954eb1d"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-taiji.md",
+      "sha256": "d42dbb83e735411e7b74eabdbf3ff10fea286a0b867f9454f363c3f2d38cc87d"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-taiyi-sword.md",
+      "sha256": "83819245837be20db12152ac336730bcecbccbe2fe1afbdacb44ef67be8e6ed7"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-tantui.md",
+      "sha256": "1633c48f199c8ebc3982bdc5328f5cf0f0c5f77571702835be0908792e427c4e"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-whiteape.md",
+      "sha256": "4c9bb5ba5ebd3fd509c831866a1fc2c6725ffb9d94df3bff362edcbaeb80602d"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-wingchun.md",
+      "sha256": "3bc704d30fc0f03a7107abe9937eb63cde8fe2d86e9109ee22ab01ab36c292b8"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-wudang132.md",
+      "sha256": "f9313ac496f56da915f80917744978b93ce43cac3a1e4a3425b5097a5048ce4e"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-wuxia-step.md",
+      "sha256": "44615259f59176820fa17b8c4661e0684e5e1804f9c3aa84f33294637cc0f36b"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-xingyi.md",
+      "sha256": "743555f8e104e10e04c4379852f5a3264cf0934d87696c07a19581ca5ddfabdd"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-yang55.md",
+      "sha256": "d31e78c738e8e0f5c7e3f44133cd33fe4ca0913002a67f4e2de560ed9268e2ec"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-yunv.md",
+      "sha256": "8c7ec3291a74fe8b2f00015bfa4ab17366d9cc42e26687fec9a8d073bc965bb5"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/arvin-tech-ziwu.md",
+      "sha256": "45744980af253654bb08b4cd0cedd5e2e40a7a60c3c0d3c03b7819545c0c01ff"
+    },
+    {
+      "path": "skills/combat-director/library/techniques/index.md",
+      "sha256": "7968075255c4a968080da94810278a0c3a732047ca8e314c8071d190f8b81948"
+    },
+    {
+      "path": "skills/combat-director/references/action-contract.md",
+      "sha256": "e6f32fae84bebb623b0cc674a6d912b11e662f6aa41d505d6194618049ff3c26"
+    },
+    {
+      "path": "skills/combat-director/references/action-design.md",
+      "sha256": "234e6af1206fae54c26a11665ee7f2a110ca56ae3ee6ec6d918869e9d27ff7d9"
+    },
+    {
+      "path": "skills/combat-director/references/choreography.md",
+      "sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c"
+    },
+    {
+      "path": "skills/combat-director/references/combat-modes.md",
+      "sha256": "d0d08ecdbd337aa15c08fb684075fb1b3080087574a670c984765ac6a5c16c86"
+    },
+    {
+      "path": "skills/combat-director/references/contract.md",
+      "sha256": "a49bd8940dca7c09688e617116b6fb1ab9a88c5d6c3efc156af98f888c8e51d7"
+    },
+    {
+      "path": "skills/combat-director/references/library-workflow.md",
+      "sha256": "5ba318023da1c003f58e7368ecc0cb602afb0547406ed12eba83648162d8fd4e"
+    },
+    {
+      "path": "skills/combat-director/references/motion-blur.md",
+      "sha256": "77ec4ac579e48a761077ac166dab1e70f1e8470863053310f3f524ac24a5773b"
+    },
+    {
+      "path": "skills/combat-director/references/particle-vfx.md",
+      "sha256": "07c81f84e2bdea4bcca12b591c5f0b26d714f8aa15534d431dab5c7052651669"
+    },
+    {
+      "path": "skills/combat-director/references/platforms.md",
+      "sha256": "95aaa3145eb2481834571836845d1e7358c4f70ed5b6700d424abb4c5adfb7d5"
+    },
+    {
+      "path": "skills/combat-director/references/prompt-craft.md",
+      "sha256": "258ae63d90c184c246c7a990c0a656267b41b69d079f37ac06e4936d126ad1db"
+    },
+    {
+      "path": "skills/combat-director/references/quality.md",
+      "sha256": "2f3e49b118af5995b95f7a34dd43673c2eb7255ab8e458a67df106637e89f53a"
+    },
+    {
+      "path": "skills/combat-director/references/review-loop.md",
+      "sha256": "6b4180da9ea6f32a75d789daa02ac570ef26440d62b45979053e51a91244567d"
+    },
+    {
+      "path": "skills/combat-director/references/source-case.md",
+      "sha256": "b2ea0718c39867200c8e6d7f1adbfad0ddf6ec9e3e097f86565b89fdaa0f91ea"
+    },
+    {
+      "path": "skills/combat-director/references/sources.md",
+      "sha256": "7ba88c0e14c28844d61309ebad9f20e47ccfff90fba7912a5717649eab3701b1"
+    },
+    {
+      "path": "skills/combat-director/references/technique-adaptation.md",
+      "sha256": "2eb7c896b1c4a087a5d0784f295b6d706ca4694aee6372db5fdda5c0d2fe9575"
+    },
+    {
+      "path": "skills/combat-director/references/templates.md",
+      "sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1"
+    },
+    {
+      "path": "skills/combat-director/references/third-party-notices.md",
+      "sha256": "f3431a35bce3f983d61fd87e4a383433e4bdd794959ba54af9d9f34c005dd354"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_action.py",
+      "sha256": "2561186638e7b840c2ce2265e3c0b85e53d3baf9ce7a57fc96a14899b3ae613d"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_evidence.py",
+      "sha256": "1a7d22ee88f250fec15dc17af26864f953439f1495fc30b384f0dd079a38b23f"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_handoff.py",
+      "sha256": "28f922147132b748ec01e8cf1f8176f81c97409b4218f7edd4ce91b9c080c8a1"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_review.py",
+      "sha256": "f1ff9cca2fbe6ec455ec0ea3b81da295dec153eac01729828339f2d83a311ae1"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_schema.py",
+      "sha256": "673e6975eebf2bee73b826312c0c89774993951ac566b2299dccbc6d355b8bc9"
+    },
+    {
+      "path": "skills/combat-director/scripts/combat_tool.py",
+      "sha256": "1fade69a451269acf0efffc4230f127da905adde49f73394127ae260d34f6104"
+    },
+    {
+      "path": "skills/combat-director/scripts/library_items.py",
+      "sha256": "0848a9622f8019fff4eb549b8df37407ca4f3329fdb31d2afe5ed29251bc6a69"
+    },
+    {
+      "path": "skills/combat-director/scripts/library_tool.py",
+      "sha256": "351274284361d5e70ba1e0a5f7763a6fe43e3d59fd87ed79f3c4f7ed94d35598"
+    },
+    {
+      "path": "skills/combat-director/SKILL.md",
+      "sha256": "d3956f0ce3c3caafa0c4b5bdeae0e8ca7d8104deb764a8b908c87988b7c2bd37"
+    }
+  ],
+  "archive_reproducible": true,
+  "scope": "Local checks only; does not prove host discovery or video quality."
+}

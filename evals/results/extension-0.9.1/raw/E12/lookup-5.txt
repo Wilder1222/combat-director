@@ -1,0 +1,5 @@
+apply_patch: answer.md
+{}
+apply_patch: lookup-3.txt
+{}
+

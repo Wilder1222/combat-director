@@ -1,0 +1,27 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "design",
+    "query": "护物 近身 重心",
+    "scope": null,
+    "school": null,
+    "character": null,
+    "detail": null
+  },
+  "total": 1,
+  "limit": 12,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。",
+  "matches": [
+    {
+      "id": "claw-control",
+      "kind": "design",
+      "title": "龙爪手意象：抓袖与脱离",
+      "summary": "以抓袖的形态建立短暂控制，让对方主动脱离改变下一拍。",
+      "detail": "original",
+      "matched_names": [],
+      "matched_names_total": 0
+    }
+  ]
+}

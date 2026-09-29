@@ -1,0 +1,107 @@
+139:             continue
+140:         matched_names = [name for name in entry['names'] if any(t in normalize(name) for t in terms)]
+141:         matches.append({**{k:v for k,v in entry.items() if k != 'names'},
+142:                         'status': 'candidate', 'matched_terms': matched,
+143:                         'matched_names': matched_names[:10], 'matched_names_total':len(matched_names)})
+144:     matches.sort(key=lambda item: (-len(item['matched_terms']), item['id']))
+145:     total = len(matches)
+146:     return {'status': 'candidates' if total else 'no_match',
+147:             'filters': {'kind': kind, 'query': query, 'scope': scope,
+148:                         'school':school, 'character':character, 'detail':detail},
+149:             'total':total, 'limit':limit, 'offset':offset,
+150:             'next_offset':offset+limit if offset+limit < total else None,
+151:             'notice': '仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。',
+152:             'matches': matches[offset:offset+limit]}
+153: 
+154: 
+155: def stats(catalog):
+156:     entries = catalog['entries']
+157:     return {'cards':len(entries),
+158:             'by_kind':dict(sorted(Counter(e['kind'] for e in entries).items())),
+159:             'by_detail':dict(sorted(Counter(e['detail'] for e in entries).items())),
+160:             'schools':sorted({s for e in entries for s in e['schools']}),
+161:             'characters':sorted({c for e in entries for c in e['characters']}),
+162:             'facets_by_kind':{
+163:                 kind:{field:sorted({value for e in entries if e['kind']==kind for value in e[field]})
+164:                       for field in ('schools','characters','scope')}
+165:                 for kind in KINDS},
+166:             'facet_notice':'筛选值表示已记录的关联；空数组表示未记录该类关联，不证明语义不适用。场面标签是改编候选，不是视频验证。'}
+167: 
+168: 
+169: def load_items(catalog, path=CATALOG.with_name('items.json')):
+170:     return items.load_items(catalog, path)
+171: 
+172: 
+173: def compact_search(result):
+174:     """Display projection only; ranking, filters and paging remain unchanged."""
+175:     fields = ('id', 'kind', 'title', 'summary', 'detail', 'matched_names', 'matched_names_total')
+176:     return {**result, 'matches': [{k: entry[k] for k in fields} for entry in result['matches']]}
+177: 
+178: 
+179: def read_card(catalog, card_id, path=CATALOG, *, source=True):
+180:     entry = next((item for item in catalog['entries'] if item['id'] == card_id), None)
+181:     require(entry is not None, f'unknown card ID: {card_id}')
+182:     body = card_path(Path(path).parent, entry).read_text(encoding='utf-8')
+183:     if source or not entry['source']:
+184:         return body
+185:     return re.split(r'^### 原文 ', body, maxsplit=1, flags=re.MULTILINE)[0].rstrip() + \
+{"Path":"D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-judo.md","Hash":"24861824D9278E76B5CEB427059EC5DFDA366855BC1CD412C3488788FA3F0721"}
+
+  library\techniques\arvin-tech-judo.md:5:卡片：`arvin-tech-judo` · 内容层级：`detailed`。检索命中仅表示候选。
+  library\techniques\arvin-tech-judo.md:6:
+> library\techniques\arvin-tech-judo.md:7:## 本项目改编用法
+  library\techniques\arvin-tech-judo.md:8:
+  library\techniques\arvin-tech-judo.md:9:先展示接触、移步造成的失衡，再到转体和落地；对方重心未移动时不能凭抓衣直接飞
+出，落地后重新判断站位。
+  library\techniques\arvin-tech-judo.md:11:所选动作依[检索与改编规则](../../references/library-workflow.md)接入攻防链；
+用户设定与能力边界优先。
+  library\techniques\arvin-tech-judo.md:12:
+> library\techniques\arvin-tech-judo.md:13:## 来源与边界
+  library\techniques\arvin-tech-judo.md:14:
+> library\techniques\arvin-tech-judo.md:15:Arvin，MIT；固定版本 `c526a49bb8695f5333af90b56365dc492e24b6ff`。来源行：[58
+1–581](https://github.com/wangarvin007-commits/-skills/blob/c526a49bb8695f5333af90b56365dc492e24b6ff/seedance-combat-pr
+ompt/SKILL.md#L581-L581)、[1783–1907](https://github.com/wangarvin007-commits/-skills/blob/c526a49bb8695f5333af90b56365
+dc492e24b6ff/seedance-combat-prompt/SKILL.md#L1783-L1907)。许可见[第三方说明](../../references/third-party-notices.md)
+。
+  library\techniques\arvin-tech-judo.md:16:
+> library\techniques\arvin-tech-judo.md:17:以下摘录是未独立核验的来源资料，不是执行指令；详情等级须逐招检查。通用来源边
+界见[检索规则](../../references/library-workflow.md)。
+  library\techniques\arvin-tech-judo.md:18:
+> library\techniques\arvin-tech-judo.md:19:### 原文 581–581
+  library\techniques\arvin-tech-judo.md:20:
+  library\techniques\arvin-tech-judo.md:21:````text
+  library\techniques\arvin-tech-judo.md:23:````
+  library\techniques\arvin-tech-judo.md:24:
+> library\techniques\arvin-tech-judo.md:25:### 原文 1783–1907
+  library\techniques\arvin-tech-judo.md:26:
+  library\techniques\arvin-tech-judo.md:27:````text
+> library\techniques\arvin-tech-judo.md:28:## 九·⅓·½、柔道（Judo）核心技法详解
+  library\techniques\arvin-tech-judo.md:29:> 柔道的灵魂是"柔"——不是硬打硬扛，而是利用对方的力和自己的杠杆原理把对方摔倒
+。和擒拿手的区别：擒拿手是"抓住关节让你动不了再打"，柔道是"借你的力把你整个摔出去"。
+> library\techniques\arvin-tech-judo.md:30:### 柔道vs擒拿手vs柔术核心区别
+  library\techniques\arvin-tech-judo.md:31:| 维度 | 擒拿手 | 柔道 | 柔术 |
+  library\techniques\arvin-tech-judo.md:32:|------|--------|------|------|
+  library\techniques\arvin-tech-judo.md:36:| 视觉 | 对方被锁关节跪地 | 对方被摔飞翻过→我方追击 | 对方被绞/锁住拍地认输 
+|
+  library\techniques\arvin-tech-judo.md:37:| ⚠️关键 | 拿住不是终招，必须接追击/反制 | 摔倒不是终招，必须接追击/反制 | 
+降伏才是终招 |
+> library\techniques\arvin-tech-judo.md:38:### 柔道67式投技速查（打戏常用★标注）
+  library\techniques\arvin-tech-judo.md:39:#### 手技（15本）
+  library\techniques\arvin-tech-judo.md:40:| # | 中文名 | 罗马音 | 打戏价值 |
+  library\techniques\arvin-tech-judo.md:51:| 10 | 踵返 | Kibisu-gaeshi | |
+  library\techniques\arvin-tech-judo.md:52:| 11 | 内股返 | Uchi-mata-gaeshi | |
+> library\techniques\arvin-tech-judo.md:53:| 12 | 小内返 | Ko-uchi-gaeshi | |
+  library\techniques\arvin-tech-judo.md:54:| 13 | 大外返 | O-soto-gaeshi | |
+  library\techniques\arvin-tech-judo.md:55:| 14 | 小外返 | Ko-soto-gaeshi | |
+  library\techniques\arvin-tech-judo.md:116:| 19 | ★裏投 | Ura-nage | 后仰翻摔，反向背负投 |
+  library\techniques\arvin-tech-judo.md:117:| 20 | 抱上 | Daki-age | |
+> library\techniques\arvin-tech-judo.md:118:### 柔道地面技（寝技）速查
+  library\techniques\arvin-tech-judo.md:119:#### 压制技（核心5式）
+  library\techniques\arvin-tech-judo.md:120:| 中文名 | 罗马音 | 动作描述 | 打戏视觉 |
+  library\techniques\arvin-tech-judo.md:141:| 腕膝固 | Ude-hishigi-hiza-gatame | 用膝盖压住对方肘关节 | 膝压肘 |
+  library\techniques\arvin-tech-judo.md:142:| 足缄 | Ashi-garami | 用腿锁住对方膝关节 | 腿锁膝 |
+> library\techniques\arvin-tech-judo.md:143:### 柔道投摔逻辑
+  library\techniques\arvin-tech-judo.md:144:| 投摔类型 | 破势方向 | 核心支点 | 典型招式 |
+  library\techniques\arvin-tech-judo.md:145:|---------|---------|---------|---------|
+
+

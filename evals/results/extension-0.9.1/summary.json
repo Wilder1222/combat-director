@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-29",
+  "cases": [
+    {
+      "id": "E05",
+      "overall_status": "satisfied",
+      "review": "reviews/E05-E08/review.json"
+    },
+    {
+      "id": "E06",
+      "overall_status": "satisfied",
+      "review": "reviews/E05-E08/review.json"
+    },
+    {
+      "id": "E07",
+      "overall_status": "satisfied",
+      "review": "reviews/E05-E08/review.json"
+    },
+    {
+      "id": "E08",
+      "overall_status": "satisfied",
+      "review": "reviews/E05-E08/review.json"
+    },
+    {
+      "id": "E09",
+      "overall_status": "satisfied",
+      "review": "reviews/E09-E12/review.json"
+    },
+    {
+      "id": "E12",
+      "overall_status": "satisfied",
+      "review": "reviews/E09-E12/review.json"
+    },
+    {
+      "id": "M01",
+      "overall_status": "satisfied",
+      "review": "reviews/M01-M04/review.json"
+    },
+    {
+      "id": "M02",
+      "overall_status": "satisfied",
+      "review": "reviews/M01-M04/review.json"
+    },
+    {
+      "id": "M03",
+      "overall_status": "satisfied",
+      "review": "reviews/M01-M04/review.json"
+    },
+    {
+      "id": "M04",
+      "overall_status": "satisfied",
+      "review": "reviews/M01-M04/review.json"
+    }
+  ],
+  "completed_executions": 10,
+  "interrupted_attempts": 2,
+  "limits": "Candidate-only single draws, independent semantic review; no media or superiority claims."
+}

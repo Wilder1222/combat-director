@@ -1,0 +1,32 @@
+{
+  "format": "synthetic-still-fixtures/1",
+  "provenance": "Locally drawn geometric diagrams; not extracted from video.",
+  "audio": "No audio asset exists.",
+  "timing": "Labels are synthetic test coordinates, not observed real footage timestamps.",
+  "files": [
+    {
+      "path": "synthetic-i2v-start.png",
+      "sha256": "8aa8564e71b9117e3529c063176a5571bb3c039d4233f78ec7d6b9ebb303ad19",
+      "width": 720,
+      "height": 400
+    },
+    {
+      "path": "synthetic-frame-0000.png",
+      "sha256": "46b5ed040fc028ada58456e3fa6b58663c2dbfe687bb41a5a9d2c6a8cd7791f9",
+      "width": 720,
+      "height": 400
+    },
+    {
+      "path": "synthetic-frame-0500.png",
+      "sha256": "4411f5aa24014d1d5881312db54e7604508d948d3c4fb65f982e082dcb283fa1",
+      "width": 720,
+      "height": 400
+    },
+    {
+      "path": "synthetic-frame-1000.png",
+      "sha256": "dfb97885b6a9c09eee56c23a4a6b6b6454733f99e50605209b6e68ca91981a8d",
+      "width": 720,
+      "height": 400
+    }
+  ]
+}

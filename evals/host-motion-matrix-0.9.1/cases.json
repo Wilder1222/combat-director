@@ -1,0 +1,46 @@
+{
+  "format": "combat-host-motion-matrix/1",
+  "date": "2026-09-29",
+  "status": "frozen_requests",
+  "purpose": "Four request families, each normal and short. One fresh invocation per cell; not repeated statistical evaluation.",
+  "protocol": {
+    "candidate": "Frozen 0.9.1 archive, same inherited model and read-only host conditions as the prior three routing cases.",
+    "scope": "No media generation, browsing, model override or ordinary plugin installation changes.",
+    "grading": "Judge against each actual request. Record readable source loading separately from final-answer quality. Static confrontation need not load motion rules or add blur. No actual media is supplied for diagnostic cases.",
+    "review": "Independent semantic reviewer receives requests and raw final answers without expected answers or parent verdicts. Parent separately checks event logs, hashes and source identity."
+  },
+  "cases": [
+    {
+      "id": "MXH01", "family": "explicit_motion", "length": "normal",
+      "request": "使用 $combat-director，写8秒成年双人木杖对练的中文视频提示词。甲斜劈，乙侧移拨开，两人回收退开；固定侧面全身、正常速度、一镜到底，无超自然能力。保留自然motion blur，看得懂握持、接触和回收，固定背景保持稳定。只交付一段200至360字的提示词，不列工程字段，不生成视频、不联网。"
+    },
+    {
+      "id": "MXH02", "family": "explicit_motion", "length": "short",
+      "request": "使用 $combat-director，写8秒成年双人木杖对练的中文视频提示词。甲斜劈，乙侧移拨开，两人回收退开；固定侧面全身、正常速度、一镜到底，无超自然能力。保留自然motion blur，看得懂握持、接触和回收，固定背景保持稳定。只交付一句不超过160字的提示词，不列工程字段，不生成视频、不联网。"
+    },
+    {
+      "id": "MXH03", "family": "implicit_fast_contact", "length": "normal",
+      "request": "帮我编排8秒成年双人木刀对练：甲快速进步斜斩，乙撤步举刀斜架，将来刀带向外侧，甲借势收刀，双方各退一步站稳。固定侧面全身，正常速度，一镜到底，无超自然能力。刀路可以很快，但观众要看懂谁先动、两刀怎样接上、怎样分开；全程各自持同一把木刀。只给一段200至360字的中文视频提示词，不加分析或工程字段，不生成视频、不联网。"
+    },
+    {
+      "id": "MXH04", "family": "implicit_fast_contact", "length": "short",
+      "request": "帮我编排8秒成年双人木刀对练：甲快速进步斜斩，乙撤步举刀斜架，将来刀带向外侧，甲借势收刀，双方各退一步站稳。固定侧面全身，正常速度，一镜到底，无超自然能力。刀路可以很快，但观众要看懂谁先动、两刀怎样接上、怎样分开；全程各自持同一把木刀。只给一句不超过160字的中文视频提示词，不加分析或工程字段，不生成视频、不联网。"
+    },
+    {
+      "id": "MXH05", "family": "trailing_diagnosis", "length": "normal",
+      "request": "我的双人剑术视频据我观察有这个问题：人物收剑站稳后，刀口旧轮廓还在身旁拖着，像多了一把剑。我没有在本次对话提供视频、抽帧、平台设置或后期记录。请给200至360字的初步诊断与最小修复建议，区分可能原因和仍需核验的证据。保留原来的正常速度、单镜头、两人各一把剑和撤开结尾，不能凭空认定用了哪种算法。不生成或处理媒体，不联网。"
+    },
+    {
+      "id": "MXH06", "family": "trailing_diagnosis", "length": "short",
+      "request": "我的双人剑术视频据我观察有这个问题：人物收剑站稳后，刀口旧轮廓还在身旁拖着，像多了一把剑。我没有在本次对话提供视频、抽帧、平台设置或后期记录。请用不超过160字给初步诊断与最小修复建议，区分可能原因和仍需核验的证据。保留原来的正常速度、单镜头、两人各一把剑和撤开结尾，不能凭空认定用了哪种算法。不生成或处理媒体，不联网。"
+    },
+    {
+      "id": "MXH07", "family": "static_confrontation", "length": "normal",
+      "request": "给我8秒成年双人静态对峙的视频提示词：空石院，甲在左、乙在右，相隔三米，各持一根木杖，杖尖低垂。固定侧面全身，两人保持原位，只有自然呼吸和衣角轻动，最后仍未出手。正常速度、一镜到底、无超自然能力。只给一段200至360字中文提示词，不加出招、运镜或额外特效，不生成视频、不联网。"
+    },
+    {
+      "id": "MXH08", "family": "static_confrontation", "length": "short",
+      "request": "给我8秒成年双人静态对峙的视频提示词：空石院，甲在左、乙在右，相隔三米，各持一根木杖，杖尖低垂。固定侧面全身，两人保持原位，只有自然呼吸和衣角轻动，最后仍未出手。正常速度、一镜到底、无超自然能力。只给一句不超过160字中文提示词，不加出招、运镜或额外特效，不生成视频、不联网。"
+    }
+  ]
+}

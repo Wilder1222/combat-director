@@ -1,0 +1,5 @@
+ParserError:
+Line |
+   9 |  } | Tee-Object -FilePath (Join-Path $runDir 'lookup-3.txt')
+     |    ~
+     | An empty pipe element is not allowed.

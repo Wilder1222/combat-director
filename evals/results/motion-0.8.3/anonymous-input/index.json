@@ -1,0 +1,116 @@
+{
+  "cases": [
+    {
+      "case": "T01",
+      "request": "T01/request.txt",
+      "answers": [
+        "T01/A.md"
+      ],
+      "input_artifacts": null,
+      "output_artifacts": null
+    },
+    {
+      "case": "T02",
+      "request": "T02/request.txt",
+      "answers": [
+        "T02/A.md",
+        "T02/B.md"
+      ],
+      "input_artifacts": null,
+      "output_artifacts": null
+    },
+    {
+      "case": "T03",
+      "request": "T03/request.txt",
+      "answers": [
+        "T03/A.md"
+      ],
+      "input_artifacts": null,
+      "output_artifacts": null
+    },
+    {
+      "case": "T04",
+      "request": "T04/request.txt",
+      "answers": [
+        "T04/A.md"
+      ],
+      "input_artifacts": null,
+      "output_artifacts": null
+    },
+    {
+      "case": "T05",
+      "request": "T05/request.txt",
+      "answers": [
+        "T05/A.md"
+      ],
+      "input_artifacts": null,
+      "output_artifacts": null
+    },
+    {
+      "case": "T06",
+      "request": "T06/request.txt",
+      "answers": [
+        "T06/A.md"
+      ],
+      "input_artifacts": null,
+      "output_artifacts": null
+    },
+    {
+      "case": "T07",
+      "request": "T07/request.txt",
+      "answers": [
+        "T07/A.md"
+      ],
+      "input_artifacts": null,
+      "output_artifacts": null
+    },
+    {
+      "case": "T08",
+      "request": "T08/request.txt",
+      "answers": [
+        "T08/A.md",
+        "T08/B.md"
+      ],
+      "input_artifacts": null,
+      "output_artifacts": null
+    },
+    {
+      "case": "T09",
+      "request": "T09/request.txt",
+      "answers": [
+        "T09/A.md"
+      ],
+      "input_artifacts": null,
+      "output_artifacts": null
+    },
+    {
+      "case": "T10",
+      "request": "T10/request.txt",
+      "answers": [
+        "T10/A.md"
+      ],
+      "input_artifacts": null,
+      "output_artifacts": null
+    },
+    {
+      "case": "T11",
+      "request": "T11/request.txt",
+      "answers": [
+        "T11/A.md",
+        "T11/B.md"
+      ],
+      "input_artifacts": null,
+      "output_artifacts": null
+    },
+    {
+      "case": "T12",
+      "request": "T12/request.txt",
+      "answers": [
+        "T12/A.md"
+      ],
+      "input_artifacts": "T12/input.plan.json",
+      "output_artifacts": "T12/artifacts"
+    }
+  ],
+  "note": "Judge each answer against its request. Source identity and version are not provided."
+}

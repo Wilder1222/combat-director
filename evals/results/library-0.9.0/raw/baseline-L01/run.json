@@ -1,0 +1,200 @@
+{
+  "status": "completed",
+  "request_path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\request.txt",
+  "skill_root": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director",
+  "answer_path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\answer.md",
+  "inputs": [
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\SKILL.md",
+      "read_type": "full_read",
+      "command_indices": [
+        1
+      ],
+      "sha256": "b878aee29204529f409eb8e51415984ffa9ea9a5bbb98c943d5d36ec54abc8a0",
+      "hash_command_index": 6
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\request.txt",
+      "read_type": "full_read",
+      "command_indices": [
+        2
+      ],
+      "sha256": "a259c494a94ca42a9eb43082bf3216cb0c86b158c0a2839dcee5acb2503327a5",
+      "hash_command_index": 6
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\library-workflow.md",
+      "read_type": "full_read",
+      "command_indices": [
+        3
+      ],
+      "sha256": "a117ddfea13d8a611becf6a052131232475761ad1bc9b9185ff5e3b9b7bbafb7",
+      "hash_command_index": 6
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\technique-adaptation.md",
+      "read_type": "full_read",
+      "command_indices": [
+        3
+      ],
+      "sha256": "338245168f8c1e529cbab360712c01332b7adc3841e99f905f1df607ddf35107",
+      "hash_command_index": 6
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\choreography.md",
+      "read_type": "full_read",
+      "command_indices": [
+        3
+      ],
+      "sha256": "214a7ae0e96bf8325e7ff48e77d029d681e17b7b10759e25f2f6104a99ffe4f6",
+      "hash_command_index": 6
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\templates.md",
+      "read_type": "full_read",
+      "command_indices": [
+        3
+      ],
+      "sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1",
+      "hash_command_index": 6
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\catalog.json",
+      "read_type": "partial_read",
+      "command_indices": [
+        4
+      ],
+      "selection": "rg -n -C 12 '八极|顶心肘'; only matching lines and context directly read",
+      "sha256": "9b8f576f7b122e639c599202d8d186f66fd15d749ba90f1703e6c6f8ea95c365",
+      "hash_command_index": 6
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\techniques\\arvin-tech-baji.md",
+      "read_type": "full_read",
+      "command_indices": [
+        5
+      ],
+      "sha256": "c6f6cc7b1df9f0a174051cabba43cac9b5601ce07cf26cc56dae1fb31dd2a762",
+      "hash_command_index": 6
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\choreography\\arvin-choreography-baji-pairs.md",
+      "read_type": "full_read",
+      "command_indices": [
+        5
+      ],
+      "sha256": "940e962a234f18fe883eb57dffb5a0bc6920be1ca60fb018ecd9680b233fc84a",
+      "hash_command_index": 6
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\combat-modes.md",
+      "read_type": "full_read",
+      "command_indices": [
+        5
+      ],
+      "sha256": "d0d08ecdbd337aa15c08fb684075fb1b3080087574a670c984765ac6a5c16c86",
+      "hash_command_index": 6
+    }
+  ],
+  "read_type_legend": {
+    "full_read": "File content directly exposed in full by Get-Content and read by the agent.",
+    "partial_read": "Only the stated rg matches and context directly exposed to the agent; not a full reading of the catalog.",
+    "hash_only": "Bytes read only for SHA-256 calculation; no inputs fall solely in this category.",
+    "script_internal_read": "Files parsed internally by a skill script without directly exposing their full content; no skill script was run."
+  },
+  "hash_only_inputs": [],
+  "script_internal_reads": [],
+  "commands": [
+    {
+      "index": 1,
+      "command": "Get-Content -LiteralPath 'D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\SKILL.md' -Raw -Encoding UTF8",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01",
+      "exit_code": 0,
+      "output_file": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-1.txt"
+    },
+    {
+      "index": 2,
+      "command": "Get-Content -LiteralPath 'D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\request.txt' -Raw -Encoding UTF8",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01",
+      "exit_code": 0,
+      "output_file": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-2.txt"
+    },
+    {
+      "index": 3,
+      "command": "$paths = @('D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\library-workflow.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\technique-adaptation.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\choreography.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\templates.md')\nforeach ($path in $paths) {\n  Write-Output ('FILE: ' + $path)\n  Get-Content -LiteralPath $path -Raw -Encoding UTF8\n}",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01",
+      "exit_code": 0,
+      "output_file": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-3.txt"
+    },
+    {
+      "index": 4,
+      "command": "rg -n -C 12 '八极|顶心肘' 'D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\catalog.json'",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01",
+      "exit_code": 0,
+      "output_file": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-4.txt"
+    },
+    {
+      "index": 5,
+      "command": "$paths = @('D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\techniques\\arvin-tech-baji.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\choreography\\arvin-choreography-baji-pairs.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\combat-modes.md')\nforeach ($path in $paths) {\n  Write-Output ('FILE: ' + $path)\n  Get-Content -LiteralPath $path -Raw -Encoding UTF8\n}",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01",
+      "exit_code": 0,
+      "output_file": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-5.txt"
+    },
+    {
+      "index": 6,
+      "command": "$paths = @('D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\SKILL.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\request.txt','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\library-workflow.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\technique-adaptation.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\choreography.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\templates.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\catalog.json','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\techniques\\arvin-tech-baji.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\choreography\\arvin-choreography-baji-pairs.md','D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\combat-modes.md')\n$hashes = foreach ($path in $paths) {\n  $h = Get-FileHash -LiteralPath $path -Algorithm SHA256\n  [PSCustomObject]@{ path = $path; sha256 = $h.Hash.ToLowerInvariant() }\n}\n$hashes | ConvertTo-Json -Depth 3",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01",
+      "exit_code": 0,
+      "output_file": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-6.txt"
+    }
+  ],
+  "artifact_writes": [
+    {
+      "tool": "apply_patch",
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\answer.md",
+      "operation": "create"
+    },
+    {
+      "tool": "apply_patch",
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-1.txt",
+      "operation": "create; exact captured command output"
+    },
+    {
+      "tool": "apply_patch",
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-2.txt",
+      "operation": "create; exact captured command output"
+    },
+    {
+      "tool": "apply_patch",
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-3.txt",
+      "operation": "create; exact captured command output"
+    },
+    {
+      "tool": "apply_patch",
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-4.txt",
+      "operation": "create; exact captured command output"
+    },
+    {
+      "tool": "apply_patch",
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-5.txt",
+      "operation": "create; exact captured command output"
+    },
+    {
+      "tool": "apply_patch",
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\lookup-6.txt",
+      "operation": "create; exact captured command output"
+    },
+    {
+      "tool": "apply_patch",
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L01\\run.json",
+      "operation": "create"
+    }
+  ],
+  "execution_notes": [
+    "No Python or skill script was executed.",
+    "No network access, media generation, platform call, skill modification, or child agent was used.",
+    "Source provenance was taken from the directly read frozen cards, not from a live upstream request.",
+    "Only the frozen skill package, supplied request, and own output directory were accessed."
+  ]
+}
+

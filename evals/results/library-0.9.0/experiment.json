@@ -1,0 +1,66 @@
+{
+  "format": "combat-library-behavior-experiment/1",
+  "date": "2026-09-24",
+  "status": "execution_and_review_complete",
+  "objective": "WP06: evaluate source fidelity and usable combat choreography after the library retrieval changes.",
+  "case_authority": "evals/library-0.9.0/cases.json",
+  "temporary_workspace": "D:/Temp/combat-library-behavior-j75bzt8f",
+  "conditions": [
+    {
+      "label": "baseline",
+      "version": "0.8.0",
+      "runtime_files": 165,
+      "archive": "dist/combat-director-0.8.0.zip",
+      "archive_sha256": "c74ff70c28104df2bdcbcc23a285b4e5ad250ea0e446803d4a6ef275e344fb96"
+    },
+    {
+      "label": "candidate",
+      "version": "0.9.0",
+      "runtime_files": 187,
+      "archive": "dist/combat-director-0.9.0.zip",
+      "archive_sha256": "a018117b6442727ba6d0b53471c1f6be4e981afe58029423314c60c54b30a689"
+    }
+  ],
+  "planned_execution": {
+    "cases": 9,
+    "conditions": 2,
+    "repeats_per_case_condition": 1,
+    "total_runs": 18,
+    "setting": "Fresh isolated agents, fork_turns none, inherited host model and reasoning, no override. Exact serving model identifier unavailable.",
+    "permitted_inputs": "Corresponding frozen skill package, case request and own working directory.",
+    "prohibited_side_effects": "No source edits, media generation, external platform calls, networking or further agents.",
+    "logging": "Direct input reads and hashes, actual commands and saved outputs. Self-reported, not OS-level access tracing.",
+    "protocol_note": "Five candidate runs existed before this resumed turn. Remaining dispatches clarify administrative log handling only; user requests and task resources are unchanged."
+  },
+  "review_design": {
+    "status": "complete",
+    "mapping_seed": 20260924,
+    "method": "Anonymous per-case A/B presentation with deterministic random ordering; original outputs retained.",
+    "inputs": "Original requests, paired anonymous answers and the pinned upstream source as reference data. No condition mapping, implementation findings or expected answers.",
+    "criteria": "User constraints, action/response/recovery continuity, source attribution and disclosed additions. Judge semantic behavior, not keywords.",
+    "limitations": "Single draws and model-based semantic review cannot establish population success rates or video quality."
+  },
+  "completion_policy": "Report every run and failure. Preserve original evidence. If behavior requires code changes, freeze and label the revised candidate separately and test affected cases; do not rewrite initial outputs.",
+  "evidence_limits": [
+    "No video, engine or account behavior evaluated.",
+    "Retrieval character measurements use the separate 0.8.3 baseline and are not WP06 results.",
+    "Current repository may contain unrelated ongoing research changes; frozen runtime snapshots remain the task authority."
+  ],
+  "actual_execution": {
+    "completed_runs": 18,
+    "confirmed_completion": "Fresh agent terminal results; each run archived only after completion.",
+    "raw_files": 231,
+    "input_path_hash_pairs": 191,
+    "input_audit_errors": [],
+    "serving_model": "unknown; inherited host settings; no override",
+    "review_batches": [
+      "L01-L03",
+      "L04-L06",
+      "L07-L09"
+    ],
+    "review_path_hash_pairs": 42,
+    "review_audit_errors": [],
+    "summary": "summary.json"
+  },
+  "aggregation_date": "2026-09-29"
+}

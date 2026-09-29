@@ -1,0 +1,5 @@
+FILE: D:\Temp\combat-extension-nws2d7rg\runs\E05\request.txt
+READ_MODE: full
+SHA256: 8ECBB1F9A31DA439425B7C799B0ECCC54BC32CFC9AEBCEC210AA987EF42A0C6A
+
+设计18秒三人阻拦：A徒手从院子向北门突破，B守在北门内保护腿伤但能行走的C。北门右侧有一道短墙，开场B在墙后画外，C在门后两步；A的目标是越过B追上C。三人都是成年普通人，无能量，正常速度，一镜到底，最后C先离开，B挡住A。给简明六轨时间轴和中文提示词。

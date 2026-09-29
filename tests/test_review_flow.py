@@ -27,6 +27,7 @@ class ReviewFlowTests(unittest.TestCase):
     def test_authority_edits_cannot_silently_export_old_prompt(self):
         changes = [lambda p: p['cast'][0].update(prop='木杖'),
                    lambda p: p['beats'][0]['actors']['A'].update(action='停下并放下兵器'),
+                   lambda p: p['beats'][0]['camera'].update(path='固定侧面机位，快移杖端轻微模糊'),
                    lambda p: p['abilities'][0].update(cost='右手不能再持剑')]
         for change in changes:
             p = copy.deepcopy(self.plan)
@@ -57,6 +58,30 @@ class ReviewFlowTests(unittest.TestCase):
         self.plan['beats'][0]['after']['environment'] += '；落石'
         statuses = {s['scope']: s['status'] for s in tool.readiness(self.plan)}
         self.assertEqual(statuses['P02'], 'stale')
+
+    def test_camera_facts_and_expression_have_separate_export_dependencies(self):
+        p = tool.read_json(SKILL / 'examples/motion-staff-12.plan.json')
+        original_summary = p['sections'][1]['summary']['camera']
+        p['beats'][1]['camera']['path'] = '摄影机沿南侧缓慢横移，保持交接杖端可辨。'
+        scope = tool.compile_handoff(p)['scopes'][2]
+        self.assertEqual(scope['facts']['beats'][0]['camera']['path'], p['beats'][1]['camera']['path'])
+        # Compilation does not invent a revised prose summary from camera facts.
+        self.assertEqual(scope['expression']['camera'], original_summary)
+        self.assertEqual({x['scope']: x['status'] for x in tool.readiness(p)}['P02'], 'stale')
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaisesRegex(ValueError, 'P02=stale'):
+                tool.export(p, 'generic', tmp)
+            self.assertEqual(list(Path(tmp).iterdir()), [])
+            p['sections'][1]['summary']['camera'] = '南侧缓慢横移，交接与回收过程可辨。'
+            # This fixture tests binding/export, not whether the new prose is good.
+            p = tool.apply_review(p, self.receipt(p))
+            tool.export(p, 'generic', tmp)
+            handoff = tool.read_json(Path(tmp) / 'prompt-handoff.json')['scopes'][2]
+            self.assertEqual(handoff['expression']['camera'], p['sections'][1]['summary']['camera'])
+            self.assertIn('<运镜> ' + p['sections'][1]['summary']['camera'], (Path(tmp) / 'prompt.txt').read_text(encoding='utf-8'))
+            p['sections'][1]['summary']['camera'] += ' 改为固定机位。'
+            with self.assertRaisesRegex(ValueError, 'P02=stale'):
+                tool.prompt(p)
 
     def test_formatting_and_provenance_do_not_invalidate(self):
         self.plan['provenance'] += '；补充来源说明'

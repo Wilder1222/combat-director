@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "answer_bytes": 13443,
+  "input_records": 10,
+  "command_records": 6,
+  "lookup_files": 6
+}

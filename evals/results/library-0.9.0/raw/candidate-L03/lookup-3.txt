@@ -1,0 +1,29 @@
+SCRIPT_SHA256 351274284361D5E70BA1E0A5F7763A6FE43E3D59FD87ED79F3C4F7ED94D35598
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "characters",
+    "query": "",
+    "scope": null,
+    "school": null,
+    "character": "白鸽",
+    "detail": null
+  },
+  "total": 1,
+  "limit": 12,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。",
+  "matches": [
+    {
+      "id": "arvin-character-baige",
+      "kind": "characters",
+      "title": "白鸽：战斗预设",
+      "summary": "巴西战舞与高、中位腿法主攻；低位地堂腿仅作短暂换层。",
+      "detail": "detailed",
+      "matched_names": [],
+      "matched_names_total": 0
+    }
+  ]
+}
+

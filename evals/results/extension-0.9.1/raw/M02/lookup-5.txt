@@ -1,0 +1,7 @@
+{
+  "chunk_id": "b4aafd",
+  "wall_time_seconds": 0.7707645,
+  "exit_code": 0,
+  "original_token_count": 39,
+  "output": "{\"written\": [\"answer.md\", \"run.json\", \"lookup-1.txt\", \"lookup-2.txt\", \"lookup-3.txt\", \"lookup-4.txt\", \"lookup-5.txt\"], \"inputs\": 5, \"status\": \"complete\"}\r\n"
+}

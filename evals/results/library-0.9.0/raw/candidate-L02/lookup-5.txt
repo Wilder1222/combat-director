@@ -1,0 +1,32 @@
+3:from __future__ import annotations
+5:import argparse
+6:import importlib.util
+7:import json
+8:import re
+9:import sys
+10:import unicodedata
+11:from pathlib import Path, PurePosixPath
+12:from collections import Counter
+14:CATALOG = Path(__file__).resolve().parents[1] / 'library/catalog.json'
+47:            and relative.suffix == '.md', f"{entry['id']}: invalid card location")
+57:def load_catalog(path=CATALOG):
+60:    data = json.loads(path.read_text(encoding='utf-8'))
+94:                    and source['path'] == 'seedance-combat-prompt/SKILL.md'
+169:def load_items(catalog, path=CATALOG.with_name('items.json')):
+182:    body = card_path(Path(path).parent, entry).read_text(encoding='utf-8')
+library\techniques\arvin-tech-judo.md
+[
+  {
+    "Path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py",
+    "Hash": "351274284361D5E70BA1E0A5F7763A6FE43E3D59FD87ED79F3C4F7ED94D35598"
+  },
+  {
+    "Path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\library\\items.json",
+    "Hash": "14D88F58A615674EF75EA727BBE2A401CC2CD139C507F391CEAB9E72C7455A0B"
+  },
+  {
+    "Path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\library\\catalog.json",
+    "Hash": "BF4A624B97704DB116D23ECABBD3C469819087078FEEA861200746D2B7F7E15F"
+  }
+]
+

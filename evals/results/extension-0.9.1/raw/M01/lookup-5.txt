@@ -1,0 +1,1 @@
+PASS: two prompts present; B consists of the identical A text plus only the local motion blur paragraph. Offline answer and read/command record completed. No image viewing, network, platform submission, or media generation occurred.

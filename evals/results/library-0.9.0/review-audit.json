@@ -1,0 +1,448 @@
+{
+  "format": "combat-library-review-audit/1",
+  "confirmed_terminal_batches": [
+    "L01-L03",
+    "L04-L06",
+    "L07-L09"
+  ],
+  "batches": [
+    {
+      "batch": "L01-L03",
+      "checks": [
+        {
+          "pointer": "/read_files/0",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\reference\\upstream-source.md",
+          "expected_sha256": "011eed576c241a2180c776ddf6b8555331b482a951e7be35ed53928e7f0b87e0",
+          "actual_sha256": "011eed576c241a2180c776ddf6b8555331b482a951e7be35ed53928e7f0b87e0",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/read_files/1",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\reference\\LICENSE",
+          "expected_sha256": "aff64252938164965416e9e29af9faf52b48f6d294ab41cf1a9b6bd886d41333",
+          "actual_sha256": "aff64252938164965416e9e29af9faf52b48f6d294ab41cf1a9b6bd886d41333",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/read_files/2",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\reference\\provenance.json",
+          "expected_sha256": "8512287592db9c2220bffc2027db821b51e4a2aebe237d74fa32d2e83c36ad97",
+          "actual_sha256": "8512287592db9c2220bffc2027db821b51e4a2aebe237d74fa32d2e83c36ad97",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/read_files/3",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L01\\request.txt",
+          "expected_sha256": "a259c494a94ca42a9eb43082bf3216cb0c86b158c0a2839dcee5acb2503327a5",
+          "actual_sha256": "a259c494a94ca42a9eb43082bf3216cb0c86b158c0a2839dcee5acb2503327a5",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/read_files/4",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L01\\A.md",
+          "expected_sha256": "175223fc90b5a572ba126cee3b24c4e3b0b8304c6e06452326f90c6fd2eab7a8",
+          "actual_sha256": "175223fc90b5a572ba126cee3b24c4e3b0b8304c6e06452326f90c6fd2eab7a8",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/read_files/5",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L01\\B.md",
+          "expected_sha256": "d1a50c60245110575ca8a7be9fd98024990e2a71998ab0991af076029e0ea97b",
+          "actual_sha256": "d1a50c60245110575ca8a7be9fd98024990e2a71998ab0991af076029e0ea97b",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/read_files/6",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L02\\request.txt",
+          "expected_sha256": "39efbf4c2a639d660f57653f120703c7ac55eec6b46e1e2fdd013dd644732e6b",
+          "actual_sha256": "39efbf4c2a639d660f57653f120703c7ac55eec6b46e1e2fdd013dd644732e6b",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/read_files/7",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L02\\A.md",
+          "expected_sha256": "fd7a1577aff45b840e6a06f46a56a52cdd69534d9ddd4809c9d83c3efe054cf7",
+          "actual_sha256": "fd7a1577aff45b840e6a06f46a56a52cdd69534d9ddd4809c9d83c3efe054cf7",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/read_files/8",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L02\\B.md",
+          "expected_sha256": "c1cd3a1893ee44b959f4a43388e3582adac29d9f1e643ee3fdcfaf2551f19b79",
+          "actual_sha256": "c1cd3a1893ee44b959f4a43388e3582adac29d9f1e643ee3fdcfaf2551f19b79",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/read_files/9",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L03\\request.txt",
+          "expected_sha256": "dafe18af03a705a4d55d2caa215f7073e82341d56c83b16f72c8b099273199cc",
+          "actual_sha256": "dafe18af03a705a4d55d2caa215f7073e82341d56c83b16f72c8b099273199cc",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/read_files/10",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L03\\A.md",
+          "expected_sha256": "a4b8741d7ff349262156940415ca909e85969fe5a86a3531a1d38b2d94711df0",
+          "actual_sha256": "a4b8741d7ff349262156940415ca909e85969fe5a86a3531a1d38b2d94711df0",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/read_files/11",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L03\\B.md",
+          "expected_sha256": "ae64970860fe8ca2e23b8d3681ccf9574289a2abfa0aa5b2effc9555c37f909a",
+          "actual_sha256": "ae64970860fe8ca2e23b8d3681ccf9574289a2abfa0aa5b2effc9555c37f909a",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/generated_artifact_verification_reads/0",
+          "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\reviews\\L01-L03\\review.json",
+          "expected_sha256": "9e3afa70154cde17739f7687d4bd0b7f0ddaf65750a653f8bb221c5b8a0c7e8c",
+          "actual_sha256": "9e3afa70154cde17739f7687d4bd0b7f0ddaf65750a653f8bb221c5b8a0c7e8c",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/generated_artifact_verification_reads/1",
+          "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\reviews\\L01-L03\\review.md",
+          "expected_sha256": "fa4956b2637514b4e2ba4d8d24405c3c580f84a86679b06f1fe59b73b8463c46",
+          "actual_sha256": "fa4956b2637514b4e2ba4d8d24405c3c580f84a86679b06f1fe59b73b8463c46",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "reviews/L01-L03/review.json",
+          "sha256": "9e3afa70154cde17739f7687d4bd0b7f0ddaf65750a653f8bb221c5b8a0c7e8c"
+        },
+        {
+          "path": "reviews/L01-L03/review.md",
+          "sha256": "fa4956b2637514b4e2ba4d8d24405c3c580f84a86679b06f1fe59b73b8463c46"
+        },
+        {
+          "path": "reviews/L01-L03/run.json",
+          "sha256": "0cbd7f2215035b2ed0ab89346e5b8bccef9410e2a3120a326d54b2b5af983228"
+        }
+      ]
+    },
+    {
+      "batch": "L04-L06",
+      "checks": [
+        {
+          "pointer": "/input_files/0",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L04\\request.txt",
+          "expected_sha256": "5d1309207c7cfa6e1e4ef7f3e1024923445431a2b2c695e0333b6e89ff282afa",
+          "actual_sha256": "5d1309207c7cfa6e1e4ef7f3e1024923445431a2b2c695e0333b6e89ff282afa",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_files/1",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L04\\A.md",
+          "expected_sha256": "2ed68bd12430ac34edb866321374040e54f5449dcc901629448a0960f9c08ec8",
+          "actual_sha256": "2ed68bd12430ac34edb866321374040e54f5449dcc901629448a0960f9c08ec8",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_files/2",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L04\\B.md",
+          "expected_sha256": "58a2871f47c70d2e89b26f6fba2b5ed7a2da0a26d12a4a7fc527c5770a58ab7e",
+          "actual_sha256": "58a2871f47c70d2e89b26f6fba2b5ed7a2da0a26d12a4a7fc527c5770a58ab7e",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_files/3",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L05\\request.txt",
+          "expected_sha256": "4a440e68de09c90a0021563bd75f2af4fec1a2f874134100c5743cb6ce6a6444",
+          "actual_sha256": "4a440e68de09c90a0021563bd75f2af4fec1a2f874134100c5743cb6ce6a6444",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_files/4",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L05\\A.md",
+          "expected_sha256": "9e2365da856789aa58da0a3b86fb987005ec383a9dd77fdec9d5b8f9bb365f6a",
+          "actual_sha256": "9e2365da856789aa58da0a3b86fb987005ec383a9dd77fdec9d5b8f9bb365f6a",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_files/5",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L05\\B.md",
+          "expected_sha256": "1634ea8ec77324b65d6c6b1336119d75d5fb758708399f026a9ddd226483eb89",
+          "actual_sha256": "1634ea8ec77324b65d6c6b1336119d75d5fb758708399f026a9ddd226483eb89",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_files/6",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L06\\request.txt",
+          "expected_sha256": "f1fc5e9ef5a7e75bee6c867d060c94263ebf26b862858b8a66ed44561a660a21",
+          "actual_sha256": "f1fc5e9ef5a7e75bee6c867d060c94263ebf26b862858b8a66ed44561a660a21",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_files/7",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L06\\A.md",
+          "expected_sha256": "7730cfc48c71302b4e486dba7fed2bcaa80c2d509e79603ace8c035b9024340f",
+          "actual_sha256": "7730cfc48c71302b4e486dba7fed2bcaa80c2d509e79603ace8c035b9024340f",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_files/8",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L06\\B.md",
+          "expected_sha256": "959fd7abad9ede6f4d07425b264cb3f5ad5a3cee22296f72d518c5be88cb6e13",
+          "actual_sha256": "959fd7abad9ede6f4d07425b264cb3f5ad5a3cee22296f72d518c5be88cb6e13",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_files/9",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\reference\\upstream-source.md",
+          "expected_sha256": "011eed576c241a2180c776ddf6b8555331b482a951e7be35ed53928e7f0b87e0",
+          "actual_sha256": "011eed576c241a2180c776ddf6b8555331b482a951e7be35ed53928e7f0b87e0",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_files/10",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\reference\\LICENSE",
+          "expected_sha256": "aff64252938164965416e9e29af9faf52b48f6d294ab41cf1a9b6bd886d41333",
+          "actual_sha256": "aff64252938164965416e9e29af9faf52b48f6d294ab41cf1a9b6bd886d41333",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_files/11",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\reference\\provenance.json",
+          "expected_sha256": "8512287592db9c2220bffc2027db821b51e4a2aebe237d74fa32d2e83c36ad97",
+          "actual_sha256": "8512287592db9c2220bffc2027db821b51e4a2aebe237d74fa32d2e83c36ad97",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/created_artifacts_read_for_verification/0",
+          "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\reviews\\L04-L06\\review.json",
+          "expected_sha256": "72eda5c46de4977af47ace72f119f64a2595aa1916a092d8a9a6021148b30a37",
+          "actual_sha256": "72eda5c46de4977af47ace72f119f64a2595aa1916a092d8a9a6021148b30a37",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/created_artifacts_read_for_verification/1",
+          "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\reviews\\L04-L06\\review.md",
+          "expected_sha256": "fd10eb55f8c9bf35cbd39ffebe5ac0b2f6c2c64a638ba8e24148f1d28e363f8b",
+          "actual_sha256": "fd10eb55f8c9bf35cbd39ffebe5ac0b2f6c2c64a638ba8e24148f1d28e363f8b",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "reviews/L04-L06/review.json",
+          "sha256": "72eda5c46de4977af47ace72f119f64a2595aa1916a092d8a9a6021148b30a37"
+        },
+        {
+          "path": "reviews/L04-L06/review.md",
+          "sha256": "fd10eb55f8c9bf35cbd39ffebe5ac0b2f6c2c64a638ba8e24148f1d28e363f8b"
+        },
+        {
+          "path": "reviews/L04-L06/run.json",
+          "sha256": "e312a43933c658104630887aa90a7daaaf2e018888ace803d1a35e7d01962f63"
+        }
+      ]
+    },
+    {
+      "batch": "L07-L09",
+      "checks": [
+        {
+          "pointer": "/input_reads/0",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L07\\request.txt",
+          "expected_sha256": "eca76a64be56f7b3f60cc972283b934f12050d2a0d24162afc5a1eda163bf861",
+          "actual_sha256": "eca76a64be56f7b3f60cc972283b934f12050d2a0d24162afc5a1eda163bf861",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_reads/1",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L07\\A.md",
+          "expected_sha256": "55c9ff695f3575980161798f9ec1781982863ceefcc2ccd1abe0a642adbdb585",
+          "actual_sha256": "55c9ff695f3575980161798f9ec1781982863ceefcc2ccd1abe0a642adbdb585",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_reads/2",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L07\\B.md",
+          "expected_sha256": "71f64531991ee55dec11b073aa4be761938255fd8ccaad54cab34443a20c9e23",
+          "actual_sha256": "71f64531991ee55dec11b073aa4be761938255fd8ccaad54cab34443a20c9e23",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_reads/3",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L08\\request.txt",
+          "expected_sha256": "637700b559c69485176b3fb111b49a24a14bdf64e3f5e7a0e909c84048db2d65",
+          "actual_sha256": "637700b559c69485176b3fb111b49a24a14bdf64e3f5e7a0e909c84048db2d65",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_reads/4",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L08\\A.md",
+          "expected_sha256": "850705db4e95af76f9a526ce547a30569bf8b0b478a80d85df0126f1fa05d836",
+          "actual_sha256": "850705db4e95af76f9a526ce547a30569bf8b0b478a80d85df0126f1fa05d836",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_reads/5",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L08\\B.md",
+          "expected_sha256": "8c996f201ae9971fed617224168aab99a6fffcd9189f4c2d7b6a7fe9af248083",
+          "actual_sha256": "8c996f201ae9971fed617224168aab99a6fffcd9189f4c2d7b6a7fe9af248083",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_reads/6",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\reference\\LICENSE",
+          "expected_sha256": "aff64252938164965416e9e29af9faf52b48f6d294ab41cf1a9b6bd886d41333",
+          "actual_sha256": "aff64252938164965416e9e29af9faf52b48f6d294ab41cf1a9b6bd886d41333",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_reads/7",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\reference\\provenance.json",
+          "expected_sha256": "8512287592db9c2220bffc2027db821b51e4a2aebe237d74fa32d2e83c36ad97",
+          "actual_sha256": "8512287592db9c2220bffc2027db821b51e4a2aebe237d74fa32d2e83c36ad97",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_reads/8",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L09\\request.txt",
+          "expected_sha256": "b98fbc96770f9c3f81f76ff0de329980284db7bbc133f3d11fe7f68a899c7069",
+          "actual_sha256": "b98fbc96770f9c3f81f76ff0de329980284db7bbc133f3d11fe7f68a899c7069",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_reads/9",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L09\\A.md",
+          "expected_sha256": "98339f0ec6f3feaacd96bc9335d3d152549f56f0b693981792276fc6e6f8c34a",
+          "actual_sha256": "98339f0ec6f3feaacd96bc9335d3d152549f56f0b693981792276fc6e6f8c34a",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_reads/10",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\L09\\B.md",
+          "expected_sha256": "8a4b47624257d1783d48c339b7e362fd76ebad2d5da1682da9a660c26f3cef5d",
+          "actual_sha256": "8a4b47624257d1783d48c339b7e362fd76ebad2d5da1682da9a660c26f3cef5d",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/input_reads/11",
+          "path": "D:\\study\\projects\\combat-director\\evals\\results\\library-0.9.0\\anonymous-input\\reference\\upstream-source.md",
+          "expected_sha256": "011eed576c241a2180c776ddf6b8555331b482a951e7be35ed53928e7f0b87e0",
+          "actual_sha256": "011eed576c241a2180c776ddf6b8555331b482a951e7be35ed53928e7f0b87e0",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/artifact_reads/0",
+          "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\reviews\\L07-L09\\review.json",
+          "expected_sha256": "9193d39cf657d777d64df58d09f9e3056b8305378a890206850048b591b2a043",
+          "actual_sha256": "9193d39cf657d777d64df58d09f9e3056b8305378a890206850048b591b2a043",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/artifact_reads/1",
+          "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\reviews\\L07-L09\\review.md",
+          "expected_sha256": "9073690bfb224284575f370f0ff39d30b76ed574c6525b59c1b2986165f49548",
+          "actual_sha256": "9073690bfb224284575f370f0ff39d30b76ed574c6525b59c1b2986165f49548",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "reviews/L07-L09/review.json",
+          "sha256": "9193d39cf657d777d64df58d09f9e3056b8305378a890206850048b591b2a043"
+        },
+        {
+          "path": "reviews/L07-L09/review.md",
+          "sha256": "9073690bfb224284575f370f0ff39d30b76ed574c6525b59c1b2986165f49548"
+        },
+        {
+          "path": "reviews/L07-L09/run.json",
+          "sha256": "ee286379a5a37ecae5a6899e8ebebfdd505615fed57be70e58f01f1729fa1dd0"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "scope": "Hashes, declared input scope and exact artifact preservation. Self-reported reading is not OS-level tracing or proof of judgment quality."
+}

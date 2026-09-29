@@ -1,0 +1,135 @@
+CATALOG SHA256: 9B8F576F7B122E639C599202D8D186F66FD15D749BA90F1703E6C6F8EA95C365
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "characters",
+    "query": "凛羽 冰女",
+    "scope": null,
+    "school": null,
+    "character": null,
+    "detail": null
+  },
+  "total": 2,
+  "limit": 4,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。",
+  "matches": [
+    {
+      "id": "arvin-character-bingnv",
+      "kind": "characters",
+      "title": "冰女：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "冰女：战斗预设",
+        "泰拳",
+        "八极拳",
+        "空手道",
+        "擒拿",
+        "洪拳",
+        "冰女"
+      ],
+      "summary": "短发硬攻与硬冰封路相结合，实体结晶有接触面。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-bingnv.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "泰拳",
+        "八极拳",
+        "空手道",
+        "擒拿",
+        "洪拳"
+      ],
+      "characters": [
+        "冰女"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            1054,
+            1103
+          ]
+        ]
+      },
+      "status": "candidate",
+      "matched_terms": [
+        "冰女"
+      ],
+      "matched_names": [],
+      "matched_names_total": 0
+    },
+    {
+      "id": "arvin-character-linyu",
+      "kind": "characters",
+      "title": "凛羽：战斗预设",
+      "scope": [
+        "duel",
+        "sparring"
+      ],
+      "tags": [
+        "凛羽：战斗预设",
+        "形意拳",
+        "八卦掌",
+        "擒拿",
+        "合气道",
+        "柔道",
+        "柔术",
+        "凛羽"
+      ],
+      "summary": "直进与绕位主攻，抓控破招后回到快攻；控制是过渡。",
+      "requires": [
+        "用户设定允许所选动作、兵器与表现尺度",
+        "可见的起始距离、接触条件和结束位置"
+      ],
+      "excludes": [
+        "自动授予角色预设或超自然能力",
+        "把原文强制比例、历史称谓或成功率当作已核验事实"
+      ],
+      "path": "characters/arvin-character-linyu.md",
+      "provenance": "Arvin MIT资料的分段摘录与本项目影视改编；固定提交 c526a49bb869。",
+      "detail": "detailed",
+      "schools": [
+        "形意拳",
+        "八卦掌",
+        "擒拿",
+        "合气道",
+        "柔道",
+        "柔术"
+      ],
+      "characters": [
+        "凛羽"
+      ],
+      "source": {
+        "repository": "https://github.com/wangarvin007-commits/-skills",
+        "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+        "path": "seedance-combat-prompt/SKILL.md",
+        "ranges": [
+          [
+            918,
+            956
+          ]
+        ]
+      },
+      "status": "candidate",
+      "matched_terms": [
+        "凛羽"
+      ],
+      "matched_names": [],
+      "matched_names_total": 0
+    }
+  ]
+}

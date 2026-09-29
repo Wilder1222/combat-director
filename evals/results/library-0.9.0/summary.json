@@ -1,0 +1,130 @@
+{
+  "format": "combat-library-behavior-summary/1",
+  "aggregation_date": "2026-09-29",
+  "method": "Mechanical mapping of the three archived independent reviews; no parent regrading.",
+  "cases": [
+    {
+      "id": "L01",
+      "grades": {
+        "candidate": "satisfied",
+        "baseline": "satisfied"
+      },
+      "preference": "tie",
+      "reason": "两份均满足原始请求，且都写出真实的主动拆招与恢复。A 给出更直接的上游行号，B 的斜退—回线空间更具体；这些差异没有形成核心交付是否成立的决定性差距。不按字数或风格裁决。",
+      "review": "reviews/L01-L03/review.json"
+    },
+    {
+      "id": "L02",
+      "grades": {
+        "candidate": "satisfied",
+        "baseline": "satisfied"
+      },
+      "preference": "tie",
+      "reason": "两份的关键提取、留缺和上游定位完全相同且均正确。仅本地卡行号不同，现有证据无法裁决；不能将这个未核验差异当作胜负依据。",
+      "review": "reviews/L01-L03/review.json"
+    },
+    {
+      "id": "L03",
+      "grades": {
+        "candidate": "satisfied",
+        "baseline": "partial"
+      },
+      "preference": "candidate",
+      "reason": "两份均保留白鸽的腿法和双方主动攻防，A 的三个招式有逐项行号且补写边界明确。决定性差异是 B 在换线时接触解除的先后冲突，A 未见同类冲突。B 的主要结构仍然成立，修改这一处即可显著收敛差距；禁用示例核验缺口不单独用于定胜负。",
+      "review": "reviews/L01-L03/review.json"
+    },
+    {
+      "id": "L04",
+      "grades": {
+        "baseline": "satisfied",
+        "candidate": "satisfied"
+      },
+      "preference": "tie",
+      "reason": "两份都满足硬约束，并给出可追踪的接棍、守门者回应、恢复与实际绕行。A 用南侧避让开路，B 用北侧再导棍通过；两条路线都成立。B 的逐招行号更细，A 的三项借用也均可直接核到，未形成影响请求完成度的差距。",
+      "review": "reviews/L04-L06/review.json"
+    },
+    {
+      "id": "L05",
+      "grades": {
+        "baseline": "satisfied",
+        "candidate": "satisfied"
+      },
+      "preference": "tie",
+      "reason": "两份都保留打—短抓—续攻、冰女承接/反击与实体障碍改路，停手和消退完整。A 的南端绕行与 B 的北端绕行均有回应和落脚，未发现实质硬约束差距。B 逐招源行及改写分界更细，A 的所借动作同样核对成立；未按篇幅或名招数量加分。",
+      "review": "reviews/L04-L06/review.json"
+    },
+    {
+      "id": "L06",
+      "grades": {
+        "baseline": "satisfied",
+        "candidate": "satisfied"
+      },
+      "preference": "tie",
+      "reason": "两份都用可见接触与恢复支持三人持续移动，并按乙先入、甲后入、再闭门完成目标。A 的接臂后短推与 B 的双手接引均能核到相应原文。B 源行更直接且交代开门，A 的闭门后遮挡处理更简洁明确；B 门闩可见性的轻微措辞问题不构成主要约束失守，未形成足够差距判优。",
+      "review": "reviews/L04-L06/review.json"
+    },
+    {
+      "id": "L07",
+      "grades": {
+        "baseline": "satisfied",
+        "candidate": "satisfied"
+      },
+      "preference": "tie",
+      "reason": "两份都满足核心要求且来源动作准确，均明确补写回应。A 多写一次乙回探和甲横护，B 的一次主动拨挡已足够完成请求；不能把反击次数当成优劣。B 的源行定位更直接，但 A 的固定提交、源文路径和章节范围同样可定位，差异不足以构成实质任务完成度差距。",
+      "review": "reviews/L07-L09/review.json"
+    },
+    {
+      "id": "L08",
+      "grades": {
+        "baseline": "satisfied",
+        "candidate": "satisfied"
+      },
+      "preference": "tie",
+      "reason": "两份都自行选材、完成六轨与中文提示词，双方主动攻防和最后自愿让路均由可见动作兑现。A 的同高室内通道与一个镜头成立，B 的两镜头在分棍落脚时切换并继承位置也成立。A 的木柱来源边界有轻微不确定，B 的水洼覆盖范围未定；均不构成已证实的硬约束失守，不能用镜头更少或描述更细单独定胜负。",
+      "review": "reviews/L07-L09/review.json"
+    },
+    {
+      "id": "L09",
+      "grades": {
+        "baseline": "satisfied",
+        "candidate": "satisfied"
+      },
+      "preference": "tie",
+      "reason": "两份都守住左绳右袋，乙确实先抓到袋、再主动释放、转扶栏站稳；侧倾同时作用双方，甲保物是支撑与护袋结果而非超人免疫。A 更细地给出转身后栏杆与左手关系，B 更直接列出源文第 3035 行及原文/项目改编分层；两者都满足当前请求。B 自述更多检索过程没有可核验记录，A 所引卡内说明同样不可核实，均不作为额外加分或造假证据。",
+      "review": "reviews/L07-L09/review.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reviews/L01-L03/review.json",
+      "sha256": "9e3afa70154cde17739f7687d4bd0b7f0ddaf65750a653f8bb221c5b8a0c7e8c"
+    },
+    {
+      "path": "reviews/L04-L06/review.json",
+      "sha256": "72eda5c46de4977af47ace72f119f64a2595aa1916a092d8a9a6021148b30a37"
+    },
+    {
+      "path": "reviews/L07-L09/review.json",
+      "sha256": "9193d39cf657d777d64df58d09f9e3056b8305378a890206850048b591b2a043"
+    }
+  ],
+  "counts": {
+    "baseline": {
+      "satisfied": 8,
+      "partial": 1
+    },
+    "candidate": {
+      "satisfied": 9
+    }
+  },
+  "preferences": {
+    "tie": 8,
+    "candidate": 1
+  },
+  "limits": [
+    "Nine paired single draws; no general success-rate or superiority estimate.",
+    "Anonymous presentation only partially blinds capability and wording.",
+    "Source-card metadata beyond reviewer inputs is covered separately by parent-source-supplement.json.",
+    "No media quality, engine behavior, exact token usage or latency measured."
+  ]
+}

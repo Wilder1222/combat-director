@@ -1,0 +1,37 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "scenes",
+    "query": "庭院 走廊 巷",
+    "scope": null,
+    "school": null,
+    "character": null,
+    "detail": null
+  },
+  "total": 2,
+  "limit": 4,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "仅为关键词候选；detailed表示卡内含动作说明，不保证每个列名都有细节。核对前提、版本和用户设定；零命中可原创。",
+  "matches": [
+    {
+      "id": "arvin-scene-2",
+      "kind": "scenes",
+      "title": "写实纪实，城市雨夜小巷，积水反光",
+      "summary": "先显示巷口、墙面和水坑；狭巷限制长横扫，踏水波纹延续脚步位置。",
+      "detail": "detailed",
+      "matched_names": [],
+      "matched_names_total": 0
+    },
+    {
+      "id": "arvin-scene-4",
+      "kind": "scenes",
+      "title": "赛博朋克，霓虹废土巷道，全息投影",
+      "summary": "把广告投影和实墙区分开；窄巷只留短兵路径，积水承接霓虹颜色。",
+      "detail": "detailed",
+      "matched_names": [],
+      "matched_names_total": 0
+    }
+  ]
+}
+

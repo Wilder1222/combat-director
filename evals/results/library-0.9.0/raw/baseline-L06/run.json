@@ -1,0 +1,208 @@
+{
+  "status": "completed",
+  "request_path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L06\\request.txt",
+  "skill_root": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director",
+  "answer_path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L06\\answer.md",
+  "inputs": [
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\SKILL.md",
+      "sha256": "b878aee29204529f409eb8e51415984ffa9ea9a5bbb98c943d5d36ec54abc8a0",
+      "accesses": [
+        {
+          "kind": "full_read",
+          "command_number": 1
+        }
+      ],
+      "notes": "通过 Get-Content -Raw 完整输出并直接阅读。"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L06\\request.txt",
+      "sha256": "f1fc5e9ef5a7e75bee6c867d060c94263ebf26b862858b8a66ed44561a660a21",
+      "accesses": [
+        {
+          "kind": "full_read",
+          "command_number": 1
+        }
+      ],
+      "notes": "通过 Get-Content -Raw 完整输出并直接阅读。"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\library-workflow.md",
+      "sha256": "a117ddfea13d8a611becf6a052131232475761ad1bc9b9185ff5e3b9b7bbafb7",
+      "accesses": [
+        {
+          "kind": "full_read",
+          "command_number": 2
+        }
+      ],
+      "notes": "通过 Get-Content -Raw 完整输出并直接阅读。"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\choreography.md",
+      "sha256": "214a7ae0e96bf8325e7ff48e77d029d681e17b7b10759e25f2f6104a99ffe4f6",
+      "accesses": [
+        {
+          "kind": "full_read",
+          "command_number": 2
+        }
+      ],
+      "notes": "通过 Get-Content -Raw 完整输出并直接阅读。"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\combat-modes.md",
+      "sha256": "d0d08ecdbd337aa15c08fb684075fb1b3080087574a670c984765ac6a5c16c86",
+      "accesses": [
+        {
+          "kind": "full_read",
+          "command_number": 2
+        }
+      ],
+      "notes": "通过 Get-Content -Raw 完整输出并直接阅读。"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\technique-adaptation.md",
+      "sha256": "338245168f8c1e529cbab360712c01332b7adc3841e99f905f1df607ddf35107",
+      "accesses": [
+        {
+          "kind": "full_read",
+          "command_number": 2
+        }
+      ],
+      "notes": "通过 Get-Content -Raw 完整输出并直接阅读。"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\scripts\\library_tool.py",
+      "sha256": "f1f775b81fd41a00d2bbdd6a1ccf856b358d2ffa3197147d08967e8ee867d364",
+      "accesses": [
+        {
+          "kind": "full_read",
+          "command_number": 3
+        }
+      ],
+      "notes": "通过 Get-Content -Raw 完整输出并直接阅读。"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\catalog.json",
+      "sha256": "9b8f576f7b122e639c599202d8d186f66fd15d749ba90f1703e6c6f8ea95c365",
+      "accesses": [
+        {
+          "kind": "hash_only",
+          "command_number": 3
+        },
+        {
+          "kind": "script_internal_read",
+          "command_number": 4,
+          "reader": "scripts/library_tool.py",
+          "detail": "读取并解析完整 catalog.json；模型仅收到筛选后的一个候选。"
+        },
+        {
+          "kind": "script_internal_read",
+          "command_number": 5,
+          "reader": "scripts/library_tool.py",
+          "detail": "读取并解析完整 catalog.json；模型仅收到筛选后的四个候选。"
+        }
+      ],
+      "notes": "未作为全文直接阅读。索引由搜索脚本内部解析；两次搜索仅检查卡路径存在性和文件元数据，没有读取全部卡片正文。"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\design\\corridor-exit.md",
+      "sha256": "c5317dcbcfc26bf7daf11d04b39cb0e59f0fa14f38b366fb61573b4cf01ddbe0",
+      "accesses": [
+        {
+          "kind": "full_read",
+          "command_number": 6
+        }
+      ],
+      "notes": "通过 Get-Content -Raw 完整输出并直接阅读。"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\techniques\\arvin-tech-taiji.md",
+      "sha256": "59496833b2d2fbc265144553015a42a1ad453252dd9b5566d9103c05671d5cc0",
+      "accesses": [
+        {
+          "kind": "full_read",
+          "command_number": 6
+        }
+      ],
+      "notes": "通过 Get-Content -Raw 完整输出并直接阅读。"
+    }
+  ],
+  "access_kind_definitions": {
+    "full_read": "文件全文直接输出到模型并阅读。",
+    "partial_read": "仅直接读取文件片段；本次没有此类文件读取。",
+    "hash_only": "仅为证据计算文件 SHA-256，不等同阅读正文。",
+    "script_internal_read": "由所运行脚本在内部读取、解析，不等同模型直接完整阅读。"
+  },
+  "commands": [
+    {
+      "number": 1,
+      "command": "$paths = @('D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\SKILL.md', 'D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L06\\request.txt'); foreach ($p in $paths) { Write-Output ('=== FILE: ' + $p); Write-Output ('SHA256: ' + (Get-FileHash -LiteralPath $p -Algorithm SHA256).Hash); Get-Content -LiteralPath $p -Raw }",
+      "working_directory": null,
+      "working_directory_note": "使用宿主默认目录；命令仅访问列出的绝对文件路径。",
+      "exit_code": 0,
+      "output_file": "lookup-1.txt"
+    },
+    {
+      "number": 2,
+      "command": "$paths = @('D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\library-workflow.md', 'D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\choreography.md', 'D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\combat-modes.md', 'D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\references\\technique-adaptation.md'); foreach ($p in $paths) { Write-Output ('=== FILE: ' + $p); Write-Output ('SHA256: ' + (Get-FileHash -LiteralPath $p -Algorithm SHA256).Hash); Get-Content -LiteralPath $p -Raw }",
+      "working_directory": null,
+      "working_directory_note": "使用宿主默认目录；命令仅访问列出的绝对文件路径。",
+      "exit_code": 0,
+      "output_file": "lookup-2.txt"
+    },
+    {
+      "number": 3,
+      "command": "$p = 'D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\scripts\\library_tool.py'; Write-Output ('=== FILE: ' + $p); Write-Output ('SHA256: ' + (Get-FileHash -LiteralPath $p -Algorithm SHA256).Hash); Get-Content -LiteralPath $p -Raw; $p = 'D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\catalog.json'; Write-Output ('=== HASH ONLY: ' + $p); Write-Output ('SHA256: ' + (Get-FileHash -LiteralPath $p -Algorithm SHA256).Hash)",
+      "working_directory": null,
+      "working_directory_note": "使用宿主默认目录；命令仅访问列出的绝对文件路径。",
+      "exit_code": 0,
+      "output_file": "lookup-3.txt"
+    },
+    {
+      "number": 4,
+      "command": "python -B scripts/library_tool.py search design --query '回廊 撤离 护送' --scope group --limit 5",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director",
+      "working_directory_note": "显式指定",
+      "exit_code": 0,
+      "output_file": "lookup-4.txt"
+    },
+    {
+      "number": 5,
+      "command": "python -B scripts/library_tool.py search techniques --query '拨 引 控腕' --detail detailed --limit 5",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director",
+      "working_directory_note": "显式指定",
+      "exit_code": 0,
+      "output_file": "lookup-5.txt"
+    },
+    {
+      "number": 6,
+      "command": "$paths = @('D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\design\\corridor-exit.md', 'D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\techniques\\arvin-tech-taiji.md'); foreach ($p in $paths) { Write-Output ('=== FILE: ' + $p); Write-Output ('SHA256: ' + (Get-FileHash -LiteralPath $p -Algorithm SHA256).Hash); Get-Content -LiteralPath $p -Raw }",
+      "working_directory": null,
+      "working_directory_note": "使用宿主默认目录；命令仅访问列出的绝对文件路径。",
+      "exit_code": 0,
+      "output_file": "lookup-6.txt"
+    },
+    {
+      "number": 7,
+      "command": "$outDir = 'D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L06'; $run = Get-Content -LiteralPath (Join-Path $outDir 'run.json') -Raw | ConvertFrom-Json; $answer = Get-Item -LiteralPath (Join-Path $outDir 'answer.md'); $logs = 1..6 | ForEach-Object { Get-Item -LiteralPath (Join-Path $outDir ('lookup-' + $_ + '.txt')) }; [PSCustomObject]@{status=$run.status;answer_bytes=$answer.Length;input_records=$run.inputs.Count;command_records=$run.commands.Count;lookup_files=$logs.Count} | ConvertTo-Json; if ($answer.Length -eq 0 -or $run.inputs.Count -ne 10 -or $logs.Count -ne 6) { exit 1 }",
+      "working_directory": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\baseline-L06",
+      "working_directory_note": "只读取本次自有输出以检查文件存在、非空和记录数量，不作为输入证据。",
+      "exit_code": 0,
+      "output_file": "lookup-7.txt"
+    }
+  ],
+  "artifact_operations": [
+    {
+      "tool": "apply_patch",
+      "operation": "写入 answer.md、run.json 和 lookup-1.txt 至 lookup-6.txt；随后更新 run.json 并写入输出检查日志 lookup-7.txt。属于文件写入工具调用，没有进程退出码。"
+    }
+  ],
+  "scope_notes": [
+    "只直接读取冻结技能包内文件及指定 request.txt；未读取仓库、其他任务、研究/评估结果或记忆。",
+    "未联网、未生成媒体、未调用平台、未修改技能、未启动代理。",
+    "两次 Python 命令均使用 -B；没有执行验证或渲染脚本。",
+    "library_tool.py 内部为校验索引引用而检查卡路径、文件类型、文件大小和符号链接；这些元数据检查不是卡片正文读取。",
+    "没有读取原始上游仓库；来源说明仅依据已直接阅读的冻结卡片。",
+    "自有输出文件不是输入证据。"
+  ]
+}

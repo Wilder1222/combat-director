@@ -1,0 +1,6 @@
+{
+  "tool": "view_image",
+  "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M02\\synthetic-i2v-start.png",
+  "result": "Image returned successfully and visually inspected; exact source image remains at the input path. No generated or edited image.",
+  "observed": "Off-white 720x400 diagram, blue-gray A at left and brown B at right with brown staffs; center arrow points right, pale offset staff marks extend rightward near A's staff; gray border and floor line; static labels."
+}

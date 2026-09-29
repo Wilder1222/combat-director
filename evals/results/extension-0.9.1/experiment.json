@@ -1,0 +1,49 @@
+{
+  "format": "combat-extension-experiment/1",
+  "updated": "2026-09-29",
+  "frozen_snapshot": "snapshot.json",
+  "status": "execution_and_review_complete",
+  "completed": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "E05",
+    "E06",
+    "E07",
+    "E08",
+    "E09",
+    "E12"
+  ],
+  "review_in_progress": [],
+  "running": [],
+  "interrupted": [
+    {
+      "id": "E05",
+      "evidence": "Agent handle absent on 2026-09-29; answer and lookups exist, run.json missing. Not counted as a completed execution."
+    },
+    {
+      "id": "E06",
+      "evidence": "Agent handle absent on 2026-09-29; lookups exist, answer.md and run.json missing. Not counted as a completed execution."
+    }
+  ],
+  "not_started": [],
+  "scope": "Single-candidate text behavior; no media generated. Snapshot status remains the historical preparation state.",
+  "reviewed": {
+    "M01": "satisfied",
+    "M02": "satisfied",
+    "M03": "satisfied",
+    "M04": "satisfied",
+    "E05": "satisfied",
+    "E06": "satisfied",
+    "E07": "satisfied",
+    "E08": "satisfied",
+    "E09": "satisfied",
+    "E12": "satisfied"
+  },
+  "completed_attempts": {
+    "E05": "attempt2",
+    "E06": "attempt2"
+  },
+  "summary": "summary.json"
+}

@@ -1,0 +1,7 @@
+{
+  "chunk_id": "a1572e",
+  "wall_time_seconds": 0.5170335,
+  "exit_code": 0,
+  "original_token_count": 218,
+  "output": "[\r\n  {\r\n    \"Name\": \"answer.md\",\r\n    \"Length\": 1153\r\n  },\r\n  {\r\n    \"Name\": \"lookup-1.txt\",\r\n    \"Length\": 13487\r\n  },\r\n  {\r\n    \"Name\": \"lookup-2.txt\",\r\n    \"Length\": 404\r\n  },\r\n  {\r\n    \"Name\": \"lookup-3.txt\",\r\n    \"Length\": 889\r\n  },\r\n  {\r\n    \"Name\": \"lookup-4.txt\",\r\n    \"Length\": 8187\r\n  },\r\n  {\r\n    \"Name\": \"lookup-5.txt\",\r\n    \"Length\": 329\r\n  },\r\n  {\r\n    \"Name\": \"lookup-6.txt\",\r\n    \"Length\": 329\r\n  },\r\n  {\r\n    \"Name\": \"lookup-7.txt\",\r\n    \"Length\": 329\r\n  },\r\n  {\r\n    \"Name\": \"lookup-8.txt\",\r\n    \"Length\": 15789\r\n  },\r\n  {\r\n    \"Name\": \"request.txt\",\r\n    \"Length\": 273\r\n  },\r\n  {\r\n    \"Name\": \"run.json\",\r\n    \"Length\": 7925\r\n  },\r\n  {\r\n    \"Name\": \"synthetic-frame-0000.png\",\r\n    \"Length\": 6976\r\n  },\r\n  {\r\n    \"Name\": \"synthetic-frame-0500.png\",\r\n    \"Length\": 7150\r\n  },\r\n  {\r\n    \"Name\": \"synthetic-frame-1000.png\",\r\n    \"Length\": 7134\r\n  }\r\n]\r\n"
+}

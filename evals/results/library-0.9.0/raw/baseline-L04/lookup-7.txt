@@ -1,0 +1,4 @@
+answer.md exists and contains all eight prompt labels.
+run.json parses successfully and records the requested task paths.
+Answer characters: 4247
+This is a text-only artifact check, not a media-generation validation.

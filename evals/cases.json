@@ -43,7 +43,9 @@
       "expected_observables": "能解释三人位置、焦点交手、画外状态与结果；角色不凭空消失",
       "category": "多人编排",
       "pilot": false,
-      "status": "not_run"
+      "status": "candidate_0.9.1_single_run_independently_reviewed_satisfied",
+      "evidence": "results/extension-0.9.1/reviews/E05-E08/review.json",
+      "scope_note": "Frozen candidate only; one completed run. No media effects or comparative quality claim. Interrupted E05/E06 first attempts retained separately."
     },
     {
       "id": "E06",
@@ -51,7 +53,9 @@
       "expected_observables": "代价有可见表现，下一拍受约束；若换手需动作过程",
       "category": "能力/状态",
       "pilot": false,
-      "status": "not_run"
+      "status": "candidate_0.9.1_single_run_independently_reviewed_satisfied",
+      "evidence": "results/extension-0.9.1/reviews/E05-E08/review.json",
+      "scope_note": "Frozen candidate only; one completed run. No media effects or comparative quality claim. Interrupted E05/E06 first attempts retained separately."
     },
     {
       "id": "E07",
@@ -59,7 +63,9 @@
       "expected_observables": "可记录用户声明；不宣称平台绑定已经工具验证",
       "category": "素材证据",
       "pilot": false,
-      "status": "not_run"
+      "status": "candidate_0.9.1_single_run_independently_reviewed_satisfied",
+      "evidence": "results/extension-0.9.1/reviews/E05-E08/review.json",
+      "scope_note": "Frozen candidate only; one completed run. No media effects or comparative quality claim. Interrupted E05/E06 first attempts retained separately."
     },
     {
       "id": "E08",
@@ -67,7 +73,9 @@
       "expected_observables": "区分观察与声音设计建议，不伪造听觉证据",
       "category": "媒体审阅",
       "pilot": false,
-      "status": "not_run"
+      "status": "candidate_0.9.1_single_run_independently_reviewed_satisfied",
+      "evidence": "results/extension-0.9.1/reviews/E05-E08/review.json",
+      "scope_note": "Frozen candidate only; one completed run. No media effects or comparative quality claim. Interrupted E05/E06 first attempts retained separately."
     },
     {
       "id": "E09",
@@ -75,7 +83,9 @@
       "expected_observables": "定位原因与时间段；只改必要事件/主段；给复测点",
       "category": "最小修复",
       "pilot": false,
-      "status": "not_run"
+      "status": "candidate_0.9.1_single_run_independently_reviewed_satisfied",
+      "evidence": "results/extension-0.9.1/reviews/E09-E12/review.json",
+      "scope_note": "Frozen candidate only; one completed run. No media effects or comparative quality claim. Interrupted E05/E06 first attempts retained separately."
     },
     {
       "id": "E10",
@@ -92,7 +102,9 @@
       "expected_observables": "不因含“人物”“镜头”而误触发战斗编排",
       "category": "负向路由",
       "pilot": false,
-      "status": "not_run"
+      "status": "actual_host_candidate_0.9.1_negative_routing_observed",
+      "evidence": "results/host-0.9.1/summary.json",
+      "scope_note": "H03: quiet portrait text only, isolated project candidate, plugin discovery disabled for this invocation; no combat skill-read event and no combat output. Not a default multi-plugin catalog or image-generation claim."
     },
     {
       "id": "E12",
@@ -100,7 +112,9 @@
       "expected_observables": "风格与能力分离；环境反馈、重心和回应具体；无尺度膨胀",
       "category": "泛化能力",
       "pilot": false,
-      "status": "not_run"
+      "status": "candidate_0.9.1_single_run_independently_reviewed_satisfied",
+      "evidence": "results/extension-0.9.1/reviews/E09-E12/review.json",
+      "scope_note": "Frozen candidate only; one completed run. No media effects or comparative quality claim. Interrupted E05/E06 first attempts retained separately."
     }
   ]
 }

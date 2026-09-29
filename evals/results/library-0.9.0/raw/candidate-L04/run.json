@@ -1,0 +1,113 @@
+{
+  "task_id": "candidate-L04",
+  "answer_file": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\answer.md",
+  "direct_reads": [
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\request.txt",
+      "sha256": "5D1309207C7CFA6E1E4EF7F3E1024923445431A2B2C695E0333B6E89FF282AFA",
+      "mode": "direct_full_text",
+      "evidence": "lookup-1.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\SKILL.md",
+      "sha256": "3FD6DF6EAD2C904679D9E2D7575109761A82AADB1DAEE6339E5BC1012A4A4A19",
+      "mode": "direct_full_text",
+      "evidence": "lookup-1.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\choreography.md",
+      "sha256": "D5F123389239D20061426A5C2D656581E71C7B9CFB79879E55F069DBBE5EA56C",
+      "mode": "direct_full_text",
+      "evidence": "lookup-2.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\templates.md",
+      "sha256": "294C7CE6509B397604827323EEA4469D9D37555C2EF93577F21F3CBDBD24C5F1",
+      "mode": "direct_full_text",
+      "evidence": "lookup-2.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\technique-adaptation.md",
+      "sha256": "2EB7C896B1C4A087A5D0784F295B6D706CA4694AEE6372DB5FDDA5C0D2FE9575",
+      "mode": "direct_full_text",
+      "evidence": "lookup-2.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\library-workflow.md",
+      "sha256": "5BA318023DA1C003F58E7368ECC0CB602AFB0547406ED12EBA83648162D8FD4E",
+      "mode": "direct_full_text",
+      "evidence": "lookup-2.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-feixue-fire.md",
+      "sha256": "55ADD9672F56728196565456F228D49F79328F38541B01983FA46F3046A56430",
+      "mode": "complete_selected_card_rendered_by_show_source",
+      "evidence": "lookup-4.txt",
+      "hash_evidence": "lookup-7.txt"
+    },
+    {
+      "path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\particle-vfx.md",
+      "sha256": "07C81F84E2BDEA4BCCA12B591C5F0B26D714F8AA15534D431DAB5C7052651669",
+      "mode": "direct_full_text",
+      "evidence": "lookup-7.txt"
+    }
+  ],
+  "commands": [
+    {
+      "command": "$ErrorActionPreference = 'Stop'\n$paths = @('D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\request.txt', 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\SKILL.md')\n$output = foreach ($path in $paths) {\n  'FILE: ' + $path\n  'SHA256: ' + (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash\n  Get-Content -LiteralPath $path -Raw\n}\n$text = $output -join \"`n\"\n[System.IO.File]::WriteAllText('D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\lookup-1.txt', $text, [System.Text.UTF8Encoding]::new($false))\n$text",
+      "exit_code": 0,
+      "output_file": "lookup-1.txt"
+    },
+    {
+      "command": "$ErrorActionPreference = 'Stop'\n$paths = @('D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\choreography.md', 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\templates.md', 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\technique-adaptation.md', 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\library-workflow.md')\n$output = foreach ($path in $paths) {\n  'FILE: ' + $path\n  'SHA256: ' + (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash\n  Get-Content -LiteralPath $path -Raw\n}\n$text = $output -join \"`n\"\n[System.IO.File]::WriteAllText('D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\lookup-2.txt', $text, [System.Text.UTF8Encoding]::new($false))\n$text",
+      "exit_code": 0,
+      "output_file": "lookup-2.txt"
+    },
+    {
+      "command": "$ErrorActionPreference = 'Stop'\n$output = & python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' search characters --character '绯雪·火焰' 2>&1\n$code = $LASTEXITCODE\n$text = ($output | ForEach-Object { $_.ToString() }) -join \"`n\"\n[System.IO.File]::WriteAllText('D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\lookup-3.txt', $text, [System.Text.UTF8Encoding]::new($false))\n$text\nexit $code",
+      "exit_code": 0,
+      "output_file": "lookup-3.txt",
+      "access_note": "Executed library search; underlying index read by script only, not personally read in full."
+    },
+    {
+      "command": "$ErrorActionPreference = 'Stop'\n$output = & python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' show arvin-character-feixue-fire --source 2>&1\n$code = $LASTEXITCODE\n$text = ($output | ForEach-Object { $_.ToString() }) -join \"`n\"\n[System.IO.File]::WriteAllText('D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\lookup-4.txt', $text, [System.Text.UTF8Encoding]::new($false))\n$text\nexit $code",
+      "exit_code": 0,
+      "output_file": "lookup-4.txt",
+      "access_note": "Read selected character card as rendered by show --source; did not read full catalog."
+    },
+    {
+      "command": "$ErrorActionPreference = 'Stop'\n$output = & python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' items --card arvin-character-feixue-fire --query '折樱上挑 流火幻步' 2>&1\n$code = $LASTEXITCODE\n$text = ($output | ForEach-Object { $_.ToString() }) -join \"`n\"\n[System.IO.File]::WriteAllText('D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\lookup-5.txt', $text, [System.Text.UTF8Encoding]::new($false))\n$text\nexit $code",
+      "exit_code": 0,
+      "output_file": "lookup-5.txt",
+      "access_note": "Item search rendered selected matches; underlying items index read by script only."
+    },
+    {
+      "command": "$ErrorActionPreference = 'Stop'\n$output = @()\n$codes = @()\nforeach ($id in @('arvin-character-feixue-fire-item-86bff424a344','arvin-character-feixue-fire-item-bb6124188aba')) {\n  $output += 'ITEM: ' + $id\n  $output += & python -B 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\scripts\\library_tool.py' item $id --source 2>&1\n  $codes += $LASTEXITCODE\n}\n$output += 'EXIT_CODES: ' + ($codes -join ',')\n$output += & rg --files 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\library' -g '*feixue*'\n$codes += $LASTEXITCODE\n$text = ($output | ForEach-Object { $_.ToString() }) -join \"`n\"\n[System.IO.File]::WriteAllText('D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\lookup-6.txt', $text, [System.Text.UTF8Encoding]::new($false))\n$text\nif ($codes | Where-Object { $_ -ne 0 }) { exit 1 }\nexit 0",
+      "exit_code": 0,
+      "output_file": "lookup-6.txt",
+      "access_note": "Read two rendered item excerpts and source rows; rg only enumerated matching filenames. No full index read claimed."
+    },
+    {
+      "command": "$ErrorActionPreference = 'Stop'\n$output = @('FILE_HASH_ONLY: D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-feixue-fire.md', 'SHA256: ' + (Get-FileHash -LiteralPath 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-feixue-fire.md' -Algorithm SHA256).Hash)\n$path = 'D:\\Temp\\combat-library-behavior-j75bzt8f\\candidate\\skills\\combat-director\\references\\particle-vfx.md'\n$output += 'FILE: ' + $path\n$output += 'SHA256: ' + (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash\n$output += Get-Content -LiteralPath $path -Raw\n$text = $output -join \"`n\"\n[System.IO.File]::WriteAllText('D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\lookup-7.txt', $text, [System.Text.UTF8Encoding]::new($false))\n$text",
+      "exit_code": 0,
+      "output_file": "lookup-7.txt",
+      "access_note": "Character card content was read via show --source in lookup-4; this invocation only hashes it. Particle reference is directly read in full."
+    }
+  ],
+  "delivery_verification": {
+    "command": "$ErrorActionPreference = 'Stop'\n$paths = @('D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\answer.md', 'D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\run.json')\n$output = foreach ($path in $paths) {\n  $item = Get-Item -LiteralPath $path\n  if ($item.Length -eq 0) { throw ('Empty output: ' + $path) }\n  $item.FullName + ' | bytes=' + $item.Length\n}\n$text = $output -join \"`n\"\n[System.IO.File]::WriteAllText('D:\\Temp\\combat-library-behavior-j75bzt8f\\runs\\candidate-L04\\lookup-8.txt', $text, [System.Text.UTF8Encoding]::new($false))\n$text",
+    "exit_code": 0,
+    "output_file": "lookup-8.txt",
+    "access_note": "Filesystem metadata only: verified answer.md and run.json existed and were nonempty before appending this verification record; no file contents read."
+  },
+  "lookup_scope_notes": [
+    "All seven recorded shell invocations completed with exit code 0; each command's stdout/stderr rendering is saved in its referenced lookup file.",
+    "library_tool search/items/item internally access indexes. Only their returned candidates and the two rendered item/source excerpts were read; the complete catalog and item index were not personally read.",
+    "show --source rendered the full selected fire character card. Its physical filename was found with rg --files and its current SHA256 was separately computed.",
+    "rg also returned the frost card filename; that file's contents were not read.",
+    "The upstream source file and license file were not directly opened. Their provenance is reported from the selected library card and item output.",
+    "No project, other snapshot, other task, research, evaluation, memory, network, video generation, or skill modification was used.",
+    "Every Python command used -B. Writes were confined to the assigned run directory.",
+    "The answer and this manifest are authored using apply_patch; the commands list records process-executed shell commands, not in-memory composition."
+  ]
+}

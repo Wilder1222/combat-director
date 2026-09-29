@@ -1,0 +1,47 @@
+{
+  "format": "combat-motion-media-draft/1",
+  "date": "2026-09-29",
+  "status": "draft_not_submittable",
+  "purpose": "Prepare the planned three-scene D/B experiment without calling a generation service.",
+  "provisional_design": {
+    "duration_seconds": 8,
+    "aspect_ratio": "16:9",
+    "mode": "text_to_video",
+    "repeats_per_condition": 3,
+    "order_seed": 20260929,
+    "note": "These are newly authored eight-second test scenes, not shortened exports of the twelve-second teaching examples. Duration and mode require target-entry verification before execution freeze."
+  },
+  "unresolved": [
+    "Target platform, model revision, entry and account scope",
+    "Supported single-task duration, aspect ratio and mode",
+    "Prompt enhancement behavior and returned rewrite visibility",
+    "Supported seed controls, actual settings and repeat pairing",
+    "Generation authorization and service cost/credit scope"
+  ],
+  "scenes": [
+    {
+      "id": "staff",
+      "title": "固定机位木杖交接",
+      "base_prompt": "8秒，16:9，正常速度，一镜到底。日间石院，北侧灰砖墙稳定，固定侧面双人全身机位，双方脚步和木杖运动范围始终在画内。两名成年虚构练习者，灰衣甲在画面左侧朝右，褐衣乙在右侧朝左，各自双手分握同一根完整木杖。0—2秒，两人相向持杖站稳。2—5秒，甲进半步，从自身右肩前向左下斜劈；乙撤半步并举杖斜架，两杖在身前实际接触，乙沉肘顺势将来杖拨到身体外侧，甲随接触屈肘卸力。5—7秒，两人先分开木杖，各退一步并收杖站稳；7—8秒保持戒备与自然呼吸。起动、接挡、偏转、分杖和落脚过程连续可追踪，手与所持木杖持续相连。只有两人、两根木杖，无超自然能力、光带、火花、分身、切镜、慢放或定格。",
+      "blur_addition": "快速挥动时，仅杖端边缘沿实际斜劈与拨开弧线出现短促运动模糊；静止砖墙不随挥杖横向拖糊，杖端相对画面止势后不再留下运动拖影。",
+      "critical_events": ["双手握持与起动", "乙撤步斜架", "两杖接触并偏转", "分杖与回收", "双方退开落稳"],
+      "hard_failures": ["省略乙的回应或接触因果", "木杖离手、增殖或穿过对方", "新增能力或身体伤害", "偷改正常速度或连续机位"]
+    },
+    {
+      "id": "chase",
+      "title": "侧向跟拍追逐",
+      "base_prompt": "8秒，16:9，正常速度，一镜到底。日间宽阔回廊，北侧柱列、地面石缝和东端敞开的门口在开场可见。两名成年虚构人物徒手沿走廊向东、即画面右侧跑动，灰衣甲领先，褐衣乙在其后两步追赶。相机始终在走廊南侧，侧面随甲向右平移，保留两人全身、脚步和前方通道，柱列相对画面向左掠过。0—3秒，甲持续奔跑，乙加速缩短间距。3—5秒，乙伸右手试图触到甲的后肩；甲看见逼近的手，稍向前侧转肩避开，保持向东跑动，乙的手落空后收回。5—7秒，甲跑到已存在的门口并逐步减速，乙收臂缩步跟着减速，停在甲身后一臂之外；相机随甲平顺减速。7—8秒两人停稳但仍自然喘息，镜头也停稳。追近、伸手、避开、收臂与落脚连续可追踪，实际间距变化由步速完成。全程两人、无兵器、无碰撞伤害、无超自然能力，不切镜、不慢放、不定格。",
+      "blur_addition": "跟拍期间，向左掠过的柱列呈轻微水平运动模糊，两人摆动的手脚分别沿各自运动方向短暂拖糊；甲躯干的画面位移较小，乙追近的相对位移仍然保留，人物和相机停稳后不继续拖尾。",
+      "critical_events": ["甲领先与乙追近", "乙伸手", "甲转肩避开", "乙收臂", "两人及相机连续减速停稳"],
+      "hard_failures": ["用相机平移代替人物跑动", "乙瞬移追上或人物换位", "遗漏伸手与避开的关系", "新增打击、兵器、能力或切镜"]
+    },
+    {
+      "id": "blade_trail",
+      "title": "获准附刃尾迹与挥空收势",
+      "base_prompt": "8秒，16:9，正常速度，一镜到底。日间开阔石院，固定侧面双人全身机位，地面和背景石墙稳定。两名成年虚构武者，灰衣甲在画面左侧，右手握同一把实体直剑，左手空着；褐衣乙在右侧徒手应对。甲仅获准在实体剑刃后产生窄青色粒子光带，光带沿剑已经走过的路径短暂留存，没有独立攻击或伤害能力。0—2秒，两人相向站稳。2—4秒，甲向前小进半步，以右手剑在身前作一次由右向左的横扫；乙立即后撤并侧身让开剑路，剑从乙身前空处掠过，没有接触身体或兵器。4—6秒，甲屈肘将剑收回右侧戒备位，乙在撤步处落稳；甲收剑时停止新增光带，旧光带留在已走过的位置，逐渐断成暗点消退。6—8秒，两人保持安全距离和自然呼吸，甲仍右手握剑，旧光带消失后不再出现。握柄、横扫、乙的避让、收剑和落脚持续可追踪；只有两人、一把实体剑，没有接触爆炸、离体剑气、分身、额外兵器、慢放、切镜或定格。",
+      "blur_addition": "实体剑尖快速横扫时，边缘沿真实横扫弧线产生短促曝光运动模糊；剑相对固定画面收稳后，实体边缘的拖糊结束，旧粒子光带仍按上述独立寿命消退。",
+      "critical_events": ["单把实体剑与右手握持", "横扫与乙后撤侧避", "挥空无接触结果", "收剑停止新增粒子", "曝光止势与旧粒子分别结束"],
+      "hard_failures": ["光带变成独立攻击或额外实体剑", "挥空却产生命中爆炸或伤害", "手柄连接丢失", "旧尾迹被整体吸回或随剑刚性粘连", "新增慢放或切镜"]
+    }
+  ]
+}

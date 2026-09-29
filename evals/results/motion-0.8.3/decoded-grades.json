@@ -1,0 +1,107 @@
+{
+  "format": "motion-blur-decoded-grades/1",
+  "source": "independent-review/grades.json",
+  "mapping": "blind-mapping.json",
+  "counts": {
+    "candidate": {
+      "满足": 11,
+      "部分": 1
+    },
+    "baseline": {
+      "满足": 3
+    }
+  },
+  "items": [
+    {
+      "case": "T01",
+      "answer": "A",
+      "run": "candidate-T01",
+      "grade": "满足"
+    },
+    {
+      "case": "T02",
+      "answer": "A",
+      "run": "candidate-T02",
+      "grade": "满足"
+    },
+    {
+      "case": "T02",
+      "answer": "B",
+      "run": "baseline-T02",
+      "grade": "满足"
+    },
+    {
+      "case": "T03",
+      "answer": "A",
+      "run": "candidate-T03",
+      "grade": "满足"
+    },
+    {
+      "case": "T04",
+      "answer": "A",
+      "run": "candidate-T04",
+      "grade": "满足"
+    },
+    {
+      "case": "T05",
+      "answer": "A",
+      "run": "candidate-T05",
+      "grade": "满足"
+    },
+    {
+      "case": "T06",
+      "answer": "A",
+      "run": "candidate-T06",
+      "grade": "满足"
+    },
+    {
+      "case": "T07",
+      "answer": "A",
+      "run": "candidate-T07",
+      "grade": "部分"
+    },
+    {
+      "case": "T08",
+      "answer": "A",
+      "run": "baseline-T08",
+      "grade": "满足"
+    },
+    {
+      "case": "T08",
+      "answer": "B",
+      "run": "candidate-T08",
+      "grade": "满足"
+    },
+    {
+      "case": "T09",
+      "answer": "A",
+      "run": "candidate-T09",
+      "grade": "满足"
+    },
+    {
+      "case": "T10",
+      "answer": "A",
+      "run": "candidate-T10",
+      "grade": "满足"
+    },
+    {
+      "case": "T11",
+      "answer": "A",
+      "run": "candidate-T11",
+      "grade": "满足"
+    },
+    {
+      "case": "T11",
+      "answer": "B",
+      "run": "baseline-T11",
+      "grade": "满足"
+    },
+    {
+      "case": "T12",
+      "answer": "A",
+      "run": "candidate-T12",
+      "grade": "满足"
+    }
+  ],
+  "interpretation": "T07 retains partial delivery status due to mutually exclusive requirements; do not convert it to a completed prompt or count all candidate tasks as satisfied."
+}

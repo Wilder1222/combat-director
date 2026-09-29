@@ -1,0 +1,43 @@
+{
+  "review_type": "independent_semantic_forward_review",
+  "scope": "Only inputs.json and its four listed original requests and full answers were read. No repository, prior grades, other reviews, network, or media was consulted.",
+  "evidence_boundary": "Textual request compliance only. No video was provided; no media quality, repair effectiveness, or actual tool-use compliance is asserted.",
+  "count_method": "Unicode scalar characters including punctuation and internal whitespace, after trimming leading and trailing whitespace.",
+  "manifest": {"path": "D:/Temp/combat-matrix-review-3qj07h8l/inputs.json", "sha256": "3f912b9a5c1dba185d7fe920c28f8323a23135dfd3f3570c5585b4840068994c"},
+  "results": [
+    {
+      "id": "MXH05", "status": "satisfied", "answer_unicode_characters": 331,
+      "request_sha256": "a358c0c5874e2cea4f0e19026dc6b07461ff713d06b0726d2820abf6062e2897",
+      "answer_sha256": "3ce86eda0888f3cbd3a8e1052214c8b769b29b4168eb10fccc8d6bd27a6173bc",
+      "reason": "331字符合200至360字；初步诊断以转述为依据，将生成轮廓连续性、效果残留与后期列为可能原因，提供具体待核验证据，修复范围限制在收势段或经证实的对应效果环节，并保留全部四项约束。",
+      "evidence": ["仅据你的转述，可暂记为“收势后旧剑刃轮廓残留”，尚非实片诊断。", "不能据此认定用了插帧或某种算法。", "待核验：收剑前后的连续帧、残留持续时间、相机是否仍移动，以及原始输出与后期版本首次出现问题的位置", "最小修复先限定在收势段", "保留正常速度、单镜头、两人各一把剑和撤开结尾。", "效果尚未验证。"],
+      "hard_failures": [], "minor_issues": [], "missing_requirements": []
+    },
+    {
+      "id": "MXH06", "status": "satisfied", "answer_unicode_characters": 138,
+      "request_sha256": "85c272493411aee37a8229c03a3836bca933d41ab7117a5f53c1d383c4b004ec",
+      "answer_sha256": "9387e595a20ac206f928f19bca1adf2a634e16c836ea42c5dd973fa3c5195ccb",
+      "reason": "138字符合不超过160字；短答仍清楚区分推测、需要获取的证据和条件式修复，未擅自断定算法，四项保留条件完整，未声称修复有效。",
+      "evidence": ["仅据描述，疑似非预期重影；可能是生成时剑体重复或后期拖影残留，不能认定算法。", "待核验：收剑前后连续帧、原片与成片对照、平台设置及后期记录。", "最小修复：仅补充“收剑后剑随手归位，旧轮廓消失”；若证实后期引入，仅调整对应效果。", "保留正常速度、单镜头、两人各一把剑和撤开结尾。效果待验证。"],
+      "hard_failures": [], "minor_issues": [], "missing_requirements": []
+    },
+    {
+      "id": "MXH07", "status": "satisfied", "answer_unicode_characters": 285,
+      "request_sha256": "13fea7343e14dd8f17cf424d1263404646f1858ad6a7a113baf1ecaff1039d05",
+      "answer_sha256": "f9510dd3c476572945e8bce97f1f5483cf3b1ed55224ce939269e613b7989ee0",
+      "reason": "285字，单段中文提示词，符合200至360字及输出形式。时长、成年双人、空石院、左右位置、三米距离、各一根低垂木杖、固定侧面全身、正常速度和一镜到底均明确。动作仅呼吸与衣角轻动，结尾未出手；稳定光线与静止院墙没有引入额外动作或特效。",
+      "evidence": ["时长8秒，正常速度，一镜到底。", "两名成年人静态对峙，甲始终位于画面左侧，面朝右方；乙始终位于画面右侧，面朝左方，双方相隔三米。", "两人各持一根木杖，杖尖自然低垂", "摄影机固定于两人侧面，以全身景别同时容纳双方头顶、双脚及完整木杖", "仅胸腹随自然呼吸轻微起伏，衣角受微风轻轻摆动。", "直到第8秒结束，双方仍保持原有距离和持杖姿态，均未出手。", "无超自然能力及额外特效。"],
+      "hard_failures": [], "minor_issues": [], "missing_requirements": []
+    },
+    {
+      "id": "MXH08", "status": "satisfied", "answer_unicode_characters": 99,
+      "request_sha256": "84ce65c62e6a4f4ce33ed9f3a5845334be287ddf42db86fdc92d4ce9611460e1",
+      "answer_sha256": "e704ed9f2aee83fafafb706849cc477df46076117a57477594c0e90893a802fb",
+      "reason": "99字、仅一个句末句号，符合一句且不超过160字；场景、人物、空间关系、道具、固定机位、有限微动和未出手结尾全部保留，无新增招式、运镜或特效。",
+      "evidence": ["8秒，正常速度，一镜到底，固定侧面全身镜头", "空石院内，两名成年人甲左乙右，相隔三米，各持一根木杖，杖尖低垂", "两人始终原位静态对峙，仅有自然呼吸与衣角轻动，直至结束仍未出手，无超自然能力，无额外特效。"],
+      "hard_failures": [], "minor_issues": [], "missing_requirements": []
+    }
+  ],
+  "summary": {"satisfied": 4, "partial": 0, "unsatisfied": 0, "uncertain": 0, "hard_failures": 0, "minor_issues": 0}
+}
+

@@ -1,0 +1,3 @@
+D:\Temp\combat-extension-nws2d7rg\runs\M01\finalize.py:13: SyntaxWarning: invalid escape sequence '\T'
+  out = pathlib.Path(r'D:\Temp\combat-extension-nws2d7rg\runs\M01')
+PASS: two prompts present; B consists of the identical A text plus only the local motion blur paragraph. Offline answer and read/command record completed. No image viewing, network, platform submission, or media generation occurred.

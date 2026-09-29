@@ -1,0 +1,138 @@
+{
+  "date": "2026-09-29",
+  "scope": "Draft integrity only; author-created scenes, no independent media evaluation.",
+  "checks": [
+    {
+      "check": "18 distinct planned IDs",
+      "passed": true,
+      "detail": "3 scenes x 2 conditions x 3 repeats"
+    },
+    {
+      "check": "three repeats per condition",
+      "passed": true,
+      "detail": "{('staff', 'D'): 3, ('staff', 'B'): 3, ('blade_trail', 'B'): 3, ('blade_trail', 'D'): 3, ('chase', 'D'): 3, ('chase', 'B'): 3}"
+    },
+    {
+      "check": "staff paired text",
+      "passed": true,
+      "detail": "Only the authored blur paragraph is added to B; base action/camera/ending text identical."
+    },
+    {
+      "check": "chase paired text",
+      "passed": true,
+      "detail": "Only the authored blur paragraph is added to B; base action/camera/ending text identical."
+    },
+    {
+      "check": "blade_trail paired text",
+      "passed": true,
+      "detail": "Only the authored blur paragraph is added to B; base action/camera/ending text identical."
+    },
+    {
+      "check": "MX001 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX002 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX003 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX004 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX005 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX006 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX007 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX008 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX009 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX010 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX011 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX012 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX013 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX014 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX015 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX016 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX017 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "MX018 prompt hash",
+      "passed": true,
+      "detail": "Exact UTF-8 file bytes"
+    },
+    {
+      "check": "all execution evidence empty",
+      "passed": true,
+      "detail": "No fabricated platform or media observations"
+    },
+    {
+      "check": "draft gate",
+      "passed": true,
+      "detail": "Target entry and authorization remain unresolved"
+    }
+  ],
+  "passed": true,
+  "author_semantic_review": {
+    "staff": "Both variants retain retreating diagonal guard, actual staff contact, redirection and recovery; B adds only tip-edge blur.",
+    "chase": "Both retain the same leading/following movement, reach/avoid/recovery and deceleration; playback speed is unchanged.",
+    "blade_trail": "Both retain exactly one sword, a missed swing and independent particle decay; B only distinguishes exposure blur.",
+    "limits": "These are textual design judgments, not model executions or physical/media validation."
+  }
+}

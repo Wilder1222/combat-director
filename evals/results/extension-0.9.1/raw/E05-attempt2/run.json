@@ -1,0 +1,89 @@
+{
+  "request": "设计18秒三人阻拦：A徒手从院子向北门突破，B守在北门内保护腿伤但能行走的C。北门右侧有一道短墙，开场B在墙后画外，C在门后两步；A的目标是越过B追上C。三人都是成年普通人，无能量，正常速度，一镜到底，最后C先离开，B挡住A。给简明六轨时间轴和中文提示词。",
+  "inputs": [
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+      "sha256": "21D959D36CCE1A2B97A631C1BA0B13913C2D70DA1A629A93BA9998841C5D97D6",
+      "read_mode": "complete",
+      "content_reads": 2,
+      "hash_reads": 2
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E05\\attempt2\\request.txt",
+      "sha256": "8ECBB1F9A31DA439425B7C799B0ECCC54BC32CFC9AEBCEC210AA987EF42A0C6A",
+      "read_mode": "complete",
+      "content_reads": 1,
+      "hash_reads": 2
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md",
+      "sha256": "D5F123389239D20061426A5C2D656581E71C7B9CFB79879E55F069DBBE5EA56C",
+      "read_mode": "complete",
+      "content_reads": 1,
+      "hash_reads": 1
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md",
+      "sha256": "294C7CE6509B397604827323EEA4469D9D37555C2EF93577F21F3CBDBD24C5F1",
+      "read_mode": "complete",
+      "content_reads": 1,
+      "hash_reads": 1
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\combat-modes.md",
+      "sha256": "D0D08ECDBD337AA15C08FB684075FB1B3080087574A670C984765AC6A5C16C86",
+      "read_mode": "complete",
+      "content_reads": 1,
+      "hash_reads": 1
+    }
+  ],
+  "read_modes": {
+    "complete": "Read whole content with Get-Content -Raw",
+    "fragment": [],
+    "hash_only": [],
+    "script_internal": [],
+    "note": "Hashes computed separately with Get-FileHash. No package script was executed. Mutable self-authored logs are not inputs."
+  },
+  "commands": [
+    {
+      "command": "Get-Content -LiteralPath 'D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md' -Raw",
+      "exit_code": 0,
+      "output": "lookup-1.txt"
+    },
+    {
+      "command": "$taskDir = 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\E05\\attempt2'; $skillPath = 'D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md'; $requestPath = Join-Path $taskDir 'request.txt'; $skillText = Get-Content -LiteralPath $skillPath -Raw; Set-Content -LiteralPath (Join-Path $taskDir 'lookup-1.txt') -Value $skillText -Encoding utf8; $requestText = Get-Content -LiteralPath $requestPath -Raw; $requestText | Set-Content -LiteralPath (Join-Path $taskDir 'lookup-2.txt') -Encoding utf8; $record = [ordered]@{request=$requestText; inputs=@([ordered]@{path=$skillPath;sha256=(Get-FileHash -LiteralPath $skillPath -Algorithm SHA256).Hash;read_mode='complete';reads=2},[ordered]@{path=$requestPath;sha256=(Get-FileHash -LiteralPath $requestPath -Algorithm SHA256).Hash;read_mode='complete';reads=1}); commands=@([ordered]@{command=\"Get-Content -LiteralPath 'D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md' -Raw\";exit_code=0;output='lookup-1.txt'},[ordered]@{command='Read SKILL.md and request.txt with Get-Content -Raw; save lookup-1.txt and lookup-2.txt; calculate both SHA-256 with Get-FileHash; initialize run.json';exit_code=0;output='lookup-2.txt'} )}; $record | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $taskDir 'run.json') -Encoding utf8; Write-Output $requestText",
+      "exit_code": 0,
+      "output": "lookup-2.txt"
+    },
+    {
+      "command": "$paths = @('D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md','D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md','D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\combat-modes.md'); foreach ($path in $paths) { Write-Output \"FILE: $path\"; Get-Content -LiteralPath $path -Raw; Write-Output ('SHA256: ' + (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash) }",
+      "exit_code": 0,
+      "output": "lookup-3.txt"
+    },
+    {
+      "command": "Get-FileHash -LiteralPath 'D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md','D:\\Temp\\combat-extension-nws2d7rg\\runs\\E05\\attempt2\\request.txt' -Algorithm SHA256 | ConvertTo-Json",
+      "exit_code": 0,
+      "output": "lookup-4.txt"
+    }
+  ],
+  "artifacts": [
+    "answer.md",
+    "run.json",
+    "lookup-1.txt",
+    "lookup-2.txt",
+    "lookup-3.txt",
+    "lookup-4.txt",
+    "lookup-5.txt"
+  ],
+  "execution_note": "No network, media generation, external platform submission, package modification, Python execution, or delegated agent work. Answer authored from request and the four fully read skill documents.",
+  "tool_events": [
+    {
+      "tool": "apply_patch",
+      "result": "Failed before mutation: invalid patch, multiple operations target run.json"
+    },
+    {
+      "tool": "apply_patch",
+      "result": "Deleted self-authored run.json to permit replacement"
+    }
+  ]
+}

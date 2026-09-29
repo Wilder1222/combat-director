@@ -1,0 +1,2410 @@
+{
+  "format": "combat-extension-audit/1",
+  "confirmed_terminal_cases": [
+    "E05@attempt2",
+    "E06@attempt2",
+    "E07",
+    "E08",
+    "E09",
+    "E12",
+    "M01",
+    "M02",
+    "M03",
+    "M04"
+  ],
+  "frozen_input_checks": [
+    {
+      "path": "D:\\study\\projects\\combat-director\\dist\\combat-director-0.9.1.zip",
+      "expected_sha256": "150ad6f4ba5e9c7ce82f3cd5248facc442f0a0e58cd5767ac878e77a66f50354",
+      "actual_sha256": "150ad6f4ba5e9c7ce82f3cd5248facc442f0a0e58cd5767ac878e77a66f50354",
+      "passed": true
+    },
+    {
+      "path": "D:\\study\\projects\\combat-director\\evals\\results\\extension-0.9.1\\cases.json",
+      "expected_sha256": "8f670d38d85a05541d5b78bbf1f1a651b6991623c6e5d44bb7b5ba86a33fa393",
+      "actual_sha256": "8f670d38d85a05541d5b78bbf1f1a651b6991623c6e5d44bb7b5ba86a33fa393",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\.codex-plugin\\plugin.json",
+      "expected_sha256": "9ec35e5e326b29c982d0d1a77fccecc1f4678f6ce3b9da8743c78dcc9c085479",
+      "actual_sha256": "9ec35e5e326b29c982d0d1a77fccecc1f4678f6ce3b9da8743c78dcc9c085479",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\agents\\openai.yaml",
+      "expected_sha256": "7e3070b077b4446516fb6c1b0b11316f9594ca09070464b3eebed6fbdac369b4",
+      "actual_sha256": "7e3070b077b4446516fb6c1b0b11316f9594ca09070464b3eebed6fbdac369b4",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\assets\\combat-plan-v1.schema.json",
+      "expected_sha256": "f9a1322c4d3edcb9feb97293deb4aa962416c033d61297fad1873eb4ba5c5876",
+      "actual_sha256": "f9a1322c4d3edcb9feb97293deb4aa962416c033d61297fad1873eb4ba5c5876",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\assets\\combat-plan.schema.json",
+      "expected_sha256": "e8db635f660848a14f9bc9cc95f896b1918aefdb2d288bcef2bb71c7499744a9",
+      "actual_sha256": "e8db635f660848a14f9bc9cc95f896b1918aefdb2d288bcef2bb71c7499744a9",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\assets\\platform-profiles.json",
+      "expected_sha256": "9a2c6876e5dc7bcf4b6a55f8a6b3d63d13567bfc4967a94e6071c41e19d257a9",
+      "actual_sha256": "9a2c6876e5dc7bcf4b6a55f8a6b3d63d13567bfc4967a94e6071c41e19d257a9",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\assets\\sequence-template.md",
+      "expected_sha256": "f3ff98a43f109e3d90247d26bafb991f86be87eee719b35814e6df12986526b8",
+      "actual_sha256": "f3ff98a43f109e3d90247d26bafb991f86be87eee719b35814e6df12986526b8",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\assets\\take-review.schema.json",
+      "expected_sha256": "8b2fff26b219780e5e64800d729e9e0706ddf97c1b3c3ff76f265a534948dddf",
+      "actual_sha256": "8b2fff26b219780e5e64800d729e9e0706ddf97c1b3c3ff76f265a534948dddf",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\alley-letter-15.plan.json",
+      "expected_sha256": "94d31fd247067f2e0c224c38601917ceb26cdfe1af6dbbe1f89a6c144a1d1aeb",
+      "actual_sha256": "94d31fd247067f2e0c224c38601917ceb26cdfe1af6dbbe1f89a6c144a1d1aeb",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\alley-letter-15.prompt.txt",
+      "expected_sha256": "006ef9534995ead77f74223c52d64ceded59dc025d8804b72cde78dff91c0c39",
+      "actual_sha256": "006ef9534995ead77f74223c52d64ceded59dc025d8804b72cde78dff91c0c39",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\arvin-baige-hongcha-18.md",
+      "expected_sha256": "9a5ffc14cdda6640ce84b6cd4a70e514810af7535df6cac67b8563d786ca58c8",
+      "actual_sha256": "9a5ffc14cdda6640ce84b6cd4a70e514810af7535df6cac67b8563d786ca58c8",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\arvin-sword-fire-24.md",
+      "expected_sha256": "d2c50f7b537bc594cc9f99566f8ec84bd6d1fb5d89cb458b96a10e1f49f9d7a0",
+      "actual_sha256": "d2c50f7b537bc594cc9f99566f8ec84bd6d1fb5d89cb458b96a10e1f49f9d7a0",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\colossus-30.plan.json",
+      "expected_sha256": "cdefde27822dc8af2af51a169440abc5e6e61249d36fe8c6f17367df4fdc7f3b",
+      "actual_sha256": "cdefde27822dc8af2af51a169440abc5e6e61249d36fe8c6f17367df4fdc7f3b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\colossus-30.prompt.txt",
+      "expected_sha256": "d86976716eb0bbc754c4dd2566b94ed70d5ba70ad89c789dd1091577d8b5d0db",
+      "actual_sha256": "d86976716eb0bbc754c4dd2566b94ed70d5ba70ad89c789dd1091577d8b5d0db",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\corridor-escape-24.md",
+      "expected_sha256": "286945538269cbf4d6d9d728f6f4572332691e05af7c0e5529dc37687c1ff7c4",
+      "actual_sha256": "286945538269cbf4d6d9d728f6f4572332691e05af7c0e5529dc37687c1ff7c4",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\entrance-cliffhanger-15.md",
+      "expected_sha256": "f858b8b9d2d94209d9db27d46b886d14b01e7176d636d18db90806ede12dd4e8",
+      "actual_sha256": "f858b8b9d2d94209d9db27d46b886d14b01e7176d636d18db90806ede12dd4e8",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\epic-30.plan.json",
+      "expected_sha256": "fae91663a4c2659001300a1d75a607414834badcddf2580a14907a1b9d076fa8",
+      "actual_sha256": "fae91663a4c2659001300a1d75a607414834badcddf2580a14907a1b9d076fa8",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\epic-30.prompt.txt",
+      "expected_sha256": "60dc51fca909d111249c82bdaa7132f75d1b3aeb958b461c3c43945d7327dff6",
+      "actual_sha256": "60dc51fca909d111249c82bdaa7132f75d1b3aeb958b461c3c43945d7327dff6",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\failed-counter-repair-18.plan.json",
+      "expected_sha256": "fc6f60f0e515526a19d912be2056920aef04bd831c8b029706398b8568d6d99e",
+      "actual_sha256": "fc6f60f0e515526a19d912be2056920aef04bd831c8b029706398b8568d6d99e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\failed-counter-repair-18.prompt.txt",
+      "expected_sha256": "e36ae102343f18c3a7d689057d30a443c577b947be30c7cdc41adcb55e79146e",
+      "actual_sha256": "e36ae102343f18c3a7d689057d30a443c577b947be30c7cdc41adcb55e79146e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\grounded-15.plan.json",
+      "expected_sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23",
+      "actual_sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\grounded-15.prompt.txt",
+      "expected_sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d",
+      "actual_sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\motion-blade-12.md",
+      "expected_sha256": "4af64f16d068e66d5f870ad58562ca369d52361686b54c7cb66be5fa0086a821",
+      "actual_sha256": "4af64f16d068e66d5f870ad58562ca369d52361686b54c7cb66be5fa0086a821",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\motion-blade-12.plan.json",
+      "expected_sha256": "4c88143d9bf06a2b30280a61a2c9be87ed959005e0faadb2b28b89b310a273e0",
+      "actual_sha256": "4c88143d9bf06a2b30280a61a2c9be87ed959005e0faadb2b28b89b310a273e0",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\motion-blade-12.prompt.txt",
+      "expected_sha256": "1b9d649365f26ccd004d8f904dbb737c5d68432481f1d3918354ee4b519be2ef",
+      "actual_sha256": "1b9d649365f26ccd004d8f904dbb737c5d68432481f1d3918354ee4b519be2ef",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\motion-staff-12.md",
+      "expected_sha256": "9ed3a7840ec46c06e3acd1f4ccf4ee7e95432c613f36d397260c7b72599641d7",
+      "actual_sha256": "9ed3a7840ec46c06e3acd1f4ccf4ee7e95432c613f36d397260c7b72599641d7",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\motion-staff-12.plan.json",
+      "expected_sha256": "47d291e104552ab4ef1da9c7f35a155be35073d630be1fd47471580d978c718d",
+      "actual_sha256": "47d291e104552ab4ef1da9c7f35a155be35073d630be1fd47471580d978c718d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\motion-staff-12.prompt.txt",
+      "expected_sha256": "6b8c56343928e9c777fa5faad37998c1a509d75374e82d9f77baeb75503cd274",
+      "actual_sha256": "6b8c56343928e9c777fa5faad37998c1a509d75374e82d9f77baeb75503cd274",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\particle-blade-12.md",
+      "expected_sha256": "e4ecfef1961ad0477dfedad79d551bbcf5d395489c6b577f1c9b10188661e9c6",
+      "actual_sha256": "e4ecfef1961ad0477dfedad79d551bbcf5d395489c6b577f1c9b10188661e9c6",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\particle-staff-12.md",
+      "expected_sha256": "c3e13653cfc1f85d29fa97d21848fe713c3fdda6efd63105e813fb8e42fc5b52",
+      "actual_sha256": "c3e13653cfc1f85d29fa97d21848fe713c3fdda6efd63105e813fb8e42fc5b52",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\return-and-payoff-18.md",
+      "expected_sha256": "0ef62ded7e1fc710e64d355146e9bac78b5517a4a02cb472891747da8715ea1b",
+      "actual_sha256": "0ef62ded7e1fc710e64d355146e9bac78b5517a4a02cb472891747da8715ea1b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\sword-recovery-18.md",
+      "expected_sha256": "8b253eb4d4494be465706b299503c459a5346b5d0fc8407f6c98c211f94d666d",
+      "actual_sha256": "8b253eb4d4494be465706b299503c459a5346b5d0fc8407f6c98c211f94d666d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\three-person-exit-18.plan.json",
+      "expected_sha256": "6eb88a8f9eb0f9954e2030acb85d04a296c52e132452d0618b72c97ec2dc5799",
+      "actual_sha256": "6eb88a8f9eb0f9954e2030acb85d04a296c52e132452d0618b72c97ec2dc5799",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\examples\\three-person-exit-18.prompt.txt",
+      "expected_sha256": "e558aa812f97e07f364e9eabd392964fa20dcb203e7faaaa3f3a070d24962fa6",
+      "actual_sha256": "e558aa812f97e07f364e9eabd392964fa20dcb203e7faaaa3f3a070d24962fa6",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\abilities\\cloth-field.md",
+      "expected_sha256": "19238f850f669ff36b91e0254df0f259db99ea85e8c7022882c3becf57555b3c",
+      "actual_sha256": "19238f850f669ff36b91e0254df0f259db99ea85e8c7022882c3becf57555b3c",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\abilities\\finger-lines.md",
+      "expected_sha256": "6c975841a8acae622db1f366c2c44da8f246f7904c57283c8afd8963ce5819db",
+      "actual_sha256": "6c975841a8acae622db1f366c2c44da8f246f7904c57283c8afd8963ce5819db",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\abilities\\index.md",
+      "expected_sha256": "055307341389cc3d2f3f2257fb4f9e9e9f8973b9d23a3b36fd743e5a86008d74",
+      "actual_sha256": "055307341389cc3d2f3f2257fb4f9e9e9f8973b9d23a3b36fd743e5a86008d74",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-color.md",
+      "expected_sha256": "0deb60eaaddab172e81738d2096982e97d1a243ce6a1f11f3ead2f2f5a7ab864",
+      "actual_sha256": "0deb60eaaddab172e81738d2096982e97d1a243ce6a1f11f3ead2f2f5a7ab864",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-moves15.md",
+      "expected_sha256": "81ad40938c9e9c7011e6918f39793fedfd9e696e29ed6871dfe03893abcab283",
+      "actual_sha256": "81ad40938c9e9c7011e6918f39793fedfd9e696e29ed6871dfe03893abcab283",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-pattern-a.md",
+      "expected_sha256": "a4346275fd4518806b4589b233ebe07d6cab6b09f98586e2c6ec9fd1a0d76bfe",
+      "actual_sha256": "a4346275fd4518806b4589b233ebe07d6cab6b09f98586e2c6ec9fd1a0d76bfe",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-pattern-b.md",
+      "expected_sha256": "e93ab64305084d480c0504b2c5eec408ee17e4cc0d838a03c09b02e65e61d425",
+      "actual_sha256": "e93ab64305084d480c0504b2c5eec408ee17e4cc0d838a03c09b02e65e61d425",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-pattern-c.md",
+      "expected_sha256": "0f4124ec8de0c279493de20ff22ac77f20181434009649449efc6d475674a30a",
+      "actual_sha256": "0f4124ec8de0c279493de20ff22ac77f20181434009649449efc6d475674a30a",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-pattern-d.md",
+      "expected_sha256": "af195e93709d7f15b68e94a8d3888e5f1aa1e08e80b3cb039f970d73eedf1ab8",
+      "actual_sha256": "af195e93709d7f15b68e94a8d3888e5f1aa1e08e80b3cb039f970d73eedf1ab8",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-pattern-e.md",
+      "expected_sha256": "7f14f13d88a12dc7c1bf29f16cbb2435a8a4ec7cda065beb1df7b9968e3d81f8",
+      "actual_sha256": "7f14f13d88a12dc7c1bf29f16cbb2435a8a4ec7cda065beb1df7b9968e3d81f8",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-pattern-f.md",
+      "expected_sha256": "c9cc7a93bb6e7c1b8b4aa2ab95f48ac32793c14b2b8200f07f0ca01e5ada05ce",
+      "actual_sha256": "c9cc7a93bb6e7c1b8b4aa2ab95f48ac32793c14b2b8200f07f0ca01e5ada05ce",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-pattern-g.md",
+      "expected_sha256": "e32f11b0a9798c9bec0a8b159840771aaf4a584ae47d47276abcfead85773009",
+      "actual_sha256": "e32f11b0a9798c9bec0a8b159840771aaf4a584ae47d47276abcfead85773009",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-pattern-h.md",
+      "expected_sha256": "49fe65398d1f2e3bb10556fc6e16f078cfb722fb178bb382226a7eb0f3412083",
+      "actual_sha256": "49fe65398d1f2e3bb10556fc6e16f078cfb722fb178bb382226a7eb0f3412083",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-pattern-i.md",
+      "expected_sha256": "a172e04e21b9c3dc2da145431abcf7cc28ba704f143d79e6d796573cd416d650",
+      "actual_sha256": "a172e04e21b9c3dc2da145431abcf7cc28ba704f143d79e6d796573cd416d650",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-pattern-j.md",
+      "expected_sha256": "031384f64c9eef83954fd311ea37c34f43a6f3e76402b7a3b41b988777b6d16b",
+      "actual_sha256": "031384f64c9eef83954fd311ea37c34f43a6f3e76402b7a3b41b988777b6d16b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-pattern-k.md",
+      "expected_sha256": "dc13f1452c89367cfd8c48993aa51c85b2fb865ef36d8d18350ac9077b0b2bbc",
+      "actual_sha256": "dc13f1452c89367cfd8c48993aa51c85b2fb865ef36d8d18350ac9077b0b2bbc",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-spec.md",
+      "expected_sha256": "2d8df4209289ccc94a09209533c1e6d01197b83a8abeaadf6f883a5dd9b187cc",
+      "actual_sha256": "2d8df4209289ccc94a09209533c1e6d01197b83a8abeaadf6f883a5dd9b187cc",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\arvin-camera-weapons.md",
+      "expected_sha256": "739d1b49b03ab73cbe04a7f3233ca012d7f3be582f435b5eaf229dffdbb47870",
+      "actual_sha256": "739d1b49b03ab73cbe04a7f3233ca012d7f3be582f435b5eaf229dffdbb47870",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\camera\\index.md",
+      "expected_sha256": "529d8f8f650262d382b73de57f333969b5d7fce2aa5a1c511d4393f28dbe9e0b",
+      "actual_sha256": "529d8f8f650262d382b73de57f333969b5d7fce2aa5a1c511d4393f28dbe9e0b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\catalog.json",
+      "expected_sha256": "bf4a624b97704db116d23ecabbd3c469819087078feea861200746d2b7f7e15f",
+      "actual_sha256": "bf4a624b97704db116d23ecabbd3c469819087078feea861200746d2b7f7e15f",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-baige.md",
+      "expected_sha256": "97b118ec284e6e86fe3975b5f7603c031390da7af7fa3bb862cfe93c22db5825",
+      "actual_sha256": "97b118ec284e6e86fe3975b5f7603c031390da7af7fa3bb862cfe93c22db5825",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-bale.md",
+      "expected_sha256": "4c7a61a1ff16c6123720d5354f1562dd7b00ea88d37be77ca3c4c3a9d6cf0d7f",
+      "actual_sha256": "4c7a61a1ff16c6123720d5354f1562dd7b00ea88d37be77ca3c4c3a9d6cf0d7f",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-bingnv.md",
+      "expected_sha256": "3e4e125767dbb32b9ee397dfc07d08e663d539c5fc0e21f08ef4d5e5c7cdaeb1",
+      "actual_sha256": "3e4e125767dbb32b9ee397dfc07d08e663d539c5fc0e21f08ef4d5e5c7cdaeb1",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-feixue-fire.md",
+      "expected_sha256": "55add9672f56728196565456f228d49f79328f38541b01983fa46f3046a56430",
+      "actual_sha256": "55add9672f56728196565456f228d49f79328f38541b01983fa46f3046a56430",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-hongcha.md",
+      "expected_sha256": "c3c8e695913b1ecacd4016e209ed0c4e78295bdacef52e73ed68c923928a8ca9",
+      "actual_sha256": "c3c8e695913b1ecacd4016e209ed0c4e78295bdacef52e73ed68c923928a8ca9",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-jianshen.md",
+      "expected_sha256": "b8b4919980132597d6679fbf5b6a86a4062a801e0ccbd89cced76f3347c9c801",
+      "actual_sha256": "b8b4919980132597d6679fbf5b6a86a4062a801e0ccbd89cced76f3347c9c801",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-leidian.md",
+      "expected_sha256": "b22bb7a1fd58babe2b08a6103576b2d770e2f8d1b7a61eb0f9af48f3197bea53",
+      "actual_sha256": "b22bb7a1fd58babe2b08a6103576b2d770e2f8d1b7a61eb0f9af48f3197bea53",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-linyu.md",
+      "expected_sha256": "be49600a87d516f460c71b1d4f5b5bedc07fa0a2de8a559239524f6a9b0b1b5e",
+      "actual_sha256": "be49600a87d516f460c71b1d4f5b5bedc07fa0a2de8a559239524f6a9b0b1b5e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\characters\\arvin-character-taiji.md",
+      "expected_sha256": "86a6c93d4c1676a5712d6b916956dad6bbee124e3914091c717c47fa9279ff7a",
+      "actual_sha256": "86a6c93d4c1676a5712d6b916956dad6bbee124e3914091c717c47fa9279ff7a",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\characters\\index.md",
+      "expected_sha256": "93153da82ff5db336927d04c0a4ae8746c5b2ac1dfb6705dd8e7eaaa384d040e",
+      "actual_sha256": "93153da82ff5db336927d04c0a4ae8746c5b2ac1dfb6705dd8e7eaaa384d040e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-aftermath.md",
+      "expected_sha256": "2b4c5125935a2e7fe7cc3b3015c7113f6a2deb4291a99541aa184ccf8dad6432",
+      "actual_sha256": "2b4c5125935a2e7fe7cc3b3015c7113f6a2deb4291a99541aa184ccf8dad6432",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-baji-pairs.md",
+      "expected_sha256": "3a21d6d4e4e133df4f402dc2d970b155c95e0f2ae9285c2141451be0739ed823",
+      "actual_sha256": "3a21d6d4e4e133df4f402dc2d970b155c95e0f2ae9285c2141451be0739ed823",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-break.md",
+      "expected_sha256": "89b3b1572afe6d8ae4ad5826be7dfb1e9e89515fb26429a014b0c9af48653701",
+      "actual_sha256": "89b3b1572afe6d8ae4ad5826be7dfb1e9e89515fb26429a014b0c9af48653701",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-breath.md",
+      "expected_sha256": "4f5a8ae4dfef64268784777f7cce0e39f7e74ac8c9b57c3fd86d3ebaabb7677b",
+      "actual_sha256": "4f5a8ae4dfef64268784777f7cce0e39f7e74ac8c9b57c3fd86d3ebaabb7677b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-control-followup.md",
+      "expected_sha256": "8ed6002f480b279611d6f7d17b44269dc98588e1cd7d75abcf3dc050b595fbd3",
+      "actual_sha256": "8ed6002f480b279611d6f7d17b44269dc98588e1cd7d75abcf3dc050b595fbd3",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-entry.md",
+      "expected_sha256": "6149c210238846096b82870d12236f65d25635325bdeb8792e956a819cdd6d70",
+      "actual_sha256": "6149c210238846096b82870d12236f65d25635325bdeb8792e956a819cdd6d70",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-escalation.md",
+      "expected_sha256": "004bd83cc7bad76fbfe554656ef53f3460fb434ba2ad527b379f248eada54663",
+      "actual_sha256": "004bd83cc7bad76fbfe554656ef53f3460fb434ba2ad527b379f248eada54663",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-hands.md",
+      "expected_sha256": "e37322463da4f1cf9ced662f19354c24fa70511986ee07f92314a55dea6004e0",
+      "actual_sha256": "e37322463da4f1cf9ced662f19354c24fa70511986ee07f92314a55dea6004e0",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-kicks.md",
+      "expected_sha256": "454c59e58be637ac2d7506b9bfd41e05e10498deced02022bd48ab46c34f98e6",
+      "actual_sha256": "454c59e58be637ac2d7506b9bfd41e05e10498deced02022bd48ab46c34f98e6",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-mixed20.md",
+      "expected_sha256": "4f06ef75c3144c7a1198d5e4d3bcb636cb6b7237043f6de33a3a10a123901025",
+      "actual_sha256": "4f06ef75c3144c7a1198d5e4d3bcb636cb6b7237043f6de33a3a10a123901025",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-payoff.md",
+      "expected_sha256": "30dce36880bf08698008c767de285e99d2f6828c5cf8ef42e99db07e450c6d46",
+      "actual_sha256": "30dce36880bf08698008c767de285e99d2f6828c5cf8ef42e99db07e450c6d46",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-reaction.md",
+      "expected_sha256": "a5b754888face5439bc38696e16a11daf6928ee2041ef96634f6def677d6c3d9",
+      "actual_sha256": "a5b754888face5439bc38696e16a11daf6928ee2041ef96634f6def677d6c3d9",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-redirection.md",
+      "expected_sha256": "77d64bd9156dcbee5985a553ca54e8ff758a8148beb1bb21a7ad7d34ad1567f3",
+      "actual_sha256": "77d64bd9156dcbee5985a553ca54e8ff758a8148beb1bb21a7ad7d34ad1567f3",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-rhythm.md",
+      "expected_sha256": "16151d6b09d3e5d6f14406d08b6b97946a2df5030f639b2f900725e92b730614",
+      "actual_sha256": "16151d6b09d3e5d6f14406d08b6b97946a2df5030f639b2f900725e92b730614",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-school-chain.md",
+      "expected_sha256": "84750f453bc24355503e0e4359c6ff32be2557fc566a4f7ea749dc9c63a7da1b",
+      "actual_sha256": "84750f453bc24355503e0e4359c6ff32be2557fc566a4f7ea749dc9c63a7da1b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-space.md",
+      "expected_sha256": "3712cd12b57b5bc23a0d62c761d23be89bcfebd2f1305d5c506eb8dc06fcc504",
+      "actual_sha256": "3712cd12b57b5bc23a0d62c761d23be89bcfebd2f1305d5c506eb8dc06fcc504",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-turning.md",
+      "expected_sha256": "94221be47f7ff748517f390ec6a261fc8995b9bcc4a7bb8af8d061ebfa99ba69",
+      "actual_sha256": "94221be47f7ff748517f390ec6a261fc8995b9bcc4a7bb8af8d061ebfa99ba69",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\arvin-choreography-upper-lower.md",
+      "expected_sha256": "af258da086f8fab425d0ff13378f178eda7755bbd1387c62956c7d2a400a0172",
+      "actual_sha256": "af258da086f8fab425d0ff13378f178eda7755bbd1387c62956c7d2a400a0172",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\choreography\\index.md",
+      "expected_sha256": "dacf2bbb3d52b3028e157a87561c80cfbae9f0da510ebd25d27c7fac4412daec",
+      "actual_sha256": "dacf2bbb3d52b3028e157a87561c80cfbae9f0da510ebd25d27c7fac4412daec",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\design\\claw-control.md",
+      "expected_sha256": "d40c3e33523e5867870e9107476cfa2596d8879b9549ff0cb52ee889bdbecc8b",
+      "actual_sha256": "d40c3e33523e5867870e9107476cfa2596d8879b9549ff0cb52ee889bdbecc8b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\design\\cloth-redirection.md",
+      "expected_sha256": "d9e678752057b971e209014d655cbb85f3513ef3f1fae2b28bd94dc812fe7243",
+      "actual_sha256": "d9e678752057b971e209014d655cbb85f3513ef3f1fae2b28bd94dc812fe7243",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\design\\corridor-exit.md",
+      "expected_sha256": "c5317dcbcfc26bf7daf11d04b39cb0e59f0fa14f38b366fb61573b4cf01ddbe0",
+      "actual_sha256": "c5317dcbcfc26bf7daf11d04b39cb0e59f0fa14f38b366fb61573b4cf01ddbe0",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\design\\index.md",
+      "expected_sha256": "862c43595df4d29299f049e9b44bd7dc07207fcb346b8e8a3823bfcc5dffcdd5",
+      "actual_sha256": "862c43595df4d29299f049e9b44bd7dc07207fcb346b8e8a3823bfcc5dffcdd5",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\design\\opening-counter.md",
+      "expected_sha256": "81b8e2122bcd675eefeea3f2224e2aa51b2ac15f7d149758dfa53a09334aeb3d",
+      "actual_sha256": "81b8e2122bcd675eefeea3f2224e2aa51b2ac15f7d149758dfa53a09334aeb3d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\design\\round-sword.md",
+      "expected_sha256": "9509742b157b937779096e8a736c1a989d1160bb739c6980c48683c9d3f7b14b",
+      "actual_sha256": "9509742b157b937779096e8a736c1a989d1160bb739c6980c48683c9d3f7b14b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\effects\\arvin-effects-air.md",
+      "expected_sha256": "55f0196a08bf65cb0193afc8f78a856822c09ab7af7a03b8f154e6353127a9c9",
+      "actual_sha256": "55f0196a08bf65cb0193afc8f78a856822c09ab7af7a03b8f154e6353127a9c9",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\effects\\arvin-effects-character-signatures.md",
+      "expected_sha256": "d08244f59e6ccd0fad0a9e70ee436cfe595692560cc39efde67e07c18abcc9bd",
+      "actual_sha256": "d08244f59e6ccd0fad0a9e70ee436cfe595692560cc39efde67e07c18abcc9bd",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\effects\\arvin-effects-intensity.md",
+      "expected_sha256": "d6d5516c28518837908ec28a816da71d2ceca7f54d10a9623369ac4b77e16f74",
+      "actual_sha256": "d6d5516c28518837908ec28a816da71d2ceca7f54d10a9623369ac4b77e16f74",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\effects\\arvin-effects-trajectory.md",
+      "expected_sha256": "f2e3389dc9bd11da891a4c286af272cb6a96cf3d456535c297bfcb69a2c273cc",
+      "actual_sha256": "f2e3389dc9bd11da891a4c286af272cb6a96cf3d456535c297bfcb69a2c273cc",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\effects\\index.md",
+      "expected_sha256": "608fbe367216d6107c0ab19a2bfe19bed48af78eb5940d43ea289a3ea080f2e2",
+      "actual_sha256": "608fbe367216d6107c0ab19a2bfe19bed48af78eb5940d43ea289a3ea080f2e2",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\index.md",
+      "expected_sha256": "03c546a41ed270b8e9379f8ec8cdb407e1ba98ccb0634f8a1af9544da99f12a9",
+      "actual_sha256": "03c546a41ed270b8e9379f8ec8cdb407e1ba98ccb0634f8a1af9544da99f12a9",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\items.json",
+      "expected_sha256": "14d88f58a615674ef75ea727bbe2a401cc2cd139c507f391ceab9e72c7455a0b",
+      "actual_sha256": "14d88f58a615674ef75ea727bbe2a401cc2cd139c507f391ceab9e72c7455a0b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-1.md",
+      "expected_sha256": "9beeb74dab5d37598c2635b27377692f9fe83b78fa27bfc9e2667e4fa86c8c92",
+      "actual_sha256": "9beeb74dab5d37598c2635b27377692f9fe83b78fa27bfc9e2667e4fa86c8c92",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-10.md",
+      "expected_sha256": "552d6e31fc5001121b78e694c9cb4822fd2d329625e430bab8fb83615e1f2df1",
+      "actual_sha256": "552d6e31fc5001121b78e694c9cb4822fd2d329625e430bab8fb83615e1f2df1",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-11.md",
+      "expected_sha256": "015ea13d01d1b1b61175f7046260bec83e8283f12329b7a6fc05a48c09eb2e43",
+      "actual_sha256": "015ea13d01d1b1b61175f7046260bec83e8283f12329b7a6fc05a48c09eb2e43",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-12.md",
+      "expected_sha256": "5d3f1deec9d59266e22dfb5345dd3012f122e081f2d1dc9bdd5b4c6ac9849061",
+      "actual_sha256": "5d3f1deec9d59266e22dfb5345dd3012f122e081f2d1dc9bdd5b4c6ac9849061",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-13.md",
+      "expected_sha256": "c6d50db98ef67ededcc6fe2f8ea56920b2acda8c66da1aea06ef0c04b5d43092",
+      "actual_sha256": "c6d50db98ef67ededcc6fe2f8ea56920b2acda8c66da1aea06ef0c04b5d43092",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-14.md",
+      "expected_sha256": "70da5a9bc4f02a490add8687fb57e4049990bd8145aada704da13565ea333d79",
+      "actual_sha256": "70da5a9bc4f02a490add8687fb57e4049990bd8145aada704da13565ea333d79",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-15.md",
+      "expected_sha256": "71db1f4c43b1bc75db292b015ec436751e19edf487d8c19c9180c36aa7af030b",
+      "actual_sha256": "71db1f4c43b1bc75db292b015ec436751e19edf487d8c19c9180c36aa7af030b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-16.md",
+      "expected_sha256": "2e5e1216b39a785177c01e4e637a9658f7daeb3ea6ef4a5d1010cc7d3d6a1569",
+      "actual_sha256": "2e5e1216b39a785177c01e4e637a9658f7daeb3ea6ef4a5d1010cc7d3d6a1569",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-17.md",
+      "expected_sha256": "3813f5c412e526073cbfc00d48ea804afda37661d67d326e35eadb484927806b",
+      "actual_sha256": "3813f5c412e526073cbfc00d48ea804afda37661d67d326e35eadb484927806b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-18.md",
+      "expected_sha256": "cebf15de2ac01f0550e38b45c3cdb4cc162f56ab9e4ca9af21c9896a4bda0f6e",
+      "actual_sha256": "cebf15de2ac01f0550e38b45c3cdb4cc162f56ab9e4ca9af21c9896a4bda0f6e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-19.md",
+      "expected_sha256": "313e186a9acb3152e2418484aa75153f94f21efdf9ac5000060f7e0840658fca",
+      "actual_sha256": "313e186a9acb3152e2418484aa75153f94f21efdf9ac5000060f7e0840658fca",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-2.md",
+      "expected_sha256": "f1f0bded2161737d4bf1ce8c7c2efbdf3dfd35254baeb81ec450b227cc32619e",
+      "actual_sha256": "f1f0bded2161737d4bf1ce8c7c2efbdf3dfd35254baeb81ec450b227cc32619e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-20.md",
+      "expected_sha256": "cfdf90d6653d2e257bacc7134e79a808e330f94bf06041b8be9bc491c588aec2",
+      "actual_sha256": "cfdf90d6653d2e257bacc7134e79a808e330f94bf06041b8be9bc491c588aec2",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-3.md",
+      "expected_sha256": "dadb50505d346415fd073732dbdd6ce8fdee6551e8a27a11db239a441e971a92",
+      "actual_sha256": "dadb50505d346415fd073732dbdd6ce8fdee6551e8a27a11db239a441e971a92",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-4.md",
+      "expected_sha256": "3e1ffce0991a6cf770fdbf804e2c7d8bc8881f132a28e14e77e68090d053c282",
+      "actual_sha256": "3e1ffce0991a6cf770fdbf804e2c7d8bc8881f132a28e14e77e68090d053c282",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-5.md",
+      "expected_sha256": "7ba90c149d3a667ce6866591e13d645ba67bb6cc73ec4c6490a29b3385c4354f",
+      "actual_sha256": "7ba90c149d3a667ce6866591e13d645ba67bb6cc73ec4c6490a29b3385c4354f",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-6.md",
+      "expected_sha256": "e78a24aed45ccf58240daa61417eb3d11a144932a09297195da0899d99220f88",
+      "actual_sha256": "e78a24aed45ccf58240daa61417eb3d11a144932a09297195da0899d99220f88",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-7.md",
+      "expected_sha256": "19b8e7c51180b406645d3a418cfc88dfc4b1c338f073bc701cc0328fe95ffd1d",
+      "actual_sha256": "19b8e7c51180b406645d3a418cfc88dfc4b1c338f073bc701cc0328fe95ffd1d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-8.md",
+      "expected_sha256": "9a1191110e3c034eff5a9b6a01a0171228a6b5e9fbc8875a198fddf975b2154b",
+      "actual_sha256": "9a1191110e3c034eff5a9b6a01a0171228a6b5e9fbc8875a198fddf975b2154b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\arvin-scene-9.md",
+      "expected_sha256": "2180d346a5e7ebcc5f319bd63a0703c70a1d1b0e73c1cd053e5c00da07106426",
+      "actual_sha256": "2180d346a5e7ebcc5f319bd63a0703c70a1d1b0e73c1cd053e5c00da07106426",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\scenes\\index.md",
+      "expected_sha256": "82cfcf5bbf334131520b2e5eb2bea93af8134df31c70018569bd623f0701cee3",
+      "actual_sha256": "82cfcf5bbf334131520b2e5eb2bea93af8134df31c70018569bd623f0701cee3",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\styles\\arvin-style-1.md",
+      "expected_sha256": "a0e1834b99d780aa8f99e8ed1a61a52330e727fbb8f4f88d323685dc99029f14",
+      "actual_sha256": "a0e1834b99d780aa8f99e8ed1a61a52330e727fbb8f4f88d323685dc99029f14",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\styles\\arvin-style-2.md",
+      "expected_sha256": "05da9feec196b5c1379be23ff9bdb6e05dc53bb355f83bd025d4fd0cd3f72b71",
+      "actual_sha256": "05da9feec196b5c1379be23ff9bdb6e05dc53bb355f83bd025d4fd0cd3f72b71",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\styles\\arvin-style-3.md",
+      "expected_sha256": "0364b2c760b235f617c2869b099b03cff0509e9160a9b22849b8e356dcc66012",
+      "actual_sha256": "0364b2c760b235f617c2869b099b03cff0509e9160a9b22849b8e356dcc66012",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\styles\\arvin-style-4.md",
+      "expected_sha256": "af0b26cdfcae6ac23b0b24361c2d8b5694ea791369829e9414910ad9530bb41a",
+      "actual_sha256": "af0b26cdfcae6ac23b0b24361c2d8b5694ea791369829e9414910ad9530bb41a",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\styles\\arvin-style-5.md",
+      "expected_sha256": "a0bd5042e06634a5ba9e458834d10b830bfce63f8de667a7210671b0395597df",
+      "actual_sha256": "a0bd5042e06634a5ba9e458834d10b830bfce63f8de667a7210671b0395597df",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\styles\\index.md",
+      "expected_sha256": "c0a16252d2ee477efc16cfd30ca945dfe46374b25bcf31104dc7676ed5725ab6",
+      "actual_sha256": "c0a16252d2ee477efc16cfd30ca945dfe46374b25bcf31104dc7676ed5725ab6",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-aikido.md",
+      "expected_sha256": "e8cb867e4cdc0b4a59437b7cec4355d7616644a28cdf31a13c55b93602b18a30",
+      "actual_sha256": "e8cb867e4cdc0b4a59437b7cec4355d7616644a28cdf31a13c55b93602b18a30",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-bagua.md",
+      "expected_sha256": "ebe128c39961311bf76f676d8584bf50785b3a4a4170df9c9f1d5395c73dc439",
+      "actual_sha256": "ebe128c39961311bf76f676d8584bf50785b3a4a4170df9c9f1d5395c73dc439",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-baji.md",
+      "expected_sha256": "f157e23867aeb465b90e0a2468ff72b23ce7e2493acf0c4fbdf65634884b4c59",
+      "actual_sha256": "f157e23867aeb465b90e0a2468ff72b23ce7e2493acf0c4fbdf65634884b4c59",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-caijia.md",
+      "expected_sha256": "7fb0232db488725a905ba52bb832ad511b7dd2f0904e4bc119c1667e469ed225",
+      "actual_sha256": "7fb0232db488725a905ba52bb832ad511b7dd2f0904e4bc119c1667e469ed225",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-capoeira.md",
+      "expected_sha256": "0bcc0c4b13fe6d71f7368cb9f6cf426d96b8d6fb060753c2b2d28ca45f910d84",
+      "actual_sha256": "0bcc0c4b13fe6d71f7368cb9f6cf426d96b8d6fb060753c2b2d28ca45f910d84",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-choyleefut.md",
+      "expected_sha256": "05bcffa7b349b403a66371b8200ef55f73017762bf8a4ef75a5afcb182939460",
+      "actual_sha256": "05bcffa7b349b403a66371b8200ef55f73017762bf8a4ef75a5afcb182939460",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-drunken.md",
+      "expected_sha256": "34ab2e811f52c0b1a42f65d5d542ff80cfda4c15dcece3c1dd9917819a5c03c9",
+      "actual_sha256": "34ab2e811f52c0b1a42f65d5d542ff80cfda4c15dcece3c1dd9917819a5c03c9",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-dugu.md",
+      "expected_sha256": "32576e1d9644f74ab84452cfd6d045532f0ac5673ffbf3dd1434834d9491819a",
+      "actual_sha256": "32576e1d9644f74ab84452cfd6d045532f0ac5673ffbf3dd1434834d9491819a",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-feixue-frost.md",
+      "expected_sha256": "bfc87d0abed98a486956f7b5974ef5f6a4c4b393079e574a4399eeca215ccca3",
+      "actual_sha256": "bfc87d0abed98a486956f7b5974ef5f6a4c4b393079e574a4399eeca215ccca3",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-groundlegs.md",
+      "expected_sha256": "f23b772513aa203d46d7151d9d2c53b741b17867ce122ea75168b12c32c5abac",
+      "actual_sha256": "f23b772513aa203d46d7151d9d2c53b741b17867ce122ea75168b12c32c5abac",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-huashan.md",
+      "expected_sha256": "6f56ac6940f9fc6e8e56c0bc6a5df68ad414be7d640ac95cf5896f3c73c6e633",
+      "actual_sha256": "6f56ac6940f9fc6e8e56c0bc6a5df68ad414be7d640ac95cf5896f3c73c6e633",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-hunggar.md",
+      "expected_sha256": "09c56c2cf03e51163930bab0290c876be3e389d3ebd1c6304ddf629e6a0c7c13",
+      "actual_sha256": "09c56c2cf03e51163930bab0290c876be3e389d3ebd1c6304ddf629e6a0c7c13",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-immortal-sword.md",
+      "expected_sha256": "7ffaecea8add9b209e2a11834c3a48ef04f3202fb37aecaf18c3426b02d7117c",
+      "actual_sha256": "7ffaecea8add9b209e2a11834c3a48ef04f3202fb37aecaf18c3426b02d7117c",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-jeetkune.md",
+      "expected_sha256": "a79d2268e203812badb0d2be59a6d159a7875b90ab03adbd49d681f8d41a3c07",
+      "actual_sha256": "a79d2268e203812badb0d2be59a6d159a7875b90ab03adbd49d681f8d41a3c07",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-jiujitsu.md",
+      "expected_sha256": "6b21bd96ffce81001392dc6ac8ac421e1ce1dd891100a897602dd83c7b1ea830",
+      "actual_sha256": "6b21bd96ffce81001392dc6ac8ac421e1ce1dd891100a897602dd83c7b1ea830",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-judo.md",
+      "expected_sha256": "24861824d9278e76b5ceb427059ec5dfda366855bc1cd412c3488788fa3f0721",
+      "actual_sha256": "24861824d9278e76b5ceb427059ec5dfda366855bc1cd412c3488788fa3f0721",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-karate.md",
+      "expected_sha256": "289fc582558f789dc80c91e1b2b7fa293fcd7f68b33c68da8ecf5800251e522e",
+      "actual_sha256": "289fc582558f789dc80c91e1b2b7fa293fcd7f68b33c68da8ecf5800251e522e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-legs36.md",
+      "expected_sha256": "3c52b6e7ad206fb820233c974c5b2c5e96850a852060ea9822da9376e75de0ba",
+      "actual_sha256": "3c52b6e7ad206fb820233c974c5b2c5e96850a852060ea9822da9376e75de0ba",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-mantis.md",
+      "expected_sha256": "6f66b7d81dfe9ed2c90199bda6447b1e167c4204d88f0947c0a3937edbf7bfc3",
+      "actual_sha256": "6f66b7d81dfe9ed2c90199bda6447b1e167c4204d88f0947c0a3937edbf7bfc3",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-muaythai.md",
+      "expected_sha256": "e133e859bfa4a53a0cad7cbc0c83b4258fe462338e5098fda5422a1b2f395b6a",
+      "actual_sha256": "e133e859bfa4a53a0cad7cbc0c83b4258fe462338e5098fda5422a1b2f395b6a",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-musou.md",
+      "expected_sha256": "c210e0f425d21391b758f3ced9011f15512a98d0fbb80a5e001ac073f2d1f27d",
+      "actual_sha256": "c210e0f425d21391b758f3ced9011f15512a98d0fbb80a5e001ac073f2d1f27d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-qinggong.md",
+      "expected_sha256": "667633a95e8f5f1d36ff091eb48626e9eb87bdde19fe32fd354c3291542408f3",
+      "actual_sha256": "667633a95e8f5f1d36ff091eb48626e9eb87bdde19fe32fd354c3291542408f3",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-qinglong.md",
+      "expected_sha256": "223e7a38352907d1f4f07e94e47ee0c263c7d41169be4fe834f7dd32704cab86",
+      "actual_sha256": "223e7a38352907d1f4f07e94e47ee0c263c7d41169be4fe834f7dd32704cab86",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-qinna36.md",
+      "expected_sha256": "baefd1cab30779b3f9fa79c776cb2e8db37edeff2f68675ec7097e4256581b1d",
+      "actual_sha256": "baefd1cab30779b3f9fa79c776cb2e8db37edeff2f68675ec7097e4256581b1d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-sanda.md",
+      "expected_sha256": "a26d33c39a0e1e829532674545d07bdc6974463bec2349459db0f394126319ec",
+      "actual_sha256": "a26d33c39a0e1e829532674545d07bdc6974463bec2349459db0f394126319ec",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-scythe.md",
+      "expected_sha256": "96335e6e20ccae2529f3b10993cef1ee9188d22e0d3087b5d7f110619d1f5d3b",
+      "actual_sha256": "96335e6e20ccae2529f3b10993cef1ee9188d22e0d3087b5d7f110619d1f5d3b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-taekwondo.md",
+      "expected_sha256": "3d1846f766e252443684c05362b1a0ff7dc34f57944647770e0cd89c3954eb1d",
+      "actual_sha256": "3d1846f766e252443684c05362b1a0ff7dc34f57944647770e0cd89c3954eb1d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-taiji.md",
+      "expected_sha256": "d42dbb83e735411e7b74eabdbf3ff10fea286a0b867f9454f363c3f2d38cc87d",
+      "actual_sha256": "d42dbb83e735411e7b74eabdbf3ff10fea286a0b867f9454f363c3f2d38cc87d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-taiyi-sword.md",
+      "expected_sha256": "83819245837be20db12152ac336730bcecbccbe2fe1afbdacb44ef67be8e6ed7",
+      "actual_sha256": "83819245837be20db12152ac336730bcecbccbe2fe1afbdacb44ef67be8e6ed7",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-tantui.md",
+      "expected_sha256": "1633c48f199c8ebc3982bdc5328f5cf0f0c5f77571702835be0908792e427c4e",
+      "actual_sha256": "1633c48f199c8ebc3982bdc5328f5cf0f0c5f77571702835be0908792e427c4e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-whiteape.md",
+      "expected_sha256": "4c9bb5ba5ebd3fd509c831866a1fc2c6725ffb9d94df3bff362edcbaeb80602d",
+      "actual_sha256": "4c9bb5ba5ebd3fd509c831866a1fc2c6725ffb9d94df3bff362edcbaeb80602d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-wingchun.md",
+      "expected_sha256": "3bc704d30fc0f03a7107abe9937eb63cde8fe2d86e9109ee22ab01ab36c292b8",
+      "actual_sha256": "3bc704d30fc0f03a7107abe9937eb63cde8fe2d86e9109ee22ab01ab36c292b8",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-wudang132.md",
+      "expected_sha256": "f9313ac496f56da915f80917744978b93ce43cac3a1e4a3425b5097a5048ce4e",
+      "actual_sha256": "f9313ac496f56da915f80917744978b93ce43cac3a1e4a3425b5097a5048ce4e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-wuxia-step.md",
+      "expected_sha256": "44615259f59176820fa17b8c4661e0684e5e1804f9c3aa84f33294637cc0f36b",
+      "actual_sha256": "44615259f59176820fa17b8c4661e0684e5e1804f9c3aa84f33294637cc0f36b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-xingyi.md",
+      "expected_sha256": "743555f8e104e10e04c4379852f5a3264cf0934d87696c07a19581ca5ddfabdd",
+      "actual_sha256": "743555f8e104e10e04c4379852f5a3264cf0934d87696c07a19581ca5ddfabdd",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-yang55.md",
+      "expected_sha256": "d31e78c738e8e0f5c7e3f44133cd33fe4ca0913002a67f4e2de560ed9268e2ec",
+      "actual_sha256": "d31e78c738e8e0f5c7e3f44133cd33fe4ca0913002a67f4e2de560ed9268e2ec",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-yunv.md",
+      "expected_sha256": "8c7ec3291a74fe8b2f00015bfa4ab17366d9cc42e26687fec9a8d073bc965bb5",
+      "actual_sha256": "8c7ec3291a74fe8b2f00015bfa4ab17366d9cc42e26687fec9a8d073bc965bb5",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\arvin-tech-ziwu.md",
+      "expected_sha256": "45744980af253654bb08b4cd0cedd5e2e40a7a60c3c0d3c03b7819545c0c01ff",
+      "actual_sha256": "45744980af253654bb08b4cd0cedd5e2e40a7a60c3c0d3c03b7819545c0c01ff",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\library\\techniques\\index.md",
+      "expected_sha256": "7968075255c4a968080da94810278a0c3a732047ca8e314c8071d190f8b81948",
+      "actual_sha256": "7968075255c4a968080da94810278a0c3a732047ca8e314c8071d190f8b81948",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\action-contract.md",
+      "expected_sha256": "e6f32fae84bebb623b0cc674a6d912b11e662f6aa41d505d6194618049ff3c26",
+      "actual_sha256": "e6f32fae84bebb623b0cc674a6d912b11e662f6aa41d505d6194618049ff3c26",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\action-design.md",
+      "expected_sha256": "234e6af1206fae54c26a11665ee7f2a110ca56ae3ee6ec6d918869e9d27ff7d9",
+      "actual_sha256": "234e6af1206fae54c26a11665ee7f2a110ca56ae3ee6ec6d918869e9d27ff7d9",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md",
+      "expected_sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c",
+      "actual_sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\combat-modes.md",
+      "expected_sha256": "d0d08ecdbd337aa15c08fb684075fb1b3080087574a670c984765ac6a5c16c86",
+      "actual_sha256": "d0d08ecdbd337aa15c08fb684075fb1b3080087574a670c984765ac6a5c16c86",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\contract.md",
+      "expected_sha256": "a49bd8940dca7c09688e617116b6fb1ab9a88c5d6c3efc156af98f888c8e51d7",
+      "actual_sha256": "a49bd8940dca7c09688e617116b6fb1ab9a88c5d6c3efc156af98f888c8e51d7",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\library-workflow.md",
+      "expected_sha256": "5ba318023da1c003f58e7368ecc0cb602afb0547406ed12eba83648162d8fd4e",
+      "actual_sha256": "5ba318023da1c003f58e7368ecc0cb602afb0547406ed12eba83648162d8fd4e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\motion-blur.md",
+      "expected_sha256": "77ec4ac579e48a761077ac166dab1e70f1e8470863053310f3f524ac24a5773b",
+      "actual_sha256": "77ec4ac579e48a761077ac166dab1e70f1e8470863053310f3f524ac24a5773b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\particle-vfx.md",
+      "expected_sha256": "07c81f84e2bdea4bcca12b591c5f0b26d714f8aa15534d431dab5c7052651669",
+      "actual_sha256": "07c81f84e2bdea4bcca12b591c5f0b26d714f8aa15534d431dab5c7052651669",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\platforms.md",
+      "expected_sha256": "95aaa3145eb2481834571836845d1e7358c4f70ed5b6700d424abb4c5adfb7d5",
+      "actual_sha256": "95aaa3145eb2481834571836845d1e7358c4f70ed5b6700d424abb4c5adfb7d5",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\prompt-craft.md",
+      "expected_sha256": "258ae63d90c184c246c7a990c0a656267b41b69d079f37ac06e4936d126ad1db",
+      "actual_sha256": "258ae63d90c184c246c7a990c0a656267b41b69d079f37ac06e4936d126ad1db",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\quality.md",
+      "expected_sha256": "2f3e49b118af5995b95f7a34dd43673c2eb7255ab8e458a67df106637e89f53a",
+      "actual_sha256": "2f3e49b118af5995b95f7a34dd43673c2eb7255ab8e458a67df106637e89f53a",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\review-loop.md",
+      "expected_sha256": "6b4180da9ea6f32a75d789daa02ac570ef26440d62b45979053e51a91244567d",
+      "actual_sha256": "6b4180da9ea6f32a75d789daa02ac570ef26440d62b45979053e51a91244567d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\source-case.md",
+      "expected_sha256": "b2ea0718c39867200c8e6d7f1adbfad0ddf6ec9e3e097f86565b89fdaa0f91ea",
+      "actual_sha256": "b2ea0718c39867200c8e6d7f1adbfad0ddf6ec9e3e097f86565b89fdaa0f91ea",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\sources.md",
+      "expected_sha256": "7ba88c0e14c28844d61309ebad9f20e47ccfff90fba7912a5717649eab3701b1",
+      "actual_sha256": "7ba88c0e14c28844d61309ebad9f20e47ccfff90fba7912a5717649eab3701b1",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\technique-adaptation.md",
+      "expected_sha256": "2eb7c896b1c4a087a5d0784f295b6d706ca4694aee6372db5fdda5c0d2fe9575",
+      "actual_sha256": "2eb7c896b1c4a087a5d0784f295b6d706ca4694aee6372db5fdda5c0d2fe9575",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md",
+      "expected_sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1",
+      "actual_sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\third-party-notices.md",
+      "expected_sha256": "f3431a35bce3f983d61fd87e4a383433e4bdd794959ba54af9d9f34c005dd354",
+      "actual_sha256": "f3431a35bce3f983d61fd87e4a383433e4bdd794959ba54af9d9f34c005dd354",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_action.py",
+      "expected_sha256": "2561186638e7b840c2ce2265e3c0b85e53d3baf9ce7a57fc96a14899b3ae613d",
+      "actual_sha256": "2561186638e7b840c2ce2265e3c0b85e53d3baf9ce7a57fc96a14899b3ae613d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_evidence.py",
+      "expected_sha256": "1a7d22ee88f250fec15dc17af26864f953439f1495fc30b384f0dd079a38b23f",
+      "actual_sha256": "1a7d22ee88f250fec15dc17af26864f953439f1495fc30b384f0dd079a38b23f",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_handoff.py",
+      "expected_sha256": "28f922147132b748ec01e8cf1f8176f81c97409b4218f7edd4ce91b9c080c8a1",
+      "actual_sha256": "28f922147132b748ec01e8cf1f8176f81c97409b4218f7edd4ce91b9c080c8a1",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_review.py",
+      "expected_sha256": "f1ff9cca2fbe6ec455ec0ea3b81da295dec153eac01729828339f2d83a311ae1",
+      "actual_sha256": "f1ff9cca2fbe6ec455ec0ea3b81da295dec153eac01729828339f2d83a311ae1",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_schema.py",
+      "expected_sha256": "673e6975eebf2bee73b826312c0c89774993951ac566b2299dccbc6d355b8bc9",
+      "actual_sha256": "673e6975eebf2bee73b826312c0c89774993951ac566b2299dccbc6d355b8bc9",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_tool.py",
+      "expected_sha256": "1fade69a451269acf0efffc4230f127da905adde49f73394127ae260d34f6104",
+      "actual_sha256": "1fade69a451269acf0efffc4230f127da905adde49f73394127ae260d34f6104",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\library_items.py",
+      "expected_sha256": "0848a9622f8019fff4eb549b8df37407ca4f3329fdb31d2afe5ed29251bc6a69",
+      "actual_sha256": "0848a9622f8019fff4eb549b8df37407ca4f3329fdb31d2afe5ed29251bc6a69",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\library_tool.py",
+      "expected_sha256": "351274284361d5e70ba1e0a5f7763a6fe43e3d59fd87ed79f3c4f7ed94d35598",
+      "actual_sha256": "351274284361d5e70ba1e0a5f7763a6fe43e3d59fd87ed79f3c4f7ed94d35598",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+      "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+      "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M01\\request.txt",
+      "expected_sha256": "22919d9bb6c09b968769d13b3899767fb7925f97637b36bde986d2f2cb9bf7ef",
+      "actual_sha256": "22919d9bb6c09b968769d13b3899767fb7925f97637b36bde986d2f2cb9bf7ef",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M02\\request.txt",
+      "expected_sha256": "d137ab22918edc81efedd924f4031376ac0c05c5beec0faa1aefafcc635b84eb",
+      "actual_sha256": "d137ab22918edc81efedd924f4031376ac0c05c5beec0faa1aefafcc635b84eb",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M02\\synthetic-i2v-start.png",
+      "expected_sha256": "8aa8564e71b9117e3529c063176a5571bb3c039d4233f78ec7d6b9ebb303ad19",
+      "actual_sha256": "8aa8564e71b9117e3529c063176a5571bb3c039d4233f78ec7d6b9ebb303ad19",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03\\request.txt",
+      "expected_sha256": "0c614dcfa553b0a1900267aa53e6e3cb2e7701e3427804439b617eca748625c1",
+      "actual_sha256": "0c614dcfa553b0a1900267aa53e6e3cb2e7701e3427804439b617eca748625c1",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M04\\request.txt",
+      "expected_sha256": "7ed7748ab5defe186d2f7adde81acdfa9dd59997107fc79355a9a70d13aa0a65",
+      "actual_sha256": "7ed7748ab5defe186d2f7adde81acdfa9dd59997107fc79355a9a70d13aa0a65",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E05\\request.txt",
+      "expected_sha256": "8ecbb1f9a31da439425b7c799b0eccc54bc32cfc9aebcec210aa987ef42a0c6a",
+      "actual_sha256": "8ecbb1f9a31da439425b7c799b0eccc54bc32cfc9aebcec210aa987ef42a0c6a",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E06\\request.txt",
+      "expected_sha256": "9a65ec94744d6c3c6defcaea3e5db30cd02654878e3cdd95cfedbe5e694edf6d",
+      "actual_sha256": "9a65ec94744d6c3c6defcaea3e5db30cd02654878e3cdd95cfedbe5e694edf6d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E07\\request.txt",
+      "expected_sha256": "39dcd453490f9299a0072e351cd91fd88129f12020cb4b2d7d84d90eccf3dad6",
+      "actual_sha256": "39dcd453490f9299a0072e351cd91fd88129f12020cb4b2d7d84d90eccf3dad6",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E08\\request.txt",
+      "expected_sha256": "07210fda00ba32fd39dd80d6e087f43dc0bebe4dfdc2275ff7edc3432887d759",
+      "actual_sha256": "07210fda00ba32fd39dd80d6e087f43dc0bebe4dfdc2275ff7edc3432887d759",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E08\\synthetic-frame-0000.png",
+      "expected_sha256": "46b5ed040fc028ada58456e3fa6b58663c2dbfe687bb41a5a9d2c6a8cd7791f9",
+      "actual_sha256": "46b5ed040fc028ada58456e3fa6b58663c2dbfe687bb41a5a9d2c6a8cd7791f9",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E08\\synthetic-frame-0500.png",
+      "expected_sha256": "4411f5aa24014d1d5881312db54e7604508d948d3c4fb65f982e082dcb283fa1",
+      "actual_sha256": "4411f5aa24014d1d5881312db54e7604508d948d3c4fb65f982e082dcb283fa1",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E08\\synthetic-frame-1000.png",
+      "expected_sha256": "dfb97885b6a9c09eee56c23a4a6b6b6454733f99e50605209b6e68ca91981a8d",
+      "actual_sha256": "dfb97885b6a9c09eee56c23a4a6b6b6454733f99e50605209b6e68ca91981a8d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\request.txt",
+      "expected_sha256": "ece1d1422b7586e3fcdd19f76de73a990a408402ad4c004000bc02b560f77f93",
+      "actual_sha256": "ece1d1422b7586e3fcdd19f76de73a990a408402ad4c004000bc02b560f77f93",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.plan.json",
+      "expected_sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23",
+      "actual_sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.prompt.txt",
+      "expected_sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d",
+      "actual_sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d",
+      "passed": true
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\request.txt",
+      "expected_sha256": "7ded957b9008d79760658bb15957b65f0e93c66ea28a0512f0ce1c4ac3c0f968",
+      "actual_sha256": "7ded957b9008d79760658bb15957b65f0e93c66ea28a0512f0ce1c4ac3c0f968",
+      "passed": true
+    }
+  ],
+  "runs": [
+    {
+      "id": "E05@attempt2",
+      "declared_reads_and_artifacts": [
+        {
+          "pointer": "/inputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+          "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/1",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E05\\attempt2\\request.txt",
+          "expected_sha256": "8ecbb1f9a31da439425b7c799b0eccc54bc32cfc9aebcec210aa987ef42a0c6a",
+          "actual_sha256": "8ecbb1f9a31da439425b7c799b0eccc54bc32cfc9aebcec210aa987ef42a0c6a",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/2",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md",
+          "expected_sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c",
+          "actual_sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/3",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md",
+          "expected_sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1",
+          "actual_sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/4",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\combat-modes.md",
+          "expected_sha256": "d0d08ecdbd337aa15c08fb684075fb1b3080087574a670c984765ac6a5c16c86",
+          "actual_sha256": "d0d08ecdbd337aa15c08fb684075fb1b3080087574a670c984765ac6a5c16c86",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "raw/E05-attempt2/answer.md",
+          "sha256": "dc0239a03d5949d4a5faf79e7c7caca82de0ee23a0dcc9a4b44c904ebf6e26be"
+        },
+        {
+          "path": "raw/E05-attempt2/lookup-1.txt",
+          "sha256": "8aa9dc2148da66a431f3ff4d30b397197e8b485656bfb494b5b14005b429de1f"
+        },
+        {
+          "path": "raw/E05-attempt2/lookup-2.txt",
+          "sha256": "8bbcd2c41769f62fc1693e6339df8371f8c09b656b835d16ccd98f25177b0fd0"
+        },
+        {
+          "path": "raw/E05-attempt2/lookup-3.txt",
+          "sha256": "13c160a5480f7d45cd3df91d4ab39ab4ef58663b38a582a896c7f52a683ca154"
+        },
+        {
+          "path": "raw/E05-attempt2/lookup-4.txt",
+          "sha256": "893943f3a7e854526ffe4aa96ffd59a026af4442bc2b9e2f617a55428a88ed84"
+        },
+        {
+          "path": "raw/E05-attempt2/lookup-5.txt",
+          "sha256": "8bfe96ba1f5f5380b4aba80467c1314cbf44e2e5e96816ad485b6a848930e265"
+        },
+        {
+          "path": "raw/E05-attempt2/request.txt",
+          "sha256": "8ecbb1f9a31da439425b7c799b0eccc54bc32cfc9aebcec210aa987ef42a0c6a"
+        },
+        {
+          "path": "raw/E05-attempt2/run.json",
+          "sha256": "e50733d016e9ea444f1b98bc4fb11f7fe24d0b1a1dc4bf4e1fa8af1eeb9ecb6b"
+        }
+      ]
+    },
+    {
+      "id": "E06@attempt2",
+      "declared_reads_and_artifacts": [
+        {
+          "pointer": "/inputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+          "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/1",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E06\\attempt2\\request.txt",
+          "expected_sha256": "9a65ec94744d6c3c6defcaea3e5db30cd02654878e3cdd95cfedbe5e694edf6d",
+          "actual_sha256": "9a65ec94744d6c3c6defcaea3e5db30cd02654878e3cdd95cfedbe5e694edf6d",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/2",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md",
+          "expected_sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c",
+          "actual_sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/3",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\prompt-craft.md",
+          "expected_sha256": "258ae63d90c184c246c7a990c0a656267b41b69d079f37ac06e4936d126ad1db",
+          "actual_sha256": "258ae63d90c184c246c7a990c0a656267b41b69d079f37ac06e4936d126ad1db",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "raw/E06-attempt2/answer.md",
+          "sha256": "9e1fda8ad22f6bb23398aab4a237ce9595404ac0d6932619ffd162c5e952e1ec"
+        },
+        {
+          "path": "raw/E06-attempt2/lookup-1.txt",
+          "sha256": "51d2486604ecd484811b917753de7d09866d9ae406e8737af145fd35d0b3da0f"
+        },
+        {
+          "path": "raw/E06-attempt2/lookup-2.txt",
+          "sha256": "3ec046076f091237010a39984fe659cc22fb79942a114b6dd87a150f9cb11e8e"
+        },
+        {
+          "path": "raw/E06-attempt2/lookup-3.txt",
+          "sha256": "d51e4722952c630e2d70596c27bb3804d68abb2b94bf66e56ae1c30150ef4d4c"
+        },
+        {
+          "path": "raw/E06-attempt2/lookup-4.txt",
+          "sha256": "40b878ff3a1a0d6d27f8f674eaf156eeb471b55011b32ad90af329323b3c7dad"
+        },
+        {
+          "path": "raw/E06-attempt2/lookup-5.txt",
+          "sha256": "f9572d9256a9e09fc7d8a49b0d491212764f570cdfb8aeb13064278d9a08ffbd"
+        },
+        {
+          "path": "raw/E06-attempt2/lookup-6.txt",
+          "sha256": "c64004321cfe258e05d308edc36bc0674ecd01571d49803526a3f1f77a457492"
+        },
+        {
+          "path": "raw/E06-attempt2/request.txt",
+          "sha256": "9a65ec94744d6c3c6defcaea3e5db30cd02654878e3cdd95cfedbe5e694edf6d"
+        },
+        {
+          "path": "raw/E06-attempt2/run.json",
+          "sha256": "770ad605c99a10a8d338ffae65ad0f0199d8f50856a7d314cf07674814190119"
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "declared_reads_and_artifacts": [
+        {
+          "pointer": "/inputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+          "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/1",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E07\\request.txt",
+          "expected_sha256": "39dcd453490f9299a0072e351cd91fd88129f12020cb4b2d7d84d90eccf3dad6",
+          "actual_sha256": "39dcd453490f9299a0072e351cd91fd88129f12020cb4b2d7d84d90eccf3dad6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/2",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\platforms.md",
+          "expected_sha256": "95aaa3145eb2481834571836845d1e7358c4f70ed5b6700d424abb4c5adfb7d5",
+          "actual_sha256": "95aaa3145eb2481834571836845d1e7358c4f70ed5b6700d424abb4c5adfb7d5",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/3",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\assets\\platform-profiles.json",
+          "expected_sha256": "9a2c6876e5dc7bcf4b6a55f8a6b3d63d13567bfc4967a94e6071c41e19d257a9",
+          "actual_sha256": "9a2c6876e5dc7bcf4b6a55f8a6b3d63d13567bfc4967a94e6071c41e19d257a9",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "raw/E07/answer.md",
+          "sha256": "ad6250d23e7c871bbd7bcad18eb3e4da620f7a52396fb9414d171cf1e6548af1"
+        },
+        {
+          "path": "raw/E07/lookup-1.txt",
+          "sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6"
+        },
+        {
+          "path": "raw/E07/lookup-2.txt",
+          "sha256": "39dcd453490f9299a0072e351cd91fd88129f12020cb4b2d7d84d90eccf3dad6"
+        },
+        {
+          "path": "raw/E07/lookup-3.txt",
+          "sha256": "27a7b8b05669e3dfa589987755796d731d12586b0685518fbd43efc5c6d3330b"
+        },
+        {
+          "path": "raw/E07/lookup-4.txt",
+          "sha256": "8d96895a25db82787b44bad4cd0fbe7e800823c5256573c8bb39c7efe4cafdd5"
+        },
+        {
+          "path": "raw/E07/lookup-5.txt",
+          "sha256": "c490d3e22ff58bf6252a9ad3945ef0b6db5e427d5abff9bc6b11ad5f7f444c7e"
+        },
+        {
+          "path": "raw/E07/request.txt",
+          "sha256": "39dcd453490f9299a0072e351cd91fd88129f12020cb4b2d7d84d90eccf3dad6"
+        },
+        {
+          "path": "raw/E07/run.json",
+          "sha256": "fd664d4d8de1b6c3e7b6bb842c7f7b47a6ec0c211e7599fe2713f0157cd7ffc8"
+        }
+      ]
+    },
+    {
+      "id": "E08",
+      "declared_reads_and_artifacts": [
+        {
+          "pointer": "/inputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+          "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/1",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\source-case.md",
+          "expected_sha256": "b2ea0718c39867200c8e6d7f1adbfad0ddf6ec9e3e097f86565b89fdaa0f91ea",
+          "actual_sha256": "b2ea0718c39867200c8e6d7f1adbfad0ddf6ec9e3e097f86565b89fdaa0f91ea",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/2",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\quality.md",
+          "expected_sha256": "2f3e49b118af5995b95f7a34dd43673c2eb7255ab8e458a67df106637e89f53a",
+          "actual_sha256": "2f3e49b118af5995b95f7a34dd43673c2eb7255ab8e458a67df106637e89f53a",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/3",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E08\\request.txt",
+          "expected_sha256": "07210fda00ba32fd39dd80d6e087f43dc0bebe4dfdc2275ff7edc3432887d759",
+          "actual_sha256": "07210fda00ba32fd39dd80d6e087f43dc0bebe4dfdc2275ff7edc3432887d759",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/4",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E08\\synthetic-frame-0000.png",
+          "expected_sha256": "46b5ed040fc028ada58456e3fa6b58663c2dbfe687bb41a5a9d2c6a8cd7791f9",
+          "actual_sha256": "46b5ed040fc028ada58456e3fa6b58663c2dbfe687bb41a5a9d2c6a8cd7791f9",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/5",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E08\\synthetic-frame-0500.png",
+          "expected_sha256": "4411f5aa24014d1d5881312db54e7604508d948d3c4fb65f982e082dcb283fa1",
+          "actual_sha256": "4411f5aa24014d1d5881312db54e7604508d948d3c4fb65f982e082dcb283fa1",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/6",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E08\\synthetic-frame-1000.png",
+          "expected_sha256": "dfb97885b6a9c09eee56c23a4a6b6b6454733f99e50605209b6e68ca91981a8d",
+          "actual_sha256": "dfb97885b6a9c09eee56c23a4a6b6b6454733f99e50605209b6e68ca91981a8d",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "raw/E08/answer.md",
+          "sha256": "554e2918d45c4dfd5f5bfd37ee21f7e3df4659f91cbf002801badfbb4bd938b8"
+        },
+        {
+          "path": "raw/E08/lookup-1.txt",
+          "sha256": "51d2486604ecd484811b917753de7d09866d9ae406e8737af145fd35d0b3da0f"
+        },
+        {
+          "path": "raw/E08/lookup-2.txt",
+          "sha256": "5c3fe4fa7f9605afd361c2e5c7a8657c5bf332c3c9c7ddd3d14090b8be62f759"
+        },
+        {
+          "path": "raw/E08/lookup-3.txt",
+          "sha256": "aed7a4fd97278841996c22f06b305e9f4c7c7b7d6974e4fad9a1c239eea360ae"
+        },
+        {
+          "path": "raw/E08/lookup-4.txt",
+          "sha256": "5878bac7f5d68011951ce0d9b362886adff782a6a35f4af4c90867c684a34242"
+        },
+        {
+          "path": "raw/E08/lookup-5.txt",
+          "sha256": "a4a9498d79110da13c1e051d56c60b9f13977cd0e2ac878fe139030f663e7645"
+        },
+        {
+          "path": "raw/E08/lookup-6.txt",
+          "sha256": "a74ed62f6a3ae143d0f840e20f5f7620eca467b3e425c1ec1b5d27e65c810b59"
+        },
+        {
+          "path": "raw/E08/lookup-7.txt",
+          "sha256": "736d1cf611194e78e39ee75f33774954d27231cd89b9568c98c0df857c6568cd"
+        },
+        {
+          "path": "raw/E08/lookup-8.txt",
+          "sha256": "4c0f9ac04d09413aa5cc1a5e3f357364ce9b1c7f7734bfa0216e65070ac13dc8"
+        },
+        {
+          "path": "raw/E08/lookup-9.txt",
+          "sha256": "fc1dad586967b3983597ec3a79f33e26630d82820c42873dfca07ee3632fe8a2"
+        },
+        {
+          "path": "raw/E08/request.txt",
+          "sha256": "07210fda00ba32fd39dd80d6e087f43dc0bebe4dfdc2275ff7edc3432887d759"
+        },
+        {
+          "path": "raw/E08/run.json",
+          "sha256": "0271d48dd5e535c73396a2a40053f148c65d6e3bff61976bdad894879fafe2eb"
+        },
+        {
+          "path": "raw/E08/synthetic-frame-0000.png",
+          "sha256": "46b5ed040fc028ada58456e3fa6b58663c2dbfe687bb41a5a9d2c6a8cd7791f9"
+        },
+        {
+          "path": "raw/E08/synthetic-frame-0500.png",
+          "sha256": "4411f5aa24014d1d5881312db54e7604508d948d3c4fb65f982e082dcb283fa1"
+        },
+        {
+          "path": "raw/E08/synthetic-frame-1000.png",
+          "sha256": "dfb97885b6a9c09eee56c23a4a6b6b6454733f99e50605209b6e68ca91981a8d"
+        }
+      ]
+    },
+    {
+      "id": "E09",
+      "declared_reads_and_artifacts": [
+        {
+          "pointer": "/inputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+          "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/1",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\contract.md",
+          "expected_sha256": "a49bd8940dca7c09688e617116b6fb1ab9a88c5d6c3efc156af98f888c8e51d7",
+          "actual_sha256": "a49bd8940dca7c09688e617116b6fb1ab9a88c5d6c3efc156af98f888c8e51d7",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/2",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\review-loop.md",
+          "expected_sha256": "6b4180da9ea6f32a75d789daa02ac570ef26440d62b45979053e51a91244567d",
+          "actual_sha256": "6b4180da9ea6f32a75d789daa02ac570ef26440d62b45979053e51a91244567d",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/3",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\quality.md",
+          "expected_sha256": "2f3e49b118af5995b95f7a34dd43673c2eb7255ab8e458a67df106637e89f53a",
+          "actual_sha256": "2f3e49b118af5995b95f7a34dd43673c2eb7255ab8e458a67df106637e89f53a",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/4",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_tool.py",
+          "expected_sha256": "1fade69a451269acf0efffc4230f127da905adde49f73394127ae260d34f6104",
+          "actual_sha256": "1fade69a451269acf0efffc4230f127da905adde49f73394127ae260d34f6104",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/5",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\request.txt",
+          "expected_sha256": "ece1d1422b7586e3fcdd19f76de73a990a408402ad4c004000bc02b560f77f93",
+          "actual_sha256": "ece1d1422b7586e3fcdd19f76de73a990a408402ad4c004000bc02b560f77f93",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/6",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.prompt.txt",
+          "expected_sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d",
+          "actual_sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/7",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.plan.json",
+          "expected_sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23",
+          "actual_sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/8",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_action.py",
+          "expected_sha256": "2561186638e7b840c2ce2265e3c0b85e53d3baf9ce7a57fc96a14899b3ae613d",
+          "actual_sha256": "2561186638e7b840c2ce2265e3c0b85e53d3baf9ce7a57fc96a14899b3ae613d",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/9",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\assets\\combat-plan.schema.json",
+          "expected_sha256": "e8db635f660848a14f9bc9cc95f896b1918aefdb2d288bcef2bb71c7499744a9",
+          "actual_sha256": "e8db635f660848a14f9bc9cc95f896b1918aefdb2d288bcef2bb71c7499744a9",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/10",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_evidence.py",
+          "expected_sha256": "1a7d22ee88f250fec15dc17af26864f953439f1495fc30b384f0dd079a38b23f",
+          "actual_sha256": "1a7d22ee88f250fec15dc17af26864f953439f1495fc30b384f0dd079a38b23f",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/11",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_review.py",
+          "expected_sha256": "f1ff9cca2fbe6ec455ec0ea3b81da295dec153eac01729828339f2d83a311ae1",
+          "actual_sha256": "f1ff9cca2fbe6ec455ec0ea3b81da295dec153eac01729828339f2d83a311ae1",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/12",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.draft.plan.json",
+          "expected_sha256": "fe9e8b5b9917893aa5cf71d9baa403d29aeedf02fa3f2ecf4a74bd94037f24ed",
+          "actual_sha256": "fe9e8b5b9917893aa5cf71d9baa403d29aeedf02fa3f2ecf4a74bd94037f24ed",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/13",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_schema.py",
+          "expected_sha256": "673e6975eebf2bee73b826312c0c89774993951ac566b2299dccbc6d355b8bc9",
+          "actual_sha256": "673e6975eebf2bee73b826312c0c89774993951ac566b2299dccbc6d355b8bc9",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/14",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_tool.py",
+          "expected_sha256": "1fade69a451269acf0efffc4230f127da905adde49f73394127ae260d34f6104",
+          "actual_sha256": "1fade69a451269acf0efffc4230f127da905adde49f73394127ae260d34f6104",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/15",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\scripts\\combat_handoff.py",
+          "expected_sha256": "28f922147132b748ec01e8cf1f8176f81c97409b4218f7edd4ce91b9c080c8a1",
+          "actual_sha256": "28f922147132b748ec01e8cf1f8176f81c97409b4218f7edd4ce91b9c080c8a1",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/16",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\review-input.json",
+          "expected_sha256": "3d58a78b44bf7b25a5b016848be815b1c80ed15f8017a5d9675d1262c00a605b",
+          "actual_sha256": "3d58a78b44bf7b25a5b016848be815b1c80ed15f8017a5d9675d1262c00a605b",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/17",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.plan.json",
+          "expected_sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23",
+          "actual_sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/18",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\original.prompt.txt",
+          "expected_sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d",
+          "actual_sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/19",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\revised.plan.json",
+          "expected_sha256": "218b1190ad2dda2f809ee41fbcdde27bc615dcae117930ae01d6c78067ddf207",
+          "actual_sha256": "218b1190ad2dda2f809ee41fbcdde27bc615dcae117930ae01d6c78067ddf207",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/20",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\export\\prompt.txt",
+          "expected_sha256": "707a83209422f149120f6e3f01c2125e8e88b9b3463e614d402f2803b2868507",
+          "actual_sha256": "707a83209422f149120f6e3f01c2125e8e88b9b3463e614d402f2803b2868507",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/21",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\export\\director.md",
+          "expected_sha256": "aa001781a7d9c10b046e6450f715a3f649278197f6a7c60deb78332d53bb4e5a",
+          "actual_sha256": "aa001781a7d9c10b046e6450f715a3f649278197f6a7c60deb78332d53bb4e5a",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/22",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E09\\receipt.json",
+          "expected_sha256": "57a90479d9a47f4c7823b0ca0ed2ae0786841754d0a709fbc003b36972646dce",
+          "actual_sha256": "57a90479d9a47f4c7823b0ca0ed2ae0786841754d0a709fbc003b36972646dce",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/23",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\assets\\platform-profiles.json",
+          "expected_sha256": "9a2c6876e5dc7bcf4b6a55f8a6b3d63d13567bfc4967a94e6071c41e19d257a9",
+          "actual_sha256": "9a2c6876e5dc7bcf4b6a55f8a6b3d63d13567bfc4967a94e6071c41e19d257a9",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "raw/E09/answer.md",
+          "sha256": "ce6a6379bc893bcf6cd8ca87329b5d7b51bee74c359e1cc8a2bc63276557739b"
+        },
+        {
+          "path": "raw/E09/execute.py",
+          "sha256": "ed5dd6b4d631613fe296f16db8d856d4ba9857993644e96b043f8cb93bdcf0f4"
+        },
+        {
+          "path": "raw/E09/export/combat-plan.json",
+          "sha256": "218b1190ad2dda2f809ee41fbcdde27bc615dcae117930ae01d6c78067ddf207"
+        },
+        {
+          "path": "raw/E09/export/design-card.md",
+          "sha256": "1e207872a7387bcf64b961458696445d7eb33fbcbb4729da02446be5239325f5"
+        },
+        {
+          "path": "raw/E09/export/director.md",
+          "sha256": "aa001781a7d9c10b046e6450f715a3f649278197f6a7c60deb78332d53bb4e5a"
+        },
+        {
+          "path": "raw/E09/export/handoff.md",
+          "sha256": "5ecceceb2f3b3f63965e0a95ace199877a4cc8613e21eadf2055e43535cd6ee5"
+        },
+        {
+          "path": "raw/E09/export/prompt-handoff.json",
+          "sha256": "3d58a78b44bf7b25a5b016848be815b1c80ed15f8017a5d9675d1262c00a605b"
+        },
+        {
+          "path": "raw/E09/export/prompt.txt",
+          "sha256": "707a83209422f149120f6e3f01c2125e8e88b9b3463e614d402f2803b2868507"
+        },
+        {
+          "path": "raw/E09/export/review.md",
+          "sha256": "9dca76b7cc65733e09615c80e009d40fc6ee0ba593d7a2e4d7cf285bbd6059aa"
+        },
+        {
+          "path": "raw/E09/lookup-1.txt",
+          "sha256": "8aa9dc2148da66a431f3ff4d30b397197e8b485656bfb494b5b14005b429de1f"
+        },
+        {
+          "path": "raw/E09/lookup-10.txt",
+          "sha256": "db1812fed087612c2b3ba9b7d24dd9c659f6fe3360ef77744684e9c54d5b246e"
+        },
+        {
+          "path": "raw/E09/lookup-11.txt",
+          "sha256": "5ce5680e1390bf77b1aa40c4ac41db52225d5cf3f51c6cf7cff17ba617bcbb25"
+        },
+        {
+          "path": "raw/E09/lookup-12.txt",
+          "sha256": "dfcfcf01af224a0f78ba7d575f9d0144024e11b8452c8e340b54c5d77a9c3ee0"
+        },
+        {
+          "path": "raw/E09/lookup-13.txt",
+          "sha256": "4a1ffe78a42bdaf0ab4f7a0a7a972cb1e66e8fbf037f54588ec84b6f61a487a5"
+        },
+        {
+          "path": "raw/E09/lookup-2.txt",
+          "sha256": "0170823da665d44b9789a623bfcb391ac562557c97942fd11f7de9a57970d366"
+        },
+        {
+          "path": "raw/E09/lookup-3.txt",
+          "sha256": "ce742757cf92eb13fd6ad0b83e114387cefb93dd14a385014337ffdca5206111"
+        },
+        {
+          "path": "raw/E09/lookup-4.txt",
+          "sha256": "d36fc348be2a8a07ac98fb67d92d7106e1eb444aa810e253ea5fa1948dc3d745"
+        },
+        {
+          "path": "raw/E09/lookup-5.txt",
+          "sha256": "0cab8bc12d879b78c260b94c6678b6c735c48d7117c4468ef16ff8827ed9034d"
+        },
+        {
+          "path": "raw/E09/lookup-6.txt",
+          "sha256": "f19c6635def8d6887541d714c8b8f43b9d216dc59da2c4a3fce41d349a7c5435"
+        },
+        {
+          "path": "raw/E09/lookup-7.txt",
+          "sha256": "5032ecd04fea7e65fab3c210cd6ad4bf8884dae1a2075253655269436c33db90"
+        },
+        {
+          "path": "raw/E09/lookup-8.txt",
+          "sha256": "db1812fed087612c2b3ba9b7d24dd9c659f6fe3360ef77744684e9c54d5b246e"
+        },
+        {
+          "path": "raw/E09/lookup-9.txt",
+          "sha256": "db1812fed087612c2b3ba9b7d24dd9c659f6fe3360ef77744684e9c54d5b246e"
+        },
+        {
+          "path": "raw/E09/lookup-final.txt",
+          "sha256": "a7289ca5702122dd4843d599b2fdf228da6daf8d24699d589bd37653491c1233"
+        },
+        {
+          "path": "raw/E09/lookup-prepare.txt",
+          "sha256": "d866c3bf8c7e18f917b0cfa3f974b716b92c090472a9b31b0a4ceddbb404acad"
+        },
+        {
+          "path": "raw/E09/lookup-receipt.txt",
+          "sha256": "14892c0704b2a8500b93418947913d4e3356c7de3cf69a723175955c0163ba7b"
+        },
+        {
+          "path": "raw/E09/lookup-recover.txt",
+          "sha256": "9c66916462b00a80c22345629b1c6610376fb844fa38311f45d5c3710149a2d9"
+        },
+        {
+          "path": "raw/E09/original.plan.json",
+          "sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23"
+        },
+        {
+          "path": "raw/E09/original.prompt.txt",
+          "sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d"
+        },
+        {
+          "path": "raw/E09/receipt.json",
+          "sha256": "57a90479d9a47f4c7823b0ca0ed2ae0786841754d0a709fbc003b36972646dce"
+        },
+        {
+          "path": "raw/E09/request.txt",
+          "sha256": "ece1d1422b7586e3fcdd19f76de73a990a408402ad4c004000bc02b560f77f93"
+        },
+        {
+          "path": "raw/E09/review-input.json",
+          "sha256": "3d58a78b44bf7b25a5b016848be815b1c80ed15f8017a5d9675d1262c00a605b"
+        },
+        {
+          "path": "raw/E09/revised.draft.plan.json",
+          "sha256": "fe9e8b5b9917893aa5cf71d9baa403d29aeedf02fa3f2ecf4a74bd94037f24ed"
+        },
+        {
+          "path": "raw/E09/revised.plan.json",
+          "sha256": "218b1190ad2dda2f809ee41fbcdde27bc615dcae117930ae01d6c78067ddf207"
+        },
+        {
+          "path": "raw/E09/revised.verified.plan.json",
+          "sha256": "218b1190ad2dda2f809ee41fbcdde27bc615dcae117930ae01d6c78067ddf207"
+        },
+        {
+          "path": "raw/E09/run.json",
+          "sha256": "1988ccc1c19ae46ae28bea2874b358c7a849d5d001bef7fbeaea5d1fccb12511"
+        },
+        {
+          "path": "raw/E09/scope-check.json",
+          "sha256": "a7289ca5702122dd4843d599b2fdf228da6daf8d24699d589bd37653491c1233"
+        }
+      ]
+    },
+    {
+      "id": "E12",
+      "declared_reads_and_artifacts": [
+        {
+          "pointer": "/inputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+          "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/1",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\request.txt",
+          "expected_sha256": "7ded957b9008d79760658bb15957b65f0e93c66ea28a0512f0ce1c4ac3c0f968",
+          "actual_sha256": "7ded957b9008d79760658bb15957b65f0e93c66ea28a0512f0ce1c4ac3c0f968",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/2",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md",
+          "expected_sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c",
+          "actual_sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/3",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md",
+          "expected_sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1",
+          "actual_sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "raw/E12/answer.md",
+          "sha256": "dfd39ec0cf8e7361eb98be9bb77ea172a647d2da633230d3dffa07c484ffc26d"
+        },
+        {
+          "path": "raw/E12/lookup-1.txt",
+          "sha256": "8aa9dc2148da66a431f3ff4d30b397197e8b485656bfb494b5b14005b429de1f"
+        },
+        {
+          "path": "raw/E12/lookup-2.txt",
+          "sha256": "cd617e852e8eb44d6fd825817bc137a25b4d013e54cb69887b4f7098587ad27c"
+        },
+        {
+          "path": "raw/E12/lookup-3.txt",
+          "sha256": "58362b45d7fc3737a6ea6badaa18d7eb11936abf3ae66d173fd81e86c1ec4193"
+        },
+        {
+          "path": "raw/E12/lookup-4.txt",
+          "sha256": "d1c8003aaabaceca1e4ebc7b868df9adb5575a0478b4aeec227447735461615a"
+        },
+        {
+          "path": "raw/E12/lookup-5.txt",
+          "sha256": "3d5108b154988e2c4ceb26f93f9c0138753b0c71116b64527820eb2d19ca6be2"
+        },
+        {
+          "path": "raw/E12/request.txt",
+          "sha256": "7ded957b9008d79760658bb15957b65f0e93c66ea28a0512f0ce1c4ac3c0f968"
+        },
+        {
+          "path": "raw/E12/run.json",
+          "sha256": "cbb5298de04276082a2c598636523f393a79c6cf7d946793433c7174449f1382"
+        }
+      ]
+    },
+    {
+      "id": "M01",
+      "declared_reads_and_artifacts": [
+        {
+          "pointer": "/request",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M01\\request.txt",
+          "expected_sha256": "22919d9bb6c09b968769d13b3899767fb7925f97637b36bde986d2f2cb9bf7ef",
+          "actual_sha256": "22919d9bb6c09b968769d13b3899767fb7925f97637b36bde986d2f2cb9bf7ef",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+          "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/1",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+          "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/2",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M01\\request.txt",
+          "expected_sha256": "22919d9bb6c09b968769d13b3899767fb7925f97637b36bde986d2f2cb9bf7ef",
+          "actual_sha256": "22919d9bb6c09b968769d13b3899767fb7925f97637b36bde986d2f2cb9bf7ef",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/3",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\motion-blur.md",
+          "expected_sha256": "77ec4ac579e48a761077ac166dab1e70f1e8470863053310f3f524ac24a5773b",
+          "actual_sha256": "77ec4ac579e48a761077ac166dab1e70f1e8470863053310f3f524ac24a5773b",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/4",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\platforms.md",
+          "expected_sha256": "95aaa3145eb2481834571836845d1e7358c4f70ed5b6700d424abb4c5adfb7d5",
+          "actual_sha256": "95aaa3145eb2481834571836845d1e7358c4f70ed5b6700d424abb4c5adfb7d5",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/outputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M01\\answer.md",
+          "expected_sha256": "3a94b8c109cc6b84343738043cca3e331a9ee83f6b1dc37acf93f67aa8a39fa2",
+          "actual_sha256": "3a94b8c109cc6b84343738043cca3e331a9ee83f6b1dc37acf93f67aa8a39fa2",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "raw/M01/answer.md",
+          "sha256": "3a94b8c109cc6b84343738043cca3e331a9ee83f6b1dc37acf93f67aa8a39fa2"
+        },
+        {
+          "path": "raw/M01/finalize.py",
+          "sha256": "91e0b0da9f73bddebd8b3610732046af996b715bdac687073d3e4bb1bb4b2adf"
+        },
+        {
+          "path": "raw/M01/lookup-1.txt",
+          "sha256": "adde535a019b852aab8eaea7fbc30c5d38ea74f48497d23965387a4607a2a775"
+        },
+        {
+          "path": "raw/M01/lookup-2.txt",
+          "sha256": "bfb608c980949ff433a272d40c5f55ae8a83979b5ed048c863a875129278e056"
+        },
+        {
+          "path": "raw/M01/lookup-3.txt",
+          "sha256": "adbf42100ed7c378300bd6548768eacd2612fd21ce909a200c3780494f877dc9"
+        },
+        {
+          "path": "raw/M01/lookup-4.txt",
+          "sha256": "b9e55a439a19ea5e9c09a4067d77ce423a6d8626b14d800016b5de83333f0f1d"
+        },
+        {
+          "path": "raw/M01/lookup-5.txt",
+          "sha256": "b93a06782b08f87250600a04fbd15e772e37526a7e6f028ab2ba3637efa2f80a"
+        },
+        {
+          "path": "raw/M01/record_read.py",
+          "sha256": "a48c6ff12b36a239c04686ff9a61d51f8c08722fad0e81aaf4e7425b2cb4f9be"
+        },
+        {
+          "path": "raw/M01/request.txt",
+          "sha256": "22919d9bb6c09b968769d13b3899767fb7925f97637b36bde986d2f2cb9bf7ef"
+        },
+        {
+          "path": "raw/M01/run.json",
+          "sha256": "17a9818360de0b1b99e4338d09b7c1cd64241d236abd4c29c882dc72b2aaccbd"
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "declared_reads_and_artifacts": [
+        {
+          "pointer": "/inputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+          "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/1",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M02\\request.txt",
+          "expected_sha256": "d137ab22918edc81efedd924f4031376ac0c05c5beec0faa1aefafcc635b84eb",
+          "actual_sha256": "d137ab22918edc81efedd924f4031376ac0c05c5beec0faa1aefafcc635b84eb",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/2",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\motion-blur.md",
+          "expected_sha256": "77ec4ac579e48a761077ac166dab1e70f1e8470863053310f3f524ac24a5773b",
+          "actual_sha256": "77ec4ac579e48a761077ac166dab1e70f1e8470863053310f3f524ac24a5773b",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/3",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\prompt-craft.md",
+          "expected_sha256": "258ae63d90c184c246c7a990c0a656267b41b69d079f37ac06e4936d126ad1db",
+          "actual_sha256": "258ae63d90c184c246c7a990c0a656267b41b69d079f37ac06e4936d126ad1db",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/4",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M02\\synthetic-i2v-start.png",
+          "expected_sha256": "8aa8564e71b9117e3529c063176a5571bb3c039d4233f78ec7d6b9ebb303ad19",
+          "actual_sha256": "8aa8564e71b9117e3529c063176a5571bb3c039d4233f78ec7d6b9ebb303ad19",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "raw/M02/answer.md",
+          "sha256": "682d7f3674736034d71a6c11f82d4c8e0bd7c4fe492604c11880460f691bcb05"
+        },
+        {
+          "path": "raw/M02/create_outputs.py",
+          "sha256": "b25595d36fa6f593ade55f15eb49c2bdbf7130cf21ce26a66895c76855bfd8fc"
+        },
+        {
+          "path": "raw/M02/finalize_log.py",
+          "sha256": "e7c2f4c6b236f52dae39824f053698197ad7dd8a6e404a064e78cc937e2c1ec2"
+        },
+        {
+          "path": "raw/M02/lookup-1.txt",
+          "sha256": "ac51e7c6f364105bd7eecf527f5c07e7d33979bedfde044745a65ea1d498e805"
+        },
+        {
+          "path": "raw/M02/lookup-2.txt",
+          "sha256": "f53b30c26274577b575ab71395f2e69a84fee5c72e672065ce07f4729ee2d75d"
+        },
+        {
+          "path": "raw/M02/lookup-3.txt",
+          "sha256": "bc9515df5cf6cad2ab5f2ad01f58fdd8bd56e69cf8e860ae9e8108a2f911b82d"
+        },
+        {
+          "path": "raw/M02/lookup-4.txt",
+          "sha256": "aebbadd35c73a7f58b58ab4bc68a03256c7578f1d6576d60a239b528fe3320bb"
+        },
+        {
+          "path": "raw/M02/lookup-5.txt",
+          "sha256": "6648d86177f2e34a7b057f31ce066fa916a43b70694e91af41df630b09f9b43c"
+        },
+        {
+          "path": "raw/M02/lookup-6.txt",
+          "sha256": "2d08fc2c85d7d58521e6e4702908ec95ca61ddd1ac7e34267a82a0b234cf463f"
+        },
+        {
+          "path": "raw/M02/lookup-7.txt",
+          "sha256": "2eb665ffc93ae1216f3b557a2266e6a96f4f84bea1f3cc45b458be2f4b106704"
+        },
+        {
+          "path": "raw/M02/request.txt",
+          "sha256": "d137ab22918edc81efedd924f4031376ac0c05c5beec0faa1aefafcc635b84eb"
+        },
+        {
+          "path": "raw/M02/run.json",
+          "sha256": "7cbd1fd46726d6db40ea2923df240289ac7eef892bcc277c5488eda5d7145f41"
+        },
+        {
+          "path": "raw/M02/synthetic-i2v-start.png",
+          "sha256": "8aa8564e71b9117e3529c063176a5571bb3c039d4233f78ec7d6b9ebb303ad19"
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "declared_reads_and_artifacts": [
+        {
+          "pointer": "/inputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+          "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/1",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03\\request.txt",
+          "expected_sha256": "0c614dcfa553b0a1900267aa53e6e3cb2e7701e3427804439b617eca748625c1",
+          "actual_sha256": "0c614dcfa553b0a1900267aa53e6e3cb2e7701e3427804439b617eca748625c1",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/2",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\motion-blur.md",
+          "expected_sha256": "77ec4ac579e48a761077ac166dab1e70f1e8470863053310f3f524ac24a5773b",
+          "actual_sha256": "77ec4ac579e48a761077ac166dab1e70f1e8470863053310f3f524ac24a5773b",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/3",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\prompt-craft.md",
+          "expected_sha256": "258ae63d90c184c246c7a990c0a656267b41b69d079f37ac06e4936d126ad1db",
+          "actual_sha256": "258ae63d90c184c246c7a990c0a656267b41b69d079f37ac06e4936d126ad1db",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/4",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\platforms.md",
+          "expected_sha256": "95aaa3145eb2481834571836845d1e7358c4f70ed5b6700d424abb4c5adfb7d5",
+          "actual_sha256": "95aaa3145eb2481834571836845d1e7358c4f70ed5b6700d424abb4c5adfb7d5",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "raw/M03/answer.md",
+          "sha256": "5062baa3f00506a5047c8432c99ac64d746fb9a42370a2ff75bdbb584a06ae06"
+        },
+        {
+          "path": "raw/M03/lookup-1.txt",
+          "sha256": "d88c6af17f8933fc4f438ff17370a64d6c7a8cfc044895540b5545830ee331f4"
+        },
+        {
+          "path": "raw/M03/lookup-2.txt",
+          "sha256": "50fc4117427479dfbfc29f1281b98cea10c4a2a95190f170fe27b487e475200b"
+        },
+        {
+          "path": "raw/M03/lookup-3.txt",
+          "sha256": "90ed77fad5e880defaf445d73085e56fe53a0124fb5a70b3b29478854f227f78"
+        },
+        {
+          "path": "raw/M03/lookup-4.txt",
+          "sha256": "58acbf3d7441aca8a5a4c393f98b77050457f92898b2821a0ab585f65dc02913"
+        },
+        {
+          "path": "raw/M03/request.txt",
+          "sha256": "0c614dcfa553b0a1900267aa53e6e3cb2e7701e3427804439b617eca748625c1"
+        },
+        {
+          "path": "raw/M03/run.json",
+          "sha256": "13a8b7d7a201546f321e5ae21c881a2755c14b7f160b9df0f88461cad17b69bf"
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "declared_reads_and_artifacts": [
+        {
+          "pointer": "/inputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+          "expected_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "actual_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/inputs/1",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M04\\request.txt",
+          "expected_sha256": "7ed7748ab5defe186d2f7adde81acdfa9dd59997107fc79355a9a70d13aa0a65",
+          "actual_sha256": "7ed7748ab5defe186d2f7adde81acdfa9dd59997107fc79355a9a70d13aa0a65",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        },
+        {
+          "pointer": "/outputs/0",
+          "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M04\\answer.md",
+          "expected_sha256": "c4782d4c3758c6fe3acf99782cfe9e283013c0c078325630bf793a3a47fc4a97",
+          "actual_sha256": "c4782d4c3758c6fe3acf99782cfe9e283013c0c078325630bf793a3a47fc4a97",
+          "scope_allowed": true,
+          "historical_mutable_log": false,
+          "passed": true
+        }
+      ],
+      "archived": [
+        {
+          "path": "raw/M04/answer.md",
+          "sha256": "c4782d4c3758c6fe3acf99782cfe9e283013c0c078325630bf793a3a47fc4a97"
+        },
+        {
+          "path": "raw/M04/lookup-1.txt",
+          "sha256": "1eb652164cb0e02665f1f8e8f1408e0c13e8a38092a65e45341dab985c055b2b"
+        },
+        {
+          "path": "raw/M04/lookup-2.txt",
+          "sha256": "efc2d523b92e5fb9c2a3fd25c2777eb07ab97a52749a0ca0ff1ea43309fd6818"
+        },
+        {
+          "path": "raw/M04/request.txt",
+          "sha256": "7ed7748ab5defe186d2f7adde81acdfa9dd59997107fc79355a9a70d13aa0a65"
+        },
+        {
+          "path": "raw/M04/run.json",
+          "sha256": "7a3208eca5e2787a03578da0a46de19c475fa9b5fac722d18fbce848843bf08b"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "limits": "Terminal completion was confirmed by the parent before invocation. Hash/scope checks do not prove reading or semantic quality; logs are self-reported, not OS access tracing."
+}

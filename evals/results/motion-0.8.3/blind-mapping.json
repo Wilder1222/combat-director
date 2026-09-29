@@ -1,0 +1,131 @@
+{
+  "shuffle_seed": 20260923,
+  "mapping": [
+    {
+      "case": "T01",
+      "label": "A",
+      "run": "candidate-T01",
+      "raw_sha256": "ba5e255dbc9d61db1328659c058e86fe4f1bce968de532a6f3a3fd33c85eb63a",
+      "anonymous_sha256": "ba5e255dbc9d61db1328659c058e86fe4f1bce968de532a6f3a3fd33c85eb63a",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T02",
+      "label": "A",
+      "run": "candidate-T02",
+      "raw_sha256": "0dce9244e0dbd1fcdfcbf1ee6bc3f554adc670dceef1923aaf3df7bdc586252c",
+      "anonymous_sha256": "6f9f8942960385dbda732583fb00f0ab9234825af88b716c3d71b1d5a1fdd284",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T02",
+      "label": "B",
+      "run": "baseline-T02",
+      "raw_sha256": "9c73a49d24525c8b769edf5c60d3091fe0999c674728d6d5117863c329ecb48f",
+      "anonymous_sha256": "d5716172b3786f4f928c8220b86b68f1f7fe023819a7ddf225f2fb11cd5e411d",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T03",
+      "label": "A",
+      "run": "candidate-T03",
+      "raw_sha256": "6198fd8ff7e2cfe805f0090d607b9d07b1f34f2ca39ff6fefc76659ef87703d5",
+      "anonymous_sha256": "7d5533a86ade0137df4060ac93de383efd3a0af40b2421ecb7506e0bf5c405e9",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T04",
+      "label": "A",
+      "run": "candidate-T04",
+      "raw_sha256": "7b8b5047d1028c8d3285d4f456ff72d99c82aa611ad50ef971ae2be98d9b0c7b",
+      "anonymous_sha256": "985cc41b2300a5fa95a471e10e28d18928e0ae28ebd3fbb5327aa4ecc131052d",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T05",
+      "label": "A",
+      "run": "candidate-T05",
+      "raw_sha256": "c255028c4a250d58f64780bdcc4ef925256bf2d3b476ec46ee6f2b7c43fa7474",
+      "anonymous_sha256": "8551bf82bc35e286b0d29a03db46fb1a4fd1e82743dc1f51e14bff17e477b6e3",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T06",
+      "label": "A",
+      "run": "candidate-T06",
+      "raw_sha256": "5845e383f376911a36d0bde1c380f77d8c4c54664389a2949a6de63537eeb789",
+      "anonymous_sha256": "ce4fa06d8e0cea83db96358ae3172edccc612c83f9f7cfd061cbac5a81e5947d",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T07",
+      "label": "A",
+      "run": "candidate-T07",
+      "raw_sha256": "5d74e2fde7f545b897e044454e4ff2bb7931cf4e6a365f1da379dedd81db7ee7",
+      "anonymous_sha256": "586ca47302bc35594651b07213a4d4dae56c925f8f17fd061d09db43d111c529",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T08",
+      "label": "A",
+      "run": "baseline-T08",
+      "raw_sha256": "b22627a92e67c90a575933417e1b713b1b6e6e3cd93c5520fec9bf7878b8fed6",
+      "anonymous_sha256": "b36f1657166d6ba5c495bac5bb7a4c2b893968c68e2fb20647e38e487d8fef22",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T08",
+      "label": "B",
+      "run": "candidate-T08",
+      "raw_sha256": "4d6df4aa90f08746257a2bd457e1c55c8749010bf14ee1f80361d31f8b156c78",
+      "anonymous_sha256": "4d6df4aa90f08746257a2bd457e1c55c8749010bf14ee1f80361d31f8b156c78",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T09",
+      "label": "A",
+      "run": "candidate-T09",
+      "raw_sha256": "97fb5b86ec3f8fdc38b0bb0c2d02832e74cf8f827a8a549a1906f22175bfbf1d",
+      "anonymous_sha256": "7616daaa24bfed9a01dbfb29cfa63e3a41e1f9fb391b3188a3aa56d0a8baad4b",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T10",
+      "label": "A",
+      "run": "candidate-T10",
+      "raw_sha256": "dec4ef4b7ea7121ec621359a0ca2380bd562259f000298f1f7d883f41a6229ef",
+      "anonymous_sha256": "0b6cd95e483188a195ee6689d3aba12a36d89d947a51aa644327cb4b6c37bedc",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T11",
+      "label": "A",
+      "run": "candidate-T11",
+      "raw_sha256": "19f4c9cac1f4ee687fca8f840966e83a163e1e797d315b50165a9d28fedeb70b",
+      "anonymous_sha256": "a3c750a5d09ae3c0322d2f8a8900b2a4f67bd61ca453adc243f9b0b078d9936c",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T11",
+      "label": "B",
+      "run": "baseline-T11",
+      "raw_sha256": "27ef67a90bee5482c3dbbb261097d905cfb37bc104f18cb10a634558fe122df5",
+      "anonymous_sha256": "6b9521014ebe362045c94993ba0771228d804222eded740395d97b6c4b2c75fb",
+      "path_prefix_redactions": []
+    },
+    {
+      "case": "T12",
+      "label": "A",
+      "run": "candidate-T12",
+      "raw_sha256": "5846352db20145adbba8568fbffc3f3f097f174ce22df445980851a52dfe2415",
+      "anonymous_sha256": "9ad7735dc2503db532194070f1fe0b2d75f39b4b7d09fd58076e81c61898f03d",
+      "path_prefix_redactions": [
+        "D:/Temp/combat-motion-eval-e1dsw32j/results/candidate-T12"
+      ]
+    }
+  ],
+  "notes": [
+    "Answer text is unchanged except UTF-8/BOM and newline normalization, and T12 output path-prefix anonymization.",
+    "Mapping was withheld from the reviewer."
+  ]
+}

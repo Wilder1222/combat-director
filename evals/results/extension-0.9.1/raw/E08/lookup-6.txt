@@ -1,0 +1,10 @@
+{
+  "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E08\\synthetic-frame-0500.png",
+  "detail": "high",
+  "viewed": true,
+  "tool": "view_image",
+  "lookup": "lookup-6.txt",
+  "process_exit_code": null,
+  "note": "工具返回图像已实际呈现并查看；日志保存工具元数据，图像像素保存在原 PNG。"
+}
+

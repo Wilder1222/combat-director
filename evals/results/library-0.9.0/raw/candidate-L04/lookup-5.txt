@@ -1,0 +1,57 @@
+{
+  "status": "candidates",
+  "filters": {
+    "kind": "all",
+    "query": "折樱上挑 流火幻步",
+    "card_id": "arvin-character-feixue-fire",
+    "school": null,
+    "character": null,
+    "detail": null,
+    "min_detail": null
+  },
+  "total": 2,
+  "limit": 12,
+  "offset": 0,
+  "next_offset": null,
+  "notice": "详情等级只描述源文供给，不证明动作完整、事实正确或能力获准；同名与别名歧义分别保留。",
+  "matches": [
+    {
+      "id": "arvin-character-feixue-fire-item-86bff424a344",
+      "card_id": "arvin-character-feixue-fire",
+      "name": "折樱上挑（火焰版）",
+      "detail": "motion_path",
+      "schools": [
+        "绯雪樱灼流单太刀术"
+      ],
+      "characters": [
+        "绯雪·火焰"
+      ],
+      "kind": "characters",
+      "matched_names": [
+        "折樱上挑（火焰版）"
+      ],
+      "source_lines": [
+        1163
+      ]
+    },
+    {
+      "id": "arvin-character-feixue-fire-item-bb6124188aba",
+      "card_id": "arvin-character-feixue-fire",
+      "name": "流火幻步",
+      "detail": "motion_path",
+      "schools": [
+        "武侠身法"
+      ],
+      "characters": [
+        "绯雪·火焰"
+      ],
+      "kind": "characters",
+      "matched_names": [
+        "流火幻步"
+      ],
+      "source_lines": [
+        1172
+      ]
+    }
+  ]
+}

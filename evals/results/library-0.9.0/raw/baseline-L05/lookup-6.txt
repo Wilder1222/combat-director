@@ -1,0 +1,44 @@
+PATH: D:\Temp\combat-library-behavior-j75bzt8f\baseline\skills\combat-director\scripts\library_tool.py
+SHA256: F1F775B81FD41A00D2BBDD6A1CCF856B358D2FFA3197147D08967E8EE867D364
+READ MODE: matching lines only
+3:from __future__ import annotations
+5:import argparse
+6:import json
+7:import re
+8:import sys
+9:import unicodedata
+10:from pathlib import Path, PurePosixPath
+11:from collections import Counter
+13:CATALOG = Path(__file__).resolve().parents[1] / 'library/catalog.json'
+19:          'excludes', 'path', 'provenance', 'detail', 'schools', 'characters',
+32:def card_path(root, entry):
+33:    relative = PurePosixPath(entry['path'])
+34:    require(not relative.is_absolute() and '\\' not in entry['path']
+35:            and ':' not in entry['path'] and '..' not in relative.parts,
+36:            f"{entry['id']}: invalid relative path")
+39:    candidate = root.joinpath(*relative.parts)
+42:            f"{entry['id']}: card path escapes library or is a link")
+48:def load_catalog(path=CATALOG):
+50:    path = Path(path)
+51:    data = json.loads(path.read_text(encoding='utf-8'))
+53:            'catalog must contain version and entries')
+55:            'unsupported catalog version')
+57:    ids, paths = set(), set()
+60:        for field in ('id', 'kind', 'title', 'summary', 'path', 'provenance'):
+82:            require(isinstance(source, dict) and set(source) == {'repository', 'commit', 'path', 'ranges'},
+85:                    and source['path'] == 'seedance-combat-prompt/SKILL.md'
+94:        resolved = card_path(path.parent, entry).resolve()
+95:        require(resolved not in paths, f"{entry['id']}: duplicate card path")
+96:        paths.add(resolved)
+104:def search(catalog, kind, query='', scope=None, *, school=None, character=None,
+116:    for entry in catalog['entries']:
+146:def stats(catalog):
+147:    entries = catalog['entries']
+155:def read_card(catalog, card_id, path=CATALOG):
+156:    entry = next((item for item in catalog['entries'] if item['id'] == card_id), None)
+158:    return card_path(Path(path).parent, entry).read_text(encoding='utf-8')
+179:        catalog = load_catalog()
+181:            print(f"PASS: {len(catalog['entries'])} combat cards; index and references valid")
+183:            print(json.dumps(stats(catalog), ensure_ascii=False, indent=2))
+185:            print(read_card(catalog, args.id), end='')
+187:            print(json.dumps(search(catalog, args.kind, args.query, args.scope,

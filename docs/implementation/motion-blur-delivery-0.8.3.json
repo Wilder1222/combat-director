@@ -1,0 +1,131 @@
+{
+  "format": "motion-blur-delivery-validation/1",
+  "date": "2026-09-23",
+  "status": "passed_document_and_evidence_checks",
+  "scope": "Current research, implementation documents and archived text evaluation. Full release execution is separately recorded in validation-0.8.3.json; no media evidence.",
+  "checks": {
+    "evidence_files_checked": 110,
+    "evidence_hash_errors": [],
+    "runtime_files_checked": 175,
+    "runtime_hash_errors": [],
+    "raw_files_compared": 48,
+    "raw_copy_errors": [],
+    "independent_review_files_compared": 3,
+    "independent_review_copy_errors": [],
+    "json_parse_errors": [],
+    "local_links_verified_before_record_creation": 119,
+    "pending_self_record_link": [
+      "D:\\study\\projects\\combat-director\\docs\\implementation\\motion-blur-delivery-0.8.3.json"
+    ],
+    "missing_local_links": [],
+    "release_checks": 36,
+    "release_checks_all_passed": true,
+    "current_archive_sha256": "526a424c3e557fd37541f2df7f4a7b87c9400800a6eba622f190b41e293deef0",
+    "primary_source_count": 12,
+    "primary_source_ids_unique": true,
+    "git_diff_check_exit_code": 0,
+    "self_record_link_verified_after_creation": true,
+    "local_links_verified_total": 120
+  },
+  "text_evaluation": {
+    "candidate": {
+      "satisfied": 11,
+      "partial": 1
+    },
+    "baseline": {
+      "satisfied": 3
+    },
+    "partial_reason": "T07 has mutually exclusive requirements; contradiction diagnosis is correct but an executable prompt awaits user priority. Raw independent grade is retained.",
+    "overall_quality_uplift_established": false
+  },
+  "artifacts": [
+    {
+      "path": "README.md",
+      "bytes": 13665,
+      "sha256": "29b1e178886b5ad30234117ecd2fd8e6eda4bf902e0cf844195ef2609a6b8c36"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 7908,
+      "sha256": "2c3d01be305541f3036f960ab8a5442cb5a439367b0070f64c06ef3a3a554cb8"
+    },
+    {
+      "path": "docs/validation.md",
+      "bytes": 4053,
+      "sha256": "2f9a7e5058603048c7fabe237f5ef0747dfb032924f973aa9b81b2ab87a3b55b"
+    },
+    {
+      "path": "docs/implementation/progress.md",
+      "bytes": 9306,
+      "sha256": "66b7af3ca47ccf60129a13c3b6040448429ec17aa9c3e37d7dd8025992a33090"
+    },
+    {
+      "path": "docs/plans/2026-09-23-0.8.0-optimization-plan.md",
+      "bytes": 10095,
+      "sha256": "3e64ace374a6d4aff47e71667780ff18993d3cbcc822d754d9865c94749b2ba7"
+    },
+    {
+      "path": "docs/plans/2026-09-23-motion-blur-integration-plan.md",
+      "bytes": 15709,
+      "sha256": "1c2ef90955549451f717ce7a626b892835ad6a428709adb9edee1dad1bf48af4"
+    },
+    {
+      "path": "docs/research/2026-09-23-motion-blur-research.md",
+      "bytes": 15817,
+      "sha256": "7c8cc6d4fdaf97401c18eeb4d4fa62908475ebda10b39edc2169a6f1f9e3c451"
+    },
+    {
+      "path": "docs/research/2026-09-23-motion-blur-system-prompt-draft.md",
+      "bytes": 10055,
+      "sha256": "d49dc659d5626ea73a693bf1a08e2b2b71b3c2f3d5678f8fb832c1406c302865"
+    },
+    {
+      "path": "docs/implementation/motion-blur-behavior-0.8.3.md",
+      "bytes": 7054,
+      "sha256": "b215c3a3f5c7807af7a6510eeac3c76b8ca6ec6f7b0aa7087cb6d0e25119e33e"
+    },
+    {
+      "path": "docs/history/validation-0.8.2.md",
+      "bytes": 4490,
+      "sha256": "38a80d455cee411a11d71a07c5d9ad26d0509507cf959cbee0acff79ae23fb96"
+    },
+    {
+      "path": "docs/research/evidence/motion-blur-sources-2026-09-23.json",
+      "bytes": 9540,
+      "sha256": "545ef8178ebc4c5a329520592859d35a422ab9de3982da4c1e148f1b2abc51e5"
+    },
+    {
+      "path": "docs/implementation/validation-0.8.3.json",
+      "bytes": 76342,
+      "sha256": "051c8c9aa44b9250ea42fbd35e5ff3d5956b1d5f44fea9eb9a7c24b7c16a8deb"
+    },
+    {
+      "path": "evals/motion-blur-0.8.3/cases.json",
+      "bytes": 4772,
+      "sha256": "2ae06f82342acf9c6778d0bcb4df597085de89c517372c4f23b896952ce8e4a9"
+    },
+    {
+      "path": "evals/results/motion-0.8.3/artifact-manifest.json",
+      "bytes": 18885,
+      "sha256": "839ef82cabdb8e302baad5b79dcb9c8f47afb8d523f5f62d1a7ef91fa755a5ff"
+    }
+  ],
+  "historical_research_record": "motion-blur-plan-validation-2026-09-23.json",
+  "notes": [
+    "Historical research hashes identify the earlier research-only revision; they were not rewritten after implementation.",
+    "Current document hashes are in this record. The evidence manifest hashes 110 archived artifacts and does not hash itself.",
+    "This record does not hash itself. Raw agent outputs and independent review copies match their original temporary artifacts.",
+    "Current runtime matches the frozen 0.8.3 candidate; documentation-only closeout did not require another full release test run."
+  ],
+  "not_run": [
+    "Video generation or viewing",
+    "UE, Unity, After Effects or VBench execution",
+    "27-video A/B/C pilot",
+    "Host plugin upgrade or remote publication"
+  ],
+  "remaining_overall_work": [
+    "WP04 per-move source details",
+    "WP05 compact retrieval",
+    "WP06 broader library behavior comparison"
+  ]
+}

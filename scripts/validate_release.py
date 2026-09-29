@@ -37,6 +37,7 @@ def main():
         prior={p.name:sha(p) for p in examples.iterdir() if p.suffix in ('.json','.txt')}
         run('rebuild original examples',[sys.executable,'scripts/rebuild_examples.py'])
         run('rebuild action examples',[sys.executable,'scripts/build_action_examples.py'])
+        run('check reviewed motion examples',[sys.executable,'scripts/build_motion_examples.py','--check'])
         current={p.name:sha(p) for p in examples.iterdir() if p.suffix in ('.json','.txt')}
         if prior != current: raise ValueError('Rebuild changed checked-in artifacts; review the generated difference')
         run('pinned source and formal release preflight',[sys.executable,'scripts/project.py','validate-release'])
@@ -88,6 +89,23 @@ def main():
                 '--query','乌龙摆尾','--school','八卦掌','--detail','detailed'],cwd=tmp)
             if [item['id'] for item in json.loads(named['stdout'])['matches']] != ['arvin-tech-bagua']:
                 raise ValueError('Packaged named move lookup mismatch')
+            compact=run('unpacked compact first page',[sys.executable,library_cli,'search','all'],cwd=tmp)
+            if len(compact['stdout']) > 6000:
+                raise ValueError('Compact card first page exceeds initial 6000-character budget')
+            item_page=run('unpacked name-only item',[sys.executable,library_cli,'items','--query','小内返'],cwd=tmp)
+            item=json.loads(item_page['stdout'])['matches'][0]
+            if item['detail'] != 'name_only' or item['source_lines'] != [1808]:
+                raise ValueError('Packaged source detail is incorrect')
+            item_read=run('unpacked selected source row',[sys.executable,library_cli,'item',item['id'],'--source'],cwd=tmp)
+            if 'Ko-uchi-gaeshi' not in json.loads(item_read['stdout'])['item']['aliases']:
+                raise ValueError('Packaged item lost literal alias')
+            item_missing=run('unpacked detail filter',[sys.executable,library_cli,'items','--query','小内返',
+                '--min-detail','description'],cwd=tmp)
+            if json.loads(item_missing['stdout'])['total'] != 0:
+                raise ValueError('Packaged name-only item was promoted by adaptation')
+            raw_card=run('unpacked expanded card',[sys.executable,library_cli,'show','arvin-tech-bagua','--source'],cwd=tmp)
+            if '### 原文' not in raw_card['stdout']:
+                raise ValueError('Packaged source expansion missing')
             run('unpacked imported character',[sys.executable,library_cli,'show','arvin-character-baige'],cwd=tmp)
             missing=run('unpacked missing weapon detail',[sys.executable,library_cli,'search','techniques',
                 '--school','长柄镰刀','--detail','detailed'],cwd=tmp)

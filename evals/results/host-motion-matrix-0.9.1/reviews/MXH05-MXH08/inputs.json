@@ -1,0 +1,46 @@
+[
+  {
+    "id": "MXH05",
+    "request": {
+      "path": "D:\\Temp\\combat-matrix-review-3qj07h8l\\MXH05-request.txt",
+      "sha256": "a358c0c5874e2cea4f0e19026dc6b07461ff713d06b0726d2820abf6062e2897"
+    },
+    "answer": {
+      "path": "D:\\Temp\\combat-matrix-review-3qj07h8l\\MXH05-answer.md",
+      "sha256": "3ce86eda0888f3cbd3a8e1052214c8b769b29b4168eb10fccc8d6bd27a6173bc"
+    }
+  },
+  {
+    "id": "MXH06",
+    "request": {
+      "path": "D:\\Temp\\combat-matrix-review-3qj07h8l\\MXH06-request.txt",
+      "sha256": "85c272493411aee37a8229c03a3836bca933d41ab7117a5f53c1d383c4b004ec"
+    },
+    "answer": {
+      "path": "D:\\Temp\\combat-matrix-review-3qj07h8l\\MXH06-answer.md",
+      "sha256": "9387e595a20ac206f928f19bca1adf2a634e16c836ea42c5dd973fa3c5195ccb"
+    }
+  },
+  {
+    "id": "MXH07",
+    "request": {
+      "path": "D:\\Temp\\combat-matrix-review-3qj07h8l\\MXH07-request.txt",
+      "sha256": "13fea7343e14dd8f17cf424d1263404646f1858ad6a7a113baf1ecaff1039d05"
+    },
+    "answer": {
+      "path": "D:\\Temp\\combat-matrix-review-3qj07h8l\\MXH07-answer.md",
+      "sha256": "f9510dd3c476572945e8bce97f1f5483cf3b1ed55224ce939269e613b7989ee0"
+    }
+  },
+  {
+    "id": "MXH08",
+    "request": {
+      "path": "D:\\Temp\\combat-matrix-review-3qj07h8l\\MXH08-request.txt",
+      "sha256": "84ce65c62e6a4f4ce33ed9f3a5845334be287ddf42db86fdc92d4ce9611460e1"
+    },
+    "answer": {
+      "path": "D:\\Temp\\combat-matrix-review-3qj07h8l\\MXH08-answer.md",
+      "sha256": "e704ed9f2aee83fafafb706849cc477df46076117a57477594c0e90893a802fb"
+    }
+  }
+]

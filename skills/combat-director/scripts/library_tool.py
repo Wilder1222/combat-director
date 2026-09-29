@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import re
 import sys
@@ -18,6 +19,14 @@ SCOPES = ('duel', 'group', 'escape', 'chase', 'ranged', 'sparring')
 FIELDS = {'id', 'kind', 'title', 'scope', 'tags', 'summary', 'requires',
           'excludes', 'path', 'provenance', 'detail', 'schools', 'characters',
           'names', 'source'}
+_spec = importlib.util.spec_from_file_location('combat_library_items', Path(__file__).with_name('library_items.py'))
+items = importlib.util.module_from_spec(_spec)
+_old_bytecode = sys.dont_write_bytecode
+try:
+    sys.dont_write_bytecode = True
+    _spec.loader.exec_module(items)
+finally:
+    sys.dont_write_bytecode = _old_bytecode
 
 
 def require(condition, message):
@@ -157,10 +166,24 @@ def stats(catalog):
             'facet_notice':'筛选值表示已记录的关联；空数组表示未记录该类关联，不证明语义不适用。场面标签是改编候选，不是视频验证。'}
 
 
-def read_card(catalog, card_id, path=CATALOG):
+def load_items(catalog, path=CATALOG.with_name('items.json')):
+    return items.load_items(catalog, path)
+
+
+def compact_search(result):
+    """Display projection only; ranking, filters and paging remain unchanged."""
+    fields = ('id', 'kind', 'title', 'summary', 'detail', 'matched_names', 'matched_names_total')
+    return {**result, 'matches': [{k: entry[k] for k in fields} for entry in result['matches']]}
+
+
+def read_card(catalog, card_id, path=CATALOG, *, source=True):
     entry = next((item for item in catalog['entries'] if item['id'] == card_id), None)
     require(entry is not None, f'unknown card ID: {card_id}')
-    return card_path(Path(path).parent, entry).read_text(encoding='utf-8')
+    body = card_path(Path(path).parent, entry).read_text(encoding='utf-8')
+    if source or not entry['source']:
+        return body
+    return re.split(r'^### 原文 ', body, maxsplit=1, flags=re.MULTILINE)[0].rstrip() + \
+        f'\n\n逐招查询：`items --card {card_id}`；原文展开：`show {card_id} --source`。\n'
 
 
 def main(argv=None):
@@ -177,22 +200,48 @@ def main(argv=None):
     lookup.add_argument('--detail', choices=DETAILS)
     lookup.add_argument('--limit', type=int, default=12)
     lookup.add_argument('--offset', type=int, default=0)
+    lookup.add_argument('--full', action='store_true', help='include all card metadata and provenance')
     show = sub.add_parser('show', help='read one selected card')
     show.add_argument('id')
+    show.add_argument('--source', action='store_true', help='include complete attributed source excerpts')
+    item_search = sub.add_parser('items', help='search named source items, without reading whole cards')
+    item_search.add_argument('--query', default='')
+    item_search.add_argument('--kind', choices=(*items.KINDS, 'all'), default='all')
+    item_search.add_argument('--card', dest='card_id')
+    item_search.add_argument('--school')
+    item_search.add_argument('--character')
+    level = item_search.add_mutually_exclusive_group()
+    level.add_argument('--detail', choices=items.DETAILS, help='exact source detail level')
+    level.add_argument('--min-detail', choices=items.DETAILS, help='minimum source detail level')
+    item_search.add_argument('--limit', type=int, default=12)
+    item_search.add_argument('--offset', type=int, default=0)
+    item_show = sub.add_parser('item', help='read selected source rows plus separate project context')
+    item_show.add_argument('id')
+    item_show.add_argument('--source', action='store_true', help='include verbatim selected source rows')
     args = parser.parse_args(argv)
     try:
         catalog = load_catalog()
         if args.command == 'validate':
-            print(f"PASS: {len(catalog['entries'])} combat cards; index and references valid")
+            data = load_items(catalog)
+            print(f"PASS: {len(catalog['entries'])} combat cards; {len(data['entries'])} source items; indexes and references valid")
         elif args.command == 'stats':
             print(json.dumps(stats(catalog), ensure_ascii=False, indent=2))
         elif args.command == 'show':
-            print(read_card(catalog, args.id), end='')
+            print(read_card(catalog, args.id, source=args.source), end='')
+        elif args.command in ('items', 'item'):
+            data = load_items(catalog)
+            if args.command == 'item':
+                result = items.read_item(data, catalog, args.id, source=args.source)
+            else:
+                result = items.search_items(data, catalog, args.query, kind=args.kind, card_id=args.card_id,
+                    school=args.school, character=args.character, detail=args.detail, min_detail=args.min_detail,
+                    limit=args.limit, offset=args.offset)
+            print(json.dumps(result, ensure_ascii=False, indent=2))
         else:
-            print(json.dumps(search(catalog, args.kind, args.query, args.scope,
+            result = search(catalog, args.kind, args.query, args.scope,
                                     school=args.school, character=args.character,
-                                    detail=args.detail, limit=args.limit, offset=args.offset),
-                             ensure_ascii=False, indent=2))
+                                    detail=args.detail, limit=args.limit, offset=args.offset)
+            print(json.dumps(result if args.full else compact_search(result), ensure_ascii=False, indent=2))
     except (ValueError, OSError) as error:
         print(f'FAIL: {error}', file=sys.stderr)
         return 1

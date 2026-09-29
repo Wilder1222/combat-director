@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "answer_bytes": 11349,
+  "commands_recorded": 11,
+  "direct_read_files": 8,
+  "all_recorded_outputs_present": true
+}
+

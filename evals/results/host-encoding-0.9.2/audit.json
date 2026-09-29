@@ -1,0 +1,282 @@
+{
+  "format": "combat-host-motion-matrix-audit/1",
+  "date": "2026-09-29",
+  "request_authority_sha256": "f76a6d96176479c1985739b9f8fb2a5cb5bd96869651d561294de7909bd03544",
+  "archive_sha256": "aefa93903bdf83806d25459b0249e43f486fe5ca2feab63125bc9490978d03aa",
+  "runs": [
+    {
+      "id": "MXH04",
+      "family": "implicit_fast_contact",
+      "length": "short",
+      "exit_code": 0,
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "artifact_hash_errors": [],
+      "commands": [
+        {
+          "item_id": "item_2",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath '.agents/skills/combat-director/SKILL.md'\"",
+          "exit_code": 0,
+          "replacement_characters": 4599
+        },
+        {
+          "item_id": "item_3",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"python -c \\\"import pathlib,json; p=pathlib.Path('.agents/skills/combat-director'); print(json.dumps({f:(p/f).read_text(encoding='utf-8') for f in ['SKILL.md','references/choreography.md','references/templates.md']},ensure_ascii=True))\\\"\"",
+          "exit_code": 0,
+          "replacement_characters": 0
+        },
+        {
+          "item_id": "item_4",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new(); Get-Content -Encoding UTF8 -LiteralPath '.agents/skills/combat-director/SKILL.md'; Get-Content -Encoding UTF8 -LiteralPath '.agents/skills/combat-director/references/motion-blur.md'\"",
+          "exit_code": 0,
+          "replacement_characters": 7239
+        },
+        {
+          "item_id": "item_5",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"python -c \\\"import pathlib,json; p=pathlib.Path('.agents/skills/combat-director'); print(json.dumps({f:(p/f).read_text(encoding='utf-8') for f in ['SKILL.md','references/choreography.md','references/motion-blur.md']},ensure_ascii=True))\\\"\"",
+          "exit_code": 0,
+          "replacement_characters": 0
+        }
+      ],
+      "source_matches": [
+        {
+          "item_id": "item_3",
+          "source": "references/choreography.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        },
+        {
+          "item_id": "item_3",
+          "source": "references/templates.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        },
+        {
+          "item_id": "item_3",
+          "source": "SKILL.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        },
+        {
+          "item_id": "item_5",
+          "source": "references/choreography.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        },
+        {
+          "item_id": "item_5",
+          "source": "references/motion-blur.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        },
+        {
+          "item_id": "item_5",
+          "source": "SKILL.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        }
+      ],
+      "answer": "8秒成年双人木刀对练，固定侧面全身，一镜到底，正常速度，无超自然能力；甲先快速进步斜斩，乙随即撤步举刀斜架，两刀在身前交接，乙贴刀将来刀带向身体外侧，甲借势屈肘收刀，两刀滑开脱离，双方各退一步站稳；快挥处仅有短弧模糊，起手、接触与分离清楚可追踪，全程各自握持同一把木刀。",
+      "answer_characters": 135,
+      "length_within_requested_range": true,
+      "messages": [
+        "我会按 combat-director 技能编排这段对练，压成一句中文提示词。\n",
+        "8秒成年双人木刀对练，固定侧面全身，一镜到底，正常速度，无超自然能力；甲先快速进步斜斩，乙随即撤步举刀斜架，两刀在身前交接，乙贴刀将来刀带向身体外侧，甲借势屈肘收刀，两刀滑开脱离，双方各退一步站稳；快挥处仅有短弧模糊，起手、接触与分离清楚可追踪，全程各自握持同一把木刀。"
+      ],
+      "usage": {
+        "input_tokens": 222477,
+        "cached_input_tokens": 195200,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 557,
+        "reasoning_output_tokens": 66
+      },
+      "elapsed_seconds": 185.875,
+      "files": [
+        {
+          "path": "MXH04/answer.md",
+          "sha256": "a502ade1feafbd2fc75d2b0dd5b746d1df0aec05a388baf3a9c4cb0cc96f0c04"
+        },
+        {
+          "path": "MXH04/events.jsonl",
+          "sha256": "fc4270fd06748a21676a3bd40ede08d3c5d3076a668ebbbc9ae182295999225b"
+        },
+        {
+          "path": "MXH04/request.txt",
+          "sha256": "5d28ced0b7a229ed9977350dc57cd77afa317ee48204f132a0e7243df4a5fd35"
+        },
+        {
+          "path": "MXH04/run.json",
+          "sha256": "fb58921ee24c6ec4131f1fb1f3d4625bef79bcdb47cc46a424ea57407073b71e"
+        },
+        {
+          "path": "MXH04/stderr.txt",
+          "sha256": "500687ab2c8537ddab3df32e608216bfe4a41763a35e8e8997a3ae1462010af9"
+        }
+      ]
+    },
+    {
+      "id": "MXH06",
+      "family": "trailing_diagnosis",
+      "length": "short",
+      "exit_code": 0,
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "artifact_hash_errors": [],
+      "commands": [
+        {
+          "item_id": "item_2",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath '.agents/skills/combat-director/SKILL.md'\"",
+          "exit_code": 0,
+          "replacement_characters": 4599
+        },
+        {
+          "item_id": "item_3",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"python -c \\\"import pathlib,json; p=pathlib.Path('.agents/skills/combat-director'); fs=['SKILL.md','references/motion-blur.md','references/quality.md','references/review-loop.md']; print(json.dumps({f:(p/f).read_text(encoding='utf-8') for f in fs},ensure_ascii=True))\\\"\"",
+          "exit_code": 0,
+          "replacement_characters": 0
+        },
+        {
+          "item_id": "item_4",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new(); Get-Content -LiteralPath '.agents/skills/combat-director/SKILL.md','.agents/skills/combat-director/references/motion-blur.md','.agents/skills/combat-director/references/quality.md' -Encoding UTF8\"",
+          "exit_code": 0,
+          "replacement_characters": 9367
+        },
+        {
+          "item_id": "item_5",
+          "command": "\"C:\\\\Users\\\\ww\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"python -c \\\"import pathlib,json; p=pathlib.Path('.agents/skills/combat-director'); print(json.dumps({f:(p/f).read_text(encoding='utf-8') for f in ['SKILL.md','references/motion-blur.md','references/quality.md']},ensure_ascii=True))\\\"\"",
+          "exit_code": 0,
+          "replacement_characters": 0
+        }
+      ],
+      "source_matches": [
+        {
+          "item_id": "item_3",
+          "source": "references/motion-blur.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        },
+        {
+          "item_id": "item_3",
+          "source": "references/quality.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        },
+        {
+          "item_id": "item_3",
+          "source": "references/review-loop.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        },
+        {
+          "item_id": "item_3",
+          "source": "SKILL.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        },
+        {
+          "item_id": "item_5",
+          "source": "references/motion-blur.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        },
+        {
+          "item_id": "item_5",
+          "source": "references/quality.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        },
+        {
+          "item_id": "item_5",
+          "source": "SKILL.md",
+          "method": "decoded_json",
+          "normalized_complete_text_match": true
+        }
+      ],
+      "answer": "仅据你的描述，可能是旧姿态重影、尾迹未收束或兵器重复生成，不能认定算法。待核验：收剑前后连续帧、相机运动、原片与后期版差异及设置记录。最小建议：只修确认出错的环节，约束收势后不留独立旧剑轮廓；保留正常速度、单镜头、两人各一把剑及撤开结尾。复测看旧轮廓是否消失、持剑是否连续，效果待验证。",
+      "answer_characters": 143,
+      "length_within_requested_range": true,
+      "messages": [
+        "我会按 combat-director 技能做初步诊断，区分可能原因和待核验证据。",
+        "仅据你的描述，可能是旧姿态重影、尾迹未收束或兵器重复生成，不能认定算法。待核验：收剑前后连续帧、相机运动、原片与后期版差异及设置记录。最小建议：只修确认出错的环节，约束收势后不留独立旧剑轮廓；保留正常速度、单镜头、两人各一把剑及撤开结尾。复测看旧轮廓是否消失、持剑是否连续，效果待验证。"
+      ],
+      "usage": {
+        "input_tokens": 226351,
+        "cached_input_tokens": 167296,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 559,
+        "reasoning_output_tokens": 35
+      },
+      "elapsed_seconds": 120.847,
+      "files": [
+        {
+          "path": "MXH06/answer.md",
+          "sha256": "7f71e7be395bc3d6817200cd7d7e958411e6e2c21835727bca2407bb7fe77364"
+        },
+        {
+          "path": "MXH06/events.jsonl",
+          "sha256": "029bc6aa4f5b94d5be7a7a03c95794dd50213ec5f4db5ba892ba30e10c841218"
+        },
+        {
+          "path": "MXH06/request.txt",
+          "sha256": "85c272493411aee37a8229c03a3836bca933d41ab7117a5f53c1d383c4b004ec"
+        },
+        {
+          "path": "MXH06/run.json",
+          "sha256": "f253ac3510e2228403f5bababbd6b5ebcadfda9eff8b3c34458bc1d0a81a2992"
+        },
+        {
+          "path": "MXH06/stderr.txt",
+          "sha256": "a2ebd816c035d30de75c2a689072c571d7cde18cd0ef663d991751ad37f87e0e"
+        }
+      ]
+    },
+    {
+      "id": "MXH08",
+      "family": "static_confrontation",
+      "length": "short",
+      "exit_code": 0,
+      "candidate_files_checked": 186,
+      "candidate_drift": [],
+      "artifact_hash_errors": [],
+      "commands": [],
+      "source_matches": [],
+      "answer": "8秒，空石院中，两名成年人静态对峙，甲在左、乙在右，相隔三米，各持一根木杖，杖尖低垂；固定侧面全身镜头，正常速度，一镜到底，两人始终保持原位，仅有自然呼吸与衣角轻动，直至结束仍未出手，无超自然能力，无额外特效。",
+      "answer_characters": 105,
+      "length_within_requested_range": true,
+      "messages": [
+        "8秒，空石院中，两名成年人静态对峙，甲在左、乙在右，相隔三米，各持一根木杖，杖尖低垂；固定侧面全身镜头，正常速度，一镜到底，两人始终保持原位，仅有自然呼吸与衣角轻动，直至结束仍未出手，无超自然能力，无额外特效。"
+      ],
+      "usage": {
+        "input_tokens": 21051,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 188,
+        "reasoning_output_tokens": 92
+      },
+      "elapsed_seconds": 17.361,
+      "files": [
+        {
+          "path": "MXH08/answer.md",
+          "sha256": "98dc1972203b33017cab69a34b4aa31469b0928df8a50c1b52d83867d340b189"
+        },
+        {
+          "path": "MXH08/events.jsonl",
+          "sha256": "be966b51d9b2c795dfe79154cedb1e3720e855eb15a2b1bc9304eeab7ede4ff6"
+        },
+        {
+          "path": "MXH08/request.txt",
+          "sha256": "84ce65c62e6a4f4ce33ed9f3a5845334be287ddf42db86fdc92d4ce9611460e1"
+        },
+        {
+          "path": "MXH08/run.json",
+          "sha256": "a97b22412fc0c99a21aa0493810e2823f915a0a0f877bc65c05b5c72d65fe8cb"
+        },
+        {
+          "path": "MXH08/stderr.txt",
+          "sha256": "759303f8251c9132fff606890cf3ef900ce4058c8b1c94ea0a7e4bd851a36cc1"
+        }
+      ]
+    }
+  ],
+  "limits": "Single invocation per cell. Complete-text matches establish readable source content in command output; unmatched files may still have partial reads. Semantic review is separate. No media generated."
+}

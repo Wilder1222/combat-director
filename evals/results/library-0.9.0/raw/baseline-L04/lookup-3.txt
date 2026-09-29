@@ -1,0 +1,13 @@
+HASH_ONLY: D:\Temp\combat-library-behavior-j75bzt8f\baseline\skills\combat-director\scripts\library_tool.py
+SHA256: F1F775B81FD41A00D2BBDD6A1CCF856B358D2FFA3197147D08967E8EE867D364
+HASH_ONLY: D:\Temp\combat-library-behavior-j75bzt8f\baseline\skills\combat-director\library\catalog.json
+SHA256: 9B8F576F7B122E639C599202D8D186F66FD15D749BA90F1703E6C6F8EA95C365
+Traceback (most recent call last):
+  File "<string>", line 10, in <module>
+  File "<frozen runpy>", line 280, in run_path
+AttributeError: module '__main__' has no attribute '__file__'
+Exception: 
+Line |
+  22 |  … XITCODE -ne 0) { throw ('Python exited with code ' + $LASTEXITCODE) }
+     |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Python exited with code 1

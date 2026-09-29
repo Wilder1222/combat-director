@@ -1,0 +1,674 @@
+[
+  {
+    "path": ".codex-plugin/plugin.json",
+    "sha256": "a7cc50f231fe3efa85c07ac8ae5e43294b5d970a0c7d06469f116fd48abee79d"
+  },
+  {
+    "path": "skills/combat-director/agents/openai.yaml",
+    "sha256": "7e3070b077b4446516fb6c1b0b11316f9594ca09070464b3eebed6fbdac369b4"
+  },
+  {
+    "path": "skills/combat-director/assets/combat-plan-v1.schema.json",
+    "sha256": "f9a1322c4d3edcb9feb97293deb4aa962416c033d61297fad1873eb4ba5c5876"
+  },
+  {
+    "path": "skills/combat-director/assets/combat-plan.schema.json",
+    "sha256": "e8db635f660848a14f9bc9cc95f896b1918aefdb2d288bcef2bb71c7499744a9"
+  },
+  {
+    "path": "skills/combat-director/assets/platform-profiles.json",
+    "sha256": "9a2c6876e5dc7bcf4b6a55f8a6b3d63d13567bfc4967a94e6071c41e19d257a9"
+  },
+  {
+    "path": "skills/combat-director/assets/sequence-template.md",
+    "sha256": "713883e4429788688383df9a4151004322d928756b2f9583ea24af6d054d6715"
+  },
+  {
+    "path": "skills/combat-director/assets/take-review.schema.json",
+    "sha256": "8b2fff26b219780e5e64800d729e9e0706ddf97c1b3c3ff76f265a534948dddf"
+  },
+  {
+    "path": "skills/combat-director/examples/alley-letter-15.plan.json",
+    "sha256": "94d31fd247067f2e0c224c38601917ceb26cdfe1af6dbbe1f89a6c144a1d1aeb"
+  },
+  {
+    "path": "skills/combat-director/examples/alley-letter-15.prompt.txt",
+    "sha256": "006ef9534995ead77f74223c52d64ceded59dc025d8804b72cde78dff91c0c39"
+  },
+  {
+    "path": "skills/combat-director/examples/arvin-baige-hongcha-18.md",
+    "sha256": "9a5ffc14cdda6640ce84b6cd4a70e514810af7535df6cac67b8563d786ca58c8"
+  },
+  {
+    "path": "skills/combat-director/examples/arvin-sword-fire-24.md",
+    "sha256": "d2c50f7b537bc594cc9f99566f8ec84bd6d1fb5d89cb458b96a10e1f49f9d7a0"
+  },
+  {
+    "path": "skills/combat-director/examples/colossus-30.plan.json",
+    "sha256": "cdefde27822dc8af2af51a169440abc5e6e61249d36fe8c6f17367df4fdc7f3b"
+  },
+  {
+    "path": "skills/combat-director/examples/colossus-30.prompt.txt",
+    "sha256": "d86976716eb0bbc754c4dd2566b94ed70d5ba70ad89c789dd1091577d8b5d0db"
+  },
+  {
+    "path": "skills/combat-director/examples/corridor-escape-24.md",
+    "sha256": "286945538269cbf4d6d9d728f6f4572332691e05af7c0e5529dc37687c1ff7c4"
+  },
+  {
+    "path": "skills/combat-director/examples/entrance-cliffhanger-15.md",
+    "sha256": "f858b8b9d2d94209d9db27d46b886d14b01e7176d636d18db90806ede12dd4e8"
+  },
+  {
+    "path": "skills/combat-director/examples/epic-30.plan.json",
+    "sha256": "fae91663a4c2659001300a1d75a607414834badcddf2580a14907a1b9d076fa8"
+  },
+  {
+    "path": "skills/combat-director/examples/epic-30.prompt.txt",
+    "sha256": "60dc51fca909d111249c82bdaa7132f75d1b3aeb958b461c3c43945d7327dff6"
+  },
+  {
+    "path": "skills/combat-director/examples/failed-counter-repair-18.plan.json",
+    "sha256": "fc6f60f0e515526a19d912be2056920aef04bd831c8b029706398b8568d6d99e"
+  },
+  {
+    "path": "skills/combat-director/examples/failed-counter-repair-18.prompt.txt",
+    "sha256": "e36ae102343f18c3a7d689057d30a443c577b947be30c7cdc41adcb55e79146e"
+  },
+  {
+    "path": "skills/combat-director/examples/grounded-15.plan.json",
+    "sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23"
+  },
+  {
+    "path": "skills/combat-director/examples/grounded-15.prompt.txt",
+    "sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d"
+  },
+  {
+    "path": "skills/combat-director/examples/particle-blade-12.md",
+    "sha256": "e4ecfef1961ad0477dfedad79d551bbcf5d395489c6b577f1c9b10188661e9c6"
+  },
+  {
+    "path": "skills/combat-director/examples/particle-staff-12.md",
+    "sha256": "c3e13653cfc1f85d29fa97d21848fe713c3fdda6efd63105e813fb8e42fc5b52"
+  },
+  {
+    "path": "skills/combat-director/examples/return-and-payoff-18.md",
+    "sha256": "0ef62ded7e1fc710e64d355146e9bac78b5517a4a02cb472891747da8715ea1b"
+  },
+  {
+    "path": "skills/combat-director/examples/sword-recovery-18.md",
+    "sha256": "8b253eb4d4494be465706b299503c459a5346b5d0fc8407f6c98c211f94d666d"
+  },
+  {
+    "path": "skills/combat-director/examples/three-person-exit-18.plan.json",
+    "sha256": "6eb88a8f9eb0f9954e2030acb85d04a296c52e132452d0618b72c97ec2dc5799"
+  },
+  {
+    "path": "skills/combat-director/examples/three-person-exit-18.prompt.txt",
+    "sha256": "e558aa812f97e07f364e9eabd392964fa20dcb203e7faaaa3f3a070d24962fa6"
+  },
+  {
+    "path": "skills/combat-director/library/abilities/cloth-field.md",
+    "sha256": "19238f850f669ff36b91e0254df0f259db99ea85e8c7022882c3becf57555b3c"
+  },
+  {
+    "path": "skills/combat-director/library/abilities/finger-lines.md",
+    "sha256": "6c975841a8acae622db1f366c2c44da8f246f7904c57283c8afd8963ce5819db"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-color.md",
+    "sha256": "e4e5e8a158d4afd95a25b8634a3e670ab716584faf782ecc47de17cd7ecaa924"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-moves15.md",
+    "sha256": "ab11ea2cfc4a7d544ad1f93d0e2a3017e72bcd11263bae8592dd6df4c777472f"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-pattern-a.md",
+    "sha256": "a10de1a02de682fc588c24341f19abe6151882c5c41114e211eac8534d5f892e"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-pattern-b.md",
+    "sha256": "78a8b4fd2ba7b39c5d90b09acef18473ec1f235d82377966e14fe02c4343fb6c"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-pattern-c.md",
+    "sha256": "d21b39feb4b9e65efda3ef7a9a49f574ba7458a1f2ff3827cbb3965fcaaf9fd4"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-pattern-d.md",
+    "sha256": "3568f497c974ca6135d940f09d0c5fffd06bf044eb0ed383c6d568da7e97586d"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-pattern-e.md",
+    "sha256": "1f153725fcc48788cfddcbfec9a0915c21112aee175d52bef6bca5369e9a5cf2"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-pattern-f.md",
+    "sha256": "b14b54d2854c2917a88e2654840ba4b19b550985c03f848ccd50e072e4bd080d"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-pattern-g.md",
+    "sha256": "a6d029395349285f15b34fcd3f532abc4b15cd6bad97644b575f2f3560c74311"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-pattern-h.md",
+    "sha256": "564bd422b9ff4e59fe18fd16bde64c6215aac58aa4d5c78db568589e5b5b6ad6"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-pattern-i.md",
+    "sha256": "218edab34839b55dc78778fc97a14ad63a577791a57d0fb2cd590cda3441a303"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-pattern-j.md",
+    "sha256": "c731695075674d978c34d46a383befefb524261edf2929fdb094737654bcf77e"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-pattern-k.md",
+    "sha256": "c75c85b361436357b41b58c71917205ec39b6b3c1b36231488490d726dec8ebc"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-spec.md",
+    "sha256": "79e80c23a68f838f03f9c955a442caf6b50b5c6c876a8a30c79b9eeb6647330c"
+  },
+  {
+    "path": "skills/combat-director/library/camera/arvin-camera-weapons.md",
+    "sha256": "739d705bddc1eda870cac6dec038dc30f02a5f4e7e316834661ba17f001d766a"
+  },
+  {
+    "path": "skills/combat-director/library/catalog.json",
+    "sha256": "bf4a624b97704db116d23ecabbd3c469819087078feea861200746d2b7f7e15f"
+  },
+  {
+    "path": "skills/combat-director/library/characters/arvin-character-baige.md",
+    "sha256": "7ec25dc76608d1250cf1d479c36c057ebd19fce9c8a5fb47270399448621b12a"
+  },
+  {
+    "path": "skills/combat-director/library/characters/arvin-character-bale.md",
+    "sha256": "e98b5a8d9c9e36883752d85bfe353895dea129dd0df70e365883eb158414d664"
+  },
+  {
+    "path": "skills/combat-director/library/characters/arvin-character-bingnv.md",
+    "sha256": "7a5b6887cd33043e8f0bb0080a713b0fede34306d9de5994f3e49ba4f5c60d36"
+  },
+  {
+    "path": "skills/combat-director/library/characters/arvin-character-feixue-fire.md",
+    "sha256": "3b2fa5dd6a339f2d12e4e4443fec4f2af43ff7a45b4dcda8956d02acec45a521"
+  },
+  {
+    "path": "skills/combat-director/library/characters/arvin-character-hongcha.md",
+    "sha256": "ecfe22513d7aaecbf7ddc260139ce9092ec8a2fccdc1af6dff82d901c213ffd0"
+  },
+  {
+    "path": "skills/combat-director/library/characters/arvin-character-jianshen.md",
+    "sha256": "a0dccf1aeeac0fc90e6b888f3c398f6baa87664f43988c53bf47f4443267f8d7"
+  },
+  {
+    "path": "skills/combat-director/library/characters/arvin-character-leidian.md",
+    "sha256": "8d3ac3291bb85812a213c9b00cede4806a946e4a49e25cab34327bead6533d7d"
+  },
+  {
+    "path": "skills/combat-director/library/characters/arvin-character-linyu.md",
+    "sha256": "37872a9b96b435e33e0ab6a7e8fdc1c893cf6f11dcf7b8d5c499e7bda1915b48"
+  },
+  {
+    "path": "skills/combat-director/library/characters/arvin-character-taiji.md",
+    "sha256": "825a2fb8d9fd8550a5cd2c616429ada038aaae74985a492908a5a2e0c36ad453"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-aftermath.md",
+    "sha256": "1e68945681704fc2e58e10b955705dabbb7ba05bebe4d6519fa8208bf516776d"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-baji-pairs.md",
+    "sha256": "940e962a234f18fe883eb57dffb5a0bc6920be1ca60fb018ecd9680b233fc84a"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-break.md",
+    "sha256": "b5386ad43fbc62cdd4cb4b01c6b56253dede7d78b8585cba993f35442f896b39"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-breath.md",
+    "sha256": "16e4aae3d96356cc4d93c271d907162e09f99686678379477b8c1f856e3c38be"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-control-followup.md",
+    "sha256": "b748a262a407c3bb3741136d110f43fb4c061958376e3f8d05ce02934e5e61a0"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-entry.md",
+    "sha256": "ada68426a93f1142e85c666f0618bf9f76dc44265d1b9667a3383bfade05fc50"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-escalation.md",
+    "sha256": "745535d8091fa14b63251501ef8826a6aa2730303cb3c823626632d62c104c03"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-hands.md",
+    "sha256": "085ffd6f58632e72ac9ebdefedf61049f4a42d3599807eafa99e61af54339da8"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-kicks.md",
+    "sha256": "3f027845f5b3fe7afe41329cd064da39a371172f3a669f1d84120832f509f1ae"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-mixed20.md",
+    "sha256": "f7e1a97727549e8151b269232a6f0716e0b8772f4cb224603d6e91f15322011b"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-payoff.md",
+    "sha256": "28f4cfa2bb0f13ea59bb35596ddf3ed220ff3824229857e895dfc523186125d5"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-reaction.md",
+    "sha256": "005e99cfd4b2aa2ca32390019eb48e72d175049ac2ce7adfe6e8286392176140"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-redirection.md",
+    "sha256": "dd72b6ef6f12083e0403472283fe8c5956a00f30a484a827c7fb73e2b26cf60e"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-rhythm.md",
+    "sha256": "66acba4e1e483f8f9385e7b67ae5b5ac7af990b623127f031b8a7ff2178cfa20"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-school-chain.md",
+    "sha256": "4d5795464ec572c631fffadff1bd64105b80c90b85d3ae582c1ad8375b56bbcc"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-space.md",
+    "sha256": "fc176c9ca28560502d179febffe178b9ce0ea7a69d57fde19991f24db4313ee4"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-turning.md",
+    "sha256": "b91dc99edbbf80b095885ccc31e107d21af111acd884f11eeb5b462a58272c2d"
+  },
+  {
+    "path": "skills/combat-director/library/choreography/arvin-choreography-upper-lower.md",
+    "sha256": "d4e67cd0e813fa5831f7ebd0c71ae60b867ff577cff97388de06f43586ca495d"
+  },
+  {
+    "path": "skills/combat-director/library/design/claw-control.md",
+    "sha256": "d40c3e33523e5867870e9107476cfa2596d8879b9549ff0cb52ee889bdbecc8b"
+  },
+  {
+    "path": "skills/combat-director/library/design/cloth-redirection.md",
+    "sha256": "d9e678752057b971e209014d655cbb85f3513ef3f1fae2b28bd94dc812fe7243"
+  },
+  {
+    "path": "skills/combat-director/library/design/corridor-exit.md",
+    "sha256": "c5317dcbcfc26bf7daf11d04b39cb0e59f0fa14f38b366fb61573b4cf01ddbe0"
+  },
+  {
+    "path": "skills/combat-director/library/design/opening-counter.md",
+    "sha256": "81b8e2122bcd675eefeea3f2224e2aa51b2ac15f7d149758dfa53a09334aeb3d"
+  },
+  {
+    "path": "skills/combat-director/library/design/round-sword.md",
+    "sha256": "9509742b157b937779096e8a736c1a989d1160bb739c6980c48683c9d3f7b14b"
+  },
+  {
+    "path": "skills/combat-director/library/effects/arvin-effects-air.md",
+    "sha256": "9699c9e45c6b8d6e01937d57fba521e5a21f69cd13075a3018d472ffad57c7b5"
+  },
+  {
+    "path": "skills/combat-director/library/effects/arvin-effects-character-signatures.md",
+    "sha256": "9987e1653e2f5c75f29e6b2ea2f79f8cf310dab06ed7101ee2fbf61d5e006f14"
+  },
+  {
+    "path": "skills/combat-director/library/effects/arvin-effects-intensity.md",
+    "sha256": "4fbbe13f97ed11043e3f553cbdd0ac718ebdd5faa5d96a750392fe91c56b86d1"
+  },
+  {
+    "path": "skills/combat-director/library/effects/arvin-effects-trajectory.md",
+    "sha256": "794b68fd8ed3dc371e8448ecfe2b460b1032622746ba84a633cf157ca6992c69"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-1.md",
+    "sha256": "abb8a0fba440b6d80ba34cf3658bae26780ffc91a185b2f96cc6b89aa88809ab"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-10.md",
+    "sha256": "e1ba94e60e6a85b48906c79c65921a55c98a588a8965b4f750d0c71fc6d61588"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-11.md",
+    "sha256": "8ea8aab173ec020b3f39ce7bbe80fdf035b2df655815b7d995627d3e1eccc8d0"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-12.md",
+    "sha256": "5ec824872e16709e135ca952441d28881d153a79b07b7d27a624e342214a239c"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-13.md",
+    "sha256": "e49fb601228ed0da6a33280dc161e4fa42576a391ae319a49e5a14de0ba0bbf3"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-14.md",
+    "sha256": "4b8ea3321ee9259a70d1e174dc170e48cc061ea9264ea88e3927a34f483d72bc"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-15.md",
+    "sha256": "2eef6f4f80bf1557829dfdd66d2bcfe3c7d514097728ef8034dfac933d7167af"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-16.md",
+    "sha256": "9b2b834c16d9707e8cc77600aec59321d659862b62d8b1a016fafb9b80bc9637"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-17.md",
+    "sha256": "247f6dc9ac61d58e2e726a12b30de63af1500618991c8af72c4b99721020bb99"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-18.md",
+    "sha256": "adacc4c46f9dfce5aa4987cf2e8611a28a3480268c30c5943af8fb4cf6d7b356"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-19.md",
+    "sha256": "05013f211a5c4a8986efbee2f62f51394cb9ce1c54dbf931f17fd0cb92af01a6"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-2.md",
+    "sha256": "dc886f57afc9d170ff866ebd56e534fa02bb1ff4778bdafb6e8e2da53da5b0dc"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-20.md",
+    "sha256": "a49b7e962af3e93c5a4233039e563194a8bd5cc8a21bdd32c48ab2c0ad758cd1"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-3.md",
+    "sha256": "1908291c2362a0841c288dea33fe94c85544855ddd3e90b8ca83eaf38ab74540"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-4.md",
+    "sha256": "a8e7ea7c77140edf8aa584a46e9bdf95470f0ac8fb312c2d0ca2421bcada7714"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-5.md",
+    "sha256": "9e747286e6ce8ed3b571dc915f8be7f88f637a58f2ecf7b153d53ebef26eccb7"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-6.md",
+    "sha256": "180a230216dd75138770290b5cd2db708e8cf6f236b08614f15d25301a080e07"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-7.md",
+    "sha256": "e5cdcc9ebfe7901f65a1abc26988f053b47322f3ab52e234a944e82a694b6cac"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-8.md",
+    "sha256": "eb989bd1ac712ba3d0548023dc30f27709b23bd7f59c806ee61f5a4075913318"
+  },
+  {
+    "path": "skills/combat-director/library/scenes/arvin-scene-9.md",
+    "sha256": "5f94072d937dc309c65aa67d9943f15276d3da3727db2a28a3fc5a679919cbee"
+  },
+  {
+    "path": "skills/combat-director/library/styles/arvin-style-1.md",
+    "sha256": "5d3e7dd5a78971bb85fbd35a0ef3e9a3a7b2ca8daf58c107ace5e61bfe5c1297"
+  },
+  {
+    "path": "skills/combat-director/library/styles/arvin-style-2.md",
+    "sha256": "2cf5abe527ece01307ac17e9a45716a9641fb27d35c0022e80ff002c54c7e331"
+  },
+  {
+    "path": "skills/combat-director/library/styles/arvin-style-3.md",
+    "sha256": "48e02b840a27a6cb1ebd551509862993595412b51b8b862e89ae4fcdc018108d"
+  },
+  {
+    "path": "skills/combat-director/library/styles/arvin-style-4.md",
+    "sha256": "3e52f68120a2a489edc7bde304e773cfe7b5383004cf2c0e5045414583af62bb"
+  },
+  {
+    "path": "skills/combat-director/library/styles/arvin-style-5.md",
+    "sha256": "6b8275e61e85d4a5bef668f24751972b7d30ed9e90a7005b267b565a5fa2032b"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-aikido.md",
+    "sha256": "59ca1d590e53a641cad53702dcb83b31afa92fdfa58494342b0101d859ee9ac9"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-bagua.md",
+    "sha256": "aa55433e19dd49fc4c5e2cbc3e9397905dd5203b823bddd71d5cd50861c8da33"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-baji.md",
+    "sha256": "c6f6cc7b1df9f0a174051cabba43cac9b5601ce07cf26cc56dae1fb31dd2a762"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-caijia.md",
+    "sha256": "3494237e576e577d358a4c10f6bc183c50654c71890585daa62f980d049915ae"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-capoeira.md",
+    "sha256": "be2aa7c58a3fa4f4a6a8736310bf3689b1f175c481ca1d162fb863c42cb91c98"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-choyleefut.md",
+    "sha256": "7bf646112d4b55b5336d5ab891dd32b9248e61cdf0f3ddcb34e5b3830f1608ff"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-drunken.md",
+    "sha256": "9b63f788cc6d637cfe0b604d64d387cc2e1142bfa387a130aeae60c9afc3ea48"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-dugu.md",
+    "sha256": "72f7fd95c36b8b0d9001fc7d9b686cb2682eb372d3e7b937731a5a3cf352a4a6"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-feixue-frost.md",
+    "sha256": "bb77aaf52be4492016dc039da6c9d82720ba24dc160ed488d021629de0cbbe4b"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-groundlegs.md",
+    "sha256": "efa10a1130f780a9ba09ba03c1dc5adc8435d357ac9f1c0f9b259b871f3b47d4"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-huashan.md",
+    "sha256": "dd9b67f17a51817118104fd81ee46cab766bcc7813a1e8ea2bd60f99255b4379"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-hunggar.md",
+    "sha256": "e13d98d724b64410a8108def40ade5e0284fd5d57d653a50ca66529e9d19caf1"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-immortal-sword.md",
+    "sha256": "03b860420fdaaf0b23edb3a9b16d568c3fecb7d07bbcf0ea70bfb4098a4b600d"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-jeetkune.md",
+    "sha256": "62bf4fd6ec4c8d04b4509fcb49639c0d468a54df376f7583188511cb21377ad7"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-jiujitsu.md",
+    "sha256": "7bd9b0bce942bc295a44c33857acc37c71acff1ae8822995eb457e61ac515260"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-judo.md",
+    "sha256": "38ee8d33f72668e63fdaf3c8756ad4b188dd559ce59c756d7c64fc4c1305e0a0"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-karate.md",
+    "sha256": "72a5bc768ae1df959b8cbf08ccbdf81553d82615deefb47361d713f9b984a80d"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-legs36.md",
+    "sha256": "4a5fe8dc25f35ed065534257ca00bf4e7f5041f0d86bd7cdce6a6cec3ff4e708"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-mantis.md",
+    "sha256": "99f3c405d3b7bf90e5ed52b6973185c70e3884750eda3443a5d90cbf06a3618f"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-muaythai.md",
+    "sha256": "f4c06eb6726518cd0a1c87df539cfe3d74b6b1c2cac3794469104c0361d3732e"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-musou.md",
+    "sha256": "419752d99fe37c59e4f56551df5383342f4ab71b6938f9af32346fdb63f713a9"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-qinggong.md",
+    "sha256": "71838b24eb66308fb38605d54c4802a05d4167c2ab63b78f60400711e63025f3"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-qinglong.md",
+    "sha256": "63a39b39db55595458a0218e4c1d21572c9ab2adb38ee5ceae8e38038198e0e1"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-qinna36.md",
+    "sha256": "10d6ff2a92ac0716d40c277528ba088ced61d700381f4c6f31dbf41dafb93196"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-sanda.md",
+    "sha256": "e0cf3d9f6ead01137260c557a7c2c0058dee4284a25bac4fc395726a0a80b2f1"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-scythe.md",
+    "sha256": "4d37a42e2f324416ca463a111b02e80911e608ef25670c27dcfc2de05d67ca60"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-taekwondo.md",
+    "sha256": "0da35f51e4c60446934035edd594b301cd29d83597578fc87603898d945bd5ad"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-taiji.md",
+    "sha256": "59496833b2d2fbc265144553015a42a1ad453252dd9b5566d9103c05671d5cc0"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-taiyi-sword.md",
+    "sha256": "4456c5879d538f7ea4a55ba9a7f1e92d8c975f6637b5c5a0dcd4c6ed73c117aa"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-tantui.md",
+    "sha256": "293c5f223ceed195468cd909abe973ebf8f591f2f1cfa204891a054810f1cc10"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-whiteape.md",
+    "sha256": "3c2e291137a7c8f0bf35e60fa80e80f2eab75acae8e3f15933221a40c54e1710"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-wingchun.md",
+    "sha256": "7ec8b32aaeff635bb75a70979a364e4c10de99b23e4bd41d980268efafb40053"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-wudang132.md",
+    "sha256": "7637a7fd0808657c33951b4780ac60ddc62a447ab507fb4402b095adefb4ded2"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-wuxia-step.md",
+    "sha256": "feadc77ef4514f379f719e420e3db67da28e6311d987e90cf62cc6c29d8285cd"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-xingyi.md",
+    "sha256": "cd02579bf348a23695a96b9073b529ff59824110ab3fdf210ed698e5fe6c93d7"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-yang55.md",
+    "sha256": "52f90afc4b9027044df1a65f3909cd496b666d7e76f6358ef2173c80b7a45c23"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-yunv.md",
+    "sha256": "46db43bb6d3a2445e5e8a2d58c7f677ef9476ec1dc7b6781313386f549d58eb5"
+  },
+  {
+    "path": "skills/combat-director/library/techniques/arvin-tech-ziwu.md",
+    "sha256": "b45468f80cc85b6655551063c83a9bb59f6d51555d1df569a9494f8f0e5da025"
+  },
+  {
+    "path": "skills/combat-director/references/action-contract.md",
+    "sha256": "e6f32fae84bebb623b0cc674a6d912b11e662f6aa41d505d6194618049ff3c26"
+  },
+  {
+    "path": "skills/combat-director/references/action-design.md",
+    "sha256": "234e6af1206fae54c26a11665ee7f2a110ca56ae3ee6ec6d918869e9d27ff7d9"
+  },
+  {
+    "path": "skills/combat-director/references/choreography.md",
+    "sha256": "33b1295409d6f40b49987d43995e78073527a99a580146dc271236b51e11132f"
+  },
+  {
+    "path": "skills/combat-director/references/combat-modes.md",
+    "sha256": "d0d08ecdbd337aa15c08fb684075fb1b3080087574a670c984765ac6a5c16c86"
+  },
+  {
+    "path": "skills/combat-director/references/contract.md",
+    "sha256": "a49bd8940dca7c09688e617116b6fb1ab9a88c5d6c3efc156af98f888c8e51d7"
+  },
+  {
+    "path": "skills/combat-director/references/library-workflow.md",
+    "sha256": "e2a3fa620d6871e7a7576085e21d5a00d4e7d6709de6ab7ae6d107d6215368a7"
+  },
+  {
+    "path": "skills/combat-director/references/particle-vfx.md",
+    "sha256": "c81c438f23dbaa7320cb777e7a1a185a43d7297025cda4949adb6bc150fc7bd4"
+  },
+  {
+    "path": "skills/combat-director/references/platforms.md",
+    "sha256": "8290d2d7221ed2fe1f3540e959084c49e389ff38a257e2040f5ed9a542b59663"
+  },
+  {
+    "path": "skills/combat-director/references/prompt-craft.md",
+    "sha256": "3f86657cf7aabda9f68fc2202188d5855be88fd2d24051aecb6555b83628bc7d"
+  },
+  {
+    "path": "skills/combat-director/references/quality.md",
+    "sha256": "3d9f526586befb740da1c552f9007fe077cdc8b33273c4c168152c68e1674a07"
+  },
+  {
+    "path": "skills/combat-director/references/review-loop.md",
+    "sha256": "ca42a3bb6e3dc5a5cfcc6c4db72fb7565afd082ed62228687a0f42bff03fd06d"
+  },
+  {
+    "path": "skills/combat-director/references/source-case.md",
+    "sha256": "b2ea0718c39867200c8e6d7f1adbfad0ddf6ec9e3e097f86565b89fdaa0f91ea"
+  },
+  {
+    "path": "skills/combat-director/references/sources.md",
+    "sha256": "7ba88c0e14c28844d61309ebad9f20e47ccfff90fba7912a5717649eab3701b1"
+  },
+  {
+    "path": "skills/combat-director/references/technique-adaptation.md",
+    "sha256": "338245168f8c1e529cbab360712c01332b7adc3841e99f905f1df607ddf35107"
+  },
+  {
+    "path": "skills/combat-director/references/templates.md",
+    "sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1"
+  },
+  {
+    "path": "skills/combat-director/references/third-party-notices.md",
+    "sha256": "f3431a35bce3f983d61fd87e4a383433e4bdd794959ba54af9d9f34c005dd354"
+  },
+  {
+    "path": "skills/combat-director/scripts/combat_action.py",
+    "sha256": "2561186638e7b840c2ce2265e3c0b85e53d3baf9ce7a57fc96a14899b3ae613d"
+  },
+  {
+    "path": "skills/combat-director/scripts/combat_evidence.py",
+    "sha256": "1a7d22ee88f250fec15dc17af26864f953439f1495fc30b384f0dd079a38b23f"
+  },
+  {
+    "path": "skills/combat-director/scripts/combat_handoff.py",
+    "sha256": "28f922147132b748ec01e8cf1f8176f81c97409b4218f7edd4ce91b9c080c8a1"
+  },
+  {
+    "path": "skills/combat-director/scripts/combat_review.py",
+    "sha256": "f1ff9cca2fbe6ec455ec0ea3b81da295dec153eac01729828339f2d83a311ae1"
+  },
+  {
+    "path": "skills/combat-director/scripts/combat_schema.py",
+    "sha256": "673e6975eebf2bee73b826312c0c89774993951ac566b2299dccbc6d355b8bc9"
+  },
+  {
+    "path": "skills/combat-director/scripts/combat_tool.py",
+    "sha256": "1fade69a451269acf0efffc4230f127da905adde49f73394127ae260d34f6104"
+  },
+  {
+    "path": "skills/combat-director/scripts/library_tool.py",
+    "sha256": "d5e685ccf6c9247d401f5e5d1df5bb1a43d0a7d312253fc94c5c840bdf2b843e"
+  },
+  {
+    "path": "skills/combat-director/SKILL.md",
+    "sha256": "45205e0c33e1967a41d89bc23e83f8c8812b36c0b0c46f02d11b08a3691dc544"
+  }
+]

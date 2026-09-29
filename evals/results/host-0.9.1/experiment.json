@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-29",
+  "status": "three_cases_complete_with_preserved_failed_attempts",
+  "case_authority": "../../host-0.9.1/routing-cases.json",
+  "actual_attempts": 9,
+  "selected_final_runs": [
+    "H01-attempt4",
+    "H02-attempt4",
+    "H03"
+  ],
+  "summary": "summary.json",
+  "limits": "Final success is conditional on recorded CLI, readable workspace and catalog isolation; prior failures retained. Broader suggested routing matrix not run."
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-24",
+  "status": "not_run",
+  "scope": "Read-only WSL availability probe for Linux validation.",
+  "observations": [
+    {
+      "command": [
+        "wsl",
+        "--list",
+        "--quiet"
+      ],
+      "exit_code": 0,
+      "stdout": "Ubuntu\r\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "python3",
+        "--version"
+      ],
+      "exit_code": 4294967295,
+      "stdout": "无法将磁盘“C:\\Users\\ww\\AppData\\Local\\wsl\\{b080e41a-e483-415f-af75-629b2d44e148}\\ext4.vhdx”附加到 WSL2: 系统找不到指定的文件。 \r\n错误代码: Wsl/Service/CreateInstance/MountDisk/HCS/ERROR_FILE_NOT_FOUND\r\n",
+      "stderr": ""
+    }
+  ],
+  "outcome": "Ubuntu is registered, but startup failed with a missing virtual-disk error. No Linux interpreter or test ran. Host WSL configuration was not modified."
+}

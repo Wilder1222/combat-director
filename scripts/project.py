@@ -84,7 +84,8 @@ def validate(root: Path) -> list[Path]:
     library_spec = importlib.util.spec_from_file_location('release_library_tool', skill / 'scripts/library_tool.py')
     library = importlib.util.module_from_spec(library_spec)
     library_spec.loader.exec_module(library)
-    library.load_catalog(skill / 'library/catalog.json')
+    catalog = library.load_catalog(skill / 'library/catalog.json')
+    library.load_items(catalog, skill / 'library/items.json')
     return files
 
 
@@ -100,7 +101,11 @@ def build(root: Path) -> Path:
     temporary = Path(temporary)
     try:
         write_archive(root, files, temporary)
-        os.replace(temporary, output)
+        # Keep an identical verified archive in place. Apart from preserving its
+        # mtime, this avoids unnecessary Windows replacement contention with
+        # readers of the previous build. Changed bytes still require os.replace.
+        if not output.exists() or output.read_bytes() != temporary.read_bytes():
+            os.replace(temporary, output)
     finally:
         temporary.unlink(missing_ok=True)
     return output
@@ -115,6 +120,13 @@ def validate_release(root: Path) -> list[Path]:
     builder = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(builder)
     builder.check_outputs(root, builder.render(root))
+    motion_generator = root / 'scripts/build_motion_examples.py'
+    if not motion_generator.is_file():
+        raise ValueError('Formal builds require the motion example generator and reviewed sources')
+    motion_spec = importlib.util.spec_from_file_location('project_motion_builder', motion_generator)
+    motion_builder = importlib.util.module_from_spec(motion_spec)
+    motion_spec.loader.exec_module(motion_builder)
+    motion_builder.check_outputs(root, motion_builder.render(root))
     files = validate(root)
     return files
 

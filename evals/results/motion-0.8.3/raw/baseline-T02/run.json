@@ -1,0 +1,61 @@
+{
+  "task_id": "T02",
+  "condition": "baseline",
+  "task_original": "写10秒成年双人木杖对练，固定侧面双人全身，一镜到底，正常速度。甲快速斜劈，乙撤步接开，甲回收后双方脱离。想要自然运动模糊，但看得懂招架；后面是静止砖墙。没有法术。给3段可直接投喂的中文提示词。",
+  "model_exact_identifier": "未知",
+  "timing": {
+    "start": "未知",
+    "end": "未知",
+    "elapsed": "未知"
+  },
+  "read_files": [
+    {
+      "absolute_path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\baseline\\skills\\combat-director\\SKILL.md",
+      "sha256": "45205E0C33E1967A41D89BC23E83F8C8812B36C0B0C46F02D11B08A3691DC544"
+    },
+    {
+      "absolute_path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\tasks\\T02\\request.txt",
+      "sha256": "7C50FCB476C71DDDE9B51405B94B508901F379F88EAC754B5E9A386AA762E6BE"
+    },
+    {
+      "absolute_path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\baseline\\skills\\combat-director\\references\\choreography.md",
+      "sha256": "33B1295409D6F40B49987D43995E78073527A99A580146DC271236B51E11132F"
+    },
+    {
+      "absolute_path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\baseline\\skills\\combat-director\\references\\templates.md",
+      "sha256": "294C7CE6509B397604827323EEA4469D9D37555C2EF93577F21F3CBDBD24C5F1"
+    },
+    {
+      "absolute_path": "D:\\Temp\\combat-motion-eval-e1dsw32j\\baseline\\skills\\combat-director\\references\\combat-modes.md",
+      "sha256": "D0D08ECDBD337AA15C08FB684075FB1B3080087574A670C984765AC6A5C16C86"
+    }
+  ],
+  "executed_commands": [
+    {
+      "command": "$paths = @('D:\\Temp\\combat-motion-eval-e1dsw32j\\baseline\\skills\\combat-director\\SKILL.md', 'D:\\Temp\\combat-motion-eval-e1dsw32j\\tasks\\T02\\request.txt'); foreach ($p in $paths) { [PSCustomObject]@{Path=$p; SHA256=(Get-FileHash -LiteralPath $p -Algorithm SHA256).Hash; Content=(Get-Content -LiteralPath $p -Raw)} | ConvertTo-Json -Depth 3 -Compress }",
+      "exit_code": 0,
+      "result": "成功读取技能入口与本任务原文，并取得 SHA256。"
+    },
+    {
+      "command": "$paths = @('D:\\Temp\\combat-motion-eval-e1dsw32j\\baseline\\skills\\combat-director\\references\\choreography.md', 'D:\\Temp\\combat-motion-eval-e1dsw32j\\baseline\\skills\\combat-director\\references\\templates.md'); foreach ($p in $paths) { [PSCustomObject]@{Path=$p; SHA256=(Get-FileHash -LiteralPath $p -Algorithm SHA256).Hash; Content=(Get-Content -LiteralPath $p -Raw)} | ConvertTo-Json -Depth 3 -Compress }",
+      "exit_code": 0,
+      "result": "成功读取六轨编排与战斗母版，并取得 SHA256。"
+    },
+    {
+      "command": "$p = 'D:\\Temp\\combat-motion-eval-e1dsw32j\\baseline\\skills\\combat-director\\references\\combat-modes.md'; [PSCustomObject]@{Path=$p; SHA256=(Get-FileHash -LiteralPath $p -Algorithm SHA256).Hash; Content=(Get-Content -LiteralPath $p -Raw)} | ConvertTo-Json -Depth 3 -Compress",
+      "exit_code": 0,
+      "result": "成功读取场面调度中的演武与试招规则，并取得 SHA256。"
+    },
+    {
+      "command": "$paths = @('D:\\Temp\\combat-motion-eval-e1dsw32j\\results\\baseline-T02\\answer.md', 'D:\\Temp\\combat-motion-eval-e1dsw32j\\results\\baseline-T02\\run.json'); foreach ($p in $paths) { [PSCustomObject]@{Path=$p; Exists=(Test-Path -LiteralPath $p -PathType Leaf); Bytes=(Get-Item -LiteralPath $p).Length} | ConvertTo-Json -Compress }",
+      "exit_code": 0,
+      "result": "确认两个输出文件均存在且非空；answer.md 为 1969 字节，run.json 在补记本命令前为 3375 字节。仅检查文件元数据，未读取输出内容。"
+    }
+  ],
+  "output_files": [
+    "D:\\Temp\\combat-motion-eval-e1dsw32j\\results\\baseline-T02\\answer.md",
+    "D:\\Temp\\combat-motion-eval-e1dsw32j\\results\\baseline-T02\\run.json"
+  ],
+  "status": "completed",
+  "notes": "仅使用指定技能快照与请求文本；未联网、未生成媒体、未委派。"
+}

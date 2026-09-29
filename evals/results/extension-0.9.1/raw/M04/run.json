@@ -1,0 +1,40 @@
+{
+  "request": "只给一句不超过100字的中文视频提示词：8秒，两个成年刀客站在石桥两端静静对峙，各自微调右手握柄，不交手，固定全景，日间自然光，无台词。不要工程说明，不生成视频。\r\n",
+  "inputs": [
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+      "sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+      "read_mode": "full",
+      "method": "Get-Content -Raw"
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M04\\request.txt",
+      "sha256": "7ed7748ab5defe186d2f7adde81acdfa9dd59997107fc79355a9a70d13aa0a65",
+      "read_mode": "full",
+      "method": "Get-Content -Raw"
+    }
+  ],
+  "commands": [
+    {
+      "sequence": 1,
+      "shell": "powershell",
+      "command": "$ErrorActionPreference = 'Stop'\n$root = 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\M04'\n$skill = 'D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md'\n$request = Join-Path $root 'request.txt'\n'=== SKILL.md ==='\nGet-Content -LiteralPath $skill -Raw -Encoding UTF8\n'=== REQUEST ==='\nGet-Content -LiteralPath $request -Raw -Encoding UTF8\nforeach ($path in @($skill, $request)) {\n    $script:records.inputs += [ordered]@{ path = $path; sha256 = (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLower(); read_mode = 'full'; method = 'Get-Content -Raw'; }\n}\n$script:records.request = Get-Content -LiteralPath $request -Raw -Encoding UTF8",
+      "exit_code": 0,
+      "output": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M04\\lookup-1.txt"
+    },
+    {
+      "sequence": 2,
+      "shell": "powershell",
+      "command": "$ErrorActionPreference = 'Stop'\n$root = 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\M04'\n$answer = '8秒，日间自然光下，两名成年刀客分立石桥两端静静对峙，目光相对，各自仅微调右手握柄，全程固定全景，不交手，无台词。'\n$answerPath = Join-Path $root 'answer.md'\n[System.IO.File]::WriteAllText($answerPath, $answer, [System.Text.UTF8Encoding]::new($false))\nif ($answer.Length -gt 100) { throw 'Answer exceeds 100 characters.' }\nif (($answer.ToCharArray() | Where-Object { $_ -in @('。','！','？') }).Count -ne 1) { throw 'Answer must have exactly one sentence.' }\n$script:records.outputs = @([ordered]@{ path = $answerPath; sha256 = (Get-FileHash -LiteralPath $answerPath -Algorithm SHA256).Hash.ToLower(); character_count = $answer.Length })\n'answer.md saved; ' + $answer.Length + ' characters; one Chinese sentence.'\nGet-Content -LiteralPath $answerPath -Raw -Encoding UTF8",
+      "exit_code": 0,
+      "output": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M04\\lookup-2.txt"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\M04\\answer.md",
+      "sha256": "c4782d4c3758c6fe3acf99782cfe9e283013c0c078325630bf793a3a47fc4a97",
+      "character_count": 57
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "case": {
+    "id": "MXH01",
+    "family": "explicit_motion",
+    "length": "normal",
+    "request": "使用 $combat-director，写8秒成年双人木杖对练的中文视频提示词。甲斜劈，乙侧移拨开，两人回收退开；固定侧面全身、正常速度、一镜到底，无超自然能力。保留自然motion blur，看得懂握持、接触和回收，固定背景保持稳定。只交付一段200至360字的提示词，不列工程字段，不生成视频、不联网。"
+  },
+  "run_id": "MXH01",
+  "date": "2026-09-29",
+  "status": "terminal",
+  "command": [
+    "C:\\Users\\ww\\AppData\\Local\\OpenAI\\Codex\\bin\\12219cbfbcbddde7\\codex.exe",
+    "--disable",
+    "plugins",
+    "-c",
+    "windows.sandbox=\"unelevated\"",
+    "-c",
+    "approval_policy=\"never\"",
+    "exec",
+    "--ephemeral",
+    "--sandbox",
+    "read-only",
+    "--skip-git-repo-check",
+    "--json",
+    "--color",
+    "never",
+    "--cd",
+    "D:\\Temp\\combat-routing-mxh01-ebaf0ce84a48\\project",
+    "--output-last-message",
+    "D:\\study\\projects\\combat-director\\evals\\results\\host-motion-matrix-0.9.1\\MXH01\\answer.md",
+    "-"
+  ],
+  "cwd": "D:\\Temp\\combat-routing-mxh01-ebaf0ce84a48\\project",
+  "archive_sha256": "150ad6f4ba5e9c7ce82f3cd5248facc442f0a0e58cd5767ac878e77a66f50354",
+  "candidate_skill": "D:\\Temp\\combat-routing-mxh01-ebaf0ce84a48\\project\\.agents\\skills\\combat-director\\SKILL.md",
+  "candidate_skill_sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+  "request_sha256": "8ae231b4d42217c26b18d2065143cc80cd64593f3b683fb82867044549eb93f3",
+  "cli_version": "codex-cli 0.154.0-alpha.6.2",
+  "model": "inherited host configuration; no override",
+  "catalog": "Plugin discovery disabled for this invocation only; ordinary host and project skills remain available.",
+  "limits": "Read-only ephemeral model task; no media generation. Discovery and answer text alone do not establish which skill was read.",
+  "pid": 52024,
+  "exit_code": 0,
+  "elapsed_seconds": 157.58,
+  "candidate_skill_sha256_after": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6",
+  "artifacts": [
+    {
+      "path": "answer.md",
+      "sha256": "dc6ac180a71984bdc70087f024ae44dc1322d102a0bedd3665e0ae17e34cba82"
+    },
+    {
+      "path": "events.jsonl",
+      "sha256": "ed2e65b28f77e2cdf96bbb67511113f59d67ce93e236f763fccef23d324cdccf"
+    },
+    {
+      "path": "request.txt",
+      "sha256": "8ae231b4d42217c26b18d2065143cc80cd64593f3b683fb82867044549eb93f3"
+    },
+    {
+      "path": "stderr.txt",
+      "sha256": "c4f8d8bcda81b5d718ab99fdc7a81d48d55bc609a02d383191f93c3dd47c68df"
+    }
+  ]
+}

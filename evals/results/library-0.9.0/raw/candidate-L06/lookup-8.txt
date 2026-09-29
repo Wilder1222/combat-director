@@ -1,0 +1,94 @@
+{
+  "item": {
+    "id": "arvin-choreography-redirection-item-cc7c0ba16b56",
+    "card_id": "arvin-choreography-redirection",
+    "name": "云手化劲",
+    "aliases": [],
+    "schools": [
+      "太极拳"
+    ],
+    "characters": [],
+    "detail": "motion_path"
+  },
+  "source": {
+    "repository": "https://github.com/wangarvin007-commits/-skills",
+    "commit": "c526a49bb8695f5333af90b56365dc492e24b6ff",
+    "path": "seedance-combat-prompt/SKILL.md",
+    "sha256": "011eed576c241a2180c776ddf6b8555331b482a951e7be35ed53928e7f0b87e0",
+    "credit": "Arvin",
+    "license": "MIT",
+    "license_notice": "references/third-party-notices.md",
+    "evidence": [
+      {
+        "line": 1444,
+        "header_line": 1440,
+        "section": "铁律14·攻防转换要有化劲——化劲技法库",
+        "origin": "named",
+        "shared_row": false,
+        "detail": "motion_path",
+        "detail_columns": [
+          "动作细节"
+        ],
+        "assessment_note": "",
+        "fields": [
+          {
+            "column": "化劲技法",
+            "value": "云手化劲"
+          },
+          {
+            "column": "描述",
+            "value": "双手在胸前画弧如云流转，将对方攻击裹缠引开"
+          },
+          {
+            "column": "武学来源",
+            "value": "太极拳"
+          },
+          {
+            "column": "动作细节",
+            "value": "双手画弧→攻击被裹入弧线→顺弧引走"
+          }
+        ],
+        "url": "https://github.com/wangarvin007-commits/-skills/blob/c526a49bb8695f5333af90b56365dc492e24b6ff/seedance-combat-prompt/SKILL.md#L1444",
+        "source_text": "| 云手化劲 | 双手在胸前画弧如云流转，将对方攻击裹缠引开 | 太极拳 | 双手画弧→攻击被裹入弧线→顺弧引走 |"
+      }
+    ]
+  },
+  "card_context": {
+    "id": "arvin-choreography-redirection",
+    "title": "化劲与攻防转换",
+    "kind": "choreography",
+    "schools": [
+      "36路腿法",
+      "八卦掌",
+      "八极拳",
+      "合气道",
+      "咏春拳",
+      "太极拳",
+      "少林旋风地堂腿",
+      "巴西战舞",
+      "截拳道",
+      "擒拿",
+      "散打",
+      "柔道",
+      "泰拳",
+      "蔡李佛",
+      "谭腿",
+      "醉拳"
+    ],
+    "characters": []
+  },
+  "project_adaptation": {
+    "scope": "整卡改编建议，不是该招原文，也不抬高来源详情等级。",
+    "summary": "接触、改向、失衡、接续依次可见；对方抽手或变向时重新判断，不用化劲二字代替过程。",
+    "requires": [
+      "用户设定允许所选动作、兵器与表现尺度",
+      "可见的起始距离、接触条件和结束位置"
+    ],
+    "excludes": [
+      "自动授予角色预设或超自然能力",
+      "把原文强制比例、历史称谓或成功率当作已核验事实"
+    ]
+  },
+  "notice": "原文称谓、效果与固定数值未经独立核验；补写动作须标为本项目原创。按用户能力边界改编。"
+}
+

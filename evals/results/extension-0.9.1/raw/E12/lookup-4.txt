@@ -1,0 +1,22 @@
+{
+  "request": "编排12秒水墨外观的雨中退守：两名成年虚构角色，A徒手沿石阶后退，B持木棍压进，结尾A退到檐下并挡住B继续前进。只有人物级身体能力，不要大招、能量波或分身。正常速度、最多两个镜头，给简明六轨与中文提示词，体现双方回应和湿滑地形。\r\n",
+  "inputs": [
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\SKILL.md",
+      "sha256": "21d959d36cce1a2b97a631c1ba0b13913c2d70da1a629a93ba9998841c5d97d6"
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\runs\\E12\\request.txt",
+      "sha256": "7ded957b9008d79760658bb15957b65f0e93c66ea28a0512f0ce1c4ac3c0f968"
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\choreography.md",
+      "sha256": "d5f123389239d20061426a5c2d656581e71c7b9cfb79879e55f069dbbe5ea56c"
+    },
+    {
+      "path": "D:\\Temp\\combat-extension-nws2d7rg\\candidate\\skills\\combat-director\\references\\templates.md",
+      "sha256": "294c7ce6509b397604827323eea4469d9d37555c2ef93577f21f3cbdbd24c5f1"
+    }
+  ]
+}
+
