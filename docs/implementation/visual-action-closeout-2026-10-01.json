@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-01",
+  "scope": "Local source and build validation; no installation, publication or media generation.",
+  "release_checks": 43,
+  "release_report": "docs/implementation/visual-action-validation-2026-10-01.json",
+  "unittest_summary": "Ran 105 tests in 44.472s\n\nOK (skipped=2)",
+  "paired_prompts": {
+    "only_camera_differs": true,
+    "characters": [
+      692,
+      735
+    ],
+    "shared_sha256": "e5508e819aa5ee59109f1ff01b948e890bca1827e5be4ed9005352af259a5fe2"
+  },
+  "libtv_validator": "Skill is valid!",
+  "libtv_archive_matches_source": true,
+  "archive_matches_current_source": true,
+  "historical_44_shot_example_preserved": true,
+  "prior_release_report_preserved": true,
+  "diff_whitespace_check": true,
+  "source_files": [
+    {
+      "path": "adapters/libtv/combat-director-libtv/SKILL.md",
+      "sha256": "88a5d5a7bc9f75f57c896e3ebf275815de748326a602da6dbdc25786e4711d7c"
+    },
+    {
+      "path": "skills/combat-director/SKILL.md",
+      "sha256": "bbc088077f48a07b034dfac9ae838767430490dae39f6c92430279276bc89716"
+    },
+    {
+      "path": "skills/combat-director/assets/sequence-template.md",
+      "sha256": "c6bbd6acb9961503c1590beddf178ee83edb62f66bea1d9ff602ffbfd644fa98"
+    },
+    {
+      "path": "skills/combat-director/assets/submission-record.md",
+      "sha256": "7cbf33e6d44137a1b301fa883ff800006f34d4b7dc791556949c7ed5798bda41"
+    },
+    {
+      "path": "skills/combat-director/references/camera-coverage.md",
+      "sha256": "ac0b71a4910484b04f034ba3328ee25080e3b831a64bdb32248dd18ba47d2920"
+    },
+    {
+      "path": "skills/combat-director/references/choreography.md",
+      "sha256": "a2d90556b8ffc6cc5b90c6e0321f9ebf58325375800dbcc6129a3d371e796c77"
+    },
+    {
+      "path": "skills/combat-director/references/compact-output.md",
+      "sha256": "3d1a13b6d9a21cd0ef231ad25e07b8ae928d7a60f2eb8ed6d21e3a5acc07dac8"
+    },
+    {
+      "path": "skills/combat-director/references/emotional-xianxia.md",
+      "sha256": "76ba49b70e785cb741bbb36ca4be3ad884b41bbeda6a732669d176dbfbf7d1f6"
+    },
+    {
+      "path": "skills/combat-director/references/motion-blur.md",
+      "sha256": "d5230c3bb1d33129b7b79a1a321048166e81c7add8bfbfd4d968bec6c735399e"
+    },
+    {
+      "path": "skills/combat-director/references/particle-vfx.md",
+      "sha256": "8471f8ff5032171f80db08829e1db8f958442536d9ca2df9c978ebd0b9bfc35f"
+    },
+    {
+      "path": "skills/combat-director/references/platforms.md",
+      "sha256": "08411119e5b2e6b395596e6473c727a03b74a0657e6dfe5590f63102e4310db4"
+    },
+    {
+      "path": "skills/combat-director/references/prompt-craft.md",
+      "sha256": "849f673b95cca94e6a187cda7c21b6a68128f190c0c84568acde0a0be2b73763"
+    },
+    {
+      "path": "skills/combat-director/references/quality.md",
+      "sha256": "672bcb7c94206fe5716c1649ea7ab815e3dfa9d2bfdb93f729f64d37ea9e7e74"
+    },
+    {
+      "path": "skills/combat-director/references/rapid-cut-continuity.md",
+      "sha256": "b35820552c3dd969db5bd74b2f1a6aa75517088cd68665ce78f1feee4078028c"
+    },
+    {
+      "path": "skills/combat-director/references/review-loop.md",
+      "sha256": "ae5e1823f31694de6ccd385d8654290d9d51a7ea6f539e851c0eee4f39cff597"
+    },
+    {
+      "path": "skills/combat-director/references/video-reference-analysis.md",
+      "sha256": "8f58036ece37a1ffe3e21ad83bd05d237e686195d1bbec30c6a6b7a2b35a848f"
+    },
+    {
+      "path": "skills/combat-director/examples/aerial-duel-8-coverage.md",
+      "sha256": "e1010fca57cebe63b610337a1e4e890ccfa75cc58ac3b931b3cb27cb1f8841e6"
+    }
+  ],
+  "builds": [
+    {
+      "path": "dist/combat-director-0.10.0.zip",
+      "sha256": "05599e059f5f20c15ed60f69ab9c3d837395acba75871cefcda36ebd6de4087d"
+    },
+    {
+      "path": "dist/libtv/combat-director-libtv-0.10.0-libtv.1.zip",
+      "sha256": "f9f55f16c53a5e253830e327b837007ac9836355dc07050545b2b4e8d17ea50e"
+    }
+  ],
+  "semantic_review": "Author walkthrough of eight cases, not independent forward testing; see visual-action-review-2026-10-01.md",
+  "first_attempt": "System Python lacked jsonschema; rerun succeeded in existing project .venv. Failed attempt retained separately."
+}
