@@ -16,6 +16,7 @@ from combat_action import validate_action, action_text
 from combat_evidence import assess_profile, validate_reference
 from combat_review import validate_take, continuation_seed, check_continuation, review_template
 from combat_handoff import compile_handoff, readiness, require_ready, apply_review, hard_constraints
+from combat_prompt import render as compact_prompt
 EPS = 1e-6
 TRACKS = ('action', 'expression', 'emotion', 'camera', 'vfx', 'environment', 'sound', 'continuity')
 LABELS = ('动作', '表情', '情绪', '运镜', '特效', '环境反馈', '声音', '连续性')
@@ -138,7 +139,12 @@ def prompt(plan):
     return '\n\n'.join(blocks) + '\n'
 
 
-def deliverables(plan, platform, profile_override=None, as_of=None):
+def deliverables(plan, platform, profile_override=None, as_of=None, prompt_style='full', projection=None):
+    require(prompt_style in ('full', 'compact'), 'unknown prompt style')
+    require((prompt_style == 'compact') == (projection is not None),
+            'compact style requires a prompt file; full style does not accept one')
+    validate(plan)
+    prompt_text = compact_prompt(plan, projection) if prompt_style == 'compact' else prompt(plan)
     profiles = read_json(SKILL / 'assets/platform-profiles.json')['profiles']
     require(platform in profiles, f'unknown platform: {platform}')
     profile = profiles[platform] if profile_override is None else profile_override
@@ -171,24 +177,29 @@ def deliverables(plan, platform, profile_override=None, as_of=None):
     review = '# 验收表（待实际视频）\n\n未生成、未观看视频；本表不是验收通过证明。\n\n'
     review += '| 检查项 | 时间码/证据 | 问题 | 最小修复 | 复测结果 |\n| --- | --- | --- | --- | --- |\n'
     review += '\n'.join(f'| {x} | 待观察 | 待观察 | 待确定 | 未验证 |' for x in ['身份与持物', '攻防因果', '双方表演', '空间与机位', '能力限制与代价', '环境继承', '声音', '目标时长与结尾']) + '\n'
-    return {'design-card.md': card, 'director.md': '\n'.join(director), 'prompt.txt': prompt(plan),
+    result = {'design-card.md': card, 'director.md': '\n'.join(director), 'prompt.txt': prompt_text,
             'handoff.md': handoff, 'review.md': review,
             'prompt-handoff.json': json.dumps(compile_handoff(plan), ensure_ascii=False, indent=2) + '\n',
             'combat-plan.json': json.dumps(plan, ensure_ascii=False, indent=2, allow_nan=False) + '\n'}
+    if projection is not None:
+        result['prompt-projection.json'] = json.dumps(projection, ensure_ascii=False, indent=2, allow_nan=False) + '\n'
+    return result
 
 
-def export(plan, platform, out_dir, force=False, source_path=None, max_duration=None, profile_override=None, as_of=None):
+def export(plan, platform, out_dir, force=False, source_path=None, max_duration=None, profile_override=None, as_of=None,
+           prompt_style='full', projection=None, projection_path=None):
     validate(plan, max_duration)
     output = Path(out_dir).absolute()
     for ancestor in (output, *output.parents):
         require(not ancestor.is_symlink() and not getattr(ancestor, 'is_junction', lambda: False)(),
                 'output must not traverse a link or junction')
-    payloads = deliverables(plan, platform, profile_override, as_of)
+    payloads = deliverables(plan, platform, profile_override, as_of, prompt_style, projection)
     for name in payloads:
         path = output / name
         require(not path.is_symlink(), 'refusing linked output file')
         require(not path.exists() or path.is_file(), 'output target is not a file')
         require(source_path is None or path.resolve() != Path(source_path).resolve(), 'refusing to overwrite source plan')
+        require(projection_path is None or path.resolve() != Path(projection_path).resolve(), 'refusing to overwrite source prompt')
         require(force or not path.exists(), f'output exists: {path}; use --force to replace')
     output.mkdir(parents=True, exist_ok=True)
     for name, content in payloads.items():
@@ -218,6 +229,8 @@ def main(argv=None):
             p.add_argument('--platform', choices=('generic', 'libtv', 'xiaoyunque', 'flova'), default='generic')
             p.add_argument('--out-dir', type=Path, required=True)
             p.add_argument('--force', action='store_true')
+            p.add_argument('--prompt-style', choices=('full', 'compact'), default='full')
+            p.add_argument('--prompt-file', type=Path)
         if command in ('render','assess-profile'):
             p.add_argument('--profile', type=Path, required=command=='assess-profile')
             p.add_argument('--as-of')
@@ -241,7 +254,9 @@ def main(argv=None):
         validate(plan, getattr(args,'max_duration',None), require_review=args.command in ('validate', 'render'))
         if args.command == 'render':
             profile=read_json(args.profile) if args.profile else None
-            files = export(plan, args.platform, args.out_dir, args.force, args.plan, args.max_duration, profile, args.as_of)
+            projection = read_json(args.prompt_file) if args.prompt_file else None
+            files = export(plan, args.platform, args.out_dir, args.force, args.plan, args.max_duration, profile, args.as_of,
+                           args.prompt_style, projection, args.prompt_file)
             print(f'Exported {len(files)} files: {args.out_dir}')
         elif args.command == 'status':
             print(json.dumps(readiness(plan), ensure_ascii=False, indent=2))

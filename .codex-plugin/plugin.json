@@ -1,6 +1,6 @@
 {
   "name": "combat-director",
-  "version": "0.9.2",
+  "version": "0.10.0",
   "description": "将战斗短片参考转化为动作节拍、镜头规划、视频提示词与连续性检查。",
   "author": {
     "name": "Local developer"

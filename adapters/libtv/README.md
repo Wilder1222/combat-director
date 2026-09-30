@@ -1,6 +1,6 @@
 # LibTV 独立适配
 
-开发分支：`codex/libtv-adaptation`。适配版本：`0.6.0-libtv.1`，基于 Combat Director 0.6.0。
+适配版本：`0.10.0-libtv.1`，与 Combat Director 0.10.0 的场景、动作、运镜和精简交付规则同步。
 
 本适配面向 LibTV 站内创作 Agent。源文件为 [combat-director-libtv/SKILL.md](combat-director-libtv/SKILL.md)，采用自包含文本，不要求平台执行 Python 或读取相对引用。原有 Codex 技能与发行构建保持独立。
 
@@ -14,9 +14,9 @@ python scripts/build_libtv.py
 
 输出位于 `dist/libtv/`：
 
-- `combat-director-libtv-0.6.0-libtv.1.md`：包含 frontmatter 的完整源文档副本。
-- `combat-director-libtv-0.6.0-libtv.1.content.md`：移除 frontmatter 的正文，可用于站内 Markdown 内容表单。
-- `combat-director-libtv-0.6.0-libtv.1.zip`：只含根目录 `SKILL.md` 的候选包。
+- `combat-director-libtv-0.10.0-libtv.1.md`：包含 frontmatter 的完整源文档副本。
+- `combat-director-libtv-0.10.0-libtv.1.content.md`：移除 frontmatter 的正文，可用于站内 Markdown 内容表单。
+- `combat-director-libtv-0.10.0-libtv.1.zip`：只含根目录 `SKILL.md` 的候选包。
 
 构建器仅在本地生成交付文件，重复运行会覆盖这三个同版本产物。ZIP 根目录布局是本项目的候选方案，尚未验证为 LibTV 的正式导入规范；不要将本地构建成功标作平台安装成功。确认站内支持 Markdown 粘贴时使用 `.content.md`，确认文件/ZIP 导入要求后再选择对应产物。
 
@@ -28,7 +28,7 @@ python scripts/build_libtv.py
 | 一句话介绍 | 编排有攻防因果、角色表演和连续性的武侠与仙侠战斗短片。 |
 | 使用场景 | 武侠交手、仙侠斗法、巨型敌人反制、角色登场、战斗提示词拆解与失败修复。 |
 | 如何使用 | 提供人物、目标、场景、时长和参考素材，说明只要方案还是需要生成；已有设定会优先继承。 |
-| 输出内容 | 战斗设计卡、六轨导演稿和中文提示词；执行模式另交付真实生成结果及审片记录。 |
+| 输出内容 | 默认中文提示词；按需附设计卡与六轨导演稿；执行模式另交付真实结果及审片记录。 |
 
 这些是编辑建议，字段必填性、长度和上传限制以当前登录后页面为准。[格式调研](../../docs/research/2026-09-22-libtv-skill-format.md)记录证据与未知项。
 

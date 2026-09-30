@@ -81,6 +81,13 @@ def validate(root: Path) -> list[Path]:
         saved = path.with_name(path.name.replace('.plan.json', '.prompt.txt'))
         if saved.read_text(encoding='utf-8') != module.prompt(plan):
             raise ValueError(f'Prompt out of sync: {saved}')
+    for path in sorted((skill / 'examples').glob('*.compact.json')):
+        plan = module.read_json(path.with_name(path.name.replace('.compact.json', '.plan.json')))
+        module.validate(plan)
+        rendered = module.compact_prompt(plan, module.read_json(path))
+        saved = path.with_suffix('.txt')
+        if saved.read_text(encoding='utf-8') != rendered:
+            raise ValueError(f'Compact prompt out of sync: {saved}')
     library_spec = importlib.util.spec_from_file_location('release_library_tool', skill / 'scripts/library_tool.py')
     library = importlib.util.module_from_spec(library_spec)
     library_spec.loader.exec_module(library)

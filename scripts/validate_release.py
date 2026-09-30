@@ -127,6 +127,15 @@ def main():
             plan=packaged/'alley-letter-15.plan.json'
             run('unpacked render',[sys.executable,cli,'render',plan,'--out-dir',Path(tmp)/'render'],cwd=tmp)
             if len(list((Path(tmp)/'render').iterdir()))!=7: raise ValueError('Unexpected export count')
+            compact_cli=unpacked/'skills/combat-director/scripts/combat_prompt.py'
+            compact_plan=packaged/'grounded-15.plan.json'
+            projection=packaged/'grounded-15.compact.json'
+            run('unpacked compact review',[sys.executable,compact_cli,'validate',compact_plan,projection],cwd=tmp)
+            run('unpacked compact render',[sys.executable,cli,'render',compact_plan,
+                '--prompt-style','compact','--prompt-file',projection,'--out-dir',Path(tmp)/'compact'],cwd=tmp)
+            if len(list((Path(tmp)/'compact').iterdir()))!=8: raise ValueError('Unexpected compact export count')
+            if (Path(tmp)/'compact/prompt.txt').read_text(encoding='utf-8') != (packaged/'grounded-15.compact.txt').read_text(encoding='utf-8'):
+                raise ValueError('Packaged compact example differs from rendered result')
             pending=Path(tmp)/'pending.review.json'
             run('take template',[sys.executable,cli,'review-template',plan,'--take-id','pending-test','--out',pending],cwd=tmp)
             run('pending review structure',[sys.executable,cli,'review-take',pending,'--plan',plan],cwd=tmp)

@@ -45,6 +45,8 @@ class ReleaseBuildTests(unittest.TestCase):
             'sources/upstream/arvin-seedance/SKILL.md':lambda s:s+'changed source\n',
             'sources/editorial/arvin-facets.json':lambda s:s.replace('"八极拳"','"太极拳"'),
             'skills/combat-director/examples/motion-staff-12.prompt.txt':lambda s:s+'unreviewed edit\n',
+            'skills/combat-director/examples/grounded-15.compact.txt':lambda s:s+'unreviewed edit\n',
+            'skills/combat-director/examples/grounded-15.compact.json':lambda s:s.replace('15秒，16:9', '16秒，16:9'),
             'sources/editorial/0.8.3/motion-staff-12.plan.json':lambda s:s.replace('固定双人全身机位','跟拍双人全身机位'),
         }
         original_zip=self.archive.read_bytes()
