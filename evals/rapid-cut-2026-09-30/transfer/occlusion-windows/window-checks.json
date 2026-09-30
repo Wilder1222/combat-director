@@ -1,0 +1,110 @@
+{
+  "scope": "arithmetic_on_explicit_text_windows_only_not_visibility_detection",
+  "source_sha256": "233958959acb582f1bcc5dae60d7f95fa05580f900a9df2cb5a3e52b3f43e9f0",
+  "cases": [
+    {
+      "name": "generated_scene",
+      "duration": "7.8",
+      "windows": [
+        [
+          "0",
+          "1.2"
+        ],
+        [
+          "3",
+          "3.7"
+        ],
+        [
+          "6.7",
+          "7.8"
+        ]
+      ],
+      "gaps": [
+        "0",
+        "1.8",
+        "3.0",
+        "0.0"
+      ],
+      "max_gap": "3.0",
+      "within_five_seconds": true,
+      "expected": true
+    },
+    {
+      "name": "control_synthetic",
+      "duration": "10.8",
+      "windows": [
+        [
+          "0",
+          "0.6"
+        ],
+        [
+          "4.8",
+          "6"
+        ],
+        [
+          "9.6",
+          "10.8"
+        ]
+      ],
+      "gaps": [
+        "0",
+        "4.2",
+        "3.6",
+        "0.0"
+      ],
+      "max_gap": "4.2",
+      "within_five_seconds": true,
+      "expected": true
+    },
+    {
+      "name": "delayed_visibility_synthetic",
+      "duration": "10.8",
+      "windows": [
+        [
+          "0",
+          "0.6"
+        ],
+        [
+          "5.8",
+          "6"
+        ],
+        [
+          "9.6",
+          "10.8"
+        ]
+      ],
+      "gaps": [
+        "0",
+        "5.2",
+        "3.6",
+        "0.0"
+      ],
+      "max_gap": "5.2",
+      "within_five_seconds": false,
+      "expected": false
+    },
+    {
+      "name": "tail_missing_synthetic",
+      "duration": "12",
+      "windows": [
+        [
+          "0",
+          "1.2"
+        ],
+        [
+          "4.8",
+          "6"
+        ]
+      ],
+      "gaps": [
+        "0",
+        "3.6",
+        "6"
+      ],
+      "max_gap": "6",
+      "within_five_seconds": false,
+      "expected": false
+    }
+  ],
+  "expectations_passed": true
+}

@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "115 unique records",
+    "all screenshot files present",
+    "no unindexed PNG files",
+    "all recorded paused and readyState 4",
+    "all SHA-256 hashes verified"
+  ],
+  "passed": true,
+  "scope": "artifact_integrity_only",
+  "confirmed_cut_bracket_seconds": [
+    509.559029,
+    509.599029
+  ]
+}

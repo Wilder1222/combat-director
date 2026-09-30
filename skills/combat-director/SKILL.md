@@ -18,11 +18,13 @@ Encoding recovery: If a skill/reference read is garbled or contains replacement 
 
 | 用户任务 | 路由 | 按需读取 |
 |---|---|---|
-| 从视频提取可复用结构 | 拆解 | [references/source-case.md](references/source-case.md)、[references/quality.md](references/quality.md) |
+| 从视频提取可复用结构 | 拆解 | [references/source-case.md](references/source-case.md)、[references/video-reference-analysis.md](references/video-reference-analysis.md)，观察与推断分开 |
 | 拆解、整理或改写现成打斗提示词 | 文本拆解与重编排 | [references/prompt-craft.md](references/prompt-craft.md)、[references/source-case.md](references/source-case.md) |
 | 新建战斗、换角色或换场景 | 编排 | [references/choreography.md](references/choreography.md)、[references/templates.md](references/templates.md) |
 | 大场面、地形、环境参与交手 | 场景调度 | [references/scene-staging.md](references/scene-staging.md)，先建场地再排动作 |
 | 运镜、景别、节奏与动作可读性 | 镜头覆盖 | [references/camera-coverage.md](references/camera-coverage.md)，先锁事件再选镜头 |
+| 多机位短镜爆剪、约44镜、Hit Stop与防越轴 | 爆剪与相对关系 | [references/rapid-cut-continuity.md](references/rapid-cut-continuity.md)，先锁轴线与攻击链，再分配镜长 |
+| 相爱相杀、旧识对决、花海兵器与法术交织 | 情绪与仙术编排 | [references/emotional-xianxia.md](references/emotional-xianxia.md)，用可见选择改变追击与收手，不以情绪特写冻结来袭 |
 | 简洁可投喂正文、导演稿压缩 | 提示词编译 | [references/compact-output.md](references/compact-output.md)，保留动作与场景因果 |
 | 设计动作签名、把武学或名招转成画面 | 动作设计 | [references/action-design.md](references/action-design.md) |
 | 选具体招式、套用角色预设、融合多种武学 | 招式与角色编排 | [references/technique-adaptation.md](references/technique-adaptation.md)，按需检索技法、角色和连招 |
@@ -64,6 +66,8 @@ Encoding recovery: If a skill/reference read is garbled or contains replacement 
 - 一镜到底：画面不能切镜、跳切、黑场或用遮挡伪装剪辑。
 - 单个成片文件：不证明生成次数，也不证明无剪辑。
 
+用户要求以多机位短镜爆剪替换“一镜到底”时，直接切换镜头模式，并同步清除当前方案总则、局部运镜和负向限制中的旧单镜要求。采用[爆剪与相对关系](references/rapid-cut-continuity.md)：约44镜、快镜0.2—0.4秒、慢镜0.6—1.2秒，保留开场子弹时间与终局爆发顿挫两处微慢镜。该模式按请求启用，不把所有战斗或既有单镜示例统一改成爆剪。
+
 ### 2. 选战斗结构，而不是套固定大招
 
 从 [references/templates.md](references/templates.md) 选择人物级攻防、升级式斗法或巨型敌人反制。原视频启发的 11 节拍只适用于允许能力与场面升级的片段，不强制套用到城外截杀或低境界角色。
@@ -92,6 +96,8 @@ Encoding recovery: If a skill/reference read is garbled or contains replacement 
 
 记录位置、朝向、重心、武器与持械手、衣着损伤、环境破坏和机位侧。下一拍继承上一拍结束状态。能力表现与物理运动分开，摄影机运动不能代替人物位移。
 
+爆剪模式把相对关系设为硬约束：初始B在画左向右攻、A在画右，机位固定在动作轴线同侧；换边须用空间复位镜拍清路径与新站位。每次攻击拆成同一事件的“来路镜 → 命中点镜（Hit Stop）→ 反馈镜”，未命中则中镜明确拍格挡/避让，不伪造肉身命中。受击初始位移沿实际冲量方向；每3—5秒用双人同框或高机位重建站位；遮挡只藏切点，前后运动方向与速度连续。详见专项参考中的逐镜表与验收项。
+
 换兵器或改动作时，同时核对材质反馈、握法、作用距离和空间路径。按“起点 → 实际移动方向 → 终点”逐拍走一遍，确认对手沿这条路确实能到达摘要中的位置；相机左右不能代替世界方位。复杂交手可使用[可选动作契约](references/action-contract.md)，把兵器、轨迹、回应、转移与代价直接带入提示词。
 
 给出距离与刃长时，逐拍核对移动后的间距与实际攻击距离；御剑绕后、绕柱和回程全程受已定控制范围限制。先补接近或明确挥空，不能靠镜头推近、临时伸长武器或放宽能力补洞。
@@ -101,6 +107,12 @@ Encoding recovery: If a skill/reference read is garbled or contains replacement 
 ### 4. 编译两层时间轴
 
 导演层可以有 8 至 11 个节拍；默认把 30 秒投喂层整理为 4 至 6 个主段，每段一个主结果。具体数量是编排建议，不是模型参数。用户要求逐秒细稿时给导演层，不自动把每个微动作都变成切镜。
+
+爆剪模式另列镜号、时间码、攻击ID与三镜职责、双方起终点、轴线侧、屏幕运动/受力方向、复位时间和遮挡接续；44镜不等于44招或44次生成。主段压缩仍保留三镜顺序、方向、Hit Stop、两处微慢镜和复位锚点，不能把逐镜方案压回一镜到底。镜长是成片占时，慢镜不自动慢放；Hit Stop与微慢镜均计入总长，按专项参考核算。
+
+以最终逐镜表汇总镜数、镜长分布、总长与复位间隔，不从初始配额另写摘要。将可复制正文单独拿出检查：必要设定与动作不能只存在于导演表；依赖精确镜头表时将表一并纳入同一个可复制交付块，不能只写“按上表执行”。
+
+要求节奏更爆时，用“前段快速提密 → 中段连续爆点 → 终局层层加码”的曲线重排：短镜集中成簇，反馈末端接下一击，切在可辨的发力、接触释放与再发力处；减少重复蓄势，不删命中点或必要恢复。每次复位明确写出并拍清双方左右、间距、固定地标与下一击路线，在移动和压力中重建关系。专项参考提供22个快镜、10条攻击链的30秒44镜强化配额。
 
 15 秒大场面可先尝试两至三个动作阶段：近身交锋建立关系、移动攻防改变场地、一次主升级产生结局；不是固定三镜或必选模板。阶段数、镜头数与生成次数分别记录。选择主升级后删掉重复招式，不把两份 30 秒参考机械加速拼进 15 秒。
 

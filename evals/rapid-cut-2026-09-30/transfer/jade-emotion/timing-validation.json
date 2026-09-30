@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "12_shots": true,
+    "contiguous": true,
+    "total_6_4": true,
+    "6_fast": true,
+    "6_long": true,
+    "contact_01_in_shot04": true,
+    "contact_02_in_shot07": true,
+    "contact_gap_1_30": true,
+    "main_reset_start_gap_3_7": true,
+    "reset_read_gap_2_9": true,
+    "two_micro_ranges_in_duration": true
+  },
+  "scope": "timing arithmetic; attack chain, choice, axis and physical feasibility author-reviewed only; no media validation"
+}

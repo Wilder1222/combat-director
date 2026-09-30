@@ -1,0 +1,9 @@
+{
+  "scope": "Stored file integrity and playback metadata, not proof of physical continuity, FPS or sound",
+  "file_count": 19,
+  "hd_images": 14,
+  "low_resolution_locators": 5,
+  "skipped_unready_attempts": 13,
+  "all_stored_paused_ready4": true,
+  "passed": true
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "File integrity and stored playback metadata only, not movement/force/cut validation",
+  "file_count": 16,
+  "fullscreen": 11,
+  "page": 5,
+  "screenshot_sizes": [
+    [
+      1265,
+      712
+    ],
+    [
+      1646,
+      1029
+    ]
+  ],
+  "all_paused_ready4_1920x1080": true,
+  "passed": true
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-30",
+  "scope": "documentation, observed-frame integrity, original text timing, package build; no media generation or audiovisual quality verification",
+  "checks": {
+    "release_validation": "PASS 197 files",
+    "quick_validate": "PASS",
+    "git_diff_check": "PASS",
+    "screenshots": "47 hashes matched; 2 excluded, 3 limited",
+    "text_timing": "8 shots / 4.8 seconds; PASS",
+    "core_build": "PASS",
+    "libtv_build": "PASS",
+    "unit_tests": "not rerun for documentation-only change"
+  },
+  "artifacts": {
+    "skills/combat-director/references/camera-coverage.md": "0044e2aeb359974df93224540f8603a0417a22c72763c27e55fde9ffb5557b8a",
+    "skills/combat-director/references/video-reference-analysis.md": "d0a3d5447143c051e5ed911f9af7893525471e612b34797eae46a62a7b289808",
+    "adapters/libtv/combat-director-libtv/SKILL.md": "fef035b5dd85757316b7e713e0d0f35188a0e32559a5f811c5d506663239ced0",
+    "docs/research/2026-09-30-xian-ni-mechanism-study.md": "12c8b4181f9afaa52f7e56acf477a116c771a369ad1b5c00fa01602e675d91bb",
+    "evals/rapid-cut-2026-09-30/transfer/mechanism-focus/answer.md": "ef154cafc680703ee3909e480f54706f53f8fd7f5c05d0040f4006ca203cccbf"
+  }
+}

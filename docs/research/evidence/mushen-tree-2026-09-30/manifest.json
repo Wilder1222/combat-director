@@ -1,0 +1,315 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=FpyuI7m3wrw",
+  "source_provenance": "../mushen-2026-09-30/source-page-verified.txt",
+  "source_video_sha256": null,
+  "date": "2026-09-30",
+  "method": "Paused browser sampling; low-resolution locators separated from actual HD decoding; skipped unready attempts saved as metadata only.",
+  "normal_speed_continuous_review": false,
+  "audio_observed": false,
+  "files": [
+    {
+      "file": "tree-a0.jpg",
+      "height": 144,
+      "paused": true,
+      "ready": 4,
+      "time": 208.003097,
+      "width": 256,
+      "sha256": "aa01176ca85a085008128e23171c246b03da9aeb6086b92d246db764fb6d6427",
+      "bytes": 119387,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1265,
+        712
+      ],
+      "evidence_class": "locator_only_low_resolution"
+    },
+    {
+      "file": "tree-a1.jpg",
+      "height": 144,
+      "paused": true,
+      "ready": 4,
+      "time": 208.103096,
+      "width": 256,
+      "sha256": "06d1d295829e7f0d361bb3cf724cc07512182280d9934ef5c4a817efde600384",
+      "bytes": 124513,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1265,
+        712
+      ],
+      "evidence_class": "locator_only_low_resolution"
+    },
+    {
+      "file": "tree-a2.jpg",
+      "height": 144,
+      "paused": true,
+      "ready": 4,
+      "time": 208.203095,
+      "width": 256,
+      "sha256": "ad315f7520a772488759abd3ce9f5bbeba945be840a0277a667dc2d1e6244ae8",
+      "bytes": 123341,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1265,
+        712
+      ],
+      "evidence_class": "locator_only_low_resolution"
+    },
+    {
+      "file": "tree-a3.jpg",
+      "height": 144,
+      "paused": true,
+      "ready": 4,
+      "time": 208.303094,
+      "width": 256,
+      "sha256": "999accb1e2434b44d6b4fb040a4a25731606e2201ac7f2ba95ae30b89c41d4b8",
+      "bytes": 123954,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1265,
+        712
+      ],
+      "evidence_class": "locator_only_low_resolution"
+    },
+    {
+      "file": "tree-a4.jpg",
+      "height": 144,
+      "paused": true,
+      "ready": 4,
+      "time": 208.403093,
+      "width": 256,
+      "sha256": "4f2670c70ea099e44ce54b2e9bd5523d5243fc12000f139e4d90a6a1b7eaf565",
+      "bytes": 123887,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1265,
+        712
+      ],
+      "evidence_class": "locator_only_low_resolution"
+    },
+    {
+      "file": "tree-h0.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.003093,
+      "width": 1920,
+      "sha256": "03c0b0fe7349d42acc6e9d0ea1f785c9f26b4c47e78f40351328602ceddc41a0",
+      "bytes": 65110,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "tree-h1.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.036426,
+      "width": 1920,
+      "sha256": "09626b364368881e012c40acb4090b9c93ce1d2d341fc40342ddb4f4650f6ac4",
+      "bytes": 80016,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "tree-h4-ready.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.136426,
+      "width": 1920,
+      "sha256": "55d669d1583761291a8850315b0f44d0231201dae653da0277d61e503f49d88c",
+      "bytes": 51228,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "tree-h8-ready.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.536425,
+      "width": 1920,
+      "sha256": "fc162efa875862d8db46a694a402b43f5cd9158320974c5a751e95378348225a",
+      "bytes": 55337,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "tree-p0.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 207.903091,
+      "width": 1920,
+      "sha256": "507a404415edb1549983b1be9e76011e4216ae58266a2950a67172bda2659724",
+      "bytes": 68140,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "tree-p1.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 207.936424,
+      "width": 1920,
+      "sha256": "6830a92fedc5d3c4529180a05072f7347162ef6838701829e511c42e63ef7478",
+      "bytes": 82583,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "tree-p2.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 207.969757,
+      "width": 1920,
+      "sha256": "4ad6bac74c4e0fe2bfeaf5455131920f2fbb3da59555969db1735563a4f1d1d8",
+      "bytes": 82744,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "tree-p3.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.00309,
+      "width": 1920,
+      "sha256": "99ca67d31ef210d43098e851ddfcf6bc2ba1cbfde490d999e30aa9137b7bc42f",
+      "bytes": 80208,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "tree-p4.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.036423,
+      "width": 1920,
+      "sha256": "c063a32000532bdb4ae717c8f233b6f1b37abee007365b57f47d7cb8deb04522",
+      "bytes": 80023,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "tree-p5.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.069756,
+      "width": 1920,
+      "sha256": "dafa00ae30cc4551e1dae6fec62d39701200b9c6ed49c97e9fa1aa9f94359c9c",
+      "bytes": 81677,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "tree-p6.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.103089,
+      "width": 1920,
+      "sha256": "a2b19c5c51fcd8f7592a62ba4f74fab983a7ad895d9109e5971a86219f0fedc8",
+      "bytes": 71477,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "widen-q3.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.403089,
+      "width": 1920,
+      "sha256": "f4537517b4f4fcdd699a1a487f57d20fb4b97eb53e89430fe6deb2da959233ff",
+      "bytes": 71592,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "widen-q4.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.503089,
+      "width": 1920,
+      "sha256": "bd6d4f3f392724a3c83f2046618ea6822bc088e121fc8c33aba793b83d06c1b8",
+      "bytes": 71448,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    },
+    {
+      "file": "widen-r4.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.336422,
+      "width": 1920,
+      "sha256": "7bf5f0195394c91a4dae617036b217156987a1933724d2c90633fdc81195146c",
+      "bytes": 72106,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_class": "hd_visual_observation"
+    }
+  ]
+}

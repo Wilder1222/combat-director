@@ -1,0 +1,270 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=9inOuEjg5-4",
+  "source_type": "official_channel_compilation",
+  "source_page_evidence": "../btth-2026-09-30/source-page.txt",
+  "source_video_hash": null,
+  "observation_date": "2026-09-30",
+  "files": [
+    {
+      "file": "contact-a0.jpg",
+      "bytes": 48349,
+      "sha256": "ffccd5d48c7223a0a2256c9954e61506880d9e56308e25755f848e9937a2355c",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "contact-a1.jpg",
+      "bytes": 68017,
+      "sha256": "74191197c1ef6695a730cd3987d559fb38b1dc78d26350b73693510f2bbb1aea",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "contact-a10.jpg",
+      "bytes": 110384,
+      "sha256": "102e70c9329f223b6c95f3b68c98c53bf8f0d05da9d6a137635fa50e558b9bd9",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "contact-a2.jpg",
+      "bytes": 65299,
+      "sha256": "f53f6c45fc7ef99de92a61eedece5b987fd430f1dbd37962feb3017d252b181b",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "contact-a3.jpg",
+      "bytes": 101735,
+      "sha256": "d7eff13ec08f7fe49108ca31445061b1bfdbe236c6aa9a315cb492ffba686126",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "contact-a4.jpg",
+      "bytes": 67731,
+      "sha256": "117b7c2d941628071c3e4c21ebc0baf889532a82f90486a7aa6047b11dc319c7",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "contact-a5.jpg",
+      "bytes": 125954,
+      "sha256": "e0343712491adefb674675274417f520fcd890634a240e8ad089f207908d71ef",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "contact-a6.jpg",
+      "bytes": 139366,
+      "sha256": "b283e4c3dd4bfeeafa199077dbc52d5e12e3776834b23c65c1608fa8493f06fc",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "contact-a7.jpg",
+      "bytes": 138774,
+      "sha256": "ab786c8d2d0c106c23ab18cbfaa686efb39d9dbceaf0a8314d5c3ab917dd5279",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "contact-a8.jpg",
+      "bytes": 121407,
+      "sha256": "497c9fd8afcf1b152fdb1f47481b507be9adfb4b2f8adf2546427e0c911529fd",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "contact-a9.jpg",
+      "bytes": 125372,
+      "sha256": "311c7a982fb84500ad75f21dab2903483f3efb053c8776e27a43a6c3f4ab94e9",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "release-b0.jpg",
+      "bytes": 127927,
+      "sha256": "de88110b7946b295d0e08bb0a64afe98f07d239e323ee11d81aab89021d0ca10",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "release-b1.jpg",
+      "bytes": 125859,
+      "sha256": "ad28f236de7aebdd82e2ccb3aa2a482a61959b0da2be1ae85b98eab4aa912490",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "release-b2.jpg",
+      "bytes": 139094,
+      "sha256": "515d1b5f399a3832f757049b3ea364463ac84482617a7649a94cea89f2374cc7",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "release-b3.jpg",
+      "bytes": 87896,
+      "sha256": "b066dce4fea44b1d97bfe39585ea8eea8af6102534560c3d444eda269ab48481",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "release-b4.jpg",
+      "bytes": 87040,
+      "sha256": "5461bae364d8d42613554354abee5e986b06f9638d1f2f7617ebe9b17a8cfa83",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "release-b5.jpg",
+      "bytes": 89852,
+      "sha256": "e2e83abb15e85a3445af499e56862cb8347a07496824ddf15c00de64513ab34a",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "separation-d0.jpg",
+      "bytes": 138284,
+      "sha256": "225e31ec4787d7c09e701a4b05e30e140f559fb3b140d51e53e6af8cb8099503",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "separation-d1.jpg",
+      "bytes": 147292,
+      "sha256": "ed983b81bc5b5f188fb169716341720eef20788ae8fbacc5ec65bc8792fa549b",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "separation-d2.jpg",
+      "bytes": 133279,
+      "sha256": "2aebd96578ccd9ded700ac851f8b431b06ef93f316938220ddf642026d5489a7",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "separation-d3.jpg",
+      "bytes": 135266,
+      "sha256": "269425025b39c0a69f306262fb0290c789456240bf797360dc321836b5328bd9",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "separation-d4.jpg",
+      "bytes": 135284,
+      "sha256": "589cd244237601b3b207a5cb42ff3284a3066d7cac8d5825a20888b9a30ef5d5",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "separation-d5.jpg",
+      "bytes": 112789,
+      "sha256": "df4645b8f531b2a5a9a8663ed9f7c2d2f15cffe692d9dd0f08fa983a2256d89f",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "separation-d6.jpg",
+      "bytes": 87896,
+      "sha256": "b066dce4fea44b1d97bfe39585ea8eea8af6102534560c3d444eda269ab48481",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "separation-d7.jpg",
+      "bytes": 83301,
+      "sha256": "bba407fdad944ac3c16262686c6f2358f3f881a421566e90ca561ba87dd612a8",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "verify-c0.jpg",
+      "bytes": 68378,
+      "sha256": "93308411d7c79be423c130082986fad934f26f53e1207355720e15ae855716bd",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "verify-c1.jpg",
+      "bytes": 67698,
+      "sha256": "fdcd9ba88d380e3ba487c850ef015721b798f9b6e089ecdec68627a65ddc9e48",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "verify-c2.jpg",
+      "bytes": 72626,
+      "sha256": "077bf5490428d111d055918fa695d1412f72bfac6d866f2abfcd930c77f86c25",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "verify-c3.jpg",
+      "bytes": 87388,
+      "sha256": "796db4bcca5a7a96a524f26942b4c624ec568966ff9bf00e986800a2672e0336",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "verify-c4.jpg",
+      "bytes": 115614,
+      "sha256": "cdfee514eed84eea45138044dee08797def3f401ad3666f8b3c8a7465cf53dcb",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "verify-c5.jpg",
+      "bytes": 112113,
+      "sha256": "60841ed07f152450ad14ab7bc5e338b59e2fcacde3ac50bbe4bea76625ce7d0c",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "verify-c6.jpg",
+      "bytes": 125952,
+      "sha256": "5ce059d7bde45d3eef2e6b8f81a1f3fd0fac04a9aff2e4d7f299bc7a50af2fb6",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029
+    },
+    {
+      "file": "observations.json",
+      "bytes": 4434,
+      "sha256": "fae0bbdad0e73ab35a167ce8abcbe8116a3142f088f34d488f7fed1ad4394035"
+    }
+  ]
+}

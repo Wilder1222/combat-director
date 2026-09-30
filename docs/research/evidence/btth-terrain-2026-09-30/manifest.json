@@ -1,0 +1,434 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=9inOuEjg5-4&t=1176s",
+  "source_page": "../btth-2026-09-30/source-page.txt",
+  "source_page_sha256": "dbb913cb4908d4dd35397891809de8009a8bb986a717f017232dc4ea828921c6",
+  "source_video_sha256": null,
+  "date": "2026-09-30",
+  "prior_unarchived_images": 10,
+  "new_images_this_turn": 27,
+  "files": [
+    {
+      "file": "locate-a0.jpg",
+      "bytes": 51096,
+      "sha256": "baaa3a79bbcd6092a6bf9ff2a974abc44284a2f233fcaf2566cc740466e6f9d4",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "locate-a1.jpg",
+      "bytes": 120916,
+      "sha256": "9db817271f22ceef11067f0503bab583a34e55867ad7c8c31317c1fd8323fbab",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "locate-a2.jpg",
+      "bytes": 109088,
+      "sha256": "7b93a4df525891879f60289fcd693464390ecf3350badb1f7a990d34a15ecb85",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "locate-a3.jpg",
+      "bytes": 95396,
+      "sha256": "0725424a4c91724c25e710c4b7f0a18c32a55211e94b1a2e9eec28f48999a8bd",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "locate-a4.jpg",
+      "bytes": 93513,
+      "sha256": "6292b114c6b8d2809316feeba0cd60db88f4f126359b292a14048f0bbf9a395d",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "locate-a5.jpg",
+      "bytes": 120909,
+      "sha256": "c73c71758a33d57f63d68b147163237d15ea776d877799045d52de4aa71d9a9c",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "locate-a6.jpg",
+      "bytes": 106590,
+      "sha256": "ddca5a85de6baf925582fe44473f8c6a471a0a2207da2c72a01eb0f51d29bb88",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "locate-a7.jpg",
+      "bytes": 128997,
+      "sha256": "1664c0a365decd4c1c24c4baffe4214c407f61b145dc4a0b02d279dd794ee9a5",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "locate-a8.jpg",
+      "bytes": 132204,
+      "sha256": "e6b96305446937bba43faf9d09243f3d4c6ccc5de1d1062aca03e0787b935ba0",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "locate-a9.jpg",
+      "bytes": 129357,
+      "sha256": "78d57e510b21a7849524557ae2e8d40cc15ec0f52043c2b4dcbef408f93dbf57",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1280,
+      "decoded_height": 720,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-b0.jpg",
+      "bytes": 94025,
+      "sha256": "6e59a724ebc9b4e261dd78a525588af37dd2cda565e2f63fb390fa65e1277c79",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 256,
+      "decoded_height": 144,
+      "evidence_status": "limited_locator_only"
+    },
+    {
+      "file": "terrain-b1.jpg",
+      "bytes": 97343,
+      "sha256": "32f359889596a785b2f361a168033efa6775926f28e104ca034e0bc0defe1750",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 256,
+      "decoded_height": 144,
+      "evidence_status": "limited_locator_only"
+    },
+    {
+      "file": "terrain-hd0.jpg",
+      "bytes": 129850,
+      "sha256": "fbd221c1736e2ec8009b1c7ed13b3d6b89350470da80c6398ff0f8a39453617a",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-hd2.jpg",
+      "bytes": 141758,
+      "sha256": "a0f2f0bd155321c6dd5250db02d4df437478611434ba311dbbcc3a08eeeaa44a",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-hd3.jpg",
+      "bytes": 120380,
+      "sha256": "334d53c5bed34c65e85899222e285b7407c33d4aeec7d13d091897d4f78bcac5",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-hd4.jpg",
+      "bytes": 84036,
+      "sha256": "3c53907b705910c9be1c6308d1aa07779d7a7ef94d10f8a98a6f9efb5acdf076",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-hd5.jpg",
+      "bytes": 113153,
+      "sha256": "7ded3cd25f8278531fbca0aab3fc1a05e722525fbcc84273ca110dc45f28f6c3",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-hd6.jpg",
+      "bytes": 121302,
+      "sha256": "6ba6a9c5cb12a1a6e368df4fcf72c86f9af742b70b6dd78872cfdc2fb95efcbb",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-hd7.jpg",
+      "bytes": 123048,
+      "sha256": "9183a18a1de0052ff0b3a9e573f7bc7a3803b7591fbd18c01c89632b1ec37752",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-hd8.jpg",
+      "bytes": 99434,
+      "sha256": "e36be31500cf38a58c90f72968d94b5de2371b56ecbd404d911686afa104bbac",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-hd9.jpg",
+      "bytes": 100338,
+      "sha256": "748901a8790c5fef85548f9a13ef25089b466f8bda7091fa346751c5eb38089f",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-hd10.jpg",
+      "bytes": 99118,
+      "sha256": "4c13091c1dd80dcd6ca47404c7ffadb10909c7ceecbe0763bbbfe18136077926",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-hd11.jpg",
+      "bytes": 98174,
+      "sha256": "b87f4383aaac0aee860e026c4eee459f6c2fbf3bcac70abaaa0d95a4f708f214",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "terrain-hd12.jpg",
+      "bytes": 114196,
+      "sha256": "222fc2be6781bd33418e775cf9b1ee98809e75dc2126b59ad08f8e656beeb43a",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "fracture-c0.jpg",
+      "bytes": 84334,
+      "sha256": "cb9a59af996962f84e274cec417b13b7cd3fe730c663847cdc0b4400b28aed26",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "fracture-c1.jpg",
+      "bytes": 88050,
+      "sha256": "4b771f4bbd43a2e0e29f006e99ad37885523beb64d6918a6e35cd45c2c896ce0",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "fracture-c2.jpg",
+      "bytes": 129267,
+      "sha256": "065425f8298a1665f686018ab5b206b134385e3b41064fcc0614146deabaf9a4",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "fracture-c3.jpg",
+      "bytes": 104353,
+      "sha256": "e431ea079336fca982058be3b0f4cc0be59bea0c3010dbba6ce52d2120a1faac",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "fracture-c4.jpg",
+      "bytes": 102945,
+      "sha256": "1e4d44c8c880cf55b2589e8bbf13355f443765232261b715ef621e52d0eee616",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "fracture-c5.jpg",
+      "bytes": 113212,
+      "sha256": "52301e56254dbf30101c8850d63253203ddfd7f6e3d7ee5d5006b632fc229929",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "cut-d0.jpg",
+      "bytes": 87683,
+      "sha256": "5ffa196fb5047fa71229b8ec18962dd33bb2449e100b19d4fba6a11f4881dec9",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "cut-d1.jpg",
+      "bytes": 85845,
+      "sha256": "005066d86702f68983f4fb5fcc058758e00068bfcea06cc46c81ae068b120f8a",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "cut-d2.jpg",
+      "bytes": 88395,
+      "sha256": "8c18024551e151979c99238679250bbab660e890a98175e1cd07b9fd2ae24f8c",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "cut-d3.jpg",
+      "bytes": 129990,
+      "sha256": "6a76462c87ee0e1e60bde7e74a2f74ced9a5c42b0a3e5e2490caacbaa52180ce",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "cut-d4.jpg",
+      "bytes": 129597,
+      "sha256": "6578179bd6529e9821e28fe45ea55fca14fef959d8d6ca14777fc9d21a22d1cc",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "cut-d5.jpg",
+      "bytes": 129547,
+      "sha256": "a46565e02b571f2012aed2fe447f74a341e49252be5848703b5e8e31805daca9",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    },
+    {
+      "file": "cut-d6.jpg",
+      "bytes": 129165,
+      "sha256": "9c682f79126865abe39b80304106663106214dd40f68c0285711e199e91f772b",
+      "actual_format": "JPEG",
+      "screenshot_width": 1646,
+      "screenshot_height": 1029,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "evidence_status": "observed"
+    }
+  ],
+  "observation_sha256": "94eee16b78b17a7a96ebccd9513799c862a6784e9f3a4869bdbdc42d5868885e",
+  "confirmed_cut": {
+    "before": "cut-d2.jpg",
+    "after": "cut-d3.jpg",
+    "time_interval_seconds": [
+      1210.712229,
+      1210.745562
+    ]
+  },
+  "skipped_attempts": [
+    {
+      "time": 1207.445651,
+      "ready": 1,
+      "reason": "not decoded; no screenshot saved"
+    }
+  ]
+}

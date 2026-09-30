@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "scope": "local_file_set_hash_image_decode_and_capture_metadata_only",
+  "count": 16,
+  "audio_observed": false,
+  "normal_speed_continuous_review": false,
+  "visual_findings": "Manual report; two near-black observations limited; rechecks are captures not unique source frames"
+}

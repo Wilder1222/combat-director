@@ -1,0 +1,13 @@
+{
+  "skill_files_read": [
+    "SKILL.md",
+    "references/rapid-cut-continuity.md",
+    "references/choreography.md",
+    "references/templates.md",
+    "references/scene-staging.md",
+    "references/camera-coverage.md",
+    "references/compact-output.md"
+  ],
+  "request_file": "request.txt",
+  "note": "Only the request and listed staged skill files were read. choreography.md was re-read alone after a combined output truncation."
+}

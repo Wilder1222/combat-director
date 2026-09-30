@@ -1,0 +1,18 @@
+{
+  "scope": "File integrity and stored playback metadata only; not visual continuity, audio, source FPS or camera validation",
+  "file_count": 30,
+  "screenshot_sizes": [
+    [
+      1646,
+      1029
+    ]
+  ],
+  "checks": {
+    "all_30_images_decode": true,
+    "unique_filenames": true,
+    "image_set_matches_observations": true,
+    "all_capture_records_paused_ready4": true,
+    "all_recorded_decode_1920x1080": true
+  },
+  "passed": true
+}

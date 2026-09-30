@@ -1,0 +1,265 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=Dw0YlyDCDWs",
+  "source_provenance": "../cangyuan-2026-09-30/source-page.txt",
+  "source_video_sha256": null,
+  "date": "2026-09-30",
+  "method": "Browser paused sampling and two rechecks; sample coordinates are not verified source frame numbers",
+  "files": [
+    {
+      "file": "grip-f0.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 544.731912,
+      "width": 1280,
+      "bytes": 130867,
+      "sha256": "d62031082183b7d55da94c77a1c7654afb67e5025a5448d1f993830e2e195698",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f1.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 544.765245,
+      "width": 1280,
+      "bytes": 133692,
+      "sha256": "44ec19ead8f762e74622f0185b9b79f9dd7832cbc2acfec956d57cb3c39b6200",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f2.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 544.798578,
+      "width": 1280,
+      "bytes": 125468,
+      "sha256": "8fba10488802267a8630753911080df41dac155f5bd8b6c3c9dee6721aae62fe",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f3.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 544.831911,
+      "width": 1280,
+      "bytes": 123665,
+      "sha256": "77b4b6eca2f3a52a2171d513a9a0adbbcf48eba3fcb9092525aaf497ed01ac47",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f4.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 544.865244,
+      "width": 1280,
+      "bytes": 123698,
+      "sha256": "b659394baf5a21783d48d9efa45f2b9c24d0dc54d09e52e1bd981a8eb5af0807",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f5.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 544.898577,
+      "width": 1280,
+      "bytes": 42483,
+      "sha256": "2ac8c5effcf480200dfc1e7f97a5a8b57d7a46962773b4858d49cfd5c39f3870",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "reproducible_near_black_sample_intent_unknown"
+    },
+    {
+      "file": "grip-f6.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 544.93191,
+      "width": 1280,
+      "bytes": 131533,
+      "sha256": "0b4db434151d579e3899c27052e45bb418cebff1d40466ba46ece4b76006386d",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f7.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 544.965243,
+      "width": 1280,
+      "bytes": 141861,
+      "sha256": "cae2859f7b0064ee53cdd409d5f31392350e5d1e8a0740b20c4072121a4d9906",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f8.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 544.998576,
+      "width": 1280,
+      "bytes": 168241,
+      "sha256": "2f1fbc78e32dc30ceb9c69f63c88ab8fe87d94f2a7113bc891f69b88ec670a7d",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f9.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 545.031909,
+      "width": 1280,
+      "bytes": 162081,
+      "sha256": "62f2ad03c16bdaaf6679810e095a073b64c5e8c2d15ff7f853d7f08d296a615a",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f10.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 545.065242,
+      "width": 1280,
+      "bytes": 162384,
+      "sha256": "8e72734970e0bfea1cd2d8079c0217a28835e4fa3489ecfdb4d99897dc273783",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f11.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 545.098575,
+      "width": 1280,
+      "bytes": 146361,
+      "sha256": "6052584d6720544a3f9142e687a9c4d7eb3d6d0a6f3885262ec6933d9c7b85cb",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f12.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 545.131908,
+      "width": 1280,
+      "bytes": 148192,
+      "sha256": "7351d64fa5b11c0d25431c0e9ba64278c922bdd141e94cf5e8795d6aa46d6a1d",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f13.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 545.165241,
+      "width": 1280,
+      "bytes": 150831,
+      "sha256": "9eaf89fa95e05c1c8128289dc1ff64d6147518f82f9adb8a635cc1213ffbef38",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    },
+    {
+      "file": "grip-f5-recheck.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 544.898569,
+      "width": 1280,
+      "bytes": 42928,
+      "sha256": "0698817cecc067ce74dd1f21f4770af3deaded164e940a79b48d98043f0194ef",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "reproducible_near_black_sample_intent_unknown"
+    },
+    {
+      "file": "grip-f6-recheck.jpg",
+      "height": 592,
+      "paused": true,
+      "ready": 4,
+      "time": 544.931902,
+      "width": 1280,
+      "bytes": 131525,
+      "sha256": "2c63641895831cd5126b138c8af5dee746f2f1699816af598ddb20d8d6fb8da3",
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "evidence_limit": "paused_visual_sample_only"
+    }
+  ]
+}

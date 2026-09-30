@@ -1,0 +1,463 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=FpyuI7m3wrw",
+  "source_provenance": "source-page-verified.txt",
+  "source_video_sha256": null,
+  "date": "2026-09-30",
+  "method": "Existing paused browser captures; 14 key images re-inspected this turn. No additional action captures. currentTime is a player sample coordinate, not verified source frame/edit time.",
+  "normal_speed_continuous_review": false,
+  "audio_observed": false,
+  "source_page_sha256": "7036b8981da0ef78e519747bd2d29689bd8f80a3095e9837f6cbda04c7dad94f",
+  "observations_sha256": "8056fbaf286c95b533829c735f1ddad819a2bf6b0a5d037f5ea50ac147485387",
+  "files": [
+    {
+      "file": "locate-a0.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 190.02,
+      "width": 1920,
+      "sha256": "8bf6758d79e74dd730883de14b7949c08e0a36b7a947feebdf2c5ab036028edd",
+      "bytes": 119567,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "locate-a1.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 195.02,
+      "width": 1920,
+      "sha256": "062982675c0fc1f0a0a2d803826bd4168561a4251ea8b3800eb4decd531e1bf0",
+      "bytes": 72090,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "locate-a2.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 200.02,
+      "width": 1920,
+      "sha256": "cea28459db5eda9f96d3588ad17f43d39b66c6e01750b20c70d63cec344d9edc",
+      "bytes": 55950,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "locate-a3.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 205.02,
+      "width": 1920,
+      "sha256": "818b3608b34e89f4ab025e1a9e33deb795fa9447a9ab09938da901ac034b81f2",
+      "bytes": 102139,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "locate-a4.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 210.02,
+      "width": 1920,
+      "sha256": "3dc314b3b798bcd50d5ad38f79ec8473c075135276284252631fc81c8e5445ad",
+      "bytes": 82497,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "locate-a5.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 215.02,
+      "width": 1920,
+      "sha256": "34475f8f932bfcd767107a9b2b920eafdb0e1fa5af82f95323c0f6af7e0e1e13",
+      "bytes": 77549,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "locate-a6.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 220.02,
+      "width": 1920,
+      "sha256": "33476cf95e631fe6a3c1b8386b053b7868823154bc443f5005ae9620ffcf32a8",
+      "bytes": 125975,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b0.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 206.019999,
+      "width": 1920,
+      "sha256": "c0980dace82dc64ce1a24ee0c88dfeb73cd158c0f4dbe71e0e638f854af6e8ba",
+      "bytes": 104796,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b1.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 207.019998,
+      "width": 1920,
+      "sha256": "1afeb09dc2e38efd8dccce2cb757b44b287f595ad16a983394d406bb91076b11",
+      "bytes": 72411,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b2.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.019997,
+      "width": 1920,
+      "sha256": "445da8276f7d0d4f54eb3bccb418601d0b37fd56c49f7fd2ad80a6300365f04d",
+      "bytes": 80113,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b3.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 208.519996,
+      "width": 1920,
+      "sha256": "3476155ca6fe906807c80afeed25552d1541ea1b2117c79bb86be60f6a8586af",
+      "bytes": 71335,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b4.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 209.019992,
+      "width": 1920,
+      "sha256": "7472e0bd41e069f03747dc65396a7feb69353b1e3330b0aac3c40cc4a89f7fe4",
+      "bytes": 61952,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b5.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 209.519987,
+      "width": 1920,
+      "sha256": "a98361f4c81c203e4209c1ddd16d9327add2aacb60c94b1c0207756a18c6f9c7",
+      "bytes": 71872,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b6.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 210.019985,
+      "width": 1920,
+      "sha256": "519ccd83d4d3f1df07c88e9047048a4d8545bdddce03d3ecb333825beeed310c",
+      "bytes": 81587,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b7.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 210.519984,
+      "width": 1920,
+      "sha256": "13051a16e8d355911055b73cf91f3a726de314fdc3b3983f58ba3191ca6ac528",
+      "bytes": 103646,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b8.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 211.019983,
+      "width": 1920,
+      "sha256": "d69db957cf189d518064431df5caa243d6db13e4985fed92946a0b7d8495d3da",
+      "bytes": 92630,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b9.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 211.519982,
+      "width": 1920,
+      "sha256": "2faa562ac5967e1489b3aeb5c4ced53721331dfaeb2fccab1e5c5f38f6d717cf",
+      "bytes": 65287,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b10.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 212.019978,
+      "width": 1920,
+      "sha256": "d1305d767f4bcb09b31d7be5cff41443563beee76850c25b6bd068bd1236d119",
+      "bytes": 120098,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b11.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 212.519975,
+      "width": 1920,
+      "sha256": "7ec69929ee4bce2712b605c95d079140b658a7276cd6c44333005dbe552f7693",
+      "bytes": 119640,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b12.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 213.019974,
+      "width": 1920,
+      "sha256": "ded54da99e22bb5aded8e530dd3b99bfdfd5f43478a7d64f4a445b2b21125b58",
+      "bytes": 78194,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b13.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 213.519973,
+      "width": 1920,
+      "sha256": "d17971ab0f92cf3873481f5237559d9cb639fee32b851db523f5d374ee0d3137",
+      "bytes": 131252,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "dodge-b14.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 214.019972,
+      "width": 1920,
+      "sha256": "634d57ecc2abbf910dba7d74f4be9f153213cadec7be3e81a5657d2ae948aa10",
+      "bytes": 125098,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "support-c0.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 209.119971,
+      "width": 1920,
+      "sha256": "44129f436799047fdd7fdb1d4f75b417fd361f112588cf0cfdba49f8e202aad9",
+      "bytes": 60282,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "support-c1.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 209.21997,
+      "width": 1920,
+      "sha256": "4333e6c24eb8f6bdc307d33c9bb705afd859e5aa4ce7ac1d4cead83e07e0106f",
+      "bytes": 58279,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "support-c2.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 209.319969,
+      "width": 1920,
+      "sha256": "b100d0a122557aec17635219c634121d59e28af3982b10188691a069f0332cf5",
+      "bytes": 59023,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "support-c3.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 209.419968,
+      "width": 1920,
+      "sha256": "4487c40633a160e609965a901765a92c3bf235afaa2888de7db81dfe5230f3f0",
+      "bytes": 66445,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "support-c4.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 209.519967,
+      "width": 1920,
+      "sha256": "a98361f4c81c203e4209c1ddd16d9327add2aacb60c94b1c0207756a18c6f9c7",
+      "bytes": 71872,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "support-c5.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 209.619966,
+      "width": 1920,
+      "sha256": "87219df7dcc950d4954dd8af89c573542d57121bef54ad0c3e3ed7678efb772c",
+      "bytes": 81071,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "support-c6.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 209.719965,
+      "width": 1920,
+      "sha256": "2ec4e93df5c0179465e7a0b32444ac2e5198095774c58622cad68acbf36c6946",
+      "bytes": 83366,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    },
+    {
+      "file": "support-c7.jpg",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 209.819964,
+      "width": 1920,
+      "sha256": "0ef493f84f7c0d79eb114800d93ad6740c3e4dacc81a235d4b7bfc6545544d78",
+      "bytes": 83059,
+      "actual_format": "JPEG",
+      "screenshot_size": [
+        1646,
+        1029
+      ]
+    }
+  ]
+}

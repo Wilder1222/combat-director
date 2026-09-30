@@ -1,0 +1,623 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=Nks4X7EeR3M",
+  "source_video_hash": null,
+  "audio_observed": false,
+  "continuous_normal_speed_review": false,
+  "records": [
+    {
+      "file": "loc-20.png",
+      "height": 362,
+      "paused": true,
+      "ready": 4,
+      "time": 241.6,
+      "width": 854,
+      "screenshot_size": [
+        1646,
+        1029
+      ],
+      "bytes": 93594,
+      "sha256": "159d79321acd68f7ad21715034e1ab7d21354c62437f359d7d51fa2e1c426241",
+      "scope": "locator_only"
+    },
+    {
+      "file": "loc-40.png",
+      "height": 272,
+      "paused": true,
+      "ready": 4,
+      "time": 483.2,
+      "width": 640,
+      "screenshot_size": [
+        1265,
+        712
+      ],
+      "bytes": 136286,
+      "sha256": "0f4e863b0a7bd88860ecfaf6ed5bf62af65f5e15e8443527ece0085a16facb4c",
+      "scope": "locator_only"
+    },
+    {
+      "file": "six-minute.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 365.720026,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 120702,
+      "sha256": "e941b22adc4e4e64a91508b516302f83525843c9f5ed0acc8b4fa118645f3ac3",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s365-clean.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 365.720026,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 100660,
+      "sha256": "b3a192de1119912624d5a2c21bff0f3c842b2415c2a3a921c9034ba63172f696",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s366.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 366.220021,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 132627,
+      "sha256": "f29a2237de8e256e20a4252c4b50e8ebf51bcce28c8ca592de86bdbbdff42067",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s366b.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 366.720016,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 112185,
+      "sha256": "f4e7ae778459ba17605f21428ed6f4ceffc94bf8146669124238e51a3d881037",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-0.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 367.220011,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 131830,
+      "sha256": "ec898393bf00e72f6c3ce3bdf936d6828544f876b091803f88f8d834852d4f21",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-1.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 367.720009,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 47145,
+      "sha256": "3ae2f80a9032850426099b7a69f9bd388d8f79228015478f4df490946e35b69d",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-2.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 368.220006,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 99851,
+      "sha256": "e943693ce780ad2f0212b9545d8a91468857dad80fb243130acad047b16d6e2a",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-3.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 368.720001,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 62958,
+      "sha256": "6f77d86b8c6350369aefff9c9e518c9d7fa1bc83223f56a19c037e1d72767da5",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-4.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 369.719991,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 122686,
+      "sha256": "f429ee1af6847144eb17b3770bc91755c98191d131920f1d7928c03821ed1b4f",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-5.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 370.719981,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 115930,
+      "sha256": "5c5382e136f75fbfa19ff0b804b4ef1602b2cf1d7aac2cb7cd810513abb9e943",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-6.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 371.719971,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 99453,
+      "sha256": "30a263fc30ddc7e23c5922ffa22b4ed80371ebf6985aad1465e02fdf62165ab2",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-7.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 372.719961,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 96752,
+      "sha256": "312da7ee7c7407cbb6d931cb2ba2c643050d15906044d6b65b0f9b3621f8d5c3",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-8.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 373.719958,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 94180,
+      "sha256": "cf81da371f212167af40c2b2df5b363c85564044300ce52faa2e2ffcd59b4cd2",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-9.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 374.719958,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 115071,
+      "sha256": "ebed4e70a650e1a18a708fcb2c8a66e5f7e4a1b233f4875a775548cecf12c3cb",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-10.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 375.719952,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 111114,
+      "sha256": "abbb0a74632228bcda410b0320c934e636a93774dc54ef65f45e6b9e46c92a2b",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-11.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 376.719951,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 124446,
+      "sha256": "9e99e6544fabbe20284e5d13a548d1d3cfeee9ab0331354b2f779839140a3aa1",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-12.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 377.719946,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 109783,
+      "sha256": "864ed0ef802f5ccd12af32aa5d08ac7d55aec206259f035c50437a3ab9b411fb",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-13.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 378.719936,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 121507,
+      "sha256": "26f3e07f327a8fb71b5c1aa06e3111ca12c0863db598ff8eaf5405401f5e03c3",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-14.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 379.719926,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 127897,
+      "sha256": "cebdb5c5f1f255db580c39a4ee78531fefa695d48a4c848681c5d0396493a913",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-15.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 380.719924,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 114223,
+      "sha256": "1e9ddc353263517c3adf54d3e2b1b591556cda95cbd7b1ad48363589c5d92628",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-16.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 381.719921,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 125141,
+      "sha256": "37af7d7efb7c1ad77b4d6730e6b827b2ceb16ecf5187b8bcfa14606ea5f63370",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-17.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 382.719911,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 110996,
+      "sha256": "7aa490a0cf6a6e4252eace9e1f8d94acfa9de81fa975837eeb73cc2ba74c72a6",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "exchange-18.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 383.719901,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 160909,
+      "sha256": "fab17b748094fc6d844d4c30ef1802c1334ff0705919d1a921900cc50d19089e",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s393.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 393.719901,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 102088,
+      "sha256": "4e0c1c9a9cf9af2d60b6567aa898e1a7efae17a405335367a52fff3cb761fbd1",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s403.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 403.719901,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 67589,
+      "sha256": "6d171419048a330f9969509e890e1ec69f1feec1e47642c2cde75462343e21fb",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s413.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 413.719901,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 92583,
+      "sha256": "fa54de0c6b7efd4d1fd85fcfc733215e548db7aa9dc529739c4917c4d58d4a76",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s423.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 423.719901,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 113344,
+      "sha256": "a09a2c2f71ddee341b7c2dcfcb7f475e2e3dfcbe75e6b9dead73bfe8ae37c65e",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s433.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 433.719901,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 99877,
+      "sha256": "d93ad6905d7cd51963a1711f2e78ed383cdb56a0e172557da2dc8da365686003",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s443.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 443.719901,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 100131,
+      "sha256": "4716a8a3510c87ea84f97055cabc8c75adff213f91239a7444c7b7252e58ab31",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s453.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 453.719901,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 140752,
+      "sha256": "4a0412b8757c946aabc8e205fbf7ce2824527ac9c2842af6f918be90e1ec68c1",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s463.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 463.719901,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 95317,
+      "sha256": "fb1cecdb5e927744c9e090e3b1020b6025753e1f4320ff52a8c0516cb965153f",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s483.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 483.719901,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 84058,
+      "sha256": "af6021981276cacd34535337cb42f9b61ddf7d7777b2a52cbd7c9d3bb244e226",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s503.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 503.719901,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 107386,
+      "sha256": "c8b19344b7fd2af042fb23d22a1350442b7735fe29fa212e3ff6a419fdf29891",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s523.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 523.7199,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 102602,
+      "sha256": "67f2f8e5b692866f80242c5c4fec3267939d7f6b71ec70644f770abcecbe9b18",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s543.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 543.7199,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 89161,
+      "sha256": "b9c14aef1bf484b90169bd339cb99f3c03dfb341d78909585b29ca6252565bb2",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s563.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 563.7199,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 85588,
+      "sha256": "32d7d32f48200da69f98728e8bee9232ff65ae354e1b700fde1624d55f317a40",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s583.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 583.7199,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 91981,
+      "sha256": "c9af480a798c9acb515c96c5480ca443fd856e0ac63c9149ed8204f87b324220",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s603.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 603.7199,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 96873,
+      "sha256": "f61ef53eab7acfb1fa1270d11f554f2fb6d4af8eec948157b6d4a61de9c36193",
+      "scope": "paused_visual_sample"
+    },
+    {
+      "file": "s623.png",
+      "height": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 623.7199,
+      "width": 2542,
+      "screenshot_size": [
+        1659,
+        995
+      ],
+      "bytes": 123513,
+      "sha256": "845145b32cc5344cd1b2db50db65dd9602ba6d5afb6ec8d211e24e71f4bb25b8",
+      "scope": "paused_visual_sample"
+    }
+  ]
+}

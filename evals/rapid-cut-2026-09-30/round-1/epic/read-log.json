@@ -1,0 +1,15 @@
+{
+  "base": "../skill",
+  "read_paths": [
+    "SKILL.md",
+    "references/rapid-cut-continuity.md",
+    "references/choreography.md",
+    "references/templates.md",
+    "references/scene-staging.md",
+    "references/camera-coverage.md",
+    "references/compact-output.md",
+    "assets/sequence-template.md",
+    "references/quality.md",
+    "references/particle-vfx.md"
+  ]
+}
