@@ -1,0 +1,52 @@
+{
+  "source": "skills/combat-director/examples/flower-path-44.md",
+  "source_sha256": "bc545e3b5f66ce2583fd70841943a536dc52ef0e3db1eb894839c59e09dfd996",
+  "reviewer": "primary-agent",
+  "independent_review": false,
+  "scope": "structural_checker_limits_with_manually_reviewed_semantic_mutations",
+  "cases": [
+    {
+      "case": "unbraked_reversal",
+      "patches": [
+        {
+          "before": "以左后脚承重制动、右前脚轻落",
+          "after": "仍向左滑行"
+        },
+        {
+          "before": "B保持落稳状态",
+          "after": "B借遮挡直接向右冲起"
+        }
+      ],
+      "mutant_sha256": "b31338b7e7c6644f8020c656e6c1fd520dbf4d666df19bb94d11a37e1908c676",
+      "structural_check_passed": true,
+      "manual_semantic_verdict": "fail",
+      "manual_reason": "S23仍向左运动，S24无可见制动和新支撑就反向冲起；遮挡不能补足这一步。"
+    },
+    {
+      "case": "body_side_mismatch",
+      "patches": [
+        {
+          "before": "B左肩与A右胸衣料首触",
+          "after": "B左肩与A左胸衣料首触"
+        }
+      ],
+      "mutant_sha256": "84462fd88f2e2d8fe89d308299a91da297736fddac4e7b1a2eb5bc6d369fb274",
+      "structural_check_passed": true,
+      "manual_semantic_verdict": "fail",
+      "manual_reason": "相向站立且无横移转体，B北侧左肩被写成撞A南侧左胸，接点与世界侧不一致。"
+    },
+    {
+      "case": "ground_hit_ghost_body_damage",
+      "patches": [
+        {
+          "before": "A身体无命中形变",
+          "after": "A胸口同步内凹并喷出一口气"
+        }
+      ],
+      "mutant_sha256": "36cb742b53f075cf8cedfec17785e58688bbc1d849d93fa50de81a68c5b90739",
+      "structural_check_passed": true,
+      "manual_semantic_verdict": "fail",
+      "manual_reason": "声明接点在北侧石面，没有身体接触或另行授权的身体冲击，却生成胸部受压反馈。"
+    }
+  ]
+}

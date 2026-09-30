@@ -66,7 +66,7 @@ Encoding recovery: If a skill/reference read is garbled or contains replacement 
 - 一镜到底：画面不能切镜、跳切、黑场或用遮挡伪装剪辑。
 - 单个成片文件：不证明生成次数，也不证明无剪辑。
 
-用户要求以多机位短镜爆剪替换“一镜到底”时，直接切换镜头模式，并同步清除当前方案总则、局部运镜和负向限制中的旧单镜要求。采用[爆剪与相对关系](references/rapid-cut-continuity.md)：约44镜、快镜0.2—0.4秒、慢镜0.6—1.2秒，保留开场子弹时间与终局爆发顿挫两处微慢镜。该模式按请求启用，不把所有战斗或既有单镜示例统一改成爆剪。
+用户要求多机位爆剪替换“一镜到底”时，同步清除当前稿的旧单镜限制，按[爆剪专项](references/rapid-cut-continuity.md)组织事件、镜长、轴线与复位。该模式仅按请求启用；仙侠与人物选择另按[情绪仙侠](references/emotional-xianxia.md)编排，不把一份示例的招式与能力套给所有场景。
 
 ### 2. 选战斗结构，而不是套固定大招
 

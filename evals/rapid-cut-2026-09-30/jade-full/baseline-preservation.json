@@ -1,0 +1,31 @@
+{
+  "baseline": "c69dea0",
+  "checks": [
+    {
+      "path": "skills/combat-director/examples/grounded-15.prompt.txt",
+      "sha256": "dccc8531b85208addf3b40b810b8ea6139b54bc56cb1b21ddabb9d0e17c1ae2d",
+      "unchanged_from_baseline": true
+    },
+    {
+      "path": "skills/combat-director/examples/grounded-15.plan.json",
+      "sha256": "c8de1a010e51aed026719026c9298b0735ddaa6e52d505e64f4bccd61d818b23",
+      "unchanged_from_baseline": true
+    },
+    {
+      "path": "evals/rapid-cut-2026-09-30/revised/epic/answer.md",
+      "sha256": "d93401032a88cea03b67ccdcc679c2fc18f48981512fb4e292f459b2653edbb8",
+      "unchanged_from_baseline": true
+    },
+    {
+      "path": "evals/rapid-cut-2026-09-30/revised/crossing/answer.md",
+      "sha256": "518a74818f5902dd6922b240056b025636f8e1b523c2f81607992b1c17262de6",
+      "unchanged_from_baseline": true
+    },
+    {
+      "path": "evals/rapid-cut-2026-09-30/round-2/budget/answer.md",
+      "sha256": "4aac1ecf4a67d5f61e61ce22394ab98e11607f10f9c7e009fc59f5e5d7e7a50f",
+      "unchanged_from_baseline": true
+    }
+  ],
+  "scope": "byte_preservation_only_not_fresh_generation"
+}

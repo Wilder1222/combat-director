@@ -1,0 +1,173 @@
+{
+  "source_sha256": "bc545e3b5f66ce2583fd70841943a536dc52ef0e3db1eb894839c59e09dfd996",
+  "checker_sha256": "c7cba517918637262bf15c84c38e364e19c8210b947986ec6786445f2376a848",
+  "scope": "synthetic_text_checker_regression_only",
+  "passed": true,
+  "cases": [
+    {
+      "case": "complete_44",
+      "expected_acceptance": true,
+      "passed": true,
+      "observed_errors": []
+    },
+    {
+      "case": "no_table",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "No supported shot table found; this is not a passing result",
+        "Expected 44 shots, found 0",
+        "Expected duration 30, found 0",
+        "No event roles found; unsupported/missing evidence is not a pass",
+        "No readable-space windows declared",
+        "Space unreadable for 30s, exceeding 5s (includes head/tail)",
+        "Exactly two labeled micro-slow windows required: 开场 and 终局",
+        "No rhythm phases declared",
+        "Rhythm phases do not cover full duration"
+      ]
+    },
+    {
+      "case": "missing_event",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "E01: expected exactly one approach/contact-or-miss/feedback chain"
+      ]
+    },
+    {
+      "case": "duplicate_first_touch",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "S05: contact needs exactly one first touch and Hit Stop"
+      ]
+    },
+    {
+      "case": "continued_contact_recounted",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "S06: contact needs exactly one first touch and Hit Stop",
+        "E01: expected exactly one approach/contact-or-miss/feedback chain"
+      ]
+    },
+    {
+      "case": "wrong_chain_order",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "E01: expected exactly one approach/contact-or-miss/feedback chain"
+      ]
+    },
+    {
+      "case": "unknown_role",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "S04: unsupported or ambiguous event role",
+        "E01: expected exactly one approach/contact-or-miss/feedback chain"
+      ]
+    },
+    {
+      "case": "touch_outside_shot",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "S05: first touch outside shot",
+        "S05: Hit Stop must start at declared first touch"
+      ]
+    },
+    {
+      "case": "stop_before_touch",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "S05: Hit Stop must start at declared first touch"
+      ]
+    },
+    {
+      "case": "stop_beyond_shot",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "S05: Hit Stop outside shot or freezes whole shot"
+      ]
+    },
+    {
+      "case": "read_title_but_late_window",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "Space unreadable for 5.10s, exceeding 5s (includes head/tail)"
+      ]
+    },
+    {
+      "case": "empty_read_window",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "S07: read window outside shot or empty",
+        "Space unreadable for 7.00s, exceeding 5s (includes head/tail)"
+      ]
+    },
+    {
+      "case": "read_outside_shot",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "S07: read window outside shot or empty",
+        "Space unreadable for 7.00s, exceeding 5s (includes head/tail)"
+      ]
+    },
+    {
+      "case": "missing_micro",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "Exactly two labeled micro-slow windows required: 开场 and 终局"
+      ]
+    },
+    {
+      "case": "micro_outside_duration",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "终局: invalid/overlapping micro-slow window"
+      ]
+    },
+    {
+      "case": "third_micro",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "Exactly two labeled micro-slow windows required: 开场 and 终局",
+        "中段: invalid/overlapping micro-slow window"
+      ]
+    },
+    {
+      "case": "phase_gap",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "连爆与改局: phases must tile duration at shot boundaries"
+      ]
+    },
+    {
+      "case": "phase_inside_shot",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "拉升: phases must tile duration at shot boundaries",
+        "连爆与改局: phases must tile duration at shot boundaries"
+      ]
+    },
+    {
+      "case": "wrong_declared_duration",
+      "expected_acceptance": false,
+      "passed": true,
+      "observed_errors": [
+        "S01: written duration 1.10 differs from interval 1.20"
+      ]
+    }
+  ]
+}
