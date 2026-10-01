@@ -1,0 +1,526 @@
+{
+  "schema_version": "1.2",
+  "id": "action-transfer",
+  "provenance": "Synthetic engineering fixture. Narrative removed. Never a creative reference or media validation.",
+  "template": "grounded",
+  "duration": 15,
+  "aspect_ratio": "16:9",
+  "generation": "single",
+  "camera_mode": "one-take",
+  "rules": {
+    "fantasy": false,
+    "max_scale": "person"
+  },
+  "timing": {
+    "lead_in": 0.2,
+    "tail_out": 0.6,
+    "result_at": 14.4
+  },
+  "anchors": [
+    "fixture-text-331",
+    "fixture-text-332",
+    "fixture-text-333"
+  ],
+  "cast": [
+    {
+      "id": "A",
+      "description": "fixture-text-334",
+      "goal": "fixture-text-335",
+      "prop": "fixture-text-336",
+      "hand": "fixture-text-23"
+    },
+    {
+      "id": "B",
+      "description": "fixture-text-337",
+      "goal": "fixture-text-338",
+      "prop": "fixture-text-339",
+      "hand": "fixture-text-23"
+    }
+  ],
+  "abilities": [],
+  "references": [],
+  "weapon_profiles": [
+    {
+      "id": "STAFF",
+      "name": "fixture-text-336",
+      "type": "fixture-text-340",
+      "visible_traits": "fixture-text-341",
+      "owner_id": "A",
+      "mount": "held"
+    },
+    {
+      "id": "LETTER",
+      "name": "fixture-text-339",
+      "type": "fixture-text-342",
+      "visible_traits": "fixture-text-343",
+      "owner_id": "B",
+      "mount": "held"
+    }
+  ],
+  "action_initial_state": {
+    "actors": {
+      "A": {
+        "zone": "fixture-text-344",
+        "facing": "fixture-text-345",
+        "support": "fixture-text-346",
+        "held_items": {
+          "left": "",
+          "right": "STAFF"
+        },
+        "damage": [],
+        "constraints": []
+      },
+      "B": {
+        "zone": "fixture-text-347",
+        "facing": "fixture-text-345",
+        "support": "fixture-text-346",
+        "held_items": {
+          "left": "",
+          "right": "LETTER"
+        },
+        "damage": [],
+        "constraints": []
+      }
+    },
+    "environment": {
+      "fixture-text-331": "fixture-text-348",
+      "fixture-text-332": "fixture-text-348",
+      "fixture-text-333": "fixture-text-349"
+    }
+  },
+  "headers": {
+    "goal": "fixture-text-350",
+    "cast": "fixture-text-351",
+    "scene": "fixture-text-352",
+    "budget": "fixture-text-353",
+    "continuity": "fixture-text-354"
+  },
+  "beats": [
+    {
+      "id": "B01",
+      "start": 0,
+      "end": 4,
+      "intent": "fixture-text-355",
+      "actors": {
+        "A": {
+          "action": "fixture-text-356",
+          "performance": "fixture-text-357"
+        },
+        "B": {
+          "action": "fixture-text-358",
+          "performance": "fixture-text-359"
+        }
+      },
+      "emotion": "fixture-text-360",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "start",
+        "side": "fixture-text-50",
+        "path": "fixture-text-361",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-362",
+      "environment": "fixture-text-363",
+      "sound": "fixture-text-364",
+      "ability_ids": [],
+      "before": {
+        "A": "fixture-text-344；fixture-text-345；fixture-text-346；左手空，右手fixture-text-336；损伤：无；限制：无",
+        "B": "fixture-text-347；fixture-text-345；fixture-text-346；左手空，右手fixture-text-339；损伤：无；限制：无",
+        "environment": "fixture-text-331：fixture-text-348；fixture-text-332：fixture-text-348；fixture-text-333：fixture-text-349",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-380；fixture-text-345；fixture-text-346；左手空，右手fixture-text-336；损伤：无；限制：无",
+        "B": "fixture-text-347；fixture-text-345；fixture-text-346；左手空，右手fixture-text-339；损伤：无；限制：无",
+        "environment": "fixture-text-331：fixture-text-348；fixture-text-332：fixture-text-348；fixture-text-333：fixture-text-349",
+        "camera_side": "fixture-text-50"
+      },
+      "action_events": [
+        {
+          "id": "E1",
+          "actor_id": "B",
+          "target_id": "A",
+          "start": 0.2,
+          "end": 2,
+          "response_to": "",
+          "weapon_id": "",
+          "hands_used": [
+            "left"
+          ],
+          "movement": "walk",
+          "action": "fixture-text-358",
+          "trajectory": {
+            "start": "fixture-text-369",
+            "path": "fixture-text-370",
+            "end": "fixture-text-371",
+            "screen_direction": "fixture-text-372"
+          },
+          "contact": "fixture-text-373",
+          "outcome": "fixture-text-374",
+          "transfers": []
+        },
+        {
+          "id": "E2",
+          "actor_id": "A",
+          "target_id": "B",
+          "start": 2,
+          "end": 4,
+          "response_to": "E1",
+          "weapon_id": "STAFF",
+          "hands_used": [
+            "right"
+          ],
+          "movement": "walk",
+          "action": "fixture-text-356",
+          "trajectory": {
+            "start": "fixture-text-375",
+            "path": "fixture-text-376",
+            "end": "fixture-text-377",
+            "screen_direction": "fixture-text-372"
+          },
+          "contact": "fixture-text-378",
+          "outcome": "fixture-text-379",
+          "transfers": []
+        }
+      ],
+      "state_delta": {
+        "actors": {
+          "A": {
+            "zone": "fixture-text-380"
+          }
+        },
+        "environment": {},
+        "caused_by": [
+          "E2"
+        ]
+      }
+    },
+    {
+      "id": "B02",
+      "start": 4,
+      "end": 10,
+      "intent": "fixture-text-381",
+      "actors": {
+        "A": {
+          "action": "fixture-text-382",
+          "performance": "fixture-text-383"
+        },
+        "B": {
+          "action": "fixture-text-384",
+          "performance": "fixture-text-385"
+        }
+      },
+      "emotion": "fixture-text-386",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "continuous",
+        "side": "fixture-text-50",
+        "path": "fixture-text-387",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-362",
+      "environment": "fixture-text-388",
+      "sound": "fixture-text-389",
+      "ability_ids": [],
+      "before": {
+        "A": "fixture-text-380；fixture-text-345；fixture-text-346；左手空，右手fixture-text-336；损伤：无；限制：无",
+        "B": "fixture-text-347；fixture-text-345；fixture-text-346；左手空，右手fixture-text-339；损伤：无；限制：无",
+        "environment": "fixture-text-331：fixture-text-348；fixture-text-332：fixture-text-348；fixture-text-333：fixture-text-349",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-380；fixture-text-345；fixture-text-346；左手fixture-text-339，右手fixture-text-336；损伤：无；限制：无",
+        "B": "fixture-text-347；fixture-text-345；fixture-text-346；左手空，右手空；损伤：无；限制：无",
+        "environment": "fixture-text-331：fixture-text-348；fixture-text-332：fixture-text-348；fixture-text-333：fixture-text-349",
+        "camera_side": "fixture-text-50"
+      },
+      "action_events": [
+        {
+          "id": "E3",
+          "actor_id": "A",
+          "target_id": "B",
+          "start": 4,
+          "end": 7,
+          "response_to": "",
+          "weapon_id": "STAFF",
+          "hands_used": [
+            "right",
+            "left"
+          ],
+          "movement": "walk",
+          "action": "fixture-text-382",
+          "trajectory": {
+            "start": "fixture-text-380",
+            "path": "fixture-text-392",
+            "end": "fixture-text-393",
+            "screen_direction": "fixture-text-372"
+          },
+          "contact": "fixture-text-394",
+          "outcome": "fixture-text-395",
+          "transfers": []
+        },
+        {
+          "id": "E4",
+          "actor_id": "B",
+          "target_id": "A",
+          "start": 7,
+          "end": 10,
+          "response_to": "E3",
+          "weapon_id": "",
+          "hands_used": [
+            "right"
+          ],
+          "movement": "walk",
+          "action": "fixture-text-384",
+          "trajectory": {
+            "start": "fixture-text-396",
+            "path": "fixture-text-397",
+            "end": "fixture-text-398",
+            "screen_direction": "fixture-text-372"
+          },
+          "contact": "fixture-text-399",
+          "outcome": "fixture-text-400",
+          "transfers": [
+            {
+              "item_id": "LETTER",
+              "from_actor": "B",
+              "from_hand": "right",
+              "to_actor": "A",
+              "to_hand": "left",
+              "destination": "fixture-text-401"
+            }
+          ]
+        }
+      ],
+      "state_delta": {
+        "actors": {
+          "A": {
+            "held_items": {
+              "left": "LETTER",
+              "right": "STAFF"
+            }
+          },
+          "B": {
+            "held_items": {
+              "left": "",
+              "right": ""
+            }
+          }
+        },
+        "environment": {},
+        "caused_by": [
+          "E3",
+          "E4"
+        ]
+      }
+    },
+    {
+      "id": "B03",
+      "start": 10,
+      "end": 15,
+      "intent": "fixture-text-402",
+      "actors": {
+        "A": {
+          "action": "fixture-text-403",
+          "performance": "fixture-text-404"
+        },
+        "B": {
+          "action": "fixture-text-405",
+          "performance": "fixture-text-406"
+        }
+      },
+      "emotion": "fixture-text-407",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "continuous",
+        "side": "fixture-text-50",
+        "path": "fixture-text-408",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-362",
+      "environment": "fixture-text-409",
+      "sound": "fixture-text-410",
+      "ability_ids": [],
+      "before": {
+        "A": "fixture-text-380；fixture-text-345；fixture-text-346；左手fixture-text-339，右手fixture-text-336；损伤：无；限制：无",
+        "B": "fixture-text-347；fixture-text-345；fixture-text-346；左手空，右手空；损伤：无；限制：无",
+        "environment": "fixture-text-331：fixture-text-348；fixture-text-332：fixture-text-348；fixture-text-333：fixture-text-349",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-414；fixture-text-345；fixture-text-346；左手fixture-text-339，右手fixture-text-336；损伤：无；限制：无",
+        "B": "fixture-text-419；fixture-text-345；fixture-text-346；左手空，右手空；损伤：无；限制：无",
+        "environment": "fixture-text-331：fixture-text-348；fixture-text-332：fixture-text-348；fixture-text-333：fixture-text-349",
+        "camera_side": "fixture-text-50"
+      },
+      "action_events": [
+        {
+          "id": "E5",
+          "actor_id": "A",
+          "target_id": "B",
+          "start": 10,
+          "end": 13,
+          "response_to": "",
+          "weapon_id": "STAFF",
+          "hands_used": [
+            "right",
+            "left"
+          ],
+          "movement": "walk",
+          "action": "fixture-text-403",
+          "trajectory": {
+            "start": "fixture-text-393",
+            "path": "fixture-text-413",
+            "end": "fixture-text-414",
+            "screen_direction": "fixture-text-372"
+          },
+          "contact": "fixture-text-415",
+          "outcome": "fixture-text-416",
+          "transfers": []
+        },
+        {
+          "id": "E6",
+          "actor_id": "B",
+          "target_id": "A",
+          "start": 13,
+          "end": 14.4,
+          "response_to": "E5",
+          "weapon_id": "",
+          "hands_used": [],
+          "movement": "walk",
+          "action": "fixture-text-405",
+          "trajectory": {
+            "start": "fixture-text-417",
+            "path": "fixture-text-418",
+            "end": "fixture-text-419",
+            "screen_direction": "fixture-text-372"
+          },
+          "contact": "fixture-text-415",
+          "outcome": "fixture-text-420",
+          "transfers": []
+        }
+      ],
+      "state_delta": {
+        "actors": {
+          "A": {
+            "zone": "fixture-text-414"
+          },
+          "B": {
+            "zone": "fixture-text-419"
+          }
+        },
+        "environment": {},
+        "caused_by": [
+          "E5",
+          "E6"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "P01",
+      "beat_ids": [
+        "B01"
+      ],
+      "summary": {
+        "action": "fixture-text-421",
+        "expression": "fixture-text-422",
+        "emotion": "fixture-text-360",
+        "camera": "fixture-text-361",
+        "vfx": "fixture-text-362",
+        "environment": "fixture-text-363",
+        "sound": "fixture-text-364",
+        "continuity": "fixture-text-423"
+      }
+    },
+    {
+      "id": "P02",
+      "beat_ids": [
+        "B02"
+      ],
+      "summary": {
+        "action": "fixture-text-424",
+        "expression": "fixture-text-425",
+        "emotion": "fixture-text-386",
+        "camera": "fixture-text-387",
+        "vfx": "fixture-text-362",
+        "environment": "fixture-text-388",
+        "sound": "fixture-text-389",
+        "continuity": "fixture-text-426"
+      }
+    },
+    {
+      "id": "P03",
+      "beat_ids": [
+        "B03"
+      ],
+      "summary": {
+        "action": "fixture-text-427",
+        "expression": "fixture-text-428",
+        "emotion": "fixture-text-407",
+        "camera": "fixture-text-408",
+        "vfx": "fixture-text-362",
+        "environment": "fixture-text-409",
+        "sound": "fixture-text-410",
+        "continuity": "fixture-text-429"
+      }
+    }
+  ],
+  "editorial_reviews": {
+    "headers": {
+      "input_digest": "f0deb0f93916f67739d88e248603d397efd8b1558e6dc142bcfc02969e497edf",
+      "expression_digest": "548d38d7cf6a8bb574a7d7ce74fa4f9a887e8d1222ea97f3c1b3581c5e977365",
+      "reviewer": "synthetic-test-only",
+      "method": "agent",
+      "checks": {
+        "identity_action": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "camera_timing": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "ability_cost": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "continuity": "Synthetic attestation for hash and export tests; no semantic or media validation."
+      }
+    },
+    "P01": {
+      "input_digest": "9eefedcd602a8744102e37d7d3e404ba360c888e03246918ec2cc4d321822956",
+      "expression_digest": "2b4ad5112bcd1b404056f03a430dd5d7bc002bbe278ccccf866f470440dc4ee4",
+      "reviewer": "synthetic-test-only",
+      "method": "agent",
+      "checks": {
+        "identity_action": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "camera_timing": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "ability_cost": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "continuity": "Synthetic attestation for hash and export tests; no semantic or media validation."
+      }
+    },
+    "P02": {
+      "input_digest": "42be60aaebe8c2d2c4afb42a393228051e29c4cb0eb09afc90e21a3ce343f6aa",
+      "expression_digest": "8d3b3174e66e830075a449747fdd46920cc4e766a079b8e2946368b62006dbfa",
+      "reviewer": "synthetic-test-only",
+      "method": "agent",
+      "checks": {
+        "identity_action": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "camera_timing": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "ability_cost": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "continuity": "Synthetic attestation for hash and export tests; no semantic or media validation."
+      }
+    },
+    "P03": {
+      "input_digest": "30e02cebd3b4fb44c96099fc4d599ebfb70bfb1a973d0518363ef5ea22d518ec",
+      "expression_digest": "2320e655e28342805a39aca8af4e6d23f7b3c031984d03185ba84041951ccce5",
+      "reviewer": "synthetic-test-only",
+      "method": "agent",
+      "checks": {
+        "identity_action": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "camera_timing": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "ability_cost": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "continuity": "Synthetic attestation for hash and export tests; no semantic or media validation."
+      }
+    }
+  },
+  "initial_state": {
+    "A": "fixture-text-344；fixture-text-345；fixture-text-346；左手空，右手fixture-text-336；损伤：无；限制：无",
+    "B": "fixture-text-347；fixture-text-345；fixture-text-346；左手空，右手fixture-text-339；损伤：无；限制：无",
+    "environment": "fixture-text-331：fixture-text-348；fixture-text-332：fixture-text-348；fixture-text-333：fixture-text-349",
+    "camera_side": "fixture-text-50"
+  }
+}

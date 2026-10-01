@@ -14,7 +14,7 @@ from combat_review import plan_digest
 
 class ActionEvidenceTests(unittest.TestCase):
     def setUp(self):
-        self.plan=tool.read_json(SKILL/'examples/alley-letter-15.plan.json')
+        self.plan=tool.read_json(ROOT/'tests/fixtures/action-transfer.plan.json')
 
     def test_forward_or_duplicate_event_reference(self):
         for mutate in (lambda p:p['beats'][0]['action_events'][0].update(response_to='E6'),
@@ -36,21 +36,21 @@ class ActionEvidenceTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'after differs'): tool.validate(p,require_review=False)
 
     def test_ability_cost_prevents_next_hand_use(self):
-        p=tool.read_json(SKILL/'examples/failed-counter-repair-18.plan.json')
+        p=tool.read_json(ROOT/'tests/fixtures/ability-restrictions.plan.json')
         p['beats'][-1]['action_events'][0]['hands_used']=['right']
         with self.assertRaisesRegex(ValueError,'right hand restricted'): tool.validate(p,require_review=False)
-        p=tool.read_json(SKILL/'examples/failed-counter-repair-18.plan.json')
+        p=tool.read_json(ROOT/'tests/fixtures/ability-restrictions.plan.json')
         p['beats'][1]['state_delta']['actors']['A']['constraints']=[]
         with self.assertRaisesRegex(ValueError,'cost missing'): tool.validate(p,require_review=False)
 
     def test_action_details_reach_prompt(self):
         text=tool.prompt(self.plan)
-        self.assertIn('深色木纹、无刃无金属护手',text)
-        self.assertIn('纸封沿可见直线伸出',text)
-        self.assertIn('A左手持封口密函',text)
+        self.assertIn(self.plan['weapon_profiles'][0]['visible_traits'],text)
+        self.assertIn(self.plan['beats'][1]['action_events'][1]['trajectory']['path'],text)
+        self.assertIn('A左手持' + self.plan['weapon_profiles'][1]['name'],text)
         self.assertNotIn('"caused_by"',text)
-        p=tool.read_json(SKILL/'examples/three-person-exit-18.plan.json')
-        self.assertIn('画外',tool.prompt(p))
+        p=tool.read_json(ROOT/'tests/fixtures/three-actors.plan.json')
+        self.assertIn(p['cast'][2]['description'],tool.prompt(p))
 
     def profile(self,limit=15):
         return {'display_name':'合成夹具','platform':'synthetic','model':'fixture','entry':'test',
@@ -59,7 +59,7 @@ class ActionEvidenceTests(unittest.TestCase):
                                     'scope':'synthetic-only','checked_at':'2026-09-20','expires_at':'2026-09-30'}}}
 
     def test_capability_known_unknown_expired(self):
-        p=tool.read_json(SKILL/'examples/epic-30.plan.json')
+        p=tool.read_json(ROOT/'tests/fixtures/timing-30.plan.json')
         self.assertEqual(tool.assess_profile(p,self.profile(), '2026-09-21')['status'],'conflict')
         self.assertEqual(tool.assess_profile(p,self.profile(30),'2026-09-21')['status'],'compatible')
         self.assertEqual(tool.assess_profile(p,self.profile(30),'2026-10-01')['status'],'needs_verification')

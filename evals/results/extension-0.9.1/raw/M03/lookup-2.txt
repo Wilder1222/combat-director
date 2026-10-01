@@ -1,9 +1,0 @@
-{
-  "command": "$p = 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03\\request.txt'\nGet-Content -LiteralPath $p -Raw -Encoding UTF8\nGet-FileHash -LiteralPath $p -Algorithm SHA256 | Format-List",
-  "chunk_id": "b00869",
-  "wall_time_seconds": 0.5749694,
-  "exit_code": 0,
-  "original_token_count": 147,
-  "output": "写8秒文生视频提示词：两名成年虚构武者在灰砖院内木棍对练，甲右上斜劈，乙后撤斜架，最后都退开。正常速度、固定双人全身、一镜到底。我希望3.125秒准确接触，90度快门观感；目前入口只确认能填文字，没有轨迹或逐帧参数。给简洁提示词与交接说明，说明可以怎样处理这个精确时点要求。不实际生成。\r\n\r\n\r\nAlgorithm : SHA256\r\nHash      : 0C614DCFA553B0A1900267AA53E6E3CB2E7701E3427804439B617ECA748625C1\r\nPath      : D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03\\request.txt\r\n\r\n"
-}
-

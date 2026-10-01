@@ -1,0 +1,15 @@
+{
+  "source": "D:\\Downloads\\视频节点 1 (1).mp4",
+  "sha256": "dcb19ad95f64a59fcb9bf45fa1773b15788fd0433a2e2fdee368f5f9e6eba439",
+  "video_duration_s": 15,
+  "container_duration_s": 15.022993,
+  "fps": 30,
+  "frames": 450,
+  "resolution": [
+    854,
+    480
+  ],
+  "observation": "timestamped extracted frames; no realtime playback or audio audition",
+  "generation_model": "unknown",
+  "submitted_prompt": "unconfirmed; compared against preceding conversation draft"
+}

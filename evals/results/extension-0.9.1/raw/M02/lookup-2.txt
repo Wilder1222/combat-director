@@ -1,7 +1,0 @@
-{
-  "chunk_id": "f93825",
-  "wall_time_seconds": 0.7456963,
-  "exit_code": 0,
-  "original_token_count": 133,
-  "output": "以本题 synthetic-i2v-start.png 为首帧，写8秒图生视频提示词：两个成年虚构木杖练习者先保持对峙2秒，随后都向画面左侧移动，最后停住；正常速度、固定全景、无能量、一镜到底。请先实际查看这张测试图，保留已有外观与构图，并简述它是否给运动方向带来额外暗示。不生成视频，也不修改图片。\r\n\r\n\r\nName                    Length\r\n----                    ------\r\nrequest.txt                398\r\nsynthetic-i2v-start.png   7937\r\n\r\n"
-}

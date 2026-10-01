@@ -1,9 +1,0 @@
-{
-  "command": "$dir = 'D:\\Temp\\combat-extension-nws2d7rg\\runs\\M03'\n$record = Get-Content -LiteralPath (Join-Path $dir 'run.json') -Raw -Encoding UTF8 | ConvertFrom-Json\n$answer = Get-Content -LiteralPath (Join-Path $dir 'answer.md') -Raw -Encoding UTF8\nif ($record.task_id -ne 'M03' -or $record.inputs.Count -ne 5 -or -not $answer.Contains('3.125') -or -not $answer.Contains('90°')) { throw 'Artifact verification failed' }\nGet-Item -LiteralPath (Join-Path $dir 'answer.md'), (Join-Path $dir 'run.json'), (Join-Path $dir 'lookup-1.txt'), (Join-Path $dir 'lookup-2.txt'), (Join-Path $dir 'lookup-3.txt') | Select-Object Name, Length | ConvertTo-Json\nWrite-Output 'Artifact verification passed.'",
-  "chunk_id": "874d92",
-  "wall_time_seconds": 0.6206468,
-  "exit_code": 0,
-  "original_token_count": 83,
-  "output": "[\r\n  {\r\n    \"Name\": \"answer.md\",\r\n    \"Length\": 2070\r\n  },\r\n  {\r\n    \"Name\": \"run.json\",\r\n    \"Length\": 4711\r\n  },\r\n  {\r\n    \"Name\": \"lookup-1.txt\",\r\n    \"Length\": 14454\r\n  },\r\n  {\r\n    \"Name\": \"lookup-2.txt\",\r\n    \"Length\": 927\r\n  },\r\n  {\r\n    \"Name\": \"lookup-3.txt\",\r\n    \"Length\": 23854\r\n  }\r\n]\r\nArtifact verification passed.\r\n"
-}
-

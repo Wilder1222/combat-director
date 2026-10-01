@@ -1,15 +1,15 @@
 {
   "name": "combat-director",
   "version": "0.10.0",
-  "description": "将战斗短片参考转化为动作节拍、镜头规划、视频提示词与连续性检查。",
+  "description": "根据场景、战斗类型、人物与招式编写详细战斗视频提示词。",
   "author": {
     "name": "Local developer"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Combat Director · 战斗导演",
-    "shortDescription": "拆解战斗短片，编排动作节拍，编写视频生成提示词。",
-    "longDescription": "独立战斗导演：116张资料卡与逐招来源索引，区分名称、描述和动作路径；覆盖38类技法、9个角色预设、连招、镜头、特效与场景，按需检索、六轨编排与连续性复核。",
+    "shortDescription": "四项描述生成详细战斗提示词，支持仙侠空间与高速攻防。",
+    "longDescription": "以人物打法、区域路线和攻防因果组织武侠、仙侠、群战与巨敌场面；详细中文提示词为默认交付，资料库检索、导演表、成片诊断与工程导出按需使用。",
     "developerName": "Local developer",
     "category": "Productivity",
     "capabilities": [
@@ -17,7 +17,7 @@
     ],
     "defaultPrompt": [
       "拆解这段战斗视频，区分已观察事实和生成方法推测。",
-      "设计一段 30 秒双人战斗，输出动作节拍和视频提示词。",
+      "根据我提供的场景、战斗类型、人物和招式，编写详细战斗视频提示词。",
       "检查这段生成视频中的动作因果、站位与角色连续性。"
     ]
   }

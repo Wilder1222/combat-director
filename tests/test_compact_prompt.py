@@ -16,16 +16,16 @@ import combat_prompt as compact
 
 class CompactPromptTests(unittest.TestCase):
     def setUp(self):
-        self.plan = tool.read_json(SKILL / 'examples/grounded-15.plan.json')
-        self.projection = tool.read_json(SKILL / 'examples/grounded-15.compact.json')
+        self.plan = tool.read_json(ROOT/'tests/fixtures/single-take.plan.json')
+        self.projection = tool.read_json(ROOT/'tests/fixtures/single-take.compact.json')
 
     def test_export_and_legacy_compatibility(self):
         full = tool.deliverables(self.plan, 'generic')
         short = tool.deliverables(self.plan, 'generic', prompt_style='compact', projection=self.projection)
         self.assertEqual(len(full), 7)
         self.assertEqual(len(short), 8)
-        self.assertEqual(full['prompt.txt'], (SKILL / 'examples/grounded-15.prompt.txt').read_text(encoding='utf-8'))
-        self.assertEqual(short['prompt.txt'], (SKILL / 'examples/grounded-15.compact.txt').read_text(encoding='utf-8'))
+        self.assertEqual(full['prompt.txt'], tool.prompt(self.plan))
+        self.assertEqual(short['prompt.txt'], compact.render(self.plan, self.projection))
         for key in full.keys() - {'prompt.txt'}:
             self.assertEqual(full[key], short[key])
 
@@ -109,8 +109,8 @@ class CompactPromptTests(unittest.TestCase):
 
     def test_cli_roundtrip_outside_repository(self):
         with tempfile.TemporaryDirectory() as tmp:
-            plan = SKILL / 'examples/grounded-15.plan.json'
-            projection = SKILL / 'examples/grounded-15.compact.json'
+            plan = ROOT/'tests/fixtures/single-take.plan.json'
+            projection = ROOT/'tests/fixtures/single-take.compact.json'
             env = {**os.environ, 'PYTHONUTF8': '1'}
             receipt = Path(tmp) / 'receipt.json'
             receipt.write_text(json.dumps(self.projection['review']), encoding='utf-8')

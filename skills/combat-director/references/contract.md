@@ -2,9 +2,9 @@
 
 权威结构：[当前 Schema](../assets/combat-plan.schema.json)。[1.0 Schema](../assets/combat-plan-v1.schema.json) 只供迁移与结构检查。软件版本和数据契约版本分别维护；文本创作不强制填写 JSON。
 
-当前兼容读取 1.1，1.2 增加可选动作结构与素材证据。旧案例不被强制补写未知动作事实；1.0 必须显式迁移并重新复核。已标 available/bound 的旧素材声明需补证据，不能仅迁移版本号后当作已验证。
+当前兼容读取 1.1，1.2 增加可选动作结构与素材证据。旧计划不被强制补写未知动作事实；1.0 必须显式迁移并重新复核。已标 available/bound 的旧素材声明需补证据，不能仅迁移版本号后当作已验证。
 
-软件0.10.0新增可选 `combat-prompt/1` 表达文件，独立于本契约，不给 Combat Plan 添加字段。原完整导出保持不变；精简导出将已审导演事实映射为另外复核的连贯正文，事实/正文变更都会使相应复核失效。字段与命令见[精简输出](compact-output.md)。下表的 prompt 硬约束/具体交手栏目指完整模式；精简模式需逐项保留其含义，由复核者对读，脚本不自动证明语义完整。
+软件0.10.0新增可选 `combat-prompt/1` 表达文件，独立于本契约，不给 Combat Plan 添加字段。原完整导出保持不变；精简导出将已审导演事实映射为另外复核的连贯正文，事实/正文变更都会使相应复核失效。字段与命令见[精简输出](contract.md#精简表达投影)。下表的 prompt 硬约束/具体交手栏目指完整模式；精简模式需逐项保留其含义，由复核者对读，脚本不自动证明语义完整。
 
 ## 字段职责与交接
 
@@ -13,7 +13,7 @@
 | duration / aspect_ratio / generation / camera_mode / timing / rules | 时间、镜头和能力的硬约束 | prompt 硬约束、设计卡、交接单 |
 | cast / abilities / anchors / initial_state | 人物、持物、能力和开场事实 | prompt 硬约束、导演稿、编译交接 |
 | beats | 动作、表演、机位、声音与状态事实 | director.md、prompt-handoff.json |
-| weapon_profiles / action_initial_state / action_events / state_delta | 可选具体交手；启用时为动作状态的唯一权威 | prompt 具体交手、投影状态、编译交接；见[动作契约](action-contract.md) |
+| weapon_profiles / action_initial_state / action_events / state_delta | 可选具体交手；启用时为动作状态的唯一权威 | prompt 具体交手、投影状态、编译交接；见[动作契约](contract.md#可选动作结构) |
 | sections.beat_ids | 投喂段选取的连续细拍 | 导出时间范围与交接记录 |
 | headers / sections.summary | 人工或 Agent 编写的表达 | prompt.txt；需要语义复核 |
 | editorial_reviews | 对特定输入和表达版本的复核声明 | 计划与状态检查；不是视频验收 |
@@ -76,3 +76,53 @@ python scripts/combat_tool.py migrate old-1.0.plan.json --out migrated.plan.json
 validate 和 render 接受 --max-duration 15；确认平台上限为15秒时，30秒单次计划失败，不自动拆分。内置平台模式保持未知；可使用带证据的 --profile 文件进行能力冲突检查，见[平台交接](platforms.md)。审片记录与下一段起点见[审片回流](review-loop.md)。
 
 校验器审计随包 Schema 的关键字；未知断言明确失败，不静默忽略。它是标准库实现的有限子集，并额外拒绝要求非空的纯空白字符串，不是通用 JSON Schema 引擎。结构、引用与复核版本可由代码检查，表达忠实性仍由复核者负责。
+
+## 可选动作结构
+
+启用时，以根层`weapon_profiles`和`action_initial_state`定义兵器及初始状态，并在每个beat中同时填写`action_events`与`state_delta`。仅写文本的旧计划不必补造未知事实。
+
+- 兵器档案记录ID、名称、形制与持用方式。角色初始状态记录zone、facing、support、左右手持物、damage和constraints，另记录environment。空字符串表示空手；mounted物品不占手。
+- 事件记录actor_id、target_id、start/end、response_to、weapon_id、hands_used、movement、action、trajectory、contact、outcome和必要transfers。事件按开始时间排序，可重叠；response_to引用更早事件且不能成环。
+- 临时接触不等于持物转移。transfers支持现持有人向另一角色/另一只手转移或丢到命名位置；当前结构不支持从地上捡回、多人长期共持，不自行发明字段来绕过。
+- 能力使用按owner及activate/consume/end核对；代码支持no_right_hand、no_left_hand、no_running等明确约束，不是任意物理模拟。损伤、限制和兵器去向不能无因恢复。
+
+启用动作结构后，状态投影由`combat_action.state_text`生成，手写状态与投影漂移会失败；它不是第二套可独立修改的事实。编译交接保留事件ID与具体动作，Schema通过仍不证明距离、接触或生物力学正确。
+
+## 精简表达投影
+
+只有需要机器导出精简正文时才使用独立的`combat-prompt/1`文件，普通自然语言创作无需此流程。Combat Plan 1.2不增加字段，原完整导出保持不变。
+
+```bash
+python scripts/combat_prompt.py prepare your-plan.json --out draft.json
+python scripts/combat_prompt.py compile your-plan.json draft.json --out inspection.json
+python scripts/combat_prompt.py apply-review your-plan.json draft.json --receipt receipt.json --out reviewed.json
+python scripts/combat_tool.py render your-plan.json --prompt-style compact --prompt-file reviewed.json --out-dir output/compact
+```
+
+作者填写opening、sections[].text、closing；编译后对读正文与事实，再写复核凭据。凭据包括plan_id、source_digest、expression_digest、reviewer、method（human或agent），以及event_coverage、scene_camera、identity_ability、rhythm、constraints五项checks的具体依据。脚本检查字段、顺序、非空与摘要匹配，不自动证明语义完整。
+
+事实变更使投影失效，正文变更使其复核失效；重分段应先改计划，再重新检查。精简导出8份文件，比完整导出增加prompt-projection.json；不得用压缩省略关键交手、空间桥接与结尾兑现。
+
+## 结构化审片与续作
+
+仅在已有计划且需要可追溯审片记录时使用。如何观察媒体与区分失败原因见[审片](review-loop.md)。
+
+```bash
+python scripts/combat_tool.py review-template my.plan.json --take-id take-001 --out take-001.review.json
+python scripts/combat_tool.py review-take take-001.review.json --plan my.plan.json
+python scripts/combat_tool.py continuation-seed take-001.review.json --plan my.plan.json --out next-start.json
+python scripts/combat_tool.py check-continuation take-001.review.json --plan my.plan.json --next-plan next.plan.json
+```
+
+模板初始为未观察、pending及未知状态。记录绑定计划哈希，填写真实媒体位置/身份/哈希与证据类型actual_media、user_report或synthetic。脚本不会播放视频；实际完整播放才可声明full_video，抽帧只支持采样点，audio_observed要求实际聆听，不能由截图、用户转述或工程夹具推出。
+
+completed_events/incomplete_events必须引用现有beat/event且互斥；意外事件另记，偏差包括时间、观察、影响和修复建议。验收决定由用户或已授权的自动选择作出，校验器不能代替验收：
+
+| 决定 | 含义 |
+| --- | --- |
+| pending | 尚未选择，不建立续作 |
+| accept | 无已知偏差或未完成事件 |
+| accept_with_deviation | 明确接受并解释偏差 |
+| repair / reject | 修复或弃用，不作为已接受续作起点 |
+
+只有接受的take可输出续作起点；以observed_end_state继承实际持物、位置、损伤和环境，与下一计划initial_state一致。未知状态保留未知或声明假设，不用原计划终态冒充观察。结构化动作投影也须一致；字段细节以随包Schema和CLI帮助为准，不新增工具不支持的元数据。

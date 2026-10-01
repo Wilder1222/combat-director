@@ -37,12 +37,7 @@
 
 **力感。** 刃尖附近尘团、树干处结果和青年贴地姿态提供实体感；没有观察到同等明确的刃入身体与受击滑退链。声音未实听，不能宣称采用了低频、破风断音或呼吸设计。
 
-## 对当前44镜的实际取舍
-
-1. 可迁移“前景威胁与后方动作同时可辨”的构图职责：S26仍保留实体刀石接点、A撤后靴和两者间隙；S27仍让脚下恢复可读。不得为了更大的前景刀轮廓把这两处证据盖住。
-2. 原片环刃离体、红色圆纹及疑似碎刃不进入主稿。当前主稿仍是右手长刀／长剑、一次有限贴刃光、兵器不离手，能力和持物不能因参考变化。
-3. 原片的手掌贴地不直接移植给A。主稿A持剑，脚下已有承重与撤步链；临时加入掌撑会新增持物、肩臂和恢复预算，应另行设计，不能当装饰镜。
-4. [上一轮低姿避刃文本测试](../../evals/rapid-cut-2026-09-30/text-near-miss-followup.md)是原创几何测试，其0.225米净空来自自定坐标，不是从这些原片画面测得。原片也不能替这份文字测试证明动态可读性。
+## 可迁移方法与条件
 
 本轮没有再向技能添加同义规则：已有“遮挡范围与读位范围”“整段刀刃扫掠”“支撑后反击”已覆盖这里的可迁移条件。研究新增的是实际参考依据与限制，并补入[六部作品对照](2026-09-30-donghua-crosswork-synthesis.md)。
 
@@ -50,15 +45,15 @@
 
 206.019999秒：环孔近景的尺度来自透视，不能当作武器突然巨大化。
 
-![环孔飞刃占据前景](/D:/study/projects/combat-director/docs/research/evidence/mushen-2026-09-30/dodge-b0.jpg)
+![环孔飞刃占据前景](evidence/mushen-2026-09-30/dodge-b0.jpg)
 
 209.619966秒：前景刃、人物低姿与近侧手掌同框，这是本次最有用的支撑可见性参考。
 
-![前景刃之间保留人物支撑区域](/D:/study/projects/combat-director/docs/research/evidence/mushen-2026-09-30/support-c5.jpg)
+![前景刃之间保留人物支撑区域](evidence/mushen-2026-09-30/support-c5.jpg)
 
 210.519984秒：身体升高与红纹出现可见，但中间如何恢复支撑尚未闭合。
 
-![青年姿态改变与背后红纹](/D:/study/projects/combat-director/docs/research/evidence/mushen-2026-09-30/dodge-b7.jpg)
+![青年姿态改变与背后红纹](evidence/mushen-2026-09-30/dodge-b7.jpg)
 
 首次报告后优先补查209.819964—210.519984之间手掌离地、脚部受力与圆纹出现的先后；结果见下节。208秒附近首次触树、正常速度、实际音轨和更广作品覆盖仍未完成。
 
@@ -86,9 +81,9 @@
 
 对主稿S33→S34的具体复核：S33已有双方左向速度归零、承重脚转换；S34才从对应承重脚向右启动。它与本参考可借的“起动前姿态变化”兼容，但其脚位与力学因果由主稿自身说明。不得为了缩成原片观感，把S33制动删掉或让袖角遮住唯一支撑证据。此处无需新增与既有规则同义的技能条款。
 
-![细红轮廓出现时人物仍低姿](/D:/study/projects/combat-director/docs/research/evidence/mushen-recovery-2026-09-30/phase-full-c1.jpg)
+![细红轮廓出现时人物仍低姿](evidence/mushen-recovery-2026-09-30/phase-full-c1.jpg)
 
-![红形展开与身体升高相邻但不证明推力来源](/D:/study/projects/combat-director/docs/research/evidence/mushen-recovery-2026-09-30/phase-full-c4.jpg)
+![红形展开与身体升高相邻但不证明推力来源](evidence/mushen-recovery-2026-09-30/phase-full-c4.jpg)
 
 这一小段的姿态顺序已比原先清楚；同样的暂停采样继续加密，预计仍难解决被遮挡的足部接点。下一步优先转向首次触树或另一段接点无遮挡的实体交锋，不继续把本段当作完整撑地反弹的证据。
 
@@ -105,11 +100,11 @@
 - 208.103089—208.136426秒，tree-p6与tree-h4-ready：青年与树干在画面上的间隔增大，头肩向右侧移，树面的上下作用区仍保留。没有看到飞刃与身体接触，也没有与其对应的皮肉形变，因此只能记主动避让和环境交互，不记身体受击滑退。
 - 208.336422—208.536425秒，widen-r4、widen-q3/q4与tree-h8-ready：画幅覆盖扩展至人物腿部和地面，树干在左、青年在右，树上器物留存，更多红线通过。它提供了受威胁者相对树干的局部关系，攻击者不在画中，因此不是双人空间复位。
 
-![来路线抵达树干附近但尚无下一样本的碎屑簇](/D:/study/projects/combat-director/docs/research/evidence/mushen-tree-2026-09-30/tree-p3.jpg)
+![来路线抵达树干附近但尚无下一样本的碎屑簇](evidence/mushen-tree-2026-09-30/tree-p3.jpg)
 
-![同一树面出现刃体与散片](/D:/study/projects/combat-director/docs/research/evidence/mushen-tree-2026-09-30/tree-p4.jpg)
+![同一树面出现刃体与散片](evidence/mushen-tree-2026-09-30/tree-p4.jpg)
 
-![上下两个树面交互区与人物右移分开记录](/D:/study/projects/combat-director/docs/research/evidence/mushen-tree-2026-09-30/tree-p5.jpg)
+![上下两个树面交互区与人物右移分开记录](evidence/mushen-tree-2026-09-30/tree-p5.jpg)
 
 ### 参考价值与主稿对照
 

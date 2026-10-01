@@ -1,0 +1,426 @@
+{
+  "schema_version": "1.2",
+  "editorial_reviews": {
+    "headers": {
+      "input_digest": "a31dee3d16a78011e6f5d9f150742f284b8cd7ebba5d26a3893066213be6cbd0",
+      "expression_digest": "a0a0b07c0d2e6cc714c7243a2755cbf701f1c0f8287d66d97e5e679f16b5582f",
+      "reviewer": "synthetic-test-only",
+      "method": "agent",
+      "checks": {
+        "identity_action": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "camera_timing": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "ability_cost": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "continuity": "Synthetic attestation for hash and export tests; no semantic or media validation."
+      }
+    },
+    "P01": {
+      "input_digest": "515460e5a95460377508f6cbaf5ffc63c6bf272d9f9db871f24c34da1f32553f",
+      "expression_digest": "3333e639a95a78fb5f958247cf21ec6cf60f7b0bea98700f35fa5cad2b134f2f",
+      "reviewer": "synthetic-test-only",
+      "method": "agent",
+      "checks": {
+        "identity_action": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "camera_timing": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "ability_cost": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "continuity": "Synthetic attestation for hash and export tests; no semantic or media validation."
+      }
+    },
+    "P02": {
+      "input_digest": "96a1b72df65bb0b3cdabef3433b7f56d158e1cf8c2b19025bb6e9054bcb312f2",
+      "expression_digest": "a741bead384c65650edd227e314f9cb700996bc04cf20f3ac5eff74fee5b03b5",
+      "reviewer": "synthetic-test-only",
+      "method": "agent",
+      "checks": {
+        "identity_action": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "camera_timing": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "ability_cost": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "continuity": "Synthetic attestation for hash and export tests; no semantic or media validation."
+      }
+    },
+    "P03": {
+      "input_digest": "0019620f74a6f9e87acc525f963cc77f07a8e86a7f0030d1ab3b05ae2b385215",
+      "expression_digest": "07ad0da1c6dc604a7f0f37ef93616c7fc35adff60bdee758cee20f00cf80cedc",
+      "reviewer": "synthetic-test-only",
+      "method": "agent",
+      "checks": {
+        "identity_action": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "camera_timing": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "ability_cost": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "continuity": "Synthetic attestation for hash and export tests; no semantic or media validation."
+      }
+    },
+    "P04": {
+      "input_digest": "48680fbe9d2d2e4e48ef113bdb80982a99ab8496cd6a0df49437325b92949143",
+      "expression_digest": "93edab143a66427d5c1d26e67f1de3e6283c89b87bedd6caa6cae5be52b94688",
+      "reviewer": "synthetic-test-only",
+      "method": "agent",
+      "checks": {
+        "identity_action": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "camera_timing": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "ability_cost": "Synthetic attestation for hash and export tests; no semantic or media validation.",
+        "continuity": "Synthetic attestation for hash and export tests; no semantic or media validation."
+      }
+    }
+  },
+  "id": "single-take",
+  "provenance": "Synthetic engineering fixture. Narrative removed. Never a creative reference or media validation.",
+  "template": "grounded",
+  "duration": 15,
+  "aspect_ratio": "16:9",
+  "generation": "single",
+  "camera_mode": "one-take",
+  "headers": {
+    "goal": "fixture-text-223",
+    "cast": "fixture-text-224",
+    "scene": "fixture-text-225",
+    "budget": "fixture-text-226",
+    "continuity": "fixture-text-17"
+  },
+  "rules": {
+    "fantasy": false,
+    "max_scale": "person"
+  },
+  "timing": {
+    "lead_in": 0.2,
+    "tail_out": 0.6,
+    "result_at": 14.4
+  },
+  "anchors": [
+    "fixture-text-227",
+    "fixture-text-228"
+  ],
+  "cast": [
+    {
+      "id": "A",
+      "description": "fixture-text-229",
+      "goal": "fixture-text-230",
+      "prop": "fixture-text-231",
+      "hand": "fixture-text-23"
+    },
+    {
+      "id": "B",
+      "description": "fixture-text-232",
+      "goal": "fixture-text-233",
+      "prop": "fixture-text-234",
+      "hand": "fixture-text-23"
+    }
+  ],
+  "abilities": [],
+  "references": [],
+  "initial_state": {
+    "A": "fixture-text-235",
+    "B": "fixture-text-236",
+    "environment": "fixture-text-237",
+    "camera_side": "fixture-text-50"
+  },
+  "beats": [
+    {
+      "id": "B01",
+      "start": 0.0,
+      "end": 2,
+      "intent": "fixture-text-238",
+      "actors": {
+        "A": {
+          "action": "fixture-text-239",
+          "performance": "fixture-text-240"
+        },
+        "B": {
+          "action": "fixture-text-241",
+          "performance": "fixture-text-242"
+        }
+      },
+      "emotion": "fixture-text-238",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "start",
+        "side": "fixture-text-50",
+        "path": "fixture-text-243",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-244",
+      "environment": "fixture-text-245",
+      "sound": "fixture-text-246",
+      "ability_ids": [],
+      "before": {
+        "A": "fixture-text-235",
+        "B": "fixture-text-236",
+        "environment": "fixture-text-237",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-247",
+        "B": "fixture-text-248",
+        "environment": "fixture-text-249",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B02",
+      "start": 2,
+      "end": 4.5,
+      "intent": "fixture-text-238",
+      "actors": {
+        "A": {
+          "action": "fixture-text-250",
+          "performance": "fixture-text-251"
+        },
+        "B": {
+          "action": "fixture-text-252",
+          "performance": "fixture-text-253"
+        }
+      },
+      "emotion": "fixture-text-238",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "continuous",
+        "side": "fixture-text-50",
+        "path": "fixture-text-254",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-255",
+      "environment": "fixture-text-256",
+      "sound": "fixture-text-257",
+      "ability_ids": [],
+      "before": {
+        "A": "fixture-text-247",
+        "B": "fixture-text-248",
+        "environment": "fixture-text-249",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-258",
+        "B": "fixture-text-259",
+        "environment": "fixture-text-260",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B03",
+      "start": 4.5,
+      "end": 7.0,
+      "intent": "fixture-text-261",
+      "actors": {
+        "A": {
+          "action": "fixture-text-262",
+          "performance": "fixture-text-263"
+        },
+        "B": {
+          "action": "fixture-text-264",
+          "performance": "fixture-text-265"
+        }
+      },
+      "emotion": "fixture-text-261",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "continuous",
+        "side": "fixture-text-50",
+        "path": "fixture-text-266",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-267",
+      "environment": "fixture-text-268",
+      "sound": "fixture-text-269",
+      "ability_ids": [],
+      "before": {
+        "A": "fixture-text-258",
+        "B": "fixture-text-259",
+        "environment": "fixture-text-260",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-270",
+        "B": "fixture-text-271",
+        "environment": "fixture-text-272",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B04",
+      "start": 7.0,
+      "end": 10,
+      "intent": "fixture-text-273",
+      "actors": {
+        "A": {
+          "action": "fixture-text-274",
+          "performance": "fixture-text-275"
+        },
+        "B": {
+          "action": "fixture-text-276",
+          "performance": "fixture-text-277"
+        }
+      },
+      "emotion": "fixture-text-273",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "continuous",
+        "side": "fixture-text-50",
+        "path": "fixture-text-278",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-279",
+      "environment": "fixture-text-280",
+      "sound": "fixture-text-281",
+      "ability_ids": [],
+      "before": {
+        "A": "fixture-text-270",
+        "B": "fixture-text-271",
+        "environment": "fixture-text-272",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-282",
+        "B": "fixture-text-283",
+        "environment": "fixture-text-284",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B05",
+      "start": 10,
+      "end": 12.5,
+      "intent": "fixture-text-273",
+      "actors": {
+        "A": {
+          "action": "fixture-text-285",
+          "performance": "fixture-text-286"
+        },
+        "B": {
+          "action": "fixture-text-287",
+          "performance": "fixture-text-288"
+        }
+      },
+      "emotion": "fixture-text-273",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "continuous",
+        "side": "fixture-text-50",
+        "path": "fixture-text-289",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-290",
+      "environment": "fixture-text-291",
+      "sound": "fixture-text-292",
+      "ability_ids": [],
+      "before": {
+        "A": "fixture-text-282",
+        "B": "fixture-text-283",
+        "environment": "fixture-text-284",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-293",
+        "B": "fixture-text-294",
+        "environment": "fixture-text-295",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B06",
+      "start": 12.5,
+      "end": 15.0,
+      "intent": "fixture-text-296",
+      "actors": {
+        "A": {
+          "action": "fixture-text-297",
+          "performance": "fixture-text-298"
+        },
+        "B": {
+          "action": "fixture-text-299",
+          "performance": "fixture-text-300"
+        }
+      },
+      "emotion": "fixture-text-296",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "continuous",
+        "side": "fixture-text-50",
+        "path": "fixture-text-301",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-302",
+      "environment": "fixture-text-303",
+      "sound": "fixture-text-304",
+      "ability_ids": [],
+      "before": {
+        "A": "fixture-text-293",
+        "B": "fixture-text-294",
+        "environment": "fixture-text-295",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-305",
+        "B": "fixture-text-306",
+        "environment": "fixture-text-307",
+        "camera_side": "fixture-text-50"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "P01",
+      "beat_ids": [
+        "B01",
+        "B02"
+      ],
+      "summary": {
+        "action": "fixture-text-308",
+        "expression": "fixture-text-309",
+        "emotion": "fixture-text-238",
+        "camera": "fixture-text-310",
+        "vfx": "fixture-text-311",
+        "environment": "fixture-text-312",
+        "sound": "fixture-text-313",
+        "continuity": "fixture-text-314"
+      }
+    },
+    {
+      "id": "P02",
+      "beat_ids": [
+        "B03"
+      ],
+      "summary": {
+        "action": "fixture-text-315",
+        "expression": "fixture-text-316",
+        "emotion": "fixture-text-261",
+        "camera": "fixture-text-266",
+        "vfx": "fixture-text-267",
+        "environment": "fixture-text-317",
+        "sound": "fixture-text-269",
+        "continuity": "fixture-text-318"
+      }
+    },
+    {
+      "id": "P03",
+      "beat_ids": [
+        "B04",
+        "B05"
+      ],
+      "summary": {
+        "action": "fixture-text-319",
+        "expression": "fixture-text-320",
+        "emotion": "fixture-text-273",
+        "camera": "fixture-text-321",
+        "vfx": "fixture-text-322",
+        "environment": "fixture-text-323",
+        "sound": "fixture-text-324",
+        "continuity": "fixture-text-325"
+      }
+    },
+    {
+      "id": "P04",
+      "beat_ids": [
+        "B06"
+      ],
+      "summary": {
+        "action": "fixture-text-326",
+        "expression": "fixture-text-327",
+        "emotion": "fixture-text-296",
+        "camera": "fixture-text-301",
+        "vfx": "fixture-text-302",
+        "environment": "fixture-text-328",
+        "sound": "fixture-text-304",
+        "continuity": "fixture-text-329"
+      }
+    }
+  ]
+}

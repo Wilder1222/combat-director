@@ -1,4 +1,0 @@
-interface:
-  display_name: "Combat Director · 战斗导演"
-  short_description: "编排武侠攻防、升级斗法与巨敌反制，交付六轨时间轴和中文视频提示词"
-  default_prompt: "使用 $combat-director，把我的战斗创意整理为六轨导演时间轴、连续性状态和中文视频投喂提示词。"

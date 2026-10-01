@@ -1,3 +1,0 @@
-2026-09-29T09:34:19.783133Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (https://ai-mcp.tsp.xiaomi.net/mcp)")))
-2026-09-29T09:34:20.293870Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (https://ai-mcp.tsp.xiaomi.net/mcp)")))
-2026-09-29T09:34:21.555479Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (https://ai-mcp.tsp.xiaomi.net/mcp)")))

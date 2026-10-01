@@ -1,5 +1,0 @@
-{"type":"thread.started","thread_id":"01a0ec83-d17a-7fd3-9908-0b81b1b85bf7"}
-{"type":"turn.started"}
-{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Skill descriptions were shortened to fit the skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest."}}
-{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"8秒，正常速度，一镜到底，固定侧面全身镜头：空石院内，两名成年人甲左乙右，相隔三米，各持一根木杖，杖尖低垂；两人始终原位静态对峙，仅有自然呼吸与衣角轻动，直至结束仍未出手，无超自然能力，无额外特效。"}}
-{"type":"turn.completed","usage":{"input_tokens":21042,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":172,"reasoning_output_tokens":80}}

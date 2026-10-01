@@ -1,7 +1,0 @@
-{
-  "answer_exists": true,
-  "has_six_track_header": true,
-  "has_final_bow": true,
-  "has_copyable_prompt": true,
-  "has_source_card": true
-}

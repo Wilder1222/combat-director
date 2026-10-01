@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1",
+    "source": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\1-时序局_打斗分镜提示词分享.docx",
+    "sha256": "565c159b0578a94339f3df74a6a3caf515909692c0c2e3128dfc287e79199619",
+    "bytes": 28016,
+    "encoding": "OOXML UTF-8",
+    "extracted": "docs\\research\\evidence\\prompt-corpus-2026-10-01\\1-时序局_打斗分镜提示词分享.extracted.txt",
+    "text_characters": 9846,
+    "lines": 229,
+    "paragraphs": 229,
+    "tables": 0,
+    "media": [],
+    "other_text_parts": [],
+    "other_text": {},
+    "normalized_lines": 229
+  },
+  {
+    "id": "2",
+    "source": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\2-双人打斗第二弹.txt",
+    "sha256": "4eb1ebadcde398f56750ac6af229e07637c026e280c3dbbecdf5fbafa22edc12",
+    "bytes": 12326,
+    "encoding": "utf-8-sig",
+    "extracted": "docs\\research\\evidence\\prompt-corpus-2026-10-01\\2-双人打斗第二弹.extracted.txt",
+    "text_characters": 4370,
+    "lines": 42,
+    "normalized_lines": 42
+  },
+  {
+    "id": "3",
+    "source": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\3-小师妹首登.txt",
+    "sha256": "aecdc1867e6b59a858a5cca3a0d7a808088c1ad36d8858d0bd19d19619e65cd8",
+    "bytes": 3965,
+    "encoding": "utf-8-sig",
+    "extracted": "docs\\research\\evidence\\prompt-corpus-2026-10-01\\3-小师妹首登.extracted.txt",
+    "text_characters": 1500,
+    "lines": 17,
+    "normalized_lines": 17
+  },
+  {
+    "id": "4",
+    "source": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\4-最新打斗提示词.txt",
+    "sha256": "c8c846bd8af34e10d04e903694e43d55b412a82f4f01a09fe6567d8d8107d491",
+    "bytes": 10939,
+    "encoding": "utf-8-sig",
+    "extracted": "docs\\research\\evidence\\prompt-corpus-2026-10-01\\4-最新打斗提示词.extracted.txt",
+    "text_characters": 4283,
+    "lines": 86,
+    "normalized_lines": 86
+  },
+  {
+    "id": "5",
+    "source": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\5-8.5-铜币转场.docx",
+    "sha256": "c333380f38192b72f2429a40afdc13dabfce15659e741b560c960236dacf4b67",
+    "bytes": 8822,
+    "encoding": "OOXML UTF-8",
+    "extracted": "docs\\research\\evidence\\prompt-corpus-2026-10-01\\5-8.5-铜币转场.extracted.txt",
+    "text_characters": 4019,
+    "lines": 100,
+    "paragraphs": 2,
+    "tables": 0,
+    "media": [],
+    "other_text_parts": [
+      "word/footer1.xml",
+      "word/header1.xml"
+    ],
+    "other_text": {
+      "word/footer1.xml": "",
+      "word/header1.xml": ""
+    },
+    "normalized_lines": 100
+  },
+  {
+    "id": "6",
+    "source": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\6-7.31.txt",
+    "sha256": "1b166a710a220440782869b51eec2479c234713b07ff76597f9f962196a6d003",
+    "bytes": 8806,
+    "encoding": "utf-8-sig",
+    "extracted": "docs\\research\\evidence\\prompt-corpus-2026-10-01\\6-7.31.extracted.txt",
+    "text_characters": 3209,
+    "lines": 40,
+    "normalized_lines": 40
+  },
+  {
+    "id": "7",
+    "source": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\7-7.30.txt",
+    "sha256": "3daeb05d06628cc1f4f261b26c48b06234e71eb3310e1d8fa769179caa623e82",
+    "bytes": 7654,
+    "encoding": "utf-8-sig",
+    "extracted": "docs\\research\\evidence\\prompt-corpus-2026-10-01\\7-7.30.extracted.txt",
+    "text_characters": 2723,
+    "lines": 39,
+    "normalized_lines": 39
+  },
+  {
+    "id": "8",
+    "source": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\8-8.2.txt",
+    "sha256": "9dcd4f3c26cdbc4e23a1cfce1782c09d3f450fe1d31fbd09baf921af56ee4fc9",
+    "bytes": 9794,
+    "encoding": "utf-8-sig",
+    "extracted": "docs\\research\\evidence\\prompt-corpus-2026-10-01\\8-8.2.extracted.txt",
+    "text_characters": 3668,
+    "lines": 95,
+    "normalized_lines": 95
+  }
+]

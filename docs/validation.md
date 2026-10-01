@@ -1,16 +1,11 @@
-# 0.10.0 验证报告
+# 当前验证
 
-日期：2026-09-30。核心0.10.0、LibTV适配0.10.0-libtv.1；Combat Plan仍为1.2，新增可选combat-prompt/1表达文件。旧版记录保留于[0.9.2历史报告](history/validation-0.9.2.md)。
+维护日期：2026-10-02。版本0.10.0，未发布工作区；当前7份reference的职责与删除去向见[设计说明](design.md)。
 
-完整发布流程43项通过。单元测试105项，其中103通过、2因Windows符号链接条件跳过；不能将跳过计为通过。发布包195个文件，两次构建字节一致，完整导出七文件、精简导出八文件均在仓库外解压环境验证。原计划与完整提示词重建未产生漂移。
+最新完整结果由`.venv/Scripts/python.exe scripts/validate_release.py`写入[发布检查记录](implementation/release-validation.json)。记录覆盖单元测试原始输出、Schema与来源/资料库一致性、仓库外CLI、完整与精简导出、未复核阻断、可复现构建、源码对包哈希与ZIP检查。以记录中的passed、error和具体检查状态判断通过，不能只凭报告文件存在。
 
-- [机器发布证据](implementation/validation-0.10.0.json)：来源、Schema、专项失效校验、构建和解压检查。
-- [独立文字试写与复核](../evals/results/combat-0.10.0/review.md)：16题初测，发现2题距离问题，补规则后另行2题重测；保留原始不足与声音汇总修正，不声称全量重跑或媒体通过。
-- [日常安装与新进程发现](implementation/host-installed-0.10.0.json)：personal插件installed/enabled为0.10.0，195文件与发布包一致，唯一启用路径为新版缓存。当前桌面任务的已加载上下文未热替换。
-- [交付与边界](implementation/combat-0.10.0-delivery.md)：各工作包、旧版本备份、LibTV交接与未完成的媒体环节。
+本轮选择性融合指令参考后重新运行完整检查：37项发布检查通过，106项单元测试中104项通过、2项因Windows符号链接条件跳过，核心包152个文件。文档复查结果写入同一记录的`reference_design_review`；保留已有review-loop.md测试资源；本轮不改测试、运行代码、Schema、资料卡或原始来源。额外文档审查核对现存本地链接、7份reference的入口可达性和重组前后的实际文件大小。
 
-发布包：[combat-director-0.10.0.zip](../dist/combat-director-0.10.0.zip)。SHA-256：`3d3ce93304c6a7de5f92943fb59bf2354c7df4557fba2041735d5a5c7e9bad20`。
+skill-creator入口校验与插件校验由发布检查在工具可用时运行。运行包拒绝历史创作案例、评估输出和工程夹具。前轮[清理记录](cleanup.json)保留为历史证据，不冒充本轮包清单。
 
-LibTV本地构建提供完整Markdown、可粘贴正文与候选ZIP；格式构建不证明站内导入。未执行收费生成、未重新核验平台实际输入，未验证新版视频效果或成功率。未运行新版Linux/Python3.10环境；本报告记录优化验收状态，后续Git发布状态以仓库历史为准。
-
-复现工程检查：在仓库根运行 `.venv/Scripts/python.exe scripts/validate_release.py` 与 `python scripts/build_libtv.py`。安装验证脚本位于 `evals/host-0.10.0/verify_installed.py`，只查询新CLI进程发现并比对缓存，不执行模型任务。
+工程通过仅证明对应结构和兼容性。设计审阅属于作者语义走查，尚未完成独立模型行为比较或新视频验收，不能据此报告节奏、动作、运镜或成功率改善。源码与包的更新不等于已安装缓存更新。本次验证不包含安装或线上服务更新；Git提交与推送状态以仓库记录为准。

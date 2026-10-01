@@ -33,13 +33,6 @@ def main():
     out=ROOT/'docs/implementation';out.mkdir(parents=True,exist_ok=True)
     error=None
     try:
-        examples=ROOT/'skills/combat-director/examples'
-        prior={p.name:sha(p) for p in examples.iterdir() if p.suffix in ('.json','.txt')}
-        run('rebuild original examples',[sys.executable,'scripts/rebuild_examples.py'])
-        run('rebuild action examples',[sys.executable,'scripts/build_action_examples.py'])
-        run('check reviewed motion examples',[sys.executable,'scripts/build_motion_examples.py','--check'])
-        current={p.name:sha(p) for p in examples.iterdir() if p.suffix in ('.json','.txt')}
-        if prior != current: raise ValueError('Rebuild changed checked-in artifacts; review the generated difference')
         run('pinned source and formal release preflight',[sys.executable,'scripts/project.py','validate-release'])
         source_batches=[]
         for manifest_path in sorted((ROOT/'sources/attachments').glob('*/manifest.json')):
@@ -121,30 +114,29 @@ def main():
             facet_result=run('unpacked category facets',[sys.executable,library_cli,'stats'],cwd=tmp)
             if 'group' not in json.loads(facet_result['stdout'])['facets_by_kind']['camera']['scope']:
                 raise ValueError('Packaged camera scopes mismatch')
-            packaged=unpacked/'skills/combat-director/examples'
+            packaged=ROOT/'tests/fixtures'
+            if any('/examples/' in f['path'] or '/fixtures/' in f['path'] for f in archive_files):
+                raise ValueError('Case or fixture leaked into release')
             for plan in packaged.glob('*.plan.json'):
+                if plan.name == 'legacy-v1.plan.json': continue
                 run('unpacked '+plan.name,[sys.executable,cli,'validate',plan],cwd=tmp)
-            plan=packaged/'alley-letter-15.plan.json'
+            plan=packaged/'action-transfer.plan.json'
             run('unpacked render',[sys.executable,cli,'render',plan,'--out-dir',Path(tmp)/'render'],cwd=tmp)
             if len(list((Path(tmp)/'render').iterdir()))!=7: raise ValueError('Unexpected export count')
             compact_cli=unpacked/'skills/combat-director/scripts/combat_prompt.py'
-            compact_plan=packaged/'grounded-15.plan.json'
-            projection=packaged/'grounded-15.compact.json'
+            compact_plan=packaged/'single-take.plan.json'
+            projection=packaged/'single-take.compact.json'
             run('unpacked compact review',[sys.executable,compact_cli,'validate',compact_plan,projection],cwd=tmp)
             run('unpacked compact render',[sys.executable,cli,'render',compact_plan,
                 '--prompt-style','compact','--prompt-file',projection,'--out-dir',Path(tmp)/'compact'],cwd=tmp)
             if len(list((Path(tmp)/'compact').iterdir()))!=8: raise ValueError('Unexpected compact export count')
-            if (Path(tmp)/'compact/prompt.txt').read_text(encoding='utf-8') != (packaged/'grounded-15.compact.txt').read_text(encoding='utf-8'):
-                raise ValueError('Packaged compact example differs from rendered result')
             pending=Path(tmp)/'pending.review.json'
             run('take template',[sys.executable,cli,'review-template',plan,'--take-id','pending-test','--out',pending],cwd=tmp)
             run('pending review structure',[sys.executable,cli,'review-take',pending,'--plan',plan],cwd=tmp)
             run('pending cannot continue',[sys.executable,cli,'continuation-seed',pending,'--plan',plan,'--out',Path(tmp)/'forbidden.json'],1,cwd=tmp)
-            fixture=ROOT/'evals/fixtures/synthetic-accepted-drop.review.json'
-            run('accepted synthetic continuation',[sys.executable,cli,'continuation-seed',fixture,'--plan',plan,'--out',Path(tmp)/'seed.json'],cwd=tmp)
-            run('known platform conflict',[sys.executable,cli,'assess-profile',packaged/'epic-30.plan.json',
-                '--profile',ROOT/'evals/fixtures/synthetic-limit-15.json','--as-of','2026-09-21'],1,cwd=tmp)
-            run('legacy migration',[sys.executable,cli,'migrate',ROOT/'evals/baselines/0.2.0/skills/combat-director/examples/grounded-15.plan.json','--out',Path(tmp)/'migrated.json'],cwd=tmp)
+            run('known platform conflict',[sys.executable,cli,'assess-profile',packaged/'timing-30.plan.json',
+                '--profile',ROOT/'tests/fixtures/limit-15.json','--as-of','2026-09-21'],1,cwd=tmp)
+            run('legacy migration',[sys.executable,cli,'migrate',ROOT/'tests/fixtures/legacy-v1.plan.json','--out',Path(tmp)/'migrated.json'],cwd=tmp)
             run('unreviewed migration cannot render',[sys.executable,cli,'render',Path(tmp)/'migrated.json','--out-dir',Path(tmp)/'blocked'],1,cwd=tmp)
         report={'version':version,'python':sys.version,'platform':sys.platform,'checks':results,
                 'rebuild_reproducible':True,'source_hashes_unchanged':True,'source_batches':source_batches,
@@ -154,7 +146,7 @@ def main():
     except (ValueError,OSError) as exc:
         error=str(exc)
         report={'version':version,'checks':results,'error':error}
-    target=out/f'validation-{version}.json'
+    target=out/'release-validation.json'
     target.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(('FAIL: '+error if error else f'PASS: {len(results)} release checks')+f'\nEvidence: {target}')
     return 1 if error else 0

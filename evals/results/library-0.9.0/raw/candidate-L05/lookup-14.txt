@@ -1,7 +1,0 @@
-TARGETED_CARD_PATH: D:\Temp\combat-library-behavior-j75bzt8f\candidate\skills\combat-director\library\characters\arvin-character-linyu.md
-SHA256: BE49600A87D516F460C71B1D4F5B5BEDC07FA0A2DE8A559239524F6A9B0B1B5E
-TARGETED_CARD_PATH: D:\Temp\combat-library-behavior-j75bzt8f\candidate\skills\combat-director\library\characters\arvin-character-bingnv.md
-SHA256: 3E4E125767DBB32B9EE397DFC07D08E663D539C5FC0E21F08EF4D5E5C7CDAEB1
-EXECUTED_SCRIPT_PATH: D:\Temp\combat-library-behavior-j75bzt8f\candidate\skills\combat-director\scripts\library_tool.py
-SHA256: 351274284361D5E70BA1E0A5F7763A6FE43E3D59FD87ED79F3C4F7ED94D35598
-

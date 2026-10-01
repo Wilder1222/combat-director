@@ -1,1 +1,0 @@
-The command returned exit code 1 with empty stdout/stderr; no read completion was observed.

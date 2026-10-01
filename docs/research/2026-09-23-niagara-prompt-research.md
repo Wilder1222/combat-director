@@ -68,11 +68,4 @@
 
 当前项目已有 `beats[].vfx`、`beats[].environment` 与 `sections[].summary.vfx` 等文本位置，适合承载粒子行为，不需要新增第七轨或迁移 Combat Plan 1.2。这里的自由文本仍须语义复核，CLI 不检查粒子物理。
 
-实施项：
-
-1. 增加[粒子行为参考](../../skills/combat-director/references/particle-vfx.md)，含按需描述框架、材质区别、能力边界和最小修复。
-2. 从 SKILL、六轨方法和提示词压缩方法进入该参考，保留现有八标签输出。
-3. 增加[12秒附刃光迹](../../skills/combat-director/examples/particle-blade-12.md)与[12秒木杖尘土](../../skills/combat-director/examples/particle-staff-12.md)完整文字例，分别覆盖允许局部光效和明确无法术的情况。
-4. 补充文字预检和[对照试验方案](../plans/2026-09-23-niagara-integration-plan.md)，区分已执行工程检查与未执行媒体试验。
-
-本轮来源总结与案例为原创文本，不向 Arvin 派生库塞入无对应原文的“Niagara 条目”。原库116张卡、固定原件、生成权威和六套结构化案例保持各自来源。整体项目的WP04—WP06继续按原优化计划推进；本次专项不代替逐招详情和独立行为评估。
+当前运行方法见[粒子行为参考](../../skills/combat-director/references/choreography.md#特效与成像)，媒体检验按[修复循环](../../skills/combat-director/references/review-loop.md)。本报告保留来源与机制分析，不保留历史自生成例稿和实施快照。

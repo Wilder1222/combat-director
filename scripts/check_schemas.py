@@ -18,11 +18,12 @@ def main():
         audit_schema(schema)
         schemas[path.name] = schema
     count = 0
-    for path in sorted((SKILL / 'examples').glob('*.plan.json')):
+    for path in sorted((ROOT / 'tests/fixtures').glob('*.plan.json')):
         plan = json.loads(path.read_text(encoding='utf-8'))
-        Draft202012Validator(schemas['combat-plan.schema.json']).validate(plan)
+        schema_name = 'combat-plan-v1.schema.json' if plan['schema_version'] == '1.0' else 'combat-plan.schema.json'
+        Draft202012Validator(schemas[schema_name]).validate(plan)
         count += 1
-    print(f'PASS: {len(schemas)} schemas; {count} plan examples; Draft 2020-12 + subset audit')
+    print(f'PASS: {len(schemas)} schemas; {count} engineering fixtures; Draft 2020-12 + subset audit')
 
 
 if __name__ == '__main__':

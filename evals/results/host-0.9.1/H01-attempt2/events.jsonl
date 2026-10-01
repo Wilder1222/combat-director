@@ -1,6 +1,0 @@
-{"type":"thread.started","thread_id":"01a0ebfd-a74f-75b2-9dd7-07eb550f0880"}
-{"type":"turn.started"}
-{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Skill descriptions were shortened to fit the skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest."}}
-{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"我会使用 combat-director，保留攻防因果与自然运动模糊，压缩到160字以内。\n"}}
-{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"8秒，成年甲乙双手持木杖对练。固定侧面全身，两人始终入画，正常速度，一镜到底。0—2秒相向持杖；2—5秒甲由右上向左下斜劈，乙侧移避开劈线，举杖斜拨，两杖明确接触后甲杖偏离；5—8秒双方顺势回收，各退一步站稳。保留杖梢自然运动模糊，接触点与受力方向清楚；无超自然能力、残影或慢放。"}}
-{"type":"turn.completed","usage":{"input_tokens":52408,"cached_input_tokens":38528,"cache_write_input_tokens":0,"output_tokens":357,"reasoning_output_tokens":94}}

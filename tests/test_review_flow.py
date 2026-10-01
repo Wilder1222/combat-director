@@ -13,7 +13,7 @@ spec.loader.exec_module(tool)
 
 class ReviewFlowTests(unittest.TestCase):
     def setUp(self):
-        self.plan = tool.read_json(SKILL / 'examples/epic-30.plan.json')
+        self.plan = tool.read_json(ROOT/'tests/fixtures/timing-30.plan.json')
 
     def receipt(self, plan):
         # Synthetic unit-test attestation; not a real editorial review.
@@ -40,15 +40,16 @@ class ReviewFlowTests(unittest.TestCase):
                 self.assertEqual(list(Path(tmp).iterdir()), [])
 
     def test_summary_edit_invalidates_its_attestation(self):
-        p = tool.read_json(SKILL / 'examples/grounded-15.plan.json')
+        p = tool.read_json(ROOT/'tests/fixtures/single-take.plan.json')
         p['sections'][0]['summary']['camera'] = '在2秒处切至北侧特写'
         status = {s['scope']: s['status'] for s in tool.readiness(p)}
         self.assertEqual(status['P01'], 'stale')
         self.assertEqual(status['P02'], 'ready')
         with self.assertRaisesRegex(ValueError, 'P01=stale'):
             tool.prompt(p)
-        q = tool.read_json(SKILL / 'examples/grounded-15.plan.json')
-        self.assertIn('不切镜', tool.prompt(q))
+        q = tool.read_json(ROOT/'tests/fixtures/single-take.plan.json')
+        self.assertEqual(q['camera_mode'], 'one-take')
+        self.assertIn(q['headers']['continuity'], tool.prompt(q))
 
     def test_scope_dependencies_include_prior_results(self):
         self.plan['beats'][0]['actors']['A']['action'] += '。抬眼'
@@ -60,7 +61,7 @@ class ReviewFlowTests(unittest.TestCase):
         self.assertEqual(statuses['P02'], 'stale')
 
     def test_camera_facts_and_expression_have_separate_export_dependencies(self):
-        p = tool.read_json(SKILL / 'examples/motion-staff-12.plan.json')
+        p = tool.read_json(ROOT/'tests/fixtures/camera-facts.plan.json')
         original_summary = p['sections'][1]['summary']['camera']
         p['beats'][1]['camera']['path'] = '摄影机沿南侧缓慢横移，保持交接杖端可辨。'
         scope = tool.compile_handoff(p)['scopes'][2]
@@ -94,7 +95,7 @@ class ReviewFlowTests(unittest.TestCase):
         self.assertEqual(tool.readiness(self.plan)[0]['status'], 'stale')
 
     def test_legacy_migration_requires_explicit_review(self):
-        old = tool.read_json(ROOT / 'evals/baselines/0.2.0/skills/combat-director/examples/epic-30.plan.json')
+        old = tool.read_json(ROOT / 'tests/fixtures/legacy-v1.plan.json')
         before = copy.deepcopy(old)
         updated = tool.migrate(old)
         self.assertEqual(old, before)

@@ -1,4 +1,0 @@
-SCRIPT_INTERNAL_OPEN: D:\Temp\combat-library-behavior-j75bzt8f\baseline\skills\combat-director\scripts\library_tool.py
-Traceback (most recent call last):
-  File "<string>", line 14, in <module>
-AttributeError: module '__main__' has no attribute '__file__'

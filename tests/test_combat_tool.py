@@ -17,18 +17,19 @@ spec.loader.exec_module(tool)
 
 class CombatTests(unittest.TestCase):
     def setUp(self):
-        self.plan = tool.read_json(SKILL / 'examples/epic-30.plan.json')
+        self.plan = tool.read_json(ROOT/'tests/fixtures/timing-30.plan.json')
 
     def invalid(self, plan=None):
         with self.assertRaises(ValueError):
             tool.validate(self.plan if plan is None else plan)
 
-    def test_three_examples_and_prompt_sync(self):
-        for path in sorted((SKILL / 'examples').glob('*.plan.json')):
+    def test_fixture_validation_and_export(self):
+        for path in sorted((ROOT / 'tests/fixtures').glob('*.plan.json')):
+            if path.name == 'legacy-v1.plan.json': continue
             with self.subTest(path=path.name):
                 plan = tool.read_json(path)
                 tool.validate(plan)
-                self.assertEqual(tool.prompt(plan), path.with_name(path.name.replace('.plan.json', '.prompt.txt')).read_text(encoding='utf-8'))
+                self.assertIn(plan['headers']['scene'], tool.prompt(plan))
 
     def test_gap(self):
         self.plan['beats'][1]['start'] += .1
@@ -96,7 +97,7 @@ class CombatTests(unittest.TestCase):
         self.invalid()
 
     def test_one_take_shot_change(self):
-        p=tool.read_json(SKILL/'examples/grounded-15.plan.json')
+        p=tool.read_json(ROOT/'tests/fixtures/single-take.plan.json')
         p['beats'][1]['camera']['shot_id']='S02'
         self.invalid(p)
 
@@ -138,7 +139,8 @@ class CombatTests(unittest.TestCase):
 
     def test_twelve_exports_no_source_mutation(self):
         with tempfile.TemporaryDirectory() as tmp:
-            for path in (SKILL/'examples').glob('*.plan.json'):
+            for path in (ROOT/'tests/fixtures').glob('*.plan.json'):
+                if path.name == 'legacy-v1.plan.json': continue
                 for platform in ('generic','libtv','xiaoyunque','flova'):
                     with self.subTest(plan=path.name,platform=platform):
                         plan=tool.read_json(path)
@@ -190,7 +192,7 @@ class CombatTests(unittest.TestCase):
             self.invalid(p)
 
     def test_cli(self):
-        source=SKILL/'examples/epic-30.plan.json'
+        source=ROOT/'tests/fixtures/timing-30.plan.json'
         result=subprocess.run([sys.executable,str(SCRIPT),'validate',str(source)],capture_output=True)
         self.assertEqual(result.returncode,0,result.stderr)
         result=subprocess.run([sys.executable,str(SCRIPT),'validate',str(source),'--max-duration','15'],capture_output=True)

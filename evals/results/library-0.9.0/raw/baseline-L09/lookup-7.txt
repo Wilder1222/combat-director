@@ -1,5 +1,0 @@
-{
-  "Path": "D:\\Temp\\combat-library-behavior-j75bzt8f\\baseline\\skills\\combat-director\\library\\catalog.json",
-  "Hash": "9B8F576F7B122E639C599202D8D186F66FD15D749BA90F1703E6C6F8EA95C365"
-}
-

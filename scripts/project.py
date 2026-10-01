@@ -53,6 +53,8 @@ def validate(root: Path) -> list[Path]:
             continue
         if path.suffix not in {'.md', '.yaml', '.json', '.txt', '.py'}:
             raise ValueError(f'Unexpected release file type: {path}')
+        if any(part in {'examples', 'fixtures', 'tests', 'evals'} for part in path.relative_to(skill).parts):
+            raise ValueError(f'Creative cases and test fixtures are not release resources: {path}')
         files.append(path)
         if path.suffix != '.md':
             continue
@@ -75,19 +77,6 @@ def validate(root: Path) -> list[Path]:
     spec.loader.exec_module(module)
     for schema_path in sorted((skill / 'assets').glob('*.schema.json')):
         module.audit_schema(module.read_json(schema_path))
-    for path in sorted((skill / 'examples').glob('*.plan.json')):
-        plan = module.read_json(path)
-        module.validate(plan)
-        saved = path.with_name(path.name.replace('.plan.json', '.prompt.txt'))
-        if saved.read_text(encoding='utf-8') != module.prompt(plan):
-            raise ValueError(f'Prompt out of sync: {saved}')
-    for path in sorted((skill / 'examples').glob('*.compact.json')):
-        plan = module.read_json(path.with_name(path.name.replace('.compact.json', '.plan.json')))
-        module.validate(plan)
-        rendered = module.compact_prompt(plan, module.read_json(path))
-        saved = path.with_suffix('.txt')
-        if saved.read_text(encoding='utf-8') != rendered:
-            raise ValueError(f'Compact prompt out of sync: {saved}')
     library_spec = importlib.util.spec_from_file_location('release_library_tool', skill / 'scripts/library_tool.py')
     library = importlib.util.module_from_spec(library_spec)
     library_spec.loader.exec_module(library)
@@ -127,13 +116,6 @@ def validate_release(root: Path) -> list[Path]:
     builder = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(builder)
     builder.check_outputs(root, builder.render(root))
-    motion_generator = root / 'scripts/build_motion_examples.py'
-    if not motion_generator.is_file():
-        raise ValueError('Formal builds require the motion example generator and reviewed sources')
-    motion_spec = importlib.util.spec_from_file_location('project_motion_builder', motion_generator)
-    motion_builder = importlib.util.module_from_spec(motion_spec)
-    motion_spec.loader.exec_module(motion_builder)
-    motion_builder.check_outputs(root, motion_builder.render(root))
     files = validate(root)
     return files
 

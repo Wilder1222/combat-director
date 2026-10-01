@@ -1,0 +1,39 @@
+{
+  "format": "combat-prompt/1",
+  "plan_id": "single-take",
+  "source_digest": "8d526599799d55384324e705f167c27d3212877a24c6fb6ff6e77b429f29d834",
+  "opening": "Synthetic export opening",
+  "sections": [
+    {
+      "section_id": "P01",
+      "text": "Synthetic section P01"
+    },
+    {
+      "section_id": "P02",
+      "text": "Synthetic section P02"
+    },
+    {
+      "section_id": "P03",
+      "text": "Synthetic section P03"
+    },
+    {
+      "section_id": "P04",
+      "text": "Synthetic section P04"
+    }
+  ],
+  "closing": "Synthetic export closing",
+  "review": {
+    "plan_id": "single-take",
+    "source_digest": "8d526599799d55384324e705f167c27d3212877a24c6fb6ff6e77b429f29d834",
+    "expression_digest": "95e231b99ba06c111f8264433d622cbd765141a8aa3a8ba899cec9c9ebeced5e",
+    "reviewer": "synthetic-test-only",
+    "method": "agent",
+    "checks": {
+      "event_coverage": "Synthetic hash-binding test, no quality evidence.",
+      "scene_camera": "Synthetic hash-binding test, no quality evidence.",
+      "identity_ability": "Synthetic hash-binding test, no quality evidence.",
+      "rhythm": "Synthetic hash-binding test, no quality evidence.",
+      "constraints": "Synthetic hash-binding test, no quality evidence."
+    }
+  }
+}

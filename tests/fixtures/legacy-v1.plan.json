@@ -1,0 +1,670 @@
+{
+  "schema_version": "1.0",
+  "id": "legacy-v1",
+  "provenance": "Synthetic schema migration fixture; all narrative erased.",
+  "template": "epic",
+  "duration": 30,
+  "aspect_ratio": "16:9",
+  "generation": "single",
+  "camera_mode": "multi-shot",
+  "headers": {
+    "goal": "fixture-text-13",
+    "cast": "fixture-text-14",
+    "scene": "fixture-text-15",
+    "budget": "fixture-text-16",
+    "continuity": "fixture-text-17"
+  },
+  "rules": {
+    "fantasy": true,
+    "max_scale": "arena"
+  },
+  "timing": {
+    "lead_in": 0.3,
+    "tail_out": 0.8,
+    "result_at": 29.2
+  },
+  "anchors": [
+    "fixture-text-18",
+    "fixture-text-19"
+  ],
+  "cast": [
+    {
+      "id": "A",
+      "description": "fixture-text-20",
+      "goal": "fixture-text-21",
+      "prop": "fixture-text-22",
+      "hand": "fixture-text-23"
+    },
+    {
+      "id": "B",
+      "description": "fixture-text-24",
+      "goal": "fixture-text-25",
+      "prop": "fixture-text-26",
+      "hand": "fixture-text-23"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "SWORD_GRID",
+      "owner": "A",
+      "trigger": "fixture-text-27",
+      "visual": "fixture-text-28",
+      "limit": "fixture-text-29",
+      "cost": "fixture-text-30",
+      "end_condition": "fixture-text-31",
+      "scale": "arena",
+      "supernatural": true
+    },
+    {
+      "id": "SKY_SWORD",
+      "owner": "A",
+      "trigger": "fixture-text-32",
+      "visual": "fixture-text-33",
+      "limit": "fixture-text-34",
+      "cost": "fixture-text-35",
+      "end_condition": "fixture-text-36",
+      "scale": "arena",
+      "supernatural": true
+    },
+    {
+      "id": "CYAN_GUARD",
+      "owner": "B",
+      "trigger": "fixture-text-37",
+      "visual": "fixture-text-38",
+      "limit": "fixture-text-39",
+      "cost": "fixture-text-40",
+      "end_condition": "fixture-text-41",
+      "scale": "arena",
+      "supernatural": true
+    },
+    {
+      "id": "WIND_FORM",
+      "owner": "B",
+      "trigger": "fixture-text-42",
+      "visual": "fixture-text-43",
+      "limit": "fixture-text-44",
+      "cost": "fixture-text-45",
+      "end_condition": "fixture-text-46",
+      "scale": "arena",
+      "supernatural": true
+    }
+  ],
+  "references": [],
+  "initial_state": {
+    "A": "fixture-text-47",
+    "B": "fixture-text-48",
+    "environment": "fixture-text-49",
+    "camera_side": "fixture-text-50"
+  },
+  "beats": [
+    {
+      "id": "B01",
+      "start": 0.0,
+      "end": 3,
+      "intent": "fixture-text-51",
+      "actors": {
+        "A": {
+          "action": "fixture-text-52",
+          "performance": "fixture-text-53"
+        },
+        "B": {
+          "action": "fixture-text-54",
+          "performance": "fixture-text-55"
+        }
+      },
+      "emotion": "fixture-text-51",
+      "camera": {
+        "shot_id": "S01",
+        "transition": "start",
+        "side": "fixture-text-50",
+        "path": "fixture-text-56",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-57",
+      "environment": "fixture-text-58",
+      "sound": "fixture-text-59",
+      "ability_ids": [],
+      "before": {
+        "A": "fixture-text-47",
+        "B": "fixture-text-48",
+        "environment": "fixture-text-49",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-60",
+        "B": "fixture-text-61",
+        "environment": "fixture-text-62",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B02",
+      "start": 3,
+      "end": 6.0,
+      "intent": "fixture-text-51",
+      "actors": {
+        "A": {
+          "action": "fixture-text-63",
+          "performance": "fixture-text-64"
+        },
+        "B": {
+          "action": "fixture-text-65",
+          "performance": "fixture-text-66"
+        }
+      },
+      "emotion": "fixture-text-51",
+      "camera": {
+        "shot_id": "S02",
+        "transition": "cut",
+        "side": "fixture-text-50",
+        "path": "fixture-text-67",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-68",
+      "environment": "fixture-text-69",
+      "sound": "fixture-text-70",
+      "ability_ids": [
+        "SWORD_GRID"
+      ],
+      "before": {
+        "A": "fixture-text-60",
+        "B": "fixture-text-61",
+        "environment": "fixture-text-62",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-71",
+        "B": "fixture-text-72",
+        "environment": "fixture-text-73",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B03",
+      "start": 6.0,
+      "end": 8,
+      "intent": "fixture-text-74",
+      "actors": {
+        "A": {
+          "action": "fixture-text-75",
+          "performance": "fixture-text-76"
+        },
+        "B": {
+          "action": "fixture-text-77",
+          "performance": "fixture-text-78"
+        }
+      },
+      "emotion": "fixture-text-74",
+      "camera": {
+        "shot_id": "S03",
+        "transition": "cut",
+        "side": "fixture-text-50",
+        "path": "fixture-text-79",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-80",
+      "environment": "fixture-text-81",
+      "sound": "fixture-text-82",
+      "ability_ids": [
+        "SWORD_GRID"
+      ],
+      "before": {
+        "A": "fixture-text-71",
+        "B": "fixture-text-72",
+        "environment": "fixture-text-73",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-83",
+        "B": "fixture-text-84",
+        "environment": "fixture-text-85",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B04",
+      "start": 8,
+      "end": 10.5,
+      "intent": "fixture-text-74",
+      "actors": {
+        "A": {
+          "action": "fixture-text-86",
+          "performance": "fixture-text-87"
+        },
+        "B": {
+          "action": "fixture-text-88",
+          "performance": "fixture-text-89"
+        }
+      },
+      "emotion": "fixture-text-74",
+      "camera": {
+        "shot_id": "S04",
+        "transition": "cut",
+        "side": "fixture-text-50",
+        "path": "fixture-text-90",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-91",
+      "environment": "fixture-text-92",
+      "sound": "fixture-text-93",
+      "ability_ids": [
+        "SWORD_GRID"
+      ],
+      "before": {
+        "A": "fixture-text-83",
+        "B": "fixture-text-84",
+        "environment": "fixture-text-85",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-94",
+        "B": "fixture-text-95",
+        "environment": "fixture-text-96",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B05",
+      "start": 10.5,
+      "end": 13,
+      "intent": "fixture-text-97",
+      "actors": {
+        "A": {
+          "action": "fixture-text-98",
+          "performance": "fixture-text-99"
+        },
+        "B": {
+          "action": "fixture-text-100",
+          "performance": "fixture-text-101"
+        }
+      },
+      "emotion": "fixture-text-97",
+      "camera": {
+        "shot_id": "S05",
+        "transition": "cut",
+        "side": "fixture-text-50",
+        "path": "fixture-text-102",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-103",
+      "environment": "fixture-text-104",
+      "sound": "fixture-text-105",
+      "ability_ids": [
+        "SWORD_GRID",
+        "CYAN_GUARD"
+      ],
+      "before": {
+        "A": "fixture-text-94",
+        "B": "fixture-text-95",
+        "environment": "fixture-text-96",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-106",
+        "B": "fixture-text-107",
+        "environment": "fixture-text-108",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B06",
+      "start": 13,
+      "end": 16.0,
+      "intent": "fixture-text-97",
+      "actors": {
+        "A": {
+          "action": "fixture-text-109",
+          "performance": "fixture-text-110"
+        },
+        "B": {
+          "action": "fixture-text-111",
+          "performance": "fixture-text-112"
+        }
+      },
+      "emotion": "fixture-text-97",
+      "camera": {
+        "shot_id": "S06",
+        "transition": "cut",
+        "side": "fixture-text-50",
+        "path": "fixture-text-113",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-114",
+      "environment": "fixture-text-115",
+      "sound": "fixture-text-116",
+      "ability_ids": [
+        "SWORD_GRID",
+        "CYAN_GUARD"
+      ],
+      "before": {
+        "A": "fixture-text-106",
+        "B": "fixture-text-107",
+        "environment": "fixture-text-108",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-117",
+        "B": "fixture-text-118",
+        "environment": "fixture-text-119",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B07",
+      "start": 16.0,
+      "end": 18.5,
+      "intent": "fixture-text-120",
+      "actors": {
+        "A": {
+          "action": "fixture-text-121",
+          "performance": "fixture-text-122"
+        },
+        "B": {
+          "action": "fixture-text-123",
+          "performance": "fixture-text-124"
+        }
+      },
+      "emotion": "fixture-text-120",
+      "camera": {
+        "shot_id": "S07",
+        "transition": "cut",
+        "side": "fixture-text-50",
+        "path": "fixture-text-125",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-126",
+      "environment": "fixture-text-127",
+      "sound": "fixture-text-128",
+      "ability_ids": [
+        "SWORD_GRID",
+        "CYAN_GUARD"
+      ],
+      "before": {
+        "A": "fixture-text-117",
+        "B": "fixture-text-118",
+        "environment": "fixture-text-119",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-129",
+        "B": "fixture-text-130",
+        "environment": "fixture-text-131",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B08",
+      "start": 18.5,
+      "end": 21.5,
+      "intent": "fixture-text-120",
+      "actors": {
+        "A": {
+          "action": "fixture-text-132",
+          "performance": "fixture-text-133"
+        },
+        "B": {
+          "action": "fixture-text-134",
+          "performance": "fixture-text-135"
+        }
+      },
+      "emotion": "fixture-text-120",
+      "camera": {
+        "shot_id": "S08",
+        "transition": "cut",
+        "side": "fixture-text-50",
+        "path": "fixture-text-136",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-137",
+      "environment": "fixture-text-138",
+      "sound": "fixture-text-139",
+      "ability_ids": [
+        "WIND_FORM"
+      ],
+      "before": {
+        "A": "fixture-text-129",
+        "B": "fixture-text-130",
+        "environment": "fixture-text-131",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-140",
+        "B": "fixture-text-141",
+        "environment": "fixture-text-142",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B09",
+      "start": 21.5,
+      "end": 24,
+      "intent": "fixture-text-143",
+      "actors": {
+        "A": {
+          "action": "fixture-text-144",
+          "performance": "fixture-text-145"
+        },
+        "B": {
+          "action": "fixture-text-146",
+          "performance": "fixture-text-147"
+        }
+      },
+      "emotion": "fixture-text-143",
+      "camera": {
+        "shot_id": "S09",
+        "transition": "cut",
+        "side": "fixture-text-50",
+        "path": "fixture-text-148",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-149",
+      "environment": "fixture-text-150",
+      "sound": "fixture-text-151",
+      "ability_ids": [
+        "WIND_FORM"
+      ],
+      "before": {
+        "A": "fixture-text-140",
+        "B": "fixture-text-141",
+        "environment": "fixture-text-142",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-152",
+        "B": "fixture-text-153",
+        "environment": "fixture-text-154",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B10",
+      "start": 24,
+      "end": 27.0,
+      "intent": "fixture-text-143",
+      "actors": {
+        "A": {
+          "action": "fixture-text-155",
+          "performance": "fixture-text-156"
+        },
+        "B": {
+          "action": "fixture-text-157",
+          "performance": "fixture-text-158"
+        }
+      },
+      "emotion": "fixture-text-143",
+      "camera": {
+        "shot_id": "S10",
+        "transition": "cut",
+        "side": "fixture-text-50",
+        "path": "fixture-text-159",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-160",
+      "environment": "fixture-text-161",
+      "sound": "fixture-text-162",
+      "ability_ids": [
+        "SWORD_GRID",
+        "SKY_SWORD",
+        "WIND_FORM"
+      ],
+      "before": {
+        "A": "fixture-text-152",
+        "B": "fixture-text-153",
+        "environment": "fixture-text-154",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-163",
+        "B": "fixture-text-164",
+        "environment": "fixture-text-165",
+        "camera_side": "fixture-text-50"
+      }
+    },
+    {
+      "id": "B11",
+      "start": 27.0,
+      "end": 30.0,
+      "intent": "fixture-text-166",
+      "actors": {
+        "A": {
+          "action": "fixture-text-167",
+          "performance": "fixture-text-168"
+        },
+        "B": {
+          "action": "fixture-text-169",
+          "performance": "fixture-text-170"
+        }
+      },
+      "emotion": "fixture-text-166",
+      "camera": {
+        "shot_id": "S11",
+        "transition": "cut",
+        "side": "fixture-text-50",
+        "path": "fixture-text-171",
+        "axis_bridge": ""
+      },
+      "vfx": "fixture-text-172",
+      "environment": "fixture-text-173",
+      "sound": "fixture-text-174",
+      "ability_ids": [
+        "SKY_SWORD",
+        "WIND_FORM"
+      ],
+      "before": {
+        "A": "fixture-text-163",
+        "B": "fixture-text-164",
+        "environment": "fixture-text-165",
+        "camera_side": "fixture-text-50"
+      },
+      "after": {
+        "A": "fixture-text-175",
+        "B": "fixture-text-176",
+        "environment": "fixture-text-177",
+        "camera_side": "fixture-text-50"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "P01",
+      "beat_ids": [
+        "B01",
+        "B02"
+      ],
+      "summary": {
+        "action": "fixture-text-178",
+        "expression": "fixture-text-179",
+        "emotion": "fixture-text-51",
+        "camera": "fixture-text-180",
+        "vfx": "fixture-text-181",
+        "environment": "fixture-text-182",
+        "sound": "fixture-text-183",
+        "continuity": "fixture-text-184"
+      }
+    },
+    {
+      "id": "P02",
+      "beat_ids": [
+        "B03",
+        "B04"
+      ],
+      "summary": {
+        "action": "fixture-text-185",
+        "expression": "fixture-text-186",
+        "emotion": "fixture-text-74",
+        "camera": "fixture-text-187",
+        "vfx": "fixture-text-188",
+        "environment": "fixture-text-189",
+        "sound": "fixture-text-190",
+        "continuity": "fixture-text-191"
+      }
+    },
+    {
+      "id": "P03",
+      "beat_ids": [
+        "B05",
+        "B06"
+      ],
+      "summary": {
+        "action": "fixture-text-192",
+        "expression": "fixture-text-193",
+        "emotion": "fixture-text-97",
+        "camera": "fixture-text-194",
+        "vfx": "fixture-text-195",
+        "environment": "fixture-text-196",
+        "sound": "fixture-text-197",
+        "continuity": "fixture-text-198"
+      }
+    },
+    {
+      "id": "P04",
+      "beat_ids": [
+        "B07",
+        "B08"
+      ],
+      "summary": {
+        "action": "fixture-text-199",
+        "expression": "fixture-text-200",
+        "emotion": "fixture-text-120",
+        "camera": "fixture-text-201",
+        "vfx": "fixture-text-202",
+        "environment": "fixture-text-203",
+        "sound": "fixture-text-204",
+        "continuity": "fixture-text-205"
+      }
+    },
+    {
+      "id": "P05",
+      "beat_ids": [
+        "B09",
+        "B10"
+      ],
+      "summary": {
+        "action": "fixture-text-206",
+        "expression": "fixture-text-207",
+        "emotion": "fixture-text-143",
+        "camera": "fixture-text-208",
+        "vfx": "fixture-text-209",
+        "environment": "fixture-text-210",
+        "sound": "fixture-text-211",
+        "continuity": "fixture-text-212"
+      }
+    },
+    {
+      "id": "P06",
+      "beat_ids": [
+        "B11"
+      ],
+      "summary": {
+        "action": "fixture-text-213",
+        "expression": "fixture-text-214",
+        "emotion": "fixture-text-166",
+        "camera": "fixture-text-171",
+        "vfx": "fixture-text-172",
+        "environment": "fixture-text-215",
+        "sound": "fixture-text-174",
+        "continuity": "fixture-text-216"
+      }
+    }
+  ]
+}
