@@ -17,7 +17,7 @@ Combat Director以场景、战斗类型、人物与招式为输入，生成详�
 | 资源 | 触发与用途 |
 | --- | --- |
 | [prompt-construction.md](../skills/combat-director/references/prompt-construction.md) | 完整生成/重编；逐项组织顺序/句式/例句、融合成段、动作单元、生成顺序、自含正文模板及修正 |
-| [choreography.md](../skills/combat-director/references/choreography.md) | 特殊兵器、复杂攻防/演武、空间与群战、摄影或特效；选择相关局部句式融入本场 |
+| [choreography.md](../skills/combat-director/references/choreography.md) | 特殊兵器、复杂攻防/演武、空间与群战、摄影或特效；包含兵器差异、机制反制、地形接力、法相、蓄爆与延迟结果、贴附式水墨，以及面部特写、远景光梭对撞、快速交错运镜；选取相关句式融入本场 |
 | [review-loop.md](../skills/combat-director/references/review-loop.md) | 参考拆解/成片诊断；把时间码证据转成提示词句，或给出可替换的修复正文 |
 | [library-workflow.md](../skills/combat-director/references/library-workflow.md) | 查库/核实名称；命令、详情等级和来源动作到本场交锋的转换 |
 | [platforms.md](../skills/combat-director/references/platforms.md) | 实际交接/绑定/生成；按文生、外观图、首帧、动作参考组织正文并核验入口 |
@@ -32,6 +32,7 @@ Combat Director以场景、战斗类型、人物与招式为输入，生成详�
 - 参考拆解从只交“观察与解释”改为同时提供证据到句子的转写方法；诊断从泛化建议改为替换句和复测目标。
 - 来源页删除长篇外链书目、重复的方法介绍与历史版本叙述，仅保留来源类别、已提炼内容和证据范围。研究报告仍保留原始依据，不重复复制到运行包。
 - 教学骨架使用变量并配局部写法示例，不恢复历史整场创作答案；只选择本场需要的关系，不把两片的身份、场景、镜数和结尾固化成默认模板。
+- 再读八份用户原提示词及更早的双女、双男、双人打斗稿，将原有概括补成可执行的战术链与局部例段；同类方法并入既有章节，旧痕回收替换原单行摘要，构图转场补真实位置承接。来源到运行写法的对应记录见[吸收记录](research/2026-10-02-user-prompts-integration.md)，创作不依赖该开发记录。
 
 ## 不变的工程边界
 

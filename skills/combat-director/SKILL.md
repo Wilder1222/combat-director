@@ -46,9 +46,10 @@ metadata:
 
 | 条件 | 读取位置与要取出的内容 |
 | --- | --- |
-| 复杂交锋、特殊兵器或演武连招 | [choreography.md：交锋与覆盖](references/choreography.md#交锋与覆盖)，取对应动作骨架 |
-| 远近斗法、换区、群战或巨敌 | [choreography.md：空间与场面](references/choreography.md#空间与场面)，取路径与状态转换句式 |
-| 爆剪、单镜、微慢、模糊或光效 | [节奏与剪辑](references/choreography.md#节奏与剪辑)或[特效与成像](references/choreography.md#特效与成像)，取对应画面写法 |
+| 复杂交锋、特殊兵器、机制反制、旧痕回收或演武连招 | [choreography.md：交锋与覆盖](references/choreography.md#交锋与覆盖)，取兵器差异、逐招任务、结构转招及反制句式 |
+| 远近斗法、地形接力、群战、巨敌或法相 | [choreography.md：空间与场面](references/choreography.md#空间与场面)，取可达路径、尺度揭示与状态转换句式 |
+| 面部特写、光梭/剑雨分波对撞、快速交错运镜 | [面部特写](references/choreography.md#面部特写)、[光梭与分波对撞](references/choreography.md#远景光梭对撞)、[交错运镜](references/choreography.md#快速动态交错运镜)，取构图、运动路线、视点交接与可见结果的句式 |
+| 爆剪、单镜、蓄爆反差、延迟结果、模糊或水墨光效 | [节奏与剪辑](references/choreography.md#节奏与剪辑)或[特效与成像](references/choreography.md#特效与成像)，取时序、构图承接与分层反馈写法 |
 | 核实招名、限定原文、明确查库 | [library-workflow.md](references/library-workflow.md)，取检索命令与资料转动作规则 |
 | 实际绑定、提交或生成 | [platforms.md](references/platforms.md)，按输入模式准备正文并核验能力 |
 | JSON、编译导出、结构化审片 | [contract.md](references/contract.md)，沿现有字段与复核流程执行 |
