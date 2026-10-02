@@ -1,61 +1,48 @@
 # 当前设计与维护边界
 
-Combat Director接收场景、战斗类型、人物和招式，输出详细、独立可复制的中文战斗视频提示词。[SKILL.md](../skills/combat-director/SKILL.md)包含普通创作流程、输出结构与对读检查；资料库、专项参考和JSON都不是前置步骤。版本0.10.0为工作区版本，源码与打包不代表安装或发布。
+Combat Director以场景、战斗类型、人物与招式为输入，生成详细中文战斗视频提示词。2026-10-02重构围绕AIGC设置拆解与提示词生成；源码基版保持0.10.0，本机安装由缓存刷新后缀区分，并在验证记录中单独核验。
 
-## 选择性融合的理由
+## 从设置到正文
 
-上一轮将22份reference收缩为9份，解决了知识点拆分过细的问题；但攻防与摄影仍常围绕同一交换来回读取，参考拆解与成片审阅则重复声明观察边界。本轮按共同决策融合两组，保留用途不同的模块，共7份：5份任务资源和2份来源/许可。
+[入口](../skills/combat-director/SKILL.md)判断生成、局部改稿、参考分析或工程任务。完整生成实际读取[生成模板](../skills/combat-director/references/prompt-construction.md)，按以下过程完成：
 
-| 融合组 | 怎样融合 | 保留的区别 |
-| --- | --- | --- |
-| choreography + camera-coverage | 在choreography中把战术变化、动作/空间成立条件和摄影可见结果放在同一决策表；节奏剪辑、特效成像另设小节 | 只改摄影仍锁定事件；复杂交锋可联动重编；不要求每次通读全部 |
-| reference-inputs + review-loop | review-loop共用素材用途与观察方法，再分提炼参考、诊断结果、复测续作 | 参考提炼不默认找失败；失败诊断不默认模仿来源；文本不冒充媒体观察 |
+**六项设置 → 动作单元 → 状态链 → 时间与镜头覆盖 → 命中及光影 → 正文与对读。**
 
-删除camera-coverage.md与reference-inputs.md，更新全部调用链接。没有新增平行模板或固定案例，也没有将其他模块拼成长手册。现有测试仍引用保留的review-loop.md，无需更换测试样本。
+六项为整体风格、战斗人物、武器、技能招式、命中效果、特效光影。模板将内容展开为22项写法，每项包含组织顺序、可替换句式、具体教学例句及易错边界，另示范把多个要素融合成连续攻防；对抗单元以对手回应与结果衔接，演武单元以重心、旋向和兵器余势衔接。完整提示词在同一复制块中包含总设定与逐镜时间/镜长，按动作和信息量安排长短变化；一镜到底则划分镜内动作节拍。局部改稿仍遵守用户范围。
 
-## 保留资源及其读取边界
+## 运行资源与读取条件
 
-| 资源 | 触发条件 | 为何独立或融合 |
-| --- | --- | --- |
-| [战斗设计](../skills/combat-director/references/choreography.md) | 复杂交锋、空间、节奏，或专项摄影/特效问题 | 动作与拍法围绕同一次事件协同判断；目录可直接定位小节 |
-| [参考分析与审片](../skills/combat-director/references/review-loop.md) | 深入拆解参考，或收到生成结果 | 共用证据边界，之后分流为迁移、诊断或复测 |
-| [资料检索](../skills/combat-director/references/library-workflow.md) | 核实点名来源、限定原文或明确查库 | 处理检索语法和来源等级；普通原创不需要这些操作 |
-| [平台交接](../skills/combat-director/references/platforms.md) | 实际绑定、提交或确认平台能力 | 依赖当前入口与执行证据，不能混成通用创作规则 |
-| [工程契约](../skills/combat-director/references/contract.md) | JSON、编译导出、结构化审片 | Schema、命令与复核生命周期只服务工程任务 |
-| [来源](../skills/combat-director/references/sources.md) | 查询依据 | 保留可追溯证据及其局限，不是每次必读 |
-| [许可](../skills/combat-director/references/third-party-notices.md) | 第三方归属或再分发 | 保留完整许可，资料卡依赖该路径 |
+当前8份reference中，生成模板是完整创作的直接依赖；其余按任务选读。每个创作模块给出可替换句式和成立条件，链接仅用于加载，不代替方法。
 
-普通创作不另读参考，有具体难点才选对应小节，不沿链接遍历。减少加载与重复判断是设计目的，文件数量与字数本身不是效果指标。
+| 资源 | 触发与用途 |
+| --- | --- |
+| [prompt-construction.md](../skills/combat-director/references/prompt-construction.md) | 完整生成/重编；逐项组织顺序/句式/例句、融合成段、动作单元、生成顺序、自含正文模板及修正 |
+| [choreography.md](../skills/combat-director/references/choreography.md) | 特殊兵器、复杂攻防/演武、空间与群战、摄影或特效；选择相关局部句式融入本场 |
+| [review-loop.md](../skills/combat-director/references/review-loop.md) | 参考拆解/成片诊断；把时间码证据转成提示词句，或给出可替换的修复正文 |
+| [library-workflow.md](../skills/combat-director/references/library-workflow.md) | 查库/核实名称；命令、详情等级和来源动作到本场交锋的转换 |
+| [platforms.md](../skills/combat-director/references/platforms.md) | 实际交接/绑定/生成；按文生、外观图、首帧、动作参考组织正文并核验入口 |
+| [contract.md](../skills/combat-director/references/contract.md) | JSON/编译/审片；沿现有事实和表达字段工作，不为写作模板新增Schema |
+| [sources.md](../skills/combat-director/references/sources.md) | 最小来源与证据范围；只追溯，不作为应用前置 |
+| [third-party-notices.md](../skills/combat-director/references/third-party-notices.md) | 保留完整归属及MIT许可，来源卡仍依赖此路径 |
 
-## 入口优化
+## 本轮删改
 
-主流程为目标与兑现、交换接续、空间与摄影、节奏递进、自适应拆合。每次主要交换先成立具体兵器、来路、回应、作用与下一状态，再选能揭示变化的拍法；拍法不足时可回查编排，但仅摄影任务不擅改事件。
+- 入口原有大段输出细则移入单一生成模板，入口只保留路由、继承、核心关系与工作顺序；消除“有链接就算已应用”的歧义。
+- 将战斗、摄影和成像的抽象讲解改为适用条件、局部句式与成立边界；八份原提示词和两段实片中的可用关系已内化，创作不依赖研究目录或外链。
+- 参考拆解从只交“观察与解释”改为同时提供证据到句子的转写方法；诊断从泛化建议改为替换句和复测目标。
+- 来源页删除长篇外链书目、重复的方法介绍与历史版本叙述，仅保留来源类别、已提炼内容和证据范围。研究报告仍保留原始依据，不重复复制到运行包。
+- 教学骨架使用变量并配局部写法示例，不恢复历史整场创作答案；只选择本场需要的关系，不把两片的身份、场景、镜数和结尾固化成默认模板。
 
-高能来自迅疾出手、即时回应、恢复接追压，以及破防、路线受限或新条件迫使换招。人物速度、相机运动、播放倍率和剪辑频率分开设计，不用更多光效或切点代替升级。开场、中段、终局的压力按场景组织，不固定阶段数、比例或镜数。
+## 不变的工程边界
 
-交付保持总设定、连续时间段与必要连续性，合在一个复制块；正文包含具体招式路径、对手回应、位置变化和相应声画设计。内部决策表不变成强制交付，计划时码不承诺逐帧执行。
+数据契约、运行代码、生成资料卡和原始来源保持原样。工程接口、来源等级、素材绑定与复核失效规则是必要操作信息，不改写为视频画面指令。许可完整保留。
 
-## 融合后保留的关键约束
+资料权威在sources/editorial与固定sources/upstream中，变更生成资料时先改权威再生成和校验，不手改卡片。工程夹具在tests/fixtures，研究图片与分析在docs/research，文字试用输出在outputs；均不混入运行技能包。构建继续拒绝examples、tests、fixtures或evals进入技能资源。
 
-- 来路、接点、反馈可以同镜；用户当前要求的轴线、复位与微慢不因自适应镜数丢失。一镜到底不能隐切。
-- 开放仙侠实际利用纵深、高差和跨区路线；窄场地利用限制，相机运动不代替人物接近或可达射程。
-- 新场景不自动继承旧人物编号、固定左右和结尾；同场改稿保留未修改约束，整体优化允许调整可选交换。
-- 同门/镜像打法、有目的角力、即时反应、预存弱点、动作中的短对视和首击前悬念都保留合理空间。
-- 命中、格挡与挥空反馈不同；持物、支撑、能力、损伤和地形不因切镜重置；粒子与残影不自动成为新能力或实体。
-- 观察、转述、推断与未知分开；抽帧不证明全片速度和音轨，未生成候选不写成成功案例。
+正式构建使用`python scripts/project.py build`；完整工程验证使用`.venv/Scripts/python.exe scripts/validate_release.py`，统一更新docs/implementation/release-validation.json。验证结果与文字试用边界见[当前验证](validation.md)。
 
-## 数据和工程维护
+## 依据
 
-原始附件、固定上游源文、许可与实际视频观察保留；研究截图不是普通缓存。历史自生成创作案例不恢复，工程夹具隔离在tests/fixtures，不进运行包。资料库是按需检索数据，不能以压缩指令文档为由手删生成卡。
+使用本机skill-creator指导，并于2026-10-02核对[Agent Skills最佳实践](https://agentskills.io/skill-creation/best-practices)与[评估方法](https://agentskills.io/skill-creation/evaluating-skills)：清晰触发、渐进读取、可执行过程、适度细节与真实任务检查。来源只支撑设计方法，不证明视频质量。
 
-资料权威分别位于sources/editorial/library-base.json、arvin-facets.json和固定的sources/upstream/arvin-seedance。选段与改编由scripts/build_arvin_library.py维护，逐招提取由scripts/arvin_items.py维护。改权威后运行生成器`--plan`、写入、`--check`；不要手改卡片、索引、导航和覆盖记录。生成器只退役已登记且未被人工修改的产物，遇到漂移应查明原因，不能刷新哈希掩盖。中断恢复前确认原进程结束，使用`--recover`，不要直接删除恢复锁或备份。
-
-正式构建使用`python scripts/project.py build`；`validate-release`核对来源与生成一致性，`validate`检查运行包结构。完整回归`python scripts/validate_release.py`统一更新docs/implementation/release-validation.json，不逐轮新增报告快照。工程通过不代替语义复核。
-
-停用的LibTV独立适配与构建器已移除，既有通用CLI兼容选项不扩展。前轮[清理记录](cleanup.json)是历史删除证据，不是本轮文件数；两份旧LibTV ZIP曾因自动审批审查拒绝删除而留在dist/libtv，不进当前核心包，本轮未重试。
-
-## 验证与剩余不确定性
-
-本次可验证文档路由、链接、来源完整性、代码兼容和包内容，也可对读场景约束；尚未完成新上下文中的无技能/旧版/新版创作比较或新版成片验收，不声称动作、节奏或运镜效果已改善。设计验证未进行安装或在线生成；Git提交与推送状态以仓库记录为准。
-
-依据：[公开技能调研](research/2026-10-01-public-combat-skills-design-study.md)、[八份用户提示词审阅](research/2026-10-01-eight-prompts-design-review.md)、[15秒失败成片观察](research/2026-10-01-duel-15s-independent-review.md)。工程结果见[当前验证](validation.md)。
+创作依据保留在[八份提示词审阅](research/2026-10-01-eight-prompts-design-review.md)与[两段战斗视频拆解](research/2026-10-02-two-combat-videos-analysis.md)。文字试用、结构校验和可复现打包分别留证，不声称本轮已完成新视频验收或成功率比较。

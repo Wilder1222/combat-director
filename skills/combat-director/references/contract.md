@@ -19,6 +19,8 @@
 | editorial_reviews | 对特定输入和表达版本的复核声明 | 计划与状态检查；不是视频验收 |
 | id / provenance | 文件身份与来源说明 | 计划和设计卡；不参与语义摘要哈希 |
 
+新编写的完整或精简提示词按[生成模板](prompt-construction.md)保留整体风格、战斗人物、武器、技能招式、命中效果、特效光影。该模板的内部拆解不是新JSON契约：稳定设定写入现有headers或精简表达opening，动作单元写入sections.summary或精简表达sections[].text；人物、兵器、能力和事件仍以现有事实字段为准。先核对本段beat_ids对应的来路、回应、结果，再写自然语言，不把字段名或资源链接交作提示词。若创作新增事实，先更新计划再复核表达，不只往摘要里补写。六项是表达完整性的人工对读要求，不新增Schema字段，不强制旧计划补造未知事实；结构校验通过不证明六项语义完整。
+
 每拍记录全部角色的动作与表演。before 继承上一拍 after，包括角色、environment、camera_side。第一拍 transition=start；之后 continuous 保持 shot_id，cut 改变 shot_id。一镜到底全程一个 shot_id，越轴需要可见过渡。状态文字相等不证明物理成立。
 
 ## 修订流程

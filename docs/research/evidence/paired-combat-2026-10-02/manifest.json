@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "path": "comparison-board.jpg",
+      "bytes": 256541,
+      "sha256": "ad275cd3585e655bc427078cd0732c3342d40e90f0b7ae7c5405037dfd50985e"
+    },
+    {
+      "path": "fox-contact-consecutive.jpg",
+      "bytes": 416777,
+      "sha256": "a3785d882fbd2f94b2382cfb8b4cd36af6a08be3a78b1ffaf1d5909d5c778844"
+    },
+    {
+      "path": "fox-cut-candidates.jpg",
+      "bytes": 379142,
+      "sha256": "1211420b45c3d3f7a149a3e2132a94767709d1d1648d900a15cb7a78bc6a0c8a"
+    },
+    {
+      "path": "fox-details-01.jpg",
+      "bytes": 264570,
+      "sha256": "35ef010a4ceca7a39b1f14725f4ae03e0784e8c6205cd46e86a504016e8aa253"
+    },
+    {
+      "path": "fox-details-02.jpg",
+      "bytes": 279459,
+      "sha256": "c18f546b7775aef1f5aafeaa9e619e148a0df537bf7fbd28156c52ad7a5708d4"
+    },
+    {
+      "path": "fox-frame-change-candidates.json",
+      "bytes": 2165,
+      "sha256": "5c5f2e003c8555e8570a3b025ed996e3d63b93e232b67e4efd6cfb8a8632e492"
+    },
+    {
+      "path": "fox-overview.jpg",
+      "bytes": 322086,
+      "sha256": "766ff31b417faee74ed2e7592089a8f985941a03aabcd904eba79e2928433b03"
+    },
+    {
+      "path": "fox-sequence-01.jpg",
+      "bytes": 340330,
+      "sha256": "5d016a7de9b94099b2cfc2691b1d930b1ad87973bea2a7016ddd2af48eb77ecc"
+    },
+    {
+      "path": "fox-sequence-02.jpg",
+      "bytes": 359323,
+      "sha256": "4e6811d3f4052cf6e7dd54e832362a515b3767ea952522a4927a907174f82a19"
+    },
+    {
+      "path": "fox-sequence-03.jpg",
+      "bytes": 309280,
+      "sha256": "1b53aadf65fbacf225eed37b4cffae087ecab136784f238c4874c65fc1034104"
+    },
+    {
+      "path": "fox-sequence-04.jpg",
+      "bytes": 365887,
+      "sha256": "fd50f0cab7a1b9d33de9848b7c05beae22cd49d5cdef374f6184b9479fa3c767"
+    },
+    {
+      "path": "fox-sequence-05.jpg",
+      "bytes": 361075,
+      "sha256": "788b2a3eb61e288759dabe99357662d5910be04df915aab9190afa1e69d4d33c"
+    },
+    {
+      "path": "fox-sequence-06.jpg",
+      "bytes": 131404,
+      "sha256": "d707359f17e659ab7b88de2896116c54529e593ca42e6a8047706bd08c6e47a1"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 13622,
+      "sha256": "8f14950645dac1f6ab2c78930b7a62786e1ed1ff3c6d932f8a7ae6cb946fafa4"
+    }
+  ]
+}

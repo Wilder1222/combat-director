@@ -1,0 +1,115 @@
+{
+  "method": "Adjacent decoded frames at 160x90; change candidates only, not automatic cut detections.",
+  "candidates": [
+    {
+      "frame": 56,
+      "time": 1.866667,
+      "mean_rgb_delta": 68.551
+    },
+    {
+      "frame": 78,
+      "time": 2.6,
+      "mean_rgb_delta": 62.421
+    },
+    {
+      "frame": 79,
+      "time": 2.633333,
+      "mean_rgb_delta": 46.713
+    },
+    {
+      "frame": 114,
+      "time": 3.8,
+      "mean_rgb_delta": 89.059
+    },
+    {
+      "frame": 155,
+      "time": 5.166667,
+      "mean_rgb_delta": 58.416
+    },
+    {
+      "frame": 156,
+      "time": 5.2,
+      "mean_rgb_delta": 58.055
+    },
+    {
+      "frame": 182,
+      "time": 6.066667,
+      "mean_rgb_delta": 51.491
+    },
+    {
+      "frame": 187,
+      "time": 6.233333,
+      "mean_rgb_delta": 48.957
+    },
+    {
+      "frame": 192,
+      "time": 6.4,
+      "mean_rgb_delta": 49.023
+    },
+    {
+      "frame": 202,
+      "time": 6.733333,
+      "mean_rgb_delta": 72.52
+    },
+    {
+      "frame": 212,
+      "time": 7.066667,
+      "mean_rgb_delta": 48.698
+    },
+    {
+      "frame": 214,
+      "time": 7.133333,
+      "mean_rgb_delta": 45.371
+    },
+    {
+      "frame": 296,
+      "time": 9.866667,
+      "mean_rgb_delta": 64.838
+    },
+    {
+      "frame": 410,
+      "time": 13.666667,
+      "mean_rgb_delta": 57.221
+    },
+    {
+      "frame": 412,
+      "time": 13.733333,
+      "mean_rgb_delta": 80.389
+    },
+    {
+      "frame": 415,
+      "time": 13.833333,
+      "mean_rgb_delta": 76.509
+    },
+    {
+      "frame": 500,
+      "time": 16.666667,
+      "mean_rgb_delta": 46.914
+    },
+    {
+      "frame": 503,
+      "time": 16.766667,
+      "mean_rgb_delta": 66.219
+    },
+    {
+      "frame": 509,
+      "time": 16.966667,
+      "mean_rgb_delta": 80.366
+    },
+    {
+      "frame": 511,
+      "time": 17.033333,
+      "mean_rgb_delta": 46.686
+    },
+    {
+      "frame": 512,
+      "time": 17.066667,
+      "mean_rgb_delta": 53.592
+    },
+    {
+      "frame": 523,
+      "time": 17.433333,
+      "mean_rgb_delta": 54.231
+    }
+  ]
+}
