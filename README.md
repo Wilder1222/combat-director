@@ -10,9 +10,11 @@
 
 ## 当前项目结构
 
+默认不绑定视频模型。跨模型共通写法见[视频生成适配](skills/combat-director/references/video-generation.md)；只有用户选定入口或实际生成时才应用对应版本的素材、时间、多镜及音频能力，不能以厂商建议覆盖用户的战斗目标。
+
 | 位置 | 内容 |
 | --- | --- |
-| skills/combat-director | 当前技能、7份专项reference、工程脚本、契约与资料库 |
+| skills/combat-director | 当前技能、9份专项reference、工程脚本、契约与资料库 |
 | scripts、tests | 构建与验证工具、回归测试及必要兼容夹具 |
 | sources | 当前生成权威、固定上游及用户来源原件；见[来源说明](docs/source-status.md) |
 | docs | [当前设计](docs/design.md)、[当前验证](docs/validation.md)、来源说明与当前工程记录 |

@@ -4,15 +4,17 @@ Combat Director以场景、战斗类型、人物与招式为输入，生成中�
 
 ## 创作流程
 
+默认创作不绑定厂商。模型投喂按[通用视频生成写法](../skills/combat-director/references/video-generation.md)区分输入、任务和实际入口能力；Seedance等版本规则仅在用户选用后读取。普通编排保持中文标签和完整动作因果；只有投喂表达与设置随模型适配，不新增生成接口或自动调用。对照官方文档的共通原则与分歧列在该reference，不能把某一版本经验写成通用硬限制。
+
 **战斗设置 → 动作单元 → 状态链 → 时间与镜头覆盖 → 命中及光影 → 正文与对读。**
 
 公共模块独立于分镜，集中写共用风格、人物外观、场景、兵器和规则；每段分镜内部按需求选择中文类型标签，从整体风格、人物与空间，到行为、轨迹、招式、能力、摄影、时间和表演逐项详细展开。25项是写作参考而非必填表；选中栏目描述同一区间，不存在或未涉及的模块直接省略，不写否定占位，不凭空增加情节。
 
-对抗通过攻击、回应、接触或让空、受力和下一威胁接续；演武通过重心、旋向和兵器余势接续。近战先进入射程，换区展示路径，持物、支撑、损伤和地形跨镜持续。相机运动不能替代人物接近，光效不能替代命中反馈。
+对抗通过攻击、回应、接触或让空、受力和下一威胁接续；演武通过重心、旋向和兵器余势接续。近战先进入射程，换区展示路径，持物、支撑、损伤和地形跨镜持续。相机运动不能替代人物接近，光效不能替代命中反馈。瞬时打击保持启动、接触、受力与分离为同一事件，换镜不再次释放；持续推压则明确接点维持与解除条件。
 
 动作参考迁移先绑定人物与采用范围，再按兵器、体型和地形重算接点与支撑。持续接触交代双方承接及释放条件，交叉遮挡后接回原身份、持物与余势。实际姿态/遮罩/轨迹控制和纯文字编排分别判断；本轮来源、缺口及实施映射见[研究优化方案](combat-research-plan.md)。
 
-整场提示词默认在同一复制块中交付；每镜先写时间/镜长，再在该镜内部用按需选择的不编号【中文标签】展开，公共模块独立写稳定设定，镜内继承并描述变化；一镜到底用镜内节拍。镜长由动作和信息量决定，保留用户明确的轴线、速度和结局。局部改稿仅调整授权层。
+整场提示词默认在同一复制块中交付；编排稿每镜写时间/镜长，直接投喂稿按模型改用事件顺序或支持的时间粒度，再在该镜内部用按需选择的不编号【中文标签】展开，公共模块独立写稳定设定，镜内继承并描述变化；一镜到底用镜内节拍。镜长由动作和信息量决定，保留用户明确的轴线、速度和结局。局部改稿仅调整授权层。
 
 ## 生成与复测
 
@@ -45,12 +47,14 @@ Combat Director以场景、战斗类型、人物与招式为输入，生成中�
 | [prompt-construction.md](../skills/combat-director/references/prompt-construction.md) | 主流程、设置与具体写法、动作密度、时间表达及正文模板 |
 | [choreography.md](../skills/combat-director/references/choreography.md) | 兵器与攻防、空间、摄影、节奏和效果专项 |
 | [review-loop.md](../skills/combat-director/references/review-loop.md) | 观察证据、参考转写、诊断修复与复测 |
+| [video-generation.md](../skills/combat-director/references/video-generation.md) | 多家官方共通写法、建议分歧与按输入/任务/能力适配 |
+| [seedance.md](../skills/combat-director/references/seedance.md) | 仅在选定该模型时读取的版本差异补充 |
 | [library-workflow.md](../skills/combat-director/references/library-workflow.md) | 来源检索、详情等级与资料转动作 |
 | [contract.md](../skills/combat-director/references/contract.md) | JSON、编译、复核失效和导出 |
 | [sources.md](../skills/combat-director/references/sources.md) | 创作来源、官方方法依据与适用范围 |
 | [third-party-notices.md](../skills/combat-director/references/third-party-notices.md) | 上游归属和完整许可 |
 
-运行包自含，不依赖历史研究目录或外网完成普通写作。Runway、Google、OpenAI和字节跳动官方方法的来源与核对范围集中在来源reference；战斗密度、接触验收和片段边界属于项目推导，不是厂商实测结论。
+运行包自含，不依赖历史研究目录或外网完成普通写作。Runway、Google、Kling、OpenAI、Adobe、Luma和字节跳动官方方法的来源与核对范围集中在通用视频reference及sources.md；战斗密度、接触验收和片段边界属于项目推导，不是厂商实测结论。
 
 ## 维护边界
 

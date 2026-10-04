@@ -1,5 +1,7 @@
 # 来源与归属
 
+当前跨模型方法和逐项官方来源见[通用视频生成写法](video-generation.md)。2026-10-04核对Runway、Google Veo、Kling、OpenAI Sora、Adobe Firefly的官方正文，读取Luma官网搜索收录内容，并结合此前同日读取的Seedance官方2.0/2.5正文。采用可迁移的写作决策，保留各家在负向表达、多镜模式、时间与声音上的差异；Seedance仅为按需专项，不是默认模型。未观看本轮指南内媒体、安装外部skill或发起生成。
+
 创作方法已转写在prompt-construction.md、choreography.md与review-loop.md中；本页只供追溯，不是写作前置，不要求Agent打开外链才能应用方法。
 
 | 依据 | 已内化的提示词写法 | 证据边界 |
@@ -24,6 +26,8 @@
 | [Google视频最佳实践](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/best-practice)、[提示指南](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide) | 短片聚焦清楚的场景事件，图生避免重复静态画面；负向表达须按支持它的实际入口处理 |
 | [Sora 2提示指南](https://developers.openai.com/cookbook/examples/sora/sora2_prompting_guide) | 动作按可观察节拍写清，简化单镜的主动作与相机任务；只作为该指南的写法依据，不推断当前服务可用性或跨模型限制 |
 | [Seedance 2.0发布说明](https://seed.bytedance.com/zh/blog/official-launch-of-seedance-2-0)、[Seedance 2.5提示指南](https://docs.volcengine.com/docs/ark/seedance-2-5-prompt-guide?lang=zh) | 多模态与多镜控制需按版本/任务路由，素材用途和对应关系清楚；时间表达及参考能力不从某一代模型泛化到所有入口 |
+
+2026-10-04针对用户提供的Seedance 2.0 mini全能参考失败样片，复核[Seedance 2.0系列提示词指南](https://docs.volcengine.com/docs/ark/seedance-2-0-prompt-guide?lang=zh&redirect=1)：按事件顺序写分镜、精确时间支持不稳定、单镜优先一项运镜、避免冗余剧本，并明确素材的参考用途。上述是系列指南；该单条样片不支持mini能力上限或成功率结论。把单次打击与持续推压分开、核对首次接触和分离，是本项目从可见失败中形成的创作修正，尚无修订后生成验证。
 
 具体操作集中在生成模板的“整场编排与生成片段”和review-loop.md，不要求普通创作重新联网读取这些来源。
 
