@@ -79,7 +79,7 @@ class ReviewFlowTests(unittest.TestCase):
             tool.export(p, 'generic', tmp)
             handoff = tool.read_json(Path(tmp) / 'prompt-handoff.json')['scopes'][2]
             self.assertEqual(handoff['expression']['camera'], p['sections'][1]['summary']['camera'])
-            self.assertIn('<运镜> ' + p['sections'][1]['summary']['camera'], (Path(tmp) / 'prompt.txt').read_text(encoding='utf-8'))
+            self.assertIn('【运镜】 ' + p['sections'][1]['summary']['camera'], (Path(tmp) / 'prompt.txt').read_text(encoding='utf-8'))
             p['sections'][1]['summary']['camera'] += ' 改为固定机位。'
             with self.assertRaisesRegex(ValueError, 'P02=stale'):
                 tool.prompt(p)

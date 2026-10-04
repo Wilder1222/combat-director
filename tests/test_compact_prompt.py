@@ -29,6 +29,67 @@ class CompactPromptTests(unittest.TestCase):
         for key in full.keys() - {'prompt.txt'}:
             self.assertEqual(full[key], short[key])
 
+    def detailed_projection(self):
+        projection = copy.deepcopy(self.projection)
+        for section in projection['sections']:
+            original = section['text']
+            section['text'] = '\n'.join(f'【{label}】{original} / authored {index}'
+                                       for index, label in enumerate(compact.SHOT_LABELS))
+        return self.review_projection(projection)
+
+    def review_projection(self, projection):
+        compiled = compact.inspect(self.plan, projection)
+        receipt = copy.deepcopy(self.projection['review'])
+        receipt['expression_digest'] = compiled['expression_digest']
+        return compact.apply_review(self.plan, projection, receipt)
+
+    def test_detailed_export_preserves_each_reviewed_shot_and_omits_handoff(self):
+        projection = self.detailed_projection()
+        projection['opening'] = '公共模块\n【整体风格】写实武侠，共用稳定风格。'
+        projection = self.review_projection(projection)
+        result = tool.deliverables(self.plan, 'generic', prompt_style='detailed', projection=projection)
+        self.assertTrue(result['prompt.txt'].startswith(projection['opening'] + '\n\n'))
+        self.assertEqual(result['prompt.txt'].count(projection['opening']), 1)
+        self.assertEqual(set(result), {'prompt.txt', 'prompt-projection.json', 'combat-plan.json'})
+        for section in projection['sections']:
+            self.assertIn(section['text'], result['prompt.txt'])
+        self.assertEqual(json.loads(result['prompt-projection.json']), projection)
+        self.assertEqual(json.loads(result['combat-plan.json']), self.plan)
+        with self.assertRaisesRegex(ValueError, 'platform profiles'):
+            tool.deliverables(self.plan, 'libtv', prompt_style='detailed', projection=projection)
+
+    def test_detailed_unlabeled_duplicate_empty_or_global_only_never_writes_output(self):
+        valid = self.detailed_projection()
+        first, second = compact.SHOT_LABELS[:2]
+        original = valid['sections'][1]['text']
+        variants = [
+            'Unlabeled shot prose',
+            original.replace(f'【{second}】', f'【{first}】'),
+            '\n'.join([f'【{first}】', *original.splitlines()[1:]]),
+            '\n'.join([f'【{first}】同上', *original.splitlines()[1:]]),
+        ]
+        for text in variants:
+            projection = copy.deepcopy(valid)
+            projection['opening'] += '\n' + original
+            projection['sections'][1]['text'] = text
+            projection = self.review_projection(projection)
+            with tempfile.TemporaryDirectory() as tmp:
+                target = Path(tmp) / 'out'
+                with self.assertRaises(ValueError):
+                    tool.export(self.plan, 'generic', target, prompt_style='detailed', projection=projection)
+                self.assertFalse(target.exists())
+
+    def test_detailed_accepts_different_subsets_and_order_per_shot(self):
+        projection = self.detailed_projection()
+        for index, section in enumerate(projection['sections']):
+            lines = section['text'].splitlines()
+            section['text'] = '\n'.join(lines[index:index + 3][::-1])
+        projection = self.review_projection(projection)
+        result = tool.deliverables(self.plan, 'generic', prompt_style='detailed', projection=projection)
+        for section in projection['sections']:
+            self.assertIn(section['text'], result['prompt.txt'])
+        self.assertNotIn('【法阵】', result['prompt.txt'])
+
     def test_source_changes_invalidate(self):
         for target, key in [('headers', 'scene'), ('headers', 'continuity'), ('initial_state', 'environment')]:
             plan = copy.deepcopy(self.plan)
@@ -114,7 +175,11 @@ class CompactPromptTests(unittest.TestCase):
             env = {**os.environ, 'PYTHONUTF8': '1'}
             receipt = Path(tmp) / 'receipt.json'
             receipt.write_text(json.dumps(self.projection['review']), encoding='utf-8')
+            detailed = Path(tmp) / 'detailed.json'
+            detailed.write_text(json.dumps(self.detailed_projection()), encoding='utf-8')
             commands = [
+                [SKILL / 'scripts/combat_tool.py', 'render', plan, '--prompt-style', 'detailed',
+                 '--prompt-file', detailed, '--out-dir', Path(tmp) / 'detailed'],
                 [SKILL / 'scripts/combat_prompt.py', 'validate', plan, projection],
                 [SKILL / 'scripts/combat_tool.py', 'render', plan, '--prompt-style', 'compact',
                  '--prompt-file', projection, '--out-dir', Path(tmp) / 'render'],
@@ -127,6 +192,8 @@ class CompactPromptTests(unittest.TestCase):
                 result = subprocess.run([sys.executable, *map(str, command)], cwd=tmp,
                                         capture_output=True, text=True, encoding='utf-8', env=env)
                 self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertEqual({p.name for p in (Path(tmp) / 'detailed').iterdir()},
+                             {'prompt.txt', 'prompt-projection.json', 'combat-plan.json'})
             inspection = tool.read_json(Path(tmp) / 'inspect.json')
             self.assertIn('source', inspection)
             draft = tool.read_json(Path(tmp) / 'draft.json')

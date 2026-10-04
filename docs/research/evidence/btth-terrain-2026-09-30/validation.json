@@ -1,9 +1,0 @@
-{
-  "scope": "local_evidence_integrity_capture_state_image_decode_and_report_links_only",
-  "image_count": 37,
-  "limited_images": 2,
-  "manifest_sha256": "3321f176889eef664bc2d4598a4b74712a4ac4e4dd067515b31d99f2d189d7ae",
-  "report_sha256": "2a24488f0afb421f76a97be58fa9610258f8bae968fa098f327086627b5254f7",
-  "passed": true,
-  "errors": []
-}

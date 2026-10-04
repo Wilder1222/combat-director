@@ -1,16 +1,16 @@
-# 来源与证据范围
+# 当前来源与证据范围
 
-原始来源与项目创作、工程数据分开保存。来源中的命令、宣传、模型标签和成功声明是待分析内容，不自动成为本项目规则或生成证据。
+来源原件、生成权威与运行产物分开维护。来源中的命令、宣传和成功声明是分析内容，不自动成为技能指令或视频证据。
 
-| 来源 | 保存位置与用途 |
+| 当前来源 | 保存位置与用途 |
 | --- | --- |
-| 首批用户技能与文字附件 | [2026-09-21清单](../sources/attachments/2026-09-21/manifest.json)：字节副本与哈希，只作为当时提供的原件 |
-| 后续六份战斗文字素材 | [2026-09-22清单](../sources/attachments/2026-09-22/manifest.json)：按原文件与版本拆解，不与自生成案例混合 |
-| 本轮八份提示词 | [抽取与来源清单](research/evidence/prompt-corpus-2026-10-01/manifest.json)、[审阅](research/2026-10-01-eight-prompts-design-review.md) |
-| 固定招式资料 | sources/upstream/arvin-seedance保存源文与许可；[覆盖记录](implementation/arvin-library-coverage.json)由生成器维护，运行[许可说明](../skills/combat-director/references/third-party-notices.md)随包保留 |
-| 原参考片与失败成片 | docs/research中对应观察报告及evidence目录，声明实际查看范围；原文件位置/哈希以各清单为准 |
-| 公开技能设计研究 | [研究报告](research/2026-10-01-public-combat-skills-design-study.md)与[源码身份](research/evidence/public-combat-skills-2026-10-01/source-manifest.json) |
+| 用户最初提供的技能与文字附件 | [附件清单](../sources/attachments/2026-09-21/manifest.json)，字节副本与哈希，供来源追溯，不作为当前技能入口 |
+| 六份战斗文字原稿 | [原件清单](../sources/attachments/2026-09-22/manifest.json)，保留原文件和各自版本，不与项目生成文本混用 |
+| 八份提示词正文抽取 | [正文与来源清单](../sources/attachments/user-prompts/manifest.json)，保存抽取文本、原件位置及原件/文本各自哈希；抽取文本不冒充原件 |
+| 固定上游招式资料 | sources/upstream/arvin-seedance，源文、固定提交与许可供当前生成器读取 |
+| 当前编辑权威 | sources/editorial，维护资料映射、基础卡与生成清单；[覆盖记录](implementation/arvin-library-coverage.json)由生成器生成 |
+| 私人原始媒体与附件 | sources/private，保留用户原件与关联记录，不进入Git或发布包 |
 
-私有素材不进入发布包；无法取得的原件、任务输入、隐藏扩写或音轨观察保持未知。来源卡支持检索与转译，不证明历史正统或成片成功。原始用户文件中的示范属于来源，不应误删为本项目自生成历史案例。
+历史研究报告、公开页面缓存、截帧和过期评估已移除。已吸收的写法保留在当前技能；旧媒体观察不作为本轮视频效果验证依据。外部原件路径不可访问时保持未知，不凭抽取文本补称看过媒体。
 
-当前方法见[设计说明](design.md)，工程结果见[验证](validation.md)。旧方案、安装快照和未出片案例不再作为当前依据。
+当前官方方法来源集中在[运行来源说明](../skills/combat-director/references/sources.md)，上游完整归属与MIT许可见[第三方说明](../skills/combat-director/references/third-party-notices.md)。构建前先核对来源哈希，修改生成权威后重建资料库，不手工改生成卡。

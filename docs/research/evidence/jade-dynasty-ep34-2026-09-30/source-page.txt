@@ -1,8 +1,0 @@
-Browser tab: 14, Title: "ENG SUB《诛仙2》Jade Dynasty EP34 | 凡雪花海对决相爱相杀 | 腾讯视频 - 动漫 - YouTube", URL: "https://www.youtube.com/watch?v=Nks4X7EeR3M".
-The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
-Removed element IDs: 44
-~										36 slider Description: 播放滑块, Value: 16
-~										37 button 播放 键盘快捷键 k
-~											43 button 0 分钟 16 秒/20 分钟 8 秒
-+												767 text 0:16
-The focused UI element is 37 button 播放 键盘快捷键 k

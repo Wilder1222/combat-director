@@ -1,0 +1,110 @@
+{
+  "received": "2026-10-01",
+  "evidence_type": "用户原稿的正文抽取与来源身份；不是生成效果证据",
+  "files": [
+    {
+      "name": "1-时序局_打斗分镜提示词分享.extracted.txt",
+      "sha256": "b4627bcf1717f353ed5962468ff88981d73755d785bed9d7e602b71be3015822",
+      "bytes": 28287,
+      "representation": "用户原稿的正文抽取，不是原件字节副本",
+      "original_source": {
+        "path": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\1-时序局_打斗分镜提示词分享.docx",
+        "sha256": "565c159b0578a94339f3df74a6a3caf515909692c0c2e3128dfc287e79199619",
+        "bytes": 28016
+      },
+      "original_id": "1",
+      "lines": 229
+    },
+    {
+      "name": "2-双人打斗第二弹.extracted.txt",
+      "sha256": "c04f05969a9201543efc93f090fcaf0b5657481cfbb4eb10b3ec58369389b25d",
+      "bytes": 12284,
+      "representation": "用户原稿的正文抽取，不是原件字节副本",
+      "original_source": {
+        "path": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\2-双人打斗第二弹.txt",
+        "sha256": "4eb1ebadcde398f56750ac6af229e07637c026e280c3dbbecdf5fbafa22edc12",
+        "bytes": 12326
+      },
+      "original_id": "2",
+      "lines": 42
+    },
+    {
+      "name": "3-小师妹首登.extracted.txt",
+      "sha256": "4fd8561fc4a650c5bf273a0158d46d6ab4c3ffd003d7548090d00ae88fedbf57",
+      "bytes": 3949,
+      "representation": "用户原稿的正文抽取，不是原件字节副本",
+      "original_source": {
+        "path": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\3-小师妹首登.txt",
+        "sha256": "aecdc1867e6b59a858a5cca3a0d7a808088c1ad36d8858d0bd19d19619e65cd8",
+        "bytes": 3965
+      },
+      "original_id": "3",
+      "lines": 17
+    },
+    {
+      "name": "4-最新打斗提示词.extracted.txt",
+      "sha256": "c65cd23c5101599e26bde487c24238d5bbfaf79302addf8df8e2289829b18925",
+      "bytes": 10854,
+      "representation": "用户原稿的正文抽取，不是原件字节副本",
+      "original_source": {
+        "path": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\4-最新打斗提示词.txt",
+        "sha256": "c8c846bd8af34e10d04e903694e43d55b412a82f4f01a09fe6567d8d8107d491",
+        "bytes": 10939
+      },
+      "original_id": "4",
+      "lines": 86
+    },
+    {
+      "name": "5-8.5-铜币转场.extracted.txt",
+      "sha256": "c30fa813aacc200955d0bd12d41bf67beeaf1ae1ba654d41b5fee554ded38865",
+      "bytes": 11154,
+      "representation": "用户原稿的正文抽取，不是原件字节副本",
+      "original_source": {
+        "path": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\5-8.5-铜币转场.docx",
+        "sha256": "c333380f38192b72f2429a40afdc13dabfce15659e741b560c960236dacf4b67",
+        "bytes": 8822
+      },
+      "original_id": "5",
+      "lines": 100
+    },
+    {
+      "name": "6-7.31.extracted.txt",
+      "sha256": "26d29ef92a07989c7250aa970cf89302a28667b72dbd00e1b1d575fa561ca6f7",
+      "bytes": 8767,
+      "representation": "用户原稿的正文抽取，不是原件字节副本",
+      "original_source": {
+        "path": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\6-7.31.txt",
+        "sha256": "1b166a710a220440782869b51eec2479c234713b07ff76597f9f962196a6d003",
+        "bytes": 8806
+      },
+      "original_id": "6",
+      "lines": 40
+    },
+    {
+      "name": "7-7.30.extracted.txt",
+      "sha256": "7c44f4d7a0aacdba2f7eec6675b38514096bde6fbe9f75cb420fe5a4898e157a",
+      "bytes": 7616,
+      "representation": "用户原稿的正文抽取，不是原件字节副本",
+      "original_source": {
+        "path": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\7-7.30.txt",
+        "sha256": "3daeb05d06628cc1f4f261b26c48b06234e71eb3310e1d8fa769179caa623e82",
+        "bytes": 7654
+      },
+      "original_id": "7",
+      "lines": 39
+    },
+    {
+      "name": "8-8.2.extracted.txt",
+      "sha256": "aa7ecf25ee60c76761217b73274303162b99eba62e9f00305114218d8d4baac7",
+      "bytes": 9700,
+      "representation": "用户原稿的正文抽取，不是原件字节副本",
+      "original_source": {
+        "path": "C:\\Users\\ww\\.codex\\codex-remote-attachments\\01a0f1c4-17c6-7f11-a96b-95021af3f74a\\FE8F69BF-0291-4C92-83BD-012176804A40\\8-8.2.txt",
+        "sha256": "9dcd4f3c26cdbc4e23a1cfce1782c09d3f450fe1d31fbd09baf921af56ee4fc9",
+        "bytes": 9794
+      },
+      "original_id": "8",
+      "lines": 95
+    }
+  ]
+}

@@ -124,27 +124,35 @@ def fmt(value):
 def prompt(plan):
     validate(plan)
     beats = {b['id']: b for b in plan['beats']}
-    blocks = [f'<{label}>\n{plan["headers"][key]}' for key, label in
+    blocks = [f'【{label}】\n{plan["headers"][key]}' for key, label in
               [('goal', '创作目标'), ('cast', '人物与目标'), ('scene', '场景与规则'), ('budget', '时间预算')]]
-    blocks.insert(0, '<硬约束>\n' + hard_constraints(plan))
+    blocks.insert(0, '【硬约束】\n' + hard_constraints(plan))
     for section in plan['sections']:
         first, last = beats[section['beat_ids'][0]], beats[section['beat_ids'][-1]]
-        lines = [f'<时间段 {fmt(first["start"])}至{fmt(last["end"])}秒>']
-        lines.extend(f'<{label}> {section["summary"][key]}' for key, label in zip(TRACKS, LABELS))
+        action_label = '连续动作' if plan['camera_mode'] == 'one-take' else '动作分镜'
+        lines = [f'【{action_label}】{fmt(first["start"])}至{fmt(last["end"])}秒']
+        lines.extend(f'【{label}】 {section["summary"][key]}' for key, label in zip(TRACKS, LABELS))
         detail = action_text(plan, [beats[bid] for bid in section['beat_ids']])
         if detail:
-            lines.append('<具体交手> ' + detail)
+            lines.append('【具体交手】 ' + detail)
         blocks.append('\n'.join(lines))
-    blocks.append('<全程连续性>\n' + plan['headers']['continuity'])
+    blocks.append('【连续性】\n' + plan['headers']['continuity'])
     return '\n\n'.join(blocks) + '\n'
 
 
 def deliverables(plan, platform, profile_override=None, as_of=None, prompt_style='full', projection=None):
-    require(prompt_style in ('full', 'compact'), 'unknown prompt style')
-    require((prompt_style == 'compact') == (projection is not None),
-            'compact style requires a prompt file; full style does not accept one')
+    require(prompt_style in ('full', 'compact', 'detailed'), 'unknown prompt style')
+    require((prompt_style in ('compact', 'detailed')) == (projection is not None),
+            'compact/detailed styles require a prompt file; full style does not accept one')
     validate(plan)
-    prompt_text = compact_prompt(plan, projection) if prompt_style == 'compact' else prompt(plan)
+    prompt_text = (compact_prompt(plan, projection, detailed=prompt_style == 'detailed')
+                   if projection is not None else prompt(plan))
+    if prompt_style == 'detailed':
+        require(platform == 'generic' and profile_override is None and as_of is None,
+                'detailed prompt export does not accept platform profiles')
+        return {'prompt.txt': prompt_text,
+                'prompt-projection.json': json.dumps(projection, ensure_ascii=False, indent=2, allow_nan=False) + '\n',
+                'combat-plan.json': json.dumps(plan, ensure_ascii=False, indent=2, allow_nan=False) + '\n'}
     profiles = read_json(SKILL / 'assets/platform-profiles.json')['profiles']
     require(platform in profiles, f'unknown platform: {platform}')
     profile = profiles[platform] if profile_override is None else profile_override
@@ -229,7 +237,7 @@ def main(argv=None):
             p.add_argument('--platform', choices=('generic', 'libtv', 'xiaoyunque', 'flova'), default='generic')
             p.add_argument('--out-dir', type=Path, required=True)
             p.add_argument('--force', action='store_true')
-            p.add_argument('--prompt-style', choices=('full', 'compact'), default='full')
+            p.add_argument('--prompt-style', choices=('full', 'compact', 'detailed'), default='full')
             p.add_argument('--prompt-file', type=Path)
         if command in ('render','assess-profile'):
             p.add_argument('--profile', type=Path, required=command=='assess-profile')

@@ -1,45 +1,35 @@
 # Combat Director · 战斗导演
 
-输入**场景、战斗类型、人物、招式**，输出一份可直接复制的详细中文战斗视频提示词。当前工作区按AIGC战斗设置、拆解模板与提示词生成逻辑维护；源码基版为0.10.0，本机插件安装与发现结果见[当前验证](docs/validation.md)。
+输入场景、战斗类型、人物与招式，输出可独立复制的详细中文战斗视频提示词。源码基版0.10.0，项目仅维护当前实现、必要来源与最新验证。
 
-入口：[SKILL.md](skills/combat-director/SKILL.md)判断任务；完整创作读取[战斗设置与生成模板](skills/combat-director/references/prompt-construction.md)，其余专项按需读取。当前8份reference内含可执行步骤、可替换句式和使用条件，外链仅作来源追溯。具体分工见[设计说明](docs/design.md)。文本创作无需平台插件、查库或JSON。
+从[技能入口](skills/combat-director/SKILL.md)开始；完整创作按[生成模板](skills/combat-director/references/prompt-construction.md)组织，专项按需读取。文本创作无需平台插件、查库或JSON。
 
-## 创作流程
+视频时长按用户需求确定；未指定时按动作内容、叙事目标与节奏拟定合理时长，不设固定秒数。其他未指定项默认16:9、允许切镜、快速实速为主。公共模块独立于分镜，集中写共用风格、人物外观、场景、兵器和规则；每段分镜内部按需求选择不编号的【中文标签】，详细写本镜人物、空间、动作、能力、镜头、时间与表演；25项是写作参考，不存在或未涉及的模块直接省略，不写“无”或“未使用”占位，不要求每镜写齐。攻防保留来路、回应、接触或让空与下一状态，镜数按动作与可读性确定。
 
-四项自然语言描述 → 六项战斗设置 → 动作单元 → 状态衔接 → 时间与镜头覆盖 → 命中及光影 → 自含提示词与对读。
+指定模型或分段投喂时，区分整场编排、镜头与一次生成片段；图生正文以运动为主，分段各自带齐必要身份与接续状态。只改摄影时保持事件和胜负。写提示词不会自动启动视频生成。
 
-默认路径区分内部事件事实与模型投喂表达；素材区分身份参考、首帧和动作/摄影参考。人物动作、相机运动、播放倍率和剪辑密度分开安排。用户只改摄影时保持事件与胜负，平台未知仍能完成文本创作。
+## 当前项目结构
 
-- 仙侠支持花海、林冠、山体、崖壁与云海的纵深和高差；人物实际跨区，近身、御器与场域压制有转换原因。狭窄场地仍遵守用户设定。
-- 高能通过快速发力、接点反馈、回收接反击、移动追压和战术升级实现；镜头剪得快不等于动作快。
-- 轴线保证可读性，换边与跨区展示真实路径，不将整场锁死在小石台。镜数按动作、时长与可读性自适应，先编排再统计；改为自适应后不再沿用旧镜数。
-- 默认总设定明确写出**整体风格、战斗人物、武器、技能招式、命中效果、特效光影**；时间段正文展开攻防，并把实际命中与光效反馈落到对应动作。徒手、无命中、无超自然特效可直接说明；精简、导演表、JSON均为按需交付。
-- 对抗型连招以回应和结果推动下一招，演武型连招以重心、旋向和兵器余势接续；不为展示强补敌人或伤害。教学骨架不作为已验证的成片案例。
+| 位置 | 内容 |
+| --- | --- |
+| skills/combat-director | 当前技能、7份专项reference、工程脚本、契约与资料库 |
+| scripts、tests | 构建与验证工具、回归测试及必要兼容夹具 |
+| sources | 当前生成权威、固定上游及用户来源原件；见[来源说明](docs/source-status.md) |
+| docs | [当前设计](docs/design.md)、[当前验证](docs/validation.md)、来源说明与当前工程记录 |
+| outputs/current、dist | 最新文字试用与检查结果、当前候选ZIP；均不纳入Git |
 
-使用时直接描述四项信息即可，时长、镜头形式、结尾与参考图可补充在同一句话。只写提示词不会启动视频生成。
+## 工程命令
 
-## 设计依据与边界
-
-[八份原提示词审阅](docs/research/2026-10-01-eight-prompts-design-review.md)、[公开技能设计调研](docs/research/2026-10-01-public-combat-skills-design-study.md)、[当前设计](docs/design.md)、[验证](docs/validation.md)。原片、《诛仙》及失败成片研究保留在docs/research，其观察范围分别声明。没有新版生成视频，不声称动作速度或生成成功率已提高。
-
-本轮维护独立skill，已移除停用的LibTV独立适配与构建链。平台导入、模型能力与媒体生成需实际入口核验。
-
-## 可选工程工具
-
-Python 3.10+，运行时仅标准库。以用户自己的计划替换your-plan.json：
+Python 3.10+，运行时仅标准库，开发依赖见requirements-dev.txt。自然语言创作不需要JSON。工程导出时，以用户计划替换your-plan.json，并按工程契约填写及复核reviewed-prompt.json中的逐镜按需分类内容：
 
 ```powershell
 python skills/combat-director/scripts/combat_tool.py validate your-plan.json
-python skills/combat-director/scripts/combat_tool.py render your-plan.json --out-dir outputs/render
+python skills/combat-director/scripts/combat_tool.py render your-plan.json --prompt-style detailed --prompt-file reviewed-prompt.json --out-dir outputs/current/render
 python skills/combat-director/scripts/library_tool.py items --query "乌龙摆尾" --school "八卦掌"
-python skills/combat-director/scripts/library_tool.py validate
-python scripts/project.py validate-release
 python scripts/project.py build
 .venv/Scripts/python.exe scripts/validate_release.py
 ```
 
-JSON与精简投影保留复核失效检查、来源保护和完整导出；哈希通过不证明语义正确。工程说明见[数据契约](skills/combat-director/references/contract.md)。开发依赖见requirements-dev.txt。
+修改资料权威后运行scripts/build_arvin_library.py，勿手改生成卡。工程接口见[数据契约](skills/combat-director/references/contract.md)，归属见[第三方许可](skills/combat-director/references/third-party-notices.md)。
 
-招式资料卡来源在sources/upstream，修改生成权威后运行scripts/build_arvin_library.py，勿直接改生成卡。它们用于检索候选与来源追溯，不作为视频成功案例。许可见[第三方说明](skills/combat-director/references/third-party-notices.md)。
-
-构建只包含插件清单与技能资源，拒绝examples、tests、fixtures或evals进入技能包。原始附件、工程夹具、历史评估和私人资料不进入发布包。安装/更新后是否被宿主发现须另验；当前任务已加载的缓存不会因源码修改热替换。
+发布包仅包含插件清单与技能资源。文字、测试和打包通过不证明视频效果；安装发现需另验，源码修改不会热替换已加载的插件缓存。
