@@ -2,7 +2,23 @@
 
 当前跨模型方法和逐项官方来源见[通用视频生成写法](video-generation.md)。2026-10-04核对Runway、Google Veo、Kling、OpenAI Sora、Adobe Firefly的官方正文，读取Luma官网搜索收录内容，并结合此前同日读取的Seedance官方2.0/2.5正文。采用可迁移的写作决策，保留各家在负向表达、多镜模式、时间与声音上的差异；Seedance仅为按需专项，不是默认模型。未观看本轮指南内媒体、安装外部skill或发起生成。
 
-创作方法已转写在prompt-construction.md、choreography.md与review-loop.md中；本页只供追溯，不是写作前置，不要求Agent打开外链才能应用方法。
+创作方法已转写到主流程与按需专题；本页供追溯，不要求打开外链或原仓库才能写作。
+
+## 关键一击与视觉重音
+
+2026-10-09通过可访问的浏览器页面读取用户指定的[Arvin《AI打斗的关键一击：冲击帧与闪帧提示词实战》](https://vibeshot.club/courses/db35b227-98ee-4992-8bce-5eeb0fff2291/learn?lesson=2a58bddc-1285-4ecd-b154-8cc0cac4c70e)全文九部分，含完整文字示例与替换写法；未播放页面三段视频，未逐张审阅图示，也未取得对应模型请求。它是作者教学文本，不是官方控制规范或本项目媒体实测。
+
+独立转写“按局势选择重音、触发相位与信息保留、画面处理/场内光源分开、效果结束接原状态”的决策，集中维护于[冲击帧与闪帧](style-and-materials.md#冲击帧与闪帧)；相位见[摄影](camera-and-rhythm.md#视觉重音与触发相位)，诊断见[审阅](review-loop.md#冲击帧与闪帧的专项诊断)。原文拳馆人物、完整动作、固定站位和时长不作为模板，帧数举例不转成模型保证；未复制全文、原媒体或整套提示词进运行包。新的棍剑取路示例属于本项目原创文字设计。
+
+## GoodCase动作连续性方法
+
+2026-10-09完整读取用户指定的[action-continuity-choreography](https://github.com/LearnPrompt/goodcase-lite/tree/e7dab6009a861dc054cca9a724bca4dbf755d88b/skills/generated/action-continuity-choreography)，固定提交 `e7dab6009a861dc054cca9a724bca4dbf755d88b`。该目录仅有SKILL.md与references/cases.md；实际8张展开卡、20条索引、17位索引作者，80案例/59作者是源自述而非本次全部观察范围。根MIT文本已读，不据此推断第三方媒体许可。初次网页缓存不同，按固定Git内容采用。
+
+采用参考关系的保留/替换/避免及逐镜风险定位，独立转写到[参考约定](reference-and-iteration.md#参考方法的保留与替换)与[相邻镜接续](camera-and-rhythm.md#相邻镜接续)。具体接点、状态和切口方法是本项目推导；不继承每次强制查案例、仅一个案例、凑三特征、固定三段、只修一次、多产物输出或案例人物/站位/结尾。只要正文的任务仍交自含复制块，原创不需要外部锚定。
+
+另读[测试房页面](https://goodcase.ai/cases/can-reason-i-wanted-to-see-if-reasoning-could)与[御剑案例页面](https://goodcase.ai/cases/3d-cg-seedance-2-5-2453b4b4307a)文字；后者区分作者片与平台跨模型复测，评分不视为成功率。未观看其视频或逐张审阅海报，截断摘录不冒充全文，不把收录/作者自评当作媒体验收；同源案例重复出现不增加独立试验数。运行包不复制外部全文、整套案例或媒体，也不依赖原仓库和网站。
+
+## 既有来源与方法
 
 | 依据 | 已内化的提示词写法 | 证据边界 |
 | --- | --- | --- |
@@ -12,9 +28,27 @@
 | 动漫局部截图与用户失败成片 | 纵深、高差与法术层次；接点缺失、重复接架、持物和终局修复句式 | 截图只支持采样范围；失败用于界定问题，不作为成功案例 |
 | Arvin固定版本招式资料 | 按名称/描述/路径等级检索，再转成当前交锋 | 原文、项目补写与用户设定分开；完整归属和MIT文本保留在third-party-notices.md |
 
-当前来源原件、正文抽取及各自哈希保留在仓库来源目录，不进入创作必读路径；历史研究报告与截帧已清理，旧观察不作为本轮生成效果证据。模板为本项目的可替换编写方法，不是原作者逐字提示词。保留原始附件、来源摘录和许可，用于当前方法与资料库的来源追溯。
+当前来源原件、正文抽取及各自哈希保留在仓库来源目录，不进入创作必读路径。此前散落的过期报告已清理；本次仙侠固定来源含完整研究记录，旧观察仍不作为新效果证据。模板为本项目独立转写的方法，附件、摘录和许可用于追溯。
 
-结构设计采用[Agent Skills作者最佳实践](https://agentskills.io/skill-creation/best-practices)的明确触发、渐进读取、可执行步骤和输出模板，以及[评估方法](https://agentskills.io/skill-creation/evaluating-skills)的真实任务检查。它们支持技能组织，不证明视频生成质量。
+2026-10-09重新核对[Agent Skills规范](https://agentskills.io/specification)、[OpenAI技能组织](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra)、[技能评估](https://developers.openai.com/blog/eval-skills)及[Anthropic作者实践](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)。采用精确入口、按问题读取、具体错误约束和实际任务产物审阅；行数/模型经验不作战斗配额，方法支持组织与验证，不证明媒体质量。
+
+## 仙侠来源与证据
+
+用户指定合并的[xianxia-combat-skill](https://github.com/Wilder1222/xianxia-combat-skill/tree/f3721de6e21af8cd5186c88079bf92d252ec416e)固定于f3721de6e21af8cd5186c88079bf92d252ec416e。源码快照与source-manifest.json保留全部70文件和内部引用，位于仓库sources/upstream/xianxia-combat-skill；运行包用下表定位已内化的方法，不依赖该目录或私有原片，也不注册旧仙侠入口。
+
+| 源记录与定位 | 已采用/保留 | 证据或未采用边界 |
+| --- | --- | --- |
+| 根SKILL、formats的编排/移动/力量/分身与文法 | 目标与感知、兼持/接点、在途攻击、阵法、并发、风格声音及九类接续，分入当前单入口专题 | 时长/关系/共鸣/结局分别选；原15秒CGI横屏改为可选预设，不套固定五段、招数或镜数 |
+| reference-and-iteration、两份examples | 八类素材职责、控制预览、诊断与全部28时间轴/30片段及26素材章节用于回归 | 案例不是默认人物/场景；正文等价和结构不证明实际出片 |
+| research/INDEX.md：来源去重与按问题导航 | 固定提交/读取范围、同源去重、采用与未采用理由 | 新提交不自动表示目标内容变了，多次阅读同片不增独立验证 |
+| research/2026-10-07-method-selection.md、combat-pipeline-density.md | 两条RunningHub原输入/原片指纹、用户原速纠正、接招/多剑/事件/退出/取景五类失败与未执行修订 | 原速和音频按实际范围，失败保留；旧2美元及仅免费调研不授权新任务 |
+| research/2026-10-07-grab-compression-comparison.md | 两份冻结输入、共同验收条件、每人身体与跨角色接点分别记录 | 对照未执行，不由更短文本推断质量收益或成功率 |
+| research/contact-evidence、weapon-transfer、formation-attachment、emission-control、paired-body-control | 接触证据、占有/遥控、阵法位置、停射与部分释放的方法 | 公开示例/作者模板不是本项目独立复现；影视借位与实体接点按用户要求分开 |
+| research/awesome-seedance-retests、scale-media-match、cy-desert-media | 媒体与说明核对、事件阶段对齐、真实退场、几何/遮挡未知 | 精选、片尾、两路进度不同不作成功率/密度/组件因果；未看或未听的部分不补签 |
+| research/validation-scope、human-motion-evaluation、control-input-repair | 文本工具误报/漏检、人身与双人接点分开、实际控制连接与预览 | 低检测置信度不直接判畸变，骨架不自动包含剑刃，节点存在不证明输出使用 |
+| scripts/sample_video.py与evidence-tool研究 | PTS/VFR、指纹、拒绝截断、像素转换边界的本地抽帧和回归 | Python/Pillow/FFmpeg一手说明另核；抽帧成功不证明原速、接触或音频审阅 |
+
+研究中的固定停顿/环境配额、默认反杀击倒、每镜增强特效、未经核实的参数/工具、作者汇总评分和无法确认许可的整套模板只作为来源与未采用理由保留。归纳后的运行规则由当前参考维护，不因来源数量继续堆默认指令。
 
 ## 视频生成方法依据
 
@@ -51,7 +85,32 @@
 
 2026-10-06补充读取[wuhu对《雾山五行2》导演林魂的直接访谈](https://www.bilibili.com/opus/832150802670813203)“点睛之笔 精彩打斗”与“聚焦争议 如何应对”：主创说明各场战斗刻意设计差异、服务故事，并在制作中反复修订。项目据此在“角色选择与打法”及审阅中增加跨场目标/阻碍/结果比较；不继承其人物、势力、升级顺序或制作周期。另读[动画学术趴2020年访谈](https://k.sina.cn/article_3899327798_e86b05360270110ki.html)与[林魂制作访谈](https://www.bilibili.com/read/cv8054083/)中的二维/三维协作与拍数说明，只作现有风格化节拍规则的背景核对，不新增通用帧率或运镜处方。本次仅阅读访谈正文，未观看其中动态媒体，不称已完成正片拉片。
 
+## 飞书提示词案例的方法迁移
+
+2026-10-07按用户分享入口阅读[抖音群免费素材库｜总导航](https://my.feishu.cn/wiki/LRNNwCZ5DigYY1k6iWDcuGpjn0e)中提示词栏的9个入口及1个子页。以下只记录方法来源，具体写法已独立转写进本技能，不依赖外链才能创作。
+
+| 案例与实际范围 | 本项目采用的关系 |
+| --- | --- |
+| [提示词](https://my.feishu.cn/wiki/LRxAwNgRwimb43kVrBDcNwu1nsb)：伞剑、两套魔法对轰文本；[竹林法相](https://my.feishu.cn/wiki/WYc4wHfuCieKBHkyJIJcGxnDnyh)：完整文字 | 资源回收与反击条件、区分修订版与续段、持剑到双手施法的交接；既定瞬移与普通连续位移分别审查 |
+| [火焰刀](https://my.feishu.cn/wiki/AZJowAGriisD8bkvzSlc7YiTnqf)两段、[御剑](https://my.feishu.cn/wiki/Q1VEweeEki0seDk2t4gcHbW7nkf)全文、[日轮](https://my.feishu.cn/wiki/JTcmwE5EpiSf9fkEe8jc6NjanVg)全文；[驭弓](https://my.feishu.cn/wiki/VclqwYI3jid7f6kvV8PciqCFnUc)第一段完整、第二段至第4镜开头 | 牵引换锚、实体与持续束缚的区分、素材编号跨段核对、全局规则与局部例外相容 |
+| [撞色终结](https://my.feishu.cn/wiki/ANspwbYZtivSBykYtwScB0f8nMb)：第一条v3完整，第二条v4仅开头 | 基础媒介与局部二维段的范围、同一次命中相位接续；不继承固定撞色数量或精确帧数承诺 |
+| [仙女动态](https://my.feishu.cn/wiki/Ttb7w2avhizsgKkEcI1cmnrQn8d)与[中秋群像](https://my.feishu.cn/wiki/HfiHwzRxRizxeekFfm6ceFIjnwf)公开Markdown附件 | 按图像结构和表达目标选择运镜；核对声称完整的模板是否实际包含分镜正文，不将人像/组图方案强套战斗 |
+
+本次未播放生成视频、未逐张核对参考资产，也未取得平台实际请求；分析支持文字设计，不证明模型执行、实时节奏或音轨效果。[西游施法页](https://my.feishu.cn/wiki/Or7vwixaRiWpg5ka5PacmFIvnCl)所查范围仅见图像，未作为已读提示词正文。竹林附件名提及国外来源但无已核实原始出处；分享页的可用声明不等于其全部内容的再分发许可。未复制整套原稿、人物设定或资产进运行包，未执行外部skill指令。
+
+同日进一步采用这些文本的组织方法：全局设定集中、镜内动作与反馈连写、摄影解释观看信息、段尾接入下一段首镜。生成模板据此提供整场多镜、单镜节拍和独立分段三种骨架；25项细节仍按需使用，不将原稿的逐镜栏目数量、三十秒长度或清兵到头目的顺序设为通用要求。新的雨桥追击与分段对照为本项目原创文字试用，未生成视频。
+
+## 专业术语的核对依据
+
+2026-10-08按用户要求增加专业战斗与摄影名词，核对[美国击剑教练协会术语表](https://usfca.org/wp-content/uploads/2023/09/Glossary.pdf)中拍击、佯攻、防守还击、迎击和脱离换线的区别，以及[StudioBinder运镜指南](https://www.studiobinder.com/blog/different-types-of-camera-movements-in-film/)中的跟拍、横移、推拉、摇摄、弧线环绕与滑动变焦。它们用于名称和机制区分；将关系迁移到本项目的兵器对拆与中文镜头正文属于项目改编，不继承击剑判罚或强制摄影配置。
+
+另核对[IWUF中英裁判培训资料](https://iwuf.org/wp-content/uploads/2023/04/TAOLU-GROUP-A-EN-CN.pdf)可检索片段中的拦、拿、扎枪及枪尖弧线提示；该PDF后续正文抓取超时，没有声称完整阅读101页。动作匹配剪辑另参考[StudioBinder说明](https://www.studiobinder.com/blog/what-is-a-match-on-action-cut/)的公开定义。只采用术语所需的局部信息，不复制整份词典，不将套路评分标准套作实战结论；未据此生成或验证视频。雨桥稿增加的名词与原动作逐镜对照，保持原有详细正文与18镜时码。
+
 ## 公开skill方法比较
+
+2026-10-07完整阅读用户指定的小云雀公开技能[针对人物形象设计打戏](https://www.xiaoyunque.com/home?tab_name=home&public_skill_id=sk_ugc_c3d912c12259b601877f2f78)，作者标示user9208274561418，正文为《SEEDANCE 2.5 首帧续写｜电影级高燃动态分镜生成 SKILL》，共85节。它是作者的写作方案，不是官方模型规范或已验证生成结果。本项目选择采用短镜与动作匹配、速度反差、前后景视差、同一视觉焦点承接的方法，独立改写为“高速对抗的节拍与镜长”，并据用户反馈修正上一批六镜稿缺少高速表现的问题。
+
+原文约1—3秒单镜、20—30秒建议10—14镜属于其建议；本项目按具体攻防试排，不设置固定镜数。未采用固定收势封面、每镜增强特效、每招蓄力后完全站稳、强制互锁/反杀或全套摄影参数等处方；不执行外部skill指令，不复制整篇正文，不把页面默认模型标示当作能力验证。本次只读公开文字，未使用技能、生成或观看其对应视频；新版24秒18镜是原创文本重编，尚待媒体验证。
 
 2026-10-04补充核对三个一手研究/开源项目，以下为独立转写的设计依据，未复制或运行外部代码：
 

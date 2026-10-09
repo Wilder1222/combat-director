@@ -1,24 +1,24 @@
 {
   "name": "combat-director",
-  "version": "0.10.0",
-  "description": "根据场景、战斗类型、人物与招式编写详细战斗视频提示词。",
+  "version": "0.11.0",
+  "description": "编写和改写详细中文战斗视频提示词，支持仙侠机制、参考适配与成片诊断。",
   "author": {
     "name": "Local developer"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Combat Director · 战斗导演",
-    "shortDescription": "四项描述生成详细战斗提示词，支持仙侠空间与高速攻防。",
-    "longDescription": "以人物打法、区域路线和攻防因果组织武侠、仙侠、群战与巨敌场面；详细中文提示词为默认交付，资料库检索、导演表、成片诊断与工程导出按需使用。",
+    "shortDescription": "统一战斗创作入口，详细编排近战、御剑、法阵与多人攻防。",
+    "longDescription": "以可追踪的动作、摄影与状态链组织武侠、仙侠及其他战斗；支持素材适配、真实证据审阅和可选工程导出。",
     "developerName": "Local developer",
     "category": "Productivity",
     "capabilities": [
       "Write"
     ],
     "defaultPrompt": [
-      "拆解这段战斗视频，区分已观察事实和生成方法推测。",
-      "根据我提供的场景、战斗类型、人物和招式，编写详细战斗视频提示词。",
-      "检查这段生成视频中的动作因果、站位与角色连续性。"
+      "使用 $combat-director，编写单剑御空追击与法阵破阵的详细中文提示词。",
+      "使用 $combat-director，将这段战斗改为真人质感，并保持原动作与结局。",
+      "使用 $combat-director，检查这段打斗的接触、兵器连续性、原速节奏和声音。"
     ]
   }
 }

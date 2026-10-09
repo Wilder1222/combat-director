@@ -1,0 +1,13 @@
+{
+  "format": "independent-state-audit-regressions/4",
+  "origin": "outputs/current/xianxia-integration/state-audit-round4/report.json",
+  "scope": "original empty-hand input copied without alteration",
+  "cases": [
+    {
+      "id": "empty_hand_cast_without_exception",
+      "expected": "accepted",
+      "file": "empty_hand_cast_without_exception.plan.json",
+      "sha256": "e416f734c47cc9529e4caba00e645b979b0fa2216eb53bd80184a719e5ed98e2"
+    }
+  ]
+}

@@ -1,0 +1,3259 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "audit_kind": "independent_read_only_semantic_source_coverage",
+  "source_commit": "f3721de6e21af8cd5186c88079bf92d252ec416e",
+  "scope": {
+    "source_entry": "full 93 lines",
+    "source_choreography": "full 152 lines",
+    "original_combat_baseline": "full 353 lines",
+    "research": "45 screened and exact byte-preserved; 22 full bodies; focused density/method-selection/index; specialist full audit not claimed",
+    "target_entry_lines": 69,
+    "target_choreography_lines": 192,
+    "target_review_lines": 123
+  },
+  "entry_core_coverage": [
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/SKILL.md",
+        "lines": [
+          10,
+          12
+        ],
+        "content_sha256_utf8_lf": "0668498691848eed1f12278bb5570f285c6842e711c3f72f9bb702c7264f73bb"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            20,
+            24
+          ],
+          "content_sha256_utf8_lf": "d6b0b08269eeeb0422908c2116ecc8c28aaa44d66ab188042a365d55e39fe4e6"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "固定15秒改可选预设；风格/用户/素材优先",
+      "status": "core_conditions_covered; specialized details audited separately"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/SKILL.md",
+        "lines": [
+          16,
+          20
+        ],
+        "content_sha256_utf8_lf": "10db527f70883290502060a0ab516b51437df55bbd7b075fbe02a97bd5801507"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            30,
+            40
+          ],
+          "content_sha256_utf8_lf": "0e6a60405e1b748b1e60ab84ff7cf874da820022d6e3d637271f1b18d8f872a8"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "可追踪作用与同事件状态，环境与情绪分开",
+      "status": "core_conditions_covered; specialized details audited separately"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/SKILL.md",
+        "lines": [
+          24,
+          41
+        ],
+        "content_sha256_utf8_lf": "2325dbd00c7dd0ab0006a2dc1e2b2aa8f07692c0a1984b2d81444b26eda5ab75"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            15,
+            43
+          ],
+          "content_sha256_utf8_lf": "fca5cec851ee7a45e48b0f0bae38a2c3eff64ada455f1f77a56705b45eddede4"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "任务、角色、目标、声音、关系与输入独立判断",
+      "status": "core_conditions_covered; specialized details audited separately"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/SKILL.md",
+        "lines": [
+          45,
+          57
+        ],
+        "content_sha256_utf8_lf": "a29acda123cfd3e5e0a6d751a6be1aebe6cf347d0b60ba1939dfad46b1aa4057"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            45,
+            63
+          ],
+          "content_sha256_utf8_lf": "30622dff23f04ec019d225a4ab602d437881602de348f9dda0fdc7c969b8ee21"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "短入口按题材和问题读内部专题，不默认所有参考",
+      "status": "core_conditions_covered; specialized details audited separately"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/SKILL.md",
+        "lines": [
+          61,
+          67
+        ],
+        "content_sha256_utf8_lf": "e831a83e183746800a2762a9ce2ca2bab32c37b9ebafd7e47f1e7cd34e7c3369"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            28,
+            43
+          ],
+          "content_sha256_utf8_lf": "8468067f4384d4508039a3eeb34281d4f81605a4f957943f6b61af47bf8de679"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "锁定输入、因果事件、动作、摄影与时间；不强制全套阶段",
+      "status": "core_conditions_covered; specialized details audited separately"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/SKILL.md",
+        "lines": [
+          72,
+          82
+        ],
+        "content_sha256_utf8_lf": "de01e6b74cb1e0c65eebe62f41dc4655d4a0b5ee40babe5cf5276e65adf1960a"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            65,
+            69
+          ],
+          "content_sha256_utf8_lf": "22cb02d8db34a0551d20ce278d4dc1b20f47cd5555fe0062c8b1807bd67d9ecf"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "完整复制块，多段自含，生成与观察证据分开",
+      "status": "core_conditions_covered; specialized details audited separately"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/SKILL.md",
+        "lines": [
+          86,
+          93
+        ],
+        "content_sha256_utf8_lf": "590f6955c649f76c1659b2496ec340581f94f8ec3278ffb9b5bc9b321424c6ed"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            36,
+            43
+          ],
+          "content_sha256_utf8_lf": "0ff3a23317f416e4bb92df45b1cf35f5dd0f2d4b71faed3e1d793e8ffe2cc347"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "硬要求进入正文，接续与媒体范围检查",
+      "status": "core_conditions_covered; specialized details audited separately"
+    }
+  ],
+  "requirements_X01_X15": [
+    {
+      "id": "X01",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            13,
+            15
+          ],
+          "content_sha256_utf8_lf": "89a6abc7cc0be205ae440decd418edd80de384b5d57bce18a129cc9f7ef34d3e"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            7,
+            11
+          ],
+          "content_sha256_utf8_lf": "12f3a0100f91264cb966e12c995aea8bf9e158dc207b3aa239bd6637dbe99e12"
+        }
+      ],
+      "semantic_comparison": "可见夺物/护送/拖延/守位终态；个人下风可守住目标；缴械、逼退、巨敌落空不等整场胜利；纯演武不强加宿敌与反转。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "护送者仍被压剑而同伴已过门。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X02",
+      "disposition": "重设计",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            15,
+            19
+          ],
+          "content_sha256_utf8_lf": "9eaf997d951ca93dc9e8491df65cb446f2ebe5ee82c7edaecdda9b6346499519"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            9,
+            17
+          ],
+          "content_sha256_utf8_lf": "a397e03d0c34f7717ac42b39e5576f85ff6cb9d5fc4b83f4cc3c405f098ee349"
+        },
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            108,
+            116
+          ],
+          "content_sha256_utf8_lf": "604383707bb2840518ef0d41a75d5ada8a1cfd8e20910b27f53aa7d2c03b18ef"
+        }
+      ],
+      "semantic_comparison": "持续占优可用退路/防具/目标变化推进，不轮流翻盘；同招有新的目的/条件/回应；反制线索本场可得；旧物、裂口或出口可使用、失效或明确保留未解威胁，不能临时万能能力或无条件复位。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "同招再次出现但被提前封线；阵印有用途地留待下段，不强制此段破掉。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X03",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            21,
+            21
+          ],
+          "content_sha256_utf8_lf": "3a2a625a384a9a12fc23e28b40abef9cd122ac416d2af164e9b5503efb4dc9bc"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            19,
+            19
+          ],
+          "content_sha256_utf8_lf": "96818674f29dddba1536c9e85f2172a4c5b5f77be38a72842aba49c255ff3001"
+        }
+      ],
+      "semantic_comparison": "威胁表象→对手实际改变或保留→利用或失败；未上当保留原封线，可收招/改实攻/承受退让；指定成败补相应过程。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "虚点左肩而乙未转盾；不能凭虚晃穿过仍在的盾。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X04",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            23,
+            23
+          ],
+          "content_sha256_utf8_lf": "dff06ca6feb0d6c4f2ffb34e474710ca6111b387f837b551927fcf9c224a0636"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            21,
+            21
+          ],
+          "content_sha256_utf8_lf": "31c44309124e14f6af8056cf7b6056cf7692543388bed1e8c613cd16d71f9bdc"
+        }
+      ],
+      "semantic_comparison": "观众信息与人物信息分开；视线/声响/接点力变/已设神识支撑判断；不可见不等不可感，亦不临时全知；只补决定回应的范围、遮挡、时间，不每招加眼神或信息表。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "墙后攻击由镜头看到不赋予角色知情，神识是否穿墙依原机制。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X05",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            25,
+            27
+          ],
+          "content_sha256_utf8_lf": "3090f09999f22b0bf0d94f3679deb93a7760123f55069334375093b681be44e2"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            23,
+            23
+          ],
+          "content_sha256_utf8_lf": "613009c8c16b08202028e07ba8e7c95ac1f1681c142d4e66fef56391f0e832aa"
+        },
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            128,
+            128
+          ],
+          "content_sha256_utf8_lf": "5c5caf74d8ec2c24f7987b1bdf7103c46c46de29348f9b9a7d12c943120dfe29"
+        }
+      ],
+      "semantic_comparison": "提前防守不同提前受击；碰撞结果在作用后，先到气流/灵压/束缚可先起效但来源成立；全静音不取消剧情听觉；反应特写须有防守时间。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "静音片保留既定铃触发转盾；未接触的剑不产生剑击抽动。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X06",
+      "disposition": "重设计",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            31,
+            40
+          ],
+          "content_sha256_utf8_lf": "3dc83a97fd8dd92ba247b641883aef2d05ba3221ce7d48232d6544fcfabbdbc1"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            27,
+            34
+          ],
+          "content_sha256_utf8_lf": "9cdf33612993bf870f65adc9d5c33f924c21935bb2910920593f41585ca89063"
+        }
+      ],
+      "semantic_comparison": "临场变招保留剑位/距离/追击，不保证命中；同体系升级改真实防守条件；底牌触发/作用/代价须成立；舍身收益与伤势分开，不自动受伤变强/同伤；反转可夺路护送，速度反差按要求计时。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "被封刺线转挑时对方仍追压，目光骤变本身不提供新能力。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X07",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            63,
+            77
+          ],
+          "content_sha256_utf8_lf": "b4409066e54f195ecf4339635ff368212db93d17d33f7ac1196033c5ee3f6ba9"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            9,
+            9
+          ],
+          "content_sha256_utf8_lf": "bde7e810338eaa9e013136afbd768ebf05bc1b0417f08501d6c1e44c1ac98a13"
+        },
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            36,
+            36
+          ],
+          "content_sha256_utf8_lf": "f9cae4ed0f5bd38a9fe5537176704bd19329c88595ff7553892561857027836d"
+        }
+      ],
+      "semantic_comparison": "角色偏好/回收/防守/目标由设定决定，同门可相似；疲劳、伤势、符箓、护盾、离手兵器分别限后招；恢复有窗口，不按次数同时休息；各世界耗能不同，不强加傀儡喘息、不把疲劳改受伤。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "傀儡不疲劳，但操控者改向仍耗灵力；固定招式不因疲劳被擅删。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X08",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            81,
+            83
+          ],
+          "content_sha256_utf8_lf": "37d8066040b98ca97f0ea7f8a9fe12335987f07efb96ca6732cdf57e94ad7a54"
+        },
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            87,
+            93
+          ],
+          "content_sha256_utf8_lf": "6699db868ec487a20434289e7a1094f662f7e56a6c937a853f21ed6511c21b67"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            78,
+            84
+          ],
+          "content_sha256_utf8_lf": "00f037c02103ca03847752c0d7cd61a3ddd4ddf7241fd150eb21746f7fd033b7"
+        },
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            88,
+            88
+          ],
+          "content_sha256_utf8_lf": "f059efafff249bd76481306889709110fd88c5aab50c26489a315e0d76f08df9"
+        }
+      ],
+      "semantic_comparison": "身体移动、支撑、兵器防线、伤势/装备/术法分别恢复；碰地不等承重，站稳不回剑，举剑不治伤/补盾；朝向可与退势相反，镜推近/站直/收剑/衣摆不证明停止位移；材质只是发力辅助。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "身体站稳而剑仍偏侧且腕伤存在，不由恢复一词清场。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X09",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            85,
+            85
+          ],
+          "content_sha256_utf8_lf": "528d2aa152a4c416d9e5e6bd5eb06045850a97ce899d32a912e006608e956b66"
+        },
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            95,
+            95
+          ],
+          "content_sha256_utf8_lf": "f3647fafa449ce15635e6ca2f69a5f1cdfe7c9a1508fbcad2c9c737a30a33077"
+        },
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            132,
+            132
+          ],
+          "content_sha256_utf8_lf": "1817519e6bf3afa366594fcdac828912303e0a9f2ac63f772c2a7646c0939670"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            86,
+            88
+          ],
+          "content_sha256_utf8_lf": "4af93ba5a34fc868e34dcac1879156d8957522018dd0ff21eda1b0898efe27cb"
+        }
+      ],
+      "semantic_comparison": "未完全恢复仍可合法架挡/回剑/承偏转，追者不无因等待；接触、退移、伤势、中断分别判；改招继承余势和双方行程，不立即重置；回收抢攻发生于回收未完。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "反刺跨预算窗继续，不能在边界重新起刺或先完全收剑再声称抢空隙。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X10",
+      "disposition": "重设计",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            99,
+            110
+          ],
+          "content_sha256_utf8_lf": "a9710ef90bfe4386eec65e6258bfa6cd752ebeb4e30483a8115945c0589091e2"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            52,
+            56
+          ],
+          "content_sha256_utf8_lf": "e1e283ce3ae37390d5dabbd01daedb557f3dd7fd6b844f90af00e7c66eb7dd0f"
+        },
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            60,
+            64
+          ],
+          "content_sha256_utf8_lf": "0cc6c6824009352a93e3f5f567e40cb0215998ea7b9d983467d0f14b7b22d863"
+        }
+      ],
+      "semantic_comparison": "短撞、擦滑、持续压抵、束缚不同；瞬时击有回收分离；成对接点/维持/占用/解除同一链；第一次冲击不与持续压力重复算命中、爆点、首触音，压力变化有相应反馈。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "持续滑刃不配成三次新命中，被压的剑不得独立大挥斩。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X11",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            103,
+            112
+          ],
+          "content_sha256_utf8_lf": "209319f01ff7dc13d123a351671c5b3ff7f9bacc8f7f36563ce25801858aee2c"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            60,
+            66
+          ],
+          "content_sha256_utf8_lf": "af08bba5b771a4fdebb2af7b0fdf63305854ace70defaf47d24dd75405fcf8a0"
+        }
+      ],
+      "semantic_comparison": "双方共同承接，可推进退让转向守位；强弱不等幅后退，御空/阵承不套地裂；用途僵持可等待同伴；第三方改接点/供能后更新原两方，各接点分别释放。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "阵主挡第三人攻击后受控者自由，阵主也须有新动作，不维持旧力旧目标。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X12",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            116,
+            116
+          ],
+          "content_sha256_utf8_lf": "14fb21efffaaebf996ed74c9565cad07a590b14a4f6c2505f41de4785d787783"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            70,
+            70
+          ],
+          "content_sha256_utf8_lf": "b8fb972882cf16af6e5dd615de036d482323a31de4643c03ed008f72669b7fb7"
+        }
+      ],
+      "semantic_comparison": "抓腕只控相关局部，其他肢体依姿势距离与其他控制可回应，非保证反击；衣料/肢体分开，不临时撕衣；既定全身定身保留。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "左腕被握仍可能右掌推肩；已设全身定身不强迫自由手反击。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X13",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            118,
+            120
+          ],
+          "content_sha256_utf8_lf": "01c9746a2c1d6bb9ed304a36e5f3dcb53e2c6d7f2539d358584823cae2f98f8b"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            72,
+            74
+          ],
+          "content_sha256_utf8_lf": "70e06eb1f1b293a4783fc07224ec040c2f791f070d6a0e0043cfb739f6447b54"
+        }
+      ],
+      "semantic_comparison": "牵引/托举/共同转动保留相对位置、移动接点与承重；首帧已托举直接续，手特写不证全身提起；逐点解除，两人各自继承运动；连绳摆荡非自由飞行；隔空/御空不补实体抓握或落地，指定吃力与重量反作用分开。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "一手放开但肩推/绳仍在，不得两处关系同时消失。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X14",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            124,
+            126
+          ],
+          "content_sha256_utf8_lf": "88d65e47f3f79a600299ba0fbff4a8f489a9ee6854726121d251bae1d9c44fd9"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            104,
+            106
+          ],
+          "content_sha256_utf8_lf": "af86544d8500adefe103f384c532fec139c3c788a1f3275fd9206212612aef2c"
+        }
+      ],
+      "semantic_comparison": "同物件交付/缴械/共握/抛接/落地拾回各有接触释放；共握是一件，触到不等夺得；易手可不落地；切前甲切后乙不替要求看清过程；掉落位置状态保持。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "两人握一剑不生两柄，原主下镜不自动持剑。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    },
+    {
+      "id": "X15",
+      "disposition": "新增",
+      "source": [
+        {
+          "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+          "lines": [
+            126,
+            128
+          ],
+          "content_sha256_utf8_lf": "dcc4276a07b52827fa716b7d8fb5baa88cd3c06daec4dd6956ae7c01e1eeab31"
+        }
+      ],
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            60,
+            60
+          ],
+          "content_sha256_utf8_lf": "2cc702dd33a54ca886061c480f107f45de783fc62123cfbf21265c4737b8621b"
+        },
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            104,
+            106
+          ],
+          "content_sha256_utf8_lf": "af86544d8500adefe103f384c532fec139c3c788a1f3275fd9206212612aef2c"
+        }
+      ],
+      "semantic_comparison": "接剑与必要持续手控相容，原持物有去处；允许兼持/分指/自主盾例外；实体占有、遥控与契约资格分别判，握柄不自动断契；缴械者仍有既定空手/术法/撤离。",
+      "status": "covered_after_direct_text_review",
+      "condition_probe": {
+        "input": "夺柄未断契时原主仍可既定遥控，不凭触到取得全部权限。",
+        "method": "reviewer counterexample thought experiment; no creative output executed"
+      }
+    }
+  ],
+  "source_choreography_remaining_semantics": [
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+        "lines": [
+          44,
+          59
+        ],
+        "content_sha256_utf8_lf": "31da192ed9513fa32af17530dedca75e0758fed7ec8528ca782a53cc367ce6b7"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            40,
+            49
+          ],
+          "content_sha256_utf8_lf": "d42cbe1e2868dcfdc6101253a7cae23fccb3d5a0231da4f5d73233c7faa1630d"
+        }
+      ],
+      "semantic_comparison": "保留范围、目标、接点、受力与完整刺/拨/横切/擦衣/借阶/挑腕关系。",
+      "status": "covered"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+        "lines": [
+          130,
+          132
+        ],
+        "content_sha256_utf8_lf": "d8dab5829d9773cee3b0363f21e9517521ef53940f1823a9c08c74743f86cc9a"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            62,
+            71
+          ],
+          "content_sha256_utf8_lf": "58bd1f23e9410eacad693134ff18d7f3f98a905c49e39be436cd8ccb43bd5764"
+        },
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            88,
+            88
+          ],
+          "content_sha256_utf8_lf": "f059efafff249bd76481306889709110fd88c5aab50c26489a315e0d76f08df9"
+        }
+      ],
+      "semantic_comparison": "速度、密度、烈度分别处理，回收窗口不中断，不采用固定数值配额。",
+      "status": "covered"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+        "lines": [
+          136,
+          148
+        ],
+        "content_sha256_utf8_lf": "41e6632465f27a634ad8b2b3b9c711341c3670721063393abd919a6fa1c39ec8"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            124,
+            129
+          ],
+          "content_sha256_utf8_lf": "c5dd224b3a461acc75d92e305b5cecaab42652bccb3034877afa632657208ea2"
+        },
+        {
+          "file": "skills/combat-director/references/sound-and-performance.md",
+          "lines": [
+            36,
+            41
+          ],
+          "content_sha256_utf8_lf": "97cfce5cd44fc75537d793ef732a7b8ab57ce1c01f57a8750d58b436f7a76fdd"
+        }
+      ],
+      "semantic_comparison": "关系/法宝/结局独立，识别/干扰/联合增幅需依据；非悲剧共鸣已实际补入126行，微表情按窗口。",
+      "status": "covered_after_direct_recheck"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+        "lines": [
+          152,
+          152
+        ],
+        "content_sha256_utf8_lf": "1958f7a654bc3c3fef9f19dfc75d4c295f1f672573ef2ed9edfab66682c20a1a"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            40,
+            43
+          ],
+          "content_sha256_utf8_lf": "22b8b6a656c7f53d943dac5f771b2e87e627809adbba7ce9408bb1f18b7e94a7"
+        },
+        {
+          "file": "skills/combat-director/references/movement-and-projectiles.md",
+          "lines": [
+            24,
+            31
+          ],
+          "content_sha256_utf8_lf": "1ecf46ab265b4e61144eb6ca56390a7f91a104b240a5eb5f569877aded7593eb"
+        },
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            69,
+            69
+          ],
+          "content_sha256_utf8_lf": "335aa92302d0936f1eb2944fff1f926403c8e1910d159d9b059a8bdd29b0024d"
+        }
+      ],
+      "semantic_comparison": "外观不自动封路，变化约束后招，文本因果不证明实际媒体。",
+      "status": "covered"
+    }
+  ],
+  "original_combat_director_methods": [
+    {
+      "id": "B01",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          11,
+          21
+        ],
+        "content_sha256_utf8_lf": "9012d8640aebdbe8cba439b6e00d80edbf9d48aff8a5e461ae723043393096fc"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            40,
+            49
+          ],
+          "content_sha256_utf8_lf": "d42cbe1e2868dcfdc6101253a7cae23fccb3d5a0231da4f5d73233c7faa1630d"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "范围、支撑传力、接点、失位后残余应对",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B02",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          25,
+          31
+        ],
+        "content_sha256_utf8_lf": "c0d586fa6e2d7b01174601f0636f3ab8212961c15c167870d4fb97fa11a18a37"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            50,
+            57
+          ],
+          "content_sha256_utf8_lf": "d699efe9e8d1bcda18f6372c3803a7715a0e7587fe07e9b94092a51b51dccb9c"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "瞬时/持续、唯一击与回收分离、效果相位",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B03",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          35,
+          39
+        ],
+        "content_sha256_utf8_lf": "a7e781c43f51535efe9857bccd045227cc33ed8fef1eed0f0bfb9c73b6b9b914"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            58,
+            67
+          ],
+          "content_sha256_utf8_lf": "4f3e8f5816266ab01ad509192c6b5908f0b7f86dbfaa9bcbaa394353d1b6db22"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "相位/占用/双人承接/能力例外",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B04",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          43,
+          47
+        ],
+        "content_sha256_utf8_lf": "023d8eaedd760769944e92e3c34dd1fb5ce3fd80c3402d11b26bf9dac694a7fd"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            40,
+            51
+          ],
+          "content_sha256_utf8_lf": "6f319c77389fd68c21fb80f7289ca0a3605a7723d6822e1f353d95e961d3da54"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "遮挡前后身份路径持物余势；未知不倒推",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B05",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          51,
+          59
+        ],
+        "content_sha256_utf8_lf": "2fbfa5546cce6b5a3bfb3e5cacedef7e0aa4bf76d7dbb9b3ca2676b65112b4a2"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            90,
+            95
+          ],
+          "content_sha256_utf8_lf": "f0d4e3348166619bf305340f1c5ed1930abffc972ce1fcd65ce080582a748f60"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "长度握法结构争位、三连不必全中、类别非固定胜负",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B06",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          63,
+          69
+        ],
+        "content_sha256_utf8_lf": "c1f81cd5ba7c440a7b934bf9a7457c3714d19dded91190d09c7e12adccd3a0e8"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            5,
+            14
+          ],
+          "content_sha256_utf8_lf": "4675c0ae0f19d439fab7a085001f1d40df410eb6d1d57c05cde2d876d47cfa59"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "目标风险选择、多场用途、能力伤势回响、摄影版本事件不变",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B07",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          73,
+          83
+        ],
+        "content_sha256_utf8_lf": "f1480ebfab8df1553d4e3ad85543c5f85d7d4dc371050c1bf0da039fabdc4a8a"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            108,
+            117
+          ],
+          "content_sha256_utf8_lf": "79f049959619e8d1e9df91e2ca711e445e02f25d5ce8367572770fa49962e36c"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "线索、同部位、可达、局部失效、留置连接触发",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B08",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          87,
+          93
+        ],
+        "content_sha256_utf8_lf": "5950df42ed2fda8905cf8466e3ddc3709fd7a2c88902363add733b2f26c44d00"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/powers-and-formations.md",
+          "lines": [
+            39,
+            44
+          ],
+          "content_sha256_utf8_lf": "af410aae8dc28f05cce85c16ed148b244b8e074488053c53084313c00c982a9a"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "来势类型、容量窗口、过程区别、余量后果非必胜",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B09",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          97,
+          113
+        ],
+        "content_sha256_utf8_lf": "f1e62fbd00ee315f8360004e91641913510ea33b408a54381bde4ddb79e79907"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            96,
+            107
+          ],
+          "content_sha256_utf8_lf": "9ac030dec48063a3710c4ac7e845fb9e8d5273b51e91fb3d5994676a4e7619f4"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "结构负载卸载换锚、占有操控、双手转换与具体例句",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B10",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          117,
+          123
+        ],
+        "content_sha256_utf8_lf": "511c99a7dfdc6ff5825c4602c1236db9505ea0d2f32b5eece399be8b4e3b8b84"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            118,
+            123
+          ],
+          "content_sha256_utf8_lf": "4d06416c5013988d473789083f8c91d24c55d8c085b66294f9c34db9cd6d72b1"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "重心旋向连续、反转支撑、装饰不变肢体",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B11",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          127,
+          141
+        ],
+        "content_sha256_utf8_lf": "b08d032eab769304bc4369bb11169f703bf9af8fc9367fb75be8aaa83d6052b0"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/sound-and-performance.md",
+          "lines": [
+            36,
+            41
+          ],
+          "content_sha256_utf8_lf": "97cfce5cd44fc75537d793ef732a7b8ab57ce1c01f57a8750d58b436f7a76fdd"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "选择、触发、可见部位与动作窗口，不添默认关系",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B12",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          145,
+          153
+        ],
+        "content_sha256_utf8_lf": "7ace1cb91a8b671556e8472648089f71c4e030090497eebc2ffc3384b2da152e"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            72,
+            88
+          ],
+          "content_sha256_utf8_lf": "5fb1135eec4501f0f700e8e588c3c4b72b5f5ee5fe30c7cd2a59eb050b80b239"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "面部角度视线来光与头肩跟移；单镜有路径不瞬时贴脸",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B13",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          157,
+          172
+        ],
+        "content_sha256_utf8_lf": "f5dde7d2e13c588c2cb89e20f0efcbfec1b7947f93d67319caa5d7509faaa097"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/movement-and-projectiles.md",
+          "lines": [
+            5,
+            23
+          ],
+          "content_sha256_utf8_lf": "d0a5846edac34706e8256c221de1445c106711544636ea4b043370034b198ecf"
+        },
+        {
+          "file": "skills/combat-director/references/powers-and-formations.md",
+          "lines": [
+            76,
+            83
+          ],
+          "content_sha256_utf8_lf": "61d82d14bb6998cc5155112e267c13d0d0d3208574f225a782cacb1e0d4dd72f"
+        },
+        {
+          "file": "skills/combat-director/references/clones-and-multi-combat.md",
+          "lines": [
+            23,
+            30
+          ],
+          "content_sha256_utf8_lf": "7cec08465912a43c396f986307f72a657f0c6c50072d63bd4833777e5eb344d2"
+        },
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            20,
+            20
+          ],
+          "content_sha256_utf8_lf": "7479e52a4b8666bc232672657ce4c0ba535ab3f69bac3ba5f80fea19dae7c5c5"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "空间能力仅放宽本条件，瞬移/连续路线和状态分开；另直接对读群体位置/抵达条件与持续侧翼、巨敌局部损伤/剩余威胁、首登止于约定起手，不强加胜负。",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B14",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          176,
+          182
+        ],
+        "content_sha256_utf8_lf": "7d14a2133ebf8c8a53bff9e657fa7054b5f99ea22ecac841eaa85685a532b7f9"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/movement-and-projectiles.md",
+          "lines": [
+            32,
+            39
+          ],
+          "content_sha256_utf8_lf": "f0f18a5f23f6efc871e0296c541e145b83cb6f8d6dba06fb7b52c9f5f630cecd"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "支撑链、吊链与铜钟、变化尺度与新落点",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B15",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          186,
+          194
+        ],
+        "content_sha256_utf8_lf": "b8495957f1138210090623ba25539f5e11903310603632673348b031ac2adc92"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/powers-and-formations.md",
+          "lines": [
+            76,
+            83
+          ],
+          "content_sha256_utf8_lf": "61d82d14bb6998cc5155112e267c13d0d0d3208574f225a782cacb1e0d4dd72f",
+          "previous_lines": [
+            66,
+            73
+          ],
+          "rebind_reason": "same exact reviewed content relocated by adjacent insertion"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "法相触发显形性质控制新增范围，首登可止首击前",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B16",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          198,
+          212
+        ],
+        "content_sha256_utf8_lf": "1665e6e378b0270b1000edbbeaba000dc116392bfeb6e0fe3a0f708c4198c2bc"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/powers-and-formations.md",
+          "lines": [
+            84,
+            88
+          ],
+          "content_sha256_utf8_lf": "be7723c43a09bce3186701ed6a4cc992f079bc976fdee8a034adf57af59f7959",
+          "previous_lines": [
+            74,
+            78
+          ],
+          "rebind_reason": "same exact reviewed content relocated by adjacent insertion"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "包覆/离体主体、真实交点、分波职责六枚耗尽",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B17",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          216,
+          232
+        ],
+        "content_sha256_utf8_lf": "416e6d9b2d9b6411e016c3cd1fa60f0034a2fd127355850b0bf1e4777853ecc5"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            62,
+            71
+          ],
+          "content_sha256_utf8_lf": "58bd1f23e9410eacad693134ff18d7f3f98a905c49e39be436cd8ccb43bd5764"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "镜长可选尺度抢时、同招细写不变三停顿、速度不靠标签",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B18",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          236,
+          252
+        ],
+        "content_sha256_utf8_lf": "a3c18bd52454e2fa192f8eb43ce8e0cb4f0a16d0fcef61f6a885511bc5405cff"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            72,
+            88
+          ],
+          "content_sha256_utf8_lf": "5fb1135eec4501f0f700e8e588c3c4b72b5f5ee5fe30c7cd2a59eb050b80b239"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "人物/相机/播放/剪辑区别，交接、匹配转场不迁移人物",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B19",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          256,
+          262
+        ],
+        "content_sha256_utf8_lf": "e7d5464d11a4db8a1ccd6b755818a26eb55704e294979acfb502203697723e9f"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            89,
+            94
+          ],
+          "content_sha256_utf8_lf": "ed04c795005ae3926ccd00180beee7e1b62d964a47e57d7bcf94eb7b57e5c005"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "连续辨识姿态轮廓、拍数/帧率分开不增实体",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B20",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          266,
+          270
+        ],
+        "content_sha256_utf8_lf": "fb0abd38ba1f6b2288356438d7e3914aef5931d2e9091cf4be8c83d27bca78b4"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            89,
+            94
+          ],
+          "content_sha256_utf8_lf": "ed04c795005ae3926ccd00180beee7e1b62d964a47e57d7bcf94eb7b57e5c005"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "局部焦点与真实门扇光路不色变破防",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B21",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          274,
+          282
+        ],
+        "content_sha256_utf8_lf": "fcc120a9f793ecb6c6fc049cb57288a54d66c44abfd120b845e453306b43bc44"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            95,
+            106
+          ],
+          "content_sha256_utf8_lf": "80d71020179a39b122e18cb9635454fb9cc6291de0e0e8c956acb918042b6078"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "蓄势窗口、延迟看见/延迟触发不同，入鞘不引爆",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B22",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          286,
+          303
+        ],
+        "content_sha256_utf8_lf": "2c0d0ecc85a85ebaffad562f1e0efc898543848867473d6f17b858230516a5c4"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            72,
+            88
+          ],
+          "content_sha256_utf8_lf": "5fb1135eec4501f0f700e8e588c3c4b72b5f5ee5fe30c7cd2a59eb050b80b239"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "三种路线四种拍法、开放通道、过轴、连续/硬切",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B23",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          309,
+          323
+        ],
+        "content_sha256_utf8_lf": "f3ff7f4677fbc6468e898235eead9c8a7e85d2ffb97312e40825871a89f31ede"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/style-and-materials.md",
+          "lines": [
+            24,
+            39
+          ],
+          "content_sha256_utf8_lf": "c3263c03ea6b4f22589caed2906f1fe524e43619386ff3f8b0da556a9e0fe3ec"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "主光实际作用、世界路径尾迹、透明压缩前沿、曝光粒子分开",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B24",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          327,
+          333
+        ],
+        "content_sha256_utf8_lf": "2a64afe68a8193c9c9fb45440a7dc0ea5c76d8731af4fce5a4c82b76862e0116"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/style-and-materials.md",
+          "lines": [
+            40,
+            47
+          ],
+          "content_sha256_utf8_lf": "625338a9597fa4475b85f5bb5d8f6132fbd876dd901df152f1f20615c64c43cb"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "叠加/切换、相位返回不重复攻击，单镜与帧数条件",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B25",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          337,
+          353
+        ],
+        "content_sha256_utf8_lf": "1fdb42b05311ebc0e62345a7e049eb306f987958da99b064aba4a8f84eaff1af"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/style-and-materials.md",
+          "lines": [
+            48,
+            54
+          ],
+          "content_sha256_utf8_lf": "adbc1d35340ea6c38d0b2ffc1fe8427df9d1745b826d5b4b2a8342102db65c8f"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "贴附主形随动接触离散照明，轻擦重压大招不同，艺术无能力",
+      "status": "covered_in_direct_runtime_content; redundant literal template may be compressed"
+    },
+    {
+      "id": "B26",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          307,
+          307
+        ],
+        "content_sha256_utf8_lf": "ede0e263788882f4bafceb7ed496d5ef045c933bd6bde5e6afd21bfb0e328233"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/powers-and-formations.md",
+          "lines": [
+            60,
+            69
+          ],
+          "content_sha256_utf8_lf": "2ab303aab971195832b35d9a7ca3c4c3d8c5bf3b8b319372d306933ebe302880"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "新力量专题集中旧型→具体手指/腕/双掌过渡→新型→起阵/瞄准/释放/维持/取消，继承原持物与旧术；手型可拍且对手继续行动，不逐帧罗列，有一条具体完整例句。",
+      "status": "covered_after_direct_text_recheck",
+      "finding_id": "B01"
+    }
+  ],
+  "research_decisions": [
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-objective-and-adaptation.md",
+        "lines": [
+          19,
+          25
+        ],
+        "content_sha256_utf8_lf": "c6ab17217ca69bbfa481856c09f8d6be54b017082d3f9ee0320805bf9816e7fc"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            5,
+            14
+          ],
+          "content_sha256_utf8_lf": "4675c0ae0f19d439fab7a085001f1d40df410eb6d1d57c05cde2d876d47cfa59"
+        },
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            15,
+            24
+          ],
+          "content_sha256_utf8_lf": "298759c586e6c848991a15c9ff2f64b460cf290920f497937847632c6af058ed"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "可见目标、持续压力、同招、线索与表演不暂停",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-objective-and-adaptation.md",
+        "lines": [
+          19,
+          25
+        ],
+        "content_sha256_utf8_lf": "c6ab17217ca69bbfa481856c09f8d6be54b017082d3f9ee0320805bf9816e7fc"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-objective-and-adaptation.md",
+        "lines": [
+          44,
+          48
+        ],
+        "content_sha256_utf8_lf": "860f7152c936d92135f467d59569092a11c1b233630afd200e48681e47c2e45e"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            88,
+            88
+          ],
+          "content_sha256_utf8_lf": "f059efafff249bd76481306889709110fd88c5aab50c26489a315e0d76f08df9"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "临场改招继承行程，不保证成功，同版读取不算独立来源",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-objective-and-adaptation.md",
+        "lines": [
+          44,
+          48
+        ],
+        "content_sha256_utf8_lf": "860f7152c936d92135f467d59569092a11c1b233630afd200e48681e47c2e45e"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-feints-and-perception.md",
+        "lines": [
+          23,
+          29
+        ],
+        "content_sha256_utf8_lf": "a91e3e68a02c4c5e0dd996e19e8d08927dfb53cad5b11cceede795ae2aeab76f"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            19,
+            23
+          ],
+          "content_sha256_utf8_lf": "851205cbaf91efe1a19a6105cc6a710c7657deb8f26a2f23dcae75aa31a62388"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "佯攻失败、信息差、先到作用、感知范围遮挡时间",
+      "status": "covered_after_direct_recheck",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-feints-and-perception.md",
+        "lines": [
+          23,
+          29
+        ],
+        "content_sha256_utf8_lf": "a91e3e68a02c4c5e0dd996e19e8d08927dfb53cad5b11cceede795ae2aeab76f"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-recoil-and-recovery.md",
+        "lines": [
+          19,
+          28
+        ],
+        "content_sha256_utf8_lf": "4cbd800df336dfc3f326d179e0d534a488cf77bfb14ced545888ffd0b6f20d93"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            76,
+            89
+          ],
+          "content_sha256_utf8_lf": "53c390c48b4c98a3a94a2acadc73b0b5ad444a29bcebbb77beed4870f4e3f4b0"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "回防/身体制动/伤势不同步，允许恢复中应对",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-recoil-and-recovery.md",
+        "lines": [
+          19,
+          28
+        ],
+        "content_sha256_utf8_lf": "4cbd800df336dfc3f326d179e0d534a488cf77bfb14ced545888ffd0b6f20d93"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-recoil-and-recovery.md",
+        "lines": [
+          50,
+          59
+        ],
+        "content_sha256_utf8_lf": "9c35fb9341dc36ef9d02a52a9049a09342d7ace35f0e173804a9644147e94d93"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            36,
+            36
+          ],
+          "content_sha256_utf8_lf": "f9cae4ed0f5bd38a9fe5537176704bd19329c88595ff7553892561857027836d"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "疲劳选择、恢复窗口、傀儡/操控者代价分开",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-recoil-and-recovery.md",
+        "lines": [
+          50,
+          59
+        ],
+        "content_sha256_utf8_lf": "9c35fb9341dc36ef9d02a52a9049a09342d7ace35f0e173804a9644147e94d93"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-sustained-contact.md",
+        "lines": [
+          21,
+          39
+        ],
+        "content_sha256_utf8_lf": "363977aae140388d9777eefd431b3f67fc4651d4f3f4dec86c545713481c349e"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            58,
+            67
+          ],
+          "content_sha256_utf8_lf": "4f3e8f5816266ab01ad509192c6b5908f0b7f86dbfaa9bcbaa394353d1b6db22"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "双人联动、非对称反作用、用途僵持、第三方更新双人",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-sustained-contact.md",
+        "lines": [
+          21,
+          39
+        ],
+        "content_sha256_utf8_lf": "363977aae140388d9777eefd431b3f67fc4651d4f3f4dec86c545713481c349e"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-weapon-transfer-and-continuity.md",
+        "lines": [
+          42,
+          47
+        ],
+        "content_sha256_utf8_lf": "0f0d3ac04be2775191164d85d5650356620f7dc8e01bb7058df0afb7ccf7a066"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            96,
+            107
+          ],
+          "content_sha256_utf8_lf": "9ac030dec48063a3710c4ac7e845fb9e8d5273b51e91fb3d5994676a4e7619f4"
+        },
+        {
+          "file": "skills/combat-director/references/movement-and-projectiles.md",
+          "lines": [
+            44,
+            44
+          ],
+          "content_sha256_utf8_lf": "fd05491c433e6e2753e1e0ff1050e46b1b41f4cbd40209f397f301648a6a47b3"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "实体同物件、共握、占手、遥控与分化职责",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-weapon-transfer-and-continuity.md",
+        "lines": [
+          42,
+          47
+        ],
+        "content_sha256_utf8_lf": "0f0d3ac04be2775191164d85d5650356620f7dc8e01bb7058df0afb7ccf7a066"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-paired-body-control.md",
+        "lines": [
+          13,
+          24
+        ],
+        "content_sha256_utf8_lf": "9a8f771c52fbc1acd7a380f85d03fedf7c5f82a5ce3af5b5fa6f73a1b75fa630"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            68,
+            75
+          ],
+          "content_sha256_utf8_lf": "2546fc22d62bf57fd1c25f0e596c28867d1ff9dcdaa9d5198269a4968fa5f53a"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "局部控制、共同承重、逐接点解除、首帧已托举/隔空例外",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-paired-body-control.md",
+        "lines": [
+          13,
+          24
+        ],
+        "content_sha256_utf8_lf": "9a8f771c52fbc1acd7a380f85d03fedf7c5f82a5ce3af5b5fa6f73a1b75fa630"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-objectives-and-tactics-audit.md",
+        "lines": [
+          7,
+          11
+        ],
+        "content_sha256_utf8_lf": "832a4622a774bd4bf254e944af69d83c619764ca35109d98c11173e8852422b2"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            5,
+            14
+          ],
+          "content_sha256_utf8_lf": "4675c0ae0f19d439fab7a085001f1d40df410eb6d1d57c05cde2d876d47cfa59"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "目标和策略独立，有效稳守可不换，主动回护无强制反转",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-objectives-and-tactics-audit.md",
+        "lines": [
+          7,
+          11
+        ],
+        "content_sha256_utf8_lf": "832a4622a774bd4bf254e944af69d83c619764ca35109d98c11173e8852422b2"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+        "lines": [
+          17,
+          35
+        ],
+        "content_sha256_utf8_lf": "31ed1f16c27d22f271fe9b9f3b6ea995041199de9c0bbad3f351e2d506f99b00"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            45,
+            45
+          ],
+          "content_sha256_utf8_lf": "6969a66c7dcd6c8abdc5b15b80f73e5daf4dfe67593b7a2c61bf0895402e4b47"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "告警按主体/阶段复核，结构字段齐全不证明可达",
+      "status": "covered_after_direct_recheck",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+        "lines": [
+          17,
+          35
+        ],
+        "content_sha256_utf8_lf": "31ed1f16c27d22f271fe9b9f3b6ea995041199de9c0bbad3f351e2d506f99b00"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+        "lines": [
+          39,
+          41
+        ],
+        "content_sha256_utf8_lf": "de3e0362506ca40094262e5aaee45e4c1a25c955f9df3a1330014954748ba2fa"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            84,
+            84
+          ],
+          "content_sha256_utf8_lf": "b2780471dfffd55ae92cb9acce9c21ec6a6a1a05c7e050232aee1b8091fd34f5",
+          "previous_lines": [
+            82,
+            82
+          ],
+          "rebind_reason": "same exact reviewed content relocated by adjacent insertion"
+        },
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            78,
+            78
+          ],
+          "content_sha256_utf8_lf": "8d67da7ee51928ce9e95dab5508875ffd32b8925d44a073c4ebd85815d69ad47"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "同原请求比较、硬约束优先、联合变化不归单因素",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+        "lines": [
+          39,
+          41
+        ],
+        "content_sha256_utf8_lf": "de3e0362506ca40094262e5aaee45e4c1a25c955f9df3a1330014954748ba2fa"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+        "lines": [
+          45,
+          54
+        ],
+        "content_sha256_utf8_lf": "dc43a28d8d194974d30362281ccb96fb879957703e1fd61fb2b1a5ae1a3d0b17"
+      },
+      "target": [
+        {
+          "file": "scripts/validate_content.py",
+          "lines": [
+            15,
+            25
+          ],
+          "content_sha256_utf8_lf": "a7dd4556813061ca7050a1aa30b6b69506a4b658f0393871fd2d546ccd2a97a8"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "私有资料不污染扫描且不是公开引用；机械负例详见工具审计",
+      "status": "covered_by_separate_tool_audit",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+        "lines": [
+          45,
+          54
+        ],
+        "content_sha256_utf8_lf": "dc43a28d8d194974d30362281ccb96fb879957703e1fd61fb2b1a5ae1a3d0b17"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+        "lines": [
+          72,
+          99
+        ],
+        "content_sha256_utf8_lf": "8f7a576290be2b57e96457b8f5c02ecace5f3d74d800fb82620d264f66e3c79c"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            74,
+            74
+          ],
+          "content_sha256_utf8_lf": "acf9c7fe8e55bf114860760833c9de6664d7108d22c98ff04b2d0f8956b98887"
+        },
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            20,
+            20
+          ],
+          "content_sha256_utf8_lf": "9c724a711f817702c97b9707a83f4690f48d11e6b0dae7452629b485b9190b14"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "静态左右/隔空/人数观察保留范围，非接触作用与代价分开",
+      "status": "historical_exact_copy; reusable_boundary_covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+        "lines": [
+          72,
+          99
+        ],
+        "content_sha256_utf8_lf": "8f7a576290be2b57e96457b8f5c02ecace5f3d74d800fb82620d264f66e3c79c"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+        "lines": [
+          103,
+          138
+        ],
+        "content_sha256_utf8_lf": "56674d250bf466b3ca77339d5468bfbbda02904f670fe1b6aaadac919b76f26a"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            45,
+            45
+          ],
+          "content_sha256_utf8_lf": "6969a66c7dcd6c8abdc5b15b80f73e5daf4dfe67593b7a2c61bf0895402e4b47"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "LTX完整输入指纹及误报漏检原样，当前不把该检查器当质量门槛",
+      "status": "historical_exact_copy; reusable_boundary_covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+        "lines": [
+          103,
+          138
+        ],
+        "content_sha256_utf8_lf": "56674d250bf466b3ca77339d5468bfbbda02904f670fe1b6aaadac919b76f26a"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-human-motion-evaluation.md",
+        "lines": [
+          5,
+          11
+        ],
+        "content_sha256_utf8_lf": "065fcdf876771ad9e4d39f1c84b9d98f404397e7d13cc5e698fc7ab112d0ba72"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            22,
+            22
+          ],
+          "content_sha256_utf8_lf": "9cba57b356c83009037c55baf144f523d205af10ba45ba7a0892c402e4c22e0c"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "单人结构/平滑≠双人接点；低置信非畸变；各人漏检/跟踪交换/遮挡分录",
+      "status": "covered_after_direct_recheck",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-human-motion-evaluation.md",
+        "lines": [
+          5,
+          11
+        ],
+        "content_sha256_utf8_lf": "065fcdf876771ad9e4d39f1c84b9d98f404397e7d13cc5e698fc7ab112d0ba72"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-grab-compression-comparison.md",
+        "lines": [
+          7,
+          20
+        ],
+        "content_sha256_utf8_lf": "7a98cdf932cb9650b5335374437e7c0dcfae4bcec29b170aab053051237bcf4b"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            68,
+            75
+          ],
+          "content_sha256_utf8_lf": "2546fc22d62bf57fd1c25f0e596c28867d1ff9dcdaa9d5198269a4968fa5f53a"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "516/461字冻结文本/指纹和未执行状态原样，字数不作收益证据",
+      "status": "historical_exact_copy; contact_rules_covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-grab-compression-comparison.md",
+        "lines": [
+          7,
+          20
+        ],
+        "content_sha256_utf8_lf": "7a98cdf932cb9650b5335374437e7c0dcfae4bcec29b170aab053051237bcf4b"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-grab-compression-comparison.md",
+        "lines": [
+          42,
+          59
+        ],
+        "content_sha256_utf8_lf": "ec98e23038966ed4598e6618191559aeb5e430383b65820e8e8d560e24aa1bfd"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            22,
+            22
+          ],
+          "content_sha256_utf8_lf": "9cba57b356c83009037c55baf144f523d205af10ba45ba7a0892c402e4c22e0c"
+        },
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            78,
+            78
+          ],
+          "content_sha256_utf8_lf": "8d67da7ee51928ce9e95dab5508875ffd32b8925d44a073c4ebd85815d69ad47"
+        },
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            117,
+            123
+          ],
+          "content_sha256_utf8_lf": "b0fbc8ceaad3b655964809b1ff453bb33206fb4cd6d34bf9c054b545299b42e0",
+          "previous_lines": [
+            115,
+            121
+          ],
+          "rebind_reason": "same exact reviewed content relocated by adjacent insertion"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "按原请求接点顺序、各人结构、随机性/设置、失败留存、非普遍成功率",
+      "status": "covered_after_direct_recheck",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-grab-compression-comparison.md",
+        "lines": [
+          42,
+          59
+        ],
+        "content_sha256_utf8_lf": "ec98e23038966ed4598e6618191559aeb5e430383b65820e8e8d560e24aa1bfd"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-prompt-compression-scope.md",
+        "lines": [
+          5,
+          13
+        ],
+        "content_sha256_utf8_lf": "daedfb308aed498de126d0928ddb9e105921bcd4b53a413c94ceb27046129a90"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            67,
+            69
+          ],
+          "content_sha256_utf8_lf": "44c2809f3199250946e292d46ecdf226b7ecf92bafda7a70c900e311175b92aa"
+        },
+        {
+          "file": "skills/combat-director/references/prompt-construction.md",
+          "lines": [
+            165,
+            179
+          ],
+          "content_sha256_utf8_lf": "3a609476695efe96842e751b346c520e1b8b8ca97737fc12c6e98b4cae869d8a"
+        },
+        {
+          "file": "skills/combat-director/references/prompt-construction.md",
+          "lines": [
+            56,
+            56
+          ],
+          "content_sha256_utf8_lf": "dc514aef6d465f63c0eef042b75ef2ab2ba31243cc7ea603e94450c1edd9d93d"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "同稿去重但独立段自含，正向已表达的反向解释可删，硬限制和必要否定保留；最终实际文本/素材/参数完整，冻结对照不是媒体成功。",
+      "status": "covered_after_direct_text_recheck",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-prompt-compression-scope.md",
+        "lines": [
+          5,
+          13
+        ],
+        "content_sha256_utf8_lf": "daedfb308aed498de126d0928ddb9e105921bcd4b53a413c94ceb27046129a90"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-hit-marking-style.md",
+        "lines": [
+          5,
+          9
+        ],
+        "content_sha256_utf8_lf": "2a8cd93e1d5030ae434aca306af7af4e506eaf519b40a086616606ccb9cc1f71"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            50,
+            57
+          ],
+          "content_sha256_utf8_lf": "d699efe9e8d1bcda18f6372c3803a7715a0e7587fe07e9b94092a51b51dccb9c"
+        },
+        {
+          "file": "skills/combat-director/references/style-and-materials.md",
+          "lines": [
+            54,
+            54
+          ],
+          "content_sha256_utf8_lf": "87081f508250d87ee7490cc60274be31d263af9a4bfd8bc1378803ce0dcc2a60"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "轻接触无强制停震粒子，重击按用户；可选不变禁用",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-hit-marking-style.md",
+        "lines": [
+          5,
+          9
+        ],
+        "content_sha256_utf8_lf": "2a8cd93e1d5030ae434aca306af7af4e506eaf519b40a086616606ccb9cc1f71"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-wuxin-action-and-coverage.md",
+        "lines": [
+          13,
+          18
+        ],
+        "content_sha256_utf8_lf": "44eb7f07d027b6d9786cbf91f74b7f67f252ed7a564dfae209ece921574b5376"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            38,
+            42
+          ],
+          "content_sha256_utf8_lf": "1c10a66d30b6e6903b830fbad7469efb81080cd426c74655e17e8c831d8540c4"
+        },
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            58,
+            58
+          ],
+          "content_sha256_utf8_lf": "4c78dce1eb0d47dee04b3accb8360df52fd376fcb642119a32f773b051a73f3f"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "不强迫御空落地、群攻轮流、单运镜；硬切无需场内力推动机位",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-wuxin-action-and-coverage.md",
+        "lines": [
+          13,
+          18
+        ],
+        "content_sha256_utf8_lf": "44eb7f07d027b6d9786cbf91f74b7f67f252ed7a564dfae209ece921574b5376"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-wuxin-action-and-coverage.md",
+        "lines": [
+          28,
+          30
+        ],
+        "content_sha256_utf8_lf": "1241099735bdcf1f9785299a8d5b0e6a40bcea9fbe69ce5c58af4844c0080931"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            74,
+            74
+          ],
+          "content_sha256_utf8_lf": "acf9c7fe8e55bf114860760833c9de6664d7108d22c98ff04b2d0f8956b98887"
+        },
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            100,
+            100
+          ],
+          "content_sha256_utf8_lf": "c3371fb2a54abae1b1ceb89691a09b4735f49b878c5af5da2c8e81ee32bf9384"
+        },
+        {
+          "file": "skills/combat-director/references/movement-and-projectiles.md",
+          "lines": [
+            48,
+            48
+          ],
+          "content_sha256_utf8_lf": "75aa19ebd857a35ea439105f5ae8186c599020b809e6b58bc09deb37cb7e1780"
+        },
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            59,
+            74
+          ],
+          "content_sha256_utf8_lf": "232455b9e10440fdc9f0d2d3a2194a2ec2d995e762809f9b31019721244abaad"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "连接、张力、解除分别核对；松手不等另一端解开，剑/鞘两个物件，术法例外",
+      "status": "covered_by_joint_rules; source_soft_rope_case_preserved",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-wuxin-action-and-coverage.md",
+        "lines": [
+          28,
+          30
+        ],
+        "content_sha256_utf8_lf": "1241099735bdcf1f9785299a8d5b0e6a40bcea9fbe69ce5c58af4844c0080931"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-concurrent-action-and-compression.md",
+        "lines": [
+          17,
+          20
+        ],
+        "content_sha256_utf8_lf": "6db94c8e10c6f779836dc01a5fc1d25e9e86ccc3058b12c14c5bfed595611019"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            41,
+            41
+          ],
+          "content_sha256_utf8_lf": "f1e9e96cc74f19e512b37807e97918e8b23501d423d7e6718c04390aad6e05a6"
+        },
+        {
+          "file": "skills/combat-director/references/prompt-construction.md",
+          "lines": [
+            42,
+            59
+          ],
+          "content_sha256_utf8_lf": "7e91ef9a60e33a60964f83f6fdf907a1f4b097ce612fbdf92084aca1bce0f789"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "攻防支援并发，因果光纹不是装饰，压缩不删指定同接点",
+      "status": "covered_in_combined_entry_and_prompt",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-concurrent-action-and-compression.md",
+        "lines": [
+          17,
+          20
+        ],
+        "content_sha256_utf8_lf": "6db94c8e10c6f779836dc01a5fc1d25e9e86ccc3058b12c14c5bfed595611019"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-concurrent-action-and-compression.md",
+        "lines": [
+          46,
+          52
+        ],
+        "content_sha256_utf8_lf": "1fa30910921b5ee6ec78d36275080a6a3f3c7c6635aac40bd9e36b96fac8e46b"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            124,
+            129
+          ],
+          "content_sha256_utf8_lf": "c5dd224b3a461acc75d92e305b5cecaab42652bccb3034877afa632657208ea2"
+        },
+        {
+          "file": "skills/combat-director/references/sound-and-performance.md",
+          "lines": [
+            36,
+            41
+          ],
+          "content_sha256_utf8_lf": "97cfce5cd44fc75537d793ef732a7b8ab57ce1c01f57a8750d58b436f7a76fdd"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "情绪改向和对手利用是必需因果，不移到事后脸镜或强加瞳孔",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-concurrent-action-and-compression.md",
+        "lines": [
+          46,
+          52
+        ],
+        "content_sha256_utf8_lf": "1fa30910921b5ee6ec78d36275080a6a3f3c7c6635aac40bd9e36b96fac8e46b"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-combat-pipeline-density.md",
+        "lines": [
+          11,
+          30
+        ],
+        "content_sha256_utf8_lf": "875057f19fcaeecae7ce2c84846888f07d23844440949cef827ca5dac3987fd7"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            18,
+            18
+          ],
+          "content_sha256_utf8_lf": "9de1c5a6a9df9a5a586a94558708b907a421e34075d8bbf48f627f16ba5a1193"
+        },
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            67,
+            69
+          ],
+          "content_sha256_utf8_lf": "44c2809f3199250946e292d46ecdf226b7ecf92bafda7a70c900e311175b92aa"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "普通不先JSON、用户事件须进入实际正文，模板配额/自评不证明实现",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-combat-pipeline-density.md",
+        "lines": [
+          11,
+          30
+        ],
+        "content_sha256_utf8_lf": "875057f19fcaeecae7ce2c84846888f07d23844440949cef827ca5dac3987fd7"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-combat-pipeline-density.md",
+        "lines": [
+          47,
+          71
+        ],
+        "content_sha256_utf8_lf": "81ba7a80c183466b38614c3e8024ea807a43285daebecc8e8991a896547829ed"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            88,
+            88
+          ],
+          "content_sha256_utf8_lf": "f059efafff249bd76481306889709110fd88c5aab50c26489a315e0d76f08df9"
+        },
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            62,
+            71
+          ],
+          "content_sha256_utf8_lf": "58bd1f23e9410eacad693134ff18d7f3f98a905c49e39be436cd8ccb43bd5764"
+        },
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            82,
+            82
+          ],
+          "content_sha256_utf8_lf": "8e7c0d535a8f96918325a79b2dbe5100de1e75135a087210db9ba85c131db711"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "单招拖长/招间空等/交换少分开，回收未完反刺跨窗连续；后期加速仅适用因果与连续性成立且唯独节奏慢，实际时长/声音重算。",
+      "status": "covered_after_direct_text_recheck",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-combat-pipeline-density.md",
+        "lines": [
+          47,
+          71
+        ],
+        "content_sha256_utf8_lf": "81ba7a80c183466b38614c3e8024ea807a43285daebecc8e8991a896547829ed"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-continuity-versus-cuts.md",
+        "lines": [
+          15,
+          19
+        ],
+        "content_sha256_utf8_lf": "949661a1f26134ecb492f6fa2890b03ac80a7d334d6813a586808c3e344d7ae4"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            88,
+            116
+          ],
+          "content_sha256_utf8_lf": "fbcf078433994035a84a96c0b9cf858fe21f9459d295b89eab9ec192620992ed",
+          "previous_lines": [
+            86,
+            114
+          ],
+          "rebind_reason": "same exact reviewed content relocated by adjacent insertion"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "姿态相同≠方向/速度/阶段；接受尾态不覆盖原硬约束",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-continuity-versus-cuts.md",
+        "lines": [
+          15,
+          19
+        ],
+        "content_sha256_utf8_lf": "949661a1f26134ecb492f6fa2890b03ac80a7d334d6813a586808c3e344d7ae4"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-cinematic-fight-and-reference-coverage.md",
+        "lines": [
+          15,
+          21
+        ],
+        "content_sha256_utf8_lf": "4d91c7c29bab28261ada97b0ce1fc264c394e196048da303b0bd8f269592caad"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            20,
+            24
+          ],
+          "content_sha256_utf8_lf": "d6b0b08269eeeb0422908c2116ecc8c28aaa44d66ab188042a365d55e39fe4e6"
+        },
+        {
+          "file": "skills/combat-director/references/movement-and-projectiles.md",
+          "lines": [
+            24,
+            31
+          ],
+          "content_sha256_utf8_lf": "1ecf46ab265b4e61144eb6ca56390a7f91a104b240a5eb5f569877aded7593eb"
+        },
+        {
+          "file": "skills/combat-director/references/reference-and-iteration.md",
+          "lines": [
+            22,
+            22
+          ],
+          "content_sha256_utf8_lf": "92e20d7d78b75109a29487628ece0f6defbdb42b8713281c4910ab1bda57339c"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "未见背面有门/台阶/落脚不当观察事实；兼容新设计与观察分开，已禁出口不补门脱身，只核当前动作涉及视角。",
+      "status": "covered_after_direct_text_recheck",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-cinematic-fight-and-reference-coverage.md",
+        "lines": [
+          15,
+          21
+        ],
+        "content_sha256_utf8_lf": "4d91c7c29bab28261ada97b0ce1fc264c394e196048da303b0bd8f269592caad"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-cinematic-fight-and-reference-coverage.md",
+        "lines": [
+          39,
+          41
+        ],
+        "content_sha256_utf8_lf": "911ac4290405934ef27b21337dd3bd34098cf9684f0be77912a18c087bced30e"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            41,
+            41
+          ],
+          "content_sha256_utf8_lf": "f1e9e96cc74f19e512b37807e97918e8b23501d423d7e6718c04390aad6e05a6"
+        },
+        {
+          "file": "skills/combat-director/references/movement-and-projectiles.md",
+          "lines": [
+            24,
+            31
+          ],
+          "content_sha256_utf8_lf": "1ecf46ab265b4e61144eb6ca56390a7f91a104b240a5eb5f569877aded7593eb"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "外部镜数/节拍/并发上限不否决用户条件；物件反馈非必损坏",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-cinematic-fight-and-reference-coverage.md",
+        "lines": [
+          39,
+          41
+        ],
+        "content_sha256_utf8_lf": "911ac4290405934ef27b21337dd3bd34098cf9684f0be77912a18c087bced30e"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-occlusion-and-return.md",
+        "lines": [
+          13,
+          17
+        ],
+        "content_sha256_utf8_lf": "04ed51534b35efb9d81bf51e421c0d0daaed4fbafbef529edba9a9e2fa8b8c4c"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            40,
+            40
+          ],
+          "content_sha256_utf8_lf": "3ea9ba88ddf8fc20f2fd28850fe1c3c76a2dcb1e6c006acd0a5dd5c768f701a1"
+        },
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            50,
+            50
+          ],
+          "content_sha256_utf8_lf": "33718a6372ada5fa910f364b555e60c15c58523fb89b8fbbc0e297e407fb23b3"
+        },
+        {
+          "file": "skills/combat-director/references/movement-and-projectiles.md",
+          "lines": [
+            48,
+            48
+          ],
+          "content_sha256_utf8_lf": "75aa19ebd857a35ea439105f5ae8186c599020b809e6b58bc09deb37cb7e1780"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "不可见不重置状态/兵器/路线，隐藏过程与观察分开",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-occlusion-and-return.md",
+        "lines": [
+          13,
+          17
+        ],
+        "content_sha256_utf8_lf": "04ed51534b35efb9d81bf51e421c0d0daaed4fbafbef529edba9a9e2fa8b8c4c"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-subjective-view-and-contact.md",
+        "lines": [
+          21,
+          27
+        ],
+        "content_sha256_utf8_lf": "62fafb362d5d8aeeaf011c754c422417c849c9a9980ed78ad6e70a6ca36a9167"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            58,
+            67
+          ],
+          "content_sha256_utf8_lf": "4f3e8f5816266ab01ad509192c6b5908f0b7f86dbfaa9bcbaa394353d1b6db22"
+        },
+        {
+          "file": "skills/combat-director/references/camera-and-rhythm.md",
+          "lines": [
+            52,
+            61
+          ],
+          "content_sha256_utf8_lf": "db86dae9a16ac316409251550efba6be57af4c8227ab2ad62f3605721c47f7a2"
+        },
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            41,
+            43
+          ],
+          "content_sha256_utf8_lf": "759334e2a7d9ab7298674a45de0a1954c5226a7cbc6c87ee8d90ede47ba12771"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "交互和摄影分开、眼位/参数不粗判、并发自含不可被模板改掉",
+      "status": "covered; named-group counts belong specialist audit",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-subjective-view-and-contact.md",
+        "lines": [
+          21,
+          27
+        ],
+        "content_sha256_utf8_lf": "62fafb362d5d8aeeaf011c754c422417c849c9a9980ed78ad6e70a6ca36a9167"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    },
+    {
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-user-skill-merge.md",
+        "lines": [
+          13,
+          22
+        ],
+        "content_sha256_utf8_lf": "bf5417b19779ebffc0ddc98e3d193028feb8f4ceac79985c3b949d16c232516a"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            25,
+            37
+          ],
+          "content_sha256_utf8_lf": "095c3a68c487799c97263ca7ff865a4f1536d2eb5a38aec19e6295cfeba4d7a2"
+        },
+        {
+          "file": "skills/combat-director/references/powers-and-formations.md",
+          "lines": [
+            18,
+            25
+          ],
+          "content_sha256_utf8_lf": "ed32a6513aacd5e1c9381f26ee316859fd1d2b1fa9c2c4e43c5555b3d9d9c5fa"
+        },
+        {
+          "file": "skills/combat-director/references/sound-and-performance.md",
+          "lines": [
+            30,
+            35
+          ],
+          "content_sha256_utf8_lf": "0f98d2b6c634e5810c7276198a2eccf72e8e5f017631c301a8fb4ca8bc891c72"
+        },
+        {
+          "file": "skills/combat-director/SKILL.md",
+          "lines": [
+            22,
+            22
+          ],
+          "content_sha256_utf8_lf": "e86697ff5ef07016e5d242663e4c8cb5062e7103476b4dbe15a467c5404e387f"
+        }
+      ],
+      "disposition": "重设计",
+      "semantic_comparison": "条件化保留演化发力吟诵速度，不恢复固定模板/上限/强制悲剧",
+      "status": "covered",
+      "historical_evidence_target": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-user-skill-merge.md",
+        "lines": [
+          13,
+          22
+        ],
+        "content_sha256_utf8_lf": "bf5417b19779ebffc0ddc98e3d193028feb8f4ceac79985c3b949d16c232516a"
+      },
+      "historical_boundary": "固定源记录保持原状态、指纹与观察范围；不算新媒体或新运行结果。"
+    }
+  ],
+  "research_snapshot_screen": [
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-barriers-and-impact-results.md",
+      "sha256_bytes": "bec7bc82397e0104aae8fc56a9bb88639a2e4002d68f1609d1df87133f8f1d4b",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-clones-and-afterimages.md",
+      "sha256_bytes": "cf9f089f8e1945e9b7d0384f0a4af1b0742e7e273f31cf80b003836c8f0baa0c",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-combat-skills.md",
+      "sha256_bytes": "82d30d21ef1a89bdb89ca34d13abfbdd7955bb2de514c2b3604a82c8ed9e3f88",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-concurrent-action-and-compression.md",
+      "sha256_bytes": "9fd3166bc4eaf32645fe0774caee53aac251e6c702c420948af4408bcc85c3da",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-contact-evidence.md",
+      "sha256_bytes": "485aa13a72b813211255e7a3b8ff21a79933df908e8fac88471b9c1b5bc6ceb4",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-continuation-and-observed-state.md",
+      "sha256_bytes": "3ce23072677b6bad3dafab4b39b5b97028b04d96ec3995df65483f6de628f425",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-emission-and-control.md",
+      "sha256_bytes": "409e22af070bd8ae1ed3e6993a82026742b1055d27890b0ee831597f37cc3878",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-evidence-tool.md",
+      "sha256_bytes": "9c23d63066c96354bb3a02efb877f8a344cba34222fba090876b56a341bef746",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-feints-and-perception.md",
+      "sha256_bytes": "f75523fa9b576fbe2abac57a6755c0c9d0867a79ebdd9523647ae751e80b1a4a",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-flight-and-multi-combat.md",
+      "sha256_bytes": "592a96c9ade59f6aaa3ca96fb3d7d89233260cd26a2d69f220e57196934cf974",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-formation-attachment.md",
+      "sha256_bytes": "2c7410dd60671c71c32d82e58295e4905de7ed11d94034b934930dda93c3fbf3",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-motion-reference-adaptation.md",
+      "sha256_bytes": "0810b2d72da9bf820273c8ea1785a52c00af53445cff61a60b895da4886e029c",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-objective-and-adaptation.md",
+      "sha256_bytes": "71e95528f2ff863e349675d88e4381977127f50a64608b65fa84abed73d26ace",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-recoil-and-recovery.md",
+      "sha256_bytes": "fc2961afa75713559ff5dd716bc273347b46fe42f850b2878dfb0e99ff951729",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-retiming-and-screen-time.md",
+      "sha256_bytes": "585899dc596f9fb3c4dc2795f080647a143c288536c8c2e758957337d90395f4",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-scale-and-media-match.md",
+      "sha256_bytes": "aa757f4c806212f1c11b79ff574270f68f7fa9f389a3abce4b0379700f54238a",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-sound-and-events.md",
+      "sha256_bytes": "57395faf1dbe72613f1944aca40a645a5c6f10381ed1e77730d281b3deada3c7",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-spatial-direction-and-camera.md",
+      "sha256_bytes": "09ff0dfad18aba56a1d5a1d1d827d483daa5754a089418f3e941229d5cc641ce",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-sustained-contact.md",
+      "sha256_bytes": "19d991154738396464509a2244a511a6ee7d053d007844eea7bcaf9e5f3df73c",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-terrain-and-traversal.md",
+      "sha256_bytes": "3be3f802034fda7d8dbc5b8174690d52b72deef2e24d862ca1e9b91d0648fc07",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-topic-routing.md",
+      "sha256_bytes": "0b39fab7f709455f8e21870d80510db4c50363eca28d3712864f6536c005e385",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+      "sha256_bytes": "e6997509b0776097a2a5b23e0e2a102897ef00e283ced6525f487726eadf7601",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-weapon-transfer-and-continuity.md",
+      "sha256_bytes": "764537e8b692072933662a121580322cf15081e42721bea90426cc3833d60fb6",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-wuxia-sample-and-cuts.md",
+      "sha256_bytes": "fa28d630954d577801530ea05f098441b1534abe4b5a42509b25e6a2362f47a8",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-awesome-seedance-retests.md",
+      "sha256_bytes": "9c769f5849ab6682e57af80c396560501433326bda4f439cd3627a16eb3df656",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-cinematic-fight-and-reference-coverage.md",
+      "sha256_bytes": "412ae73a5d9430a8738f17ab3da39733ae88c798168b7b97a955458eaa48c858",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-combat-pipeline-density.md",
+      "sha256_bytes": "9682c60bf845191c75538542bcb6e59dc296d36ee081d130909745e3a3f68ba3",
+      "fixed_source_bytes_match": true,
+      "read_scope": "focused passages",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-continuity-versus-cuts.md",
+      "sha256_bytes": "242cb3841cced64c3b03c4287696f2635cecee0fcc792895f370d889b1e5ea3f",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-control-input-repair.md",
+      "sha256_bytes": "a9ec4db805c5e7d8bd00c38fff946f1d496462d0dfdd95103dbd4d7ba53757b6",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-cy-desert-media.md",
+      "sha256_bytes": "d74ae9f32b21bc42b16d6832dea20e37ed4e61298794cbd28c5c1c14b480b971",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-grab-compression-comparison.md",
+      "sha256_bytes": "d4744ec85b053214a69d0a8ef366dded2983b22e5c715d9eb52913d3c0a4c713",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-hit-marking-style.md",
+      "sha256_bytes": "90e0fe7f3fd0530f2e66beebd4011bc2b1cde7da5aa8d5a07ec08c3a6eadd0a6",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-human-motion-evaluation.md",
+      "sha256_bytes": "16d74767ee48023dfd1d7ee1b11f432256537694daf1e5fe4f72b80da6b776a1",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-magic-lighting.md",
+      "sha256_bytes": "bbe1efa9e796b382c564b85a042e7cdea40bfcf1608905400a01b73defaaeec6",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-method-selection.md",
+      "sha256_bytes": "8bb53d60c9ce1eeea0ab86bf3b8584535c8d0e5f2f9fe030e01b9ec0c22e0d61",
+      "fixed_source_bytes_match": true,
+      "read_scope": "focused passages",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-objectives-and-tactics-audit.md",
+      "sha256_bytes": "dcd71fb33ed899ec7a6465c699592c4bec44bc0b03be133b71efb2df03697efa",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-occlusion-and-return.md",
+      "sha256_bytes": "630b7c33b4298fd45e165e58fc67d8c9e2a6e26db183cc18ba697c47baf20c37",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-paired-body-control.md",
+      "sha256_bytes": "78f8a47f22233133e9e6ecd8d9f77a1bb6048cadf2df7413a1fb2226910efb86",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-prompt-compression-scope.md",
+      "sha256_bytes": "fe0759bd8622e9f598face200feac44dcd18e2b8c396b9ae3334d05b42466564",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-reference-request-mapping.md",
+      "sha256_bytes": "2651bae3e5d3d5992539b6aff4e635b59b43fcd3964de79386e0c31af10c234b",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-storyboard-grid.md",
+      "sha256_bytes": "3e2b330d10acae89b051f2cf45f6c54c23c27882653ec38c8c0241585609e09f",
+      "fixed_source_bytes_match": true,
+      "read_scope": "title/topic-index and relevant-term screening; specialist body not fully read",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-subjective-view-and-contact.md",
+      "sha256_bytes": "dcd04bfc1ed5afa4dc53358787bc55eb05bb6c058a8395bcf7a7c930b5c6e92c",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-user-skill-merge.md",
+      "sha256_bytes": "196b2cc2b937f1da46eaf898c0d9562ec6cf500800c844e3956d90a4043a2935",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-wuxin-action-and-coverage.md",
+      "sha256_bytes": "e82d699178094b17b907edef7952328352a9754d3a4d9aac777583328400ca05",
+      "fixed_source_bytes_match": true,
+      "read_scope": "full body",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    },
+    {
+      "file": "sources/upstream/xianxia-combat-skill/research/INDEX.md",
+      "sha256_bytes": "924ac8cc80dcca2d77ffb142bcea92f7dfa234c7ee986c5fa9f1e8d27531ff76",
+      "fixed_source_bytes_match": true,
+      "read_scope": "focused passages",
+      "core_adoption_claim": "passage mapping above only; snapshot preservation alone does not establish runtime adoption"
+    }
+  ],
+  "findings": [
+    {
+      "id": "M01",
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+        "lines": [
+          17,
+          17
+        ],
+        "content_sha256_utf8_lf": "50a7b2b12ed46f56047145d41dad47014ee450826b352e45ff2f202dbe2f5326"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            110,
+            110
+          ],
+          "content_sha256_utf8_lf": "94fc913caede9b2da9d967e6450eec2b57857e269bab470868905a93d770f64b"
+        }
+      ],
+      "missing_before_fix": "允许明确未解伏笔的合法分支",
+      "status": "resolved_by_actual_text_recheck",
+      "proof": "现110行明确发挥作用/失去作用/未解威胁三分支。"
+    },
+    {
+      "id": "M02",
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+        "lines": [
+          23,
+          23
+        ],
+        "content_sha256_utf8_lf": "dff06ca6feb0d6c4f2ffb34e474710ca6111b387f837b551927fcf9c224a0636"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            21,
+            21
+          ],
+          "content_sha256_utf8_lf": "31c44309124e14f6af8056cf7b6056cf7692543388bed1e8c613cd16d71f9bdc"
+        }
+      ],
+      "missing_before_fix": "感知遮挡条件",
+      "status": "resolved_by_actual_text_recheck",
+      "proof": "现21行保留范围、遮挡和时间。"
+    },
+    {
+      "id": "M03",
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md",
+        "lines": [
+          146,
+          146
+        ],
+        "content_sha256_utf8_lf": "fade79756445e8b7165842c5aca8ca1aa18b2fcc70f08ea9e0b9005fd1c3bd85"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/choreography.md",
+          "lines": [
+            126,
+            126
+          ],
+          "content_sha256_utf8_lf": "63ae546853ef8274174800c9e7c4b1ea7bda5d1dc2eb3ed7e81d0b47b8e96b1d"
+        }
+      ],
+      "missing_before_fix": "非悲剧共鸣识别/干扰/增幅用途",
+      "status": "resolved_by_actual_text_recheck",
+      "proof": "现126行三种用途及已设依据俱在。"
+    },
+    {
+      "id": "R01",
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-human-motion-evaluation.md",
+        "lines": [
+          5,
+          11
+        ],
+        "content_sha256_utf8_lf": "065fcdf876771ad9e4d39f1c84b9d98f404397e7d13cc5e698fc7ab112d0ba72"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            22,
+            22
+          ],
+          "content_sha256_utf8_lf": "9cba57b356c83009037c55baf144f523d205af10ba45ba7a0892c402e4c22e0c"
+        }
+      ],
+      "missing_before_fix": "人体结构/平滑与成对接点、低置信、按每人记录漏检/身份交换",
+      "status": "resolved_by_actual_text_recheck"
+    },
+    {
+      "id": "R02",
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md",
+        "lines": [
+          17,
+          35
+        ],
+        "content_sha256_utf8_lf": "31ed1f16c27d22f271fe9b9f3b6ea995041199de9c0bbad3f351e2d506f99b00"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            45,
+            45
+          ],
+          "content_sha256_utf8_lf": "6969a66c7dcd6c8abdc5b15b80f73e5daf4dfe67593b7a2c61bf0895402e4b47"
+        }
+      ],
+      "missing_before_fix": "关键词告警按主体阶段复核",
+      "status": "resolved_by_actual_text_recheck"
+    },
+    {
+      "id": "B01",
+      "source": {
+        "file": "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md",
+        "lines": [
+          307,
+          307
+        ],
+        "content_sha256_utf8_lf": "ede0e263788882f4bafceb7ed496d5ef045c933bd6bde5e6afd21bfb0e328233"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/powers-and-formations.md",
+          "lines": [
+            60,
+            69
+          ],
+          "content_sha256_utf8_lf": "2ab303aab971195832b35d9a7ca3c4c3d8c5bf3b8b319372d306933ebe302880"
+        }
+      ],
+      "severity": "P2",
+      "missing": "新prompt移除原手印变化细节后，完整旧型→过渡→新型→阵/术状态→敌回应→维持/取消的联动方法缺少直接权威正文。",
+      "status": "resolved_by_actual_text_recheck",
+      "suggestion": "把详细手印决策与一条可改写句式集中到力量专题，避免靠词表或总体占手代替。",
+      "proof": "实际重读62–68行：可用手、旧型过渡新型、对应术法变化/维持转交、当前持物、可拍取景及敌方持续行动，并有完整原创例句。"
+    },
+    {
+      "id": "R03",
+      "source": {
+        "file": "sources/upstream/xianxia-combat-skill/research/2026-10-07-combat-pipeline-density.md",
+        "lines": [
+          69,
+          71
+        ],
+        "content_sha256_utf8_lf": "2984c9131b598b6e03fce4328820eeb1a3854ca8ad6861b16be20e7fb6eb3e4e"
+      },
+      "target": [
+        {
+          "file": "skills/combat-director/references/review-loop.md",
+          "lines": [
+            82,
+            82
+          ],
+          "content_sha256_utf8_lf": "8e7c0d535a8f96918325a79b2dbe5100de1e75135a087210db9ba85c131db711"
+        }
+      ],
+      "severity": "P2",
+      "missing": "后期加速仅适用于接触因果与连续性成立、唯独节奏过慢的条件，在目前review未明确保留。",
+      "status": "resolved_by_actual_text_recheck",
+      "suggestion": "追加短句边界；加速不能修错接点/解除顺序，也不把原速需求变慢镜。",
+      "proof": "实际重读82行：仅因果/连续性成立且允许的节奏修复使用加速，重算时长声音；接点解除、回应、复制与终态错误不能靠变速补验收。"
+    }
+  ],
+  "observed_file_sha256_bytes": {
+    "outputs/current/xianxia-integration/baseline/skills/combat-director/references/choreography.md": "a6e459dfb93971420b7bff03f1b63b70e0c890ec610b8d4471350dd32f4df1f5",
+    "scripts/validate_content.py": "0c22d8496bdd0a7f83263cded42dd42e3339d071b88de06dfbdb277304c46fef",
+    "skills/combat-director/SKILL.md": "3144a2ba8a3a56dae5b5b3df5e6cd720493cf231a3327df87a38e412375f91d9",
+    "skills/combat-director/references/camera-and-rhythm.md": "cee9ebbcf7f1b3e5e99be00269d6b7ab658d107a884d646edc520a34d7741172",
+    "skills/combat-director/references/choreography.md": "052430e93a8f4f4505453bb821e71d0e0e9bef53b9a1d258d3bb99fe68c218a8",
+    "skills/combat-director/references/clones-and-multi-combat.md": "10571eb9e91e700c7f325a8df8f3bc237aba1441fe6b6f7c5407757181c7642f",
+    "skills/combat-director/references/movement-and-projectiles.md": "9ab5b7f621674ea557b351b86b233f08dde12b4ee3ce702d088e01e67a38d536",
+    "skills/combat-director/references/powers-and-formations.md": "4b4c6d623bd1ea8233c5b3748b6d8d6b23390d5aaad8d1247244215bd8eae65a",
+    "skills/combat-director/references/prompt-construction.md": "26b02242b46258fc027955adebb785ef2c87d028f60f86a70b9ce51d734e9e95",
+    "skills/combat-director/references/reference-and-iteration.md": "c2c588dcdca5cf03d8d49d593e9527e5926684bdee56ef1f9a0fecf35e48d84d",
+    "skills/combat-director/references/review-loop.md": "f1f8497f14a2ca5bd113da8931e6a58075f890ba93fabc1b8fb343597393f40e",
+    "skills/combat-director/references/sound-and-performance.md": "d908d3b9f67e37189692b1aa8df24407e81215176ff76380001161f8e3df36c1",
+    "skills/combat-director/references/style-and-materials.md": "f0b69a8359e5660361c01b00e2319f1575d751573a765a944493beead2d4ee08",
+    "sources/upstream/xianxia-combat-skill/SKILL.md": "954716fd14a73248360bead62f1b26252fafa10015fdde291b5b99e3acb301a5",
+    "sources/upstream/xianxia-combat-skill/references/formats/combat-choreography.md": "3266f859ef147c04eeb46ffc37543848c38d72757173b0aec6605712b31a7366",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-06-concurrent-action-and-compression.md": "9fd3166bc4eaf32645fe0774caee53aac251e6c702c420948af4408bcc85c3da",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-06-feints-and-perception.md": "f75523fa9b576fbe2abac57a6755c0c9d0867a79ebdd9523647ae751e80b1a4a",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-06-objective-and-adaptation.md": "71e95528f2ff863e349675d88e4381977127f50a64608b65fa84abed73d26ace",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-06-recoil-and-recovery.md": "fc2961afa75713559ff5dd716bc273347b46fe42f850b2878dfb0e99ff951729",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-06-sustained-contact.md": "19d991154738396464509a2244a511a6ee7d053d007844eea7bcaf9e5f3df73c",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-06-validation-scope-and-evaluation.md": "e6997509b0776097a2a5b23e0e2a102897ef00e283ced6525f487726eadf7601",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-06-weapon-transfer-and-continuity.md": "764537e8b692072933662a121580322cf15081e42721bea90426cc3833d60fb6",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-cinematic-fight-and-reference-coverage.md": "412ae73a5d9430a8738f17ab3da39733ae88c798168b7b97a955458eaa48c858",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-combat-pipeline-density.md": "9682c60bf845191c75538542bcb6e59dc296d36ee081d130909745e3a3f68ba3",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-continuity-versus-cuts.md": "242cb3841cced64c3b03c4287696f2635cecee0fcc792895f370d889b1e5ea3f",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-grab-compression-comparison.md": "d4744ec85b053214a69d0a8ef366dded2983b22e5c715d9eb52913d3c0a4c713",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-hit-marking-style.md": "90e0fe7f3fd0530f2e66beebd4011bc2b1cde7da5aa8d5a07ec08c3a6eadd0a6",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-human-motion-evaluation.md": "16d74767ee48023dfd1d7ee1b11f432256537694daf1e5fe4f72b80da6b776a1",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-objectives-and-tactics-audit.md": "dcd71fb33ed899ec7a6465c699592c4bec44bc0b03be133b71efb2df03697efa",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-occlusion-and-return.md": "630b7c33b4298fd45e165e58fc67d8c9e2a6e26db183cc18ba697c47baf20c37",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-paired-body-control.md": "78f8a47f22233133e9e6ecd8d9f77a1bb6048cadf2df7413a1fb2226910efb86",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-prompt-compression-scope.md": "fe0759bd8622e9f598face200feac44dcd18e2b8c396b9ae3334d05b42466564",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-subjective-view-and-contact.md": "dcd04bfc1ed5afa4dc53358787bc55eb05bb6c058a8395bcf7a7c930b5c6e92c",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-user-skill-merge.md": "196b2cc2b937f1da46eaf898c0d9562ec6cf500800c844e3956d90a4043a2935",
+    "sources/upstream/xianxia-combat-skill/research/2026-10-07-wuxin-action-and-coverage.md": "e82d699178094b17b907edef7952328352a9754d3a4d9aac777583328400ca05"
+  },
+  "limitations": [
+    "来源完整性审阅不是冷启动创作评估；不以关键词、标题数或脚本分数证明技能表现。",
+    "引用范围hash为UTF-8/LF行内容，文件hash为原字节；变化后必须实际重读与重绑定。",
+    "来源研究按历史阅读/实测边界保留，未重复复现第三方模型或外部样片。",
+    "其他专题仍并行补齐，专项素材/压缩等终验仍由对应审阅覆盖。"
+  ],
+  "conclusion": {
+    "X01_X15": "15组具体条件和例外在现核心正文已有直接证据；先前三处缺失经实际文本重读修正。",
+    "baseline": "26组方法有直接运行正文，其中手印联动经实际补入后的正文复查通过；冗余字面模板允许合并。",
+    "research": "目标/战术/受力/持续接触/控制/交接/感知及核心语义评测决策已承接；R03后期变速边界实际补入并重读，未知背面布局与必要否定也核到现正文。",
+    "completion": "本审阅负责的来源语义覆盖范围已闭合；不代表其他专题、构建/安装或冷启动创作表现验收完成。"
+  },
+  "files_changed_during_audit": [],
+  "recheck_summary": "实际重读所有新增关键修正并对旧已审范围按相同内容指纹重定位，最后重新核验全部源/目标范围与字节指纹；没有按修正承诺签通过。"
+}

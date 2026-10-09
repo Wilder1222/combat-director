@@ -1,0 +1,13 @@
+{
+  "format": "independent-state-audit-regressions/3",
+  "origin": "outputs/current/xianxia-integration/state-audit-round3/report.json",
+  "scope": "original independent device trigger copied without alteration",
+  "cases": [
+    {
+      "id": "ordinary_held_device_trigger",
+      "expected": "accepted",
+      "file": "ordinary_held_device_trigger.plan.json",
+      "sha256": "5b01c349e33f925742c1de8aafd26a8ddbd7ba62dae49a673110ca5481a1af37"
+    }
+  ]
+}

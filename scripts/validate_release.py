@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import zipfile
+import shutil
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -44,6 +45,14 @@ def main():
             source_batches.append({'manifest':str(manifest_path.relative_to(ROOT)).replace('\\','/'),
                                    'files_checked':len(items)})
         run('unittest',[sys.executable,'-m','unittest','discover','-s','tests','-v'])
+        run('content and original case structure',[sys.executable,'-X','utf8','scripts/validate_content.py'])
+        # Optional media dependencies are isolated from core execution. Exercise
+        # the real media regression in the installed interpreter that has Pillow.
+        if __import__('importlib.util', fromlist=['find_spec']).find_spec('PIL') is None:
+            media_python = shutil.which('python')
+            if media_python and Path(media_python).resolve() != Path(sys.executable).resolve():
+                run('optional real media tests',[media_python,'-X','utf8','-m','unittest','discover',
+                    '-s','tests','-p','test_sample_video.py','-v'])
         run('standard schemas',[sys.executable,'scripts/check_schemas.py'])
         run('package structure',[sys.executable,'scripts/project.py','validate'])
         run('build archive',[sys.executable,'scripts/project.py','build'])
@@ -72,6 +81,15 @@ def main():
                 z.extractall(unpacked)
             cli=unpacked/'skills/combat-director/scripts/combat_tool.py'
             library_cli=unpacked/'skills/combat-director/scripts/library_tool.py'
+            entries=list((unpacked/'skills').rglob('SKILL.md'))
+            if entries != [unpacked/'skills/combat-director/SKILL.md']:
+                raise ValueError('Detached package exposes more than the single Skill')
+            state_plan=ROOT/'tests/fixtures/state-audit-round3/ordinary_held_device_trigger.plan.json'
+            state_check="import sys,json;sys.path.insert(0,sys.argv[1]);import combat_tool as t;p=t.read_json(sys.argv[2]);t.validate(p,require_review=False);print(json.dumps({'valid':True,'schema_version':p['schema_version']},ensure_ascii=False))"
+            run('unpacked 1.3 held device state',[sys.executable,'-X','utf8','-c',state_check,
+                unpacked/'skills/combat-director/scripts',state_plan],cwd=tmp)
+            run('unpacked optional media help',[sys.executable,'-X','utf8',
+                unpacked/'skills/combat-director/scripts/sample_video.py','--help'],cwd=tmp)
             run('unpacked library validation',[sys.executable,library_cli,'validate'],cwd=tmp)
             candidates=run('unpacked library lookup',[sys.executable,library_cli,'search','design',
                 '--query','回廊 撤离','--scope','group'],cwd=tmp)

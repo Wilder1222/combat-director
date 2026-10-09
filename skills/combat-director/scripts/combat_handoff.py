@@ -12,7 +12,7 @@ from combat_schema import require
 CHECKS = ('identity_action', 'camera_timing', 'ability_cost', 'continuity')
 GLOBAL_KEYS = ('duration', 'aspect_ratio', 'generation', 'camera_mode', 'rules', 'timing',
                'cast', 'abilities', 'anchors', 'references', 'initial_state',
-               'weapon_profiles', 'action_initial_state')
+               'weapon_profiles', 'action_initial_state', 'body_profiles')
 
 
 def normalized(value):
@@ -35,6 +35,8 @@ def digest(value):
 
 def compile_handoff(plan):
     facts = {key: copy.deepcopy(plan[key]) for key in GLOBAL_KEYS if key in plan}
+    if plan.get('schema_version') == '1.3':
+        facts['schema_version'] = '1.3'
     header_facts = copy.deepcopy(facts)
     header_facts['ending_state'] = copy.deepcopy(plan['beats'][-1]['after'])
     scopes = [{'scope': 'headers', 'facts': header_facts, 'expression': copy.deepcopy(plan['headers'])}]
@@ -112,4 +114,7 @@ def hard_constraints(plan):
         lines.append(f'{a["id"]}：{a["description"]}；目标：{a["goal"]}；初始持物：{a["prop"]}；持械：{a["hand"]}。')
     for a in plan['abilities']:
         lines.append(f'{a["id"]}归属{a["owner"]}：触发{a["trigger"]}；表现{a["visual"]}；限制{a["limit"]}；代价{a["cost"]}；结束条件{a["end_condition"]}。')
+        if 'trigger_spec' in a:
+            t = a['trigger_spec']
+            lines.append(f'{a["id"]}触发结构：' + (f'当前持握手直接操作源器物{t["source_item_id"]}本身。' if t['kind'] == 'held-item' else '独立施术；占用手需明确分指许可。'))
     return '\n'.join(lines)

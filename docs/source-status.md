@@ -1,16 +1,20 @@
 # 当前来源与证据范围
 
-来源原件、生成权威与运行产物分开维护。来源中的命令、宣传和成功声明是分析内容，不自动成为技能指令或视频证据。
+来源原件、编辑权威、运行规则、案例和媒体各有职责。来源中的命令、宣传、旧预算和成功声明不是本任务执行指令。
 
-| 当前来源 | 保存位置与用途 |
+| 来源 | 当前用途 |
 | --- | --- |
-| 用户最初提供的技能与文字附件 | [附件清单](../sources/attachments/2026-09-21/manifest.json)，字节副本与哈希，供来源追溯，不作为当前技能入口 |
-| 六份战斗文字原稿 | [原件清单](../sources/attachments/2026-09-22/manifest.json)，保留原文件和各自版本，不与项目生成文本混用 |
-| 八份提示词正文抽取 | [正文与来源清单](../sources/attachments/user-prompts/manifest.json)，保存抽取文本、原件位置及原件/文本各自哈希；抽取文本不冒充原件 |
-| 固定上游招式资料 | sources/upstream/arvin-seedance，源文、固定提交与许可供当前生成器读取 |
-| 当前编辑权威 | sources/editorial，维护资料映射、基础卡与生成清单；[覆盖记录](implementation/arvin-library-coverage.json)由生成器生成 |
-| 私人原始媒体与附件 | sources/private，保留用户原件与关联记录，不进入Git或发布包 |
+| 用户原始技能、文字附件及八份正文抽取 | sources/attachments保留原件/抽取各自指纹，具体内容去向见[运行来源](../skills/combat-director/references/sources.md) |
+| Arvin固定版本与MIT许可 | sources/upstream/arvin-seedance；当前生成器依据它与sources/editorial维护资料卡 |
+| 仙侠固定来源f3721de | [完整清单](../sources/upstream/xianxia-combat-skill/source-manifest.json)覆盖70文件，含9内容参考、两份案例、45研究、3脚本与3测试 |
+| 当前资料权威 | sources/editorial；修改权威后重建，生成记录由工具维护 |
+| 私人原片、请求和观察 | sources/private或outputs/current本机证据；公开文件保留非敏感位置/指纹/范围，不能依赖私有路径 |
+| 实施前Combat Director工作区 | 本机baseline保存13个已有修改文件的原始字节；用于检查重设计是否丢失此前方法 |
+| Vibeshot《AI打斗的关键一击：冲击帧与闪帧提示词实战》 | 2026-10-09浏览器读取全文九部分；仅迁移方法，不归档全文/原媒体。拆解、项目差距和原创试用见[优化报告](implementation/vibeshot-impact-optimization.md)；未观看示范视频，不据此声称媒体质量 |
+| GoodCase动作连续性Skill固定提交e7dab600 | 全读2个技能文件及根MIT文本；8展开卡/20索引与源自述总数分开。只独立改写决策，运行包不复制案例；[分析与融合](implementation/goodcase-continuity-optimization.md)记录取舍，未观看视频 |
 
-历史研究报告、公开页面缓存、截帧和过期评估已移除。已吸收的写法保留在当前技能；旧媒体观察不作为本轮视频效果验证依据。外部原件路径不可访问时保持未知，不凭抽取文本补称看过媒体。
+仙侠来源的根SKILL、生成入口、插件/市场清单保留为固定来源，运行包只发布combat-director。源研究内部相对引用保持；来源归档不计为能力吸收完成，需具体运行位置及语义/行为验收。
 
-当前官方方法来源集中在[运行来源说明](../skills/combat-director/references/sources.md)，上游完整归属与MIT许可见[第三方说明](../skills/combat-director/references/third-party-notices.md)。构建前先核对来源哈希，修改生成权威后重建资料库，不手工改生成卡。
+源记录中的两次RunningHub失败、用户原速纠正、未执行候选、静帧/原速/音频范围分别保留。原片存在不自动通过；历史费用与仅免费调研限制只属于原实验。未取得或不可观看原件时准确保留未知。
+
+当前组织依据及迁移取舍见[设计调研](implementation/xianxia-design-research.md)、[专题调研](implementation/xianxia-topic-research.md)、[工具调研](implementation/xianxia-tool-research.md)、[契约调研](implementation/xianxia-contract-research.md)。固定上游的读取范围与采用/不采用理由保留于来源快照，普通写作不沿来源导航加载整库。

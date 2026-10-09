@@ -36,7 +36,7 @@ def unique(items, label):
 def validate(plan, max_duration=None, require_review=True):
     require(isinstance(plan, dict), 'plan must be an object')
     version = plan.get('schema_version')
-    require(version in ('1.0', '1.1', '1.2'), 'unsupported schema_version')
+    require(version in ('1.0', '1.1', '1.2', '1.3'), 'unsupported schema_version')
     name = 'combat-plan-v1.schema.json' if version == '1.0' else 'combat-plan.schema.json'
     schema = read_json(SKILL / 'assets' / name)
     check_schema(plan, schema, schema)
@@ -107,12 +107,14 @@ def validate(plan, max_duration=None, require_review=True):
     return plan
 
 
-def migrate(plan):
+def migrate(plan, target_version='1.3'):
     import copy
     validate(plan, require_review=False)
-    require(plan['schema_version'] == '1.0', 'migrate expects legacy 1.0; existing reviews are not overwritten')
+    require(target_version in ('1.2', '1.3'), 'unsupported migration target')
+    require(plan['schema_version'] in ('1.0', '1.1', '1.2') and plan['schema_version'] != target_version,
+            'migrate needs an older contract; current reviews are not overwritten')
     migrated = copy.deepcopy(plan)
-    migrated['schema_version'] = '1.2'
+    migrated['schema_version'] = target_version
     migrated['editorial_reviews'] = {}
     return migrated
 
@@ -248,6 +250,8 @@ def main(argv=None):
             p.add_argument('--receipt', type=Path, required=True)
         if command == 'review-template':
             p.add_argument('--take-id', required=True)
+        if command == 'migrate':
+            p.add_argument('--target-version', choices=('1.2', '1.3'), default='1.3')
     for command in ('review-take','continuation-seed','check-continuation'):
         p = sub.add_parser(command)
         p.add_argument('review', type=Path)
@@ -272,7 +276,7 @@ def main(argv=None):
             write_artifact(compile_handoff(plan), args.out, args.plan)
             print(f'Compiled facts for review: {args.out}')
         elif args.command == 'migrate':
-            write_artifact(migrate(plan), args.out, args.plan)
+            write_artifact(migrate(plan, args.target_version), args.out, args.plan)
             print(f'Migrated; semantic review pending: {args.out}')
         elif args.command == 'apply-review':
             updated = apply_review(plan, read_json(args.receipt))

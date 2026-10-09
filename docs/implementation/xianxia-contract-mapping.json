@@ -1,0 +1,539 @@
+{
+  "format": "xianxia-contract-mapping/1",
+  "date": "2026-10-09",
+  "contract_version": "1.3",
+  "action_state_format": "combat-action-state/2",
+  "take_review_format": "combat-take-review/2",
+  "continuation_format": "combat-continuation/2",
+  "scope": "optional engineering aspects only; source creative semantics are integrated separately",
+  "source_repository": "https://github.com/Wilder1222/xianxia-combat-skill",
+  "source_files": [
+    {
+      "path": "references/formats/combat-choreography.md",
+      "sha256": "3266f859ef147c04eeb46ffc37543848c38d72757173b0aec6605712b31a7366",
+      "line_count": 152
+    },
+    {
+      "path": "references/formats/movement-and-projectiles.md",
+      "sha256": "8e06b4e8d6e3a799ac1ca04c8b22f943f54a8fce90d35fb9de853900d02397e9",
+      "line_count": 57
+    },
+    {
+      "path": "references/formats/powers-and-formations.md",
+      "sha256": "a68339379d2f8fb7e1cf660df477555608c19d8a038627834ad8fb8584057a3b",
+      "line_count": 94
+    },
+    {
+      "path": "references/formats/clones-and-multi-combat.md",
+      "sha256": "f17ba69e814ade70812a1ed564ee4a5065f2e8c235cee57dc876e0a548befaca",
+      "line_count": 37
+    },
+    {
+      "path": "references/formats/video-prompt-grammar.md",
+      "sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+      "line_count": 183
+    }
+  ],
+  "target_fingerprints": {
+    "skills/combat-director/assets/combat-plan.schema.json": "b416395fe833e9de08816220b9f5d5690b6c2e648984fa06f2d7135d091923c7",
+    "skills/combat-director/assets/take-review.schema.json": "a6590ae987159bbacd38b8a3560c77af03323cffcf4ea1cbdd4f90183ba3530c",
+    "skills/combat-director/scripts/combat_state.py": "e0c7784ca6fbd0afb4c3ff73087491a3f271713a041173f4b6098102d079d6ca",
+    "skills/combat-director/scripts/combat_action.py": "cefce36a45682aa5d4fbe72493150cadcace02e3bf3e5c93bb391195661d4b8f",
+    "skills/combat-director/scripts/combat_schema.py": "68e7cd90d40324aa970b704588aadd97b52a76442b090ef519bad7092cd16d54",
+    "skills/combat-director/scripts/combat_handoff.py": "a951e167a12865afc257553f0bc673f1cf9f2b20b2598f85ea19307e475bd0eb",
+    "skills/combat-director/scripts/combat_review.py": "408f2be0b1e080044e831b4d143e7760b6d543c1f357f351bfce7650154881de",
+    "skills/combat-director/scripts/combat_tool.py": "454e80808b638852cbf66d06b08cdd606e72b3a2596b10a9480491a54281ddb6",
+    "skills/combat-director/references/contract.md": "2eac02ae30071b1c46814b093f1bd2527b4ca07c2a38914da960392ccfe26fda",
+    "tests/test_xianxia_contract.py": "bd07c41c7f30569e245d13566f9602f54b454f2e03692cf14de53a0a97f2155a",
+    "tests/test_xianxia_contract_audit.py": "6091d8d43ab6fb0b13b4a955636493394c82c22b11f7ad9dd5b939a64fd44afa",
+    "tests/fixtures/state-audit/cases.json": "f3c1e13f71b5e1f4e71cf157924157ba6a284926b0dac36af4bb3a2c72927542",
+    "tests/fixtures/state-audit-round2/cases.json": "979e911f21c58920c350516df27578a6a3d66b4a7ac69e304f33c3cc298067f8",
+    "tests/fixtures/state-audit-round3/cases.json": "be9462b4bf0c151c6a0aca24e3c84d1c9a168d7d4d736572e1bf571a842f0b2e",
+    "tests/fixtures/state-audit-round4/cases.json": "120d1b01ccbc540fbe97ee6123e219d32436d303065f7edbd07534701056764c"
+  },
+  "records": [
+    {
+      "source_groups": [
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "source": {
+        "path": "references/formats/combat-choreography.md",
+        "line_start": 97,
+        "line_end": 121,
+        "file_sha256": "3266f859ef147c04eeb46ffc37543848c38d72757173b0aec6605712b31a7366"
+      },
+      "capability": "paired contacts, local release and third-party interruption",
+      "disposition": "redesigned",
+      "status": "verified",
+      "implementation": [
+        "combat_state.validate_world",
+        "combat_state._check_event_start",
+        "combat_state._apply_operations",
+        "action_event.contact_ids",
+        "contact_state"
+      ],
+      "tests": [
+        "XianxiaContractTests.test_third_party_releases_one_pair_only",
+        "IndependentStateRegressionTests.test_new_contact_explicitly_interrupts_then_actor_maintains_pair",
+        "IndependentStateRegressionTests.test_same_body_item_contact_can_slide_and_end_then_new_pair_can_form"
+      ],
+      "preserved_conditions": [
+        "wrist control does not block unrelated hand",
+        "each contact remains until that pair is released",
+        "third-party event names original participants",
+        "both endpoint identities persist",
+        "fixed body/item pair identity allows same-object part sliding",
+        "state transitions recheck still-running actions; interruptions are explicit, not blanket overlap prohibition"
+      ],
+      "verification_scope": "synthetic relational positive/negative tests; no physics or actual media review"
+    },
+    {
+      "source_groups": [
+        "X14",
+        "X15"
+      ],
+      "source": {
+        "path": "references/formats/combat-choreography.md",
+        "line_start": 122,
+        "line_end": 129,
+        "file_sha256": "3266f859ef147c04eeb46ffc37543848c38d72757173b0aec6605712b31a7366"
+      },
+      "capability": "ground pickup, joint possession and independent control",
+      "disposition": "redesigned",
+      "status": "verified",
+      "implementation": [
+        "item_state",
+        "combat_state.hand_items",
+        "combat_state._apply_operations",
+        "hand_exception scoped grip/ability/casting state",
+        "abilities[].trigger_spec independent/held-item + source_item_id",
+        "combat_state._trigger_kind",
+        "effective_ability_triggers from actual replay"
+      ],
+      "tests": [
+        "XianxiaContractTests.test_ground_pickup_shared_grip_partial_release_is_one_item",
+        "XianxiaContractTests.test_held_possession_does_not_grant_remote_control",
+        "IndependentStateRegressionTests.test_two_items_one_hand_requires_scoped_grip_and_cannot_expand",
+        "IndependentStateRegressionTests.test_ability_grip_ends_with_activation_and_requires_release_or_new_grip",
+        "IndependentStateRegressionTests.test_finger_casting_exception_is_explicit_and_does_not_free_other_hand",
+        "IndependentRoundTwoRegressionTests.test_cast_permission_applies_on_start_and_during_new_resource_occupation",
+        "IndependentDeviceTriggerTests.test_original_untyped_device_input_is_unchanged_and_compatible",
+        "IndependentDeviceTriggerTests.test_explicit_item_trigger_is_exact_and_independent_takes_priority",
+        "IndependentDeviceTriggerTests.test_item_trigger_requires_declared_source_selected_item_and_actual_body_grip",
+        "IndependentDeviceTriggerTests.test_non_supernatural_flag_does_not_free_occupied_independent_hand",
+        "IndependentDeviceTriggerTests.test_trigger_structure_requires_extended_contract_and_binds_fact_digest",
+        "EmptyHandProjectionRegressionTests.test_original_empty_hand_input_never_invents_grip_or_finger_permission"
+      ],
+      "preserved_conditions": [
+        "holders refer to one physical ID",
+        "pickup source equals actual declared location",
+        "possession does not grant bound control",
+        "exceptional remote/autonomous mode needs source ability and basis",
+        "remote mode requires current active owner/body activation",
+        "one-hand multi-item exception is explicit and bounded; does not clear other hand or item occupancy",
+        "own held-item operation differs from independent casting",
+        "explicit trigger kind/source overrides narrow non-supernatural single-held-device legacy compatibility",
+        "actual source grip, executing body, ability owner and selected item all match; no free-text trigger keyword inference"
+      ],
+      "verification_scope": "synthetic relational positive/negative tests; no physics or actual media review"
+    },
+    {
+      "source_groups": [
+        "X15",
+        "X31"
+      ],
+      "source": {
+        "path": "references/formats/combat-choreography.md",
+        "line_start": 124,
+        "line_end": 128,
+        "file_sha256": "3266f859ef147c04eeb46ffc37543848c38d72757173b0aec6605712b31a7366"
+      },
+      "capability": "hand occupation, maintenance and legal concurrency",
+      "disposition": "redesigned",
+      "status": "verified",
+      "implementation": [
+        "action_event.concurrency",
+        "effect_state.occupied_hands",
+        "combat_state._check_event_start",
+        "hand_exception scoped grip/ability/casting state",
+        "abilities[].trigger_spec independent/held-item + source_item_id",
+        "combat_state._trigger_kind",
+        "effective_ability_triggers from actual replay"
+      ],
+      "tests": [
+        "XianxiaContractTests.test_simultaneous_two_hands_and_explicit_shared_use",
+        "XianxiaContractTests.test_effect_hand_maintenance_and_autonomous_exception",
+        "XianxiaContractTests.test_same_time_writes_cannot_overwrite_another_transfer",
+        "IndependentStateRegressionTests.test_two_items_one_hand_requires_scoped_grip_and_cannot_expand",
+        "IndependentStateRegressionTests.test_ability_grip_ends_with_activation_and_requires_release_or_new_grip",
+        "IndependentStateRegressionTests.test_finger_casting_exception_is_explicit_and_does_not_free_other_hand",
+        "IndependentRoundTwoRegressionTests.test_cast_permission_applies_on_start_and_during_new_resource_occupation",
+        "IndependentDeviceTriggerTests.test_original_untyped_device_input_is_unchanged_and_compatible",
+        "IndependentDeviceTriggerTests.test_explicit_item_trigger_is_exact_and_independent_takes_priority",
+        "IndependentDeviceTriggerTests.test_item_trigger_requires_declared_source_selected_item_and_actual_body_grip",
+        "IndependentDeviceTriggerTests.test_non_supernatural_flag_does_not_free_occupied_independent_hand",
+        "IndependentDeviceTriggerTests.test_trigger_structure_requires_extended_contract_and_binds_fact_digest",
+        "EmptyHandProjectionRegressionTests.test_original_empty_hand_input_never_invents_grip_or_finger_permission"
+      ],
+      "preserved_conditions": [
+        "different hands/bodies may overlap",
+        "shared hand/weapon overlap requires matching explicit mechanism",
+        "autonomous effects need not reserve caster hand",
+        "one mutation per entity per endpoint",
+        "remote mode requires current active owner/body activation",
+        "one-hand multi-item exception is explicit and bounded; does not clear other hand or item occupancy",
+        "own held-item operation differs from independent casting",
+        "explicit trigger kind/source overrides narrow non-supernatural single-held-device legacy compatibility",
+        "actual source grip, executing body, ability owner and selected item all match; no free-text trigger keyword inference"
+      ],
+      "verification_scope": "synthetic relational positive/negative tests; no physics or actual media review"
+    },
+    {
+      "source_groups": [
+        "X20",
+        "X21",
+        "X22"
+      ],
+      "source": {
+        "path": "references/formats/movement-and-projectiles.md",
+        "line_start": 34,
+        "line_end": 57,
+        "file_sha256": "8e06b4e8d6e3a799ac1ca04c8b22f943f54a8fce90d35fb9de853900d02397e9"
+      },
+      "capability": "in-flight attacks and separate termination of emission, supply and control",
+      "disposition": "redesigned",
+      "status": "verified",
+      "implementation": [
+        "effect_state",
+        "combat_state.validate_world",
+        "combat_state._apply_operations",
+        "active_abilities ability_id/body_id"
+      ],
+      "tests": [
+        "XianxiaContractTests.test_stop_supply_preserves_independent_arrow_and_disposes_dependent_shield",
+        "XianxiaContractTests.test_same_identity_bodies_keep_independent_ability_activations"
+      ],
+      "preserved_conditions": [
+        "independent emitted arrow survives stopping emission",
+        "sustained dependency requires explicit ending/fall/freeze disposition",
+        "physical flying weapon and item agree on location",
+        "trajectory/next threat persist without claiming computed flight physics"
+      ],
+      "verification_scope": "synthetic relational positive/negative tests; no physics or actual media review"
+    },
+    {
+      "source_groups": [
+        "X27",
+        "X28"
+      ],
+      "source": {
+        "path": "references/formats/powers-and-formations.md",
+        "line_start": 68,
+        "line_end": 94,
+        "file_sha256": "a68339379d2f8fb7e1cf660df477555608c19d8a038627834ad8fb8584057a3b"
+      },
+      "capability": "attachment, orientation, extent and local formation failure",
+      "disposition": "redesigned",
+      "status": "verified",
+      "implementation": [
+        "formation_state",
+        "formation_node",
+        "combat_state.validate_world",
+        "combat_state._apply_operations"
+      ],
+      "tests": [
+        "XianxiaContractTests.test_formation_moves_with_attachment_and_only_local_node_breaks"
+      ],
+      "preserved_conditions": [
+        "attachment refers to declared body/item/anchor or world",
+        "orientation and range separate from source/maintenance",
+        "partial state retains intact and broken nodes",
+        "local update cannot silently remove the other nodes"
+      ],
+      "verification_scope": "synthetic relational positive/negative tests; no physics or actual media review"
+    },
+    {
+      "source_groups": [
+        "X30"
+      ],
+      "source": {
+        "path": "references/formats/clones-and-multi-combat.md",
+        "line_start": 5,
+        "line_end": 24,
+        "file_sha256": "f17ba69e814ade70812a1ed564ee4a5065f2e8c235cee57dc876e0a548befaca"
+      },
+      "capability": "same identity multiple bodies and exit artifacts",
+      "disposition": "redesigned",
+      "status": "verified",
+      "implementation": [
+        "body_profile",
+        "body_state",
+        "combat_state.profiles_for",
+        "combat_state.state_text_v2"
+      ],
+      "tests": [
+        "XianxiaContractTests.test_clone_exit_preserves_real_dropped_item_and_identity_count",
+        "XianxiaContractTests.test_same_identity_bodies_keep_independent_ability_activations"
+      ],
+      "preserved_conditions": [
+        "stable body ID independent of screen position",
+        "active/inactive/exited lifecycle separate from appearance",
+        "interactivity declared from actual setting",
+        "real held items and contacts handled before exit",
+        "ability activation per body independent"
+      ],
+      "verification_scope": "synthetic relational positive/negative tests; no physics or actual media review"
+    },
+    {
+      "source_groups": [
+        "X31"
+      ],
+      "source": {
+        "path": "references/formats/clones-and-multi-combat.md",
+        "line_start": 25,
+        "line_end": 37,
+        "file_sha256": "f17ba69e814ade70812a1ed564ee4a5065f2e8c235cee57dc876e0a548befaca"
+      },
+      "capability": "specified simultaneous interactions without accidental ordering",
+      "disposition": "redesigned",
+      "status": "verified",
+      "implementation": [
+        "combat_state.validate_state_plan endpoint ordering",
+        "action_event.participant_ids",
+        "action_event.concurrency"
+      ],
+      "tests": [
+        "XianxiaContractTests.test_simultaneous_two_hands_and_explicit_shared_use",
+        "XianxiaContractTests.test_same_time_writes_cannot_overwrite_another_transfer",
+        "XianxiaContractTests.test_third_party_releases_one_pair_only"
+      ],
+      "preserved_conditions": [
+        "overlapping intervals retained",
+        "same-time ending transitions precede starts",
+        "ownership/hand/connection resources explicitly checked",
+        "spatial coverage and friendly fire still require prose/visual review"
+      ],
+      "verification_scope": "synthetic relational positive/negative tests; no physics or actual media review"
+    },
+    {
+      "source_groups": [
+        "X45"
+      ],
+      "source": {
+        "path": "references/formats/video-prompt-grammar.md",
+        "line_start": 155,
+        "line_end": 180,
+        "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5"
+      },
+      "capability": "unfinished event and observation-based continuation",
+      "disposition": "redesigned",
+      "status": "verified",
+      "implementation": [
+        "pending_state",
+        "action_event.continues/completion",
+        "combat_review.validate_take",
+        "combat_review.continuation_seed",
+        "combat_review.check_continuation",
+        "combat_state._validate_declarations",
+        "combat_action.action_text using effective replay interrupted_events"
+      ],
+      "tests": [
+        "XianxiaContractTests.test_ongoing_event_carries_to_observed_continuation_not_plan_ending",
+        "XianxiaContractTests.test_observed_unknown_never_becomes_planned_structured_ending",
+        "IndependentStateRegressionTests.test_ongoing_across_two_segments_keeps_origin_and_completion_is_linked",
+        "IndependentStateRegressionTests.test_explicit_exit_interruption_cancels_later_endpoint_callbacks",
+        "IndependentRoundTwoRegressionTests.test_canceled_interrupter_never_truncates_projection_or_completed_pickup",
+        "IndependentRoundTwoRegressionTests.test_canceled_known_callback_keeps_unexecuted_dynamic_conditions_unchecked",
+        "IndependentRoundTwoRegressionTests.test_canceled_values_still_reject_bad_declared_references"
+      ],
+      "preserved_conditions": [
+        "unfinished route/contact/threat remains tracked",
+        "observed_action_state initially null",
+        "observed text projects observed structure",
+        "next state matches accepted observation, not planned end",
+        "evidence kind remains synthetic/user report/actual source",
+        "ongoing continues preserves original source event across multiple segments",
+        "completed event ID never reopens and completion requires continues",
+        "all authored callback structures and declared references checked statically even if execution is canceled",
+        "dynamic possession/activation/lifecycle checks only on effective callbacks",
+        "Chinese action projection reads effective replay rather than all planned interruption proposals"
+      ],
+      "verification_scope": "synthetic relational positive/negative tests; no physics or actual media review"
+    }
+  ],
+  "compatibility": {
+    "read_versions": [
+      "1.0 structure only",
+      "1.1",
+      "1.2",
+      "1.3"
+    ],
+    "migration": "explicit from 1.0/1.1/1.2 to 1.3; empty editorial reviews; preserve legacy state without guessing fields",
+    "legacy_authority_preserved": true,
+    "protected_existing_contract_rules_preserved": true
+  },
+  "verification": {
+    "command": "python -X utf8 -m unittest discover -s tests -p test_xianxia_contract*.py",
+    "tests": 35,
+    "outcome": "passed",
+    "evidence_kind": "synthetic",
+    "real_media_reviewed": false,
+    "regression_commands": [
+      {
+        "command": "python -X utf8 -m unittest discover -s tests -p test_combat_tool.py",
+        "tests": 26,
+        "skipped": 1,
+        "outcome": "passed"
+      },
+      {
+        "command": "python -X utf8 -m unittest discover -s tests -p test_review_flow.py",
+        "tests": 10,
+        "outcome": "passed"
+      },
+      {
+        "command": "python -X utf8 -m unittest discover -s tests -p test_action_evidence.py",
+        "tests": 10,
+        "outcome": "passed"
+      },
+      {
+        "command": "python -X utf8 -m unittest discover -s tests -p test_compact_prompt.py",
+        "tests": 16,
+        "outcome": "passed"
+      }
+    ],
+    "independent_trigger_regressions": [
+      {
+        "id": "remote_item_after_control_ability_end",
+        "expected": "rejected",
+        "actual": "rejected",
+        "error": "S: remote control needs active ability on controlling body",
+        "trigger_sha256": "322607debf653de18dbc1f062e64287dfb95731ac6141ccfa7341ee95565b281",
+        "public_fixture": "tests/fixtures/state-audit/remote_item_after_control_ability_end.plan.json"
+      },
+      {
+        "id": "remote_control_declared_but_never_active",
+        "expected": "rejected",
+        "actual": "rejected",
+        "error": "S: remote control needs active ability on controlling body",
+        "trigger_sha256": "08e060f3edd49aa67bd32cd8c72fb771a7c8f5b4dbbd98e81ded67ebba8014fc",
+        "public_fixture": "tests/fixtures/state-audit/remote_control_declared_but_never_active.plan.json"
+      },
+      {
+        "id": "active_contact_same_id_replaces_endpoint",
+        "expected": "rejected",
+        "actual": "rejected",
+        "error": "C1: stable contact cannot replace body/item endpoints; end old pair and create new",
+        "trigger_sha256": "f2d62d1dd3ff2718b2a820f92d99f868d1ff09d21a40b7fc6221416a66368d26",
+        "public_fixture": "tests/fixtures/state-audit/active_contact_same_id_replaces_endpoint.plan.json"
+      },
+      {
+        "id": "contact_blocks_hand_mid_existing_event",
+        "expected": "rejected",
+        "actual": "rejected",
+        "error": "LONG_SWING: hand has an active contact; name its maintained/changed pair",
+        "trigger_sha256": "7f56840bfde3a05100e436feb868a225fe13caec860324996a2b7d11491b63dd",
+        "public_fixture": "tests/fixtures/state-audit/contact_blocks_hand_mid_existing_event.plan.json"
+      },
+      {
+        "id": "ongoing_continuation_preserves_original_event",
+        "expected": "accepted",
+        "actual": "accepted",
+        "error": "",
+        "trigger_sha256": "497881f079092ce528a1b70bf421988a6eb5bc43a01f5467afdf4c4755bdc547",
+        "public_fixture": "tests/fixtures/state-audit/ongoing_continuation_preserves_original_event.plan.json"
+      },
+      {
+        "id": "completed_pending_reopens_same_id",
+        "expected": "rejected",
+        "actual": "rejected",
+        "error": "P: completed pending ID cannot be reused",
+        "trigger_sha256": "2b336d276cb34a6fe0c87cb6a95cc7023c81164944a343a0cdbaf79647e00bd1",
+        "public_fixture": "tests/fixtures/state-audit/completed_pending_reopens_same_id.plan.json"
+      },
+      {
+        "id": "pending_completion_without_continues",
+        "expected": "rejected",
+        "actual": "rejected",
+        "error": "P: completion must explicitly continue pending event",
+        "trigger_sha256": "42613d095b37ef8b2e77ec91eae63af9713d36c3c2022af5b31f3bcfa906e8f0",
+        "public_fixture": "tests/fixtures/state-audit/pending_completion_without_continues.plan.json"
+      },
+      {
+        "id": "body_exits_mid_existing_active_event",
+        "expected": "rejected",
+        "actual": "rejected",
+        "error": "LONG_ACTION: acting body is not active",
+        "trigger_sha256": "6b282ffde20a1562ed36c5d95cf54cf7909ca4dd284851f852f75dbbe7528e29",
+        "public_fixture": "tests/fixtures/state-audit/body_exits_mid_existing_active_event.plan.json"
+      }
+    ],
+    "original_trigger_inputs_modified": false,
+    "independent_final_recheck": "pending root-directed bounded round5 original auditor",
+    "round2_trigger_regressions": [
+      {
+        "id": "canceled_future_interrupt_does_not_fire",
+        "expected": "accepted",
+        "file": "canceled_future_interrupt_does_not_fire.plan.json",
+        "sha256": "8661d48886ce3e8abe3ca66930ffebb7a0a22f8c3825adab12b92997eb59721c",
+        "actual": "accepted",
+        "error": "",
+        "public_fixture": "tests/fixtures/state-audit-round2/canceled_future_interrupt_does_not_fire.plan.json"
+      },
+      {
+        "id": "canceled_callback_still_requires_domain_schema",
+        "expected": "rejected",
+        "file": "canceled_callback_still_requires_domain_schema.plan.json",
+        "sha256": "c48143ddf554db31eb6aec56564b1ff30755474817bc2c0bed0c43a9294001a2",
+        "actual": "rejected",
+        "error": "LONG/item/S: missing required fields ['control_ability_id', 'control_basis', 'control_mode', 'controller_id', 'holders', 'location', 'status']",
+        "public_fixture": "tests/fixtures/state-audit-round2/canceled_callback_still_requires_domain_schema.plan.json"
+      },
+      {
+        "id": "canceled_callback_still_requires_declared_ability",
+        "expected": "rejected",
+        "file": "canceled_callback_still_requires_declared_ability.plan.json",
+        "sha256": "c7d0b070dd4ce920b4db77143a2bc9b5940daabff805b36d9dd814d60fa48180",
+        "actual": "rejected",
+        "error": "LONG: undeclared ability reference NOT_DECLARED",
+        "public_fixture": "tests/fixtures/state-audit-round2/canceled_callback_still_requires_declared_ability.plan.json"
+      },
+      {
+        "id": "grip_only_exception_does_not_allow_casting",
+        "expected": "rejected",
+        "file": "grip_only_exception_does_not_allow_casting.plan.json",
+        "sha256": "b42f5c30f8a7b7415d72a0c1e468e62fb3e1ead76250ba50447ebfa1f1a1e24d",
+        "actual": "rejected",
+        "error": "CAST: occupied casting hand needs explicit allows_casting permission",
+        "public_fixture": "tests/fixtures/state-audit-round2/grip_only_exception_does_not_allow_casting.plan.json"
+      }
+    ],
+    "round2_original_plans_checked": 21,
+    "round2_original_plan_outcomes_matched": 21,
+    "round3_device_trigger": {
+      "id": "ordinary_held_device_trigger",
+      "expected": "accepted",
+      "file": "ordinary_held_device_trigger.plan.json",
+      "sha256": "5b01c349e33f925742c1de8aafd26a8ddbd7ba62dae49a673110ca5481a1af37",
+      "actual": "accepted",
+      "public_fixture": "tests/fixtures/state-audit-round3/ordinary_held_device_trigger.plan.json"
+    },
+    "round3_adjacent_plans_checked": 10,
+    "round3_adjacent_plan_outcomes_matched": 10,
+    "round4_empty_hand_projection": {
+      "id": "empty_hand_cast_without_exception",
+      "expected": "accepted",
+      "file": "empty_hand_cast_without_exception.plan.json",
+      "sha256": "e416f734c47cc9529e4caba00e645b979b0fa2216eb53bd80184a719e5ed98e2",
+      "actual": "accepted without invented holding hand or permission"
+    }
+  },
+  "not_verified": [
+    "distance/reach or biomechanical truth",
+    "space transformation or local-node physical propagation",
+    "visual clone count and motion/contact continuity",
+    "actual provider video/audio generation",
+    "host plugin single-entry discovery"
+  ]
+}

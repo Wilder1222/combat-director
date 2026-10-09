@@ -26,13 +26,17 @@ class ReleaseBuildTests(unittest.TestCase):
         for folder in ('skills','.codex-plugin','sources/upstream'):
             shutil.copytree(ROOT/folder,self.root/folder,ignore=shutil.ignore_patterns('__pycache__'))
         for name in ('scripts/project.py','scripts/build_arvin_library.py','scripts/arvin_items.py','scripts/generated_files.py',
+                     'scripts/validate_content.py',
                      'sources/editorial/library-base.json','sources/editorial/arvin-facets.json',
                      'sources/editorial/arvin-generated.json','docs/implementation/arvin-library-coverage.json'):
             path=self.root/name;path.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(ROOT/name,path)
         version=json.loads((self.root/'.codex-plugin/plugin.json').read_text(encoding='utf-8'))['version']
         self.archive=self.root/'dist'/f'combat-director-{version}.zip'
         self.archive.parent.mkdir()
-        with zipfile.ZipFile(self.archive,'w') as z:z.writestr('previous.txt','previous verified artifact')
+        previous=self.root/'previous.txt'
+        previous.write_text('previous verified artifact',encoding='utf-8')
+        project.write_archive(self.root,[previous],self.archive)
+        previous.unlink()
 
     def test_all_drift_paths_are_rejected_without_overwriting_previous_zip(self):
         changes={
@@ -139,6 +143,46 @@ class ReleaseBuildTests(unittest.TestCase):
             self.assertGreater(len(project.validate(unpacked)),100)
             with self.assertRaisesRegex(ValueError,'require the repository'):
                 project.build(unpacked)
+
+    def test_unknown_or_edited_previous_archive_is_preserved(self):
+        with zipfile.ZipFile(self.archive,'w') as archive:
+            archive.writestr('manual.txt','unrecognized user output')
+        before=self.archive.read_bytes()
+        with self.assertRaisesRegex(ValueError,'recognized build'):
+            project.build(self.root)
+        self.assertEqual(before,self.archive.read_bytes())
+        self.archive.unlink()
+        project.build(self.root)
+        with zipfile.ZipFile(self.archive,'a') as archive:
+            archive.writestr('manual.txt','human addition')
+        before=self.archive.read_bytes()
+        with self.assertRaisesRegex(ValueError,'unrecognized files'):
+            project.build(self.root)
+        self.assertEqual(before,self.archive.read_bytes())
+
+    def test_second_skill_or_unbundled_reference_fails_before_write(self):
+        before=self.archive.read_bytes()
+        extra=self.root/'skills/xianxia-combat/SKILL.md'
+        extra.parent.mkdir()
+        extra.write_text('---\nname: xianxia-combat\ndescription: legacy\n---\n',encoding='utf-8')
+        with self.assertRaisesRegex(ValueError,'exactly one'):
+            project.build(self.root)
+        self.assertEqual(before,self.archive.read_bytes())
+        extra.unlink()
+        ref=self.root/'skills/combat-director/references/review-loop.md'
+        original=ref.read_text(encoding='utf-8')
+        ref.write_text(original+'\n[Missing](missing-unique.md)\n',encoding='utf-8')
+        with self.assertRaises(ValueError):
+            project.build(self.root)
+        self.assertEqual(before,self.archive.read_bytes())
+        # The repository target exists, but extraction omits its source directory.
+        # Link resolution alone must not approve this runtime dependency.
+        source=self.root/'sources/upstream/xianxia-combat-skill/SKILL.md'
+        self.assertTrue(source.is_file())
+        ref.write_text(original+'\n[Unbundled source](../../../sources/upstream/xianxia-combat-skill/SKILL.md)\n',encoding='utf-8')
+        with self.assertRaisesRegex(ValueError,'Skill link escapes package'):
+            project.build(self.root)
+        self.assertEqual(before,self.archive.read_bytes())
 
 
 if __name__=='__main__':unittest.main()

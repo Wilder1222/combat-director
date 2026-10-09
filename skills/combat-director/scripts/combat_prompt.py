@@ -12,6 +12,7 @@ from combat_handoff import compile_handoff, digest
 from combat_schema import require
 
 SHOT_LABELS = ('整体风格', '战斗人物', '环境空间关系', '前中后景与远近层次', '景别与远近景切换', '武器样式', '行为逻辑', '人物行动轨迹', '身体与武器动作轨迹', '空间环境交互', '招式', '技能与能力边界', '法阵', '法术效果', '手印变化', '命中效果', '战斗特效', '光影', '运镜', '切镜', '动态模糊', '时间与速度', '面部微表情', '眼神', '情绪')
+GROUPED_SHOT_LABELS = ('画面与动作', '摄影', '衔接', '声音')
 
 
 CHECKS = ('event_coverage', 'scene_camera', 'identity_ability', 'rhythm', 'constraints')
@@ -72,7 +73,7 @@ def check_shot_details(text, section_id):
     headings = list(re.finditer(r'^【([^】\r\n]+)】', text, re.MULTILINE))
     labels = [m.group(1) for m in headings]
     require(bool(labels), f'{section_id}: each shot needs relevant Chinese type labels')
-    require(all(label in SHOT_LABELS for label in labels),
+    require(all(label in SHOT_LABELS + GROUPED_SHOT_LABELS for label in labels),
             f'{section_id}: use unnumbered Chinese type labels')
     require(len(labels) == len(set(labels)), f'{section_id}: duplicate shot labels')
     require(not text[:headings[0].start()].strip(), f'{section_id}: place prose under its shot labels')
@@ -89,13 +90,18 @@ def render(plan, projection, detailed=False):
     beats = {b['id']: b for b in plan['beats']}
     blocks = [projection['opening'].strip() if detailed
               else '【战斗设置】\n' + projection['opening'].strip()]
+    one_take_details = detailed and plan['camera_mode'] == 'one-take'
+    if one_take_details:
+        start, end = plan['beats'][0]['start'], plan['beats'][-1]['end']
+        blocks.append(f'全镜{start:g}–{end:g}秒（镜长{end-start:g}秒）')
     action_label = '连续动作' if plan['camera_mode'] == 'one-take' else '动作分镜'
     for source, section in zip(plan['sections'], projection['sections']):
         start = beats[source['beat_ids'][0]]['start']
         end = beats[source['beat_ids'][-1]]['end']
         if detailed:
             check_shot_details(section['text'], section['section_id'])
-        heading = f'{start:g}–{end:g}秒（镜长{end-start:g}秒）'
+        interval_label = '镜内节拍' if one_take_details else '镜长'
+        heading = f'{start:g}–{end:g}秒（{interval_label}{end-start:g}秒）'
         if not detailed:
             heading = f'【{action_label}】' + heading
         blocks.append(heading + '\n' + section['text'].strip())

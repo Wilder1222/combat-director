@@ -1,0 +1,31 @@
+{
+  "format": "independent-state-audit-regressions/2",
+  "origin": "outputs/current/xianxia-integration/state-audit-round2/report.json",
+  "scope": "original independent trigger inputs, copied without alteration",
+  "cases": [
+    {
+      "id": "canceled_future_interrupt_does_not_fire",
+      "expected": "accepted",
+      "file": "canceled_future_interrupt_does_not_fire.plan.json",
+      "sha256": "8661d48886ce3e8abe3ca66930ffebb7a0a22f8c3825adab12b92997eb59721c"
+    },
+    {
+      "id": "canceled_callback_still_requires_domain_schema",
+      "expected": "rejected",
+      "file": "canceled_callback_still_requires_domain_schema.plan.json",
+      "sha256": "c48143ddf554db31eb6aec56564b1ff30755474817bc2c0bed0c43a9294001a2"
+    },
+    {
+      "id": "canceled_callback_still_requires_declared_ability",
+      "expected": "rejected",
+      "file": "canceled_callback_still_requires_declared_ability.plan.json",
+      "sha256": "c7d0b070dd4ce920b4db77143a2bc9b5940daabff805b36d9dd814d60fa48180"
+    },
+    {
+      "id": "grip_only_exception_does_not_allow_casting",
+      "expected": "rejected",
+      "file": "grip_only_exception_does_not_allow_casting.plan.json",
+      "sha256": "b42f5c30f8a7b7415d72a0c1e468e62fb3e1ead76250ba50447ebfa1f1a1e24d"
+    }
+  ]
+}

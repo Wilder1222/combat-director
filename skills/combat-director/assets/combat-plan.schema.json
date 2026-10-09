@@ -1,13 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Combat Plan 1.2",
+  "title": "Combat Plan 1.3",
   "type": "object",
   "properties": {
     "schema_version": {
       "type": "string",
       "enum": [
         "1.1",
-        "1.2"
+        "1.2",
+        "1.3"
       ]
     },
     "id": {
@@ -224,27 +225,42 @@
       "minItems": 0
     },
     "action_initial_state": {
-      "type": "object",
-      "properties": {
-        "actors": {
+      "oneOf": [
+        {
           "type": "object",
-          "additionalProperties": {
-            "$ref": "#/$defs/action_actor"
-          }
+          "properties": {
+            "actors": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/$defs/action_actor"
+              }
+            },
+            "environment": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "actors",
+            "environment"
+          ],
+          "additionalProperties": false
         },
-        "environment": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string",
-            "minLength": 1
-          }
+        {
+          "$ref": "#/$defs/action_state_v2"
         }
+      ]
+    },
+    "body_profiles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/body_profile"
       },
-      "required": [
-        "actors",
-        "environment"
-      ],
-      "additionalProperties": false
+      "minItems": 2,
+      "uniqueItems": true
     }
   },
   "required": [
@@ -344,6 +360,25 @@
         },
         "supernatural": {
           "type": "boolean"
+        },
+        "trigger_spec": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "enum": [
+                "independent",
+                "held-item"
+              ]
+            },
+            "source_item_id": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "source_item_id"
+          ],
+          "additionalProperties": false
         }
       },
       "required": [
@@ -626,7 +661,14 @@
             "actors": {
               "type": "object",
               "additionalProperties": {
-                "$ref": "#/$defs/action_actor_patch"
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/action_actor_patch"
+                  },
+                  {
+                    "$ref": "#/$defs/body_patch"
+                  }
+                ]
               }
             },
             "environment": {
@@ -1092,6 +1134,89 @@
             "restrictions_added"
           ],
           "additionalProperties": false
+        },
+        "state_ops": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/state_op"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "weapon_mode": {
+          "type": "string",
+          "enum": [
+            "held",
+            "remote",
+            "autonomous"
+          ]
+        },
+        "participant_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "continues": {
+          "type": "string"
+        },
+        "completion": {
+          "type": "string",
+          "enum": [
+            "complete",
+            "ongoing"
+          ]
+        },
+        "concurrency": {
+          "type": "object",
+          "properties": {
+            "group": {
+              "type": "string",
+              "minLength": 1
+            },
+            "basis": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "group",
+            "basis"
+          ],
+          "additionalProperties": false
+        },
+        "contact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "interrupts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "event_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "event_id",
+              "reason"
+            ],
+            "additionalProperties": false
+          },
+          "uniqueItems": true
         }
       },
       "required": [
@@ -1109,6 +1234,747 @@
         "contact",
         "outcome",
         "transfers"
+      ],
+      "additionalProperties": false
+    },
+    "body_state": {
+      "type": "object",
+      "properties": {
+        "zone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "facing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "support": {
+          "type": "string",
+          "minLength": 1
+        },
+        "damage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "no_right_hand",
+              "no_left_hand",
+              "no_running"
+            ]
+          },
+          "minItems": 0
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "inactive",
+            "exited"
+          ]
+        }
+      },
+      "required": [
+        "zone",
+        "facing",
+        "support",
+        "damage",
+        "constraints",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "body_patch": {
+      "type": "object",
+      "properties": {
+        "zone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "facing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "support": {
+          "type": "string",
+          "minLength": 1
+        },
+        "damage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "no_right_hand",
+              "no_left_hand",
+              "no_running"
+            ]
+          },
+          "minItems": 0
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "inactive",
+            "exited"
+          ]
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "body_profile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identity_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "original",
+            "clone",
+            "illusion",
+            "trail"
+          ]
+        },
+        "can_interact": {
+          "type": "boolean"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "identity_id",
+        "kind",
+        "can_interact",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "item_state": {
+      "type": "object",
+      "properties": {
+        "holders": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "body_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "hand": {
+                "type": "string",
+                "enum": [
+                  "left",
+                  "right"
+                ]
+              }
+            },
+            "required": [
+              "body_id",
+              "hand"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "location": {
+          "type": "string"
+        },
+        "controller_id": {
+          "type": "string"
+        },
+        "control_mode": {
+          "type": "string",
+          "enum": [
+            "none",
+            "held",
+            "remote",
+            "autonomous"
+          ]
+        },
+        "control_ability_id": {
+          "type": "string"
+        },
+        "control_basis": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "destroyed",
+            "vanished"
+          ]
+        }
+      },
+      "required": [
+        "holders",
+        "location",
+        "controller_id",
+        "control_mode",
+        "control_ability_id",
+        "control_basis",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "contact_endpoint": {
+      "type": "object",
+      "properties": {
+        "body_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "part": {
+          "type": "string",
+          "minLength": 1
+        },
+        "item_id": {
+          "type": "string"
+        },
+        "blocks": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "left",
+              "right"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "body_id",
+        "part",
+        "item_id",
+        "blocks"
+      ],
+      "additionalProperties": false
+    },
+    "contact_state": {
+      "type": "object",
+      "properties": {
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contact_endpoint"
+          },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "phase": {
+          "type": "string",
+          "enum": [
+            "active",
+            "released"
+          ]
+        },
+        "mechanism": {
+          "type": "string",
+          "minLength": 1
+        },
+        "release_condition": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "endpoints",
+        "phase",
+        "mechanism",
+        "release_condition"
+      ],
+      "additionalProperties": false
+    },
+    "effect_state": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "projectile",
+            "sustained",
+            "control",
+            "autonomous"
+          ]
+        },
+        "owner_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "controller_id": {
+          "type": "string"
+        },
+        "ability_id": {
+          "type": "string"
+        },
+        "item_id": {
+          "type": "string"
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "interruption": {
+          "type": "string",
+          "enum": [
+            "persist",
+            "end",
+            "fall",
+            "freeze"
+          ]
+        },
+        "phase": {
+          "type": "string",
+          "enum": [
+            "active",
+            "in_flight",
+            "ended",
+            "falling",
+            "frozen"
+          ]
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trajectory": {
+          "type": "string",
+          "minLength": 1
+        },
+        "next_threat": {
+          "type": "string"
+        },
+        "occupied_hands": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "body_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "hand": {
+                "enum": [
+                  "left",
+                  "right"
+                ]
+              }
+            },
+            "required": [
+              "body_id",
+              "hand"
+            ],
+            "additionalProperties": false
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "kind",
+        "owner_id",
+        "controller_id",
+        "ability_id",
+        "item_id",
+        "dependencies",
+        "interruption",
+        "phase",
+        "location",
+        "trajectory",
+        "next_threat"
+      ],
+      "additionalProperties": false
+    },
+    "formation_node": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "phase": {
+          "type": "string",
+          "enum": [
+            "active",
+            "broken",
+            "ended"
+          ]
+        },
+        "function": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "location",
+        "phase",
+        "function"
+      ],
+      "additionalProperties": false
+    },
+    "formation_state": {
+      "type": "object",
+      "properties": {
+        "owner_id": {
+          "type": "string"
+        },
+        "attachment": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "world",
+                "body",
+                "item",
+                "anchor"
+              ]
+            },
+            "id": {
+              "type": "string"
+            },
+            "position": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "kind",
+            "id",
+            "position"
+          ],
+          "additionalProperties": false
+        },
+        "orientation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "shape": {
+          "type": "string",
+          "minLength": 1
+        },
+        "range": {
+          "type": "string",
+          "minLength": 1
+        },
+        "function": {
+          "type": "string",
+          "minLength": 1
+        },
+        "maintenance": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "phase": {
+          "type": "string",
+          "enum": [
+            "active",
+            "partial",
+            "ended"
+          ]
+        },
+        "nodes": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/formation_node"
+          }
+        }
+      },
+      "required": [
+        "owner_id",
+        "attachment",
+        "orientation",
+        "shape",
+        "range",
+        "function",
+        "maintenance",
+        "dependencies",
+        "phase",
+        "nodes"
+      ],
+      "additionalProperties": false
+    },
+    "pending_state": {
+      "type": "object",
+      "properties": {
+        "actor_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "source_event_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "phase": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "completed"
+          ]
+        },
+        "trajectory": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contact": {
+          "type": "string",
+          "minLength": 1
+        },
+        "next_threat": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "actor_id",
+        "target_id",
+        "source_event_id",
+        "phase",
+        "trajectory",
+        "contact",
+        "next_threat"
+      ],
+      "additionalProperties": false
+    },
+    "action_state_v2": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "const": "combat-action-state/2"
+        },
+        "actors": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/body_state"
+          }
+        },
+        "environment": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "items": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/item_state"
+          }
+        },
+        "contacts": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/contact_state"
+          }
+        },
+        "effects": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/effect_state"
+          }
+        },
+        "formations": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/formation_state"
+          }
+        },
+        "pending_events": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/pending_state"
+          }
+        },
+        "active_abilities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ability_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "body_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "ability_id",
+              "body_id"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "hand_exceptions": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/hand_exception"
+          }
+        }
+      },
+      "required": [
+        "format",
+        "actors",
+        "environment",
+        "items",
+        "contacts",
+        "effects",
+        "formations",
+        "pending_events",
+        "active_abilities"
+      ],
+      "additionalProperties": false
+    },
+    "state_op": {
+      "type": "object",
+      "properties": {
+        "domain": {
+          "type": "string",
+          "enum": [
+            "body",
+            "item",
+            "contact",
+            "effect",
+            "formation",
+            "pending",
+            "hand_exception"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "operation": {
+          "type": "string",
+          "enum": [
+            "create",
+            "update",
+            "end"
+          ]
+        },
+        "value": {
+          "type": "object"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "from_location": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "domain",
+        "id",
+        "operation",
+        "value",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "hand_exception": {
+      "type": "object",
+      "properties": {
+        "body_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hand": {
+          "enum": [
+            "left",
+            "right"
+          ]
+        },
+        "item_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "kind": {
+          "enum": [
+            "grip",
+            "ability"
+          ]
+        },
+        "ability_id": {
+          "type": "string"
+        },
+        "allows_casting": {
+          "type": "boolean"
+        },
+        "phase": {
+          "enum": [
+            "active",
+            "ended"
+          ]
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "body_id",
+        "hand",
+        "item_ids",
+        "kind",
+        "ability_id",
+        "allows_casting",
+        "phase",
+        "basis"
       ],
       "additionalProperties": false
     }

@@ -1,4 +1,4 @@
 interface:
   display_name: "Combat Director · 战斗导演"
-  short_description: "根据场景、战斗类型、人物与招式，编写高能战斗视频详细提示词"
-  default_prompt: "使用 $combat-director，根据我描述的场景、战斗类型、人物和招式，输出一份可直接复制的详细中文战斗视频提示词。"
+  short_description: "统一中文战斗提示词入口，支持详细动作、仙侠机制、素材适配与成片诊断。"
+  default_prompt: "使用 $combat-director，按我的场景、人物、招式和时长编写详细中文战斗视频提示词。"

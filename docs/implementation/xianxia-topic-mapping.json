@@ -1,0 +1,1891 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-10-09",
+  "source_repository": "D:/study/projects/xianxia-combat-skill",
+  "source_commit": "f3721de6e21af8cd5186c88079bf92d252ec416e",
+  "scope": "X16-X44（X40压缩正文由主代理维护）及X47-X48、X50；现有Combat Director空间/摄影/效果方法迁出",
+  "source_location_note": "source_path 和行区间针对固定源提交；来源快照路径为 sources/upstream/xianxia-combat-skill/<source_path>。当前项目已有章节的行号是融合前工作区基线定位，后续目标以章节名维护。",
+  "validation_boundary": "本文件记录人工文本条件对读，不声明模型生成、独立盲测、连续运动、接触或音画质量已验证。目标引用与范围由本轮静态检查验证，行为验收由主代理独立复核。",
+  "groups": [
+    {
+      "id": "X16",
+      "sources": [
+        {
+          "source_path": "references/formats/movement-and-projectiles.md",
+          "start_line": 5,
+          "end_line": 22,
+          "section": "移动方式与持续追击",
+          "file_sha256": "8e06b4e8d6e3a799ac1ca04c8b22f943f54a8fce90d35fb9de853900d02397e9",
+          "slice_sha256_utf8": "f060cc4870451ff27224c9bcd5d6f6c632609f6f98dfc6704148a83ea0e9ffa8"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/movement-and-projectiles.md",
+          "section": "移动方式与持续追击",
+          "start_line": 5,
+          "end_line": 23,
+          "file_sha256": "9ab5b7f621674ea557b351b86b233f08dde12b4ee3ce702d088e01e67a38d536",
+          "slice_sha256_utf8": "d0a5846edac34706e8256c221de1445c106711544636ea4b043370034b198ecf"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "四种运动分别处理支撑、触发、到达和制动，承接当前项目的瞬移状态保持。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "御空不补踏板或落地；瞬移保留原剑与裂甲且在新地标出现",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "唯一剑离脚前需其他既有承载；禁止所有替代承载时不暗增风环",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 165,
+          "end_line": 201,
+          "section": "单剑载人与离剑攻击 / 御空能力不改成落地借力",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "2924e4cd8145523ca78f8f8989555860e0693d26b5736987c6dac864bb350215"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X17",
+      "sources": [
+        {
+          "source_path": "references/formats/movement-and-projectiles.md",
+          "start_line": 16,
+          "end_line": 22,
+          "section": "追逐的相对运动",
+          "file_sha256": "8e06b4e8d6e3a799ac1ca04c8b22f943f54a8fce90d35fb9de853900d02397e9",
+          "slice_sha256_utf8": "f7dc102cff127d9172265b5fc22ccb481925f21a1f4ef1afccdfb4119c78f66b"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/movement-and-projectiles.md",
+          "section": "移动方式与持续追击",
+          "start_line": 5,
+          "end_line": 23,
+          "file_sha256": "9ab5b7f621674ea557b351b86b233f08dde12b4ee3ce702d088e01e67a38d536",
+          "slice_sha256_utf8": "d0a5846edac34706e8256c221de1445c106711544636ea4b043370034b198ecf"
+        }
+      ],
+      "decision": "新增",
+      "implementation": "以速度、截路、折返或既设范围说明由追逐进入兵器距离。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "同向同速、固定间距时保留未追上或远攻",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "迎面错身后需回转/并行，不无因悬停形成近战",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 22,
+          "end_line": 38,
+          "section": "连续追击",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "cb60b0c25430faa2e3cb7aea8464568549acf6461691c95365b99cd906504534"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X18",
+      "sources": [
+        {
+          "source_path": "references/formats/movement-and-projectiles.md",
+          "start_line": 24,
+          "end_line": 32,
+          "section": "地形变化与通行条件",
+          "file_sha256": "8e06b4e8d6e3a799ac1ca04c8b22f943f54a8fce90d35fb9de853900d02397e9",
+          "slice_sha256_utf8": "395f445bad4424b5eb96776d8969bbb2530072b9facce684013cfcf45ff9e415"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/movement-and-projectiles.md",
+          "section": "地形变化与通行条件",
+          "start_line": 24,
+          "end_line": 31,
+          "file_sha256": "9ab5b7f621674ea557b351b86b233f08dde12b4ee3ce702d088e01e67a38d536",
+          "slice_sha256_utf8": "1ecf46ab265b4e61144eb6ca56390a7f91a104b240a5eb5f569877aded7593eb"
+        },
+        {
+          "path": "skills/combat-director/references/movement-and-projectiles.md",
+          "section": "换区与支撑接力",
+          "start_line": 32,
+          "end_line": 39,
+          "file_sha256": "9ab5b7f621674ea557b351b86b233f08dde12b4ee3ce702d088e01e67a38d536",
+          "slice_sha256_utf8": "f0f18a5f23f6efc871e0296c541e145b83cb6f8d6dba06fb7b52c9f5f630cecd"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "把外观损坏、倒落阶段、落定位置和真实剩余开口分开，合并现有地形接力方法。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "浅水花不强加地裂、滑倒或绕路",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "裂门斜抵门框仍挡路，追者不自动停战等清障",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 324,
+          "end_line": 337,
+          "section": "外观反馈与通路变化",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "ae637f60089b43f4264af5f10b837c9044121b97affa7217b73e5256dfd329e2"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X19",
+      "sources": [
+        {
+          "source_path": "references/formats/movement-and-projectiles.md",
+          "start_line": 28,
+          "end_line": 32,
+          "section": "通行与经过者尺寸",
+          "file_sha256": "8e06b4e8d6e3a799ac1ca04c8b22f943f54a8fce90d35fb9de853900d02397e9",
+          "slice_sha256_utf8": "9ed55e8cefe393ce4a116ca9a14c7617b360f78a4b0cd37b5e552fa086cd23ab"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/movement-and-projectiles.md",
+          "section": "地形变化与通行条件",
+          "start_line": 24,
+          "end_line": 31,
+          "file_sha256": "9ab5b7f621674ea557b351b86b233f08dde12b4ee3ce702d088e01e67a38d536",
+          "slice_sha256_utf8": "1ecf46ab265b4e61144eb6ca56390a7f91a104b240a5eb5f569877aded7593eb"
+        }
+      ],
+      "decision": "新增",
+      "implementation": "缺口按当前身体、携物和兵器姿态判断，视觉遮挡与物理通行分别维护。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "人能侧过但不可放下宽匣时走已有另一出口，不缩匣",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "破桥只断地面路线，保留无障碍空域中的既设御空",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 324,
+          "end_line": 337,
+          "section": "外观反馈与通路变化",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "ae637f60089b43f4264af5f10b837c9044121b97affa7217b73e5256dfd329e2"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X20",
+      "sources": [
+        {
+          "source_path": "references/formats/movement-and-projectiles.md",
+          "start_line": 34,
+          "end_line": 38,
+          "section": "实体、投射与指定分剑",
+          "file_sha256": "8e06b4e8d6e3a799ac1ca04c8b22f943f54a8fce90d35fb9de853900d02397e9",
+          "slice_sha256_utf8": "d92fb6bf7a2f3d217a95f512f4c69ae3be656bde129afd0348defe76f73458eb"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/movement-and-projectiles.md",
+          "section": "离手兵器与返回路径",
+          "start_line": 40,
+          "end_line": 49,
+          "file_sha256": "9ab5b7f621674ea557b351b86b233f08dde12b4ee3ce702d088e01e67a38d536",
+          "slice_sha256_utf8": "89090160ad4ca46e6ddfc1587801123f55c494b34072f169b3c691bf5a5ea00f"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "分化/发出/收束核原件与术剑数量和各自职责，保留原主剑承载或握持。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "原剑脚下加四术剑共五件，四剑攻节点、原剑不走",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "不得全局禁复制删指定分化，数量对但五剑全离脚仍失败",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 259,
+          "end_line": 277,
+          "section": "物件易手与指定分化",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "075dd2155427be0911ad0ff67c107300124e940946b25f4e184fc8f0a79865b4"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X21",
+      "sources": [
+        {
+          "source_path": "references/formats/movement-and-projectiles.md",
+          "start_line": 40,
+          "end_line": 42,
+          "section": "偏转与返回路径",
+          "file_sha256": "8e06b4e8d6e3a799ac1ca04c8b22f943f54a8fce90d35fb9de853900d02397e9",
+          "slice_sha256_utf8": "1f1b5fbb86a69f3463475f6f5a1035a0b52d22b2aaf15e6eb8b430dbfcb120bb"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/movement-and-projectiles.md",
+          "section": "离手兵器与返回路径",
+          "start_line": 40,
+          "end_line": 49,
+          "file_sha256": "9ab5b7f621674ea557b351b86b233f08dde12b4ee3ce702d088e01e67a38d536",
+          "slice_sha256_utf8": "89090160ad4ca46e6ddfc1587801123f55c494b34072f169b3c691bf5a5ea00f"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "新方向、控制方式、返程障碍、再握/承载连续，现有离手句式从编排迁移为机制权威。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "主人绕柱或同伴进入回线需改道/拦截/既设空间召回",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "链绳保连接松紧与回收，不当自由飞剑；出画不算回手",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 354,
+          "end_line": 364,
+          "section": "遮挡与重新入画",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "58c1d270e2b4629cf86de0d9ca35f9701e229ea35ce25cc6476846beac01b503"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X22",
+      "sources": [
+        {
+          "source_path": "references/formats/movement-and-projectiles.md",
+          "start_line": 44,
+          "end_line": 57,
+          "section": "发出后的维持与终止",
+          "file_sha256": "8e06b4e8d6e3a799ac1ca04c8b22f943f54a8fce90d35fb9de853900d02397e9",
+          "slice_sha256_utf8": "43b5e6f9cccd15f3f27a4f6f5065a3fe5322bd9374476c989f00702c75e38194"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/movement-and-projectiles.md",
+          "section": "发出后的维持与终止",
+          "start_line": 50,
+          "end_line": 61,
+          "file_sha256": "9ab5b7f621674ea557b351b86b233f08dde12b4ee3ce702d088e01e67a38d536",
+          "slice_sha256_utf8": "dfc6664c84ef55a31cc2901c8ca70524c57842807de421509b7f61f675315fb4"
+        }
+      ],
+      "decision": "新增",
+      "implementation": "停新发射、断供能、失操控与攻击本体终止分别维护四类机制。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "停射仍有自持符矢，收手仅停止转向时实剑沿原方向继续",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "用户指定撤手散全部气刃则散，地形旧痕不恢复；自主锁定不自动穿墙",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 201,
+          "end_line": 215,
+          "section": "同一中断对不同攻击的影响",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "852d4f419516abebb35ae20754437c5c2fc55f085583637b9fe7ca03669b3917"
+        },
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 380,
+          "end_line": 397,
+          "section": "停射不抹去已发符矢",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "0bf7394e7011914ce537d15e461a4c4f50a11e92fcf972a9f45e74debb7f04d1"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X23",
+      "sources": [
+        {
+          "source_path": "references/formats/powers-and-formations.md",
+          "start_line": 7,
+          "end_line": 18,
+          "section": "屏障与碰撞结果",
+          "file_sha256": "a68339379d2f8fb7e1cf660df477555608c19d8a038627834ad8fb8584057a3b",
+          "slice_sha256_utf8": "a6152502c4550ab5f5eebd99d41bca47e435e14e34ad7ef04de2bccbb06a4edd"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/powers-and-formations.md",
+          "section": "屏障与碰撞结果",
+          "start_line": 5,
+          "end_line": 17,
+          "file_sha256": "9f6724b538005314b3a6aed3855ca2b2a7430728e3570113e56e14032c3b229b",
+          "slice_sha256_utf8": "b89c53ada627bc7f890cb19b0334db35f2c2c7a7f724985f5b0719b2dc632e88"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "分别维护攻击、屏障、身体的阻停/偏转/穿透/绕行状态，扩展现有防线表达。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "盾与符矢同耗尽可人物无伤失遮护",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "仅透光不证明伤害透墙，囚阵不当保护盾；反射不保证击中原施术者",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 433,
+          "end_line": 449,
+          "section": "盾与符矢耗尽，守方无伤但失去遮护",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "79524136aa8beda389b31a55bbee027683790bf065452fab5379a8e26e734946"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X24",
+      "sources": [
+        {
+          "source_path": "references/formats/powers-and-formations.md",
+          "start_line": 20,
+          "end_line": 24,
+          "section": "多重力叠加",
+          "file_sha256": "a68339379d2f8fb7e1cf660df477555608c19d8a038627834ad8fb8584057a3b",
+          "slice_sha256_utf8": "8bf1f7d3de0044f8da8590e22b1c7f01367e449d155aa50cac2a14d022ba717c"
+        },
+        {
+          "source_path": "references/formats/powers-and-formations.md",
+          "start_line": 51,
+          "end_line": 51,
+          "section": "功法融合职责",
+          "file_sha256": "a68339379d2f8fb7e1cf660df477555608c19d8a038627834ad8fb8584057a3b",
+          "slice_sha256_utf8": "2f50796d7cd329f56ac6fe492074056fa4cab1263518693ca335c342d8717a33"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/powers-and-formations.md",
+          "section": "多重力、功法融合与蓄势",
+          "start_line": 18,
+          "end_line": 25,
+          "file_sha256": "9f6724b538005314b3a6aed3855ca2b2a7430728e3570113e56e14032c3b229b",
+          "slice_sha256_utf8": "ed32a6513aacd5e1c9381f26ee316859fd1d2b1fa9c2c4e43c5555b3d9d9c5fa"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "每重改变不同状态，功法分工、汇合、持手/媒介兼容与代价分别写，逐层防御可按已有越层机制。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "弯盾/扩裂/破口可一招多层，不强制九重",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "颜色混合不证明兼容/增幅，先困后断和同面合流分别编排",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X25",
+      "sources": [
+        {
+          "source_path": "references/formats/powers-and-formations.md",
+          "start_line": 45,
+          "end_line": 49,
+          "section": "境界压制与优势范围",
+          "file_sha256": "a68339379d2f8fb7e1cf660df477555608c19d8a038627834ad8fb8584057a3b",
+          "slice_sha256_utf8": "d9614f5957142c42b0ca20b64ae212af78e4de07a695569026fb346014e61c33"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/powers-and-formations.md",
+          "section": "境界压制与相克条件",
+          "start_line": 26,
+          "end_line": 38,
+          "file_sha256": "9f6724b538005314b3a6aed3855ca2b2a7430728e3570113e56e14032c3b229b",
+          "slice_sha256_utf8": "e345089d794ee45a75fc7b91b07e85e6bb92189c36de79d426811b7c5e6480b9"
+        }
+      ],
+      "decision": "新增",
+      "implementation": "境界差用投入/结果对照，优势限定到实际能力；越级目标完成不等于强者被打败。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "正面挡住不证明背面无弱点",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "低境界护同伴走可完成，不强加顿悟/重伤/击败对手",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 521,
+          "end_line": 530,
+          "section": "压缩包融合的条件核查",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "b2d450198f3f456f719ab59d5ffab102320bbecf393c6cfb98341c2a77badd94"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X26",
+      "sources": [
+        {
+          "source_path": "references/formats/powers-and-formations.md",
+          "start_line": 26,
+          "end_line": 37,
+          "section": "相克与反转",
+          "file_sha256": "a68339379d2f8fb7e1cf660df477555608c19d8a038627834ad8fb8584057a3b",
+          "slice_sha256_utf8": "21bab014dd18df8572cef789358edaffb8c9d14b07059668ae69eabd913c4720"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/powers-and-formations.md",
+          "section": "境界压制与相克条件",
+          "start_line": 26,
+          "end_line": 38,
+          "file_sha256": "9f6724b538005314b3a6aed3855ca2b2a7430728e3570113e56e14032c3b229b",
+          "slice_sha256_utf8": "e345089d794ee45a75fc7b91b07e85e6bb92189c36de79d426811b7c5e6480b9"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "偏转、切断、过载、诱导均有线索、限制、利用与代价，不以色名定克制。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "转盾导偏后侧翼暴露；耗节点攻方也耗储备",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "没有建立连接依赖不临时断供；追踪转向限制由当前设定提供",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X27",
+      "sources": [
+        {
+          "source_path": "references/formats/powers-and-formations.md",
+          "start_line": 68,
+          "end_line": 85,
+          "section": "法阵与破阵",
+          "file_sha256": "a68339379d2f8fb7e1cf660df477555608c19d8a038627834ad8fb8584057a3b",
+          "slice_sha256_utf8": "1228498d121e4b3784a0237983ba6077e7f13963cfab243a4c6a338d9b6fa755"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/powers-and-formations.md",
+          "section": "法阵的来源、附着与范围",
+          "start_line": 45,
+          "end_line": 59,
+          "file_sha256": "9f6724b538005314b3a6aed3855ca2b2a7430728e3570113e56e14032c3b229b",
+          "slice_sha256_utf8": "72841fe77af0e9fb91d089645ebc25493479452beffb02ece41aafb4943a8fd2"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "来源/供能/位置/附着/朝向/自旋/范围/限制独立，遗留触发与直接定身保留。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "舟附阵随舟平移但面朝西可不随舟旋转",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "掌前盾可释放定址；腕环追踪不定身；离减速阵解除减速但伤势保留",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 309,
+          "end_line": 322,
+          "section": "法阵来源、随动与作用范围",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "ed701e5066c276412652e2c981037c986a824881b6b056454c8e0e73d096c302"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X28",
+      "sources": [
+        {
+          "source_path": "references/formats/powers-and-formations.md",
+          "start_line": 87,
+          "end_line": 94,
+          "section": "破阵的可见推理",
+          "file_sha256": "a68339379d2f8fb7e1cf660df477555608c19d8a038627834ad8fb8584057a3b",
+          "slice_sha256_utf8": "c6bbfae8c887c6263540ccb871614cc475ac933257356fc60f3c0636b0fa6391"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/powers-and-formations.md",
+          "section": "破阵的可见推理",
+          "start_line": 60,
+          "end_line": 65,
+          "file_sha256": "9f6724b538005314b3a6aed3855ca2b2a7430728e3570113e56e14032c3b229b",
+          "slice_sha256_utf8": "bb50af344a3d09b430f43ff2cb3773dcd62f2dd9ea87f177b15a2480ed7cd12b"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "线索/试探/窗口/旧痕利用完整，局部与全崩依节点关系区分，当前旧痕回收和留置光钉机制并入。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "北柱供环断只消北幻影，别区仍在",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "全阵崩需传递依赖；普通尾迹不自动连爆节点",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 39,
+          "end_line": 66,
+          "section": "观察与破阵",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "3ea6517f675082d54f636faeddff9dd2a9c1b3be58bb2c560868db798c2e772a"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X29",
+      "sources": [
+        {
+          "source_path": "references/formats/powers-and-formations.md",
+          "start_line": 53,
+          "end_line": 66,
+          "section": "体型差与异形对手",
+          "file_sha256": "a68339379d2f8fb7e1cf660df477555608c19d8a038627834ad8fb8584057a3b",
+          "slice_sha256_utf8": "c1ca7af1553c0b8d286b2c6f1a8dfe2670937d7d2b97b16e6af4c6e79d8eafb7"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/powers-and-formations.md",
+          "section": "体型差、法相与异形对手",
+          "start_line": 66,
+          "end_line": 73,
+          "file_sha256": "9f6724b538005314b3a6aed3855ca2b2a7430728e3570113e56e14032c3b229b",
+          "slice_sha256_utf8": "61d82d14bb6998cc5155112e267c13d0d0d3208574f225a782cacb1e0d4dd72f"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "尺度、结构、可达部位、实际攻击覆盖和剩余威胁维护，承接当前法相显形/控制与首击前预告。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "巨兽可快、小者高境可正挡；大者不自动迟钝",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "巨爪落空不算击败，局部损伤不全身倒；御空不强制落地",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 328,
+          "end_line": 362,
+          "section": "巨爪落空后的环境威胁 / 小体型高修为者正面承接",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "abea3ad541633ef25c57d06bf2c33485218d43f96b34feae30548d659c112ccc"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X30",
+      "sources": [
+        {
+          "source_path": "references/formats/clones-and-multi-combat.md",
+          "start_line": 5,
+          "end_line": 23,
+          "section": "分身、幻影与残影",
+          "file_sha256": "f17ba69e814ade70812a1ed564ee4a5065f2e8c235cee57dc876e0a548befaca",
+          "slice_sha256_utf8": "bc7c486d7e2bc1a4760105fe0ef892061e710d5f5abe51bb664a70a3a46458e4"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/clones-and-multi-combat.md",
+          "section": "分身、幻影与残影",
+          "start_line": 5,
+          "end_line": 22,
+          "file_sha256": "10571eb9e91e700c7f325a8df8f3bc237aba1441fe6b6f7c5407757181c7642f",
+          "slice_sha256_utf8": "518511d808470e0f755241e100b6aeafec2e1736c34416885182443a4dc4d601"
+        }
+      ],
+      "decision": "新增",
+      "implementation": "能力先于名称，数量、同貌身份、分工、兵器来源、回传、逐接点解除与真实遗留物全保留。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "本体加二共三；一分为二共二；不以视角数当身体数",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "遮挡不退场，粒子不证明身体消失；推门分身消散后门保留",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 293,
+          "end_line": 327,
+          "section": "身法残影不新增攻击者 / 同貌分身分工与退场",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "b15dae4db24e92e35a1190b33ff60bd8679c3ee9e143618e7a90bd9d6d00d172"
+        },
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 143,
+          "end_line": 161,
+          "section": "同脸分身属于明确要求",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "ca20d7edf17374758c1c6c7c3cd22b44ef1e91615516af36fa88c95de4aa0854"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X31",
+      "sources": [
+        {
+          "source_path": "references/formats/clones-and-multi-combat.md",
+          "start_line": 25,
+          "end_line": 37,
+          "section": "多人协同",
+          "file_sha256": "f17ba69e814ade70812a1ed564ee4a5065f2e8c235cee57dc876e0a548befaca",
+          "slice_sha256_utf8": "3efaa122ae1741dd5711a3bd72d7a610e60072a2244b97a69e36a8e039efc44b"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/clones-and-multi-combat.md",
+          "section": "多人持续施压",
+          "start_line": 23,
+          "end_line": 30,
+          "file_sha256": "10571eb9e91e700c7f325a8df8f3bc237aba1441fe6b6f7c5407757181c7642f",
+          "slice_sha256_utf8": "7cec08465912a43c396f986307f72a657f0c6c50072d63bd4833777e5eb344d2"
+        },
+        {
+          "path": "skills/combat-director/references/clones-and-multi-combat.md",
+          "section": "同步接点与友军通路",
+          "start_line": 31,
+          "end_line": 37,
+          "file_sha256": "10571eb9e91e700c7f325a8df8f3bc237aba1441fe6b6f7c5407757181c7642f",
+          "slice_sha256_utf8": "2c98946cc436e7297e52592844b0b677a36e289d08989900133ff125e5c49cd2"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "具名包含计数、持续侧压、同窗并发和多处接点覆盖维护，射线发出前/后处理不同。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "四护卫含队长共四，队长另带四共五；倒地出画不自动减少人数",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "两掌两盾同步可成立，短剑跨远点不可凭词成立；发后同伴入线不能停射清弹",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 202,
+          "end_line": 219,
+          "section": "两路施压中的脱围",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "bbb75183c6686ac785cc1e841f7c59f976a37dc7d992f48d26b8ad754621c4f4"
+        },
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 177,
+          "end_line": 192,
+          "section": "压缩仍保留同步双挡",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "79426cd221f01c22edf1b8fe90a6e9bbfaf603fe180021a517509168fcd6405b"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X32",
+      "sources": [
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 3,
+          "end_line": 16,
+          "section": "风格与材质",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "c0ce121387b06fd259643b18b68e255736b69b124a1fcb2c0f15f962b4fabcbc"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/style-and-materials.md",
+          "section": "风格转换与景别细节",
+          "start_line": 5,
+          "end_line": 17,
+          "file_sha256": "f0b69a8359e5660361c01b00e2319f1575d751573a765a944493beead2d4ee08",
+          "slice_sha256_utf8": "d7d838d2b1c38a7dd3c2fef3208d1e09d3e1fd5974afed572aaf9867a393a2ad"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "风格只改呈现，景别/动作决定皮肤布料金属皮革细节，保持能力和固定机位。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "CGI电影感不改真人，真人发光瞳孔和屏障保留",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "全景不塞毛孔；真人感不强制手持/浅景深，材质不另停展示",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 504,
+          "end_line": 530,
+          "section": "真人质感与变招守门 / 压缩包融合的条件核查",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "846a97d6cbaffe5e578f40c2baa894c583b14c621cf6d8cbbf9b89557036ec35"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X33",
+      "sources": [
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 59,
+          "end_line": 77,
+          "section": "镜头服务事件",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "433323a235c8abe3a800ec9cc5eb5487c65f19dd2b4409fab936f2f595208eb6"
+        },
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 83,
+          "end_line": 85,
+          "section": "画幅与全段覆盖",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "9613294d772c8d59371ec404fe194dee0edb9b7351b7dd412b774014d65ef4b9"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/camera-and-rhythm.md",
+          "section": "摄影信息任务",
+          "start_line": 5,
+          "end_line": 21,
+          "file_sha256": "cee9ebbcf7f1b3e5e99be00269d6b7ab658d107a884d646edc520a34d7741172",
+          "slice_sha256_utf8": "988fb00bebcebcafebc456b80bab006f92e05107694846337c34f5f04b41ba82"
+        },
+        {
+          "path": "skills/combat-director/references/camera-and-rhythm.md",
+          "section": "视点、镜头形式与竖屏",
+          "start_line": 52,
+          "end_line": 61,
+          "file_sha256": "cee9ebbcf7f1b3e5e99be00269d6b7ab658d107a884d646edc520a34d7741172",
+          "slice_sha256_utf8": "db86dae9a16ac316409251550efba6be57af4c8227ab2ad62f3605721c47f7a2"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "摄影以信息目的和全段可见包络组织，不以参数独自定景别，竖屏重算实际入模裁切。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "35mm不独定全景，f/2.8不许模糊指定后方施术者",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "9:16不删侧翼/缩剑/改长镜，头顶空白不补左右丢剑尖",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 84,
+          "end_line": 108,
+          "section": "相机换边与攻守交换的覆盖/摄影/竖屏反例",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "f9ca59cedf4580f05f23f4fa0fef0484bc4429f575824065d411634f2d56d541"
+        },
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 468,
+          "end_line": 485,
+          "section": "竖屏同框的一次剑刃交锋",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "698314e3e773655db35b18474279dfd3442d8d602c73246e9d585e2a88c832ce"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X34",
+      "sources": [
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 87,
+          "end_line": 97,
+          "section": "场景方向与画面方向",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "d2c2886d8a08d7cc295e544420087ca52a69f25588b2f2d04807319386dbf1bd"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/camera-and-rhythm.md",
+          "section": "方向参照与换机位",
+          "start_line": 40,
+          "end_line": 51,
+          "file_sha256": "cee9ebbcf7f1b3e5e99be00269d6b7ab658d107a884d646edc520a34d7741172",
+          "slice_sha256_utf8": "6f319c77389fd68c21fb80f7289ca0a3605a7723d6822e1f353d95e961d3da54"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "世界地标、身体左右、画面左右独立，动态轴线和固定左右条件统一。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "绕机位不换持手/伤口或实际桥北南",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "固定位置+半环绕+全程同画面侧互斥，不能镜像换身份解决",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 69,
+          "end_line": 97,
+          "section": "相机换边与攻守交换",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "f9a9bbc8a75e80294ccb69303a0d41207df3b058e43480073ff1b58394994e53"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X35",
+      "sources": [
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 77,
+          "end_line": 81,
+          "section": "切镜与主观视点",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "8d784da2dc9f286f721d80053e1ccfac192f2a7d362c9837ebced29157d2d6db"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/camera-and-rhythm.md",
+          "section": "视点、镜头形式与竖屏",
+          "start_line": 52,
+          "end_line": 61,
+          "file_sha256": "cee9ebbcf7f1b3e5e99be00269d6b7ab658d107a884d646edc520a34d7741172",
+          "slice_sha256_utf8": "db86dae9a16ac316409251550efba6be57af4c8227ab2ad62f3605721c47f7a2"
+        }
+      ],
+      "decision": "新增",
+      "implementation": "眼位/过肩/外部/神识区分；真硬切、连续变景别、后期切段独立。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "眼位可自见手剑盾，正脸要反射；已设神识不强套肉眼",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "三个阶段不证明三切镜，切开连续片不产生固定新机位",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 92,
+          "end_line": 106,
+          "section": "剪辑形式、眼位、硬切到全景独立条件",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "ee07254c1f93039bc855b4efc0ea180cb7638cc4f47baa3062383eb3ecd80c33"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X36",
+      "sources": [
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 99,
+          "end_line": 105,
+          "section": "动作阶段与切点",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "c5acd4afac97edb35e6b37e6909fdf633fda9a26ae963bda96f4d132797919a0"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/camera-and-rhythm.md",
+          "section": "动作阶段与切点",
+          "start_line": 95,
+          "end_line": 106,
+          "file_sha256": "cee9ebbcf7f1b3e5e99be00269d6b7ab658d107a884d646edc520a34d7741172",
+          "slice_sha256_utf8": "80d71020179a39b122e18cb9635454fb9cc6291de0e0e8c956acb918042b6078"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "接触前冻结/接触顿挫/全帧停格/人物冻相机绕区分，同击跨镜接续重看省略不重算。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "冻结两刃一指间隙不添受击；角度投影重合不接触",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "复制一帧不换视角；重看不加伤耗；省略结果不证明接触过程",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 217,
+          "end_line": 227,
+          "section": "冻结阶段与切点审阅",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "e6e74be38e541d097a80cd9c5f131c68b6b365c2f2fcc1e05b4aa43384e4d4ba"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X37",
+      "sources": [
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 33,
+          "end_line": 45,
+          "section": "离散时长、慢镜与成片时间",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "67f8ea4f1f2e977de610e85a52c78fc5f40399f7116288311690a54f29158956"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/camera-and-rhythm.md",
+          "section": "倍率、停格与成片时间",
+          "start_line": 107,
+          "end_line": 113,
+          "file_sha256": "cee9ebbcf7f1b3e5e99be00269d6b7ab658d107a884d646edc520a34d7741172",
+          "slice_sha256_utf8": "b4a5ff9de31f199229c3013d34dbc1374ca3a81d4d808f1c010f4db4c43b088a"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "原速、素材、倍率、使用窗口、生成长度、追加停格、重叠、渐变分别计时，帧率独立。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "0.2秒四分之一=0.8秒，已给0.8不再除；8秒加0.25=8.25",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "两10秒重叠1=19；保时长24到48fps不变4秒；再变速从当前素材长度算",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 229,
+          "end_line": 242,
+          "section": "慢镜、倍率与帧率的边界",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "a02aa7efc861670c2673b0f11de192e85a33681064e4c80f7c3d44a3010d3d8a"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X38",
+      "sources": [
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 107,
+          "end_line": 119,
+          "section": "声音与攻防事件",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "98c0e288dbe12f1cdae2cf341e9f4c2e7e7e7debb860f3f1263724cb03fecd31"
+        },
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 124,
+          "end_line": 124,
+          "section": "声桥、画外声与配乐",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "ecc72a7837c60e442c857d8e5417ef7ed0ee7031ab4b9c47359ab654478813e1"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/sound-and-performance.md",
+          "section": "声音范围",
+          "start_line": 5,
+          "end_line": 15,
+          "file_sha256": "d908d3b9f67e37189692b1aa8df24407e81215176ff76380001161f8e3df36c1",
+          "slice_sha256_utf8": "9d773979a1b060be2bf4977eed024fa25c941778e3b4cb8092cd1f405421ed47"
+        },
+        {
+          "path": "skills/combat-director/references/sound-and-performance.md",
+          "section": "声源与动作阶段",
+          "start_line": 16,
+          "end_line": 29,
+          "file_sha256": "d908d3b9f67e37189692b1aa8df24407e81215176ff76380001161f8e3df36c1",
+          "slice_sha256_utf8": "2fd1ce6667e009c160efbd4949576a30dabbced1826eb1e6729fee9feba8b38c"
+        }
+      ],
+      "decision": "新增",
+      "implementation": "四种无声范围、挥空/碰触/摩擦/持续/解除/余响分别按声源阶段维护。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "全静音不底噪、角色无声不喘息，无配乐仍可法令",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "首帧相抵不补撞击，静止不刮擦，分离后持续声止而余振可衰减",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 162,
+          "end_line": 175,
+          "section": "声音范围与局部修正",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "0a3e4f376ff8763da9233e328ef7968543d58ed33f5b3f8eb5bb2bcccc0d8844"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X39",
+      "sources": [
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 120,
+          "end_line": 124,
+          "section": "法令与完整吟诵",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "df8bf44053e20202f2a5283b05120134fd4bb1dee9005868b055847a5a1b3fda"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/sound-and-performance.md",
+          "section": "法令与完整吟诵",
+          "start_line": 30,
+          "end_line": 35,
+          "file_sha256": "d908d3b9f67e37189692b1aa8df24407e81215176ff76380001161f8e3df36c1",
+          "slice_sha256_utf8": "0f98d2b6c634e5810c7276198a2eccf72e8e5f017631c301a8fb4ca8bc891c72"
+        }
+      ],
+      "decision": "新增",
+      "implementation": "短法令与步法印法并行，完整吟诵按起颂/节点/末字响应，不固定比例或停战。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "锁影成环末字环收紧可移动完成",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "必须念完与打断后持续由机制决定，无声不补台词，对手不等念咒",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 363,
+          "end_line": 379,
+          "section": "追击中的短法令与护盾声源",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "6e866741bbeca41e1e5fe5c5b217a75b641e6c0bee7e66a705599f83c924a0e3"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X40",
+      "sources": [
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 126,
+          "end_line": 149,
+          "section": "描述压缩与特效",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "b680888f83433b1c2e080c8993e42d8d9895c298d97fcaeefe970d07e822a3ec"
+        },
+        {
+          "source_path": "references/formats/reference-and-iteration.md",
+          "start_line": 69,
+          "end_line": 78,
+          "section": "编排与模型文本分开",
+          "file_sha256": "8b014a2bf7d63fc3438e7dfd19852488ff632d55c28e836deaadc19b418cd23e",
+          "slice_sha256_utf8": "3cd0b17956629cdce8857eb12034965a7c42977caf1e3c4973270271ed064439"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/prompt-construction.md",
+          "section": "动作密度与取舍",
+          "start_line": 42,
+          "end_line": 59,
+          "file_sha256": "26b02242b46258fc027955adebb785ef2c87d028f60f86a70b9ce51d734e9e95",
+          "slice_sha256_utf8": "7e91ef9a60e33a60964f83f6fdf907a1f4b097ce612fbdf92084aca1bce0f789"
+        },
+        {
+          "path": "skills/combat-director/references/prompt-construction.md",
+          "section": "独立分段",
+          "start_line": 165,
+          "end_line": 179,
+          "file_sha256": "26b02242b46258fc027955adebb785ef2c87d028f60f86a70b9ce51d734e9e95",
+          "slice_sha256_utf8": "3a609476695efe96842e751b346c520e1b8b8ca97737fc12c6e98b4cae869d8a"
+        },
+        {
+          "path": "skills/combat-director/references/prompt-construction.md",
+          "section": "分镜与分段组织",
+          "start_line": 66,
+          "end_line": 75,
+          "file_sha256": "26b02242b46258fc027955adebb785ef2c87d028f60f86a70b9ce51d734e9e95",
+          "slice_sha256_utf8": "59c02916c7e1f1d41afb0fec7b96b1969a29d5f9ba686538539ebb435de7f941"
+        },
+        {
+          "path": "skills/combat-director/references/reference-and-iteration.md",
+          "section": "首尾状态与硬约束冲突",
+          "start_line": 56,
+          "end_line": 62,
+          "file_sha256": "c2c588dcdca5cf03d8d49d593e9527e5926684bdee56ef1f9a0fecf35e48d84d",
+          "slice_sha256_utf8": "e4902dae3d38ab40577e78edfeaa459399fedf53ed43c902bf413e9a7ec78dde"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "压缩权威由主代理负责；本专题保留实际提交必须承载关键条件、参数素材去重和回链，避免双权威。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "同步双挡、指定人数/接点/镜头/声音/结局不得默认删",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "因果供能光纹与迟疑改落点不可按装饰删；独立段需自足",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 110,
+          "end_line": 117,
+          "section": "简化不能删掉指定的接触",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "675e1674ed34b3f5e3d2395b75a8242ac42dcdc834b0010531e25c9fe455a740"
+        },
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 177,
+          "end_line": 192,
+          "section": "压缩仍保留同步双挡",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "79426cd221f01c22edf1b8fe90a6e9bbfaf603fe180021a517509168fcd6405b"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X41",
+      "sources": [
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 3,
+          "end_line": 16,
+          "section": "风格与材质",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "c0ce121387b06fd259643b18b68e255736b69b124a1fcb2c0f15f962b4fabcbc"
+        },
+        {
+          "source_path": "references/formats/video-prompt-grammar.md",
+          "start_line": 151,
+          "end_line": 154,
+          "section": "术法照明",
+          "file_sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+          "slice_sha256_utf8": "83366d2d24e34ba174459126ee980b557500341aecddf36834e47ba7d847101c"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/style-and-materials.md",
+          "section": "术法照明与身份颜色",
+          "start_line": 18,
+          "end_line": 23,
+          "file_sha256": "f0b69a8359e5660361c01b00e2319f1575d751573a765a944493beead2d4ee08",
+          "slice_sha256_utf8": "86182e3ef57720be6e51204c73f290cd04f78a5931d615e39989d215dae9cd25"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "主光/能力光的位置、受照、明灭、残留分别保持，补足现有主光与特效照明。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "蓝光染白衣不改蓝衣，熄球仍月光",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "闪爆后地火仍照；北盆绕镜不搬光；微光剪影不强加全场补光",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 377,
+          "end_line": 386,
+          "section": "术法照明与身份颜色",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "4c88d9c86e381361a53bc8340bcbc83e7c3bdfb7c565282b535e607988370d7c"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X42",
+      "sources": [
+        {
+          "source_path": "references/formats/reference-and-iteration.md",
+          "start_line": 5,
+          "end_line": 26,
+          "section": "先确定素材职责",
+          "file_sha256": "8b014a2bf7d63fc3438e7dfd19852488ff632d55c28e836deaadc19b418cd23e",
+          "slice_sha256_utf8": "01053b88c9934cc2cec3eed202e9b147aa6987e303eefbfa1afda62bcbfcaeb8"
+        },
+        {
+          "source_path": "references/formats/reference-and-iteration.md",
+          "start_line": 40,
+          "end_line": 46,
+          "section": "身份与攻守分开",
+          "file_sha256": "8b014a2bf7d63fc3438e7dfd19852488ff632d55c28e836deaadc19b418cd23e",
+          "slice_sha256_utf8": "29d1370da03cd7ba7f78b46d4e5272ca2098510f91660eb1daa47a72900d5373"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/reference-and-iteration.md",
+          "section": "素材职责与互补",
+          "start_line": 5,
+          "end_line": 23,
+          "file_sha256": "c2c588dcdca5cf03d8d49d593e9527e5926684bdee56ef1f9a0fecf35e48d84d",
+          "slice_sha256_utf8": "c82ca4bd1f0859faaba7a9ff036024d7accf06903fc4ca1633bc9922167c71ea"
+        },
+        {
+          "path": "skills/combat-director/references/reference-and-iteration.md",
+          "section": "分镜拼图与逐格核对",
+          "start_line": 24,
+          "end_line": 31,
+          "file_sha256": "c2c588dcdca5cf03d8d49d593e9527e5926684bdee56ef1f9a0fecf35e48d84d",
+          "slice_sha256_utf8": "8e421d8674cb98aad0763ae875a0788952703c964c42e921224a9016add9d7af"
+        },
+        {
+          "path": "skills/combat-director/references/reference-and-iteration.md",
+          "section": "稳定身份与攻守绑定",
+          "start_line": 32,
+          "end_line": 37,
+          "file_sha256": "c2c588dcdca5cf03d8d49d593e9527e5926684bdee56ef1f9a0fecf35e48d84d",
+          "slice_sha256_utf8": "6c067cb8cf60ab85dd30ce267b5b038f8e55dfdecf904cebd6f6f72b221ec93e"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "八职责、互补属性优先、分镜时间/分屏、阶段内人数与上下格衔接、缺视角来源区分。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "三视图一身份，指定分身身体数来自剧情；拼图格序不默认左到右",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "正面发式优先、背披风互补不整丢背图；无视图不补锁定场景出口",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 33,
+          "end_line": 48,
+          "section": "多视图与动作参考分工",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "dd823ec61d8febb501f0719ef4f7c809afd802d19cb99d220b20bbf018c810df"
+        },
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 193,
+          "end_line": 199,
+          "section": "多份身份素材的互补与冲突",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "efefb6af79fe7933321d3d70831493c486497c8edab930a40af571b0aecbe41c"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X43",
+      "sources": [
+        {
+          "source_path": "references/formats/reference-and-iteration.md",
+          "start_line": 28,
+          "end_line": 38,
+          "section": "动作借鉴与当前设定的适配",
+          "file_sha256": "8b014a2bf7d63fc3438e7dfd19852488ff632d55c28e836deaadc19b418cd23e",
+          "slice_sha256_utf8": "4baf4ae90335905a327279f84a54da1af655bc4916b3dad9202a46b0ca02db4a"
+        },
+        {
+          "source_path": "references/formats/reference-and-iteration.md",
+          "start_line": 117,
+          "end_line": 117,
+          "section": "控制参考时长诊断",
+          "file_sha256": "8b014a2bf7d63fc3438e7dfd19852488ff632d55c28e836deaadc19b418cd23e",
+          "slice_sha256_utf8": "b44fe7c612524ee4e97034f9031d87ea9a376ae25ca1a357099299c71d2c6229"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/reference-and-iteration.md",
+          "section": "动作借鉴与当前设定",
+          "start_line": 38,
+          "end_line": 45,
+          "file_sha256": "c2c588dcdca5cf03d8d49d593e9527e5926684bdee56ef1f9a0fecf35e48d84d",
+          "slice_sha256_utf8": "94c135bfd8ead7064102e4bff471a58a19fb94566fcdab39a88f6f20c8f75779"
+        },
+        {
+          "path": "skills/combat-director/references/reference-and-iteration.md",
+          "section": "动作迁移与实际控制信号",
+          "start_line": 46,
+          "end_line": 55,
+          "file_sha256": "c2c588dcdca5cf03d8d49d593e9527e5926684bdee56ef1f9a0fecf35e48d84d",
+          "slice_sha256_utf8": "3aeea268668c67e28761073aedb108e2899c84f44b40e743285428c8b98a7bf5"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "复刻/关系借鉴分开，替换尺寸/结构/地形后双方重算，预览/实际连接与时长先核输入。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "窄巷长枪不可原圈横扫；御空/兽尾按原能力结构保留",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "表情输入不承诺剑斗；有姿态节点未接不等已控制，手关键点不等兵器交点",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 279,
+          "end_line": 307,
+          "section": "换兵器与场地后的动作借鉴 / 动作参考与迁移模式的边界",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "d4ddd74b3df2e0e4961199ac1dde8ef911017be088afaee45c9b95fd51d9d441"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X44",
+      "sources": [
+        {
+          "source_path": "references/formats/reference-and-iteration.md",
+          "start_line": 48,
+          "end_line": 52,
+          "section": "起点与终点冲突",
+          "file_sha256": "8b014a2bf7d63fc3438e7dfd19852488ff632d55c28e836deaadc19b418cd23e",
+          "slice_sha256_utf8": "08501b8f59a05951576ff6e1bdc2dd4a34c64b68f20ba355b7bd1930a50cd261"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/reference-and-iteration.md",
+          "section": "首尾状态与硬约束冲突",
+          "start_line": 56,
+          "end_line": 62,
+          "file_sha256": "c2c588dcdca5cf03d8d49d593e9527e5926684bdee56ef1f9a0fecf35e48d84d",
+          "slice_sha256_utf8": "e4902dae3d38ab40577e78edfeaa459399fedf53ed43c902bf413e9a7ec78dde"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "首末持手/距离/动势与要求对照，可补过渡与真正互斥区分。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "碎屑外飞/倾身半空的反向运动需制动或允许改输入",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "原剑始终载人又离脚且禁其他支撑不能暗增能力，接口未支持不虚构中间帧",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 17,
+          "end_line": 32,
+          "section": "从首帧动势继续",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "9e7ac85f17f58f364e8f71297d891a79275db0c1e8d4969db99492451f480517"
+        },
+        {
+          "source_path": "examples/reference-adaptation.md",
+          "start_line": 49,
+          "end_line": 56,
+          "section": "首帧与明确约束互斥",
+          "file_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+          "slice_sha256_utf8": "3d6911a87d6104e105d600a2fdaa149cc25189ce6a0a58c70e4dec2875cf5d41"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X47",
+      "sources": [
+        {
+          "source_path": "references/formats/platforms-markets.md",
+          "start_line": 5,
+          "end_line": 32,
+          "section": "能力确认",
+          "file_sha256": "a54bd166005861fefff681f2e6ff676e975431fa638ab233c8769003bf5fe98f",
+          "slice_sha256_utf8": "c4a924391b4f649ece81f419b46ea960d1953031bd8ab0169f1a7a1d487a264e"
+        },
+        {
+          "source_path": "references/formats/platforms-markets.md",
+          "start_line": 43,
+          "end_line": 43,
+          "section": "累计预算",
+          "file_sha256": "a54bd166005861fefff681f2e6ff676e975431fa638ab233c8769003bf5fe98f",
+          "slice_sha256_utf8": "9cd3e02cb4ec3db17356d739eadbf34a576b5b5df52006d1923b39628adcc508"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/generation-execution.md",
+          "section": "能力确认",
+          "start_line": 5,
+          "end_line": 26,
+          "file_sha256": "8f7d6ba31ff7a5a60c405bd58602ec4f5a117d34c682d836f8cfdda0a16865e9",
+          "slice_sha256_utf8": "f57fbbaf0c98a4fa6a9fc07df086fd47d4914ea84d7da0505a0b2de47b6f3bf2"
+        },
+        {
+          "path": "skills/combat-director/references/generation-execution.md",
+          "section": "累计预算与免费范围",
+          "start_line": 38,
+          "end_line": 43,
+          "file_sha256": "8f7d6ba31ff7a5a60c405bd58602ec4f5a117d34c682d836f8cfdda0a16865e9",
+          "slice_sha256_utf8": "f3f21afd43d6ec2a4122e7ac6349fd2217cc7aaac32206d3b7eb61df2a15adb2"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "执行入口/镜头/迁移/音频/长度/后期/报价本次确认，费用累计含未结算，不继承历史额度。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "多轮不自动多镜，视频上传不证明全身迁移，附件能力不跨媒体推断",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "换模型/声音/重试不重置总額；仅免费且余额在也不付费",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 532,
+          "end_line": 542,
+          "section": "执行边界场景",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "b0f07c1887b82a31f8ebccd341481ce2ee18c77b408ab2d8a0f1cf6444241137"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X48",
+      "sources": [
+        {
+          "source_path": "references/formats/platforms-markets.md",
+          "start_line": 34,
+          "end_line": 62,
+          "section": "执行停止与交付状态",
+          "file_sha256": "a54bd166005861fefff681f2e6ff676e975431fa638ab233c8769003bf5fe98f",
+          "slice_sha256_utf8": "7e0520eeb231a82263ca92ee31e989839df93f005be8bba0095c556ec2a14c03"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/generation-execution.md",
+          "section": "提交、查询与停止",
+          "start_line": 27,
+          "end_line": 37,
+          "file_sha256": "8f7d6ba31ff7a5a60c405bd58602ec4f5a117d34c682d836f8cfdda0a16865e9",
+          "slice_sha256_utf8": "ad3f2ad63734b24e82f8ed4048148d33c51c486178b9060a21af3870a08f6e7b"
+        },
+        {
+          "path": "skills/combat-director/references/generation-execution.md",
+          "section": "交付状态",
+          "start_line": 44,
+          "end_line": 53,
+          "file_sha256": "8f7d6ba31ff7a5a60c405bd58602ec4f5a117d34c682d836f8cfdda0a16865e9",
+          "slice_sha256_utf8": "f3545ca93ac47217f15043b81dc71885265c7d83b60cda990748776b55e8f512"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "接受/出片/观察独立；未知提交先查幂等，确定参数错授权内一次重试，终态与观察超时分开。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "提交不明不重投，卡进度不改动作/另付费",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "文件已得未看仅出片，不签质量；认证/余额/持续故障停，指定平台不可用不换",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [
+        {
+          "source_path": "examples/behavior-regression.md",
+          "start_line": 532,
+          "end_line": 542,
+          "section": "执行边界场景",
+          "file_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+          "slice_sha256_utf8": "b0f07c1887b82a31f8ebccd341481ce2ee18c77b408ab2d8a0f1cf6444241137"
+        }
+      ],
+      "status": "implemented_pending_independent_review"
+    },
+    {
+      "id": "X50",
+      "sources": [
+        {
+          "source_path": "references/industries/xianxia-vocabulary.md",
+          "start_line": 1,
+          "end_line": 92,
+          "section": "完整词表与指定作品",
+          "file_sha256": "30d1da2f0f78fb3e84abd043a75d6c94e24c125bda427386b19ecd1c33c2bca5",
+          "slice_sha256_utf8": "30d1da2f0f78fb3e84abd043a75d6c94e24c125bda427386b19ecd1c33c2bca5"
+        }
+      ],
+      "targets": [
+        {
+          "path": "skills/combat-director/references/xianxia-vocabulary.md",
+          "section": "武器与行为",
+          "start_line": 5,
+          "end_line": 16,
+          "file_sha256": "8a05a38f8efc3e2ebc8cc0007d73c7b6c58b64cbae0c91c971c483035106d9f1",
+          "slice_sha256_utf8": "3cb365d78f32b319c935ec86f78f32c53a3609f33464c4cefd4989583aa8adae"
+        },
+        {
+          "path": "skills/combat-director/references/xianxia-vocabulary.md",
+          "section": "能量形态与作用",
+          "start_line": 17,
+          "end_line": 33,
+          "file_sha256": "8a05a38f8efc3e2ebc8cc0007d73c7b6c58b64cbae0c91c971c483035106d9f1",
+          "slice_sha256_utf8": "00e8ad0609b5694ed61f7d9d48066184bd26c621496819b9aa7ffc873e28ad27"
+        },
+        {
+          "path": "skills/combat-director/references/xianxia-vocabulary.md",
+          "section": "打击层次",
+          "start_line": 34,
+          "end_line": 46,
+          "file_sha256": "8a05a38f8efc3e2ebc8cc0007d73c7b6c58b64cbae0c91c971c483035106d9f1",
+          "slice_sha256_utf8": "c079d87923065eb5be3b40a69717948cdfc3179a6952e8fb22423557a5957d4e"
+        },
+        {
+          "path": "skills/combat-director/references/xianxia-vocabulary.md",
+          "section": "环境与情绪",
+          "start_line": 47,
+          "end_line": 60,
+          "file_sha256": "8a05a38f8efc3e2ebc8cc0007d73c7b6c58b64cbae0c91c971c483035106d9f1",
+          "slice_sha256_utf8": "28cb40ff7358e94aedda9d1452575d7e279adb8d6b461d972e5754110bb92aa9"
+        },
+        {
+          "path": "skills/combat-director/references/xianxia-vocabulary.md",
+          "section": "材质与动作细节",
+          "start_line": 61,
+          "end_line": 72,
+          "file_sha256": "8a05a38f8efc3e2ebc8cc0007d73c7b6c58b64cbae0c91c971c483035106d9f1",
+          "slice_sha256_utf8": "d3f4b7b7ce3ecaefb5ca6fc8ad58d5b9824a98f209fe25e5b49fa43b5ca7e3ad"
+        },
+        {
+          "path": "skills/combat-director/references/xianxia-vocabulary.md",
+          "section": "变招与施法短语",
+          "start_line": 73,
+          "end_line": 85,
+          "file_sha256": "8a05a38f8efc3e2ebc8cc0007d73c7b6c58b64cbae0c91c971c483035106d9f1",
+          "slice_sha256_utf8": "9695d6e3c8a3f48fcb953464b3f2dcd4667a04b29ec418a4b3cb71e16102a41c"
+        },
+        {
+          "path": "skills/combat-director/references/xianxia-vocabulary.md",
+          "section": "指定作品与来源判断",
+          "start_line": 86,
+          "end_line": 90,
+          "file_sha256": "8a05a38f8efc3e2ebc8cc0007d73c7b6c58b64cbae0c91c971c483035106d9f1",
+          "slice_sha256_utf8": "41b7594566cae1c1bb8d9149690d887897566d00b996d0087d48881eef988273"
+        }
+      ],
+      "decision": "重设计",
+      "implementation": "全部武器7类、能量10类、打击8类、环境情绪9类、材质5类、施法6类及原典/媒介/改编辨来源保留，机制回链而非重复。",
+      "condition_and_exception_checks": [
+        {
+          "condition": "电影感不隐改身份，风格材质不新增伤势/能力",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        },
+        {
+          "condition": "小说/动画/游戏/用户改编分别溯源，不把连击数或游戏克制当原著定论",
+          "review_result": "目标规则已逐条保留，非生成实测"
+        }
+      ],
+      "source_cases": [],
+      "status": "implemented_pending_independent_review"
+    }
+  ],
+  "combat_director_migrations": [
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 155,
+      "baseline_end_line": 182,
+      "baseline_section": "空间与场面 / 地形接力与尺度升级",
+      "target": {
+        "path": "skills/combat-director/references/movement-and-projectiles.md",
+        "section": "换区与支撑接力"
+      },
+      "retained": "连续/瞬移边界、浮石真支撑链、殿内索链与铜钟独立吊点、卸载再解钩、水下真空甲板介质",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 85,
+      "baseline_end_line": 93,
+      "baseline_section": "能量回收与转化",
+      "target": {
+        "path": "skills/combat-director/references/powers-and-formations.md",
+        "section": "能量回收与转化"
+      },
+      "retained": "反弹/吸收释放/实体返回分开，容量必要时才设，铜盾槽储雷导余流释能、耗尽不切镜回满",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 71,
+      "baseline_end_line": 83,
+      "baseline_section": "机制反制与旧痕回收",
+      "target": {
+        "path": "skills/combat-director/references/powers-and-formations.md",
+        "section": "破阵的可见推理"
+      },
+      "retained": "裂口位置随盾/尚未闭合、铰缝卡发射瓣、可达线路、留置光钉连接与触发",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 184,
+      "baseline_end_line": 194,
+      "baseline_section": "法相与威胁揭示",
+      "target": {
+        "path": "skills/combat-director/references/powers-and-formations.md",
+        "section": "体型差、法相与异形对手"
+      },
+      "retained": "局部尺度显形到整体、投影/能量/实体分类、手控关系、杖放台腾手、首击前预告例外",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 196,
+      "baseline_end_line": 212,
+      "baseline_section": "远景光梭对撞",
+      "target": {
+        "path": "skills/combat-director/references/powers-and-formations.md",
+        "section": "光梭对撞与分波封路"
+      },
+      "retained": "人包流光和离体投射分开、主体去向、六术刃分波耗尽和实体主剑保持",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 214,
+      "baseline_end_line": 252,
+      "baseline_section": "节奏与剪辑 / 高速对抗的节拍与镜长 / 分清速度与局势推进",
+      "target": {
+        "path": "skills/combat-director/references/camera-and-rhythm.md",
+        "section": "快速攻防的镜长与运动"
+      },
+      "retained": "完整抢时关系、可选镜长范围及例外、镜内节拍、焦点交接、构图匹配不替迁移",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 143,
+      "baseline_end_line": 153,
+      "baseline_section": "面部特写",
+      "target": {
+        "path": "skills/combat-director/references/camera-and-rhythm.md",
+        "section": "动态交接与局部拍法"
+      },
+      "retained": "视线/微表情/已有来光/出镜继承动作，遮面景别与长镜路径",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 284,
+      "baseline_end_line": 303,
+      "baseline_section": "快速动态交错运镜",
+      "target": {
+        "path": "skills/combat-director/references/camera-and-rhythm.md",
+        "section": "动态交接与局部拍法"
+      },
+      "retained": "四种开放相机路径、接点前收稳、真实过轴、当前新轴线、横摇非切镜",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 254,
+      "baseline_end_line": 270,
+      "baseline_section": "关键姿态与动作节拍 / 场景与视觉焦点",
+      "target": {
+        "path": "skills/combat-director/references/camera-and-rhythm.md",
+        "section": "关键姿态与视觉焦点"
+      },
+      "retained": "姿态辨识非摆停、轮廓分离、动画拍数/帧率独立、真实门打开增光通路",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 272,
+      "baseline_end_line": 282,
+      "baseline_section": "蓄爆反差与延迟结果",
+      "target": {
+        "path": "skills/combat-director/references/camera-and-rhythm.md",
+        "section": "动作阶段与切点"
+      },
+      "retained": "停顿的实际窗口、蹬地前慢拍止、后果晚看非再次伤害、延迟术法需留置触发",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 305,
+      "baseline_end_line": 323,
+      "baseline_section": "特效与成像",
+      "target": {
+        "path": "skills/combat-director/references/style-and-materials.md",
+        "section": "效果形态与传播"
+      },
+      "retained": "主光、风场/透明气压前沿、主形尾迹粒子曝光/景深分开、模糊与发光能力范围",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 325,
+      "baseline_end_line": 333,
+      "baseline_section": "跨媒介强调",
+      "target": {
+        "path": "skills/combat-director/references/style-and-materials.md",
+        "section": "跨媒介强调"
+      },
+      "retained": "三维叠二维/整幅切换分别，段限定、一镜同视点、帧数精控能力边界",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/choreography.md",
+      "baseline_start_line": 335,
+      "baseline_end_line": 353,
+      "baseline_section": "贴附式水墨与分层反馈",
+      "target": {
+        "path": "skills/combat-director/references/style-and-materials.md",
+        "section": "贴附式水墨与分层反馈"
+      },
+      "retained": "剑刃和伞骨薄贴、水墨主形与散层、轻擦/重压/范围技按后果选、不血腥仍有代价",
+      "decision": "迁出统一权威，旧章仅允许兼容回链"
+    },
+    {
+      "source_path": "skills/combat-director/references/prompt-construction.md",
+      "baseline_start_line": 332,
+      "baseline_end_line": 348,
+      "baseline_section": "摄影术语与空间对应",
+      "target": {
+        "path": "skills/combat-director/references/camera-and-rhythm.md",
+        "section": "摄影术语与空间对应"
+      },
+      "retained": "横移/纵向/后退，推拉/变焦/拉焦，摇/俯仰/甩摇，环绕/原地滚转，构图非移动，过肩非眼位，纵深/视差，匹配切/接点插入/反应镜；侧桥低位跟拍例与倾斜/滑动变焦按需例外。",
+      "decision": "现有模板章节改为专题回链，术语区别只维护在摄影专题"
+    }
+  ],
+  "hash_note": "file_sha256 针对当前原始文件字节；slice_sha256_utf8 针对指定行区间以LF连接并以LF结束的UTF-8文本。源内容读取自固定提交的当前上游文件，目标为本轮融合后当前文件；后续编辑需要刷新目标区间与哈希。"
+}

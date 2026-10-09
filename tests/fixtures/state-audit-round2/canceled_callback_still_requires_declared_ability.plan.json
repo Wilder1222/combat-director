@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.3",
+  "id": "independent-state-audit",
+  "provenance": "Independent synthetic relational audit",
+  "template": "epic",
+  "duration": 3,
+  "aspect_ratio": "16:9",
+  "generation": "single",
+  "camera_mode": "one-take",
+  "headers": {
+    "goal": "Independent audit facts; no media claim",
+    "cast": "Independent audit facts; no media claim",
+    "scene": "Independent audit facts; no media claim",
+    "budget": "Independent audit facts; no media claim",
+    "continuity": "Independent audit facts; no media claim"
+  },
+  "rules": {
+    "fantasy": true,
+    "max_scale": "person"
+  },
+  "timing": {
+    "lead_in": 0,
+    "tail_out": 0,
+    "result_at": 3
+  },
+  "anchors": [
+    "steps"
+  ],
+  "cast": [
+    {
+      "id": "A",
+      "description": "body A",
+      "goal": "survive",
+      "prop": "sword or empty",
+      "hand": "explicit"
+    },
+    {
+      "id": "B",
+      "description": "body B",
+      "goal": "survive",
+      "prop": "sword or empty",
+      "hand": "explicit"
+    },
+    {
+      "id": "C",
+      "description": "body C",
+      "goal": "survive",
+      "prop": "sword or empty",
+      "hand": "explicit"
+    }
+  ],
+  "abilities": [],
+  "references": [],
+  "weapon_profiles": [
+    {
+      "id": "S",
+      "name": "short sword",
+      "type": "blade",
+      "visible_traits": "steel",
+      "owner_id": "A",
+      "mount": "held"
+    }
+  ],
+  "action_initial_state": {
+    "format": "combat-action-state/2",
+    "actors": {
+      "A": {
+        "zone": "north steps",
+        "facing": "south",
+        "support": "feet",
+        "damage": [],
+        "constraints": [],
+        "status": "active"
+      },
+      "B": {
+        "zone": "north steps",
+        "facing": "south",
+        "support": "feet",
+        "damage": [],
+        "constraints": [],
+        "status": "active"
+      },
+      "C": {
+        "zone": "north steps",
+        "facing": "south",
+        "support": "feet",
+        "damage": [],
+        "constraints": [],
+        "status": "active"
+      }
+    },
+    "environment": {
+      "steps": "intact"
+    },
+    "items": {
+      "S": {
+        "holders": [],
+        "location": "north steps",
+        "controller_id": "",
+        "control_mode": "none",
+        "control_ability_id": "",
+        "control_basis": "",
+        "status": "active"
+      }
+    },
+    "contacts": {},
+    "effects": {},
+    "formations": {},
+    "pending_events": {},
+    "active_abilities": []
+  },
+  "editorial_reviews": {},
+  "initial_state": {
+    "A": "A（active）：north steps；south；feet；左手空，右手空；损伤：无；限制：无",
+    "B": "B（active）：north steps；south；feet；左手空，右手空；损伤：无；限制：无",
+    "C": "C（active）：north steps；south；feet；左手空，右手空；损伤：无；限制：无",
+    "environment": "steps：intact；物件：{\"S\":{\"control_ability_id\":\"\",\"control_basis\":\"\",\"control_mode\":\"none\",\"controller_id\":\"\",\"holders\":[],\"location\":\"north steps\",\"status\":\"active\"}}",
+    "camera_side": "north"
+  },
+  "beats": [
+    {
+      "id": "B1",
+      "start": 0,
+      "end": 3,
+      "intent": "verify state transitions",
+      "actors": {
+        "A": {
+          "action": "acts or reacts visibly",
+          "performance": "focused"
+        },
+        "B": {
+          "action": "acts or reacts visibly",
+          "performance": "focused"
+        },
+        "C": {
+          "action": "acts or reacts visibly",
+          "performance": "focused"
+        }
+      },
+      "emotion": "focused",
+      "camera": {
+        "shot_id": "shot1",
+        "transition": "start",
+        "side": "north",
+        "path": "wide tracking",
+        "axis_bridge": ""
+      },
+      "vfx": "none",
+      "environment": "intact steps",
+      "sound": "steps",
+      "ability_ids": [],
+      "before": {
+        "A": "A（active）：north steps；south；feet；左手空，右手空；损伤：无；限制：无",
+        "B": "B（active）：north steps；south；feet；左手空，右手空；损伤：无；限制：无",
+        "C": "C（active）：north steps；south；feet；左手空，右手空；损伤：无；限制：无",
+        "environment": "steps：intact；物件：{\"S\":{\"control_ability_id\":\"\",\"control_basis\":\"\",\"control_mode\":\"none\",\"controller_id\":\"\",\"holders\":[],\"location\":\"north steps\",\"status\":\"active\"}}",
+        "camera_side": "north"
+      },
+      "after": {
+        "A": "A（active）：north steps；south；feet；左手空，右手空；损伤：无；限制：无",
+        "B": "B（active）：north steps；south；feet；左手空，右手空；损伤：无；限制：无",
+        "C": "C（active）：north steps；south；feet；左手空，右手空；损伤：无；限制：无",
+        "environment": "steps：intact；物件：{\"S\":{\"control_ability_id\":\"\",\"control_basis\":\"\",\"control_mode\":\"none\",\"controller_id\":\"\",\"holders\":[],\"location\":\"north steps\",\"status\":\"active\"}}",
+        "camera_side": "north"
+      },
+      "action_events": [
+        {
+          "id": "LONG",
+          "actor_id": "A",
+          "target_id": "B",
+          "start": 0,
+          "end": 3,
+          "response_to": "",
+          "weapon_id": "",
+          "hands_used": [],
+          "movement": "stationary",
+          "action": "Move along stated path, contact or miss, then recover",
+          "trajectory": {
+            "start": "north steps",
+            "path": "straight south",
+            "end": "middle stair",
+            "screen_direction": "right"
+          },
+          "contact": "explicit contact or miss",
+          "outcome": "recover at the endpoint",
+          "transfers": [],
+          "state_ops": [],
+          "ability_use": {
+            "ability_id": "NOT_DECLARED",
+            "phase": "activate",
+            "visible_cost": "future seal",
+            "restrictions_added": []
+          }
+        },
+        {
+          "id": "STOP",
+          "actor_id": "B",
+          "target_id": "A",
+          "start": 0.1,
+          "end": 1,
+          "response_to": "",
+          "weapon_id": "",
+          "hands_used": [],
+          "movement": "stationary",
+          "action": "Move along stated path, contact or miss, then recover",
+          "trajectory": {
+            "start": "north steps",
+            "path": "straight south",
+            "end": "middle stair",
+            "screen_direction": "right"
+          },
+          "contact": "explicit contact or miss",
+          "outcome": "recover at the endpoint",
+          "transfers": [],
+          "state_ops": [],
+          "interrupts": [
+            {
+              "event_id": "LONG",
+              "reason": "wrist struck"
+            }
+          ]
+        }
+      ],
+      "state_delta": {
+        "actors": {},
+        "environment": {},
+        "caused_by": []
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "beat_ids": [
+        "B1"
+      ],
+      "summary": {
+        "action": "Independent audit expression",
+        "expression": "Independent audit expression",
+        "emotion": "Independent audit expression",
+        "camera": "Independent audit expression",
+        "vfx": "Independent audit expression",
+        "environment": "Independent audit expression",
+        "sound": "Independent audit expression",
+        "continuity": "Independent audit expression"
+      }
+    }
+  ]
+}

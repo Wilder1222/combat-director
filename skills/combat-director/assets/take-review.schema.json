@@ -1,10 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Combat Take Review 1",
+  "title": "Combat Take Review 1 and 2",
   "type": "object",
   "properties": {
     "format": {
-      "const": "combat-take-review/1"
+      "enum": [
+        "combat-take-review/1",
+        "combat-take-review/2"
+      ]
     },
     "take_id": {
       "type": "string",
@@ -162,6 +165,15 @@
       "type": "string"
     },
     "decision_reason": {
+      "type": "string"
+    },
+    "observed_action_state": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "action_state_evidence": {
       "type": "string"
     }
   },

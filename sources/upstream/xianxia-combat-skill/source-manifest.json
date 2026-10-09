@@ -1,0 +1,359 @@
+{
+  "repository": "https://github.com/Wilder1222/xianxia-combat-skill",
+  "commit": "f3721de6e21af8cd5186c88079bf92d252ec416e",
+  "captured_date": "2026-10-09",
+  "scope": "all 70 tracked files; no private media or credentials",
+  "purpose": "immutable source and evidence attribution; not a runtime skill",
+  "files": [
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "sha256": "c7020d9a4e1e6dd46132e144f00d3fa0a732f628951a0034c78a24c1c7308619",
+      "bytes": 380
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "d74c8174c85ddc625893b510eb5e8f51d516e49ac030cfb60338c3aba6871dd1",
+      "bytes": 1102
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "9e6fea482528a3645c57fa3e92cfccce5933e7b8f31b3be4f9f17bfd456fe3fb",
+      "bytes": 46
+    },
+    {
+      "path": "README.md",
+      "sha256": "6dcb942518e141774937467f8538b64eff29eb70a82898c21c66f0375a52662a",
+      "bytes": 3919
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "954716fd14a73248360bead62f1b26252fafa10015fdde291b5b99e3acb301a5",
+      "bytes": 10976
+    },
+    {
+      "path": "examples/behavior-regression.md",
+      "sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+      "bytes": 62130
+    },
+    {
+      "path": "examples/reference-adaptation.md",
+      "sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+      "bytes": 54975
+    },
+    {
+      "path": "plugin.json",
+      "sha256": "581ffe42ad5202c8a24a0c035b2d61757ecf17a0bdc1cf7955e55b5046ced4d8",
+      "bytes": 1444
+    },
+    {
+      "path": "references/INDEX.md",
+      "sha256": "649f1f22803589365b8a48de9bcf810df66c27ec1557327a3a708037fb7b3845",
+      "bytes": 2114
+    },
+    {
+      "path": "references/formats/clones-and-multi-combat.md",
+      "sha256": "f17ba69e814ade70812a1ed564ee4a5065f2e8c235cee57dc876e0a548befaca",
+      "bytes": 4764
+    },
+    {
+      "path": "references/formats/combat-choreography.md",
+      "sha256": "3266f859ef147c04eeb46ffc37543848c38d72757173b0aec6605712b31a7366",
+      "bytes": 17567
+    },
+    {
+      "path": "references/formats/movement-and-projectiles.md",
+      "sha256": "8e06b4e8d6e3a799ac1ca04c8b22f943f54a8fce90d35fb9de853900d02397e9",
+      "bytes": 7329
+    },
+    {
+      "path": "references/formats/platforms-markets.md",
+      "sha256": "a54bd166005861fefff681f2e6ff676e975431fa638ab233c8769003bf5fe98f",
+      "bytes": 7262
+    },
+    {
+      "path": "references/formats/powers-and-formations.md",
+      "sha256": "a68339379d2f8fb7e1cf660df477555608c19d8a038627834ad8fb8584057a3b",
+      "bytes": 9562
+    },
+    {
+      "path": "references/formats/reference-and-iteration.md",
+      "sha256": "8b014a2bf7d63fc3438e7dfd19852488ff632d55c28e836deaadc19b418cd23e",
+      "bytes": 24214
+    },
+    {
+      "path": "references/formats/video-evidence-tool.md",
+      "sha256": "596b254135a7f08f88dfd22fdb75c09cd6d980d03982c976cd96229501c93e74",
+      "bytes": 5160
+    },
+    {
+      "path": "references/formats/video-prompt-grammar.md",
+      "sha256": "65876330ad4267f007ae0fc0176ba7ff4c4fe9af454ca71f40522f8f0c53b3e5",
+      "bytes": 23837
+    },
+    {
+      "path": "references/industries/xianxia-vocabulary.md",
+      "sha256": "30d1da2f0f78fb3e84abd043a75d6c94e24c125bda427386b19ecd1c33c2bca5",
+      "bytes": 6557
+    },
+    {
+      "path": "research/2026-10-06-barriers-and-impact-results.md",
+      "sha256": "bec7bc82397e0104aae8fc56a9bb88639a2e4002d68f1609d1df87133f8f1d4b",
+      "bytes": 6760
+    },
+    {
+      "path": "research/2026-10-06-clones-and-afterimages.md",
+      "sha256": "cf9f089f8e1945e9b7d0384f0a4af1b0742e7e273f31cf80b003836c8f0baa0c",
+      "bytes": 7016
+    },
+    {
+      "path": "research/2026-10-06-combat-skills.md",
+      "sha256": "82d30d21ef1a89bdb89ca34d13abfbdd7955bb2de514c2b3604a82c8ed9e3f88",
+      "bytes": 6092
+    },
+    {
+      "path": "research/2026-10-06-concurrent-action-and-compression.md",
+      "sha256": "9fd3166bc4eaf32645fe0774caee53aac251e6c702c420948af4408bcc85c3da",
+      "bytes": 10245
+    },
+    {
+      "path": "research/2026-10-06-contact-evidence.md",
+      "sha256": "485aa13a72b813211255e7a3b8ff21a79933df908e8fac88471b9c1b5bc6ceb4",
+      "bytes": 9046
+    },
+    {
+      "path": "research/2026-10-06-continuation-and-observed-state.md",
+      "sha256": "3ce23072677b6bad3dafab4b39b5b97028b04d96ec3995df65483f6de628f425",
+      "bytes": 6759
+    },
+    {
+      "path": "research/2026-10-06-emission-and-control.md",
+      "sha256": "409e22af070bd8ae1ed3e6993a82026742b1055d27890b0ee831597f37cc3878",
+      "bytes": 4974
+    },
+    {
+      "path": "research/2026-10-06-evidence-tool.md",
+      "sha256": "9c23d63066c96354bb3a02efb877f8a344cba34222fba090876b56a341bef746",
+      "bytes": 9490
+    },
+    {
+      "path": "research/2026-10-06-feints-and-perception.md",
+      "sha256": "f75523fa9b576fbe2abac57a6755c0c9d0867a79ebdd9523647ae751e80b1a4a",
+      "bytes": 5440
+    },
+    {
+      "path": "research/2026-10-06-flight-and-multi-combat.md",
+      "sha256": "592a96c9ade59f6aaa3ca96fb3d7d89233260cd26a2d69f220e57196934cf974",
+      "bytes": 8782
+    },
+    {
+      "path": "research/2026-10-06-formation-attachment.md",
+      "sha256": "2c7410dd60671c71c32d82e58295e4905de7ed11d94034b934930dda93c3fbf3",
+      "bytes": 3969
+    },
+    {
+      "path": "research/2026-10-06-motion-reference-adaptation.md",
+      "sha256": "0810b2d72da9bf820273c8ea1785a52c00af53445cff61a60b895da4886e029c",
+      "bytes": 7926
+    },
+    {
+      "path": "research/2026-10-06-objective-and-adaptation.md",
+      "sha256": "71e95528f2ff863e349675d88e4381977127f50a64608b65fa84abed73d26ace",
+      "bytes": 6658
+    },
+    {
+      "path": "research/2026-10-06-recoil-and-recovery.md",
+      "sha256": "fc2961afa75713559ff5dd716bc273347b46fe42f850b2878dfb0e99ff951729",
+      "bytes": 8209
+    },
+    {
+      "path": "research/2026-10-06-retiming-and-screen-time.md",
+      "sha256": "585899dc596f9fb3c4dc2795f080647a143c288536c8c2e758957337d90395f4",
+      "bytes": 6582
+    },
+    {
+      "path": "research/2026-10-06-scale-and-media-match.md",
+      "sha256": "aa757f4c806212f1c11b79ff574270f68f7fa9f389a3abce4b0379700f54238a",
+      "bytes": 7523
+    },
+    {
+      "path": "research/2026-10-06-sound-and-events.md",
+      "sha256": "57395faf1dbe72613f1944aca40a645a5c6f10381ed1e77730d281b3deada3c7",
+      "bytes": 5486
+    },
+    {
+      "path": "research/2026-10-06-spatial-direction-and-camera.md",
+      "sha256": "09ff0dfad18aba56a1d5a1d1d827d483daa5754a089418f3e941229d5cc641ce",
+      "bytes": 7828
+    },
+    {
+      "path": "research/2026-10-06-sustained-contact.md",
+      "sha256": "19d991154738396464509a2244a511a6ee7d053d007844eea7bcaf9e5f3df73c",
+      "bytes": 6486
+    },
+    {
+      "path": "research/2026-10-06-terrain-and-traversal.md",
+      "sha256": "3be3f802034fda7d8dbc5b8174690d52b72deef2e24d862ca1e9b91d0648fc07",
+      "bytes": 6892
+    },
+    {
+      "path": "research/2026-10-06-topic-routing.md",
+      "sha256": "0b39fab7f709455f8e21870d80510db4c50363eca28d3712864f6536c005e385",
+      "bytes": 9121
+    },
+    {
+      "path": "research/2026-10-06-validation-scope-and-evaluation.md",
+      "sha256": "e6997509b0776097a2a5b23e0e2a102897ef00e283ced6525f487726eadf7601",
+      "bytes": 18187
+    },
+    {
+      "path": "research/2026-10-06-weapon-transfer-and-continuity.md",
+      "sha256": "764537e8b692072933662a121580322cf15081e42721bea90426cc3833d60fb6",
+      "bytes": 7259
+    },
+    {
+      "path": "research/2026-10-06-wuxia-sample-and-cuts.md",
+      "sha256": "fa28d630954d577801530ea05f098441b1534abe4b5a42509b25e6a2362f47a8",
+      "bytes": 9936
+    },
+    {
+      "path": "research/2026-10-07-awesome-seedance-retests.md",
+      "sha256": "9c769f5849ab6682e57af80c396560501433326bda4f439cd3627a16eb3df656",
+      "bytes": 11318
+    },
+    {
+      "path": "research/2026-10-07-cinematic-fight-and-reference-coverage.md",
+      "sha256": "412ae73a5d9430a8738f17ab3da39733ae88c798168b7b97a955458eaa48c858",
+      "bytes": 6698
+    },
+    {
+      "path": "research/2026-10-07-combat-pipeline-density.md",
+      "sha256": "9682c60bf845191c75538542bcb6e59dc296d36ee081d130909745e3a3f68ba3",
+      "bytes": 26695
+    },
+    {
+      "path": "research/2026-10-07-continuity-versus-cuts.md",
+      "sha256": "242cb3841cced64c3b03c4287696f2635cecee0fcc792895f370d889b1e5ea3f",
+      "bytes": 5470
+    },
+    {
+      "path": "research/2026-10-07-control-input-repair.md",
+      "sha256": "a9ec4db805c5e7d8bd00c38fff946f1d496462d0dfdd95103dbd4d7ba53757b6",
+      "bytes": 4610
+    },
+    {
+      "path": "research/2026-10-07-cy-desert-media.md",
+      "sha256": "d74ae9f32b21bc42b16d6832dea20e37ed4e61298794cbd28c5c1c14b480b971",
+      "bytes": 5049
+    },
+    {
+      "path": "research/2026-10-07-grab-compression-comparison.md",
+      "sha256": "d4744ec85b053214a69d0a8ef366dded2983b22e5c715d9eb52913d3c0a4c713",
+      "bytes": 6478
+    },
+    {
+      "path": "research/2026-10-07-hit-marking-style.md",
+      "sha256": "90e0fe7f3fd0530f2e66beebd4011bc2b1cde7da5aa8d5a07ec08c3a6eadd0a6",
+      "bytes": 1519
+    },
+    {
+      "path": "research/2026-10-07-human-motion-evaluation.md",
+      "sha256": "16d74767ee48023dfd1d7ee1b11f432256537694daf1e5fe4f72b80da6b776a1",
+      "bytes": 2066
+    },
+    {
+      "path": "research/2026-10-07-magic-lighting.md",
+      "sha256": "bbe1efa9e796b382c564b85a042e7cdea40bfcf1608905400a01b73defaaeec6",
+      "bytes": 1428
+    },
+    {
+      "path": "research/2026-10-07-method-selection.md",
+      "sha256": "8bb53d60c9ce1eeea0ab86bf3b8584535c8d0e5f2f9fe030e01b9ec0c22e0d61",
+      "bytes": 20712
+    },
+    {
+      "path": "research/2026-10-07-objectives-and-tactics-audit.md",
+      "sha256": "dcd71fb33ed899ec7a6465c699592c4bec44bc0b03be133b71efb2df03697efa",
+      "bytes": 1902
+    },
+    {
+      "path": "research/2026-10-07-occlusion-and-return.md",
+      "sha256": "630b7c33b4298fd45e165e58fc67d8c9e2a6e26db183cc18ba697c47baf20c37",
+      "bytes": 1984
+    },
+    {
+      "path": "research/2026-10-07-paired-body-control.md",
+      "sha256": "78f8a47f22233133e9e6ecd8d9f77a1bb6048cadf2df7413a1fb2226910efb86",
+      "bytes": 3282
+    },
+    {
+      "path": "research/2026-10-07-prompt-compression-scope.md",
+      "sha256": "fe0759bd8622e9f598face200feac44dcd18e2b8c396b9ae3334d05b42466564",
+      "bytes": 1835
+    },
+    {
+      "path": "research/2026-10-07-reference-request-mapping.md",
+      "sha256": "2651bae3e5d3d5992539b6aff4e635b59b43fcd3964de79386e0c31af10c234b",
+      "bytes": 2012
+    },
+    {
+      "path": "research/2026-10-07-storyboard-grid.md",
+      "sha256": "3e2b330d10acae89b051f2cf45f6c54c23c27882653ec38c8c0241585609e09f",
+      "bytes": 4090
+    },
+    {
+      "path": "research/2026-10-07-subjective-view-and-contact.md",
+      "sha256": "dcd04bfc1ed5afa4dc53358787bc55eb05bb6c058a8395bcf7a7c930b5c6e92c",
+      "bytes": 4062
+    },
+    {
+      "path": "research/2026-10-07-user-skill-merge.md",
+      "sha256": "196b2cc2b937f1da46eaf898c0d9562ec6cf500800c844e3956d90a4043a2935",
+      "bytes": 3576
+    },
+    {
+      "path": "research/2026-10-07-wuxin-action-and-coverage.md",
+      "sha256": "e82d699178094b17b907edef7952328352a9754d3a4d9aac777583328400ca05",
+      "bytes": 5183
+    },
+    {
+      "path": "research/INDEX.md",
+      "sha256": "924ac8cc80dcca2d77ffb142bcea92f7dfa234c7ee986c5fa9f1e8d27531ff76",
+      "bytes": 20428
+    },
+    {
+      "path": "scripts/plugin_support.py",
+      "sha256": "1f153bf7f0687f2816e1f5e8e8f52cbe24973c16aeee930217c82b4e6cd09fb6",
+      "bytes": 7991
+    },
+    {
+      "path": "scripts/sample_video.py",
+      "sha256": "8b081533d5404a6512b3d8f6c2645a842ffc3bc6048f6d8e2a5b0eb871f98335",
+      "bytes": 14576
+    },
+    {
+      "path": "scripts/validate_repository.py",
+      "sha256": "9537090a54d914df87a0a5c5dbb32e328529a0a5b8a6ebdf9936e9c7e8b7f714",
+      "bytes": 6708
+    },
+    {
+      "path": "skills/xianxia-combat/SKILL.md",
+      "sha256": "a9779887b7f57bdbb8686188a086572a44304a745235dc19266ed768e7fcf353",
+      "bytes": 905
+    },
+    {
+      "path": "tests/test_plugin_support.py",
+      "sha256": "09cc8aa3a8572a72ab18aca8b875213a4c9c1605a2aecc012f6f0be490fd932c",
+      "bytes": 3269
+    },
+    {
+      "path": "tests/test_sample_video.py",
+      "sha256": "6103bee5cf74fbff91125ae2296c962bc5e71939f87f119a7586f40d358264a5",
+      "bytes": 12990
+    },
+    {
+      "path": "tests/test_validate_repository.py",
+      "sha256": "2359ecf407125f6cc51c83b48ad7e3fa6317772ac6f21e42b204d95034188e88",
+      "bytes": 9078
+    }
+  ]
+}

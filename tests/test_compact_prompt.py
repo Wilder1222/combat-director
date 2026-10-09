@@ -90,6 +90,59 @@ class CompactPromptTests(unittest.TestCase):
             self.assertIn(section['text'], result['prompt.txt'])
         self.assertNotIn('【法阵】', result['prompt.txt'])
 
+    def test_grouped_shots_export_verbatim_and_keep_review_binding(self):
+        projection = copy.deepcopy(self.projection)
+        for index, section in enumerate(projection['sections']):
+            section['text'] = ('【画面与动作】' + section['text'] +
+                               '\n【摄影】同侧跟随双方，保留接点与落脚。' +
+                               '\n【衔接】从已经改变的站位继续，不重复上一击。')
+            if index == 0:
+                section['text'] += '\n【声音】碰撞声在两件兵器相抵时出现。'
+            else:
+                section['text'] += '\n【眼神】视线转向对手尚在回收的兵器。'
+        projection = self.review_projection(projection)
+        result = tool.deliverables(self.plan, 'generic', prompt_style='detailed', projection=projection)
+        for section in projection['sections']:
+            self.assertEqual(result['prompt.txt'].count(section['text']), 1)
+        self.assertEqual(json.loads(result['prompt-projection.json']), projection)
+        projection['sections'][0]['text'] += '\n【光影】接点闪光照亮邻近手背。'
+        with self.assertRaisesRegex(ValueError, 'expression_digest'):
+            tool.deliverables(self.plan, 'generic', prompt_style='detailed', projection=projection)
+
+    def test_detailed_one_take_has_one_shot_and_continuous_beat_intervals(self):
+        projection = self.detailed_projection()
+        rendered = compact.render(self.plan, projection, detailed=True)
+        self.assertEqual(rendered.count('（镜长'), 1)
+        self.assertIn('全镜0–15秒（镜长15秒）', rendered)
+        for interval in ('0–4.5秒（镜内节拍4.5秒）', '4.5–7秒（镜内节拍2.5秒）',
+                         '7–12.5秒（镜内节拍5.5秒）', '12.5–15秒（镜内节拍2.5秒）'):
+            self.assertIn(interval, rendered)
+        legacy = compact.render(self.plan, projection)
+        self.assertNotIn('镜内节拍', legacy)
+        self.assertNotIn('全镜', legacy)
+
+    def test_detailed_multi_shot_keeps_per_shot_duration(self):
+        plan = tool.read_json(ROOT/'tests/fixtures/timing-30.plan.json')
+        projection = compact.prepare(plan)
+        projection['opening'] = '【整体风格】测试用三维动作片。'
+        projection['closing'] = '【连续性】仅验证导出结构，不验证视频效果。'
+        for section in projection['sections']:
+            section['text'] = '【画面与动作】测试段落 ' + section['section_id'] + ' 保留自身事件。'
+        compiled = compact.inspect(plan, projection)
+        receipt = copy.deepcopy(self.projection['review'])
+        for key in ('plan_id', 'source_digest', 'expression_digest'):
+            receipt[key] = compiled[key]
+        projection = compact.apply_review(plan, projection, receipt)
+        rendered = compact.render(plan, projection, detailed=True)
+        self.assertNotIn('镜内节拍', rendered)
+        self.assertNotIn('全镜', rendered)
+        self.assertEqual(rendered.count('（镜长'), len(plan['sections']))
+        beats = {beat['id']: beat for beat in plan['beats']}
+        for section in plan['sections']:
+            start = beats[section['beat_ids'][0]]['start']
+            end = beats[section['beat_ids'][-1]]['end']
+            self.assertIn(f'{start:g}–{end:g}秒（镜长{end-start:g}秒）', rendered)
+
     def test_source_changes_invalidate(self):
         for target, key in [('headers', 'scene'), ('headers', 'continuity'), ('initial_state', 'environment')]:
             plan = copy.deepcopy(self.plan)

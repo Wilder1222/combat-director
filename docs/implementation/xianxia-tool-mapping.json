@@ -1,0 +1,2223 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "source_repository": "xianxia-combat-skill",
+  "source_commit": "f3721de6e21af8cd5186c88079bf92d252ec416e",
+  "requirement_groups": [
+    "X49",
+    "X53",
+    "original-case-preservation"
+  ],
+  "records": [
+    {
+      "source": "scripts/sample_video.py",
+      "target": "skills/combat-director/scripts/sample_video.py",
+      "source_sha256": "8b081533d5404a6512b3d8f6c2645a842ffc3bc6048f6d8e2a5b0eb871f98335",
+      "target_sha256": "2e1c1a4a98d6d8d5d7184cccd36962f624e0e4539ac04380c6ff5f9647ce5a19",
+      "symbols": [
+        {
+          "source": {
+            "symbol": "EvidenceError",
+            "lines": [
+              15,
+              16
+            ],
+            "content_sha256": "43cdca7dc8b792dd3268d0aa955c2526e18addd48267a05b4ae1d6dd43b663e1"
+          },
+          "target": {
+            "symbol": "EvidenceError",
+            "lines": [
+              15,
+              16
+            ],
+            "content_sha256": "43cdca7dc8b792dd3268d0aa955c2526e18addd48267a05b4ae1d6dd43b663e1"
+          },
+          "disposition": "migrated",
+          "retained_behavior": "Predictable local evidence errors remain distinct from creative judgement."
+        },
+        {
+          "source": {
+            "symbol": "run",
+            "lines": [
+              19,
+              27
+            ],
+            "content_sha256": "2366d13a31613aef1d149bb0383aa9b5dedcf8c431766d7d9754071970716aa3"
+          },
+          "target": {
+            "symbol": "run",
+            "lines": [
+              19,
+              27
+            ],
+            "content_sha256": "2366d13a31613aef1d149bb0383aa9b5dedcf8c431766d7d9754071970716aa3"
+          },
+          "disposition": "migrated",
+          "retained_behavior": "Captured UTF-8 tool output, 120-second timeout, error/quiet-stderr failure."
+        },
+        {
+          "source": {
+            "symbol": "sha256",
+            "lines": [
+              30,
+              32
+            ],
+            "content_sha256": "e77a55e648524af4ec26174d5655816e9bf8bf7da2cce192f8cd829aaaab49d1"
+          },
+          "target": {
+            "symbol": "sha256",
+            "lines": [
+              30,
+              35
+            ],
+            "content_sha256": "6d5739e3887ad95a3fe2e29b416ad00492dce6aec7cded4e43d3e6af3535bbef"
+          },
+          "disposition": "redesigned",
+          "retained_behavior": "Same SHA-256 identity; 1 MiB stdlib block reading supports Python 3.10."
+        },
+        {
+          "source": {
+            "symbol": "seconds",
+            "lines": [
+              35,
+              36
+            ],
+            "content_sha256": "d05c1e87975b608ea98928a03b6071ac7ca0c8aecd82e7bb0d9b28c9c4c5ae5e"
+          },
+          "target": {
+            "symbol": "seconds",
+            "lines": [
+              38,
+              39
+            ],
+            "content_sha256": "d05c1e87975b608ea98928a03b6071ac7ca0c8aecd82e7bb0d9b28c9c4c5ae5e"
+          },
+          "disposition": "migrated",
+          "retained_behavior": "Nine-decimal display values; exact Fraction selection remains separate."
+        },
+        {
+          "source": {
+            "symbol": "parse_seconds",
+            "lines": [
+              39,
+              43
+            ],
+            "content_sha256": "72f272f4bb1c89aa56004f2de6e389bbd36d6265b9bddb5f8b1917635fcd3bec"
+          },
+          "target": {
+            "symbol": "parse_seconds",
+            "lines": [
+              42,
+              46
+            ],
+            "content_sha256": "72f272f4bb1c89aa56004f2de6e389bbd36d6265b9bddb5f8b1917635fcd3bec"
+          },
+          "disposition": "migrated",
+          "retained_behavior": "Finite rational CLI seconds; invalid/nan/infinite/zero denominator rejected."
+        },
+        {
+          "source": {
+            "symbol": "select_frames",
+            "lines": [
+              46,
+              73
+            ],
+            "content_sha256": "4dd6b1e245dd6dee174204833dbbe04d94b6deb02aa8f04265abfdc71ba47d66"
+          },
+          "target": {
+            "symbol": "select_frames",
+            "lines": [
+              49,
+              76
+            ],
+            "content_sha256": "4dd6b1e245dd6dee174204833dbbe04d94b6deb02aa8f04265abfdc71ba47d66"
+          },
+          "disposition": "migrated",
+          "retained_behavior": "First-frame-relative half-open PTS interval; VFR true frame stride; strict PTS; known duration only; no silent truncation."
+        },
+        {
+          "source": {
+            "symbol": "verify_extraction",
+            "lines": [
+              76,
+              83
+            ],
+            "content_sha256": "8c4e0faa68029caae649235562ffbbb836eadcc821ac38630a3d405650c2d9bb"
+          },
+          "target": {
+            "symbol": "verify_extraction",
+            "lines": [
+              79,
+              86
+            ],
+            "content_sha256": "8c4e0faa68029caae649235562ffbbb836eadcc821ac38630a3d405650c2d9bb"
+          },
+          "disposition": "migrated",
+          "retained_behavior": "Independent ffprobe/filter time-base and ordered PTS equality."
+        },
+        {
+          "source": {
+            "symbol": "write_json",
+            "lines": [
+              86,
+              87
+            ],
+            "content_sha256": "d469ad364a430509595079148f9da4cd843ba2e12f81d4e45712cedfb4cb6ed7"
+          },
+          "target": {
+            "symbol": "write_json",
+            "lines": [
+              89,
+              90
+            ],
+            "content_sha256": "d469ad364a430509595079148f9da4cd843ba2e12f81d4e45712cedfb4cb6ed7"
+          },
+          "disposition": "migrated",
+          "retained_behavior": "UTF-8 machine-readable manifest/probe and state updates."
+        },
+        {
+          "source": {
+            "symbol": "make_sheet",
+            "lines": [
+              90,
+              111
+            ],
+            "content_sha256": "226a863044f0c9fb6559d5dfc66e0e65c8a09245bde24824d93598aa5835f038"
+          },
+          "target": {
+            "symbol": "make_sheet",
+            "lines": [
+              93,
+              114
+            ],
+            "content_sha256": "226a863044f0c9fb6559d5dfc66e0e65c8a09245bde24824d93598aa5835f038"
+          },
+          "disposition": "migrated",
+          "retained_behavior": "Original PNGs untouched; index thumbnails alone resized with Lanczos and timestamp labels."
+        },
+        {
+          "source": {
+            "symbol": "sample_video",
+            "lines": [
+              114,
+              228
+            ],
+            "content_sha256": "4a7355109d412a8ea5924e03abf8e441857faf138ca54a686d1cea45d254bef3"
+          },
+          "target": {
+            "symbol": "sample_video",
+            "lines": [
+              117,
+              233
+            ],
+            "content_sha256": "5d7668912a449c3d3ed9b95a7e33951430de4e23e6a7c768ea72e4d236433061"
+          },
+          "disposition": "redesigned",
+          "retained_behavior": "Local single-file input; lazy optional dependencies; stream metadata; raw-grid extraction; fingerprints; atomic refusal of existing outputs; incomplete/created/failed states and unreviewed flags."
+        },
+        {
+          "source": {
+            "symbol": "main",
+            "lines": [
+              231,
+              247
+            ],
+            "content_sha256": "0ab34a20f0202e04148916b4a4ffbf7d90fa99f4db1a8b6b46592a078b228af0"
+          },
+          "target": {
+            "symbol": "main",
+            "lines": [
+              236,
+              252
+            ],
+            "content_sha256": "0ab34a20f0202e04148916b4a4ffbf7d90fa99f4db1a8b6b46592a078b228af0"
+          },
+          "disposition": "redesigned",
+          "retained_behavior": "Explicit CLI/exit status; migrated current defaults and scan/timeline options where applicable."
+        }
+      ],
+      "added_symbols": []
+    },
+    {
+      "source": "scripts/validate_repository.py",
+      "target": "scripts/validate_content.py",
+      "source_sha256": "9537090a54d914df87a0a5c5dbb32e328529a0a5b8a6ebdf9936e9c7e8b7f714",
+      "target_sha256": "0c22d8496bdd0a7f83263cded42dd42e3339d071b88de06dfbdb277304c46fef",
+      "symbols": [
+        {
+          "source": {
+            "symbol": "in_local_only_directory",
+            "lines": [
+              15,
+              17
+            ],
+            "content_sha256": "72445376ec65dd570108143e24e843137eb0f5cb649daa7a708c9ab2e0e0e0d6"
+          },
+          "target": {
+            "symbol": "in_local_only_directory",
+            "lines": [
+              18,
+              21
+            ],
+            "content_sha256": "430fecf4814c1841877df47af89a6944a522c08e378a7b4a256df9b42f77ff47"
+          },
+          "disposition": "redesigned",
+          "retained_behavior": "Skip private/generated scans and reject corresponding published targets, including nested private evidence."
+        },
+        {
+          "source": {
+            "symbol": "validate_timelines",
+            "lines": [
+              20,
+              73
+            ],
+            "content_sha256": "7d5fe8e9a5a689c4e65ab90401108811e989750891f75c803e131502405575b5"
+          },
+          "target": {
+            "symbol": "validate_timelines",
+            "lines": [
+              24,
+              77
+            ],
+            "content_sha256": "7d5fe8e9a5a689c4e65ab90401108811e989750891f75c803e131502405575b5"
+          },
+          "disposition": "migrated",
+          "retained_behavior": "Declared target total, numbered positive segments, one prompt fence, contiguous positive finished-time windows; no creative/concurrent-event grading."
+        },
+        {
+          "source": {
+            "symbol": "without_fenced_code",
+            "lines": [
+              76,
+              92
+            ],
+            "content_sha256": "264eb3f95b704c58097cf4f61e3a635b21a65d1083c8a2e33de351ae0b2182af"
+          },
+          "target": {
+            "symbol": "without_fenced_code",
+            "lines": [
+              80,
+              96
+            ],
+            "content_sha256": "264eb3f95b704c58097cf4f61e3a635b21a65d1083c8a2e33de351ae0b2182af"
+          },
+          "disposition": "migrated",
+          "retained_behavior": "Backtick/tilde fences excluded from navigation and heading interpretation."
+        },
+        {
+          "source": {
+            "symbol": "heading_anchors",
+            "lines": [
+              95,
+              117
+            ],
+            "content_sha256": "b00c542b1bb23f4ba27a93ddd6661107d39ed55a40af59f1aa4b3e4693c45721"
+          },
+          "target": {
+            "symbol": "heading_anchors",
+            "lines": [
+              99,
+              121
+            ],
+            "content_sha256": "b00c542b1bb23f4ba27a93ddd6661107d39ed55a40af59f1aa4b3e4693c45721"
+          },
+          "disposition": "migrated",
+          "retained_behavior": "ATX/closing hashes, inline formatting, Unicode, collision-safe duplicate anchor suffixes."
+        },
+        {
+          "source": {
+            "symbol": "validate_links",
+            "lines": [
+              120,
+              144
+            ],
+            "content_sha256": "b153451e968f316f2adfc023fff71fa8add66920c0fed247d54d1c3bea9348a4"
+          },
+          "target": {
+            "symbol": "validate_links",
+            "lines": [
+              148,
+              186
+            ],
+            "content_sha256": "4c7bf0d11f729dbdc2d30499656d470c17588ec18f37b43a94f73e8396b6ea16"
+          },
+          "disposition": "redesigned",
+          "retained_behavior": "Existing local files within root, same/cross document anchors, URL decoding, private-target rejection; external URLs unverified; explicit scan/exclusion scope."
+        },
+        {
+          "source": {
+            "symbol": "main",
+            "lines": [
+              147,
+              158
+            ],
+            "content_sha256": "d939353bfcb0218281e5f9dde7c406ea361c6438aa97a03f40661c1cfc9670e4"
+          },
+          "target": {
+            "symbol": "main",
+            "lines": [
+              211,
+              234
+            ],
+            "content_sha256": "e686f57d099d8650629b016e124d0d289ad4e2c135df0cc97f7ceff62558628d"
+          },
+          "disposition": "redesigned",
+          "retained_behavior": "Explicit CLI/exit status; migrated current defaults and scan/timeline options where applicable."
+        }
+      ],
+      "added_symbols": [
+        {
+          "symbol": "markdown_files",
+          "lines": [
+            124,
+            145
+          ],
+          "content_sha256": "4ae7acf71b15fde41284e6ef129ea3b1bfb93c1325f79ecd70298553b09af62c"
+        },
+        {
+          "symbol": "validate_content",
+          "lines": [
+            189,
+            208
+          ],
+          "content_sha256": "a8146b6049e83035e1b940c46247fac58c97f58904c8e381bdb8bf94fe1b81ac"
+        }
+      ]
+    },
+    {
+      "source": "tests/test_sample_video.py",
+      "target": "tests/test_sample_video.py",
+      "source_sha256": "6103bee5cf74fbff91125ae2296c962bc5e71939f87f119a7586f40d358264a5",
+      "target_sha256": "58e6a49527641b94c414954587f4bebba8a475cb588a20e6c495065c2bc9b856",
+      "tests": [
+        {
+          "source": {
+            "symbol": "SelectionTests.test_invalid_cli_times_return_argument_errors",
+            "lines": [
+              27,
+              30
+            ],
+            "content_sha256": "09520a83ab392b190e2a785715cbd2567fbe574f4bfd5211acfd2c3cb3fb11f0"
+          },
+          "target": {
+            "symbol": "SelectionTests.test_invalid_cli_times_return_argument_errors",
+            "lines": [
+              76,
+              79
+            ],
+            "content_sha256": "09520a83ab392b190e2a785715cbd2567fbe574f4bfd5211acfd2c3cb3fb11f0"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "SelectionTests.test_variable_rate_nonzero_origin_and_half_open_interval",
+            "lines": [
+              32,
+              34
+            ],
+            "content_sha256": "9c984c62f006e7c768e2d97390f76abab023d2f81b6a4a4f9857f5dfac287d60"
+          },
+          "target": {
+            "symbol": "SelectionTests.test_variable_rate_nonzero_origin_and_half_open_interval",
+            "lines": [
+              81,
+              83
+            ],
+            "content_sha256": "9c984c62f006e7c768e2d97390f76abab023d2f81b6a4a4f9857f5dfac287d60"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "SelectionTests.test_stride_counts_actual_frames_not_nominal_fps",
+            "lines": [
+              36,
+              38
+            ],
+            "content_sha256": "978f9e9cac9ec17a98229f2589d986d69875a4169799522ea1b985bfceff839e"
+          },
+          "target": {
+            "symbol": "SelectionTests.test_stride_counts_actual_frames_not_nominal_fps",
+            "lines": [
+              85,
+              87
+            ],
+            "content_sha256": "978f9e9cac9ec17a98229f2589d986d69875a4169799522ea1b985bfceff839e"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "SelectionTests.test_refuses_truncation_and_out_of_range_requests",
+            "lines": [
+              40,
+              46
+            ],
+            "content_sha256": "0643b14ea042e183d9f7100cd9c5c8fb0c17594a5f2c27305c72eb254c5684fb"
+          },
+          "target": {
+            "symbol": "SelectionTests.test_refuses_truncation_and_out_of_range_requests",
+            "lines": [
+              89,
+              95
+            ],
+            "content_sha256": "0643b14ea042e183d9f7100cd9c5c8fb0c17594a5f2c27305c72eb254c5684fb"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "SelectionTests.test_missing_duplicate_or_regressive_timestamps_are_not_invented",
+            "lines": [
+              48,
+              52
+            ],
+            "content_sha256": "cb2a8881bbf428e019004923da82eda5c124ea844af8c76978516d6436ea14a6"
+          },
+          "target": {
+            "symbol": "SelectionTests.test_missing_duplicate_or_regressive_timestamps_are_not_invented",
+            "lines": [
+              97,
+              101
+            ],
+            "content_sha256": "cb2a8881bbf428e019004923da82eda5c124ea844af8c76978516d6436ea14a6"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "SelectionTests.test_unknown_last_frame_duration_is_not_guessed_from_fps",
+            "lines": [
+              54,
+              57
+            ],
+            "content_sha256": "21df7b8bcf9e107a76b973c31fcc9c70787c7f86a8a3bba58052fd7beedff34d"
+          },
+          "target": {
+            "symbol": "SelectionTests.test_unknown_last_frame_duration_is_not_guessed_from_fps",
+            "lines": [
+              103,
+              106
+            ],
+            "content_sha256": "21df7b8bcf9e107a76b973c31fcc9c70787c7f86a8a3bba58052fd7beedff34d"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "SelectionTests.test_extraction_pts_are_independently_checked",
+            "lines": [
+              59,
+              64
+            ],
+            "content_sha256": "38d61700a06f7edbbce5155e2be4142f2ee5d1280212ae279211ba507aaf4812"
+          },
+          "target": {
+            "symbol": "SelectionTests.test_extraction_pts_are_independently_checked",
+            "lines": [
+              108,
+              113
+            ],
+            "content_sha256": "38d61700a06f7edbbce5155e2be4142f2ee5d1280212ae279211ba507aaf4812"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "ExtractionTests.test_actual_vfr_frames_retain_pixels_pts_and_review_boundary",
+            "lines": [
+              91,
+              106
+            ],
+            "content_sha256": "ffca14f89482758521e6cd69b5e1afa4f2186ee469d1e04e9aa64af3527c2b9c"
+          },
+          "target": {
+            "symbol": "ExtractionTests.test_actual_vfr_frames_retain_pixels_pts_and_review_boundary",
+            "lines": [
+              140,
+              155
+            ],
+            "content_sha256": "ffca14f89482758521e6cd69b5e1afa4f2186ee469d1e04e9aa64af3527c2b9c"
+          },
+          "status": "passed",
+          "evidence_kind": "real_local_ffmpeg_extraction"
+        },
+        {
+          "source": {
+            "symbol": "ExtractionTests.test_focused_stride_keeps_true_frame_indices",
+            "lines": [
+              108,
+              113
+            ],
+            "content_sha256": "cbd97f452206a83ab99030dc55e8e23e87a2a0fcfe61f734a1d19456d5b9f888"
+          },
+          "target": {
+            "symbol": "ExtractionTests.test_focused_stride_keeps_true_frame_indices",
+            "lines": [
+              157,
+              162
+            ],
+            "content_sha256": "cbd97f452206a83ab99030dc55e8e23e87a2a0fcfe61f734a1d19456d5b9f888"
+          },
+          "status": "passed",
+          "evidence_kind": "real_local_ffmpeg_extraction"
+        },
+        {
+          "source": {
+            "symbol": "ExtractionTests.test_rotation_and_non_square_pixels_preserve_encoded_grid",
+            "lines": [
+              115,
+              141
+            ],
+            "content_sha256": "65e3472d8b31772eeec5ee95904979741e4cd373d1f7bc6928e1f97fc03bb025"
+          },
+          "target": {
+            "symbol": "ExtractionTests.test_rotation_and_non_square_pixels_preserve_encoded_grid",
+            "lines": [
+              164,
+              190
+            ],
+            "content_sha256": "65e3472d8b31772eeec5ee95904979741e4cd373d1f7bc6928e1f97fc03bb025"
+          },
+          "status": "passed",
+          "evidence_kind": "real_local_ffmpeg_extraction"
+        },
+        {
+          "source": {
+            "symbol": "ExtractionTests.test_existing_directory_is_preserved",
+            "lines": [
+              143,
+              151
+            ],
+            "content_sha256": "43ca6a5583cbc2ead8c1f4704ea494b16e009681479323b8674cbb25029bdc4a"
+          },
+          "target": {
+            "symbol": "ExtractionTests.test_existing_directory_is_preserved",
+            "lines": [
+              192,
+              200
+            ],
+            "content_sha256": "43ca6a5583cbc2ead8c1f4704ea494b16e009681479323b8674cbb25029bdc4a"
+          },
+          "status": "passed",
+          "evidence_kind": "real_local_ffmpeg_extraction"
+        },
+        {
+          "source": {
+            "symbol": "ExtractionTests.test_high_depth_color_metadata_is_retained_without_review_claim",
+            "lines": [
+              153,
+              172
+            ],
+            "content_sha256": "ea5d0ca6ca052f18ca48e071b03b7f348de780fa638417f80a86f2653c8f1752"
+          },
+          "target": {
+            "symbol": "ExtractionTests.test_high_depth_color_metadata_is_retained_without_review_claim",
+            "lines": [
+              202,
+              221
+            ],
+            "content_sha256": "ea5d0ca6ca052f18ca48e071b03b7f348de780fa638417f80a86f2653c8f1752"
+          },
+          "status": "passed",
+          "evidence_kind": "real_local_ffmpeg_extraction"
+        },
+        {
+          "source": {
+            "symbol": "ExtractionTests.test_over_limit_fails_before_creating_partial_evidence",
+            "lines": [
+              174,
+              178
+            ],
+            "content_sha256": "3a9f708d3ffd81f6ebe2acd57872467dbcb017573d6bb61922c87acf67ec1e9e"
+          },
+          "target": {
+            "symbol": "ExtractionTests.test_over_limit_fails_before_creating_partial_evidence",
+            "lines": [
+              223,
+              227
+            ],
+            "content_sha256": "3a9f708d3ffd81f6ebe2acd57872467dbcb017573d6bb61922c87acf67ec1e9e"
+          },
+          "status": "passed",
+          "evidence_kind": "real_local_ffmpeg_extraction"
+        },
+        {
+          "source": {
+            "symbol": "ExtractionTests.test_corrupt_input_does_not_produce_success_manifest",
+            "lines": [
+              180,
+              186
+            ],
+            "content_sha256": "23b302cfc82dd9b1c22eea5f1d0b7a1c3fb51dbd6d17860089e32aacce9385f0"
+          },
+          "target": {
+            "symbol": "ExtractionTests.test_corrupt_input_does_not_produce_success_manifest",
+            "lines": [
+              229,
+              235
+            ],
+            "content_sha256": "23b302cfc82dd9b1c22eea5f1d0b7a1c3fb51dbd6d17860089e32aacce9385f0"
+          },
+          "status": "passed",
+          "evidence_kind": "real_local_ffmpeg_extraction"
+        },
+        {
+          "source": {
+            "symbol": "ExtractionTests.test_playlist_is_not_misrepresented_by_one_file_hash",
+            "lines": [
+              188,
+              196
+            ],
+            "content_sha256": "e63eef59210749cbd35031703895174d5335364789ee18162b148d7717caf167"
+          },
+          "target": {
+            "symbol": "ExtractionTests.test_playlist_is_not_misrepresented_by_one_file_hash",
+            "lines": [
+              237,
+              245
+            ],
+            "content_sha256": "e63eef59210749cbd35031703895174d5335364789ee18162b148d7717caf167"
+          },
+          "status": "passed",
+          "evidence_kind": "real_local_ffmpeg_extraction"
+        },
+        {
+          "source": {
+            "symbol": "ExtractionTests.test_source_change_after_extraction_invalidates_existing_frames",
+            "lines": [
+              198,
+              217
+            ],
+            "content_sha256": "d0bd5dfe855889585fad1501bed92a9785cb78b1a8d9c9d8315295020d01d24a"
+          },
+          "target": {
+            "symbol": "ExtractionTests.test_source_change_after_extraction_invalidates_existing_frames",
+            "lines": [
+              247,
+              266
+            ],
+            "content_sha256": "d0bd5dfe855889585fad1501bed92a9785cb78b1a8d9c9d8315295020d01d24a"
+          },
+          "status": "passed",
+          "evidence_kind": "real_local_ffmpeg_extraction"
+        },
+        {
+          "source": {
+            "symbol": "ExtractionTests.test_verification_failure_marks_created_artifacts_failed",
+            "lines": [
+              219,
+              229
+            ],
+            "content_sha256": "9eb6ce7f184de288ad5dd23fad89d146a36e2a2fb96b5af0c83fa27db607cc39"
+          },
+          "target": {
+            "symbol": "ExtractionTests.test_verification_failure_marks_created_artifacts_failed",
+            "lines": [
+              268,
+              278
+            ],
+            "content_sha256": "9eb6ce7f184de288ad5dd23fad89d146a36e2a2fb96b5af0c83fa27db607cc39"
+          },
+          "status": "passed",
+          "evidence_kind": "real_local_ffmpeg_extraction"
+        }
+      ],
+      "added_tests": [
+        {
+          "symbol": "SelectionTests.test_import_does_not_require_optional_sampling_dependencies",
+          "lines": [
+            41,
+            45
+          ],
+          "content_sha256": "bdd6c9a99ad13454046f630531d7c31ee6eb05b844a90811600449232f55e785"
+        },
+        {
+          "symbol": "SelectionTests.test_missing_pillow_is_reported_only_when_sampling",
+          "lines": [
+            55,
+            62
+          ],
+          "content_sha256": "9e31fe2f83e01225865698c2ab7d9e5080c1e40158ad7fbb015ccca3c3d3dfc0"
+        },
+        {
+          "symbol": "SelectionTests.test_missing_tools_are_reported_before_creating_output",
+          "lines": [
+            47,
+            53
+          ],
+          "content_sha256": "6b3775717cb11ba1fc2480475937252334ede89da1f624837a227207787d601f"
+        },
+        {
+          "symbol": "SelectionTests.test_pillow_without_resampling_api_is_rejected_before_output",
+          "lines": [
+            64,
+            74
+          ],
+          "content_sha256": "41becf8375c57942a815b0043fa46dff840bec35d3f4049a08a6c6d77eb73a52"
+        },
+        {
+          "symbol": "SelectionTests.test_python_310_compatible_hash_reads_all_chunks",
+          "lines": [
+            31,
+            39
+          ],
+          "content_sha256": "5bf9e7d44665029bb758b336a765355f5e20e5d718c5a1bc214701214d61e1ce"
+        }
+      ]
+    },
+    {
+      "source": "tests/test_validate_repository.py",
+      "target": "tests/test_validate_content.py",
+      "source_sha256": "2359ecf407125f6cc51c83b48ad7e3fa6317772ac6f21e42b204d95034188e88",
+      "target_sha256": "6b7de9e28c02504ec3c3678dbcb93c287a8212e0dfc8131e9dec303b6ef30770",
+      "tests": [
+        {
+          "source": {
+            "symbol": "TimelineTests.test_valid_and_3d_style_line",
+            "lines": [
+              32,
+              33
+            ],
+            "content_sha256": "17598ebab0944107cf7cadff6c7e2ca80d86611766c2ccef3b64619a6dd7b3f2"
+          },
+          "target": {
+            "symbol": "TimelineTests.test_valid_and_3d_style_line",
+            "lines": [
+              33,
+              34
+            ],
+            "content_sha256": "17598ebab0944107cf7cadff6c7e2ca80d86611766c2ccef3b64619a6dd7b3f2"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "TimelineTests.test_en_dash",
+            "lines": [
+              35,
+              36
+            ],
+            "content_sha256": "55e8b3b6497f342331dc4aa12c53b9f4cf157d831326c186a4b9b4365cc09722"
+          },
+          "target": {
+            "symbol": "TimelineTests.test_en_dash",
+            "lines": [
+              36,
+              37
+            ],
+            "content_sha256": "55e8b3b6497f342331dc4aa12c53b9f4cf157d831326c186a4b9b4365cc09722"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "TimelineTests.test_two_segments_sum_to_target",
+            "lines": [
+              38,
+              42
+            ],
+            "content_sha256": "d882f6c4fe3d71a68f667706832160d9fdb5d32b1b30018472d07b6cd4af4d7c"
+          },
+          "target": {
+            "symbol": "TimelineTests.test_two_segments_sum_to_target",
+            "lines": [
+              39,
+              43
+            ],
+            "content_sha256": "d882f6c4fe3d71a68f667706832160d9fdb5d32b1b30018472d07b6cd4af4d7c"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "TimelineTests.test_reject_invalid_timelines",
+            "lines": [
+              44,
+              61
+            ],
+            "content_sha256": "c870e523abfdee43f983f4455e19262a09dd0ebfd10419daf5c7ca9a6da06d35"
+          },
+          "target": {
+            "symbol": "TimelineTests.test_reject_invalid_timelines",
+            "lines": [
+              45,
+              62
+            ],
+            "content_sha256": "c870e523abfdee43f983f4455e19262a09dd0ebfd10419daf5c7ca9a6da06d35"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "TimelineTests.test_reject_missing_segments",
+            "lines": [
+              63,
+              64
+            ],
+            "content_sha256": "7e90165bedaf7222e4927d65a8b8ab7dd330e9876ed4e059e0950fb77b188f9d"
+          },
+          "target": {
+            "symbol": "TimelineTests.test_reject_missing_segments",
+            "lines": [
+              64,
+              65
+            ],
+            "content_sha256": "7e90165bedaf7222e4927d65a8b8ab7dd330e9876ed4e059e0950fb77b188f9d"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "TimelineTests.test_reject_no_timeline",
+            "lines": [
+              66,
+              70
+            ],
+            "content_sha256": "dc54a80451efb02c9c8f2c61bf059708705ac9a8cdd0af125ded90dad72eaa75"
+          },
+          "target": {
+            "symbol": "TimelineTests.test_reject_no_timeline",
+            "lines": [
+              67,
+              71
+            ],
+            "content_sha256": "dc54a80451efb02c9c8f2c61bf059708705ac9a8cdd0af125ded90dad72eaa75"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "TimelineTests.test_reject_empty_corpus",
+            "lines": [
+              72,
+              73
+            ],
+            "content_sha256": "bd73d2b9684356580b73115b61870158381a6cbcc46d0ae96f86de370c80f7e6"
+          },
+          "target": {
+            "symbol": "TimelineTests.test_reject_empty_corpus",
+            "lines": [
+              73,
+              74
+            ],
+            "content_sha256": "bd73d2b9684356580b73115b61870158381a6cbcc46d0ae96f86de370c80f7e6"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "TimelineTests.test_repository_examples",
+            "lines": [
+              75,
+              80
+            ],
+            "content_sha256": "97740a1e9a1c26092b77f6b189548573887fb23aadd10563cff49858bd0afa2a"
+          },
+          "target": {
+            "symbol": "TimelineTests.test_repository_examples",
+            "lines": [
+              76,
+              80
+            ],
+            "content_sha256": "5465a8c15b04fd8f67ce9ff87196ab06dbe321096b8b5284e206b35606cee2a4"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_valid_nested_reference",
+            "lines": [
+              93,
+              98
+            ],
+            "content_sha256": "feac9d6932a3a072cf8fbdc3cbc7ece4f5357c19538ad4672eaf06c691045371"
+          },
+          "target": {
+            "symbol": "LinkTests.test_valid_nested_reference",
+            "lines": [
+              93,
+              98
+            ],
+            "content_sha256": "feac9d6932a3a072cf8fbdc3cbc7ece4f5357c19538ad4672eaf06c691045371"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_missing_reference",
+            "lines": [
+              100,
+              102
+            ],
+            "content_sha256": "1847d9b2bdad9d6b8958914119a6966cb7e0d6174e4f0785a0cdadbf7c68b543"
+          },
+          "target": {
+            "symbol": "LinkTests.test_missing_reference",
+            "lines": [
+              100,
+              102
+            ],
+            "content_sha256": "1847d9b2bdad9d6b8958914119a6966cb7e0d6174e4f0785a0cdadbf7c68b543"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_directory_is_not_file",
+            "lines": [
+              104,
+              107
+            ],
+            "content_sha256": "d7b4cca00815e6dc96b756e0f6fcc429d2ada0e97c5f9176ba2651a066c81d45"
+          },
+          "target": {
+            "symbol": "LinkTests.test_directory_is_not_file",
+            "lines": [
+              104,
+              107
+            ],
+            "content_sha256": "d7b4cca00815e6dc96b756e0f6fcc429d2ada0e97c5f9176ba2651a066c81d45"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_escape_outside_repository",
+            "lines": [
+              109,
+              111
+            ],
+            "content_sha256": "46965d6ad35f7f112b4ecd3e3fe8fe1296ce2805a293ee986172a78972d677c7"
+          },
+          "target": {
+            "symbol": "LinkTests.test_escape_outside_repository",
+            "lines": [
+              109,
+              111
+            ],
+            "content_sha256": "46965d6ad35f7f112b4ecd3e3fe8fe1296ce2805a293ee986172a78972d677c7"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_external_links_are_not_claimed_verified",
+            "lines": [
+              113,
+              115
+            ],
+            "content_sha256": "d476fb52ba7885542d3d966fbaa61aebf93b47cf4f145e0e205fae0008f8b0b9"
+          },
+          "target": {
+            "symbol": "LinkTests.test_external_links_are_not_claimed_verified",
+            "lines": [
+              113,
+              115
+            ],
+            "content_sha256": "d476fb52ba7885542d3d966fbaa61aebf93b47cf4f145e0e205fae0008f8b0b9"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_same_document_heading_and_missing_heading",
+            "lines": [
+              117,
+              122
+            ],
+            "content_sha256": "67b547b13c18aac87decf2c7adba522b1360f95e9edbde116dcb8c8a7510a5e8"
+          },
+          "target": {
+            "symbol": "LinkTests.test_same_document_heading_and_missing_heading",
+            "lines": [
+              117,
+              122
+            ],
+            "content_sha256": "67b547b13c18aac87decf2c7adba522b1360f95e9edbde116dcb8c8a7510a5e8"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_cross_document_heading_rename_is_detected",
+            "lines": [
+              124,
+              130
+            ],
+            "content_sha256": "7b30316c1728632caf8a92e4d408889a9d7e975adfac9474fa7eb64f5ca87164"
+          },
+          "target": {
+            "symbol": "LinkTests.test_cross_document_heading_rename_is_detected",
+            "lines": [
+              124,
+              130
+            ],
+            "content_sha256": "7b30316c1728632caf8a92e4d408889a9d7e975adfac9474fa7eb64f5ca87164"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_encoded_heading_and_path",
+            "lines": [
+              132,
+              135
+            ],
+            "content_sha256": "231e4e9ca937db0ee95ee8539732f90aebf5744c928c85227c83392cce614ac9"
+          },
+          "target": {
+            "symbol": "LinkTests.test_encoded_heading_and_path",
+            "lines": [
+              132,
+              135
+            ],
+            "content_sha256": "231e4e9ca937db0ee95ee8539732f90aebf5744c928c85227c83392cce614ac9"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_duplicate_headings_and_numbered_collision",
+            "lines": [
+              137,
+              143
+            ],
+            "content_sha256": "f4e37322291fc10c9ee84a5a2f1e2459d6bf1575c5c86c3571cf8719d12e4d12"
+          },
+          "target": {
+            "symbol": "LinkTests.test_duplicate_headings_and_numbered_collision",
+            "lines": [
+              137,
+              143
+            ],
+            "content_sha256": "f4e37322291fc10c9ee84a5a2f1e2459d6bf1575c5c86c3571cf8719d12e4d12"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_fenced_examples_are_not_headings_or_links",
+            "lines": [
+              145,
+              153
+            ],
+            "content_sha256": "f55eb8ead556ce41d14f7ea5bf95fbb773739d3cd67c116fb07b775ad9f8d9a7"
+          },
+          "target": {
+            "symbol": "LinkTests.test_fenced_examples_are_not_headings_or_links",
+            "lines": [
+              145,
+              153
+            ],
+            "content_sha256": "f55eb8ead556ce41d14f7ea5bf95fbb773739d3cd67c116fb07b775ad9f8d9a7"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_formatted_heading_punctuation_and_closing_hashes",
+            "lines": [
+              155,
+              157
+            ],
+            "content_sha256": "e1d21df5d6a8d14d4fdb1ed540ed13436f0ca1a37541069a7dd654539a65c795"
+          },
+          "target": {
+            "symbol": "LinkTests.test_formatted_heading_punctuation_and_closing_hashes",
+            "lines": [
+              155,
+              157
+            ],
+            "content_sha256": "e1d21df5d6a8d14d4fdb1ed540ed13436f0ca1a37541069a7dd654539a65c795"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_local_analysis_notes_do_not_change_repository_result",
+            "lines": [
+              159,
+              171
+            ],
+            "content_sha256": "66e462d71720dbcf644fd2100e6beb70003204c55334b008a2003161247099e2"
+          },
+          "target": {
+            "symbol": "LinkTests.test_local_analysis_notes_do_not_change_repository_result",
+            "lines": [
+              159,
+              171
+            ],
+            "content_sha256": "66e462d71720dbcf644fd2100e6beb70003204c55334b008a2003161247099e2"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_existing_local_only_note_cannot_be_a_published_reference",
+            "lines": [
+              173,
+              183
+            ],
+            "content_sha256": "5f5e7455801b73cec945e18119cd5ad8bb35b42b5e682b1dd334bcf21e5bec12"
+          },
+          "target": {
+            "symbol": "LinkTests.test_existing_local_only_note_cannot_be_a_published_reference",
+            "lines": [
+              173,
+              183
+            ],
+            "content_sha256": "5f5e7455801b73cec945e18119cd5ad8bb35b42b5e682b1dd334bcf21e5bec12"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_nested_reference_cannot_depend_on_local_image",
+            "lines": [
+              185,
+              196
+            ],
+            "content_sha256": "1add5c9fa9b39ca6fdc2b341565a74869169992e30f98c771a93f755d5af99fe"
+          },
+          "target": {
+            "symbol": "LinkTests.test_nested_reference_cannot_depend_on_local_image",
+            "lines": [
+              185,
+              196
+            ],
+            "content_sha256": "1add5c9fa9b39ca6fdc2b341565a74869169992e30f98c771a93f755d5af99fe"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_similar_directory_name_is_still_checked",
+            "lines": [
+              198,
+              206
+            ],
+            "content_sha256": "ffc022b1646def5cee2d4ceb7522edfa94949709ebed608ed42ad9c1df5da3c0"
+          },
+          "target": {
+            "symbol": "LinkTests.test_similar_directory_name_is_still_checked",
+            "lines": [
+              198,
+              206
+            ],
+            "content_sha256": "ffc022b1646def5cee2d4ceb7522edfa94949709ebed608ed42ad9c1df5da3c0"
+          },
+          "status": "passed",
+          "evidence_kind": "mechanical_invariant"
+        },
+        {
+          "source": {
+            "symbol": "LinkTests.test_repository_local_links",
+            "lines": [
+              208,
+              211
+            ],
+            "content_sha256": "9f7bde9be433062739a47aacb582d68a2dfb6fc1054a32c2749484a70ab8a5c8"
+          },
+          "target": {
+            "symbol": "LinkTests.test_repository_local_links",
+            "lines": [
+              208,
+              211
+            ],
+            "content_sha256": "9f7bde9be433062739a47aacb582d68a2dfb6fc1054a32c2749484a70ab8a5c8"
+          },
+          "status": "pending_current_repo_links",
+          "evidence_kind": "mechanical_invariant"
+        }
+      ],
+      "added_tests": [
+        {
+          "symbol": "FixtureMigrationTests.test_source_cases_are_preserved_except_reference_destinations",
+          "lines": [
+            273,
+            284
+          ],
+          "content_sha256": "56abcd806cfe0f1eeaddea54a8cc04b0aeb9d3729a0af6572d4896d2b4826339"
+        },
+        {
+          "symbol": "LinkTests.test_absolute_filesystem_links_do_not_pass_as_external_urls",
+          "lines": [
+            245,
+            251
+          ],
+          "content_sha256": "19032237f1ca107164e29fa2d486b2b836109a6123c46aec5641e868282d7038"
+        },
+        {
+          "symbol": "LinkTests.test_angle_bracket_paths_and_link_titles",
+          "lines": [
+            253,
+            256
+          ],
+          "content_sha256": "99cf88edf75d2eda5c0e60fdc15a8c1ee05d0535d45773c2a35eaa53463c7bb6"
+        },
+        {
+          "symbol": "LinkTests.test_build_api_separates_timeline_and_navigation_evidence",
+          "lines": [
+            263,
+            269
+          ],
+          "content_sha256": "02d5a18487d7e06e79dfaa63280a190fbb52b1d1e59ed3ef1ec5357ee592e9ae"
+        },
+        {
+          "symbol": "LinkTests.test_excluded_scan_directory_does_not_hide_missing_reference_target",
+          "lines": [
+            230,
+            232
+          ],
+          "content_sha256": "554eca780fa14b9215a5ea50622c517197d5d1eea21a9136c5ba0db6446d18ef"
+        },
+        {
+          "symbol": "LinkTests.test_invalid_scan_scope_is_reported",
+          "lines": [
+            258,
+            261
+          ],
+          "content_sha256": "b0c723727e4cc621a4a56b619eb2f79a0cf46006c4196e4b3b9f82490ecf2feb"
+        },
+        {
+          "symbol": "LinkTests.test_private_sources_and_outputs_are_never_public_targets",
+          "lines": [
+            234,
+            243
+          ],
+          "content_sha256": "8b26168af7060f3acd2d6c1618334c82f150c9dc76f2bdf1552a66d16cc17f99"
+        },
+        {
+          "symbol": "LinkTests.test_scan_scope_does_not_allow_missing_or_outside_targets",
+          "lines": [
+            221,
+            228
+          ],
+          "content_sha256": "68798a81524a06e1a5caf815d3963da69ad88294c1b7eb15ec2b98af2bfcc149"
+        },
+        {
+          "symbol": "LinkTests.test_upstream_snapshots_do_not_rewrite_navigation_result",
+          "lines": [
+            213,
+            219
+          ],
+          "content_sha256": "7402f1e61e4eac02e668bfdcbd4bd42a27b76b8a5cf9bd3a7d65afd35071eb41"
+        }
+      ]
+    },
+    {
+      "source": "examples/behavior-regression.md",
+      "target": "tests/fixtures/xianxia/behavior-regression.md",
+      "source_sha256": "47c84282d696517f8aa9c687ae421c2717061fe8aa1585f86f357f90b63efe29",
+      "target_sha256": "aba879c2918e814fe20d8027cf73b0f523ddf1e4bbf38c25abbff05b8bf7b7ae",
+      "fidelity": "exact normalized text preserved except mapped relative link destinations",
+      "creativity_review": "not established by copy, count, hash or structure tests; source review scope retained",
+      "sections": [
+        {
+          "title": "旧友留手",
+          "source_lines": [
+            5,
+            21
+          ],
+          "target_lines": [
+            5,
+            21
+          ],
+          "source_content_sha256": "787e26db0619460c8e36a30696228b634be1794b9cd70427b4f571ff44ddb605",
+          "target_content_sha256": "787e26db0619460c8e36a30696228b634be1794b9cd70427b4f571ff44ddb605",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "连续追击",
+          "source_lines": [
+            22,
+            38
+          ],
+          "target_lines": [
+            22,
+            38
+          ],
+          "source_content_sha256": "cb60b0c25430faa2e3cb7aea8464568549acf6461691c95365b99cd906504534",
+          "target_content_sha256": "cb60b0c25430faa2e3cb7aea8464568549acf6461691c95365b99cd906504534",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "观察与破阵",
+          "source_lines": [
+            39,
+            66
+          ],
+          "target_lines": [
+            39,
+            66
+          ],
+          "source_content_sha256": "3ea6517f675082d54f636faeddff9dd2a9c1b3be58bb2c560868db798c2e772a",
+          "target_content_sha256": "3ea6517f675082d54f636faeddff9dd2a9c1b3be58bb2c560868db798c2e772a",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "盾阵偏转与脱身",
+          "source_lines": [
+            67,
+            94
+          ],
+          "target_lines": [
+            67,
+            94
+          ],
+          "source_content_sha256": "2c8864541a9b55d64c292e872091d6fab39239cb7f00d8003d0b53dd2170a825",
+          "target_content_sha256": "2c8864541a9b55d64c292e872091d6fab39239cb7f00d8003d0b53dd2170a825",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "短促一击",
+          "source_lines": [
+            95,
+            111
+          ],
+          "target_lines": [
+            95,
+            111
+          ],
+          "source_content_sha256": "131e22a97a2ce3374522cd455bc468d811da977f7a431d7a0cfc0f6c06410e3e",
+          "target_content_sha256": "131e22a97a2ce3374522cd455bc468d811da977f7a431d7a0cfc0f6c06410e3e",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "明确指定的共鸣同伤",
+          "source_lines": [
+            112,
+            130
+          ],
+          "target_lines": [
+            112,
+            130
+          ],
+          "source_content_sha256": "8f247799851767c561c9f7d3ecd5a9cc421d8d5c3876f65c9c09623a7ee55b5d",
+          "target_content_sha256": "8f247799851767c561c9f7d3ecd5a9cc421d8d5c3876f65c9c09623a7ee55b5d",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "退路封闭后的回应",
+          "source_lines": [
+            131,
+            147
+          ],
+          "target_lines": [
+            131,
+            147
+          ],
+          "source_content_sha256": "679e89f3ca6a1a2b3704349348f587ceed8a2a278145b4662531075005de1b69",
+          "target_content_sha256": "679e89f3ca6a1a2b3704349348f587ceed8a2a278145b4662531075005de1b69",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "符箓消耗后的夺路",
+          "source_lines": [
+            148,
+            164
+          ],
+          "target_lines": [
+            148,
+            164
+          ],
+          "source_content_sha256": "3eab219566c9a901074dd5df79011ad0187f8b251ec610f57b977aa5013eda55",
+          "target_content_sha256": "3eab219566c9a901074dd5df79011ad0187f8b251ec610f57b977aa5013eda55",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "单剑载人与离剑攻击",
+          "source_lines": [
+            165,
+            184
+          ],
+          "target_lines": [
+            165,
+            184
+          ],
+          "source_content_sha256": "023b0d76e631d7eb57d7c0fa1549dae4aa135de30309bf6f04aa75b462fe20e8",
+          "target_content_sha256": "023b0d76e631d7eb57d7c0fa1549dae4aa135de30309bf6f04aa75b462fe20e8",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "御空能力不改成落地借力",
+          "source_lines": [
+            185,
+            201
+          ],
+          "target_lines": [
+            185,
+            201
+          ],
+          "source_content_sha256": "923aefaef60b5ccef446ca0093a0c466b6e5457abe122d8ea814491557ba3813",
+          "target_content_sha256": "923aefaef60b5ccef446ca0093a0c466b6e5457abe122d8ea814491557ba3813",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "两路施压中的脱围",
+          "source_lines": [
+            202,
+            219
+          ],
+          "target_lines": [
+            202,
+            219
+          ],
+          "source_content_sha256": "bbb75183c6686ac785cc1e841f7c59f976a37dc7d992f48d26b8ad754621c4f4",
+          "target_content_sha256": "bbb75183c6686ac785cc1e841f7c59f976a37dc7d992f48d26b8ad754621c4f4",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "守住目标而未击败对手",
+          "source_lines": [
+            220,
+            237
+          ],
+          "target_lines": [
+            220,
+            237
+          ],
+          "source_content_sha256": "004fcead1ba043eaa3f0ccc7cac797c19916577228cc1deb66467ac88893f8c3",
+          "target_content_sha256": "004fcead1ba043eaa3f0ccc7cac797c19916577228cc1deb66467ac88893f8c3",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "同招再用被提前封线",
+          "source_lines": [
+            238,
+            255
+          ],
+          "target_lines": [
+            238,
+            255
+          ],
+          "source_content_sha256": "673d4cff2b5a32b82758c6963d98e5b05404c90c41f32449aacb7e67bcf09ce5",
+          "target_content_sha256": "673d4cff2b5a32b82758c6963d98e5b05404c90c41f32449aacb7e67bcf09ce5",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "持续压剑后的主动脱开",
+          "source_lines": [
+            256,
+            275
+          ],
+          "target_lines": [
+            256,
+            275
+          ],
+          "source_content_sha256": "75a4c794790cd2c506fbf91b71758148cb946c4f456474e6520a8a7b2cc85b4c",
+          "target_content_sha256": "75a4c794790cd2c506fbf91b71758148cb946c4f456474e6520a8a7b2cc85b4c",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "第三人迫使束缚中断",
+          "source_lines": [
+            276,
+            292
+          ],
+          "target_lines": [
+            276,
+            292
+          ],
+          "source_content_sha256": "de4e06b19645023b56dc0e1153aad68db1f291e7fe3fb204ec172b35ee09a801",
+          "target_content_sha256": "de4e06b19645023b56dc0e1153aad68db1f291e7fe3fb204ec172b35ee09a801",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "身法残影不新增攻击者",
+          "source_lines": [
+            293,
+            309
+          ],
+          "target_lines": [
+            293,
+            309
+          ],
+          "source_content_sha256": "02c63eb90fb58dba37148ad9046c1a8a8b5ac7018906555a1565841e4496a236",
+          "target_content_sha256": "02c63eb90fb58dba37148ad9046c1a8a8b5ac7018906555a1565841e4496a236",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "同貌分身分工与退场",
+          "source_lines": [
+            310,
+            327
+          ],
+          "target_lines": [
+            310,
+            327
+          ],
+          "source_content_sha256": "9d4b1b0ce1fdfb11e4dedea4e6ebf199101886ca79ac8d7a0bb5468e41c51307",
+          "target_content_sha256": "9d4b1b0ce1fdfb11e4dedea4e6ebf199101886ca79ac8d7a0bb5468e41c51307",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "巨爪落空后的环境威胁",
+          "source_lines": [
+            328,
+            345
+          ],
+          "target_lines": [
+            328,
+            345
+          ],
+          "source_content_sha256": "e26455bab0b4b68e7565ae70cecec038c057d4350c7ed0c0468e64c2271c996e",
+          "target_content_sha256": "e26455bab0b4b68e7565ae70cecec038c057d4350c7ed0c0468e64c2271c996e",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "小体型高修为者正面承接",
+          "source_lines": [
+            346,
+            362
+          ],
+          "target_lines": [
+            346,
+            362
+          ],
+          "source_content_sha256": "e8b8dc14b112ce7845f1796857331e5e5fcbba6ab2d0405f683cf57271051490",
+          "target_content_sha256": "e8b8dc14b112ce7845f1796857331e5e5fcbba6ab2d0405f683cf57271051490",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "追击中的短法令与护盾声源",
+          "source_lines": [
+            363,
+            379
+          ],
+          "target_lines": [
+            363,
+            379
+          ],
+          "source_content_sha256": "6e866741bbeca41e1e5fe5c5b217a75b641e6c0bee7e66a705599f83c924a0e3",
+          "target_content_sha256": "6e866741bbeca41e1e5fe5c5b217a75b641e6c0bee7e66a705599f83c924a0e3",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "停射不抹去已发符矢",
+          "source_lines": [
+            380,
+            397
+          ],
+          "target_lines": [
+            380,
+            397
+          ],
+          "source_content_sha256": "0bf7394e7011914ce537d15e461a4c4f50a11e92fcf972a9f45e74debb7f04d1",
+          "target_content_sha256": "0bf7394e7011914ce537d15e461a4c4f50a11e92fcf972a9f45e74debb7f04d1",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "佯攻落空后不能凭空得手",
+          "source_lines": [
+            398,
+            414
+          ],
+          "target_lines": [
+            398,
+            414
+          ],
+          "source_content_sha256": "7ce74aa7332e9241e8bc707750da3db3926128ec899e179a151932112da84c28",
+          "target_content_sha256": "7ce74aa7332e9241e8bc707750da3db3926128ec899e179a151932112da84c28",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "缴械、解除定剑环与接取原剑",
+          "source_lines": [
+            415,
+            432
+          ],
+          "target_lines": [
+            415,
+            432
+          ],
+          "source_content_sha256": "1fc4560c43843c2d901c19e308349ff4aa43e8a1efc04b1ae0f4b4f677c99266",
+          "target_content_sha256": "1fc4560c43843c2d901c19e308349ff4aa43e8a1efc04b1ae0f4b4f677c99266",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "盾与符矢耗尽，守方无伤但失去遮护",
+          "source_lines": [
+            433,
+            449
+          ],
+          "target_lines": [
+            433,
+            449
+          ],
+          "source_content_sha256": "79524136aa8beda389b31a55bbee027683790bf065452fab5379a8e26e734946",
+          "target_content_sha256": "79524136aa8beda389b31a55bbee027683790bf065452fab5379a8e26e734946",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "抓腕后的局部回应与主动脱开",
+          "source_lines": [
+            450,
+            467
+          ],
+          "target_lines": [
+            450,
+            467
+          ],
+          "source_content_sha256": "26a264bddab8dbe6cd552048826a87125a1cf70a5a6a430722a0f9c0f7d8b9e5",
+          "target_content_sha256": "26a264bddab8dbe6cd552048826a87125a1cf70a5a6a430722a0f9c0f7d8b9e5",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "竖屏同框的一次剑刃交锋",
+          "source_lines": [
+            468,
+            485
+          ],
+          "target_lines": [
+            468,
+            485
+          ],
+          "source_content_sha256": "698314e3e773655db35b18474279dfd3442d8d602c73246e9d585e2a88c832ce",
+          "target_content_sha256": "ea31d690df04755ef38255e402d52432118e78b4ddac257b7ee1c12fd908ed44",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "八秒正常速度连续攻防",
+          "source_lines": [
+            486,
+            503
+          ],
+          "target_lines": [
+            486,
+            503
+          ],
+          "source_content_sha256": "dd208bddf40d7f21f7ee6f19c6521b4d5dce8971d845cfb95b360375ff403768",
+          "target_content_sha256": "67041099c3fcdca952f9ebc18cce6d161633744d6f8474362af5f9ad031424b9",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "真人质感与变招守门",
+          "source_lines": [
+            504,
+            520
+          ],
+          "target_lines": [
+            504,
+            520
+          ],
+          "source_content_sha256": "6619ad811957641b06f56598ac77b918482f38da19920a755f80be2fdaaf5baf",
+          "target_content_sha256": "6619ad811957641b06f56598ac77b918482f38da19920a755f80be2fdaaf5baf",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "压缩包融合的条件核查",
+          "source_lines": [
+            521,
+            531
+          ],
+          "target_lines": [
+            521,
+            531
+          ],
+          "source_content_sha256": "b1faba0489dd6b1e9d3a5e10a26ca573b8bb0164f646286c470b8f474a5a100e",
+          "target_content_sha256": "b1faba0489dd6b1e9d3a5e10a26ca573b8bb0164f646286c470b8f474a5a100e",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "执行边界场景",
+          "source_lines": [
+            532,
+            543
+          ],
+          "target_lines": [
+            532,
+            543
+          ],
+          "source_content_sha256": "fca90580e9f57c1bd5d38f2c74eb317b1871ef2e52e6f8ea9b9bad3da7cad153",
+          "target_content_sha256": "fca90580e9f57c1bd5d38f2c74eb317b1871ef2e52e6f8ea9b9bad3da7cad153",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "本轮验证记录",
+          "source_lines": [
+            544,
+            554
+          ],
+          "target_lines": [
+            544,
+            554
+          ],
+          "source_content_sha256": "3802d47e920f5c5e0512e64311569e67d32da137fcd0b1aad2519680352cf59b",
+          "target_content_sha256": "63232d7fa51623dc17656e5ffd43ce41f3f0c94c482437099bbfb3bd8d0199e1",
+          "disposition": "preserved_fixture"
+        }
+      ]
+    },
+    {
+      "source": "examples/reference-adaptation.md",
+      "target": "tests/fixtures/xianxia/reference-adaptation.md",
+      "source_sha256": "4300f5b7fbf9b181de14bc888bbdb3a541c6a0aef9442c046591025773e0b9e3",
+      "target_sha256": "50d2fa1ba7c1700dde6cf7aa50bf382bcef767aec1ddc466959f14a25f2f7e4b",
+      "fidelity": "exact normalized text preserved except mapped relative link destinations",
+      "creativity_review": "not established by copy, count, hash or structure tests; source review scope retained",
+      "sections": [
+        {
+          "title": "从首帧动势继续",
+          "source_lines": [
+            17,
+            32
+          ],
+          "target_lines": [
+            17,
+            32
+          ],
+          "source_content_sha256": "9e7ac85f17f58f364e8f71297d891a79275db0c1e8d4969db99492451f480517",
+          "target_content_sha256": "9e7ac85f17f58f364e8f71297d891a79275db0c1e8d4969db99492451f480517",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "多视图与动作参考分工",
+          "source_lines": [
+            33,
+            48
+          ],
+          "target_lines": [
+            33,
+            48
+          ],
+          "source_content_sha256": "dd823ec61d8febb501f0719ef4f7c809afd802d19cb99d220b20bbf018c810df",
+          "target_content_sha256": "dd823ec61d8febb501f0719ef4f7c809afd802d19cb99d220b20bbf018c810df",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "首帧与明确约束互斥",
+          "source_lines": [
+            49,
+            56
+          ],
+          "target_lines": [
+            49,
+            56
+          ],
+          "source_content_sha256": "3d6911a87d6104e105d600a2fdaa149cc25189ce6a0a58c70e4dec2875cf5d41",
+          "target_content_sha256": "3d6911a87d6104e105d600a2fdaa149cc25189ce6a0a58c70e4dec2875cf5d41",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "接触不可读时的有界修正",
+          "source_lines": [
+            57,
+            68
+          ],
+          "target_lines": [
+            57,
+            68
+          ],
+          "source_content_sha256": "9ad11f27794c2c6d5c57d56b1a1e85db8371218eb4fb6414282cfea9929b785e",
+          "target_content_sha256": "9ad11f27794c2c6d5c57d56b1a1e85db8371218eb4fb6414282cfea9929b785e",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "相机换边与攻守交换",
+          "source_lines": [
+            69,
+            109
+          ],
+          "target_lines": [
+            69,
+            109
+          ],
+          "source_content_sha256": "bb40d0db93e1ed4bc9280bab007a7f7bbc0486d4f90438cfe5fee74aceed5194",
+          "target_content_sha256": "bb40d0db93e1ed4bc9280bab007a7f7bbc0486d4f90438cfe5fee74aceed5194",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "简化不能删掉指定的接触",
+          "source_lines": [
+            110,
+            117
+          ],
+          "target_lines": [
+            110,
+            117
+          ],
+          "source_content_sha256": "675e1674ed34b3f5e3d2395b75a8242ac42dcdc834b0010531e25c9fe455a740",
+          "target_content_sha256": "675e1674ed34b3f5e3d2395b75a8242ac42dcdc834b0010531e25c9fe455a740",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "尾帧姿态与跨段动势",
+          "source_lines": [
+            118,
+            127
+          ],
+          "target_lines": [
+            118,
+            127
+          ],
+          "source_content_sha256": "67fc3afd3c49d6f15ef6848e4b363dd81cce7925c96bbbd0dd307f1a5b83547e",
+          "target_content_sha256": "67fc3afd3c49d6f15ef6848e4b363dd81cce7925c96bbbd0dd307f1a5b83547e",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "计划、观察与接续取舍",
+          "source_lines": [
+            128,
+            142
+          ],
+          "target_lines": [
+            128,
+            142
+          ],
+          "source_content_sha256": "24711152492c06c0c7ea47edf939be0b43777d7f3426f08a18fac4700070183f",
+          "target_content_sha256": "24711152492c06c0c7ea47edf939be0b43777d7f3426f08a18fac4700070183f",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "同脸分身属于明确要求",
+          "source_lines": [
+            143,
+            161
+          ],
+          "target_lines": [
+            143,
+            161
+          ],
+          "source_content_sha256": "ca20d7edf17374758c1c6c7c3cd22b44ef1e91615516af36fa88c95de4aa0854",
+          "target_content_sha256": "ca20d7edf17374758c1c6c7c3cd22b44ef1e91615516af36fa88c95de4aa0854",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "声音范围与局部修正",
+          "source_lines": [
+            162,
+            176
+          ],
+          "target_lines": [
+            162,
+            176
+          ],
+          "source_content_sha256": "824b8e2ca5e140f768dbc2f554177f5e26f06493eebb51c0675bafdf7f62acc6",
+          "target_content_sha256": "824b8e2ca5e140f768dbc2f554177f5e26f06493eebb51c0675bafdf7f62acc6",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "压缩仍保留同步双挡",
+          "source_lines": [
+            177,
+            192
+          ],
+          "target_lines": [
+            177,
+            192
+          ],
+          "source_content_sha256": "79426cd221f01c22edf1b8fe90a6e9bbfaf603fe180021a517509168fcd6405b",
+          "target_content_sha256": "79426cd221f01c22edf1b8fe90a6e9bbfaf603fe180021a517509168fcd6405b",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "多份身份素材的互补与冲突",
+          "source_lines": [
+            193,
+            200
+          ],
+          "target_lines": [
+            193,
+            200
+          ],
+          "source_content_sha256": "a4e3a36180cb0845dd380a083d70337409c111afd42048ca71c333a3ad85a8db",
+          "target_content_sha256": "a4e3a36180cb0845dd380a083d70337409c111afd42048ca71c333a3ad85a8db",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "同一中断对不同攻击的影响",
+          "source_lines": [
+            201,
+            216
+          ],
+          "target_lines": [
+            201,
+            216
+          ],
+          "source_content_sha256": "64392147d5396fcc84ce19682255c3ef17640c16398ce7dec71e654c8047c67e",
+          "target_content_sha256": "64392147d5396fcc84ce19682255c3ef17640c16398ce7dec71e654c8047c67e",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "冻结阶段与切点审阅",
+          "source_lines": [
+            217,
+            228
+          ],
+          "target_lines": [
+            217,
+            228
+          ],
+          "source_content_sha256": "98d928c783b619d02b86472a51a94862d5578c3c37af62b72373e2a790e7ea29",
+          "target_content_sha256": "98d928c783b619d02b86472a51a94862d5578c3c37af62b72373e2a790e7ea29",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "慢镜、倍率与帧率的边界",
+          "source_lines": [
+            229,
+            243
+          ],
+          "target_lines": [
+            229,
+            243
+          ],
+          "source_content_sha256": "26cd26919c8ec78ca7e6422e68f5cb0a3a1cd94f9090ad5661f846bb4db4031e",
+          "target_content_sha256": "b98169afa3f8f486f2ffa2b98269cf732c9b6299c217a2a1e76b22714f5944ed",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "预判、受击与角色知道的信息",
+          "source_lines": [
+            244,
+            258
+          ],
+          "target_lines": [
+            244,
+            258
+          ],
+          "source_content_sha256": "10c2c9bb956f1e91e86a2415ad0aa699549f7820f76e2616675ee3bc6b6ee124",
+          "target_content_sha256": "10c2c9bb956f1e91e86a2415ad0aa699549f7820f76e2616675ee3bc6b6ee124",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "物件易手与指定分化",
+          "source_lines": [
+            259,
+            278
+          ],
+          "target_lines": [
+            259,
+            278
+          ],
+          "source_content_sha256": "77e2be3c68f5dc0ac977c9ccc6400bd30baca738c52336faed4d05e124fdfa67",
+          "target_content_sha256": "77e2be3c68f5dc0ac977c9ccc6400bd30baca738c52336faed4d05e124fdfa67",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "换兵器与场地后的动作借鉴",
+          "source_lines": [
+            279,
+            291
+          ],
+          "target_lines": [
+            279,
+            291
+          ],
+          "source_content_sha256": "c77310923840a45df48015d17edbe85c4900e3e16675a1150889678fb8c89716",
+          "target_content_sha256": "c77310923840a45df48015d17edbe85c4900e3e16675a1150889678fb8c89716",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "动作参考与迁移模式的边界",
+          "source_lines": [
+            292,
+            308
+          ],
+          "target_lines": [
+            292,
+            308
+          ],
+          "source_content_sha256": "f633778c186147e9443e8956f2d643d5fe87272bf6d3b7e56d10bcfb9054a60a",
+          "target_content_sha256": "f633778c186147e9443e8956f2d643d5fe87272bf6d3b7e56d10bcfb9054a60a",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "法阵来源、随动与作用范围",
+          "source_lines": [
+            309,
+            323
+          ],
+          "target_lines": [
+            309,
+            323
+          ],
+          "source_content_sha256": "686705342135aee0437422252a11bc17a8de9e3fb2c3c017a3300bacb7828a48",
+          "target_content_sha256": "686705342135aee0437422252a11bc17a8de9e3fb2c3c017a3300bacb7828a48",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "外观反馈与通路变化",
+          "source_lines": [
+            324,
+            338
+          ],
+          "target_lines": [
+            324,
+            338
+          ],
+          "source_content_sha256": "168ffbc2536aa933ab74146090b883c838a8abf0a15d9da2471251f0c816a969",
+          "target_content_sha256": "168ffbc2536aa933ab74146090b883c838a8abf0a15d9da2471251f0c816a969",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "局部控制与抛掷阶段",
+          "source_lines": [
+            339,
+            353
+          ],
+          "target_lines": [
+            339,
+            353
+          ],
+          "source_content_sha256": "07c6740a83aacc33e12b1f773f8fdaac09257b82e921df581dd2eb600303bc26",
+          "target_content_sha256": "07c6740a83aacc33e12b1f773f8fdaac09257b82e921df581dd2eb600303bc26",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "遮挡与重新入画",
+          "source_lines": [
+            354,
+            364
+          ],
+          "target_lines": [
+            354,
+            364
+          ],
+          "source_content_sha256": "58c1d270e2b4629cf86de0d9ca35f9701e229ea35ce25cc6476846beac01b503",
+          "target_content_sha256": "58c1d270e2b4629cf86de0d9ca35f9701e229ea35ce25cc6476846beac01b503",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "轻接触与风格化重击",
+          "source_lines": [
+            365,
+            376
+          ],
+          "target_lines": [
+            365,
+            376
+          ],
+          "source_content_sha256": "ef93ffbee88f7b7ffb8c43052bde8b41b79bed64172388604e3af1184e6d23fc",
+          "target_content_sha256": "ef93ffbee88f7b7ffb8c43052bde8b41b79bed64172388604e3af1184e6d23fc",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "术法照明与身份颜色",
+          "source_lines": [
+            377,
+            387
+          ],
+          "target_lines": [
+            377,
+            387
+          ],
+          "source_content_sha256": "bd938e93dbbc2a5992bd8b31bd3c8808640dfbdf747b0337869bc4e754c39cfa",
+          "target_content_sha256": "bd938e93dbbc2a5992bd8b31bd3c8808640dfbdf747b0337869bc4e754c39cfa",
+          "disposition": "preserved_fixture"
+        },
+        {
+          "title": "目标不变与策略变化",
+          "source_lines": [
+            388,
+            396
+          ],
+          "target_lines": [
+            388,
+            396
+          ],
+          "source_content_sha256": "fc9122fac42af7b7461ced6903479dafcdcabc1ae028380a883843d7f3f0f865",
+          "target_content_sha256": "fc9122fac42af7b7461ced6903479dafcdcabc1ae028380a883843d7f3f0f865",
+          "disposition": "preserved_fixture"
+        }
+      ]
+    }
+  ],
+  "test_coverage": {
+    "source_sample_tests": 17,
+    "source_structure_tests": 24,
+    "migrated_source_tests": 41,
+    "source_build_tests_owned_elsewhere": 4,
+    "source_total": 45
+  },
+  "environment": {
+    "Python": "3.13.3",
+    "Pillow": "12.1.1",
+    "ffmpeg": "8.1.1-full_build-www.gyan.dev",
+    "ffprobe": "8.1.1-full_build-www.gyan.dev",
+    "missing_sampling_dependencies": [],
+    "python_310_runtime": "not available in this run; AST feature_version 3.10 and portable hash behavior checked"
+  },
+  "runs": [
+    {
+      "command": "python -X utf8 -m unittest discover -s tests -p test_sample_video.py -v",
+      "tests": 21,
+      "skipped": 0,
+      "result": "passed",
+      "seconds": 10.017,
+      "scope": "17 source tests plus 4 initial compatibility/dependency tests, including all 10 ExtractionTests"
+    },
+    {
+      "command": "python -X utf8 -m unittest discover -s tests -p test_sample_video.py -k pillow_without -v",
+      "tests": 1,
+      "skipped": 0,
+      "result": "passed",
+      "seconds": 0.007,
+      "scope": "additional Pillow pre-9.1 API refusal"
+    },
+    {
+      "command": "python -X utf8 -m unittest discover -s tests -p test_validate_content.py -v",
+      "tests": 32,
+      "result": "31 passed, one repository integration failure",
+      "seconds": 1.117,
+      "scope": "source structure tests plus 8 scope/interface tests; prior to adding corpus fidelity test"
+    },
+    {
+      "command": "AST parse(feature_version=(3, 10))",
+      "result": "passed",
+      "files": [
+        "skills/combat-director/scripts/sample_video.py",
+        "scripts/validate_content.py"
+      ],
+      "scope": "syntax only, not Python 3.10 runtime"
+    },
+    {
+      "command": "python -X utf8 -m unittest discover -s tests -p test_validate_content.py -v",
+      "tests": 33,
+      "result": "32 passed, one maintained-repository integration failure",
+      "seconds": 0.807,
+      "scope": "includes exact corpus preservation test, passed"
+    }
+  ],
+  "integration_pending": [
+    "Full maintained-repository link validation after legacy docs private-output references are rewritten and target references are migrated."
+  ],
+  "limits": [
+    "Mechanical tests do not prove creative behavior or generated-media quality.",
+    "Temporary synthetic lossless fixtures are cleaned by tests; original historical media are untouched.",
+    "No paid video generation, dependency installation, Git commit or push."
+  ]
+}

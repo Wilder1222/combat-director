@@ -1,0 +1,55 @@
+{
+  "format": "independent-state-audit-regressions/1",
+  "origin": "outputs/current/xianxia-integration/state-audit-round1/report.json",
+  "scope": "original independent trigger inputs, copied without alteration",
+  "cases": [
+    {
+      "id": "remote_item_after_control_ability_end",
+      "expected": "rejected",
+      "file": "remote_item_after_control_ability_end.plan.json",
+      "sha256": "322607debf653de18dbc1f062e64287dfb95731ac6141ccfa7341ee95565b281"
+    },
+    {
+      "id": "remote_control_declared_but_never_active",
+      "expected": "rejected",
+      "file": "remote_control_declared_but_never_active.plan.json",
+      "sha256": "08e060f3edd49aa67bd32cd8c72fb771a7c8f5b4dbbd98e81ded67ebba8014fc"
+    },
+    {
+      "id": "active_contact_same_id_replaces_endpoint",
+      "expected": "rejected",
+      "file": "active_contact_same_id_replaces_endpoint.plan.json",
+      "sha256": "f2d62d1dd3ff2718b2a820f92d99f868d1ff09d21a40b7fc6221416a66368d26"
+    },
+    {
+      "id": "contact_blocks_hand_mid_existing_event",
+      "expected": "rejected",
+      "file": "contact_blocks_hand_mid_existing_event.plan.json",
+      "sha256": "7f56840bfde3a05100e436feb868a225fe13caec860324996a2b7d11491b63dd"
+    },
+    {
+      "id": "ongoing_continuation_preserves_original_event",
+      "expected": "accepted",
+      "file": "ongoing_continuation_preserves_original_event.plan.json",
+      "sha256": "497881f079092ce528a1b70bf421988a6eb5bc43a01f5467afdf4c4755bdc547"
+    },
+    {
+      "id": "completed_pending_reopens_same_id",
+      "expected": "rejected",
+      "file": "completed_pending_reopens_same_id.plan.json",
+      "sha256": "2b336d276cb34a6fe0c87cb6a95cc7023c81164944a343a0cdbaf79647e00bd1"
+    },
+    {
+      "id": "pending_completion_without_continues",
+      "expected": "rejected",
+      "file": "pending_completion_without_continues.plan.json",
+      "sha256": "42613d095b37ef8b2e77ec91eae63af9713d36c3c2022af5b31f3bcfa906e8f0"
+    },
+    {
+      "id": "body_exits_mid_existing_active_event",
+      "expected": "rejected",
+      "file": "body_exits_mid_existing_active_event.plan.json",
+      "sha256": "6b282ffde20a1562ed36c5d95cf54cf7909ca4dd284851f852f75dbbe7528e29"
+    }
+  ]
+}

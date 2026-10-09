@@ -7,7 +7,8 @@ import re
 ANNOTATIONS = {'$schema', '$id', 'title', 'description', 'default', 'examples', '$comment'}
 SUPPORTED = ANNOTATIONS | {'$defs', '$ref', 'type', 'const', 'enum', 'properties', 'required',
     'additionalProperties', 'items', 'minItems', 'maxItems', 'uniqueItems', 'minLength',
-    'maxLength', 'pattern', 'minimum', 'maximum', 'exclusiveMinimum', 'exclusiveMaximum'}
+    'maxLength', 'pattern', 'minimum', 'maximum', 'exclusiveMinimum', 'exclusiveMaximum',
+    'oneOf', 'anyOf', 'allOf'}
 KINDS = {'object', 'array', 'string', 'boolean', 'number', 'integer', 'null'}
 
 
@@ -44,6 +45,11 @@ def audit_schema(rule, root=None, path='$schema'):
     for key in ('items', 'additionalProperties'):
         if key in rule:
             audit_schema(rule[key], root, f'{path}.{key}')
+    for key in ('oneOf', 'anyOf', 'allOf'):
+        if key in rule:
+            require(isinstance(rule[key], list) and bool(rule[key]), f'{path}.{key}: nonempty schema array required')
+            for index, child in enumerate(rule[key]):
+                audit_schema(child, root, f'{path}.{key}[{index}]')
 
 
 def same_json(a, b):
@@ -72,6 +78,18 @@ def _check(value, rule, schema, location, depth):
         return
     if '$ref' in rule:
         _check(value, resolve(schema, rule['$ref']), schema, location, depth + 1)
+    for key in ('oneOf', 'anyOf', 'allOf'):
+        if key not in rule:
+            continue
+        matches = 0
+        for child in rule[key]:
+            try:
+                _check(value, child, schema, location, depth + 1)
+                matches += 1
+            except ValueError:
+                pass
+        require(matches == 1 if key == 'oneOf' else matches > 0 if key == 'anyOf' else matches == len(rule[key]),
+                f'{location}: {key} branch mismatch')
     number = type(value) in (int, float) and math.isfinite(value)
     valid = {'object': isinstance(value, dict), 'array': isinstance(value, list),
              'string': isinstance(value, str), 'boolean': isinstance(value, bool),
