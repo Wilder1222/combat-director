@@ -1,6 +1,6 @@
 # 仙侠工具迁移：时间证据、兼容性与内容范围
 
-2026-10-09（Asia/Shanghai）。源提交 `f3721de6e21af8cd5186c88079bf92d252ec416e`。本记录覆盖计划 X49、X53 与原案例保全；构建保护 X54 另由统一构建实现。精确函数、测试及案例对应见 [工具迁移映射](xianxia-tool-mapping.json)。
+2026-10-09（Asia/Shanghai）。源提交 `f3721de6e21af8cd5186c88079bf92d252ec416e`。本记录覆盖计划 X49、X53 与原案例保全；构建保护 X54 另由统一构建实现。精确函数、测试及案例对应保留在[完成记录](xianxia-integration-completion.json)的`/proofs/tool_design/snapshot`完整节点；原报告可从[固定Git版本](../history/2026-10-09-integration.md)复查。
 
 ## 一手调研与采用决定
 

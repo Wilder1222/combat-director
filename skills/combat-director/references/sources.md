@@ -1,8 +1,65 @@
 # 来源与归属
 
-当前跨模型方法和逐项官方来源见[通用视频生成写法](video-generation.md)。2026-10-04核对Runway、Google Veo、Kling、OpenAI Sora、Adobe Firefly的官方正文，读取Luma官网搜索收录内容，并结合此前同日读取的Seedance官方2.0/2.5正文。采用可迁移的写作决策，保留各家在负向表达、多镜模式、时间与声音上的差异；Seedance仅为按需专项，不是默认模型。未观看本轮指南内媒体、安装外部skill或发起生成。
+当前跨模型方法和逐项官方来源见[通用视频生成写法](video-generation.md)，2026-10-10增量见下方案例解析记录。此前2026-10-04核对Runway、Google Veo、Kling、OpenAI Sora、Adobe Firefly的官方正文，读取Luma官网搜索收录内容及Seedance官方2.0/2.5正文；当次没有观看指南内媒体或发起生成。保留各家在负向表达、多镜模式、时间与声音上的差异，Seedance仅为按需专项。
 
 创作方法已转写到主流程与按需专题；本页供追溯，不要求打开外链或原仓库才能写作。
+
+## 历史提示词与速度诊断
+
+2026-10-11按用户“战斗慢、招式不变化、流光慢”的反馈，复读归档的双女、双人打斗第二弹与时序局文本，选择性转写格挡回弹接变线、闪避同时反击、追击中改攻击方式及本体位移/残光分离；落实到交锋、移动、摄影和诊断页。旧文的一镜、景别禁令、数值镜头、数百次砍击、变身伤亡和固定场地均不作为当前默认。历史文字只提供编排依据；本轮已有用户样片抽帧观察，未原速观看、听辨或取得其实际提交文本，也未生成修订视频。
+
+后续扩大为全部17份可访问归档TXT，规范化比较得到14份独立文本，原件与内部备选版本分别保留。对应兵器结构、地形接力、分波封线、旧痕反制、登场附魔、有限目标、法相/巨敌、声层与匹配转场等方法沿用当前专题，补强多参考成稿顺序和阶段约束继承。用户新给的30秒荒野片认可其节奏、动作和运镜，作为局部正向依据，与15秒湖面失败样片分别记录；只观察采样帧及选定连续帧，不把认可扩大到全部接点、连续一镜或结局，也不套用旧服装和性别矛盾。
+
+## 专业电影摄影、表演与渲染方法
+
+2026-10-10增量读取专业学习材料、主创访谈、引擎文档与AIGC模式说明，补到已有权威，不再造一套电影或演员主流程：
+
+| 来源与类型 | 采用与条件 |
+| --- | --- |
+| [ARRI Lighting Handbook](https://www.arri.com/resource/blob/83996/409091c612f371b0c68b41d9dcb636db/arri-lighting-handbook-english-data.pdf)、[ALEXA LF FAQ](https://www.arri.com/en/learn/camera-systems/frequently-asked-questions/alexa-lf-faq) | 光质/主补与反射、焦距/画幅/视角的技术关系；不把灯位、焦段或三点布光固定为通用参数 |
+| [ARRI主创镜头访谈](https://www.arri.com/news-en/-enola-holmes-on-arri-large-format/221720-221720)、[ASC Normal](https://theasc.com/article/normal-cinematography-salas/)、[ASC Ahsoka](https://theasc.com/article/ahsoka-framing-a-rebel-saga/) | 观看距离、观众知情时机、移动光场与负补光；吸收主创选择，不复制影片的角色、频闪/喷淋或固定镜头链 |
+| [Frame.io Road House剪辑师访谈](https://blog.frame.io/2024/04/04/bands-and-bar-brawls-editing-action-packed-road-house/)、[StudioBinder场面调度](https://www.studiobinder.com/blog/blocking-and-staging-scenes/) | 声层/注意力与人物调度、观众看到的调度分别处理；课程观点、主创叙述与模型控制规范分开 |
+| [Atlantic课程目录](https://atlanticactingschool.org/wp-content/uploads/2026/02/Atlantic-Acting-School-Course-Catalog.pdf)、[Disney动画制作](https://www.disneyanimation.com/process/animation/)、[Animation Mentor面部动画](https://www.animationmentor.com/blog/facial-animation-101/) | 可执行行动、搭档刺激、重量/时间和视线；经验性的眼眉顺序不当反射受击的通用规则 |
+| [Disney视觉开发](https://www.disneyanimation.com/process/visual-development/)、[材质开发](https://www.disneyanimation.com/process/look-development/) | 先整体造型/颜色/构图，再逐层形体、纹理、表面与最终光场校准；只读制作说明，不借作品人物和资产或要求使用其内部工具 |
+| [Epic物理材质](https://dev.epicgames.com/documentation/en-us/unreal-engine/physically-based-materials-in-unreal-engine)、[MetaHuman](https://dev.epicgames.com/documentation/metahuman/metahuman-stylized-character-texture-and-material-editing)、[MRQ](https://dev.epicgames.com/documentation/en-us/unreal-engine/cinematic-rendering-image-quality-settings-in-unreal-engine)、[Unity HDRP](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@17.3/manual/path-tracing-understand.html) | 画风/材质、真实资产/渲染路径和编码显示三层；对应版本与支持范围见[渲染方案](rendering-and-quality.md)，不把特性名当全部已启用 |
+| [Runway Act-Two](https://help.runwayml.com/hc/en-us/articles/42311337895827-Performance-Capture-with-Act-Two)、[Veo官方提示](https://deepmind.google/models/veo/prompt-guide/) | 表演与身份/身体/摄影控制分开，图与视频输入的差异按模式核；未看示例媒体，不签迁移质量 |
+| [LTX原扩写代码](https://github.com/Lightricks/LTX-Video/blob/main/ltx_video/utils/prompt_enhance_utils.py)、[社区摄影草稿](https://github.com/quanluo/ltx-video-prompts/blob/main/prompts/camera-movements.md)与[表演草稿](https://github.com/quanluo/ltx-video-prompts/blob/main/prompts/character-dialogue.md) | 时间顺序、材质与运动关联、原请求/设置可追溯；不继承固定字数或图像描述无条件盖过用户意图。社区自标未独立生成，不能当最佳出片证明 |
+
+专业方法的原创转写分别在[摄影](camera-and-rhythm.md)、[光场与材质](style-and-materials.md)、[声音与表演](sound-and-performance.md)和[参考职责](reference-and-iteration.md)。本轮只读文字/代码，未执行引擎、扩写模型或收费生成，没有看片/听辨成绩；生产计划、完整提示词和实际媒体各自验收。
+
+**当前状态修正：** [OpenAI视频文档](https://developers.openai.com/api/docs/guides/video-generation)和[下线通知](https://developers.openai.com/api/docs/deprecations#2026-03-24-sora-2-video-generation-models-and-videos-api)已明确Sora 2/Videos API于2026-09-24下线，无一对一替代API。此前在本页列出的Sora教学及示例观察保留历史身份，不能据旧参数或示例选择当前执行入口。
+
+## 多画风画质与摄影选择
+
+2026-10-10复读用户已归档提示词：双人打斗第二弹的写实3D Anime/Game CG、材质光照、荒野介质与一镜到底规格；时序局的离线CG、多镜和广角；铜币等稿件的CG叠水墨；grounded-15的真人武侠、衣料重量与自然光。Arvin固定来源的五风格与自定义展开也作选择方法参考。只迁移适用的视觉维度和动作触发的摄影关系，不继承源人物/场景、固定秒数或全套特效；数值保留为选中任务的意图，不作模型已控制的证据。
+
+公开方法依据分别读取原项目代码、文档或技能正文：
+
+| 一手来源 | 本项目采用与边界 |
+| --- | --- |
+| [Wan2.2扩写系统提示词](https://github.com/Wan-Video/Wan2.2/blob/main/wan/utils/system_prompt.py) | 按任务选择光源、方向、色调、景别等子集并保留主体动作；不继承默认白天、增舞蹈、固定字数或二维取消摄影等私有规则 |
+| [HunyuanVideo扩写](https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/hyvideo/prompt_rewrite.py) | 增强后核原主体/动作/风格；不以摄影美感覆盖语义，不移植代码与系统提示全文 |
+| [LTX-2](https://github.com/Lightricks/LTX-2)、[官方提示指南](https://ltx.io/blog/prompting-guide-for-ltx-2) | 顺序描述运动与相机关系、明确连续起终位置；单段和长度建议只属于对应入口 |
+| [Veo视频提示指南](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide)、[Runway摄影示例](https://help.runwayml.com/hc/en-us/articles/46749315925395-Camera-Terms-Prompts-Examples) | 媒介、光色、材质、相机与主体分别选择后形成可见句；示例文字不证明本项目出片质量 |
+| [Rylaispirit公开摄影skill](https://github.com/Rylaispirit/cinematic-video-prompt-skill)、[CyberJ0605摄影skill](https://github.com/CyberJ0605/cinematic-video-prompt-engineer-skill) | 选择维度和观看目的可借鉴；不复制词库、模板或默认语言/时长/运镜配额，公开关注度不作质量排行榜 |
+| [WanPE论文](https://arxiv.org/html/2609.30221v1) | 参考其逐阶段摄影规划与跨时间保留请求的方法；论文自报的生成偏好分数不当本项目成功率 |
+
+以上采用原创决策与短对照句，完整创作入口落实到[风格与材质](style-and-materials.md)、[摄影选择](camera-and-rhythm.md#摄影风格与镜头形式)及[正文视觉设定](prompt-construction.md#任务专属的视觉与摄影设定)。来源本轮仅作文字/代码方法研究，没有运行外部扩写服务或生成创作视频；实际画质、时间参数与相机运动另需对应媒体和执行证据。
+
+## 主流模型官方文档与案例解析
+
+2026-10-10重新读取[Seedance 2.0](https://docs.volcengine.com/docs/ark/seedance-2-0-prompt-guide)/[2.5](https://docs.volcengine.com/docs/ark/seedance-2-5-prompt-guide)、[Kling 3.0](https://kling.ai/quickstart/klingai-video-3-model-user-guide)/[Motion Control](https://kling.ai/quickstart/motion-control-user-guide)、[Runway Gen-4.5图生](https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide)/[Aleph 2.0](https://help.runwayml.com/hc/en-us/articles/52150503729171-Aleph-2-0-Prompting-Guide)、[Veo 3.1指南](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1/)、[Firefly图生](https://helpx.adobe.com/africa/firefly/web/work-with-audio-and-video/work-with-video/generate-videos-using-images.html)、[Luma Ray3 Modify](https://lumalabs.ai/learning-hub/ray3-modify-user-guide)/[Ray3.2编辑](https://docs.agents.lumalabs.ai/guides/videos/editing/)与[Sora正式视频文档](https://developers.openai.com/api/docs/guides/video-generation)等官方正文。Seedance 2.5页面显示2026-10-09更新；Sora提示指南标为归档；同平台不同模型/模式不共享所有控制能力。
+
+本轮实际观察与教学文字分开：
+
+| 案例来源 | 实际观察与采用范围 |
+| --- | --- |
+| [Seedance双人武打编辑](https://docs.volcengine.com/docs/ark/seedance-2-5-prompt-guide?lang=zh#video-refimage-edit) | 取得两份MP4，每片33概览帧及4.00—6.84秒69连续帧，去重90源帧；看见选定接架/分离/回架与机位阶段对应，近身部分接点遮挡。采用事件阶段与保留项对照，不签全片每击或节奏。 |
+| [Kling单人武术Motion Control](https://kling.ai/quickstart/motion-control-user-guide) | 两输出各41概览帧；可见单人举拳、伸臂、俯身出画和起身阶段。没有对手/兵器/实体接点，未取得原动作参考且输出规格不同，不作同条件双人战斗验证。 |
+| [Sora冰箱怪物与改色编辑](https://developers.openai.com/api/docs/guides/video-generation) | 两GIF各14采样帧；目标颜色改变，同时形体、门状态和阶段位置有偏差。采用“核目标变化也核保留项”，不把单变量文案当输出单变量实证。 |
+| Runway扬尘首图、Aleph火焰传播，Veo探险者多镜/歌手弧线，Seedance白模/道具轨迹，Luma角色驱动 | 本轮只读官方说明与工作流，未观察媒体；采用输入动势、镜头信息职责、运动与外观分层等设计方法，不签成片成功。 |
+
+没有原速连续观看、实际听辨或本项目新生成；媒体取得与抽帧清单不替这些观察。按[两遍解析](review-loop.md#事件与镜头两遍解析)独立转写方法，战术依赖在[交锋](choreography.md#战术依赖与行动窗口)，取景决策在[摄影](camera-and-rhythm.md#观看关系与取景选择)，版本差异在[生成适配](video-generation.md#对齐具体控制层)与[Seedance补充](seedance.md)。不复制官方整套提示词或媒体到运行包，不作模型排名与成功率承诺。
 
 ## 关键一击与视觉重音
 

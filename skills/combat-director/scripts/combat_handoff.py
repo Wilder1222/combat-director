@@ -104,6 +104,17 @@ def apply_review(plan, receipt):
     return changed
 
 
+def node_timing_text(plan, beat_ids):
+    """Expose each existing beat's timing without rewriting reviewed prose."""
+    selected = set(beat_ids)
+    return '\n'.join(
+        f'节点{index}：{beat["start"]:g}–{beat["end"]:g}秒'
+        f'（占时{beat["end"]-beat["start"]:g}秒）'
+        for index, beat in enumerate(plan['beats'], start=1)
+        if beat['id'] in selected
+    )
+
+
 def hard_constraints(plan):
     mode = '一镜到底，全程连续，不切镜、不跳切' if plan['camera_mode'] == 'one-take' else '允许内部切镜'
     ranks = {'person': '人物级', 'arena': '场地级', 'landscape': '地貌级'}

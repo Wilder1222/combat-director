@@ -2,45 +2,47 @@
 
 [返回总导航](../index.md) · [检索与来源规则](../../references/library-workflow.md)
 
-先按标题/流派选卡，读改编段；需要原文时按卡内来源行读取。详情等级在逐条检索中确认，不能由整卡等级代替。
+本类可进入正文的内容：持手、支撑、身体与兵器路径。
 
-| 卡片 | 内容层级 | 命名条目 |
-| --- | --- | --- |
-| [太极拳](arvin-tech-taiji.md) | detailed | 21 |
-| [八极拳](arvin-tech-baji.md) | detailed | 20 |
-| [咏春拳](arvin-tech-wingchun.md) | detailed | 12 |
-| [八卦掌](arvin-tech-bagua.md) | detailed | 12 |
-| [形意拳](arvin-tech-xingyi.md) | detailed | 12 |
-| [泰拳](arvin-tech-muaythai.md) | detailed | 12 |
-| [散打](arvin-tech-sanda.md) | detailed | 11 |
-| [空手道](arvin-tech-karate.md) | detailed | 10 |
-| [跆拳道](arvin-tech-taekwondo.md) | detailed | 10 |
-| [谭腿](arvin-tech-tantui.md) | detailed | 12 |
-| [36路腿法](arvin-tech-legs36.md) | detailed | 36 |
-| [巴西战舞](arvin-tech-capoeira.md) | detailed | 12 |
-| [柔术](arvin-tech-jiujitsu.md) | detailed | 13 |
-| [柔道](arvin-tech-judo.md) | detailed | 82 |
-| [合气道](arvin-tech-aikido.md) | detailed | 12 |
-| [擒拿](arvin-tech-qinna36.md) | detailed | 76 |
-| [洪拳](arvin-tech-hunggar.md) | detailed | 12 |
-| [蔡拳](arvin-tech-caijia.md) | detailed | 12 |
-| [少林旋风地堂腿](arvin-tech-groundlegs.md) | detailed | 12 |
-| [蔡李佛](arvin-tech-choyleefut.md) | outline | 7 |
-| [截拳道](arvin-tech-jeetkune.md) | detailed | 12 |
-| [螳螂拳](arvin-tech-mantis.md) | outline | 6 |
-| [醉拳](arvin-tech-drunken.md) | outline | 6 |
-| [武侠身法](arvin-tech-wuxia-step.md) | detailed | 20 |
-| [武当太乙玄门剑](arvin-tech-taiyi-sword.md) | outline | 12 |
-| [武当六路132式总剑](arvin-tech-wudang132.md) | outline | 12 |
-| [杨式55式太极剑](arvin-tech-yang55.md) | outline | 12 |
-| [独孤九剑](arvin-tech-dugu.md) | outline | 12 |
-| [华山基础剑法](arvin-tech-huashan.md) | outline | 12 |
-| [玉女十九剑](arvin-tech-yunv.md) | outline | 12 |
-| [峨眉白猿二十四剑](arvin-tech-whiteape.md) | outline | 12 |
-| [青龙剑32式](arvin-tech-qinglong.md) | outline | 12 |
-| [峨眉子午剑](arvin-tech-ziwu.md) | outline | 12 |
-| [长柄镰刀](arvin-tech-scythe.md) | outline | 12 |
-| [梦想一心太刀](arvin-tech-musou.md) | outline | 12 |
-| [绯雪樱灼流单太刀](arvin-tech-feixue-frost.md) | outline | 12 |
-| [高级轻功](arvin-tech-qinggong.md) | outline | 0 |
-| [修仙高级剑招](arvin-tech-immortal-sword.md) | outline | 0 |
+下表用于摘要初筛；相容性、来源等级与选读方法见页首检索规则。
+
+| 卡片 | 内容层级 | 命名条目 | 改编用途 |
+| --- | --- | --- | --- |
+| [太极拳](arvin-tech-taiji.md) | detailed | 21 | 接住来势后移步转腰，手臂与脚步同向改线；没有接触就不能借力。对手收招时改为护线，不追空手。 |
+| [八极拳](arvin-tech-baji.md) | detailed | 20 | 先交代进入短距的脚步和身体空间，再写肘靠短发；被侧移让空后必须重立支撑，不能连续无代价撞击。 |
+| [咏春拳](arvin-tech-wingchun.md) | detailed | 12 | 以窄幅护线、短距截手表现中线争夺；对手换到外侧时需转马追线，连拳之间保留手臂回收。 |
+| [八卦掌](arvin-tech-bagua.md) | detailed | 12 | 以弧形步法换到外门，掌线随躯干转动；先画可用绕行空间，被柱墙封路就缩弧或退出。 |
+| [形意拳](arvin-tech-xingyi.md) | detailed | 12 | 直线进步和拳路同向，突出一次整齐推进；让对方侧移破直线，收脚换角后才续攻。 |
+| [泰拳](arvin-tech-muaythai.md) | detailed | 12 | 远处腿、中距拳、近处肘膝分层使用；进入近身需先交代双方手臂占用，出膝后有落脚和护架。 |
+| [散打](arvin-tech-sanda.md) | detailed | 11 | 拳腿换距后才接摔；接腿必须展示抓到的瞬间与自身支撑，对手抽腿成功则回到拳腿交换。 |
+| [空手道](arvin-tech-karate.md) | detailed | 10 | 用清楚的起动、短促直线和回收表现节拍，寸止是演出选择；对手可让线，不能把名称写成一击必胜。 |
+| [跆拳道](arvin-tech-taekwondo.md) | detailed | 10 | 把旋转轴、支撑脚、起跳和落点写清；水平旋身与竖向翻腾分开，落地失位就失去追击窗口。 |
+| [谭腿](arvin-tech-tantui.md) | detailed | 12 | 以拳线掩护腿线，区分弹、蹬、扫的轨迹；一腿收回形成下一步，不把十二路一次塞满。 |
+| [36路腿法](arvin-tech-legs36.md) | detailed | 36 | 按高度、方向、支撑方式选两三种腿路；每次高低切换先明确重心和收腿，对方退距时允许踢空。 |
+| [巴西战舞](arvin-tech-capoeira.md) | detailed | 12 | 用摇步、侧身、倒置出腿建立圆形节奏；翻转需要手撑或起跳条件，对方卡住落点时用收腿换位脱离。 |
+| [柔术](arvin-tech-jiujitsu.md) | detailed | 13 | 从站立到倒地必须连续交代谁落在哪侧、哪只手可用；控制姿态仅作影视动作，不省略对方脱离和重新站起。 |
+| [柔道](arvin-tech-judo.md) | detailed | 82 | 先展示接触、移步造成的失衡，再到转体和落地；对方重心未移动时不能凭抓衣直接飞出，落地后重新判断站位。 |
+| [合气道](arvin-tech-aikido.md) | detailed | 12 | 来势、接触与转向依次可见；对方抽手或转身跟进会破坏引导，应转为护线退出，不能隔空控制。 |
+| [擒拿](arvin-tech-qinna36.md) | detailed | 76 | 抓控是有开始与结束的中间态，写清占用哪只手；未抓牢或对方顺势转身时放弃控制，恢复正常攻防。 |
+| [洪拳](arvin-tech-hunggar.md) | detailed | 12 | 桥手与稳固步架共同承接冲击；对手改变角度时移动脚步重建桥线，不能固定站桩挡住所有方向。 |
+| [蔡拳](arvin-tech-caijia.md) | detailed | 12 | 以斜身、三角落步和短手换线表现偏门快打；每次绕线保留可见落脚点，对手跟转时改短打或退出。 |
+| [少林旋风地堂腿](arvin-tech-groundlegs.md) | detailed | 12 | 低位进入、贴地转向、起身返回分成三拍；地面必须可支撑，对手退开或封住起身线时不能凭空弹回高位。 |
+| [蔡李佛](arvin-tech-choyleefut.md) | outline | 7 | 上游此处只有招名；若采用挂扫抛的手臂意象，需另写原创动作路径并标注补写，不能称已导入完整套路。 |
+| [截拳道](arvin-tech-jeetkune.md) | detailed | 12 | 截击依赖看得见的起动信号与足够距离；对方假起动或及时停步时允许判断失误，保留防守回收。 |
+| [螳螂拳](arvin-tech-mantis.md) | outline | 6 | 上游此处只有招名；可另选混合连招中的角色化段落，不把其局部用法推广为完整门派定义。 |
+| [醉拳](arvin-tech-drunken.md) | outline | 6 | 上游此处只有招名；摇身和跌扑需要支撑与恢复路径，另写的动作应标为本项目创作。 |
+| [武侠身法](arvin-tech-wuxia-step.md) | detailed | 20 | 名称为文学与作者创作意象；普通版本写步幅、遮线、落脚点，瞬移、踏空或分身须另获用户能力授权。 |
+| [武当太乙玄门剑](arvin-tech-taiyi-sword.md) | outline | 12 | 以圆转和曲线路径区别直刺；这里只提供名称与定位，局部角色动作可查剑神卡，不能声称完整剑谱已导入。 |
+| [武当六路132式总剑](arvin-tech-wudang132.md) | outline | 12 | 保留高低层次的视觉方向，滚身与翻起需空间；132式只属上游命名，当前仓库未提供132式全谱。 |
+| [杨式55式太极剑](arvin-tech-yang55.md) | outline | 12 | 取慢圆接引和剑尖换线的方向，具体身体路径须补写；55式只属上游命名，不能以十二个列名代替全谱。 |
+| [独孤九剑](arvin-tech-dugu.md) | outline | 12 | 以先展示习惯、再尝试破线的剧情逻辑改编；不是自动识破一切，破气等能力名称不能自动授权。 |
+| [华山基础剑法](arvin-tech-huashan.md) | outline | 12 | 取清楚的架势与直线起落，名称不能证明历史套路；细节另查剑神角色变体或标为原创补写。 |
+| [玉女十九剑](arvin-tech-yunv.md) | outline | 12 | 缠绕要有刃路和接触点，软转不等于剑身变成绳索；十九剑全谱未随仓库提供。 |
+| [峨眉白猿二十四剑](arvin-tech-whiteape.md) | outline | 12 | 藏锋与突然改变高低可作轮廓；纵跳要落点，猿形不能自动改角色身体形态。 |
+| [青龙剑32式](arvin-tech-qinglong.md) | outline | 12 | 开阔幅度依赖挥剑空间；长弧挥空后收锋重立，不能自动变成青龙实体或无距离清场。 |
+| [峨眉子午剑](arvin-tech-ziwu.md) | outline | 12 | 短距脆变需要先进入可触距离；侧滑与收锋分开可见，短促不是无起动和无限连刺。 |
+| [长柄镰刀](arvin-tech-scythe.md) | outline | 12 | 长柄旋转受墙柱限制，回镰要让出路径；专项文件缺失，名称中的远距飞斩不自动授予回旋飞行。 |
+| [梦想一心太刀](arvin-tech-musou.md) | outline | 12 | 作为上游游戏意象候选；单刀与雷电分开设置，刀路补写需标为改编，未核验官方招式或能力。 |
+| [绯雪樱灼流单太刀](arvin-tech-feixue-frost.md) | outline | 12 | 此卡是上游冰蓝粉樱轮廓，与火焰绯雪角色是两个版本；单刀、冰弓、时停分别核对用户授权，游戏设定未核验。 |
+| [高级轻功](arvin-tech-qinggong.md) | outline | 0 | 当前只有轻功定位摘要；逐段补起跳点、可借力物与落点。踏空和滑翔须有用户允许的机制。 |
+| [修仙高级剑招](arvin-tech-immortal-sword.md) | outline | 0 | 当前只有仙侠剑招定位摘要；剑气、御剑、剑阵各自声明资源和边界，不能因招名一次启用全部能力。 |

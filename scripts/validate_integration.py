@@ -10,7 +10,9 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import subprocess
 import sys
+import tempfile
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -436,16 +438,90 @@ def self_test(root: Path) -> dict:
             'files_modified': False, 'media_reviewed': False}
 
 
+def validate_revision(root: Path, revision: str, *, self_check=False) -> dict:
+    """Audit an immutable Git snapshot without rebinding historical reviews.
+
+    Historical checks deliberately exclude ignored local originals and never
+    certify the current checkout or the current host's installed plugin.
+    """
+    root = root.resolve()
+
+    def git(*args, input=None):
+        process = subprocess.run(['git', '--no-replace-objects', *args], cwd=root, input=input,
+                                 stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        if process.returncode:
+            raise ValueError(process.stderr.decode('utf-8', errors='replace').strip())
+        return process.stdout
+
+    repository = Path(git('rev-parse', '--show-toplevel').decode('utf-8').strip()).resolve()
+    if repository != root:
+        raise ValueError('--root must be the Git repository root for a revision audit')
+    commit = git('rev-parse', '--verify', '--end-of-options', revision + '^{commit}').decode('ascii').strip()
+    if not re.fullmatch(r'[0-9a-f]{40,64}', commit):
+        raise ValueError('Git revision did not resolve to a commit')
+    # Read tree entries and raw blobs. git archive applies export-ignore and
+    # export-subst attributes, including local .git/info/attributes, which would
+    # silently transform the evidence being audited.
+    entries = []
+    for row in git('ls-tree', '-rz', '--full-tree', commit).split(b'\0'):
+        if not row:
+            continue
+        metadata, name = row.split(b'\t', 1)
+        mode, kind, object_id = metadata.split()
+        if mode not in (b'100644', b'100755') or kind != b'blob':
+            raise ValueError('Historical audit requires regular files; symlink or submodule found')
+        name = name.decode('utf-8')
+        if '\\' in name or ':' in name:
+            raise ValueError('Non-portable path in historical Git tree')
+        entries.append((name, object_id))
+    blobs = git('cat-file', '--batch', input=b'\n'.join(object_id for _, object_id in entries) + b'\n')
+    with tempfile.TemporaryDirectory(prefix='combat-integration-history-') as directory:
+        snapshot = Path(directory).resolve() / 'repository'
+        cursor = 0
+        for name, expected_id in entries:
+            target = (snapshot / name).resolve()
+            if not target.is_relative_to(snapshot):
+                raise ValueError('Unsafe path in historical Git tree')
+            end = blobs.index(b'\n', cursor)
+            object_id, kind, size = blobs[cursor:end].split()
+            if object_id != expected_id or kind != b'blob':
+                raise ValueError('Historical Git blob response does not match its tree')
+            start = end + 1
+            stop = start + int(size)
+            if blobs[stop:stop + 1] != b'\n':
+                raise ValueError('Truncated historical Git blob')
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(blobs[start:stop])
+            cursor = stop + 1
+        if cursor != len(blobs):
+            raise ValueError('Unexpected trailing historical Git blob response')
+        # Only inspect data and Python ASTs; never execute historical code.
+        result = self_test(snapshot) if self_check else validate(snapshot)
+    result.update(audited_revision=commit, audited_tree='historical_git_snapshot',
+                  current_checkout_verified=False, current_host_verified=False)
+    result['scope'] = ('Historical source/target and retained review integrity at the audited Git commit; '
+                       'does not certify the current checkout, host installation, or media quality.')
+    return result
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
+    parser.add_argument('--revision', help='Audit a historical Git commit instead of the current checkout')
     parser.add_argument('--allow-pending', action='store_true', help='Check integrity while required coordinator gates remain open')
     parser.add_argument('--full-evidence', action='store_true', help='Also require private original reports, prompt/state inputs and retained historical clips on this host')
     parser.add_argument('--self-test', action='store_true', help='Read-only corruption checks against the retained inventory')
     parser.add_argument('--report', type=Path, help='Save the integrity result; never alters the inventory or gate state')
     args = parser.parse_args(argv)
+    if args.report and args.report.resolve().is_relative_to((args.root / 'docs/implementation').resolve()):
+        parser.error('Historical implementation evidence is frozen; choose a current report destination')
+    if args.revision and args.full_evidence:
+        parser.error('--revision cannot include unversioned local originals; omit --full-evidence')
     try:
-        result = self_test(args.root) if args.self_test else validate(args.root, full_evidence=args.full_evidence)
+        if args.revision:
+            result = validate_revision(args.root, args.revision, self_check=args.self_test)
+        else:
+            result = self_test(args.root) if args.self_test else validate(args.root, full_evidence=args.full_evidence)
         if args.report:
             args.report.parent.mkdir(parents=True, exist_ok=True)
             args.report.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
@@ -457,6 +533,9 @@ def main(argv=None) -> int:
                            required_pending=[item for item in result['pending'] if item.startswith('Required proof pending:')])
             if args.report:
                 display['report'] = str(args.report)
+            if args.revision:
+                display.update({key: result[key] for key in ('audited_revision', 'audited_tree',
+                                                           'current_checkout_verified', 'current_host_verified')})
         print(json.dumps(display, ensure_ascii=False, indent=2))
         return 0 if result['passed'] or (args.allow_pending and result.get('integrity_passed')) else 1
     except (OSError, UnicodeError, KeyError, TypeError, ValueError) as exc:

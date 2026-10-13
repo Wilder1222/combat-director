@@ -1,6 +1,7 @@
 import copy
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -142,6 +143,87 @@ class CompactPromptTests(unittest.TestCase):
             start = beats[section['beat_ids'][0]]['start']
             end = beats[section['beat_ids'][-1]]['end']
             self.assertIn(f'{start:g}–{end:g}秒（镜长{end-start:g}秒）', rendered)
+
+    def test_all_prompt_modes_expose_every_node_inside_grouped_sections(self):
+        # Six timed facts are grouped into four sections. Outer section times
+        # alone previously hid the 2-second and 10-second node boundaries.
+        expected = [
+            '节点1：0–2秒（占时2秒）',
+            '节点2：2–4.5秒（占时2.5秒）',
+            '节点3：4.5–7秒（占时2.5秒）',
+            '节点4：7–10秒（占时3秒）',
+            '节点5：10–12.5秒（占时2.5秒）',
+            '节点6：12.5–15秒（占时2.5秒）',
+        ]
+        original_plan = copy.deepcopy(self.plan)
+        original_projection = copy.deepcopy(self.projection)
+        detailed = self.detailed_projection()
+        candidates = {
+            'full': tool.deliverables(self.plan, 'generic')['prompt.txt'],
+            'compact': tool.deliverables(self.plan, 'generic', prompt_style='compact',
+                                        projection=self.projection)['prompt.txt'],
+            'detailed': tool.deliverables(self.plan, 'generic', prompt_style='detailed',
+                                         projection=detailed)['prompt.txt'],
+        }
+        for style, rendered in candidates.items():
+            with self.subTest(style=style):
+                self.assertEqual(re.findall(r'^节点\d+：[^\n]+$', rendered, re.MULTILINE), expected)
+                if style == 'detailed':
+                    self.assertEqual(rendered.count('（镜长'), 1)
+                if style != 'full':
+                    projection = detailed if style == 'detailed' else self.projection
+                    for section in projection['sections']:
+                        self.assertEqual(rendered.count(section['text']), 1)
+        self.assertEqual(self.plan, original_plan)
+        self.assertEqual(self.projection, original_projection)
+
+    def test_node_time_changes_invalidate_previously_reviewed_projection(self):
+        changed = copy.deepcopy(self.plan)
+        changed['beats'][0]['end'] = 1.8
+        changed['beats'][1]['start'] = 1.8
+        for detailed in (False, True):
+            with self.subTest(detailed=detailed), self.assertRaisesRegex(ValueError, 'source is stale'):
+                compact.render(changed, self.projection, detailed=detailed)
+
+    def test_authored_local_slow_motion_timing_survives_node_annotations(self):
+        projection = self.detailed_projection()
+        local_window = '【时间与速度】接触瞬间微慢镜0.25秒，随后恢复实速，继续原退势。'
+        lines = projection['sections'][0]['text'].splitlines()
+        lines = [local_window if line.startswith('【时间与速度】') else line for line in lines]
+        projection['sections'][0]['text'] = '\n'.join(lines)
+        projection = self.review_projection(projection)
+        rendered = compact.render(self.plan, projection, detailed=True)
+        self.assertEqual(rendered.count(local_window), 1)
+        self.assertEqual(rendered.count('0.25秒'), 1)
+        self.assertNotIn('0.9–1.15秒', rendered)
+        self.assertNotIn('成片占时', rendered)
+        self.assertNotIn('已含在节点', rendered)
+        self.assertIn('节点1：0–2秒（占时2秒）', rendered)
+
+    def test_each_authored_action_duration_survives_both_prompt_projections(self):
+        projection = self.detailed_projection()
+        action_chain = ('【画面与动作】A侧让0.15秒、拨挡0.2秒、进身0.25秒、'
+                        '出拳0.15秒；接触瞬间微慢镜0.25秒，恢复实速收拳0.2秒，'
+                        '随原步势稳住支撑0.8秒。B同时收臂0.2秒，承力退移0.8秒。')
+        projection['sections'][0]['text'] = action_chain + '\n【摄影】沿原侧跟住动作，接点前收稳。'
+        projection = self.review_projection(projection)
+        for style in ('compact', 'detailed'):
+            with self.subTest(style=style):
+                rendered = tool.deliverables(self.plan, 'generic', prompt_style=style,
+                                             projection=projection)['prompt.txt']
+                self.assertEqual(rendered.count(action_chain), 1)
+                self.assertIn('节点1：0–2秒（占时2秒）', rendered)
+                self.assertNotIn('成片占时', rendered)
+                self.assertNotIn('已含在节点', rendered)
+
+    def test_full_prompt_projects_action_event_durations_without_local_clock_ranges(self):
+        plan = tool.read_json(ROOT/'tests/fixtures/action-transfer.plan.json')
+        rendered = tool.deliverables(plan, 'generic')['prompt.txt']
+        self.assertEqual(re.findall(r'耗时([0-9.]+)秒：([AB])', rendered),
+                         [('1.8', 'B'), ('2', 'A'), ('3', 'A'),
+                          ('3', 'B'), ('3', 'A'), ('1.4', 'B')])
+        self.assertNotIn('0.2–2秒：B', rendered)
+        self.assertNotIn('13–14.4秒：B', rendered)
 
     def test_source_changes_invalidate(self):
         for target, key in [('headers', 'scene'), ('headers', 'continuity'), ('initial_state', 'environment')]:

@@ -15,7 +15,7 @@ from combat_schema import check_schema, audit_schema, require
 from combat_action import validate_action, action_text
 from combat_evidence import assess_profile, validate_reference
 from combat_review import validate_take, continuation_seed, check_continuation, review_template
-from combat_handoff import compile_handoff, readiness, require_ready, apply_review, hard_constraints
+from combat_handoff import compile_handoff, readiness, require_ready, apply_review, hard_constraints, node_timing_text
 from combat_prompt import render as compact_prompt
 EPS = 1e-6
 TRACKS = ('action', 'expression', 'emotion', 'camera', 'vfx', 'environment', 'sound', 'continuity')
@@ -132,9 +132,11 @@ def prompt(plan):
     for section in plan['sections']:
         first, last = beats[section['beat_ids'][0]], beats[section['beat_ids'][-1]]
         action_label = '连续动作' if plan['camera_mode'] == 'one-take' else '动作分镜'
-        lines = [f'【{action_label}】{fmt(first["start"])}至{fmt(last["end"])}秒']
+        lines = [f'【{action_label}】{fmt(first["start"])}至{fmt(last["end"])}秒'
+                 f'（占时{fmt(last["end"]-first["start"])}秒）',
+                 node_timing_text(plan, section['beat_ids'])]
         lines.extend(f'【{label}】 {section["summary"][key]}' for key, label in zip(TRACKS, LABELS))
-        detail = action_text(plan, [beats[bid] for bid in section['beat_ids']])
+        detail = action_text(plan, [beats[bid] for bid in section['beat_ids']], duration_only=True)
         if detail:
             lines.append('【具体交手】 ' + detail)
         blocks.append('\n'.join(lines))

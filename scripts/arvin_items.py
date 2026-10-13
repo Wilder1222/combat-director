@@ -206,22 +206,36 @@ def build_items(lines, cards, source):
     return data, coverage
 
 
+CATEGORY_USES = {
+    'design': '战术目的、前提与交换机制',
+    'abilities': '获准能力的来源、路线、回应与代价',
+    'techniques': '持手、支撑、身体与兵器路径',
+    'characters': '本场可采用的打法选择，不继承预设身份',
+    'choreography': '前后招依赖、连招节拍与恢复',
+    'camera': '当前事件触发的取景、机位路径与焦点',
+    'effects': '已设作用的主形、传播、接点变化与消退',
+    'styles': '媒介、材质或线面、光色与动态成像',
+    'scenes': '已有地物对通路、支撑、遮挡和空间层次的作用',
+}
+
+
 def navigation(cards, items):
     outputs = {}
     counts = Counter(item['card_id'] for item in items)
     kinds = sorted({card['kind'] for card in cards})
     root = ['# 战斗资料库导航', '',
-            '先按任务选择分类，再读一张卡的改编与来源边界。无需先打开整个catalog；卡内原文按需展开。', '',
+            '按未决问题选类别，用摘要初筛相容卡片。', '',
             '点名招式时优先使用 `library_tool.py items --query "招名"`，再用返回ID执行 `item`。方法见[检索流程](../references/library-workflow.md)。', '',
-            '| 分类 | 卡数 | 命名条目 |', '| --- | --- | --- |']
+            '| 分类 | 卡数 | 命名条目 | 可进入正文的内容 |', '| --- | --- | --- | --- |']
     for kind in kinds:
         selected = [card for card in cards if card['kind'] == kind]
-        root.append(f'| [{kind}]({kind}/index.md) | {len(selected)} | {sum(counts[c["id"]] for c in selected)} |')
+        root.append(f'| [{kind}]({kind}/index.md) | {len(selected)} | {sum(counts[c["id"]] for c in selected)} | {CATEGORY_USES[kind]} |')
         body = [f'# {kind}分类导航', '', '[返回总导航](../index.md) · [检索与来源规则](../../references/library-workflow.md)', '',
-                '先按标题/流派选卡，读改编段；需要原文时按卡内来源行读取。详情等级在逐条检索中确认，不能由整卡等级代替。', '',
-                '| 卡片 | 内容层级 | 命名条目 |', '| --- | --- | --- |']
+                '本类可进入正文的内容：'+CATEGORY_USES[kind]+'。', '',
+                '下表用于摘要初筛；相容性、来源等级与选读方法见页首检索规则。', '',
+                '| 卡片 | 内容层级 | 命名条目 | 改编用途 |', '| --- | --- | --- | --- |']
         for card in selected:
-            body.append(f'| [{card["title"]}]({card["id"]}.md) | {card["detail"]} | {counts[card["id"]]} |')
+            body.append(f'| [{card["title"]}]({card["id"]}.md) | {card["detail"]} | {counts[card["id"]]} | {card["summary"]} |')
         outputs[f'skills/combat-director/library/{kind}/index.md'] = '\n'.join(body) + '\n'
     outputs['skills/combat-director/library/index.md'] = '\n'.join(root) + '\n'
     return outputs

@@ -150,5 +150,23 @@ class ArvinLibraryTests(unittest.TestCase):
             with self.subTest(mutation=mutation),patch.object(Path,'read_text',read),self.assertRaises(ValueError):
                 library.load_catalog()
 
+    def test_camera_decision_queries_locate_coverage_without_reading_source(self):
+        for query,wanted in [('缺口','arvin-camera-pattern-c'),
+                             ('承重','arvin-camera-pattern-f'),
+                             ('腰侧','arvin-camera-pattern-j')]:
+            with self.subTest(query=query),patch.object(Path,'read_text',side_effect=AssertionError('body read')):
+                result=library.search(self.catalog,'camera',query)
+                self.assertIn(wanted,[e['id'] for e in result['matches']])
+
+    def test_visual_queries_locate_medium_specific_candidates(self):
+        for query,wanted in [('汗珠','arvin-style-2'),
+                             ('赛璐璐','arvin-style-4'),
+                             ('霓虹','arvin-style-5')]:
+            with self.subTest(query=query):
+                result=library.search(self.catalog,'styles',query)
+                self.assertIn(wanted,[e['id'] for e in result['matches']])
+        self.assertEqual(library.search(self.catalog,'styles','水墨')['total'],0)
+        self.assertEqual(library.search(self.catalog,'scenes','宫阙湖面')['total'],0)
+
 
 if __name__=='__main__':unittest.main()

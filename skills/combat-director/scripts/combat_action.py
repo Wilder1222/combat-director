@@ -154,7 +154,7 @@ def _check_items(state, weapons):
     require(all(weapons[item]['mount'] == 'held' for item in held), 'mounted weapon cannot occupy a hand')
 
 
-def action_text(plan, selected):
+def action_text(plan, selected, *, duration_only=False):
     if 'weapon_profiles' not in plan:
         return ''
     weapons = {w['id']: w for w in plan['weapon_profiles']}
@@ -179,7 +179,9 @@ def action_text(plan, selected):
             path_label = '原计划路径' if e['id'] in interruptions else '路径'
             contact_label = '原拟接触/避让' if e['id'] in interruptions else '接触/避让'
             result = ('进行中被打断，原预定结果未完成' if e['id'] in interruptions else e['outcome'])
-            lines.append(f'{e["start"]:g}–{end:g}秒：{e["actor_id"]}{item}，{e["action"]}；{response}'
+            timing = (f'耗时{end-e["start"]:g}秒' if duration_only
+                      else f'{e["start"]:g}–{end:g}秒')
+            lines.append(f'{timing}：{e["actor_id"]}{item}，{e["action"]}；{response}'
                          f'{path_label}从{t["start"]}经{t["path"]}到{t["end"]}，画面方向{t["screen_direction"]}；'
                          f'{contact_label}：{e["contact"]}；结果：{result}。')
             if e['id'] in interruptions:
@@ -201,7 +203,8 @@ def action_text(plan, selected):
                 from combat_state import describe_operation
                 lines.append(describe_operation(op, weapons))
             for interruption in e.get('interrupts', []):
-                lines.append(f'{e["end"]:g}秒停止{interruption["event_id"]}：{interruption["reason"]}。')
+                stop_at = '动作结束时' if duration_only else f'{e["end"]:g}秒'
+                lines.append(f'{stop_at}停止{interruption["event_id"]}：{interruption["reason"]}。')
         delta = beat['state_delta']
         if delta['actors'] or delta['environment']:
             labels = {'zone': '位置', 'facing': '朝向', 'support': '支撑', 'damage': '损伤', 'constraints': '限制'}

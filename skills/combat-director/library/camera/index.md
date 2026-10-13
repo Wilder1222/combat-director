@@ -2,22 +2,24 @@
 
 [返回总导航](../index.md) · [检索与来源规则](../../references/library-workflow.md)
 
-先按标题/流派选卡，读改编段；需要原文时按卡内来源行读取。详情等级在逐条检索中确认，不能由整卡等级代替。
+本类可进入正文的内容：当前事件触发的取景、机位路径与焦点。
 
-| 卡片 | 内容层级 | 命名条目 |
-| --- | --- | --- |
-| [十五种运镜与组合](arvin-camera-moves15.md) | detailed | 0 |
-| [镜头规格与动作可读性](arvin-camera-spec.md) | detailed | 0 |
-| [兵器镜头与挥动空间](arvin-camera-weapons.md) | detailed | 0 |
-| [冷暖与双方辨识](arvin-camera-color.md) | detailed | 0 |
-| [低仰蓄力](arvin-camera-pattern-a.md) | detailed | 0 |
-| [攻击轨迹与拖尾](arvin-camera-pattern-b.md) | detailed | 0 |
-| [接触点与双色效果](arvin-camera-pattern-c.md) | detailed | 0 |
-| [全景余波收束](arvin-camera-pattern-d.md) | detailed | 0 |
-| [不对称效果压迫](arvin-camera-pattern-e.md) | detailed | 0 |
-| [翻摔全肢可见](arvin-camera-pattern-f.md) | detailed | 0 |
-| [元素对峙](arvin-camera-pattern-g.md) | detailed | 0 |
-| [角色与地面反馈](arvin-camera-pattern-h.md) | detailed | 0 |
-| [攻击部位推进](arvin-camera-pattern-i.md) | detailed | 0 |
-| [上勾动作的三段呈现](arvin-camera-pattern-j.md) | detailed | 0 |
-| [重击交换链](arvin-camera-pattern-k.md) | detailed | 0 |
+下表用于摘要初筛；相容性、来源等级与选读方法见页首检索规则。
+
+| 卡片 | 内容层级 | 命名条目 | 改编用途 |
+| --- | --- | --- | --- |
+| [十五种运镜与组合](arvin-camera-moves15.md) | detailed | 0 | 按当前运动线选一主运镜，连续镜头不能同时对向移动；不采用平台成功率或星级作为证据。 |
+| [镜头规格与动作可读性](arvin-camera-spec.md) | detailed | 0 | 先确定景别、视角、运动、目标和接触点；规格是帮助看懂动作的选择，不是每次输出固定配方。 |
+| [兵器镜头与挥动空间](arvin-camera-weapons.md) | detailed | 0 | 保留持械手、刃路、接触和回收；镜头切换不得藏住换手、换武器或穿墙。 |
+| [冷暖与双方辨识](arvin-camera-color.md) | detailed | 0 | 可借冷暖区分双方，也可用明度、剪影与材质；不强迫所有角色改成双色能量。 |
+| [低仰蓄力](arvin-camera-pattern-a.md) | detailed | 0 | 低机位建立蓄势者与当前威胁的高低关系，再读可用手和已设力量的凝聚；准备期间对手仍推进。不固定占框比例，不为构图新增实体大招。 |
+| [攻击轨迹与拖尾](arvin-camera-pattern-b.md) | detailed | 0 | 沿挥动末端跟随弧线，保留持手、刃尖来路与回收；已有拖尾顺运动方向留在旧路径渐淡，不按身高固定长度，也不把尾迹当额外攻击。 |
+| [接触点与双色效果](arvin-camera-pattern-c.md) | detailed | 0 | 收近真实接点，同时纳入进攻握点、防守手与盾缘变化；双色可在已有接点压缩、退出，缺口形成后接原受力。不靠色光证明穿透或人体命中。 |
+| [全景余波收束](arvin-camera-pattern-d.md) | detailed | 0 | 作用后放回双人、原接点与受影响区域，地标比较真实退距，已有尘水或碎片延续；未建立冲击波、裂地或建筑损坏时不补造余波。 |
+| [不对称效果压迫](arvin-camera-pattern-e.md) | detailed | 0 | 以一方已设效果占据更多可见空间形成压迫，仍留对手防线与可用退路；面积差服务观看，不独立证明强弱、击退或胜负。 |
+| [翻摔全肢可见](arvin-camera-pattern-f.md) | detailed | 0 | 斜侧宽景涵盖抓控接点、承重支撑、被带动躯干和落点，再续解除与恢复；翻摔的主动对抗仍可见，衣肢随真实惯性，不强迫所有关节伸直。 |
+| [元素对峙](arvin-camera-pattern-g.md) | detailed | 0 | 同框比较双方已设元素的来源、推进线和间隙，以明暗或色形对应形成对峙；接触后的强弱按本场机制，不为对称扩大覆盖或授予相克。 |
+| [角色与地面反馈](arvin-camera-pattern-h.md) | detailed | 0 | 斜俯视连起人物、原作用点和已有地面残留，颜色或痕迹仍附原区域；它若限制落脚就续实际选路，纯装饰不自动成为囚阵或宣告胜负。 |
+| [攻击部位推进](arvin-camera-pattern-i.md) | detailed | 0 | 在允许近景的来势阶段跟住攻击部位前进，相机沿开放路径靠近并收稳，接点前把真实目标与回应重新纳入；冲向相机的画面不等于已经命中。 |
+| [上勾动作的三段呈现](arvin-camera-pattern-j.md) | detailed | 0 | 按本次上勾动作覆盖腰侧起手、自下而上的拳路、目标处作用及回收，摄影随相位交接；若被封挡则接护架受力，不固定定格、击飞或弓身结果。 |
+| [重击交换链](arvin-camera-pattern-k.md) | detailed | 0 | 把本场已发生的对撞、弧线重击、承力反应与回收连成交换链，按来势转交观看中心；不为套模式新增互殴、双方面部受击、血珠或固定四镜。 |

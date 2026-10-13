@@ -2,6 +2,7 @@ import copy
 import importlib.util
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -34,6 +35,19 @@ class LibraryTests(unittest.TestCase):
         self.assertEqual(result['matches'][0]['matched_terms'], ['回廊', '撤离'])
         self.assertEqual(library.search(self.catalog, 'abilities', '六脉神剑', 'group')['matches'], [])
 
+    def test_contact_static_is_an_explicit_ability_candidate(self):
+        for scope in ('duel', 'group', 'escape'):
+            with self.subTest(scope=scope):
+                result = library.search(self.catalog, 'abilities', '接触静电', scope)
+                self.assertEqual([m['id'] for m in result['matches']], ['static-contact-awakening'])
+                self.assertEqual(result['matches'][0]['status'], 'candidate')
+                self.assertTrue(result['matches'][0]['requires'])
+                self.assertTrue(result['matches'][0]['excludes'])
+        self.assertEqual(library.search(self.catalog, 'abilities', '接触静电', 'ranged')['matches'], [])
+        entry = next(e for e in self.catalog['entries'] if e['id'] == 'static-contact-awakening')
+        self.assertIsNone(entry['source'])
+        self.assertEqual(entry['detail'], 'original')
+
     def test_no_match_never_inserts_default(self):
         result = library.search(self.catalog, 'design', '量子传送门')
         self.assertEqual(result['status'], 'no_match')
@@ -60,6 +74,45 @@ class LibraryTests(unittest.TestCase):
             self.assertEqual(read.call_count, 1)
         with self.assertRaisesRegex(ValueError, 'unknown card ID'):
             library.read_card(self.catalog, '../catalog')
+
+    def test_source_slice_preserves_context_and_exact_source_lines(self):
+        snippet=library.read_card(self.catalog,'arvin-camera-spec',source_lines=(136,143))
+        full=library.read_card(self.catalog,'arvin-camera-spec')
+        source=(ROOT/'sources/upstream/arvin-seedance/SKILL.md').read_text(encoding='utf-8').splitlines()
+        excerpt=re.search(r'````text\n(.*?)\n````',snippet,re.S).group(1)
+        self.assertEqual(excerpt,'\n'.join(source[135:143]))
+        self.assertIn('## 本项目改编用法',snippet)
+        entry=next(e for e in self.catalog['entries'] if e['id']=='arvin-camera-spec')
+        self.assertIn(entry['source']['commit'],snippet)
+        self.assertIn('### 原文 136–143（节选）',snippet)
+        self.assertLess(len(snippet),len(full))
+
+    def test_source_slice_cannot_expand_outside_card_or_hide_missing_source(self):
+        for lines in ((1,4),(128,129),(279,280),(150,140),(True,143),('136',143)):
+            with self.subTest(lines=lines),self.assertRaises(ValueError):
+                library.read_card(self.catalog,'arvin-camera-spec',source_lines=lines)
+        with self.assertRaisesRegex(ValueError,'requires --source'):
+            library.read_card(self.catalog,'arvin-camera-spec',source=False,source_lines=(136,143))
+        with self.assertRaisesRegex(ValueError,'no attributed source'):
+            library.read_card(self.catalog,'round-sword',source_lines=(1,2))
+        with self.assertRaisesRegex(ValueError,'one assigned source range'):
+            library.read_card(self.catalog,'arvin-effects-character-signatures',source_lines=(75,2595))
+
+    def test_source_slice_cli_is_read_only_and_invalid_requests_have_no_output(self):
+        with tempfile.TemporaryDirectory() as temp:
+            base=[sys.executable,SCRIPT,'show','arvin-camera-spec']
+            good=subprocess.run([*base,'--source','--source-lines','136:143'],cwd=temp,
+                                capture_output=True,encoding='utf-8')
+            self.assertEqual(good.returncode,0,good.stderr)
+            self.assertIn('原文 136–143（节选）',good.stdout)
+            for args in (['--source-lines','136:143'],
+                         ['--source','--source-lines','1:4'],
+                         ['--source','--source-lines','136-143']):
+                with self.subTest(args=args):
+                    bad=subprocess.run([*base,*args],cwd=temp,capture_output=True,encoding='utf-8')
+                    self.assertNotEqual(bad.returncode,0)
+                    self.assertEqual(bad.stdout,'')
+            self.assertEqual(list(Path(temp).iterdir()),[])
 
     def test_duplicate_id_and_invalid_metadata_rejected(self):
         mutations = [lambda d: d['entries'].append(copy.deepcopy(d['entries'][0])),

@@ -176,10 +176,32 @@ def compact_search(result):
     return {**result, 'matches': [{k: entry[k] for k in fields} for entry in result['matches']]}
 
 
-def read_card(catalog, card_id, path=CATALOG, *, source=True):
+def read_card(catalog, card_id, path=CATALOG, *, source=True, source_lines=None):
     entry = next((item for item in catalog['entries'] if item['id'] == card_id), None)
     require(entry is not None, f'unknown card ID: {card_id}')
+    if source_lines is not None:
+        require(source is True, 'source line selection requires --source')
+        require(entry['source'] is not None, 'original cards have no attributed source lines')
+        require(isinstance(source_lines, tuple) and len(source_lines) == 2
+                and all(type(n) is int for n in source_lines)
+                and 1 <= source_lines[0] <= source_lines[1], 'invalid source line selection')
+        first, last = source_lines
+        require(any(a <= first <= last <= b for a, b in entry['source']['ranges']),
+                'selected lines must fit one assigned source range')
     body = card_path(Path(path).parent, entry).read_text(encoding='utf-8')
+    if source_lines is not None:
+        blocks = re.findall(r'^### 原文 ([0-9]+)–([0-9]+)\n\n````text\n(.*?)\n````',
+                            body, flags=re.MULTILINE | re.DOTALL)
+        block = next(((int(a), int(b), text) for a, b, text in blocks
+                      if int(a) <= first <= last <= int(b)
+                      and [int(a), int(b)] in entry['source']['ranges']), None)
+        require(block is not None, 'assigned source excerpt is missing')
+        start, end, excerpt = block
+        lines = excerpt.split('\n')
+        require(len(lines) == end - start + 1, 'source excerpt line count mismatch')
+        selected = '\n'.join(lines[first-start:last-start+1])
+        context = re.split(r'^### 原文 ', body, maxsplit=1, flags=re.MULTILINE)[0].rstrip()
+        return context + f'\n\n### 原文 {first}–{last}（节选）\n\n````text\n{selected}\n````\n'
     if source or not entry['source']:
         return body
     return re.split(r'^### 原文 ', body, maxsplit=1, flags=re.MULTILINE)[0].rstrip() + \
@@ -204,6 +226,8 @@ def main(argv=None):
     show = sub.add_parser('show', help='read one selected card')
     show.add_argument('id')
     show.add_argument('--source', action='store_true', help='include complete attributed source excerpts')
+    show.add_argument('--source-lines', metavar='START:END',
+                      help='with --source, read only lines within one assigned source range')
     item_search = sub.add_parser('items', help='search named source items, without reading whole cards')
     item_search.add_argument('--query', default='')
     item_search.add_argument('--kind', choices=(*items.KINDS, 'all'), default='all')
@@ -227,7 +251,12 @@ def main(argv=None):
         elif args.command == 'stats':
             print(json.dumps(stats(catalog), ensure_ascii=False, indent=2))
         elif args.command == 'show':
-            print(read_card(catalog, args.id, source=args.source), end='')
+            source_lines = None
+            if args.source_lines is not None:
+                match = re.fullmatch(r'([1-9][0-9]*):([1-9][0-9]*)', args.source_lines)
+                require(match is not None, 'source lines must use START:END positive integers')
+                source_lines = tuple(int(n) for n in match.groups())
+            print(read_card(catalog, args.id, source=args.source, source_lines=source_lines), end='')
         elif args.command in ('items', 'item'):
             data = load_items(catalog)
             if args.command == 'item':

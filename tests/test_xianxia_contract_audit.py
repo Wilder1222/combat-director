@@ -67,6 +67,10 @@ class IndependentStateRegressionTests(unittest.TestCase):
         self.assertEqual(snapshot['after']['contacts']['C1']['phase'], 'active')
         self.assertIn('0–1秒', action_text(p, p['beats']))
         self.assertNotIn('0–3秒', action_text(p, p['beats']))
+        duration_text = action_text(p, p['beats'], duration_only=True)
+        self.assertIn('耗时1秒：A', duration_text)
+        self.assertNotIn('耗时3秒：A', duration_text)
+        self.assertNotIn('0–1秒', duration_text)
 
     def test_explicit_exit_interruption_cancels_later_endpoint_callbacks(self):
         p = self.plan('body_exits_mid_existing_active_event')
@@ -205,6 +209,11 @@ class IndependentRoundTwoRegressionTests(unittest.TestCase):
         self.assertNotIn('2秒停止LONG', text)
         self.assertIn('由STOP_B打断', text)
         self.assertIn('由A右手持握', text)
+        duration_text = action_text(p, p['beats'], duration_only=True)
+        self.assertIn('耗时3秒：A', duration_text)
+        self.assertNotIn('耗时2秒：A', duration_text)
+        self.assertNotIn('由STOP_A打断', duration_text)
+        self.assertIn('由STOP_B打断', duration_text)
 
     def test_canceled_known_callback_keeps_unexecuted_dynamic_conditions_unchecked(self):
         p = self.plan('canceled_callback_still_requires_declared_ability')

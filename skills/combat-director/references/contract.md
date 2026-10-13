@@ -141,11 +141,13 @@ python scripts/combat_prompt.py apply-review your-plan.json draft.json --receipt
 python scripts/combat_tool.py render your-plan.json --prompt-style detailed --prompt-file reviewed.json --out-dir output/detailed
 ```
 
-作者将独立全局设定写入opening，逐镜内容写入sections[].text，收尾写入closing；detailed保持全局设定在全部分镜之前，只输出一次。逐镜支持合并栏目【画面与动作】【摄影】【衔接】【声音】，也兼容原25项细项；两者按需取用，不要求固定数量或顺序，程序不自动改写已审正文。多镜导出标各镜镜长；one-take先标全镜时长，sections仅标镜内节拍，不能把每段显示成一次切镜。输出仍是正文、表达文件和事实计划三份文件，不产生平台交接单。
+作者将独立全局设定写入opening，逐镜内容写入sections[].text，收尾写入closing；按[正文模板](prompt-construction.md#正文模板)落实当前交付结构。detailed保持全局设定在全部分镜之前，只输出一次。逐镜支持合并栏目【画面与动作】【摄影】【衔接】【声音】，也兼容原25项细项；程序继续允许合法标签子集和不同顺序，不自动补写或改写已审正文。多镜导出标各镜镜长；one-take先标全镜时长，sections仅标镜内节拍，不能把每段显示成一次切镜。输出仍是正文、表达文件和事实计划三份文件，不产生平台交接单。
 
 格式检查只核对逐段标签合法、非重复、内容非空和复核绑定，不判定创作质量或自动拆分独立生成请求；分段方案依生成模板编写，不改变section的镜头/节拍含义。编译后对读正文与事实，再写复核凭据。凭据包括plan_id、source_digest、expression_digest、reviewer、method（human或agent），以及event_coverage、scene_camera、identity_ability、rhythm、constraints五项checks的具体依据。事实与正文摘要匹配仍不等于语义完整或媒体通过。
 
 事实变更使投影失效，正文变更使其复核失效；重分段应先改计划，再重新检查。旧compact导出8份文件，比旧full导出增加prompt-projection.json；不得用压缩省略关键交手、空间桥接与结尾兑现。
+
+三个导出模式full/compact/detailed都从同一事实计划逐节点附上“节点N：start–end秒（占时end-start秒）”，section合并多个beat也不省略节点时间。节点编号沿本段时间轴连续，单镜的节点不产生切镜；既有镜长或镜内节拍标题继续区分观看形式。作者在正文中逐动作与对手回应写耗时，慢镜直接写持续时长；不附计时归属说明，不自动推算局部绝对时点或猜分复合动作。已有具体交手事件进入full提示词时从实际生效的起止计算耗时，被打断的动作只用实际执行时长；检查与回放仍保留原时间事实。本文格式不新增工程字段，也不改写已审正文。
 
 ## 结构化审片与续作
 

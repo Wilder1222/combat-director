@@ -8,7 +8,7 @@ import re
 import sys
 from pathlib import Path
 
-from combat_handoff import compile_handoff, digest
+from combat_handoff import compile_handoff, digest, node_timing_text
 from combat_schema import require
 
 SHOT_LABELS = ('整体风格', '战斗人物', '环境空间关系', '前中后景与远近层次', '景别与远近景切换', '武器样式', '行为逻辑', '人物行动轨迹', '身体与武器动作轨迹', '空间环境交互', '招式', '技能与能力边界', '法阵', '法术效果', '手印变化', '命中效果', '战斗特效', '光影', '运镜', '切镜', '动态模糊', '时间与速度', '面部微表情', '眼神', '情绪')
@@ -104,7 +104,8 @@ def render(plan, projection, detailed=False):
         heading = f'{start:g}–{end:g}秒（{interval_label}{end-start:g}秒）'
         if not detailed:
             heading = f'【{action_label}】' + heading
-        blocks.append(heading + '\n' + section['text'].strip())
+        blocks.append(heading + '\n' + node_timing_text(plan, source['beat_ids']) +
+                      '\n' + section['text'].strip())
     blocks.append(projection['closing'].strip() if detailed
                   else '【连续性】\n' + projection['closing'].strip())
     return '\n\n'.join(blocks) + '\n'

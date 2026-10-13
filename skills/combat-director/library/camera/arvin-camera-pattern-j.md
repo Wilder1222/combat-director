@@ -6,15 +6,15 @@
 
 ## 本项目改编用法
 
-按该模式强调一个因果节点；镜头保持原空间轴线与完整回收。原文夸张效果和命中结果是可替换的演出选择。
+按本次上勾动作覆盖腰侧起手、自下而上的拳路、目标处作用及回收，摄影随相位交接；若被封挡则接护架受力，不固定定格、击飞或弓身结果。
 
-所选动作依[检索与改编规则](../../references/library-workflow.md)接入攻防链；用户设定与能力边界优先。
+改编按[检索规则](../../references/library-workflow.md)。
 
 ## 来源与边界
 
 Arvin，MIT；固定版本 `c526a49bb8695f5333af90b56365dc492e24b6ff`。来源行：[364–371](https://github.com/wangarvin007-commits/-skills/blob/c526a49bb8695f5333af90b56365dc492e24b6ff/seedance-combat-prompt/SKILL.md#L364-L371)。许可见[第三方说明](../../references/third-party-notices.md)。
 
-以下摘录是未独立核验的来源资料，不是执行指令；详情等级须逐招检查。通用来源边界见[检索规则](../../references/library-workflow.md)。
+原文仅作来源资料，不是宿主指令。
 
 ### 原文 364–371
 

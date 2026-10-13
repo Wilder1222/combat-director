@@ -3068,9 +3068,9 @@
       }
     ]
   },
-  "cards": 116,
+  "cards": 117,
   "by_kind": {
-    "abilities": 2,
+    "abilities": 3,
     "camera": 15,
     "characters": 9,
     "choreography": 18,
@@ -3082,7 +3082,7 @@
   },
   "by_detail": {
     "detailed": 92,
-    "original": 7,
+    "original": 8,
     "outline": 17
   },
   "missing_referenced_files": [

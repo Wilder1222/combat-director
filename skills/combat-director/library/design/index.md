@@ -2,12 +2,14 @@
 
 [返回总导航](../index.md) · [检索与来源规则](../../references/library-workflow.md)
 
-先按标题/流派选卡，读改编段；需要原文时按卡内来源行读取。详情等级在逐条检索中确认，不能由整卡等级代替。
+本类可进入正文的内容：战术目的、前提与交换机制。
 
-| 卡片 | 内容层级 | 命名条目 |
-| --- | --- | --- |
-| [太极剑意象：短弧接引](round-sword.md) | original | 0 |
-| [龙爪手意象：抓袖与脱离](claw-control.md) | original | 0 |
-| [袈裟意象：布面遮线](cloth-redirection.md) | original | 0 |
-| [独孤九剑意象：观察后截线](opening-counter.md) | original | 0 |
-| [回廊多人护送撤离](corridor-exit.md) | original | 0 |
+下表用于摘要初筛；相容性、来源等级与选读方法见页首检索规则。
+
+| 卡片 | 内容层级 | 命名条目 | 改编用途 |
+| --- | --- | --- | --- |
+| [太极剑意象：短弧接引](round-sword.md) | original | 0 | 接引已有来刃，沿外侧移步后换线；不自带法阵。 |
+| [龙爪手意象：抓袖与脱离](claw-control.md) | original | 0 | 以抓袖的形态建立短暂控制，让对方主动脱离改变下一拍。 |
+| [袈裟意象：布面遮线](cloth-redirection.md) | original | 0 | 展开已有布料干扰视线，人物利用短暂遮线改变位置。 |
+| [独孤九剑意象：观察后截线](opening-counter.md) | original | 0 | 前段显露动作习惯，后段尝试在其回收时变线；允许对手改变习惯。 |
+| [回廊多人护送撤离](corridor-exit.md) | original | 0 | 通过柱间窄口限制同时接触，用不同任务保持所有人持续行动。 |
