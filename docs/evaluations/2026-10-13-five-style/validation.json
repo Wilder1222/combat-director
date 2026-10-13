@@ -1,0 +1,83 @@
+{
+  "artifact_audit_passed": true,
+  "all_prompts_passed_text_review": false,
+  "installed_runtime_files_matching": 11,
+  "runtime_files_snapshotted": 11,
+  "node_count": 30,
+  "scope": "File integrity, tags, node/shot structure, score arithmetic, and human-transcribed route calculations only.",
+  "media_quality_verified": false,
+  "rounds": [
+    {
+      "round": 1,
+      "score": 96,
+      "nodes": 7,
+      "duration": "14",
+      "critical_route_overflows": [],
+      "branches": [],
+      "text_verdict": "strong_candidate",
+      "artifact_errors": []
+    },
+    {
+      "round": 2,
+      "score": 79,
+      "nodes": 6,
+      "duration": "12",
+      "critical_route_overflows": [
+        {
+          "node": 5,
+          "overflow": "0.2"
+        }
+      ],
+      "branches": [
+        {
+          "actor": "灰衣",
+          "node": 6,
+          "completion_from_node_start": "4.2",
+          "overflow": "1.2",
+          "explicit_carryover": false
+        }
+      ],
+      "text_verdict": "fail",
+      "artifact_errors": []
+    },
+    {
+      "round": 3,
+      "score": 96,
+      "nodes": 6,
+      "duration": "18",
+      "critical_route_overflows": [],
+      "branches": [],
+      "text_verdict": "strong_candidate",
+      "artifact_errors": []
+    },
+    {
+      "round": 4,
+      "score": 96,
+      "nodes": 5,
+      "duration": "10",
+      "critical_route_overflows": [],
+      "branches": [],
+      "text_verdict": "strong_candidate",
+      "artifact_errors": []
+    },
+    {
+      "round": 5,
+      "score": 95,
+      "nodes": 6,
+      "duration": "20",
+      "critical_route_overflows": [],
+      "branches": [
+        {
+          "actor": "货架",
+          "node": 4,
+          "completion_from_node_start": "4.2",
+          "overflow": "0.2",
+          "explicit_carryover": true
+        }
+      ],
+      "text_verdict": "strong_candidate",
+      "artifact_errors": []
+    }
+  ],
+  "errors": []
+}

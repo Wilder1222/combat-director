@@ -1,0 +1,101 @@
+{
+  "artifact_audit_passed": true,
+  "all_prompts_passed_text_review": true,
+  "execution_skill": "modified_workspace_skill",
+  "installed_entry_matches_workspace": false,
+  "installed_runtime_files_matching": 7,
+  "runtime_files_snapshotted": 11,
+  "node_count": 29,
+  "registered_shot_count": 20,
+  "baseline_prompts_unchanged": true,
+  "baseline_counterexamples": {
+    "round2_node5_overflow": "0.2",
+    "round2_node6_branch_overflow": "1.2"
+  },
+  "scope": "File integrity, tags, node/shot structure, score arithmetic, and human-transcribed route calculations only.",
+  "media_quality_verified": false,
+  "rounds": [
+    {
+      "round": 1,
+      "score": 98,
+      "old_score": 96,
+      "score_delta": 2,
+      "nodes": 6,
+      "shots_registered": 1,
+      "duration": "14",
+      "critical_route_overflows": [],
+      "branches": [],
+      "text_verdict": "strong_candidate",
+      "artifact_errors": []
+    },
+    {
+      "round": 2,
+      "score": 97,
+      "old_score": 79,
+      "score_delta": 18,
+      "nodes": 6,
+      "shots_registered": 6,
+      "duration": "12",
+      "critical_route_overflows": [],
+      "branches": [
+        {
+          "actor": "灰衣",
+          "node": 6,
+          "completion_from_node_start": "3.0",
+          "overflow": "0.0",
+          "explicit_carryover": false
+        }
+      ],
+      "text_verdict": "strong_candidate",
+      "artifact_errors": []
+    },
+    {
+      "round": 3,
+      "score": 98,
+      "old_score": 96,
+      "score_delta": 2,
+      "nodes": 6,
+      "shots_registered": 6,
+      "duration": "18",
+      "critical_route_overflows": [],
+      "branches": [],
+      "text_verdict": "strong_candidate",
+      "artifact_errors": []
+    },
+    {
+      "round": 4,
+      "score": 98,
+      "old_score": 96,
+      "score_delta": 2,
+      "nodes": 5,
+      "shots_registered": 1,
+      "duration": "10",
+      "critical_route_overflows": [],
+      "branches": [],
+      "text_verdict": "strong_candidate",
+      "artifact_errors": []
+    },
+    {
+      "round": 5,
+      "score": 99,
+      "old_score": 95,
+      "score_delta": 4,
+      "nodes": 6,
+      "shots_registered": 6,
+      "duration": "20",
+      "critical_route_overflows": [],
+      "branches": [
+        {
+          "actor": "货架",
+          "node": 4,
+          "completion_from_node_start": "4.2",
+          "overflow": "0.2",
+          "explicit_carryover": true
+        }
+      ],
+      "text_verdict": "strong_candidate",
+      "artifact_errors": []
+    }
+  ],
+  "errors": []
+}

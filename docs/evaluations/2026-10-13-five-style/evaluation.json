@@ -1,0 +1,94 @@
+{
+  "schema": "combat-five-style-text-evaluation/1",
+  "date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "reviewer": "same_assistant_as_writer",
+  "user_score": null,
+  "media_generated": false,
+  "media_quality_verified": false,
+  "weights": {"C": 20, "M": 15, "S": 15, "T": 10, "K": 10, "V": 10, "R": 10, "F": 5, "E": 5},
+  "ledger_scope": "Human transcription of one critical route per node plus selected dependency-sensitive branches; not automatic extraction or complete actor simulation.",
+  "rounds": [
+    {
+      "round": 1, "prompt": "round-01-live-wuxia.prompt.txt", "review": "round-01-review.md",
+      "prompt_sha256": "61f8cacd21ab5df45d1a3bb7260b3cc367155e665e5c1d9b5db95cfe19c4eddf",
+      "style": "真人武侠", "camera": "single_continuous", "duration": "14", "node_count": 7,
+      "scores": {"C": 20, "M": 15, "S": 14, "T": 10, "K": 8, "V": 10, "R": 10, "F": 4, "E": 5},
+      "raw_score": 96, "score": 96, "hard_fail": false, "user_score": null,
+      "reference_methods": ["后退改变双方位置", "失位与弃刀有作用链", "通过后停止追击"],
+      "critical_routes": [
+        ["0.5", "0.3", "0.3", "0.4"],
+        ["0.4", "0.3", "0.3", "0.4", "0.6"],
+        ["0.2", "0.3", "0.2", "0.4", "0.4", "0.5"],
+        ["0.4", "0.3", "0.3", "0.4", "0.4", "0.7"],
+        ["0.3", "1.2", "0.5"], ["1", "0.5", "0.5"], ["0.5", "0.5", "1"]
+      ], "expected_overflows": [], "branches": []
+    },
+    {
+      "round": 2, "prompt": "round-02-awakening.prompt.txt", "review": "round-02-review.md",
+      "prompt_sha256": "a77065887961c834ef890615bfc67951e8cccf923268d4589a09a9d60732d838",
+      "style": "真人觉醒近战", "camera": "multi_shot", "duration": "12", "node_count": 6,
+      "scores": {"C": 20, "M": 15, "S": 15, "T": 5, "K": 8, "V": 10, "R": 10, "F": 5, "E": 5},
+      "raw_score": 93, "score": 79, "hard_fail": true, "user_score": null,
+      "review_correction": "Initial manual sum for node4 was 2.05; Decimal recalculation is 2.00. Withdraw that finding; raw score 92 becomes 93. Frozen prompt and final capped score unchanged.",
+      "reference_methods": ["身体反应先于意识确认", "身体接触先于静电", "追赶摄影且旁线持续"],
+      "critical_routes": [
+        ["0.5", "0.3", "0.3", "0.4"],
+        ["0.3", "0.15", "0.2", "0.15", "0.2", "0.2", "0.2", "0.6"],
+        ["0.25", "0.25", "0.3", "0.3", "0.4"],
+        ["0.25", "0.2", "0.2", "0.25", "0.35", "0.2", "0.25", "0.3"],
+        ["0.4", "0.2", "0.2", "0.2", "0.3", "0.4", "0.5"],
+        ["0.2", "0.6", "0.4", "0.8", "0.4", "0.6"]
+      ],
+      "expected_overflows": [{"node": 5, "overflow": "0.2"}],
+      "branches": [{"node": 6, "actor": "灰衣", "trigger_offset": "1.2", "durations": ["0.4", "0.8", "1.8"], "expected_overflow": "1.2", "carryover": null}]
+    },
+    {
+      "round": 3, "prompt": "round-03-cg-xianxia.prompt.txt", "review": "round-03-review.md",
+      "prompt_sha256": "d9ebc6c023344502a970188948476682d84e1b344fe00433c36afcc378aa3211",
+      "style": "写实3D国漫仙侠", "camera": "multi_shot", "duration": "18", "node_count": 6,
+      "scores": {"C": 20, "M": 14, "S": 15, "T": 10, "K": 8, "V": 10, "R": 10, "F": 4, "E": 5},
+      "raw_score": 96, "score": 96, "hard_fail": false, "user_score": null,
+      "reference_methods": ["分波改变防线", "旧痕留置与触发", "术法和实体飞剑分别跟踪"],
+      "critical_routes": [
+        ["0.4", "0.3", "0.5", "0.3", "0.5"],
+        ["0.4", "0.4", "0.2", "0.3", "0.3", "0.4", "0.4", "0.6"],
+        ["0.3", "0.3", "0.4", "0.3", "0.6", "0.3", "0.2", "0.3", "0.3", "0.4", "0.6"],
+        ["0.3", "0.4", "0.5", "0.5", "0.3", "0.4", "0.6"],
+        ["0.4", "0.3", "0.5", "0.4", "0.3", "0.4", "0.7"],
+        ["0.8", "0.4", "0.3", "0.5", "0.4", "0.6"]
+      ], "expected_overflows": [], "branches": []
+    },
+    {
+      "round": 4, "prompt": "round-04-ink-wuxia.prompt.txt", "review": "round-04-review.md",
+      "prompt_sha256": "62adc8b0e251c2b8063b76337dfe28a119694ac2afad77e1a10e276fcac6c682",
+      "style": "二维水墨武侠", "camera": "fixed", "duration": "10", "node_count": 5,
+      "scores": {"C": 20, "M": 14, "S": 15, "T": 10, "K": 7, "V": 10, "R": 10, "F": 5, "E": 5},
+      "raw_score": 96, "score": 96, "hard_fail": false, "user_score": null,
+      "reference_methods": ["伞结构改变拆招", "局部控制及解除", "墨迹绑定真实作用"],
+      "critical_routes": [
+        ["0.3", "0.3", "0.2", "0.3", "0.4"],
+        ["0.6", "0.3", "0.3", "0.4", "0.4"],
+        ["0.3", "0.3", "0.3", "0.3", "0.4", "0.2", "0.2"],
+        ["0.3", "0.3", "0.2", "0.4", "0.3", "0.5"],
+        ["0.6", "0.4", "0.5", "1"]
+      ], "expected_overflows": [], "branches": []
+    },
+    {
+      "round": 5, "prompt": "round-05-industrial-mech.prompt.txt", "review": "round-05-review.md",
+      "prompt_sha256": "04875de6fd3260f4693222d2fefa41bf88e1ff3efe51bcfcef8cb3d0816d3d8d",
+      "style": "科幻工业机甲", "camera": "multi_shot", "duration": "20", "node_count": 6,
+      "scores": {"C": 20, "M": 13, "S": 15, "T": 10, "K": 8, "V": 10, "R": 10, "F": 4, "E": 5},
+      "raw_score": 95, "score": 95, "hard_fail": false, "user_score": null,
+      "reference_methods": ["已有机构观察和诱导", "占手与机关因果", "有限胜利与开放旁路"],
+      "critical_routes": [
+        ["0.6", "0.6", "0.4", "0.3", "1.1"],
+        ["0.4", "0.4", "0.4", "1.6", "1.2"],
+        ["1.4", "0.6", "0.4", "0.6", "1"],
+        ["0.4", "0.6", "0.3", "0.2", "0.3", "0.3", "0.5", "1.4"],
+        ["0.8", "0.2", "0.3", "1.2", "0.5"], ["0.5", "0.4", "0.4", "0.7"]
+      ], "expected_overflows": [],
+      "branches": [{"node": 4, "actor": "货架", "trigger_offset": "1.8", "durations": ["0.4", "2"], "expected_overflow": "0.2", "carryover": {"node": 5, "duration": "0.2", "required_phrase": "货架续前一镜下降0.2秒"}}]
+    }
+  ]
+}

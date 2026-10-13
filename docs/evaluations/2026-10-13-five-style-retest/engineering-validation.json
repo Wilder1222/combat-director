@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "release_report": "outputs/validation/2026-10-13-budget-coverage-release.json",
+  "release_report_sha256": "f92bf62b7ffb3321c68ec934200c902269acf90986edb1da16abbe2929b08a62",
+  "release_succeeded": true,
+  "checks_passed": 40,
+  "optional_unavailable": [
+    "plugin-creator"
+  ],
+  "engineering_tests_total": 231,
+  "engineering_tests_passed": 219,
+  "engineering_tests_skipped": 12,
+  "media_tool_tests_passed": 22,
+  "package_input_files": 169,
+  "archive_files": 170,
+  "archive_sha256": "5bc418c4daf0d3d03ae1f375f3182007e9a03d6672742b635acbd8080989a0a5",
+  "archive_reproducible": true,
+  "source_hashes_unchanged": true,
+  "media_quality_verified": false,
+  "installed_cache_updated": false
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "combat-five-style-retest/1",
+  "date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "reviewer": "same_assistant_as_writer",
+  "user_score": null,
+  "media_generated": false,
+  "media_quality_verified": false,
+  "baseline": "../2026-10-13-five-style/evaluation.json",
+  "weights": {"C":20,"M":15,"S":15,"T":10,"K":10,"V":10,"R":10,"F":5,"E":5},
+  "ledger_scope": "Human-transcribed primary and response critical routes, including known waiting or maintained state; simultaneous subactions count once. Not automatic natural-language or physics validation.",
+  "rounds": [
+    {
+      "round":1,"prompt":"round-01-live-wuxia.prompt.txt","review":"round-01-review.md",
+      "prompt_sha256":"992dd723be00c7ce50eac6f5359dc1a037f946d67dbad4fa628ae88e3f361efc",
+      "camera":"single_continuous","duration":"14","node_count":6,"shot_count":1,
+      "scores":{"C":20,"M":14,"S":15,"T":10,"K":9,"V":10,"R":10,"F":5,"E":5},
+      "score":98,"old_score":96,"hard_fail":false,"user_score":null,
+      "critical_routes":[["0.6","0.3","0.2","0.4","0.5"],["0.5","0.3","0.2","0.4","0.3","0.3"],["0.4","0.3","0.3","0.3","0.3","0.4"],["0.3","0.3","1.4","1"],["1.2","0.6","0.6","0.6"],["0.4","0.6","1"]],
+      "response_routes":[["0.6","0.3","0.2","0.4","0.5"],["0.5","0.3","0.2","0.4","0.3","0.3"],["0.4","0.3","0.3","0.3","0.3","0.4"],["0.4","0.6","1.2","0.8"],["1","0.5","0.5","1"],["0.4","0.6","1"]],
+      "branches":[],"reference_method_scores":[4,3,3],
+      "coverage_review":"节点2前0.6秒连续靠近，节点3腰腿景读压抵并末0.4秒退回；压抵维持至放刀，无切镜。"
+    },
+    {
+      "round":2,"prompt":"round-02-awakening.prompt.txt","review":"round-02-review.md",
+      "prompt_sha256":"07b5e8ef0764b7ab54951b10a949e4efb5e3a319d98de8d18ed842037072ecaa",
+      "camera":"multi_shot","duration":"12","node_count":6,"shot_count":6,
+      "scores":{"C":20,"M":14,"S":15,"T":10,"K":9,"V":9,"R":10,"F":5,"E":5},
+      "score":97,"old_score":79,"hard_fail":false,"user_score":null,
+      "critical_routes":[["0.5","0.3","0.3","0.4"],["0.3","0.15","0.2","0.15","0.2","0.2","0.2","0.6"],["0.25","0.25","0.3","0.3","0.4"],["0.25","0.2","0.2","0.25","0.35","0.2","0.25","0.3"],["0.3","0.2","0.2","0.2","0.3","0.3","0.5"],["0.2","0.6","0.4","0.8","0.4","0.6"]],
+      "response_routes":[["0.5","0.3","0.3","0.4"],["0.3","0.15","0.2","0.15","0.2","0.2","0.2","0.6"],["1.5"],["0.25","0.2","0.2","0.25","0.35","0.2","0.25","0.3"],["0.3","0.2","0.2","0.2","0.6","0.5"],["1.2","0.3","0.5","1"]],
+      "branches":[{"node":6,"actor":"灰衣","trigger_offset":"1.2","durations":["0.3","0.5","1"],"expected_overflow":"0","carryover":null}],
+      "reference_method_scores":[4,3,3],
+      "coverage_review":"镜4连续退距放宽，不藏切镜；掌击腰上景、踹击腰腿景；镜3旁线推进。"
+    },
+    {
+      "round":3,"prompt":"round-03-cg-xianxia.prompt.txt","review":"round-03-review.md",
+      "prompt_sha256":"182a6478156dbdcf369d8e33bcb54680fe8d672871ac72fafd3c176c766b162d",
+      "camera":"multi_shot","duration":"18","node_count":6,"shot_count":6,
+      "scores":{"C":20,"M":14,"S":15,"T":10,"K":9,"V":10,"R":10,"F":5,"E":5},
+      "score":98,"old_score":96,"hard_fail":false,"user_score":null,
+      "critical_routes":[["0.4","0.3","0.5","0.3","0.5"],["0.4","0.4","0.2","0.3","0.3","0.4","0.4","0.6"],["0.3","0.3","0.4","0.3","0.6","0.3","0.2","0.3","0.3","0.4","0.6"],["0.3","0.4","0.5","0.5","0.3","0.4","0.6"],["0.4","0.3","0.5","0.4","0.3","0.4","0.7"],["0.8","0.4","0.3","0.5","0.4","0.6"]],
+      "response_routes":[["0.4","0.3","0.5","0.3","0.5"],["0.5","0.5","0.6","0.4","0.4","0.6"],["0.6","0.7","0.6","0.3","0.2","0.6","1"],["0.7","0.5","0.5","0.7","0.6"],["0.4","0.3","0.5","0.7","0.4","0.7"],["0.8","0.4","0.3","0.5","0.4","0.6"]],
+      "branches":[],"reference_method_scores":[4,3,3],
+      "coverage_review":"距离统一3.5米；镜4近景只读青衣左肘及盾，白衣左腕退距后回认；1.2秒贴压与进步取牌并行。"
+    },
+    {
+      "round":4,"prompt":"round-04-ink-wuxia.prompt.txt","review":"round-04-review.md",
+      "prompt_sha256":"529c5ca23c30b8d1cc2b9a22a7bba0adf5bdc3413393002dec4d02a40f2a1ddc",
+      "camera":"fixed","duration":"10","node_count":5,"shot_count":1,
+      "scores":{"C":20,"M":15,"S":15,"T":10,"K":8,"V":10,"R":10,"F":5,"E":5},
+      "score":98,"old_score":96,"hard_fail":false,"user_score":null,
+      "critical_routes":[["0.3","0.3","0.2","0.3","0.4"],["0.6","0.3","0.3","0.4","0.4"],["0.3","0.3","0.3","0.3","0.4","0.2","0.2"],["0.3","0.3","0.2","0.4","0.3","0.5"],["0.6","0.4","0.5","1"]],
+      "response_routes":[["0.3","0.3","0.2","0.3","0.4"],["0.25","0.35","0.3","0.3","0.4","0.4"],["0.3","0.3","0.3","0.3","0.4","0.2","0.2"],["0.3","0.3","0.2","0.4","0.3","0.5"],["0.6","0.4","0.5","1"]],
+      "branches":[],"reference_method_scores":[4,3,3],
+      "coverage_review":"3.6米固定视野，中央2.4米交锋，掌宽J钩／肤色腕侧向错开；短收杆到胸前再挂，卸载反转解除。"
+    },
+    {
+      "round":5,"prompt":"round-05-industrial-mech.prompt.txt","review":"round-05-review.md",
+      "prompt_sha256":"338963d955e20e83f7bec20341e44b438d57d9fb8d5180c4162a28715851311f",
+      "camera":"multi_shot","duration":"20","node_count":6,"shot_count":6,
+      "scores":{"C":20,"M":15,"S":15,"T":10,"K":9,"V":10,"R":10,"F":5,"E":5},
+      "score":99,"old_score":95,"hard_fail":false,"user_score":null,
+      "critical_routes":[["0.6","0.6","0.4","0.3","1.1"],["0.4","0.4","0.4","1.6","1.2"],["1.4","0.6","0.4","0.6","1"],["0.4","0.6","0.3","0.2","0.3","0.3","0.5","1.4"],["0.8","0.2","0.3","1.2","0.5"],["0.5","0.4","0.4","0.7"]],
+      "response_routes":[["0.6","0.6","0.4","0.3","1.1"],["0.8","0.8","1.2","1.2"],["0.4","1","1.2","1.4"],["0.4","0.6","1.1","0.8","1.1"],["0.6","0.4","0.8","0.6","0.6"],["0.5","0.7","0.8"]],
+      "branches":[{"node":4,"actor":"货架","trigger_offset":"1.8","durations":["0.4","2"],"expected_overflow":"0.2","carryover":{"node":5,"duration":"0.2","required_phrase":"货架续前一镜下降0.2秒"}}],
+      "reference_method_scores":[4,3,3],
+      "coverage_review":"既有按钮柱东面，南偏东操作机位；明确0.9/1.6米横梁与正面通路，臂触下横梁；镜4无隐藏手特写。"
+    }
+  ]
+}

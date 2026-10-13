@@ -31,6 +31,8 @@ python -X utf8 scripts/validate_content.py
 
 接触静电、觉醒表演与逐节点秒数的试用请求见[节点时间回归](../tests/fixtures/static-contact-timing-regression.md)。工程测试检查full/compact/detailed实际prompt.txt逐一显示被合并节点的起止与占时、单镜不增切点，逐动作耗时与简洁慢镜正文保留，以及修改节点时间后原复核失效。具体交手投影另核中断后的实际耗时与取消中断的接续；文字案例对读和媒体验证各自记录，不能据导出测试认定实际视频速度。
 
+时间依赖、实际镜头登记和接点覆盖的自然语言回归输入见[预算与覆盖请求](../tests/fixtures/budget-camera-contact-regression.md)。核验每名行动者的关键路线和触发偏移、在途跨镜余时、实际切点与可读接点；这些行为结果由完整产物及版本指纹记录，不从文档关键词或标题测试推断。
+
 ## 历史验收
 
 2026-10-09的仙侠融合、视觉重音和连续性验收属于固定版本。原发布报告留在[历史JSON](implementation/release-validation.json)，融合证明及复查命令见[历史索引](history/2026-10-09-integration.md)。旧报告不会被新的发布检查覆盖；工作树重构后，历史审计通过只说明所选Git版本的记录完整。

@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "head": "f2463f7542895b4ee366dac688087e6ea0d4a2d5",
+  "version": "0.11.0",
+  "runtime": [
+    {
+      "path": "skills/combat-director/SKILL.md",
+      "sha256": "fa4424990c73d48dce30a7651f083e55f4056db02813b17f26473312613a1671",
+      "installed_sha256": "fa4424990c73d48dce30a7651f083e55f4056db02813b17f26473312613a1671"
+    },
+    {
+      "path": "skills/combat-director/references/prompt-construction.md",
+      "sha256": "dcc76182d0d8f42bee235516fd1904ff4e5d1cc95683d38753bc1a691eb94ba4",
+      "installed_sha256": "dcc76182d0d8f42bee235516fd1904ff4e5d1cc95683d38753bc1a691eb94ba4"
+    },
+    {
+      "path": "skills/combat-director/references/library-workflow.md",
+      "sha256": "f88d75d6920ada87f7348c59c471a2df421bfe418d13223efa541073a07fd32c",
+      "installed_sha256": "f88d75d6920ada87f7348c59c471a2df421bfe418d13223efa541073a07fd32c"
+    },
+    {
+      "path": "skills/combat-director/references/genre-routing.md",
+      "sha256": "7d66ab73dcb33b3f6371c196f07de63e67aaf208c48734a09b6ebd703fda4cd6",
+      "installed_sha256": "7d66ab73dcb33b3f6371c196f07de63e67aaf208c48734a09b6ebd703fda4cd6"
+    },
+    {
+      "path": "skills/combat-director/references/choreography.md",
+      "sha256": "b982bcf61da62048baf38771bf7fc259d02739c9b66f59b942ae010114b5bc2a",
+      "installed_sha256": "b982bcf61da62048baf38771bf7fc259d02739c9b66f59b942ae010114b5bc2a"
+    },
+    {
+      "path": "skills/combat-director/references/camera-and-rhythm.md",
+      "sha256": "4f7a7b1fe82d9d839258cca67adab8a154bb0c3b9b570744af07d44672661716",
+      "installed_sha256": "4f7a7b1fe82d9d839258cca67adab8a154bb0c3b9b570744af07d44672661716"
+    },
+    {
+      "path": "skills/combat-director/references/style-and-materials.md",
+      "sha256": "cd081542cd6512083b909da0af907420f45bbb28be9e6419b38b7b6b2100ba6b",
+      "installed_sha256": "cd081542cd6512083b909da0af907420f45bbb28be9e6419b38b7b6b2100ba6b"
+    },
+    {
+      "path": "skills/combat-director/references/powers-and-formations.md",
+      "sha256": "c20db19b2b31abe987f27fbd3e172d3c6af63cf77cc00804178c8ffc531906af",
+      "installed_sha256": "c20db19b2b31abe987f27fbd3e172d3c6af63cf77cc00804178c8ffc531906af"
+    },
+    {
+      "path": "skills/combat-director/references/movement-and-projectiles.md",
+      "sha256": "231750f95ba24073c676b6227e7433572f856cd42a11a0fa5c3bb1427248d791",
+      "installed_sha256": "231750f95ba24073c676b6227e7433572f856cd42a11a0fa5c3bb1427248d791"
+    },
+    {
+      "path": "skills/combat-director/references/sound-and-performance.md",
+      "sha256": "699a5f8ffe6c35b33eb4abb110f1899730027f09c4df3ebdbf0f23ce7faf0710",
+      "installed_sha256": "699a5f8ffe6c35b33eb4abb110f1899730027f09c4df3ebdbf0f23ce7faf0710"
+    },
+    {
+      "path": "skills/combat-director/library/abilities/static-contact-awakening.md",
+      "sha256": "5087d1963d8db20e71105b61bcf1ed8833b9b1e3e7231e27272f5ae9cc42bd0d",
+      "installed_sha256": "5087d1963d8db20e71105b61bcf1ed8833b9b1e3e7231e27272f5ae9cc42bd0d"
+    }
+  ],
+  "sources": [
+    {
+      "path": "sources/attachments/2026-09-21/grounded-15.prompt.txt",
+      "sha256": "a794389ed128d062481ad5c3a3ab71e57b16ac80cb31d56368b47a67212e10d0"
+    },
+    {
+      "path": "sources/attachments/2026-09-21/epic-30.prompt.txt",
+      "sha256": "6f29b6121e4002829f6ee1998319ad8e9a56f1770a501fc2922991938b15c4aa"
+    },
+    {
+      "path": "sources/attachments/2026-09-21/colossus-30.prompt.txt",
+      "sha256": "21b1b0246196a911759fc80bd3115e0ca8d28cfaec122aada27751aa34229c57"
+    },
+    {
+      "path": "sources/attachments/2026-09-22/3-双人打斗第二弹.txt",
+      "sha256": "4eb1ebadcde398f56750ac6af229e07637c026e280c3dbbecdf5fbafa22edc12"
+    },
+    {
+      "path": "sources/attachments/user-prompts/7-7.30.extracted.txt",
+      "sha256": "7c44f4d7a0aacdba2f7eec6675b38514096bde6fbe9f75cb420fe5a4898e157a"
+    },
+    {
+      "path": "sources/attachments/user-prompts/8-8.2.extracted.txt",
+      "sha256": "aa7ecf25ee60c76761217b73274303162b99eba62e9f00305114218d8d4baac7"
+    },
+    {
+      "path": "docs/implementation/2026-10-11-user-reference-map.md",
+      "sha256": "e803cd9413b7441b7b72b563e4e858f9b1ed5c899a4e34ca93117f5ddbb4c044"
+    },
+    {
+      "path": "docs/implementation/2026-10-12-reference-benchmark.md",
+      "sha256": "49389bcfbb5e941653e8b3b947389f1690c00dbcfd56750adc550394313dddef"
+    },
+    {
+      "path": "docs/implementation/2026-10-13-static-contact-node-timing.md",
+      "sha256": "b38591e149bb96bbbce53a4ba8d4dbfbf2a7657e4396a3bf935bcb19ce7313f0"
+    }
+  ],
+  "prompts": [
+    {
+      "path": "round-01-live-wuxia.prompt.txt",
+      "sha256": "61f8cacd21ab5df45d1a3bb7260b3cc367155e665e5c1d9b5db95cfe19c4eddf"
+    },
+    {
+      "path": "round-02-awakening.prompt.txt",
+      "sha256": "a77065887961c834ef890615bfc67951e8cccf923268d4589a09a9d60732d838"
+    },
+    {
+      "path": "round-03-cg-xianxia.prompt.txt",
+      "sha256": "d9ebc6c023344502a970188948476682d84e1b344fe00433c36afcc378aa3211"
+    },
+    {
+      "path": "round-04-ink-wuxia.prompt.txt",
+      "sha256": "62adc8b0e251c2b8063b76337dfe28a119694ac2afad77e1a10e276fcac6c682"
+    },
+    {
+      "path": "round-05-industrial-mech.prompt.txt",
+      "sha256": "04875de6fd3260f4693222d2fefa41bf88e1ff3efe51bcfcef8cb3d0816d3d8d"
+    }
+  ],
+  "source_scope": "Hashes cover complete files; only task-relevant sections were read. SO-YEON original input was not available; its project adaptation was used."
+}
