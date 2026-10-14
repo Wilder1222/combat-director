@@ -33,6 +33,10 @@ python -X utf8 scripts/validate_content.py
 
 时间依赖、实际镜头登记和接点覆盖的自然语言回归输入见[预算与覆盖请求](../tests/fixtures/budget-camera-contact-regression.md)。核验每名行动者的关键路线和触发偏移、在途跨镜余时、实际切点与可读接点；这些行为结果由完整产物及版本指纹记录，不从文档关键词或标题测试推断。
 
+冻结的五轮评估账本统一由[评估审计器](../scripts/audit_prompt_evaluations.py)复算，原目录入口保留为兼容包装。默认只读，使用`--out`将当次回执写到项目`outputs/`内且冻结目录之外；旧来源用`--source-revision`核对相应Git字节，不重写历史manifest、分数或validation。工具只验证已支持格式的指纹、结构与人工账本，不替代独立攻防评审。复测目录可直接运行；基线目录指定`--source-revision f2463f7542895b4ee366dac688087e6ea0d4a2d5`。
+
+护送、多人同步与御空的新首稿由隔离代理独立评审，结果为97、79（硬失败封顶）、94，具体触发与取景问题见[泛化结果](evaluations/2026-10-13-generalization/report.md)。此格式不由五轮共享审计器推断语义。重复审计合并、旧包与缓存清理以及本轮完整工程验证见[清理记录](history/2026-10-14-generalization-cleanup.md)。
+
 ## 历史验收
 
 2026-10-09的仙侠融合、视觉重音和连续性验收属于固定版本。原发布报告留在[历史JSON](implementation/release-validation.json)，融合证明及复查命令见[历史索引](history/2026-10-09-integration.md)。旧报告不会被新的发布检查覆盖；工作树重构后，历史审计通过只说明所选Git版本的记录完整。

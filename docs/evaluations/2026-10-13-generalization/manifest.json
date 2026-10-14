@@ -1,0 +1,47 @@
+{
+  "format": "combat-generalization-snapshot/1",
+  "inputs_created_on": "2026-10-13",
+  "snapshot_verified_on": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "source_revision": "505d2c24e531a63b3b23733f96356c952b9df39c",
+  "runtime_entry": {
+    "path": "skills/combat-director/SKILL.md",
+    "sha256": "8e4229850a8f0ed143c9cfc9c282e848d8a33c613d5ec32036b3c1c66542a2fb"
+  },
+  "frozen_files": [
+    {
+      "path": "G1-escort.prompt.txt",
+      "sha256": "105e39132a58ee0de9f793fe5b17db6e55813784f357ed2ab0eac250e15c4c76",
+      "size_bytes": 10443
+    },
+    {
+      "path": "G2-simultaneous.prompt.txt",
+      "sha256": "19b67dbb2e6e54e360c46210cbef7c587f491748abc4d9d41192022e245055c9",
+      "size_bytes": 9383
+    },
+    {
+      "path": "G3-aerial.prompt.txt",
+      "sha256": "4ec0d1f07eeb259182a130233c125f5b3f3690760dc75b24cbf7bba684e759e6",
+      "size_bytes": 10837
+    },
+    {
+      "path": "inputs.json",
+      "sha256": "947db16d7a3f9b040fd024dcfe6f392e6bdfdcb2312c2e4f4c4a4ac782e2b5e1",
+      "size_bytes": 3066
+    },
+    {
+      "path": "rubric.md",
+      "sha256": "33a9673b46e2d230c8edf46423a2963f38416c5a8aa73f29c8d341d06a89242f",
+      "size_bytes": 2415
+    }
+  ],
+  "generation_provenance": {
+    "role": "separate writing agent",
+    "first_drafts_retained": true,
+    "writer_completion_receipt_available": false,
+    "limitation": "Three first drafts exist from the preceding writing task; the writing agent completion record was not available when the local task resumed. Actual per-file read provenance is not claimed."
+  },
+  "review_scope": "A separate context-isolated same-family reviewer reads new inputs, frozen prompts, rubric and current skill; no prior scores or writing ledger.",
+  "user_score": null,
+  "media_quality_verified": false
+}

@@ -1,0 +1,3164 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-10-14",
+  "evaluation_date": "2026-10-13",
+  "reviewer_role": "independent_text_reviewer",
+  "reviewer_agent": "/root/holdout_review",
+  "context": {
+    "workspace_root": "D:/study/projects/combat-director",
+    "read_paths": [
+      {
+        "path": "docs/evaluations/2026-10-13-generalization/inputs.json",
+        "absolute_path": "D:/study/projects/combat-director/docs/evaluations/2026-10-13-generalization/inputs.json",
+        "read_ranges": "full",
+        "sha256": "947db16d7a3f9b040fd024dcfe6f392e6bdfdcb2312c2e4f4c4a4ac782e2b5e1"
+      },
+      {
+        "path": "docs/evaluations/2026-10-13-generalization/rubric.md",
+        "absolute_path": "D:/study/projects/combat-director/docs/evaluations/2026-10-13-generalization/rubric.md",
+        "read_ranges": "full",
+        "sha256": "33a9673b46e2d230c8edf46423a2963f38416c5a8aa73f29c8d341d06a89242f"
+      },
+      {
+        "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+        "absolute_path": "D:/study/projects/combat-director/docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+        "read_ranges": "full",
+        "sha256": "105e39132a58ee0de9f793fe5b17db6e55813784f357ed2ab0eac250e15c4c76"
+      },
+      {
+        "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+        "absolute_path": "D:/study/projects/combat-director/docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+        "read_ranges": "full",
+        "sha256": "19b67dbb2e6e54e360c46210cbef7c587f491748abc4d9d41192022e245055c9"
+      },
+      {
+        "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+        "absolute_path": "D:/study/projects/combat-director/docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+        "read_ranges": "full",
+        "sha256": "4ec0d1f07eeb259182a130233c125f5b3f3690760dc75b24cbf7bba684e759e6"
+      },
+      {
+        "path": "skills/combat-director/SKILL.md",
+        "absolute_path": "D:/study/projects/combat-director/skills/combat-director/SKILL.md",
+        "read_ranges": "full",
+        "sha256": "8e4229850a8f0ed143c9cfc9c282e848d8a33c613d5ec32036b3c1c66542a2fb"
+      },
+      {
+        "path": "skills/combat-director/references/prompt-construction.md",
+        "absolute_path": "D:/study/projects/combat-director/skills/combat-director/references/prompt-construction.md",
+        "read_ranges": "full",
+        "sha256": "bf8fb85bc7a0e68aa742c168ec3657395491a56cf5bdc41fc23c191f8578b25e"
+      },
+      {
+        "path": "skills/combat-director/references/camera-and-rhythm.md",
+        "absolute_path": "D:/study/projects/combat-director/skills/combat-director/references/camera-and-rhythm.md",
+        "read_ranges": [
+          [
+            1,
+            47
+          ],
+          [
+            96,
+            137
+          ]
+        ],
+        "sha256": "e3b1e09744159e9b0d34e135e64560ecad3b8421c48e9239408aaba685acf19f"
+      },
+      {
+        "path": "skills/combat-director/references/movement-and-projectiles.md",
+        "absolute_path": "D:/study/projects/combat-director/skills/combat-director/references/movement-and-projectiles.md",
+        "read_ranges": [
+          [
+            5,
+            43
+          ],
+          [
+            76,
+            87
+          ]
+        ],
+        "sha256": "231750f95ba24073c676b6227e7433572f856cd42a11a0fa5c3bb1427248d791"
+      },
+      {
+        "path": "skills/combat-director/references/clones-and-multi-combat.md",
+        "absolute_path": "D:/study/projects/combat-director/skills/combat-director/references/clones-and-multi-combat.md",
+        "read_ranges": [
+          [
+            23,
+            43
+          ]
+        ],
+        "sha256": "0e52b089f1faf4fdf7e1f417d1e871355f899b018567570739847f6ddf33125a"
+      },
+      {
+        "path": "skills/combat-director/references/choreography.md",
+        "absolute_path": "D:/study/projects/combat-director/skills/combat-director/references/choreography.md",
+        "read_ranges": [
+          [
+            48,
+            106
+          ]
+        ],
+        "sha256": "b4d7c5e21d4d39a20b2c739769ae0d9d8a2ca3836ead0828e22e6ec7ac0a7cad"
+      }
+    ],
+    "additional_heading_inventory_only": [
+      "skills/combat-director/references/camera-and-rhythm.md",
+      "skills/combat-director/references/movement-and-projectiles.md",
+      "skills/combat-director/references/clones-and-multi-combat.md",
+      "skills/combat-director/references/choreography.md"
+    ],
+    "exclusions": [
+      "旧五轮评估目录",
+      "旧分数和旧结论",
+      "writer-record.json",
+      "其他代理结论",
+      "memory"
+    ],
+    "independence": "相对于写作角色和旧结果的上下文隔离；不是跨模型验证。",
+    "source_revision_declared_by_inputs": "505d2c24e531a63b3b23733f96356c952b9df39c",
+    "no_prompt_runtime_test_or_git_changes": true
+  },
+  "line_number_basis": "提示词实际UTF-8文本的一基行号，含空行；不把格式数量等同语义验收。",
+  "user_score": null,
+  "media_quality_verified": false,
+  "generated_media": false,
+  "grading_policy": {
+    "maximum_score": 100,
+    "hard_failure_cap": 79,
+    "rubric_path": "docs/evaluations/2026-10-13-generalization/rubric.md"
+  },
+  "cases": [
+    {
+      "id": "G1",
+      "prompt_path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+      "prompt_sha256": "105e39132a58ee0de9f793fe5b17db6e55813784f357ed2ab0eac250e15c4c76",
+      "scores": {
+        "C": {
+          "score": 20,
+          "max": 20,
+          "reason": "保护目标持续改变防线选择；让空、压退、舍弃追削和回封均由当前威胁触发。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+              "lines": [
+                11,
+                16,
+                21,
+                22,
+                27,
+                28,
+                33,
+                34
+              ],
+              "note": "四人的路线与护送目标进入动作"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "M": {
+          "score": 15,
+          "max": 15,
+          "reason": "单刀拨/架杆、双手持矛棍、石面承重与短幅回收可按既有支撑执行。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+              "lines": [
+                6,
+                7,
+                11,
+                16,
+                21,
+                22,
+                27,
+                28
+              ],
+              "note": "来路、持械与受力均有实体依据"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "S": {
+          "score": 15,
+          "max": 15,
+          "reason": "四人、原武器、布包、伤腿和两条旁线持续；无缴械、新增旁路或旁线消失。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+              "lines": [
+                6,
+                7,
+                16,
+                22,
+                28,
+                33,
+                34
+              ],
+              "note": "终态保留四人原持物"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "T": {
+          "score": 9,
+          "max": 10,
+          "reason": "各主线路可容入节点，最后双来路可在刀手解放后接续；一次后撤反应占时不够明确。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+              "lines": [
+                11,
+                16,
+                21,
+                22,
+                27,
+                28,
+                33,
+                34
+              ],
+              "note": "按各人前序重建，详见 independent_time_audit"
+            }
+          ],
+          "deductions": [
+            {
+              "points": 1,
+              "evidence": {
+                "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+                "lines": [
+                  22
+                ],
+                "note": "黑袖随作用后撤约30厘米后接着收棍0.5秒；后撤未独立标时"
+              },
+              "reason": "若后撤是0.25秒承棍中的受力反应，节点正好闭合；若是解除后的另一个位移，会再占时间。正文没有直接消除此歧义，不能判成已确认超时。"
+            }
+          ],
+          "uncertainties": []
+        },
+        "K": {
+          "score": 8,
+          "max": 10,
+          "reason": "实际五镜，无隐含换角；接点多用中景与同侧前后关系；镜2切口相位与动作开头不一致。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+              "lines": [
+                8,
+                10,
+                12,
+                15,
+                17,
+                20,
+                23,
+                26,
+                29,
+                32,
+                35
+              ],
+              "note": "已登记五镜，镜内推移不增镜"
+            }
+          ],
+          "deductions": [
+            {
+              "points": 2,
+              "evidence": {
+                "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+                "lines": [
+                  11,
+                  16,
+                  17
+                ],
+                "note": "镜1末为回封，镜2从3.0秒先斜移0.6秒；摄影却硬切接刀从胸前下移相位"
+              },
+              "reason": "按动作链右刀下架应在3.6秒开始；若切口即接下移则省掉新节点前0.6秒。按3.0秒切则摄影相位描述须改。此为局部文字接续矛盾，未证实模型跳位。"
+            }
+          ],
+          "uncertainties": []
+        },
+        "V": {
+          "score": 10,
+          "max": 10,
+          "reason": "冷灰雨巷与门外光差、湿袖承力褶皱、刀背高光、脚步及接点声源均随事件变化。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+              "lines": [
+                4,
+                5,
+                12,
+                13,
+                18,
+                23,
+                24,
+                29,
+                30,
+                36
+              ],
+              "note": "材质、表演选择与声音服务当前作用"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "R": {
+          "score": 10,
+          "max": 10,
+          "reason": "信使全程同窗行走4/4；护卫因保护放弃追削3/3；指定门内外与原持物终态3/3。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+              "lines": [
+                11,
+                16,
+                21,
+                22,
+                27,
+                28,
+                33,
+                34
+              ],
+              "note": "三个指定关系有正文事件"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "F": {
+          "score": 5,
+          "max": 5,
+          "reason": "全局三栏目、稳定设定、逐镜动作/摄影与完整限制自含，无外部复制依赖。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+              "lines": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                10,
+                12,
+                36
+              ],
+              "note": "结构和本场设定完整"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "E": {
+          "score": 5,
+          "max": 5,
+          "reason": "信使约13.5秒跨既有北门，末2.5秒继续走；护卫留门内、原刀在右手、两敌仍动作。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G1-escort.prompt.txt",
+              "lines": [
+                27,
+                33,
+                34,
+                36
+              ],
+              "note": "终态由计时行动到达"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        }
+      },
+      "raw": 97,
+      "final": 97,
+      "hard_fail": false,
+      "hard_fail_reasons": [],
+      "media_quality_verified": false,
+      "actual_shots": {
+        "count": 5,
+        "cut_times_seconds": [
+          3,
+          6,
+          10,
+          13.5
+        ],
+        "shot_windows": [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            10,
+            13.5
+          ],
+          [
+            13.5,
+            16
+          ]
+        ],
+        "evidence_lines": [
+          8,
+          10,
+          12,
+          15,
+          17,
+          20,
+          23,
+          26,
+          29,
+          32,
+          35
+        ],
+        "hidden_cuts_detected": false
+      },
+      "specified_relations": [
+        {
+          "name": "信使同窗持续走",
+          "score": 4,
+          "max": 4,
+          "evidence_lines": [
+            11,
+            16,
+            21,
+            27,
+            33
+          ]
+        },
+        {
+          "name": "护卫舍弃追击护目标",
+          "score": 3,
+          "max": 3,
+          "evidence_lines": [
+            21,
+            22
+          ]
+        },
+        {
+          "name": "门外原包、门内原刀、两敌能动",
+          "score": 3,
+          "max": 3,
+          "evidence_lines": [
+            33,
+            34
+          ]
+        }
+      ],
+      "entity_state_audit": {
+        "people": 4,
+        "guard": "同一单刀始终右手；左手空闲；最后门内守口",
+        "messenger": "伤左腿持续行走，原布包始终双手抱；最后门外约0.5米",
+        "red": "同一短矛双手，西侧石台内缘续追，末西南约1米",
+        "black": "同一木棍双手，东侧追压连续，末东南近处重新提腕",
+        "environment": "石台占西侧0.5米后原路余宽约1.7米；北门唯一出口，未造新通道",
+        "evidence_lines": [
+          6,
+          7,
+          11,
+          16,
+          21,
+          22,
+          27,
+          28,
+          33,
+          34
+        ]
+      },
+      "independent_time_audit": [
+        {
+          "node": 1,
+          "start_seconds": 0,
+          "end_seconds": 3,
+          "budget_seconds": 3,
+          "actors": [
+            {
+              "actor": "信使",
+              "evidence_lines": [
+                11
+              ],
+              "phases": [
+                {
+                  "start_seconds": 0,
+                  "end_seconds": 3,
+                  "duration_seconds": 3,
+                  "action": "持续北行约1米，双手抱包",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "护卫",
+              "evidence_lines": [
+                11
+              ],
+              "phases": [
+                {
+                  "start_seconds": 0,
+                  "end_seconds": 0.45,
+                  "duration_seconds": 0.45,
+                  "action": "东让、落脚沉髋",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 0.45,
+                  "end_seconds": 0.8,
+                  "duration_seconds": 0.35,
+                  "action": "斜迎短矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 0.8,
+                  "end_seconds": 1.05,
+                  "duration_seconds": 0.25,
+                  "action": "刀背导杆向西",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 1.05,
+                  "end_seconds": 1.5,
+                  "duration_seconds": 0.45,
+                  "action": "撤刀",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 1.5,
+                  "end_seconds": 2,
+                  "duration_seconds": 0.5,
+                  "action": "北退约0.5米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2,
+                  "end_seconds": 3,
+                  "duration_seconds": 1,
+                  "action": "随红腰探线回封",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "红腰",
+              "evidence_lines": [
+                11
+              ],
+              "phases": [
+                {
+                  "start_seconds": 0,
+                  "end_seconds": 0.45,
+                  "duration_seconds": 0.45,
+                  "action": "北进0.35米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 0.45,
+                  "end_seconds": 0.8,
+                  "duration_seconds": 0.35,
+                  "action": "刺胸",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 0.8,
+                  "end_seconds": 1.05,
+                  "duration_seconds": 0.25,
+                  "action": "杆被导偏",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 1.05,
+                  "end_seconds": 1.5,
+                  "duration_seconds": 0.45,
+                  "action": "抽矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 1.5,
+                  "end_seconds": 2,
+                  "duration_seconds": 0.5,
+                  "action": "西调半步",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2,
+                  "end_seconds": 3,
+                  "duration_seconds": 1,
+                  "action": "沿石台南端短进探线",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "黑袖",
+              "evidence_lines": [
+                11
+              ],
+              "phases": [
+                {
+                  "start_seconds": 0,
+                  "end_seconds": 3,
+                  "duration_seconds": 3,
+                  "action": "沿东侧追进约2米，终点约-1米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": []
+        },
+        {
+          "node": 2,
+          "start_seconds": 3,
+          "end_seconds": 6,
+          "budget_seconds": 3,
+          "actors": [
+            {
+              "actor": "信使",
+              "evidence_lines": [
+                16
+              ],
+              "phases": [
+                {
+                  "start_seconds": 3,
+                  "end_seconds": 6,
+                  "duration_seconds": 3,
+                  "action": "沿现有东侧空路北行至约2米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "护卫",
+              "evidence_lines": [
+                16
+              ],
+              "phases": [
+                {
+                  "start_seconds": 3,
+                  "end_seconds": 3.6,
+                  "duration_seconds": 0.6,
+                  "action": "东北斜移插入棍线",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 3.6,
+                  "end_seconds": 3.9,
+                  "duration_seconds": 0.3,
+                  "action": "东下架棍",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 3.9,
+                  "end_seconds": 4.1,
+                  "duration_seconds": 0.2,
+                  "action": "导棍向东墙",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 4.1,
+                  "end_seconds": 4.55,
+                  "duration_seconds": 0.45,
+                  "action": "前压半步",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 4.55,
+                  "end_seconds": 5,
+                  "duration_seconds": 0.45,
+                  "action": "撤刀并回看西路",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5,
+                  "end_seconds": 6,
+                  "duration_seconds": 1,
+                  "action": "退至约+0.65米守双路",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "黑袖",
+              "evidence_lines": [
+                16
+              ],
+              "phases": [
+                {
+                  "start_seconds": 3,
+                  "end_seconds": 3.6,
+                  "duration_seconds": 0.6,
+                  "action": "北进0.4米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 3.6,
+                  "end_seconds": 3.9,
+                  "duration_seconds": 0.3,
+                  "action": "低刺信使伤腿来路",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 3.9,
+                  "end_seconds": 4.1,
+                  "duration_seconds": 0.2,
+                  "action": "棍头被导擦墙",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 4.1,
+                  "end_seconds": 4.55,
+                  "duration_seconds": 0.45,
+                  "action": "随压退开",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 4.55,
+                  "end_seconds": 5,
+                  "duration_seconds": 0.45,
+                  "action": "抽棍",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5,
+                  "end_seconds": 6,
+                  "duration_seconds": 1,
+                  "action": "重新追到约+0.1米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "红腰",
+              "evidence_lines": [
+                16
+              ],
+              "phases": [
+                {
+                  "start_seconds": 3,
+                  "end_seconds": 3.4,
+                  "duration_seconds": 0.4,
+                  "action": "收杆转北",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 3.4,
+                  "end_seconds": 5,
+                  "duration_seconds": 1.6,
+                  "action": "沿石台内缘北行",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5,
+                  "end_seconds": 6,
+                  "duration_seconds": 1,
+                  "action": "循回封刀尖调到零点",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": []
+        },
+        {
+          "node": 3,
+          "start_seconds": 6,
+          "end_seconds": 10,
+          "budget_seconds": 4,
+          "actors": [
+            {
+              "actor": "信使",
+              "evidence_lines": [
+                21
+              ],
+              "phases": [
+                {
+                  "start_seconds": 6,
+                  "end_seconds": 10,
+                  "duration_seconds": 4,
+                  "action": "持续北行至约+3.25米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "护卫",
+              "evidence_lines": [
+                21,
+                22
+              ],
+              "phases": [
+                {
+                  "start_seconds": 6,
+                  "end_seconds": 6.5,
+                  "duration_seconds": 0.5,
+                  "action": "北退0.25米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 6.5,
+                  "end_seconds": 6.8,
+                  "duration_seconds": 0.3,
+                  "action": "斜下拨矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 6.8,
+                  "end_seconds": 7,
+                  "duration_seconds": 0.2,
+                  "action": "贴滑",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 7,
+                  "end_seconds": 7.4,
+                  "duration_seconds": 0.4,
+                  "action": "收住追削选择",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 7.4,
+                  "end_seconds": 8,
+                  "duration_seconds": 0.6,
+                  "action": "东北斜退0.8米改护信使",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8,
+                  "end_seconds": 8.35,
+                  "duration_seconds": 0.35,
+                  "action": "横架黑袖来棍",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8.35,
+                  "end_seconds": 8.6,
+                  "duration_seconds": 0.25,
+                  "action": "刀脊承棍、右腕肩线让力",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8.6,
+                  "end_seconds": 9.1,
+                  "duration_seconds": 0.5,
+                  "action": "收刀",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 9.1,
+                  "end_seconds": 9.6,
+                  "duration_seconds": 0.5,
+                  "action": "北退",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 9.6,
+                  "end_seconds": 10,
+                  "duration_seconds": 0.4,
+                  "action": "守东路，终点约+2.2米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "红腰",
+              "evidence_lines": [
+                21,
+                22
+              ],
+              "phases": [
+                {
+                  "start_seconds": 6,
+                  "end_seconds": 6.5,
+                  "duration_seconds": 0.5,
+                  "action": "北抢",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 6.5,
+                  "end_seconds": 6.8,
+                  "duration_seconds": 0.3,
+                  "action": "刺腹侧",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 6.8,
+                  "end_seconds": 7,
+                  "duration_seconds": 0.2,
+                  "action": "矛被拨滑",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 7,
+                  "end_seconds": 7.5,
+                  "duration_seconds": 0.5,
+                  "action": "侧退",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 7.5,
+                  "end_seconds": 8,
+                  "duration_seconds": 0.5,
+                  "action": "抽矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8,
+                  "end_seconds": 9,
+                  "duration_seconds": 1,
+                  "action": "正肩收短杆",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 9,
+                  "end_seconds": 10,
+                  "duration_seconds": 1,
+                  "action": "追到约+1.05米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "黑袖",
+              "evidence_lines": [
+                22
+              ],
+              "phases": [
+                {
+                  "start_seconds": 6,
+                  "end_seconds": 8,
+                  "duration_seconds": 2,
+                  "action": "东侧追至信使南约1.1米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8,
+                  "end_seconds": 8.35,
+                  "duration_seconds": 0.35,
+                  "action": "斜劈信使肩线",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8.35,
+                  "end_seconds": 8.6,
+                  "duration_seconds": 0.25,
+                  "action": "棍受刀脊作用并后撤约0.3米",
+                  "status": "duration_allocation_uncertain"
+                },
+                {
+                  "start_seconds": 8.6,
+                  "end_seconds": 9.1,
+                  "duration_seconds": 0.5,
+                  "action": "收棍",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 9.1,
+                  "end_seconds": 9.6,
+                  "duration_seconds": 0.5,
+                  "action": "重新追半步",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 9.6,
+                  "end_seconds": 10,
+                  "duration_seconds": 0.4,
+                  "action": "前棍逼近",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": "后撤放入受力0.25秒是能够闭合的解释，但未获明确独立占时；不补造更长时间。"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "node": 4,
+          "start_seconds": 10,
+          "end_seconds": 13.5,
+          "budget_seconds": 3.5,
+          "actors": [
+            {
+              "actor": "信使",
+              "evidence_lines": [
+                27
+              ],
+              "phases": [
+                {
+                  "start_seconds": 10,
+                  "end_seconds": 13.5,
+                  "duration_seconds": 3.5,
+                  "action": "北行并跨原门槛，身体到门外约0.05米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "护卫",
+              "evidence_lines": [
+                27,
+                28
+              ],
+              "phases": [
+                {
+                  "start_seconds": 10,
+                  "end_seconds": 10.35,
+                  "duration_seconds": 0.35,
+                  "action": "后撤斜压矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 10.35,
+                  "end_seconds": 10.55,
+                  "duration_seconds": 0.2,
+                  "action": "刀杆滑接",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 10.55,
+                  "end_seconds": 11,
+                  "duration_seconds": 0.45,
+                  "action": "维持接点北退导偏",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 11,
+                  "end_seconds": 11.5,
+                  "duration_seconds": 0.5,
+                  "action": "回刀",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 11.5,
+                  "end_seconds": 11.9,
+                  "duration_seconds": 0.4,
+                  "action": "上架黑袖来棍",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 11.9,
+                  "end_seconds": 12.2,
+                  "duration_seconds": 0.3,
+                  "action": "让力",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 12.2,
+                  "end_seconds": 12.7,
+                  "duration_seconds": 0.5,
+                  "action": "北退收刀",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 12.7,
+                  "end_seconds": 13.5,
+                  "duration_seconds": 0.8,
+                  "action": "收稳两脚至约+3.35米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "红腰",
+              "evidence_lines": [
+                27
+              ],
+              "phases": [
+                {
+                  "start_seconds": 10,
+                  "end_seconds": 10.35,
+                  "duration_seconds": 0.35,
+                  "action": "前送矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 10.35,
+                  "end_seconds": 10.55,
+                  "duration_seconds": 0.2,
+                  "action": "刀杆滑接",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 10.55,
+                  "end_seconds": 11,
+                  "duration_seconds": 0.45,
+                  "action": "随进",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 11,
+                  "end_seconds": 11.5,
+                  "duration_seconds": 0.5,
+                  "action": "抽矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 11.5,
+                  "end_seconds": 12.5,
+                  "duration_seconds": 1,
+                  "action": "北进至约+2米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 12.5,
+                  "end_seconds": 13.5,
+                  "duration_seconds": 1,
+                  "action": "收短杆持续探线",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "黑袖",
+              "evidence_lines": [
+                28
+              ],
+              "phases": [
+                {
+                  "start_seconds": 10,
+                  "end_seconds": 11.5,
+                  "duration_seconds": 1.5,
+                  "action": "东侧推进至护卫东南约0.5米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 11.5,
+                  "end_seconds": 11.9,
+                  "duration_seconds": 0.4,
+                  "action": "劈右肩",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 11.9,
+                  "end_seconds": 12.2,
+                  "duration_seconds": 0.3,
+                  "action": "棍势压低前肘屈",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 12.2,
+                  "end_seconds": 12.7,
+                  "duration_seconds": 0.5,
+                  "action": "抽棍",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 12.7,
+                  "end_seconds": 13.5,
+                  "duration_seconds": 0.8,
+                  "action": "追至约+2.45米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": []
+        },
+        {
+          "node": 5,
+          "start_seconds": 13.5,
+          "end_seconds": 16,
+          "budget_seconds": 2.5,
+          "actors": [
+            {
+              "actor": "信使",
+              "evidence_lines": [
+                33
+              ],
+              "phases": [
+                {
+                  "start_seconds": 13.5,
+                  "end_seconds": 16,
+                  "duration_seconds": 2.5,
+                  "action": "继续北行至门外约0.5米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "护卫",
+              "evidence_lines": [
+                33,
+                34
+              ],
+              "phases": [
+                {
+                  "start_seconds": 13.5,
+                  "end_seconds": 13.95,
+                  "duration_seconds": 0.45,
+                  "action": "退至门内距槛0.4米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 13.95,
+                  "end_seconds": 14.3,
+                  "duration_seconds": 0.35,
+                  "action": "拨矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 14.3,
+                  "end_seconds": 14.5,
+                  "duration_seconds": 0.2,
+                  "action": "刀杆接触",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 14.5,
+                  "end_seconds": 14.95,
+                  "duration_seconds": 0.45,
+                  "action": "撤刀并回转右肩",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 14.95,
+                  "end_seconds": 15.35,
+                  "duration_seconds": 0.4,
+                  "action": "刀手已空出后提刀架东路",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 15.35,
+                  "end_seconds": 15.55,
+                  "duration_seconds": 0.2,
+                  "action": "刀棍接触",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 15.55,
+                  "end_seconds": 16,
+                  "duration_seconds": 0.45,
+                  "action": "收原刀回胸",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": "架棍可在黑袖收短棍的最后0.05秒预备，并在15.35秒来棍抵达时结束，非等棍抵达才启动。"
+            },
+            {
+              "actor": "红腰",
+              "evidence_lines": [
+                33,
+                34
+              ],
+              "phases": [
+                {
+                  "start_seconds": 13.5,
+                  "end_seconds": 13.95,
+                  "duration_seconds": 0.45,
+                  "action": "北进",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 13.95,
+                  "end_seconds": 14.3,
+                  "duration_seconds": 0.35,
+                  "action": "刺胸",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 14.3,
+                  "end_seconds": 14.5,
+                  "duration_seconds": 0.2,
+                  "action": "矛被带西门框",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 14.5,
+                  "end_seconds": 14.95,
+                  "duration_seconds": 0.45,
+                  "action": "抽矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 14.95,
+                  "end_seconds": 15.35,
+                  "duration_seconds": 0.4,
+                  "action": "追进",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 15.35,
+                  "end_seconds": 16,
+                  "duration_seconds": 0.65,
+                  "action": "维持可動前后步与原矛",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "黑袖",
+              "evidence_lines": [
+                34
+              ],
+              "phases": [
+                {
+                  "start_seconds": 13.5,
+                  "end_seconds": 14.3,
+                  "duration_seconds": 0.8,
+                  "action": "东侧前进",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 14.3,
+                  "end_seconds": 15,
+                  "duration_seconds": 0.7,
+                  "action": "见矛占西线收短棍调东路",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 15,
+                  "end_seconds": 15.35,
+                  "duration_seconds": 0.35,
+                  "action": "短推右肩",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 15.35,
+                  "end_seconds": 15.55,
+                  "duration_seconds": 0.2,
+                  "action": "刀棍接触前肘回收",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 15.55,
+                  "end_seconds": 16,
+                  "duration_seconds": 0.45,
+                  "action": "收原棍",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": []
+        }
+      ],
+      "uncertainties": [
+        {
+          "evidence_lines": [
+            7,
+            11
+          ],
+          "topic": "黑袖开场2.2米的参照",
+          "reason": "采用在护卫更南2.2米的读法，约−3.05米追2米到约−1米，与末点相容；句法参照仍可更明确。未借此虚构新增路径。"
+        },
+        {
+          "evidence_lines": [
+            22
+          ],
+          "topic": "后撤反应占时",
+          "reason": "放入0.25秒受力才能按已列阶段闭合；独立位移时长未给。"
+        }
+      ]
+    },
+    {
+      "id": "G2",
+      "prompt_path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+      "prompt_sha256": "19b67dbb2e6e54e360c46210cbef7c587f491748abc4d9d41192022e245055c9",
+      "scores": {
+        "C": {
+          "score": 18,
+          "max": 20,
+          "reason": "同步双挡、导开后退移与持续追压成立；最后一斧等待停稳却没有给这个条件留下完整后续窗口。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+              "lines": [
+                16,
+                17,
+                18,
+                23,
+                24,
+                29,
+                30
+              ],
+              "note": "首交换与门前追压有前后因果"
+            }
+          ],
+          "deductions": [
+            {
+              "points": 2,
+              "evidence": {
+                "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+                "lines": [
+                  29,
+                  30
+                ],
+                "note": "见侧移后停稳才提斧，不能借蓝衣尚在踩实/回正时偷启"
+              },
+              "reason": "最后变招的触发依赖没有在其实际时间窗内兑现。"
+            }
+          ],
+          "uncertainties": []
+        },
+        "M": {
+          "score": 15,
+          "max": 15,
+          "reason": "左盾右剑各有持物结构和独立来路；三人有原石面支撑，双接点传力与回收可执行。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+              "lines": [
+                6,
+                7,
+                16,
+                17,
+                18,
+                23,
+                29,
+                30
+              ],
+              "note": "没有单剑跨两路或复制防守部位"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "S": {
+          "score": 14,
+          "max": 15,
+          "reason": "三人、四件防守/攻击器物及东、西旁线连续；最后原兵器回收完成状态晚于标定片尾。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+              "lines": [
+                6,
+                17,
+                18,
+                23,
+                24,
+                29,
+                30,
+                31
+              ],
+              "note": "人数持手和旁线延续"
+            }
+          ],
+          "deductions": [
+            {
+              "points": 1,
+              "evidence": {
+                "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+                "lines": [
+                  30,
+                  31
+                ],
+                "note": "双方最后回收后终态宣称已回护位"
+              },
+              "reason": "依明确触发重建，11.0秒仍在斧剑接触，回收终态到11.5秒才完整。"
+            }
+          ],
+          "uncertainties": []
+        },
+        "T": {
+          "score": 4,
+          "max": 10,
+          "reason": "前3节点预算闭合，1.75秒双抵达成立；末节点因停稳触发偏移需4.1秒，超3.6秒。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+              "lines": [
+                11,
+                16,
+                17,
+                18,
+                23,
+                24,
+                29,
+                30
+              ],
+              "note": "独立逐人时间详见 independent_time_audit"
+            }
+          ],
+          "deductions": [
+            {
+              "points": 6,
+              "evidence": {
+                "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+                "lines": [
+                  29,
+                  30
+                ],
+                "note": "蓝衣前序0.5+0.35+0.2+0.45+0.6+0.5=2.6秒；绿衣停稳后0.5+0.4+0.2+0.4=1.5秒"
+              },
+              "reason": "7.4+2.6+1.5=11.5>11.0；不能只相加绿衣2.1+0.5+0.4+0.2+0.4=3.6而忽略其等待蓝衣停稳0.5秒。"
+            }
+          ],
+          "uncertainties": []
+        },
+        "K": {
+          "score": 8,
+          "max": 10,
+          "reason": "实际四镜，双接点同期同框且两观察面明确；同窗脚步受力的实际覆盖弱。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+              "lines": [
+                8,
+                12,
+                19,
+                25,
+                32
+              ],
+              "note": "无分镜轮流替代同步"
+            }
+          ],
+          "deductions": [
+            {
+              "points": 2,
+              "evidence": {
+                "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+                "lines": [
+                  17,
+                  19
+                ],
+                "note": "接触时后脚滑退0.25米；同窗镜2取景仅膝上，北撤阶段才放宽"
+              },
+              "reason": "接点和双前臂可读，但脚掌承重/滑退发生时在膝上取景之外。事后认回不能完全证明同窗支撑；未推断实际媒体一定漏拍。"
+            }
+          ],
+          "uncertainties": []
+        },
+        "V": {
+          "score": 10,
+          "max": 10,
+          "reason": "二维色阶、轮廓留白、转盾亮面、剑亮线与双肘袖褶兑现；两种接点声同刻不同音色。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+              "lines": [
+                4,
+                5,
+                17,
+                19,
+                20,
+                26,
+                32,
+                33
+              ],
+              "note": "视觉与声源以当前实体交换为依据"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "R": {
+          "score": 10,
+          "max": 10,
+          "reason": "双来袭1.75秒同期抵达4/4；左盾右剑同刻响应3/3；已退到北门并两敌持续追压3/3。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+              "lines": [
+                16,
+                17,
+                18,
+                23,
+                24,
+                29,
+                30
+              ],
+              "note": "后段超时不追溯否定已完成同步交换"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "F": {
+          "score": 5,
+          "max": 5,
+          "reason": "三全局栏目、稳定设定和逐镜标签完整，自含表达；不用内部计时账本作为交付。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+              "lines": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                15,
+                19,
+                33
+              ],
+              "note": "格式通过不替代语义验收"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "E": {
+          "score": 3,
+          "max": 5,
+          "reason": "门前位置和人数/持物限制大体由动作达到，但最后回收、防位及45厘米终态无法全部在11秒内完成。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+              "lines": [
+                23,
+                29,
+                30,
+                31
+              ],
+              "note": "前3节点已经到距门约0.7米"
+            }
+          ],
+          "deductions": [
+            {
+              "points": 2,
+              "evidence": {
+                "path": "docs/evaluations/2026-10-13-generalization/G2-simultaneous.prompt.txt",
+                "lines": [
+                  30,
+                  31
+                ],
+                "note": "原剑/斧各回收0.4秒在触发链中结束于11.5秒"
+              },
+              "reason": "11秒时尚在末次接触；不能把最后完整回收后的姿态直接宣布为计时终态。"
+            }
+          ],
+          "uncertainties": []
+        }
+      },
+      "raw": 87,
+      "final": 79,
+      "hard_fail": true,
+      "hard_fail_reasons": [
+        {
+          "type": "serial_dependency_budget_overflow",
+          "evidence_lines": [
+            28,
+            29,
+            30,
+            31
+          ],
+          "reason": "末镜绿衣须见蓝衣侧移后停稳；蓝衣完整前序在10.0秒完成。绿衣从该条件后提斧0.5→斜劈0.4→接触0.2→回收0.4，需要1.5秒，最早结束11.5秒，超11秒终点0.5秒。",
+          "calculation": "7.4 + (0.5+0.35+0.2+0.45+0.6+0.5) + (0.5+0.4+0.2+0.4) = 11.5",
+          "overflow_seconds": 0.5,
+          "alternative_reading": "若把停稳解释成9.5秒位移刚结束而尚未完成踩实新脚/回正肩线，可使绿衣与这0.5秒准备并行而11秒闭合；正文用见停稳后的明确线索却把稳定动作另列随后，不能在首稿评审里默改成提前看到起势。"
+        }
+      ],
+      "media_quality_verified": false,
+      "actual_shots": {
+        "count": 4,
+        "cut_times_seconds": [
+          1.4,
+          3.4,
+          7.4
+        ],
+        "shot_windows": [
+          [
+            0,
+            1.4
+          ],
+          [
+            1.4,
+            3.4
+          ],
+          [
+            3.4,
+            7.4
+          ],
+          [
+            7.4,
+            11
+          ]
+        ],
+        "evidence_lines": [
+          1,
+          10,
+          12,
+          15,
+          19,
+          22,
+          25,
+          28,
+          32
+        ],
+        "hidden_cuts_detected": false
+      },
+      "specified_relations": [
+        {
+          "name": "双来袭同期抵达",
+          "score": 4,
+          "max": 4,
+          "evidence_lines": [
+            16
+          ]
+        },
+        {
+          "name": "左盾右剑双接点同期响应",
+          "score": 3,
+          "max": 3,
+          "evidence_lines": [
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "name": "转移门前且追压延续",
+          "score": 3,
+          "max": 3,
+          "evidence_lines": [
+            23,
+            24,
+            29,
+            30
+          ]
+        }
+      ],
+      "entity_state_audit": {
+        "people": 3,
+        "blue": "右手原直剑、左手/前臂原小圆盾，全程石面脚步；双接点独立",
+        "brown": "双手原短矛；东侧持续追压并让开绿衣斧路",
+        "green": "右手原单手斧、左手空闲；西侧追近，末斧的完全回收超时",
+        "environment": "原5米平台与北双柱门；盾侧/剑侧按人物自身左右定义，镜头投影明示",
+        "evidence_lines": [
+          6,
+          7,
+          8,
+          16,
+          17,
+          18,
+          23,
+          24,
+          29,
+          30,
+          31
+        ]
+      },
+      "independent_time_audit": [
+        {
+          "node": 1,
+          "start_seconds": 0,
+          "end_seconds": 1.4,
+          "budget_seconds": 1.4,
+          "actors": [
+            {
+              "actor": "蓝衣",
+              "evidence_lines": [
+                11
+              ],
+              "phases": [
+                {
+                  "start_seconds": 0,
+                  "end_seconds": 1.4,
+                  "duration_seconds": 1.4,
+                  "action": "北撤0.25米，盾前置剑提斜防线",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "棕衣",
+              "evidence_lines": [
+                11
+              ],
+              "phases": [
+                {
+                  "start_seconds": 0,
+                  "end_seconds": 1.4,
+                  "duration_seconds": 1.4,
+                  "action": "东南斜进0.8米并备矛",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "绿衣",
+              "evidence_lines": [
+                11
+              ],
+              "phases": [
+                {
+                  "start_seconds": 0,
+                  "end_seconds": 1.4,
+                  "duration_seconds": 1.4,
+                  "action": "西南斜进0.8米并将斧收肩上",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": []
+        },
+        {
+          "node": 2,
+          "start_seconds": 1.4,
+          "end_seconds": 3.4,
+          "budget_seconds": 2,
+          "actors": [
+            {
+              "actor": "蓝衣",
+              "evidence_lines": [
+                16,
+                17,
+                18
+              ],
+              "phases": [
+                {
+                  "start_seconds": 1.4,
+                  "end_seconds": 1.75,
+                  "duration_seconds": 0.35,
+                  "action": "左盾迎矛、右剑迎斧同时启动与抵达",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 1.75,
+                  "end_seconds": 1.95,
+                  "duration_seconds": 0.2,
+                  "action": "双接点承压、膝沉后脚滑退",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 1.95,
+                  "end_seconds": 2.25,
+                  "duration_seconds": 0.3,
+                  "action": "同步让力",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.25,
+                  "end_seconds": 2.55,
+                  "duration_seconds": 0.3,
+                  "action": "左盾东导矛、右剑西导斧",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.55,
+                  "end_seconds": 3,
+                  "duration_seconds": 0.45,
+                  "action": "北撤0.55米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 3,
+                  "end_seconds": 3.4,
+                  "duration_seconds": 0.4,
+                  "action": "继续北撤0.15米至开场北1.2米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "棕衣",
+              "evidence_lines": [
+                16,
+                17,
+                18
+              ],
+              "phases": [
+                {
+                  "start_seconds": 1.4,
+                  "end_seconds": 1.75,
+                  "duration_seconds": 0.35,
+                  "action": "送髋直刺",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 1.75,
+                  "end_seconds": 1.95,
+                  "duration_seconds": 0.2,
+                  "action": "矛尖压盾",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 1.95,
+                  "end_seconds": 2.25,
+                  "duration_seconds": 0.3,
+                  "action": "同窗让力",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.25,
+                  "end_seconds": 2.55,
+                  "duration_seconds": 0.3,
+                  "action": "随导偏收肘",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.55,
+                  "end_seconds": 3,
+                  "duration_seconds": 0.45,
+                  "action": "抽矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 3,
+                  "end_seconds": 3.4,
+                  "duration_seconds": 0.4,
+                  "action": "北追0.3米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "绿衣",
+              "evidence_lines": [
+                16,
+                17,
+                18
+              ],
+              "phases": [
+                {
+                  "start_seconds": 1.4,
+                  "end_seconds": 1.75,
+                  "duration_seconds": 0.35,
+                  "action": "送肩斜劈",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 1.75,
+                  "end_seconds": 1.95,
+                  "duration_seconds": 0.2,
+                  "action": "斧压剑",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 1.95,
+                  "end_seconds": 2.25,
+                  "duration_seconds": 0.3,
+                  "action": "同窗让力",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.25,
+                  "end_seconds": 2.55,
+                  "duration_seconds": 0.3,
+                  "action": "随导偏收肘",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.55,
+                  "end_seconds": 3,
+                  "duration_seconds": 0.45,
+                  "action": "收斧回肩外",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 3,
+                  "end_seconds": 3.4,
+                  "duration_seconds": 0.4,
+                  "action": "北调一步",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": []
+        },
+        {
+          "node": 3,
+          "start_seconds": 3.4,
+          "end_seconds": 7.4,
+          "budget_seconds": 4,
+          "actors": [
+            {
+              "actor": "蓝衣",
+              "evidence_lines": [
+                23
+              ],
+              "phases": [
+                {
+                  "start_seconds": 3.4,
+                  "end_seconds": 4.8,
+                  "duration_seconds": 1.4,
+                  "action": "北退1米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 4.8,
+                  "end_seconds": 5.15,
+                  "duration_seconds": 0.35,
+                  "action": "左盾迎刺",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5.15,
+                  "end_seconds": 5.35,
+                  "duration_seconds": 0.2,
+                  "action": "接矛让力",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5.35,
+                  "end_seconds": 5.8,
+                  "duration_seconds": 0.45,
+                  "action": "收盾",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5.8,
+                  "end_seconds": 6.6,
+                  "duration_seconds": 0.8,
+                  "action": "北退0.7米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 6.6,
+                  "end_seconds": 7.4,
+                  "duration_seconds": 0.8,
+                  "action": "调整脚步收退勢，距门0.7米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "棕衣",
+              "evidence_lines": [
+                23
+              ],
+              "phases": [
+                {
+                  "start_seconds": 3.4,
+                  "end_seconds": 4.8,
+                  "duration_seconds": 1.4,
+                  "action": "北追1.4米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 4.8,
+                  "end_seconds": 5.15,
+                  "duration_seconds": 0.35,
+                  "action": "刺左胸",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5.15,
+                  "end_seconds": 5.35,
+                  "duration_seconds": 0.2,
+                  "action": "矛被盾带东",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5.35,
+                  "end_seconds": 5.8,
+                  "duration_seconds": 0.45,
+                  "action": "抽矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5.8,
+                  "end_seconds": 6.6,
+                  "duration_seconds": 0.8,
+                  "action": "再追0.7米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 6.6,
+                  "end_seconds": 7.4,
+                  "duration_seconds": 0.8,
+                  "action": "东侧调枪尖脚步",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "绿衣",
+              "evidence_lines": [
+                24
+              ],
+              "phases": [
+                {
+                  "start_seconds": 3.4,
+                  "end_seconds": 4.2,
+                  "duration_seconds": 0.8,
+                  "action": "收斧紧凑護身",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 4.2,
+                  "end_seconds": 7.4,
+                  "duration_seconds": 3.2,
+                  "action": "西侧追2米至蓝衣西南1.3米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": []
+        },
+        {
+          "node": 4,
+          "start_seconds": 7.4,
+          "end_seconds": 11,
+          "budget_seconds": 3.5999999999999996,
+          "actors": [
+            {
+              "actor": "蓝衣",
+              "evidence_lines": [
+                29,
+                30
+              ],
+              "phases": [
+                {
+                  "start_seconds": 7.4,
+                  "end_seconds": 7.9,
+                  "duration_seconds": 0.5,
+                  "action": "调整两脚沉重心",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 7.9,
+                  "end_seconds": 8.25,
+                  "duration_seconds": 0.35,
+                  "action": "盾拨矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8.25,
+                  "end_seconds": 8.45,
+                  "duration_seconds": 0.2,
+                  "action": "矛盾接触",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8.45,
+                  "end_seconds": 8.9,
+                  "duration_seconds": 0.45,
+                  "action": "收盾",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8.9,
+                  "end_seconds": 9.5,
+                  "duration_seconds": 0.6,
+                  "action": "西移0.4米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 9.5,
+                  "end_seconds": 10,
+                  "duration_seconds": 0.5,
+                  "action": "踩实新左脚、回正肩线，停稳条件至此才完成",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 10,
+                  "end_seconds": 10.5,
+                  "duration_seconds": 0.5,
+                  "action": "保持护位，等待已写绿衣停稳后提斧",
+                  "status": "trigger_wait_reconstructed"
+                },
+                {
+                  "start_seconds": 10.5,
+                  "end_seconds": 10.9,
+                  "duration_seconds": 0.4,
+                  "action": "剑下外架斧",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 10.9,
+                  "end_seconds": 11.1,
+                  "duration_seconds": 0.2,
+                  "action": "斧剑接触，后脚北挪",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 11.1,
+                  "end_seconds": 11.5,
+                  "duration_seconds": 0.4,
+                  "action": "回收原剑",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "棕衣",
+              "evidence_lines": [
+                29,
+                30
+              ],
+              "phases": [
+                {
+                  "start_seconds": 7.4,
+                  "end_seconds": 7.9,
+                  "duration_seconds": 0.5,
+                  "action": "北抢0.25米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 7.9,
+                  "end_seconds": 8.25,
+                  "duration_seconds": 0.35,
+                  "action": "刺左侧",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8.25,
+                  "end_seconds": 8.45,
+                  "duration_seconds": 0.2,
+                  "action": "矛盾接触",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8.45,
+                  "end_seconds": 8.9,
+                  "duration_seconds": 0.45,
+                  "action": "抽矛",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8.9,
+                  "end_seconds": 9.5,
+                  "duration_seconds": 0.6,
+                  "action": "东让避绿衣斧路",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 9.5,
+                  "end_seconds": 10,
+                  "duration_seconds": 0.5,
+                  "action": "收短矛继续指东侧",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 10.5,
+                  "end_seconds": 11.5,
+                  "duration_seconds": 1,
+                  "action": "按这末段1秒继续探压",
+                  "status": "trigger_shifted_window"
+                }
+              ],
+              "note": "若将末段1秒硬定为10–11秒，与正文绿衣最后1秒的10.5–11.5秒不再是同窗。"
+            },
+            {
+              "actor": "绿衣",
+              "evidence_lines": [
+                30
+              ],
+              "phases": [
+                {
+                  "start_seconds": 7.4,
+                  "end_seconds": 9.5,
+                  "duration_seconds": 2.1,
+                  "action": "西侧追近至约0.65米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 9.5,
+                  "end_seconds": 10,
+                  "duration_seconds": 0.5,
+                  "action": "等待蓝衣踩实/回正后的停稳线索",
+                  "status": "trigger_wait_reconstructed"
+                },
+                {
+                  "start_seconds": 10,
+                  "end_seconds": 10.5,
+                  "duration_seconds": 0.5,
+                  "action": "见停稳后提斧",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 10.5,
+                  "end_seconds": 10.9,
+                  "duration_seconds": 0.4,
+                  "action": "斜劈右腰",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 10.9,
+                  "end_seconds": 11.1,
+                  "duration_seconds": 0.2,
+                  "action": "剑斧接触",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 11.1,
+                  "end_seconds": 11.5,
+                  "duration_seconds": 0.4,
+                  "action": "回收原斧",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": [
+            "关键路线最早结束11.5秒，末镜超时0.5秒。把绿衣提斧移到9.5–10.0秒才能恰好结束11秒，但等于把已写的见停稳后改成在蓝衣正在踩实/回正时提前起手；本轮不得改稿，也不得默补提前线索。"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "evidence_lines": [
+            29,
+            30
+          ],
+          "topic": "停稳是否可早于踩实回正完成",
+          "reason": "记录可闭合的另读法，但其需将正文稳定条件提前0.5秒；本评审采用完整前序结束作为明确触发。硬失败只针对当前文字依赖，非已证实视频超时。"
+        }
+      ]
+    },
+    {
+      "id": "G3",
+      "prompt_path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+      "prompt_sha256": "4ec0d1f07eeb259182a130233c125f5b3f3690760dc75b24cbf7bba684e759e6",
+      "scores": {
+        "C": {
+          "score": 20,
+          "max": 20,
+          "reason": "追近进入剑程、刃交导致漂开恢复、直射迫B改线并让A随新线追，前后条件明确。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+              "lines": [
+                11,
+                16,
+                17,
+                22,
+                23,
+                29,
+                34
+              ],
+              "note": "不是相机代接近或效果代交锋"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "M": {
+          "score": 15,
+          "max": 15,
+          "reason": "右手实体剑、足底承载与转向制动贯穿；唯一左手风刃的能力与既有石坡终止相容。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+              "lines": [
+                6,
+                7,
+                11,
+                16,
+                17,
+                23,
+                28,
+                34
+              ],
+              "note": "未借地面、空气踏板或第三把御剑"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "S": {
+          "score": 14,
+          "max": 15,
+          "reason": "两人、原剑及唯一在途风刃延续；镜3后接镜4的约2.5米起算距少了横向避让后缩距说明。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+              "lines": [
+                17,
+                22,
+                23,
+                28,
+                29,
+                35
+              ],
+              "note": "停止新发射与旧刃终止分开"
+            }
+          ],
+          "deductions": [
+            {
+              "points": 1,
+              "evidence": {
+                "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+                "lines": [
+                  17,
+                  23,
+                  29
+                ],
+                "note": "镜2末约2.5米，镜3有B北移0.8米及A转向追近，镜4以差距再增1米得3.5米"
+              },
+              "reason": "镜3末两人相对距离没有量化或由路径闭合；不是已证明跳位，但下镜差距算式隐含其仍约2.5米。"
+            }
+          ],
+          "uncertainties": []
+        },
+        "T": {
+          "score": 8,
+          "max": 10,
+          "reason": "逐人前序与风刃跨镜时间可容入13秒；局部精确距离的速度积分未闭合。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+              "lines": [
+                11,
+                16,
+                17,
+                22,
+                23,
+                28,
+                29,
+                34
+              ],
+              "note": "五节点占时和双方前序见 independent_time_audit"
+            }
+          ],
+          "deductions": [
+            {
+              "points": 1,
+              "evidence": {
+                "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+                "lines": [
+                  34,
+                  35
+                ],
+                "note": "最后2秒恒速缩距0.8米；首1秒追加速及末1秒偏航也会改变相对距离"
+              },
+              "reason": "首末两个1秒没有双方实际推进量，不能只以3.5−0.8推导终态约3米；未给速度曲线，不能反判终态不可达。"
+            },
+            {
+              "points": 1,
+              "evidence": {
+                "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+                "lines": [
+                  7,
+                  22,
+                  23,
+                  28
+                ],
+                "note": "风刃离手后约0.3秒过B旧点，再于7.8秒撞距线南侧约16米的石坡"
+              },
+              "reason": "飞行总时可重建，但没有风刃速度与明确东南方位角，尚不能用固定地标独立闭合飞行路程；沿线可构造相容解，非已证实瞬移。"
+            }
+          ],
+          "uncertainties": []
+        },
+        "K": {
+          "score": 7,
+          "max": 10,
+          "reason": "实际五镜，直射旧线与B新位同窗，风刃终止独镜覆盖；刃交镜的脚底观察范围自相矛盾。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+              "lines": [
+                8,
+                12,
+                18,
+                24,
+                30,
+                36
+              ],
+              "note": "无隐含再切或重播攻击"
+            }
+          ],
+          "deductions": [
+            {
+              "points": 3,
+              "evidence": {
+                "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+                "lines": [
+                  18
+                ],
+                "note": "同一接触构图纳入腰以上，又说画面下缘双腿和足底连贯出流可认"
+              },
+              "reason": "腰以上取景不能同时容纳腰以下的双腿与足底；分离后再放回全身只证明恢复覆盖。交刃时的两个握点/刃交区有安排，足底支撑的可见范围仍缺。用户未要求接触一刻必须同框足底，故作K扣分，不扩成能力越界硬失败。"
+            }
+          ],
+          "uncertainties": []
+        },
+        "V": {
+          "score": 10,
+          "max": 10,
+          "reason": "CG布料加速/制动滞后、袖褶与刃缘反射、苍青薄刃与尾丝分离及来源声阶段具体。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+              "lines": [
+                4,
+                5,
+                11,
+                18,
+                19,
+                24,
+                25,
+                28,
+                31,
+                36,
+                37
+              ],
+              "note": "光材质及声层随事件发生与退出"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "R": {
+          "score": 10,
+          "max": 10,
+          "reason": "五米缩到1.2米再交实体刃4/4；足底推进/恢复3/3；唯一风刃离手继续并撞石散尽3/3。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+              "lines": [
+                11,
+                16,
+                17,
+                22,
+                23,
+                28,
+                29,
+                35
+              ],
+              "note": "时间/取景完善项不追溯否定已写的指定关系"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "F": {
+          "score": 5,
+          "max": 5,
+          "reason": "全局三栏目和稳定能力、地标、逐镜动作/摄影完整，自含而无身份/平台复制依赖。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+              "lines": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                15,
+                18,
+                37
+              ],
+              "note": "本场设定独立可读"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        },
+        "E": {
+          "score": 5,
+          "max": 5,
+          "reason": "结尾仍悬空、右手原剑、已离短剑程；唯一风刃散尽，继续追压未中断。",
+          "evidence": [
+            {
+              "path": "docs/evaluations/2026-10-13-generalization/G3-aerial.prompt.txt",
+              "lines": [
+                28,
+                34,
+                35,
+                36,
+                37
+              ],
+              "note": "实际继续追逐完成终态，精确约3米仍属T项不确定"
+            }
+          ],
+          "deductions": [],
+          "uncertainties": []
+        }
+      },
+      "raw": 94,
+      "final": 94,
+      "hard_fail": false,
+      "hard_fail_reasons": [],
+      "media_quality_verified": false,
+      "actual_shots": {
+        "count": 5,
+        "cut_times_seconds": [
+          2,
+          5,
+          7,
+          9
+        ],
+        "shot_windows": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "evidence_lines": [
+          1,
+          10,
+          12,
+          15,
+          18,
+          21,
+          24,
+          27,
+          30,
+          33,
+          36
+        ],
+        "hidden_cuts_detected": false
+      },
+      "specified_relations": [
+        {
+          "name": "五米追近与实体交接",
+          "score": 4,
+          "max": 4,
+          "evidence_lines": [
+            11,
+            16,
+            17
+          ]
+        },
+        {
+          "name": "脚底气流驱动和恢复",
+          "score": 3,
+          "max": 3,
+          "evidence_lines": [
+            6,
+            11,
+            16,
+            17,
+            23,
+            29,
+            34
+          ]
+        },
+        {
+          "name": "唯一风刃离手继续并终止",
+          "score": 3,
+          "max": 3,
+          "evidence_lines": [
+            22,
+            23,
+            28,
+            35
+          ]
+        }
+      ],
+      "entity_state_audit": {
+        "people": 2,
+        "A": "全程右手原剑；左手仅形成/发射唯一风刃，随后为空且未新增发射",
+        "B": "全程右手原剑、左手空；真实迎挡受力并足底制动、横移恢复",
+        "projectile": "唯一风刃发射后自持直线，不跟踪；A收手后仍在途；撞既有灰石散尽",
+        "support": "两人足底定向气流承载、推进、转向和制动；无落地、踩剑或隐形支点",
+        "environment": "东桥、南坡固定；终镜石坡浅擦痕仍在侧后方",
+        "evidence_lines": [
+          6,
+          7,
+          11,
+          16,
+          17,
+          22,
+          23,
+          28,
+          29,
+          34,
+          35,
+          36
+        ]
+      },
+      "independent_time_audit": [
+        {
+          "node": 1,
+          "start_seconds": 0,
+          "end_seconds": 2,
+          "budget_seconds": 2,
+          "actors": [
+            {
+              "actor": "A",
+              "evidence_lines": [
+                11
+              ],
+              "phases": [
+                {
+                  "start_seconds": 0,
+                  "end_seconds": 2,
+                  "duration_seconds": 2,
+                  "action": "足底推流追9.8米，平均4.9米/秒",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "B",
+              "evidence_lines": [
+                11
+              ],
+              "phases": [
+                {
+                  "start_seconds": 0,
+                  "end_seconds": 2,
+                  "duration_seconds": 2,
+                  "action": "足底推流东飞6米，平均3米/秒，末侧回头",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": [
+            "5−(9.8−6)=1.2米，接近不是摄影收景。"
+          ]
+        },
+        {
+          "node": 2,
+          "start_seconds": 2,
+          "end_seconds": 5,
+          "budget_seconds": 3,
+          "actors": [
+            {
+              "actor": "A",
+              "evidence_lines": [
+                16,
+                17
+              ],
+              "phases": [
+                {
+                  "start_seconds": 2,
+                  "end_seconds": 2.35,
+                  "duration_seconds": 0.35,
+                  "action": "足底制动收追速，肩带剑预备",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.35,
+                  "end_seconds": 2.65,
+                  "duration_seconds": 0.3,
+                  "action": "前斜劈",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.65,
+                  "end_seconds": 2.85,
+                  "duration_seconds": 0.2,
+                  "action": "实体刃交受侧向反力",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.85,
+                  "end_seconds": 3.4,
+                  "duration_seconds": 0.55,
+                  "action": "屈肘收剑并持续制动",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 3.4,
+                  "end_seconds": 4,
+                  "duration_seconds": 0.6,
+                  "action": "重设承载/推进，剑回肩外",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 4,
+                  "end_seconds": 5,
+                  "duration_seconds": 1,
+                  "action": "沿东南线较慢续追",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "B",
+              "evidence_lines": [
+                16,
+                17
+              ],
+              "phases": [
+                {
+                  "start_seconds": 2,
+                  "end_seconds": 2.35,
+                  "duration_seconds": 0.35,
+                  "action": "足底制动并转髋提剑",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.35,
+                  "end_seconds": 2.65,
+                  "duration_seconds": 0.3,
+                  "action": "迎挡",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.65,
+                  "end_seconds": 2.85,
+                  "duration_seconds": 0.2,
+                  "action": "实体刃交肘折肩背受力",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 2.85,
+                  "end_seconds": 3.4,
+                  "duration_seconds": 0.55,
+                  "action": "东漂0.7米，足底逐步抗余势",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 3.4,
+                  "end_seconds": 4,
+                  "duration_seconds": 0.6,
+                  "action": "完成制动回肩收剑",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 4,
+                  "end_seconds": 5,
+                  "duration_seconds": 1,
+                  "action": "转东南线足底推流续飞",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": [
+            "两人各0.35+0.3+0.2+0.55+0.6+1=3秒；未发现省掉刃交或恢复。"
+          ]
+        },
+        {
+          "node": 3,
+          "start_seconds": 5,
+          "end_seconds": 7,
+          "budget_seconds": 2,
+          "actors": [
+            {
+              "actor": "A",
+              "evidence_lines": [
+                22
+              ],
+              "phases": [
+                {
+                  "start_seconds": 5,
+                  "end_seconds": 5.4,
+                  "duration_seconds": 0.4,
+                  "action": "左掌形成唯一风刃",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5.4,
+                  "end_seconds": 5.6,
+                  "duration_seconds": 0.2,
+                  "action": "沿固定东南偏下线发射",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5.6,
+                  "end_seconds": 6,
+                  "duration_seconds": 0.4,
+                  "action": "收空左手，停止新发射",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 6,
+                  "end_seconds": 6.8,
+                  "duration_seconds": 0.8,
+                  "action": "足底转向追B新位",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 6.8,
+                  "end_seconds": 7,
+                  "duration_seconds": 0.2,
+                  "action": "维持追线",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "B",
+              "evidence_lines": [
+                23
+              ],
+              "phases": [
+                {
+                  "start_seconds": 5,
+                  "end_seconds": 5.4,
+                  "duration_seconds": 0.4,
+                  "action": "看见收束、改足底排流",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5.4,
+                  "end_seconds": 6,
+                  "duration_seconds": 0.6,
+                  "action": "在发射阶段向北侧移0.8米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 6,
+                  "end_seconds": 6.4,
+                  "duration_seconds": 0.4,
+                  "action": "右剑护向A",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 6.4,
+                  "end_seconds": 7,
+                  "duration_seconds": 0.6,
+                  "action": "足下转东向续飞",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "唯一风刃",
+              "evidence_lines": [
+                22,
+                23
+              ],
+              "phases": [
+                {
+                  "start_seconds": 5.6,
+                  "end_seconds": 5.9,
+                  "duration_seconds": 0.3,
+                  "action": "以离手发生在0.2秒发射末重建，约0.3秒越过B旧腰线",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 5.9,
+                  "end_seconds": 7,
+                  "duration_seconds": 1.1,
+                  "action": "不改向继续东南偏下飞，镜末未消失",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": "离手精确时刻可在5.4–5.6秒内，采用5.6秒为明确末点；这项相位粒度不改变旧刃仍在途。"
+            }
+          ],
+          "notes": [
+            "B在5.9秒已侧移0.5/0.6×0.8≈0.667米；40厘米宽风刃半宽0.2米，正文的北侧让空存在相容解。此为文字计算，不是画面确认。"
+          ]
+        },
+        {
+          "node": 4,
+          "start_seconds": 7,
+          "end_seconds": 9,
+          "budget_seconds": 2,
+          "actors": [
+            {
+              "actor": "A",
+              "evidence_lines": [
+                29
+              ],
+              "phases": [
+                {
+                  "start_seconds": 7,
+                  "end_seconds": 7.8,
+                  "duration_seconds": 0.8,
+                  "action": "完成向东转正",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 7.8,
+                  "end_seconds": 9,
+                  "duration_seconds": 1.2,
+                  "action": "追飛，本段合计约4米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "B",
+              "evidence_lines": [
+                29
+              ],
+              "phases": [
+                {
+                  "start_seconds": 7,
+                  "end_seconds": 7.8,
+                  "duration_seconds": 0.8,
+                  "action": "加大推流东偏北推进",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 7.8,
+                  "end_seconds": 9,
+                  "duration_seconds": 1.2,
+                  "action": "沿新线飞，本段合计约5米",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "唯一风刃",
+              "evidence_lines": [
+                28
+              ],
+              "phases": [
+                {
+                  "start_seconds": 7,
+                  "end_seconds": 7.8,
+                  "duration_seconds": 0.8,
+                  "action": "续原直线飞向既有灰石段",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 7.8,
+                  "end_seconds": 8,
+                  "duration_seconds": 0.2,
+                  "action": "撞石形体碎散，攻击本体终止",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 8,
+                  "end_seconds": 9,
+                  "duration_seconds": 1,
+                  "action": "原接点余風拂砂并回落，无新刃",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": [
+            "两人在画外继续运动而未停等；末距3.5米需镜3末距约2.5米的隐含前提，见S扣分。"
+          ]
+        },
+        {
+          "node": 5,
+          "start_seconds": 9,
+          "end_seconds": 13,
+          "budget_seconds": 4,
+          "actors": [
+            {
+              "actor": "A",
+              "evidence_lines": [
+                34
+              ],
+              "phases": [
+                {
+                  "start_seconds": 9,
+                  "end_seconds": 10,
+                  "duration_seconds": 1,
+                  "action": "追加速3.5增至4.4米/秒，实际推进量未给",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 10,
+                  "end_seconds": 12,
+                  "duration_seconds": 2,
+                  "action": "4.4米/秒同向追8.8米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 12,
+                  "end_seconds": 13,
+                  "duration_seconds": 1,
+                  "action": "看见B偏航后排流转向跟上，未给推进量",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            },
+            {
+              "actor": "B",
+              "evidence_lines": [
+                34
+              ],
+              "phases": [
+                {
+                  "start_seconds": 9,
+                  "end_seconds": 10,
+                  "duration_seconds": 1,
+                  "action": "东速增至4米/秒，起速/实际推进量未给",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 10,
+                  "end_seconds": 12,
+                  "duration_seconds": 2,
+                  "action": "4米/秒同向飞8米",
+                  "status": "text_reconstruction"
+                },
+                {
+                  "start_seconds": 12,
+                  "end_seconds": 13,
+                  "duration_seconds": 1,
+                  "action": "侧回头原剑后防、足底推流东北偏航",
+                  "status": "text_reconstruction"
+                }
+              ],
+              "note": ""
+            }
+          ],
+          "notes": [
+            "10–12秒相对缩距0.8米可证；9–10、12–13秒不能视为零相对位移，终态约3米与给定粗略动作可相容但尚未独立定量证明。"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "evidence_lines": [
+            17,
+            23,
+            29
+          ],
+          "topic": "镜3末相对距离",
+          "reason": "北移与A追近的实际推进量不足以独立闭合到2.5米，镜4差距算式隐含此值。"
+        },
+        {
+          "evidence_lines": [
+            34,
+            35
+          ],
+          "topic": "终距约3米",
+          "reason": "两段1秒的速度积分未知，不能只扣中间2秒0.8米；有相容解，未判终态不可达。"
+        },
+        {
+          "evidence_lines": [
+            7,
+            22,
+            23,
+            28
+          ],
+          "topic": "风刃路程",
+          "reason": "固定地标和飞行时间在，具体速度/发射方位角未给；未证实自动改向或瞬移。"
+        }
+      ]
+    }
+  ],
+  "conclusion": "当前首稿中G1为强文字候选，G3为可用且需局部取景/数值闭合完善；G2同步双挡关系通过，但末段稳定触发导致串行预算硬失败，raw87保留且final79封顶。未生成、观看或听辨媒体，以上不是视频质量确认。"
+}

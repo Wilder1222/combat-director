@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-14",
+  "source_revision": "505d2c24e531a63b3b23733f96356c952b9df39c",
+  "frozen_inputs_unchanged": true,
+  "reviewed_source_fingerprints_match_current_files": true,
+  "score_arithmetic_passed": true,
+  "all_prompts_passed_independent_text_review": false,
+  "registered_shots": 14,
+  "scores": [
+    {
+      "id": "G1",
+      "raw": 97,
+      "final": 97,
+      "hard_fail": false,
+      "registered_shots": 5
+    },
+    {
+      "id": "G2",
+      "raw": 87,
+      "final": 79,
+      "hard_fail": true,
+      "registered_shots": 4
+    },
+    {
+      "id": "G3",
+      "raw": 94,
+      "final": 94,
+      "hard_fail": false,
+      "registered_shots": 5
+    }
+  ],
+  "review_files": [
+    {
+      "path": "review.md",
+      "sha256": "a68f6af770045614afd2d46dd24bdfff8fe6c80d4418f091c7bda177e211920f"
+    },
+    {
+      "path": "review.json",
+      "sha256": "603a9c8ba51af7740ade10ebc6fe9fe7d1c5f07f104e64963ad3a8aa0a472bda"
+    }
+  ],
+  "scope": "Fingerprint integrity and score arithmetic only; semantic findings are the independent human-style review, with extra trigger ambiguity preserved in report.md.",
+  "media_quality_verified": false,
+  "user_score": null
+}
